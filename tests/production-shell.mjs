@@ -5,6 +5,17 @@ const html=read("site/index.html");
 const css=read("site/styles.css");
 const js=read("site/app.js");
 const art=statSync("site/artwork/saraceni-paradise-v9.jpg");
+const prayerImages = [
+  "site/artwork/champaigne-annunciation-home-v9.jpg",
+  "site/artwork/ingres-adoration-home-v9.jpg"
+];
+for (const file of prayerImages) {
+  const bytes=readFileSync(file);
+  assert.ok(bytes.length>25_000,"Painting unexpectedly empty: "+file);
+  assert.equal(bytes[0],0xff,"Painting is not a JPEG: "+file);
+  assert.equal(bytes[1],0xd8,"Painting is not a JPEG: "+file);
+  assert.match(html,new RegExp(file.replace("site/","").replaceAll(".","\\.")),"Painting is not in Home: "+file);
+}
 for(const id of ["home-view","module-view","civil-week","about-button","about-dialog","back-button","module-title"]) {
   assert.match(html,new RegExp('id="'+id+'"'),"Missing required target "+id);
 }
@@ -22,4 +33,11 @@ assert.match(js, /function showHero\(/,"V9 carousel not interactive");
 assert.match(js, /const MODULES = Object\.freeze/,"Module transfer boundary removed");
 assert.doesNotMatch(html,/\bvercel\b/i,"Vercel reference must not enter site");
 assert.doesNotMatch(html,/1962 Roman liturgical calendar.{0,10}loaded/i);
-console.log("Production shell contracts passed. Painting bytes:",art.size);
+assert.match(html,/id="prayer-art-expand"/,"Artwork viewer trigger absent");
+assert.match(html,/id="prayer-art-dialog"/,"Artwork viewer dialog absent");
+assert.match(js,/prayer-art-dialog/,"Artwork viewer trigger not wired");
+assert.match(html,/PRAYER ENTRANCE · PREVIEW/,"Prayer engine preview disclosure missing");
+assert.match(html,/Not yet transferred|NOT YET TRANSFERRED/i,"Untransferred modules must be disclosed");
+assert.match(css,/\.prayer-door-v9 \.hour-painting/,"Source-guided V9 prayer painting CSS absent");
+assert.match(css,/max-width:340px/,"320px compact layout absent");
+console.log("Production shell contracts passed; paintings:",[art.size,...prayerImages.map(x=>statSync(x).size)]);
