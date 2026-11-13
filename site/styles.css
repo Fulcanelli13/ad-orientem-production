@@ -248,3 +248,13 @@ the prototype's JS dataset, fonts or unverified illustrative painting bank. */
 .home-pad.integrated-home-order .civil-day:after{width:18px;height:3px;margin-top:3px}
 .home-pad.integrated-home-order .calendar-door{min-width:45px}
 @media(max-width:340px){.home-hero{height:clamp(365px,calc(100dvh - 330px),550px);min-height:365px}.home-hero .integrated-day-caption h1{font-size:39px}.home-pad.integrated-home-order .civil-day small{font-size:7px;letter-spacing:.3px}.home-pad.integrated-home-order>.enter{min-height:57px}.home-pad.integrated-home-order>.calendar-ribbon{grid-template-columns:minmax(0,1fr) 38px;gap:5px}}
+
+
+/* Render source icons as actual images; Chrome's file-screenshot context may
+   suppress external CSS masks, while these alpha PNGs remain deterministic. */
+.app-header .brand-emblem{filter:brightness(0) invert(1);opacity:.82}
+.nav-image{display:block;object-fit:contain;flex-shrink:0;width:23px;height:23px;filter:brightness(0) invert(1);opacity:.72;transition:opacity .2s}
+.tabbar .tab .nav-image{width:23px;height:23px;margin-top:1px}
+.tabbar .tab.active .nav-image{opacity:1;filter:brightness(0) saturate(100%) invert(84%) sepia(22%) saturate(380%) hue-rotate(356deg) brightness(99%) contrast(85%)}
+.app-header .nav-image{width:22px;height:22px;opacity:.88}
+@media(max-width:340px){.app-header .nav-image{width:20px;height:20px}}
