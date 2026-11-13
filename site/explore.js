@@ -13,7 +13,7 @@ const WORLD = {center:[14,15],zoom:1.25};
 const dictionary={
  en:{
   heading:"Sacred geography",subtitle:"The map for discovering · the card for deciding",
-  sacred:"Sacred Atlas",tlm:"TLM Atlas",search:"Search selected places",reset:"World view",
+  sacred:"Sacred Atlas",tlm:"TLM Atlas",search:"Search places",reset:"World view",
   filter:"Selected sites",list:"Browse places",source:"Coordinate source",
   official:"Official institute page",method:"Location evidence",
   discover:"Discover",hide:"Close",nearby:"Nearby selected sites · straight-line distance",
@@ -29,7 +29,7 @@ const dictionary={
  },
  fr:{
   heading:"Géographie sacrée",subtitle:"La carte pour découvrir · la fiche pour comprendre",
-  sacred:"Atlas sacré",tlm:"Atlas TLM",search:"Rechercher parmi les lieux choisis",reset:"Vue du monde",
+  sacred:"Atlas sacré",tlm:"Atlas TLM",search:"Rechercher un lieu",reset:"Vue du monde",
   filter:"Sites sélectionnés",list:"Parcourir les lieux",source:"Source des coordonnées",
   official:"Site officiel de l'institut",method:"Justificatif du lieu",
   discover:"Découvrir",hide:"Fermer",nearby:"Autres lieux sélectionnés · à vol d'oiseau",
@@ -169,7 +169,7 @@ function selectRecord(id,{fly=true}={}){
  const topOfCard=root.getBoundingClientRect().top;
  if(topOfCard>window.innerHeight*.85)root.scrollIntoView({behavior:"smooth",block:"nearest"});
  renderSummary();
- if(fly&&state.map)state.map.flyTo({center:[Number(record.geo.lng),Number(record.geo.lat)],zoom:Math.max(7,state.map.getZoom()),essential:true});
+ if(fly&&state.map)state.map.flyTo({center:[Number(record.geo.lng),Number(record.geo.lat)],zoom:Math.max(7,state.map.getZoom()),duration:650,essential:false});
 }
 function renderLens(lens){
  if(lens!=="sacred"&&lens!=="tlm")return;
@@ -247,7 +247,7 @@ function attachControls(){
  $("atlas-lens-sacred").addEventListener("click",()=>renderLens("sacred"));
  $("atlas-lens-tlm").addEventListener("click",()=>renderLens("tlm"));
  $("atlas-world").addEventListener("click",()=>{
-  if(state.map){state.map.flyTo({center:WORLD.center,zoom:WORLD.zoom,essential:true});}
+  if(state.map){state.map.flyTo({center:WORLD.center,zoom:WORLD.zoom,duration:600,essential:false});}
   else $("atlas-results").focus();
  });
  $("atlas-language").addEventListener("click",()=>{
