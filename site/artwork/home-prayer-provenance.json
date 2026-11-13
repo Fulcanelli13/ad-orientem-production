@@ -1,0 +1,38 @@
+{
+  "schema": "ao.home.v9-approved-art.v1",
+  "sourcePrototype": "Ad_Orientem_Home_V9_Artwork_Calendar_Functions(1).html",
+  "sourceResearchManifest": "Fulcanelli13/ad-orientem/assets/home/c3-approved-met/source-manifest.json",
+  "scope": "Home prayer design study only. No assignments to Rosary mysteries, canonical calendar dates, liturgical rites, or complete prayer modules.",
+  "homePrayerAssets": [
+    {
+      "file": "site/artwork/champaigne-annunciation-home-v9.jpg",
+      "key": "IMG.annunciation",
+      "artist": "Philippe de Champaigne",
+      "title": "The Annunciation",
+      "year": "ca. 1644",
+      "museum": "Metropolitan Museum of Art",
+      "accession": "2004.31",
+      "objectId": 438724,
+      "objectPage": "https://www.metmuseum.org/art/collection/search/438724",
+      "sourceOriginal": "https://images.metmuseum.org/CRDImages/ep/original/DT5656.jpg",
+      "license": "The Met Open Access public-domain / CC0",
+      "approval": "previously user-approved Home C3 hero and crop 2026-11-02",
+      "note": "Compressed JPEG embedded in Home V9 HTML; not the museum master, not a prayer-engine import"
+    },
+    {
+      "file": "site/artwork/ingres-adoration-home-v9.jpg",
+      "key": "IMG.adoration",
+      "artist": "Jean Auguste Dominique Ingres",
+      "title": "The Virgin Adoring the Host",
+      "year": "1852",
+      "museum": "Metropolitan Museum of Art",
+      "accession": "2005.186",
+      "objectId": 438434,
+      "objectPage": "https://www.metmuseum.org/art/collection/search/438434",
+      "sourceOriginal": "https://images.metmuseum.org/CRDImages/ep/original/DP136074.jpg",
+      "license": "The Met Open Access public-domain / CC0",
+      "approval": "previously user-approved Home C3 hero and crop 2026-11-02",
+      "note": "Compressed JPEG embedded in Home V9 HTML, used for visual study in small preview only; not a Rosary attribution"
+    }
+  ]
+}
