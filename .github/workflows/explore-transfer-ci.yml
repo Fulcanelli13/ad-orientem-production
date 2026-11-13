@@ -1,0 +1,35 @@
+name: Review selected Explore core
+
+on:
+  pull_request:
+    paths:
+      - 'src/find/**'
+      - 'tests/explore-selected-core.mjs'
+      - 'docs/explore-transfer-stage1.md'
+      - '.github/workflows/explore-transfer-ci.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  explore-transfer:
+    name: Provenance, projection and production-boundary contracts
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out this production PR only
+        uses: actions/checkout@v4
+      - name: Use Node 22 without installing research dependencies
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate source-owned Explore invariants
+        run: |
+          set -euo pipefail
+          node --check tests/explore-selected-core.mjs
+          for file in src/find/heritage-map.js src/find/place-source-synopsis.js src/find/geo-provenance.js src/find/sacred-place-visual-fallback.js; do
+            node --experimental-default-type=module --check "$file"
+          done
+          node --experimental-default-type=module tests/explore-selected-core.mjs
+      - name: Ensure existing Home V9 shell remains unaffected
+        run: node tests/production-shell.mjs
