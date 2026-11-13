@@ -7,7 +7,7 @@ import {
 import {renderSacredPlaceFallback} from "./explore/core/sacred-place-visual-fallback.js";
 
 const $ = id => document.getElementById(id);
-const MAPLIBRE_SCRIPT = "https://unpkg.com/maplibre-gl@6.13.0/dist/maplibre-gl.js";
+const MAPLIBRE_MODULE = "https://unpkg.com/maplibre-gl@6.13.0/dist/maplibre-gl.mjs";
 const BASEMAP = "https://tiles.openfreemap.org/styles/dark";
 const WORLD = {center:[14,15],zoom:1.25};
 const dictionary={
@@ -194,16 +194,12 @@ function ensureMapLibreCss(){
  css.href="https://unpkg.com/maplibre-gl@6.13.0/dist/maplibre-gl.css";
  document.head.append(css);
 }
+let mapLibreModulePromise;
 function loadMapLibre(){
- if(window.maplibregl)return Promise.resolve(window.maplibregl);
- return new Promise((resolve,reject)=>{
-  const old=document.getElementById("atlas-maplibre-js");
-  if(old){old.addEventListener("load",()=>resolve(window.maplibregl),{once:true});old.addEventListener("error",reject,{once:true});return;}
-  const script=make("script");script.id="atlas-maplibre-js";script.src=MAPLIBRE_SCRIPT;script.async=true;
-  script.onload=()=>window.maplibregl?resolve(window.maplibregl):reject(new Error("MapLibre failed to initialize"));
-  script.onerror=()=>reject(new Error("MapLibre cannot be downloaded"));
-  document.head.append(script);
- });
+ // MapLibre v6 is ES-module-only: there is no UMD maplibre-gl.js bundle.
+ // This pinned import is the same published ESM distribution used by research.
+ if (!mapLibreModulePromise) mapLibreModulePromise=import(MAPLIBRE_MODULE);
+ return mapLibreModulePromise;
 }
 async function startMap(){
  ensureMapLibreCss();
