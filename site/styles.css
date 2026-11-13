@@ -79,3 +79,83 @@ dialog button{padding:9px 20px;border:1px solid var(--line2);border-radius:10px;
 @media(min-width:550px){body{padding:23px 0}.app{border:1px solid var(--line2);border-radius:36px;min-height:calc(100dvh - 46px)}.view{min-height:calc(100dvh - 46px)}.tabbar{bottom:23px;border-radius:0 0 36px 36px}}
 @media(max-width:340px){.hero{height:490px;min-height:490px}.mass-enter-copy strong{font-size:23px}.path-tile strong{font-size:21px}.wordmark{letter-spacing:3px}}
 @media(prefers-reduced-motion:reduce){.art-mount{animation:none}}
+
+
+/* ===================== HOME V9 SOURCE-GUIDED PRESENTATION =====================
+Source: Ad_Orientem_Home_V9_Artwork_Calendar_Functions(1).html
+Visual rules below replace the first-pass generic hero and tiles. Do not import
+the prototype's JS dataset, fonts or unverified illustrative painting bank. */
+.home-hero{position:relative;height:455px;min-height:455px;overflow:hidden;isolation:isolate;touch-action:pan-y;background:#10171c}
+.hero-panel{position:absolute;inset:0;opacity:0;visibility:hidden;pointer-events:none;transform:translateX(3%);transition:opacity .32s ease,transform .32s ease,visibility .32s}
+.hero-panel.active{opacity:1;visibility:visible;pointer-events:auto;transform:none;z-index:2}
+.hero-painting{display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 30%;transform-origin:50% 35%;filter:saturate(.83);animation:drift 46s ease-in-out infinite alternate}
+.home-hero .hero-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,11,17,.62),rgba(7,11,17,0) 15%,rgba(7,11,17,0) 38%,rgba(7,11,17,.55) 58%,rgba(7,11,17,.93) 78%,var(--bg) 100%)}
+.home-hero .hero-caption{position:absolute;left:0;right:0;bottom:71px;z-index:5;padding:0 22px;text-align:center}
+.home-hero .hero-caption .when{font:600 10.5px var(--cap);letter-spacing:2.6px;color:var(--mu);justify-content:center}
+.home-hero .hero-caption .la{font:italic 500 17px/1.25 var(--corm);color:var(--gold2);margin:9px 0 2px;letter-spacing:.2px}
+.home-hero .hero-caption h1{font:500 40px/1.02 var(--corm);letter-spacing:-.2px;margin:2px 0 10px;text-wrap:balance}
+.home-hero .meta{display:flex;align-items:center;justify-content:center;gap:6px 14px;flex-wrap:wrap;color:var(--mu);font:600 9.5px var(--cap);letter-spacing:1.8px}
+.home-hero .meta span{display:inline-flex;align-items:center;gap:6px}
+.home-hero .meta .sw{width:9px;height:9px;display:inline-block;background:#fff;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(255,255,255,.25)}
+.home-hero .art-tag{position:absolute;top:116px;left:22px;z-index:6;font:600 9px var(--cap);letter-spacing:2px;color:rgba(255,255,255,.75);text-shadow:0 1px 7px #000}
+.home-hero .art-source{position:absolute;top:113px;right:16px;z-index:8;width:26px;height:26px;border-radius:50%;display:grid;place-items:center;color:rgba(255,255,255,.8);background:rgba(9,13,19,.4);border:1px solid rgba(255,255,255,.18);font:italic 600 13px var(--serif);text-decoration:none}
+.home-hero .hero-pager{position:absolute;bottom:8px;left:50%;transform:translateX(-50%);z-index:15;display:flex;align-items:center;justify-content:center;gap:14px;border-radius:30px;background:rgba(9,12,17,.52);border:1px solid rgba(218,185,131,.18);padding:1px 10px}
+.home-hero .hero-step{width:24px;height:31px;display:grid;place-items:center;color:var(--gold2);font:27px/1 var(--corm)}
+.home-hero .hero-dots{display:flex;align-items:center;gap:7px}
+.home-hero .hero-dots button{width:7px;height:7px;min-height:7px;border-radius:20px;background:#a88b67;opacity:.6;transition:width .25s,background .25s}
+.home-hero .hero-dots button.active{width:23px;background:#f3d4a0;opacity:1}
+.home-hero .hero-empty{position:absolute;inset:0;display:grid;place-items:center;overflow:hidden}
+.home-hero .hero-empty span{font:130px var(--corm);color:rgba(234,214,166,.18)}
+.home-hero .scene-prayer{background:radial-gradient(ellipse 90% 60% at 50% 30%,rgba(101,71,47,.65),transparent 65%),linear-gradient(125deg,#211a20,#10151d 60%,#080b10)}
+.home-hero .scene-gospel{background:radial-gradient(ellipse 85% 70% at 45% 30%,rgba(83,69,53,.75),transparent 75%),linear-gradient(155deg,#23303a,#11151c 65%,#070b11)}
+.home-hero .hero-description{color:var(--mu);font:italic 15px/1.3 var(--serif);max-width:290px;margin:8px auto}
+.home-hero .hero-link{font:500 14px var(--serif);color:var(--gold2);padding:5px 12px}
+.home-pad{padding:0 16px}
+.home-pad .calendar-ribbon{display:grid;grid-template-columns:minmax(0,1fr) 46px;gap:7px;margin:12px 0 0;align-items:stretch}
+.home-pad .civil-week{margin:0;padding:8px 4px;display:grid;grid-template-columns:repeat(7,minmax(0,1fr));border-radius:18px;min-height:74px;border:1px solid var(--line);background:var(--card)}
+.home-pad .civil-day{display:flex;align-items:center;flex-direction:column;gap:2px;padding:6px 0 8px;border-radius:12px;position:relative}
+.home-pad .civil-day small{color:var(--mu2);font:600 8.5px var(--cap);letter-spacing:1.4px}
+.home-pad .civil-day span{font:500 21px/1 var(--corm)}
+.home-pad .civil-day:after{content:"";width:18px;height:3px;border-radius:2px;background:#7e6d52;margin-top:5px}
+.home-pad .civil-day.sunday span{color:var(--rub)}
+.home-pad .civil-day.today span{color:var(--gold2)}
+.home-pad .civil-day.today{box-shadow:inset 0 0 0 1px rgba(201,173,120,.45);background:rgba(255,255,255,.07);outline:0}
+.home-pad .calendar-door{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border-radius:16px;border:1px solid rgba(201,173,120,.45);background:linear-gradient(135deg,rgba(201,173,120,.13),rgba(201,173,120,.03));color:var(--gold2);min-width:0}
+.home-pad .calendar-door svg{height:24px;width:24px}
+.home-pad .calendar-door small{font:600 8px var(--cap);letter-spacing:1px;color:var(--gold2)}
+.home-pad .calendar-disclosure{margin:5px 2px 8px;color:var(--mu3);font:italic 10.5px/1.2 var(--serif)}
+.home-pad .enter{display:flex;align-items:center;gap:12px;width:100%;margin:6px 0 0;padding:13px 14px 13px 20px;border-radius:18px;background:linear-gradient(180deg,#efdcae,#cdb07a);color:#1a1307;box-shadow:0 10px 30px rgba(201,173,120,.18),inset 0 1px 0 rgba(255,255,255,.5)}
+.home-pad .enter .t{flex:1;text-align:left}
+.home-pad .enter b{display:block;font:600 23px/1.05 var(--corm);letter-spacing:.1px}
+.home-pad .enter small{display:block;font:600 8.8px var(--cap);letter-spacing:1.6px;color:rgba(26,19,7,.62);margin-top:5px}
+.home-pad .enter .go{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:rgba(26,19,7,.1)}
+.home-pad .enter svg{width:18px;height:18px}
+.home-pad .sec{margin:23px 0 0}
+.home-pad .sech{display:flex;align-items:baseline;justify-content:space-between;margin:0 2px 11px}
+.home-pad .sech h2{font:500 23px var(--corm);margin:0}
+.home-pad .sech button{font:500 14.5px var(--serif);color:var(--gold);text-decoration:none}
+.home-pad .hour-prayer{display:grid;grid-template-columns:37% 63%;min-height:174px;overflow:hidden;border:1px solid rgba(214,180,124,.5);border-radius:18px;background:#11161c;color:var(--ink);padding:0;width:100%;text-align:left}
+.home-pad .hour-art{height:100%;min-height:174px;background:radial-gradient(ellipse at 50% 32%,rgba(201,173,120,.27),transparent 65%),linear-gradient(160deg,#252326,#10151a);display:grid;place-items:center}
+.home-pad .hour-art span{font:80px var(--corm);color:rgba(234,214,166,.33)}
+.home-pad .hour-text{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;padding:12px 12px 12px 16px}
+.home-pad .hour-text small{font:600 8px var(--cap);letter-spacing:1.4px;color:var(--gold2)}
+.home-pad .hour-text strong{font:500 27px/1.05 var(--corm);margin:10px 0 6px}
+.home-pad .hour-text>span{font:italic 14px var(--serif);color:var(--mu)}
+.home-pad .hour-text em{font:600 9px var(--cap);letter-spacing:1px;color:var(--gold2);font-style:normal;margin-top:12px}
+.home-pad .prayer-tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin-top:9px}
+.home-pad .prayer-tiles button{min-height:116px;border-radius:16px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;color:var(--ink);background:linear-gradient(155deg,rgba(201,173,120,.16),rgba(255,255,255,.025));border:1px solid var(--line)}
+.home-pad .prayer-tiles button span{font:30px var(--corm);color:var(--gold)}
+.home-pad .prayer-tiles button strong{font:500 17px var(--corm)}
+.home-pad .section-hint{font:600 8px var(--cap);letter-spacing:1px;color:var(--mu3)}
+.home-pad .custom-card{padding:19px 20px;border:1px solid var(--line);border-radius:18px;background:linear-gradient(155deg,rgba(201,173,120,.08),rgba(201,173,120,.015))}
+.home-pad .custom-card h3{font:500 22px var(--corm);margin:9px 0 5px}
+.home-pad .custom-card p{font:15px var(--serif);color:var(--mu);margin:0}
+.home-pad .foundation-note{font:italic 12px var(--serif);color:var(--mu3);text-align:center;margin:28px 0 24px}
+.home-pad .foundation-note span{display:block;margin-top:7px}
+.app-header .wordmark{font:600 12.5px var(--cap);letter-spacing:5.2px;opacity:.92}
+.tabbar .tab{display:flex;flex-direction:column;align-items:center;gap:4px;font:500 12.5px var(--serif)}
+.tabbar svg{width:23px;height:23px;display:block}
+.tabbar .tab.active svg{color:var(--gold2)}
+@media(max-width:359px){.home-hero{height:432px;min-height:432px}.home-hero .hero-caption h1{font-size:32px}.home-pad{padding:0 14px}.home-pad .calendar-ribbon{grid-template-columns:minmax(0,1fr) 40px;gap:4px}.home-pad .calendar-door{min-width:40px}.home-pad .calendar-door svg{width:20px;height:20px}.home-pad .prayer-tiles button strong{font-size:15px}}
+@media(min-width:550px){.home-hero{height:455px}}
+@media(prefers-reduced-motion:reduce){.hero-painting{animation:none}.hero-panel{transition:none}.hero-dots button{transition:none}}
