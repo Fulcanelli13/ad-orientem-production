@@ -36,3 +36,9 @@ For every feature, specify:
 5. Revert/rollback point and deployment verification.
 
 Do not import a feature merely because it exists in the research repository.
+
+## Stage 2 selected Explore pilot — draft branch only (13 November 2026)
+
+The user-selected **Explore / Sacred Atlas / TLM Atlas** transfer is staged on production [draft PR #1](https://github.com/Fulcanelli13/ad-orientem-production/pull/1). This PR connects one real MapLibre map to Home V9 without importing the old Explore shell or PR backlog. It holds an independently sourced subset of **18 Sacred Places** and **10 ICKSP TLM venues**. The latter correspond to already-mapped Excel CL2 site anchors from the 11 November workbook, not new site coordinates. Full 530-Place/2,582-CL2 coverage, new Mass dates, custom maps, unapproved images and research automations remain excluded.
+
+Review manifest and source record: [Stage 2 Explore transfer](docs/explore-transfer-stage2.md). This stage is **not on `main` or deployed** until reviewed, approved and merged. Source/rights, route reuse and mobile screenshots must remain green. The old research repository stays active.
