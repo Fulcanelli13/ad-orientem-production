@@ -10,6 +10,10 @@ assert.equal(data.schema,"AO_PRODUCTION_EXPLORE_SELECTED_V1");
 assert.equal(data.research_commit,"9b7fafd120b90632b2c376aed4f609235cd15709");
 assert.equal(data.sacred.length,18,"Only 18 explicitly selected Sacred records");
 assert.equal(data.tlm.length,10,"Only 10 official-venue TLM records");
+assert.equal(data.excel_control?.snapshot_date,"2026-11-11");
+assert.equal(data.excel_control?.sheet,"All 2582 CL2 Sites");
+assert.equal(data.tlm.some(x=>x.id.includes("st-mary-oratory-517-elm-st-rockford")),false,
+ "Do not substitute a new OSM pin for the previously mapped Rockford CL2 coordinate");
 assert.equal(Object.keys(data.source_blobs).length,4);
 const records=validatedDataset(data);
 assert.equal(records.sacred.length,18);
@@ -33,6 +37,9 @@ for(const venue of records.tlm){
   assert.equal(publishable(venue,"tlm"),true,"Venue must pass official ministry and geo: "+venue.id);
   assert.equal(venue.community_id,"ICKSP");
   assert.equal(venue.relationship,"served_by");
+  assert.match(venue.cl2_site_id,/^RG-[A-F0-9]+$/,"Missing Excel CL2 anchor");
+  assert.equal(venue.cl2_status,"MAPPED_IN_PRIOR_APP");
+  assert.ok(Number.isInteger(venue.cl2_excel_row)&&venue.cl2_excel_row>1);
   assert.equal(venue.schedule_status,"NOT_IMPORTED");
   assert.equal(venue.liturgical_form,"TRADITIONAL_LATIN");
   assert.ok(safeLink(venue.official_url)&&safeLink(venue.source_url));
@@ -45,6 +52,10 @@ assert.throws(()=>validatedDataset(invalid),/Held or duplicate record/);
 const duplicates=structuredClone(data);
 duplicates.tlm.push({...duplicates.tlm[0]});
 assert.throws(()=>validatedDataset(duplicates),/Held or duplicate record/);
+const unapproved=structuredClone(data);
+unapproved.tlm[0].cl2_site_id=null;
+assert.throws(()=>validatedDataset(unapproved),/Held or duplicate record/,
+ "TLM venue without a mapped Excel site anchor must not enter production");
 assert.equal(searchEntries(records.sacred,"Mauritius").length>0,true);
 assert.equal(searchEntries(records.tlm,"Stanislaus").length,1);
 assert.equal(searchEntries(records.tlm,"this definitely does not exist").length,0);
