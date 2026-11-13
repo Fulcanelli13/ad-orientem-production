@@ -6,17 +6,21 @@
   <meta name="theme-color" content="#070b11">
   <meta name="description" content="Ad Orientem — production foundation for a contemplative traditional Roman Catholic app.">
   <title>Ad Orientem</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/brand/typography.css">
   <link rel="stylesheet" href="./styles.css">
   <script src="./app.js" defer></script>
 </head>
 <body>
   <div class="app">
     <header class="app-header">
-      <div class="wordmark">AD ORIENTEM</div>
-      <button class="about-button" id="about-button" type="button" aria-label="About this foundation" title="About this foundation">i</button>
+      <div class="brand-lockup">
+        <img class="brand-emblem" src="./assets/brand/ao-brand-emblem.png" alt="" width="25" height="25">
+        <div class="wordmark">AD ORIENTEM</div>
+      </div>
+      <div class="header-actions">
+        <button class="header-calendar" type="button" data-route="calendar" aria-label="Open the Calendar"><span class="icon-mask icon-calendar" aria-hidden="true"></span></button>
+        <button class="about-button" id="about-button" type="button" aria-label="Production status and settings" title="Production status"><span class="icon-mask icon-settings" aria-hidden="true"></span></button>
+      </div>
     </header>
 
     <main id="main">
@@ -123,11 +127,11 @@
     </main>
 
     <nav class="tabbar" aria-label="Main navigation">
- <button type="button" class="tab active" data-route="home" aria-current="page"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3M5.3 5.3l2.1 2.1M16.6 16.6l2.1 2.1M5.3 18.7l2.1-2.1M16.6 7.4l2.1-2.1"/><path d="M12 10v4M10 12h4"/></svg><span>Today</span></button>
- <button type="button" class="tab" data-route="pray"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3c-1 2-1.6 4.5-1.6 7.5V20M12 3c1 2 1.6 4.5 1.6 7.5V20M10.4 11c-2.2 1.3-3.6 3.6-4 7.8M13.6 11c2.2 1.3 3.6 3.6 4 7.8"/></svg><span>Pray</span></button>
- <button type="button" class="tab" data-route="formation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5zM12 6.5v13"/></svg><span>Formation</span></button>
- <button type="button" class="tab" data-route="atlas"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5 5"/></svg><span>Explore</span></button>
-</nav>
+      <button type="button" class="tab active" data-route="home" aria-current="page"><span class="icon-mask icon-home" aria-hidden="true"></span><span>Today</span></button>
+      <button type="button" class="tab" data-route="pray"><span class="icon-mask icon-prayer" aria-hidden="true"></span><span>Pray</span></button>
+      <button type="button" class="tab" data-route="formation"><span class="icon-mask icon-book" aria-hidden="true"></span><span>Formation</span></button>
+      <button type="button" class="tab" data-route="atlas"><span class="icon-mask icon-atlas" aria-hidden="true"></span><span>Explore</span></button>
+    </nav>
   </div>
 
   <dialog id="prayer-art-dialog" class="artwork-dialog" aria-labelledby="prayer-art-title">
