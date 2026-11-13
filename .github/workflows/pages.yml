@@ -1,0 +1,52 @@
+name: Publish Ad Orientem production
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages-production
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    name: Validate and deploy curated site
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out production source
+        uses: actions/checkout@v4
+      - name: Validate the foundation
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -s site/index.html
+          test -s site/styles.css
+          test -s site/app.js
+          grep -Fq 'AD ORIENTEM' site/index.html
+          grep -Fq 'NOT YET TRANSFERRED' site/index.html
+          node --check site/app.js
+          if grep -Rni 'vercel' site/; then
+            echo 'Vercel references are not allowed in the production site.' >&2
+            exit 1
+          fi
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+      - name: Upload curated site only
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
