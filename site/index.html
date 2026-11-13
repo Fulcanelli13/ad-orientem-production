@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./explore.css">
   <script src="./app.js" defer></script>
 </head>
 <body>
@@ -118,6 +119,46 @@
           <p id="module-description"></p>
           <p class="module-status">NOT YET TRANSFERRED</p>
           <button class="return-home" type="button" data-route="home">Return to Home</button>
+        </div>
+      </section>
+      <section id="atlas-view" class="view atlas-view" aria-label="Explore the selected Atlas" hidden>
+        <div class="atlas-frame">
+          <header class="atlas-top">
+            <button class="atlas-return" type="button" data-route="home" aria-label="Return to Home">‹</button>
+            <div class="atlas-title-block">
+              <p class="atlas-kicker">AD ORIENTEM · EXPLORE</p>
+              <h1 id="atlas-heading">Sacred geography</h1>
+              <p id="atlas-subtitle" class="atlas-subtitle">The map for discovering · the card for deciding</p>
+            </div>
+            <button type="button" id="atlas-language" class="atlas-lang" aria-label="Switch Atlas language">FR</button>
+          </header>
+          <nav class="atlas-switch" role="tablist" aria-label="Explore atlas collections">
+            <button id="atlas-lens-sacred" role="tab" class="active" type="button" aria-selected="true">Sacred Atlas</button>
+            <button id="atlas-lens-tlm" role="tab" type="button" aria-selected="false">TLM Atlas</button>
+          </nav>
+          <div class="atlas-toolbar">
+            <input id="atlas-search" class="atlas-search" type="search" autocomplete="off" placeholder="Search selected places" aria-label="Search selected places">
+            <button id="atlas-world" class="atlas-world" type="button" aria-label="World view">World view</button>
+          </div>
+          <p id="atlas-selection-note" class="atlas-notice">Curated starting selection · not a complete worldwide directory</p>
+          <div class="atlas-content">
+            <div class="atlas-map-column">
+              <div class="atlas-map-shell">
+                <div id="atlas-map" aria-label="Interactive map of selected source-backed sites"></div>
+                <p id="atlas-map-status" class="atlas-map-state" role="status">Loading source-backed sites</p>
+              </div>
+              <p id="atlas-map-hint" class="atlas-map-hint">Map pins identify sites, not always precise entrances.</p>
+            </div>
+            <section class="atlas-sheet" aria-labelledby="atlas-results-title">
+              <header class="atlas-sheet-header">
+                <h2 id="atlas-results-title">Browse places</h2>
+                <span id="atlas-count" class="atlas-count" aria-live="polite">—</span>
+              </header>
+              <ul id="atlas-results" class="atlas-results" tabindex="0" aria-label="Selected Atlas records"></ul>
+            </section>
+            <article id="atlas-card" class="atlas-card" hidden aria-label="Source-backed place profile"></article>
+          </div>
+          <p class="atlas-end-note">Initial verified selection only. No inferred upcoming Mass times, unapproved photographs or unverified site entrances.</p>
         </div>
       </section>
     </main>
