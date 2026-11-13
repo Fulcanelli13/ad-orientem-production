@@ -258,3 +258,11 @@ the prototype's JS dataset, fonts or unverified illustrative painting bank. */
 .tabbar .tab.active .nav-image{opacity:1;filter:brightness(0) saturate(100%) invert(84%) sepia(22%) saturate(380%) hue-rotate(356deg) brightness(99%) contrast(85%)}
 .app-header .nav-image{width:22px;height:22px;opacity:.88}
 @media(max-width:340px){.app-header .nav-image{width:20px;height:20px}}
+
+
+/* Source silhouettes are now inline vector paths derived from the approved
+   160px alpha icons: independent of file-origin image loading and CSS masks. */
+.nav-svg{display:block;width:23px;height:23px;flex-shrink:0;color:var(--mu2);overflow:visible}
+.tabbar .tab.active .nav-svg{color:var(--gold2)}
+.app-header .nav-svg{width:21px;height:21px;color:var(--ink)}
+@media(max-width:340px){.app-header .nav-svg{width:19px;height:19px}.home-hero .integrated-day-caption .when{font-size:7px;letter-spacing:1.1px}}
