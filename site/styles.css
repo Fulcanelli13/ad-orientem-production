@@ -163,7 +163,7 @@ the prototype's JS dataset, fonts or unverified illustrative painting bank. */
 
 /* Home V9 visual acceptance pass · painting-led prayer composition.
    Keep this single set of overrides until the source-only V9 rules are consolidated. */
-.home-pad .prayer-door-v9{margin-top:21px}
+.home-pad .prayer-door-v9{display:block;width:100%;margin-top:21px;padding:0;border:0;background:none;text-align:initial;align-items:initial;gap:0;border-radius:0}
 .home-pad .prayer-door-v9 .sech{margin-bottom:9px}
 .home-pad .prayer-door-v9 .hour-prayer-frame{position:relative}
 .home-pad .prayer-door-v9 .hour-prayer{display:block;position:relative;min-height:0;height:auto;overflow:hidden;border:1px solid rgba(214,180,124,.5);border-radius:18px;background:#11161c;color:var(--ink);padding:0;width:100%;text-align:left;transform:none}
