@@ -15,9 +15,10 @@ Phase 1 foundation:
 - Mobile-first Home layout and horizontal hero carousel; working hash navigation into clearly marked untransferred module entrances.
 - Neutral civil-week strip. The 1962 liturgical calendar is **not** imported.
 - **One approved CC0 artwork**: a locally served Home V9 compressed reproduction of Carlo Saraceni's *Paradise* from The Met. The image is a visual-study asset **not a day-specific calendar assignment**. See `site/artwork/provenance.json`.
-- No Mass, prayer, formation, Atlas or calendar engines/data have been transferred.
+- No Mass, prayer, formation or calendar engines/data have been transferred.
+- **Explore pilot on draft PR #1 only:** an independently validated, two-lens MapLibre module is connected to the existing `#atlas` entrance on the staging branch. It contains 18 sourced Sacred Places and 10 ICKSP venues matched to already mapped CL2/Excel sites; no Mass schedules or approved site photos were imported. It is NOT part of published `main` until owner-reviewed and merged. See [stage 2 transfer](docs/explore-transfer-stage2.md).
 
-This is a **foundation, not a completed application**. Visual parity with the approved source has not been signed off.
+This is a **foundation with an owner-review Explore pilot on a draft branch**, not a completed application. Full Claude visual parity and worldwide Atlas coverage are not signed off.
 
 ## Publication
 
