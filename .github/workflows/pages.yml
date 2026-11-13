@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'site/**'
+      - 'tests/**'
       - '.github/workflows/pages.yml'
   workflow_dispatch:
 
@@ -37,6 +38,7 @@ jobs:
           grep -Fq 'AD ORIENTEM' site/index.html
           grep -Fq 'NOT YET TRANSFERRED' site/index.html
           node --check site/app.js
+          node tests/production-shell.mjs
           if grep -Rni 'vercel' site/; then
             echo 'Vercel references are not allowed in the production site.' >&2
             exit 1
