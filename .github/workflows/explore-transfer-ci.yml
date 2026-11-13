@@ -5,7 +5,7 @@ on:
     paths:
       - 'src/find/**'
       - 'site/**'
-      - 'tests/explore-selected-core.mjs'
+      - 'tests/**'
       - 'docs/explore-transfer-stage1.md'
       - '.github/workflows/explore-transfer-ci.yml'
   workflow_dispatch:
@@ -42,3 +42,36 @@ jobs:
           node --experimental-default-type=module tests/production-explore.mjs
       - name: Ensure existing Home V9 shell remains unaffected
         run: node tests/production-shell.mjs
+
+  browser-acceptance:
+    name: Real phone and desktop Atlas
+    needs: [explore-transfer]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out this production PR only
+        uses: actions/checkout@v4
+      - name: Use Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build curated site-only Explore module copies
+        run: |
+          set -euo pipefail
+          mkdir -p site/explore/core
+          for file in heritage-map place-source-synopsis geo-provenance sacred-place-visual-fallback; do
+            cp "src/find/$file.js" "site/explore/core/$file.js"
+          done
+      - name: Install Playwright test runner
+        run: |
+          npm install --no-save --ignore-scripts --no-audit --no-fund @playwright/test@1.64.1
+          npx playwright install --with-deps chromium
+      - name: Run full map and source-link acceptance
+        run: node --experimental-default-type=module tests/explore-browser.mjs
+      - name: Preserve EN/FR 320-1440 screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-explore-screenshots
+          path: artifacts/production-explore
+          if-no-files-found: warn
