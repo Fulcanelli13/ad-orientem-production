@@ -30,6 +30,9 @@ export function publishable(entry, lens) {
       entry.liturgical_form === "TRADITIONAL_LATIN" &&
       entry.schedule_status === "NOT_IMPORTED" &&
       entry.media_status === "NO_IMAGE_TRANSFERRED" &&
+      /^RG-[A-F0-9]+$/.test(plain(entry.cl2_site_id)) &&
+      Number.isInteger(entry.cl2_excel_row) && entry.cl2_excel_row > 1 &&
+      entry.cl2_status === "MAPPED_IN_PRIOR_APP" &&
       safeLink(entry.official_url) && safeLink(entry.source_url) &&
       isMapPublishableGeo(entry.geo, entry.country_code);
   }
@@ -38,7 +41,9 @@ export function publishable(entry, lens) {
 export function validatedDataset(data) {
   if (data?.schema !== "AO_PRODUCTION_EXPLORE_SELECTED_V1" ||
       !Array.isArray(data.sacred) || !Array.isArray(data.tlm) ||
-      !plain(data.research_commit) || !data.source_blobs) {
+      !plain(data.research_commit) || !data.source_blobs ||
+      data.excel_control?.snapshot_date !== "2026-11-11" ||
+      data.excel_control?.sheet !== "All 2582 CL2 Sites") {
     throw new Error("Invalid curated Atlas schema");
   }
   const result = { sacred:[], tlm:[] }, seen = new Set();
