@@ -262,7 +262,7 @@ the prototype's JS dataset, fonts or unverified illustrative painting bank. */
 
 /* Source silhouettes are now inline vector paths derived from the approved
    160px alpha icons: independent of file-origin image loading and CSS masks. */
-.nav-svg{display:block;width:23px;height:23px;flex-shrink:0;color:var(--mu2);overflow:visible}
+.nav-svg{display:block;width:23px;height:23px;flex-shrink:0;color:var(--mu2);overflow:visible;-webkit-mask-image:none!important;mask-image:none!important}
 .tabbar .tab.active .nav-svg{color:var(--gold2)}
 .app-header .nav-svg{width:21px;height:21px;color:var(--ink)}
 @media(max-width:340px){.app-header .nav-svg{width:19px;height:19px}.home-hero .integrated-day-caption .when{font-size:7px;letter-spacing:1.1px}}
