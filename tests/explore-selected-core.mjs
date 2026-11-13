@@ -83,8 +83,8 @@ for(const file of ["src/find/heritage-map.js","src/find/place-source-synopsis.js
     "Pure selectively transferred modules must not fetch hidden research data: "+file);
 }
 const live=readFileSync("site/app.js","utf8");
-assert.match(live,/still in the research repository/,
-  "Do not advertise Atlas as published before runtime+registry acceptance");
+assert.match(live,/selected, source-verified Atlas pilot/,
+  "Atlas route must disclose the limited selected-cohort status");
 assert.ok(!readFileSync("site/index.html","utf8").includes("src/find/"),
   "New core functions must not silently join the deployed site");
 console.log("PASS selected Explore core: exact Place identity, geo provenance, source-scoped text, no invented photo, no public transfer");
