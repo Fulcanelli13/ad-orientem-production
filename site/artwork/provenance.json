@@ -1,0 +1,20 @@
+{
+  "schema": "ad-orientem.home-art.provenance.v1",
+  "status": "approved-work-visual-study-only",
+  "liturgical_date_assignment": null,
+  "asset": "artwork/saraceni-paradise-v9.jpg",
+  "source_prototype": "Ad_Orientem_Home_V9_Artwork_Calendar_Functions(1).html",
+  "source_prototype_key": "IMG.saraceni",
+  "title": "Paradise",
+  "creator": "Carlo Saraceni",
+  "date": "ca. 1598",
+  "institution": "The Metropolitan Museum of Art",
+  "accession": "1971.93",
+  "object_id": 437607,
+  "museum_source": "https://www.metmuseum.org/art/collection/search/437607",
+  "image_source": "https://commons.wikimedia.org/wiki/File:Paradise_MET_DT1448.jpg",
+  "rights": "CC0 1.0",
+  "rights_source": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_description": "Exact compressed JPEG embedded in the owner-selected Claude Home V9 reference. No prototype fonts, application datasets, scripts or other images migrated.",
+  "usage_restrictions": "Home hero visual reference only. Do not infer any liturgical day assignment or use for the daily calendar without editorial approval."
+}
