@@ -39,6 +39,16 @@ jobs:
           grep -Fq 'NOT YET TRANSFERRED' site/index.html
           node --check site/app.js
           node tests/production-shell.mjs
+          # Explicit, reviewable allowlist: copy ONLY the four imported pure
+          # Explore modules to the curated artifact, not the research tree.
+          mkdir -p site/explore/core
+          for file in heritage-map place-source-synopsis geo-provenance sacred-place-visual-fallback; do
+            cp "src/find/$file.js" "site/explore/core/$file.js"
+          done
+          node --experimental-default-type=module --check site/explore.js
+          node --experimental-default-type=module --check site/explore/model.js
+          node --experimental-default-type=module tests/explore-selected-core.mjs
+          node --experimental-default-type=module tests/production-explore.mjs
           if grep -Rni 'vercel' site/; then
             echo 'Vercel references are not allowed in the production site.' >&2
             exit 1
