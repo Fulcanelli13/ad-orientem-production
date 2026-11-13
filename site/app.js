@@ -63,15 +63,14 @@ function createCivilWeek() {
   const longFormatter = new Intl.DateTimeFormat(locale, {
     weekday: "long", month: "long", day: "numeric", year: "numeric"
   });
-  const mondayOffset = (now.getDay() + 6) % 7;
-  const monday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - mondayOffset);
+  const sunday = new Date(now.getFullYear(), now.getMonth(), now.getDate() - now.getDay());
   const grid = byId("civil-week");
   grid.replaceChildren();
   for (let i = 0; i < 7; i += 1) {
-    const date = new Date(monday.getFullYear(), monday.getMonth(), monday.getDate() + i);
+    const date = new Date(sunday.getFullYear(), sunday.getMonth(), sunday.getDate() + i);
     const selected = date.toDateString() === now.toDateString();
     const cell = document.createElement("div");
-    cell.className = "civil-day" + (selected ? " today" : "");
+    cell.className = "civil-day" + (i === 0 ? " sunday" : "") + (selected ? " today" : "");
     cell.setAttribute("aria-label", longFormatter.format(date) + (selected ? ", today" : ""));
     if (selected) cell.setAttribute("aria-current", "date");
     const name = document.createElement("small");
@@ -88,11 +87,53 @@ document.addEventListener("click", event => {
 });
 byId("back-button").addEventListener("click", () => showRoute("home"));
 byId("about-button").addEventListener("click", () => byId("about-dialog").showModal());
-byId("art-info").addEventListener("click", () => {
-  const note = byId("art-note");
-  note.hidden = !note.hidden;
-  byId("art-info").setAttribute("aria-expanded", String(!note.hidden));
+/* The V9 home has a three-panel hero; secondary panels are labelled previews. */
+let heroIndex = 0;
+const heroPanels = [...document.querySelectorAll(".home-hero .hero-panel")];
+const heroDots = [...document.querySelectorAll(".home-hero .hero-dots button")];
+function showHero(index) {
+  heroIndex = ((index % heroPanels.length) + heroPanels.length) % heroPanels.length;
+  heroPanels.forEach((panel, i) => {
+    const active = i === heroIndex;
+    panel.classList.toggle("active", active);
+    panel.setAttribute("aria-hidden", String(!active));
+    /* Prevent hidden slide buttons from receiving keyboard focus. */
+    panel.inert = !active;
+  });
+  heroDots.forEach((dot, i) => {
+    const active = i === heroIndex;
+    dot.classList.toggle("active", active);
+    dot.setAttribute("aria-pressed", String(active));
+  });
+}
+document.querySelectorAll("[data-slide-go]").forEach(button =>
+  button.addEventListener("click", () => showHero(Number(button.dataset.slideGo)))
+);
+document.querySelectorAll("[data-slide-move]").forEach(button =>
+  button.addEventListener("click", () => showHero(heroIndex + Number(button.dataset.slideMove)))
+);
+const homeHero = document.querySelector(".home-hero");
+let touchStartX = null;
+let touchStartY = null;
+homeHero.addEventListener("touchstart", event => {
+  if (event.touches.length !== 1) return;
+  touchStartX = event.touches[0].clientX;
+  touchStartY = event.touches[0].clientY;
+}, { passive: true });
+homeHero.addEventListener("touchend", event => {
+  if (touchStartX == null || !event.changedTouches.length) return;
+  const deltaX = event.changedTouches[0].clientX - touchStartX;
+  const deltaY = event.changedTouches[0].clientY - touchStartY;
+  touchStartX = touchStartY = null;
+  if (Math.abs(deltaX) > 45 && Math.abs(deltaX) > Math.abs(deltaY) * 1.3) {
+    showHero(heroIndex + (deltaX < 0 ? 1 : -1));
+  }
+}, { passive: true });
+homeHero.addEventListener("keydown", event => {
+  if (event.key === "ArrowRight") { showHero(heroIndex + 1); event.preventDefault(); }
+  if (event.key === "ArrowLeft") { showHero(heroIndex - 1); event.preventDefault(); }
 });
+showHero(0);
 window.addEventListener("popstate", () => showRoute(routeFromHash(), false));
 window.addEventListener("hashchange", () => showRoute(routeFromHash(), false));
 createCivilWeek();
