@@ -59,6 +59,8 @@ function showRoute(route, updateHistory = true) {
 function createCivilWeek() {
   const now = new Date();
   const locale = document.documentElement.lang || "en";
+  const topDate = document.getElementById("home-current-date");
+  if (topDate) topDate.textContent = new Intl.DateTimeFormat(locale, { weekday: "long", day: "numeric", month: "long" }).format(now);
   const dayFormatter = new Intl.DateTimeFormat(locale, { weekday: "short" });
   const longFormatter = new Intl.DateTimeFormat(locale, {
     weekday: "long", month: "long", day: "numeric", year: "numeric"
@@ -74,7 +76,7 @@ function createCivilWeek() {
     cell.setAttribute("aria-label", longFormatter.format(date) + (selected ? ", today" : ""));
     if (selected) cell.setAttribute("aria-current", "date");
     const name = document.createElement("small");
-    name.textContent = dayFormatter.format(date).charAt(0).toUpperCase();
+    name.textContent = dayFormatter.format(date).slice(0,3).toUpperCase();
     const number = document.createElement("span");
     number.textContent = String(date.getDate());
     cell.append(name, number);
