@@ -182,6 +182,10 @@ function renderLens(lens){
 function syncMap(){
  if(!state.map||!state.sourceLoaded)return;
  state.map.getSource("ao-selected-sites")?.setData(featureCollection(visibleEntries()));
+ // Reuse the one map/source, but make the active lens visibly distinct.
+ if(state.map.getLayer("ao-selected-pins"))
+  state.map.setPaintProperty("ao-selected-pins","circle-color",
+   state.lens==="sacred"?"#c9ad78":"#e6d8b4");
 }
 async function loadDataset(){
  const res=await fetch("./explore/selected-sites.v1.json",{cache:"no-cache"});
