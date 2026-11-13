@@ -43,6 +43,30 @@ jobs:
             echo 'Vercel references are not allowed in the production site.' >&2
             exit 1
           fi
+      - name: Capture mobile review screenshots
+        shell: bash
+        run: |
+          set -euo pipefail
+          CHROME="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$CHROME" ]; then
+            echo "Headless Chrome not preinstalled; screenshots skipped."
+            exit 0
+          fi
+          mkdir -p screenshots
+          for VIEW in "390 844 mobile-390" "320 700 mobile-320" "1280 900 desktop"; do
+            read -r WIDTH HEIGHT LABEL <<< "$VIEW"
+            timeout 35s "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage               --hide-scrollbars --force-device-scale-factor=1 --virtual-time-budget=1500               --user-data-dir="$RUNNER_TEMP/ao-chrome-$LABEL"               --window-size="$WIDTH,$HEIGHT"               --screenshot="screenshots/$LABEL.png"               "file://$GITHUB_WORKSPACE/site/index.html" >/dev/null 2>&1 || true
+            if [ -f "screenshots/$LABEL.png" ]; then
+              echo "$LABEL: $(stat -c '%s bytes' "screenshots/$LABEL.png")"
+            fi
+          done
+      - name: Attach viewport screenshots for visual acceptance
+        uses: actions/upload-artifact@v4
+        with:
+          name: home-v9-viewport-review
+          path: screenshots/*.png
+          if-no-files-found: ignore
+          retention-days: 7
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
       - name: Upload curated site only
