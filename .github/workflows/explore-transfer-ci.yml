@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'src/find/**'
+      - 'site/**'
       - 'tests/explore-selected-core.mjs'
       - 'docs/explore-transfer-stage1.md'
       - '.github/workflows/explore-transfer-ci.yml'
@@ -26,10 +27,18 @@ jobs:
       - name: Validate source-owned Explore invariants
         run: |
           set -euo pipefail
+          mkdir -p site/explore/core
+          for file in heritage-map place-source-synopsis geo-provenance sacred-place-visual-fallback; do
+            cp "src/find/$file.js" "site/explore/core/$file.js"
+          done
+          node --experimental-default-type=module --check site/explore.js
+          node --experimental-default-type=module --check site/explore/model.js
+          node --experimental-default-type=module --check tests/production-explore.mjs
           node --check tests/explore-selected-core.mjs
           for file in src/find/heritage-map.js src/find/place-source-synopsis.js src/find/geo-provenance.js src/find/sacred-place-visual-fallback.js; do
             node --experimental-default-type=module --check "$file"
           done
           node --experimental-default-type=module tests/explore-selected-core.mjs
+          node --experimental-default-type=module tests/production-explore.mjs
       - name: Ensure existing Home V9 shell remains unaffected
         run: node tests/production-shell.mjs
