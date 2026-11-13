@@ -74,7 +74,7 @@ function createCivilWeek() {
     cell.setAttribute("aria-label", longFormatter.format(date) + (selected ? ", today" : ""));
     if (selected) cell.setAttribute("aria-current", "date");
     const name = document.createElement("small");
-    name.textContent = dayFormatter.format(date).slice(0, 2).toUpperCase();
+    name.textContent = dayFormatter.format(date).charAt(0).toUpperCase();
     const number = document.createElement("span");
     number.textContent = String(date.getDate());
     cell.append(name, number);
