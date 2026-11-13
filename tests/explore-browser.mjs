@@ -43,6 +43,10 @@ try{
    null,{timeout:20000});
   await page.waitForFunction(()=>document.querySelectorAll("#atlas-map canvas").length===1,
    null,{timeout:30000});
+  // Canvas allocation alone does not imply that tiles and source-backed pins
+  // are ready. The "load" event hides this status only after adding GeoJSON.
+  await page.waitForFunction(()=>document.getElementById("atlas-map-status")?.hidden===true,
+   null,{timeout:30000});
   assert.equal(await page.locator(".atlas-switch > button").count(),2,"Exactly two top-level Atlases");
   assert.equal(await page.locator(".tabbar > button").count(),4,"Exactly four original bottom tabs");
   assert.equal(await page.locator("#atlas-results > li").count(),18);
@@ -78,7 +82,7 @@ try{
   await page.screenshot({path:join("artifacts/production-explore",width+"-fr-tlm.png"),
    animations:"disabled",fullPage:true});
   await page.locator("#atlas-world").click();
-  await page.locator('[data-route="home"]').first().click();
+  await page.locator('#atlas-view [data-route="home"]').click();
   await page.locator("#home-view").waitFor({state:"visible"});
   await page.locator('[data-route="atlas"]').first().click();
   await page.locator("#atlas-view").waitFor({state:"visible"});
