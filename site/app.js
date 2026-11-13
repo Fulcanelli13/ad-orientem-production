@@ -87,6 +87,7 @@ document.addEventListener("click", event => {
 });
 byId("back-button").addEventListener("click", () => showRoute("home"));
 byId("about-button").addEventListener("click", () => byId("about-dialog").showModal());
+byId("prayer-art-expand").addEventListener("click", () => byId("prayer-art-dialog").showModal());
 /* The V9 home has a three-panel hero; secondary panels are labelled previews. */
 let heroIndex = 0;
 const heroPanels = [...document.querySelectorAll(".home-hero .hero-panel")];
