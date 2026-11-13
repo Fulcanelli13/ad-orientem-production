@@ -17,10 +17,10 @@ This is the **production application repository**. `Fulcanelli13/ad-orientem` re
 - A mobile-first, source-guided Home V9 layout (hero, pager, calendar ribbon, Mass entrance, prayer entrance, tab icons), using the approved **Cinzel**, **Cormorant Garamond** and **EB Garamond** families and reference design tokens.
 - Working local navigation between Home and clearly marked **not yet transferred** module entrance screens.
 - A neutral civil-week row; **not** a claim that the canonical 1962 Roman calendar has been imported.
-- A single approved CC0 artwork, Carlo Saraceni's *Paradise*, self-hosted solely as the Home V9 visual-study painting. It has no canonical date assignment; its provenance is at `site/artwork/provenance.json`.
+- Three small, locally served, previously approved public-domain Met visual-study reproductions: Carlo Saraceni's *Paradise* for the Home hero, Philippe de Champaigne's *The Annunciation* for the painting-led prayer entrance, and Ingres's *The Virgin Adoring the Host* in a small Home preview. These are **Home presentation assets only**; none is assigned to a liturgical date or a Rosary mystery. Provenance is in `site/artwork/provenance.json` and `site/artwork/home-prayer-provenance.json`.
 - GitHub Actions deployment of curated `site/` output only.
 
-**Visual acceptance is still pending.** The font families are requested from a public stylesheet and use fallback fonts when offline; exact embedded font byte parity is not claimed. User-approved original images, icon masters and final mobile/desktop polish will be promoted selectively rather than guessed from the prototype.
+**Visual QA:** 320 px, 390 px and desktop viewport screenshots captured by the one production workflow; the inherited flex-wrapper defect in the V9 prayer entrance was discovered and fixed, and source plus deployment checks passed on 13 November 2026. This is a **static visual pass**, not full interaction or pixel-perfect certification. Fonts are requested as public web families with fallback; exact embedded font-file metric parity and final liturgical content integration are not claimed.
 
 ## Publishing
 
