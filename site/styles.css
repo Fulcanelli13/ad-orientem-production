@@ -191,3 +191,25 @@ the prototype's JS dataset, fonts or unverified illustrative painting bank. */
 .artwork-dialog a{color:var(--gold2)}
 @media(max-width:340px){.home-pad .prayer-door-v9 .hour-image{height:165px;min-height:165px}.home-pad .prayer-door-v9 .hour-copy{padding:11px 12px}.home-pad .prayer-door-v9 .hour-copy strong{font-size:24px}.home-pad .prayer-door-v9 .prayer-thumb{min-width:89px;height:101px}.home-pad .prayer-door-v9 .prayer-thumb-art{height:70px;flex-basis:70px}}
 @media(prefers-reduced-motion:reduce){.home-pad .prayer-door-v9 *{transition:none}}
+
+/* --- Source-exact assets from the integrated Claude prototype (13 Nov 2026).
+   Font WOFF files and nav icons are verified by Git blob SHA, not copied from
+   the old implementation shell. The Sacred Atlas icon is the owner's globe/pin. */
+.app-header{height:calc(78px + env(safe-area-inset-top));padding:calc(18px + env(safe-area-inset-top)) 14px 0;display:flex;justify-content:center;align-items:flex-start;pointer-events:none}
+.app-header .brand-lockup{display:flex;align-items:center;justify-content:center;gap:7px;min-height:28px;pointer-events:none}
+.app-header .brand-emblem{display:block;width:25px;height:25px;object-fit:contain;flex:0 0 auto}
+.app-header .wordmark{font:600 12px/1 var(--cap);letter-spacing:4.4px;color:var(--ink);text-shadow:0 1px 12px rgba(0,0,0,.65)}
+.app-header .header-actions{position:absolute;right:13px;top:calc(14px + env(safe-area-inset-top));display:flex;gap:8px;align-items:center;pointer-events:auto}
+.app-header .header-calendar,.app-header .about-button{position:relative;top:auto;right:auto;display:grid;place-items:center;width:34px;height:34px;background:transparent;border:0;border-radius:50%;color:var(--ink);pointer-events:auto}
+.app-header .header-calendar:hover,.app-header .about-button:hover{background:rgba(255,255,255,.075)}
+.icon-mask{display:inline-block;width:23px;height:23px;flex-shrink:0;background-color:currentColor;-webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;mask-position:center;mask-repeat:no-repeat;mask-size:contain}
+.icon-home{-webkit-mask-image:url('./assets/icons/home.png');mask-image:url('./assets/icons/home.png')}
+.icon-prayer{-webkit-mask-image:url('./assets/icons/prayer.png');mask-image:url('./assets/icons/prayer.png')}
+.icon-book{-webkit-mask-image:url('./assets/icons/book.png');mask-image:url('./assets/icons/book.png')}
+.icon-calendar{-webkit-mask-image:url('./assets/icons/calendar.png');mask-image:url('./assets/icons/calendar.png')}
+.icon-settings{-webkit-mask-image:url('./assets/icons/settings.png');mask-image:url('./assets/icons/settings.png')}
+.icon-atlas{-webkit-mask-image:url('./assets/icons/sacred-atlas.svg');mask-image:url('./assets/icons/sacred-atlas.svg')}
+.app-header .icon-mask{width:21px;height:21px}
+.tabbar .tab .icon-mask{width:23px;height:23px;color:var(--mu2);margin-top:1px}
+.tabbar .tab.active .icon-mask{color:var(--gold2)}
+@media(max-width:340px){.app-header .brand-lockup{gap:4px}.app-header .brand-emblem{width:22px;height:22px}.app-header .wordmark{font-size:11px;letter-spacing:3px}.app-header .header-actions{right:7px;gap:1px}.app-header .header-calendar,.app-header .about-button{width:29px;height:29px}}
