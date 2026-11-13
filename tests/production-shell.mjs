@@ -39,5 +39,6 @@ assert.match(js,/prayer-art-dialog/,"Artwork viewer trigger not wired");
 assert.match(html,/PRAYER ENTRANCE · PREVIEW/,"Prayer engine preview disclosure missing");
 assert.match(html,/Not yet transferred|NOT YET TRANSFERRED/i,"Untransferred modules must be disclosed");
 assert.match(css,/\.prayer-door-v9 \.hour-painting/,"Source-guided V9 prayer painting CSS absent");
+assert.match(css,/\.home-pad \.prayer-door-v9\{display:block;width:100%/,"V9 prayer panel must override the legacy flex display");
 assert.match(css,/max-width:340px/,"320px compact layout absent");
 console.log("Production shell contracts passed; paintings:",[art.size,...prayerImages.map(x=>statSync(x).size)]);
