@@ -513,35 +513,41 @@
       "source_url": "https://www.institute-christ-king.org/waterbury-home",
       "source_checked_at": "2026-10-07",
       "schedule_status": "NOT_IMPORTED",
-      "media_status": "NO_IMAGE_TRANSFERRED"
+      "media_status": "NO_IMAGE_TRANSFERRED",
+      "cl2_site_id": "RG-BA2F9352176D",
+      "cl2_excel_row": 1914,
+      "cl2_status": "MAPPED_IN_PRIOR_APP"
     },
     {
-      "id": "ao-icksp-st-mary-oratory-517-elm-st-rockford-il-61102-6",
-      "name": "St. Mary Oratory",
+      "id": "ao-icksp-st-anthony-of-padua-oratory-1360-pleasant-valley-way-west-orange-nj-07052-13",
+      "name": "St. Anthony of Padua Oratory",
       "venue_type": "oratory",
-      "address": "517 Elm St,, Rockford, IL 61102",
+      "address": "1360 Pleasant Valley Way, West Orange, NJ 07052",
       "country_code": "US",
       "community_id": "ICKSP",
       "relationship": "served_by",
       "liturgical_form": "TRADITIONAL_LATIN",
       "geo": {
-        "lat": 42.2720574,
-        "lng": -89.0984421,
-        "precision": "building",
-        "source_ref": "osm:way:823982027",
+        "lat": 40.7786437,
+        "lng": -74.2787642,
+        "precision": "address",
+        "source_ref": "osm:way:692907920",
         "source_url": "https://nominatim.openstreetmap.org/",
-        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
-        "match_score": 1,
-        "verified_at": "2026-10-07",
         "geocoding_source": "OSM_NOMINATIM",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "match_score": 0.84,
+        "verified_at": "2026-10-07",
         "matched_country_code": "US"
       },
-      "official_url": "https://www.institute-christ-king.org/rockford-home",
-      "source_id": "src-icksp-st-mary-oratory-517-elm-st-rockford-il-61102-6",
-      "source_url": "https://www.institute-christ-king.org/rockford-home",
+      "official_url": "https://www.institute-christ-king.org/westorange-home",
+      "source_id": "src-icksp-st-anthony-of-padua-oratory-1360-pleasant-valley-way-west-orange-nj-07052-13",
+      "source_url": "https://www.institute-christ-king.org/westorange-home",
       "source_checked_at": "2026-10-07",
       "schedule_status": "NOT_IMPORTED",
-      "media_status": "NO_IMAGE_TRANSFERRED"
+      "media_status": "NO_IMAGE_TRANSFERRED",
+      "cl2_site_id": "RG-6DBC750C2D78",
+      "cl2_excel_row": 1074,
+      "cl2_status": "MAPPED_IN_PRIOR_APP"
     },
     {
       "id": "ao-icksp-st-francis-de-sales-oratory-802-s-huntington-sulphur-la-70663-8",
@@ -569,7 +575,10 @@
       "source_url": "https://www.institute-christ-king.org/sulphur-home",
       "source_checked_at": "2026-10-07",
       "schedule_status": "NOT_IMPORTED",
-      "media_status": "NO_IMAGE_TRANSFERRED"
+      "media_status": "NO_IMAGE_TRANSFERRED",
+      "cl2_site_id": "RG-74DADFAB20FB",
+      "cl2_excel_row": 1151,
+      "cl2_status": "MAPPED_IN_PRIOR_APP"
     },
     {
       "id": "ao-icksp-old-st-patrick-oratory-old-st-patrick-oratory-806-cherry-street-kansas-city-10",
@@ -597,7 +606,10 @@
       "source_url": "https://www.institute-christ-king.org/kansascity-home",
       "source_checked_at": "2026-10-07",
       "schedule_status": "NOT_IMPORTED",
-      "media_status": "NO_IMAGE_TRANSFERRED"
+      "media_status": "NO_IMAGE_TRANSFERRED",
+      "cl2_site_id": "RG-AA3084B4438A",
+      "cl2_excel_row": 1660,
+      "cl2_status": "MAPPED_IN_PRIOR_APP"
     },
     {
       "id": "ao-icksp-st-francis-de-sales-oratory-2653-ohio-avenue-st-louis-missouri-63118-11",
@@ -625,7 +637,10 @@
       "source_url": "https://www.institute-christ-king.org/stlouis-home",
       "source_checked_at": "2026-10-07",
       "schedule_status": "NOT_IMPORTED",
-      "media_status": "NO_IMAGE_TRANSFERRED"
+      "media_status": "NO_IMAGE_TRANSFERRED",
+      "cl2_site_id": "RG-C249D8633DD4",
+      "cl2_excel_row": 1982,
+      "cl2_status": "MAPPED_IN_PRIOR_APP"
     },
     {
       "id": "ao-icksp-st-mary-of-the-assumption-parish-and-shrine-103-west-7th-street-oswego-ny-13126-14",
@@ -653,7 +668,10 @@
       "source_url": "https://www.institute-christ-king.org/oswego-home",
       "source_checked_at": "2026-10-07",
       "schedule_status": "NOT_IMPORTED",
-      "media_status": "NO_IMAGE_TRANSFERRED"
+      "media_status": "NO_IMAGE_TRANSFERRED",
+      "cl2_site_id": "RG-D88E7C5895A1",
+      "cl2_excel_row": 2217,
+      "cl2_status": "MAPPED_IN_PRIOR_APP"
     },
     {
       "id": "ao-icksp-st-josaphat-oratory-34-32-210th-street-bayside-new-york-11361-15",
@@ -681,7 +699,10 @@
       "source_url": "https://www.institute-christ-king.org/queens-home",
       "source_checked_at": "2026-10-07",
       "schedule_status": "NOT_IMPORTED",
-      "media_status": "NO_IMAGE_TRANSFERRED"
+      "media_status": "NO_IMAGE_TRANSFERRED",
+      "cl2_site_id": "RG-3F7AED9AE120",
+      "cl2_excel_row": 623,
+      "cl2_status": "MAPPED_IN_PRIOR_APP"
     },
     {
       "id": "ao-icksp-st-leo-oratory-221-hanford-st-columbus-oh-43206-16",
@@ -709,7 +730,10 @@
       "source_url": "https://www.institute-christ-king.org/columbus-home",
       "source_checked_at": "2026-10-07",
       "schedule_status": "NOT_IMPORTED",
-      "media_status": "NO_IMAGE_TRANSFERRED"
+      "media_status": "NO_IMAGE_TRANSFERRED",
+      "cl2_site_id": "RG-33FE09F8ECB4",
+      "cl2_excel_row": 507,
+      "cl2_status": "MAPPED_IN_PRIOR_APP"
     },
     {
       "id": "ao-icksp-st-stanislaus-oratory-524-w-historic-mitchell-street-milwaukee-wisconsin-53204-20",
@@ -737,7 +761,10 @@
       "source_url": "https://www.institute-christ-king.org/milwaukee-home",
       "source_checked_at": "2026-10-07",
       "schedule_status": "NOT_IMPORTED",
-      "media_status": "NO_IMAGE_TRANSFERRED"
+      "media_status": "NO_IMAGE_TRANSFERRED",
+      "cl2_site_id": "RG-ED91CF8BBA84",
+      "cl2_excel_row": 2403,
+      "cl2_status": "MAPPED_IN_PRIOR_APP"
     },
     {
       "id": "ao-icksp-st-mary-s-oratory-325-grand-avenue-wausau-wisconsin-54403-mailing-address-22",
@@ -765,7 +792,17 @@
       "source_url": "https://www.institute-christ-king.org/wausau-home",
       "source_checked_at": "2026-10-07",
       "schedule_status": "NOT_IMPORTED",
-      "media_status": "NO_IMAGE_TRANSFERRED"
+      "media_status": "NO_IMAGE_TRANSFERRED",
+      "cl2_site_id": "RG-893DF94815D8",
+      "cl2_excel_row": 1348,
+      "cl2_status": "MAPPED_IN_PRIOR_APP"
     }
-  ]
+  ],
+  "excel_control": {
+    "source_file": "Ad_Orientem_TLM_Atlas_2582_Source_Link_Review_2026-11-11.xlsx",
+    "sheet": "All 2582 CL2 Sites",
+    "snapshot_date": "2026-11-11",
+    "selection": "10 existing prior-app mapped CL2 sites, no new candidate geocodes",
+    "note": "Existing published site pins only; no entrance or timetable verification is inferred"
+  }
 }
