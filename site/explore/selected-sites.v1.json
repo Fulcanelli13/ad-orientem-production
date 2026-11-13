@@ -28,9 +28,9 @@
         "locator_note": "Memorial/tomb anchor inside the Père Laval pilgrimage complex; not a precise entrance",
         "source_ref": "osm:node:4423527716",
         "source_url": "https://www.openstreetmap.org/node/4423527716",
-        "source_method": "OSM",
         "verified_at": "2026-10-10",
-        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "geocoding_source": "OSM"
       },
       "source_ids": [
         "SHR-PERE-LAVAL-CENTRE"
@@ -54,9 +54,9 @@
         "locator_note": null,
         "source_ref": "osm:way:158575993",
         "source_url": "https://www.openstreetmap.org/way/158575993",
-        "source_method": "OSM",
         "verified_at": "2026-10-19",
-        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "geocoding_source": "OSM"
       },
       "source_ids": [
         "AO-R87-SITE-R87-AO-R82-DISC-047",
@@ -79,9 +79,9 @@
         "locator_note": null,
         "source_ref": "osm:node:5242566674",
         "source_url": "https://www.openstreetmap.org/node/5242566674",
-        "source_method": "OSM",
         "verified_at": "2026-10-24",
-        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "geocoding_source": "OSM"
       },
       "source_ids": [
         "AO-P24-SITE-SG-INV-0732"
@@ -106,9 +106,9 @@
         "locator_note": null,
         "source_ref": "osm:way:191789187",
         "source_url": "https://mapcarta.com/W191789187",
-        "source_method": "OSM",
         "verified_at": "2026-10-09",
-        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "geocoding_source": "OSM"
       },
       "source_ids": [
         "SHR-KNOCK-IDENTITY"
@@ -133,9 +133,9 @@
         "locator_note": null,
         "source_ref": "IRISH-ARCHAEOLOGICAL-EXCAVATION:2003-435",
         "source_url": "https://excavations.ie/report/2003/Donegal/0009742/",
-        "source_method": "OTHER",
         "verified_at": "2026-10-09",
-        "attribution": null
+        "attribution": null,
+        "geocoding_source": "OTHER"
       },
       "source_ids": [
         "SHR-LOUGH-DERG-CONTACT"
@@ -159,9 +159,9 @@
         "locator_note": null,
         "source_ref": "osm:node:4958231645",
         "source_url": "https://www.openstreetmap.org/node/4958231645",
-        "source_method": "OSM",
         "verified_at": "2026-10-07",
-        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "geocoding_source": "OSM"
       },
       "source_ids": [
         "SHR-LOURDES-CONTACT"
@@ -186,9 +186,9 @@
         "locator_note": null,
         "source_ref": "CHARTRES-CATHEDRAL:official-gps",
         "source_url": "https://www.cathedrale-chartres.org/visite/informations-pratiques/acceder/",
-        "source_method": "OFFICIAL_SOURCE",
         "verified_at": "2026-10-09",
-        "attribution": null
+        "attribution": null,
+        "geocoding_source": "OFFICIAL_SOURCE"
       },
       "source_ids": [
         "SHR-CHARTRES-CATHEDRAL"
@@ -212,9 +212,9 @@
         "locator_note": null,
         "source_ref": "SHR-LAGHET-CONTACT:gps",
         "source_url": "https://sanctuaire-laghet.fr/contact/",
-        "source_method": "OFFICIAL_SOURCE",
         "verified_at": "2026-10-07",
-        "attribution": "Sanctuaire Notre-Dame de Laghet"
+        "attribution": "Sanctuaire Notre-Dame de Laghet",
+        "geocoding_source": "OFFICIAL_SOURCE"
       },
       "source_ids": [
         "SHR-LAGHET-CONTACT"
@@ -239,9 +239,9 @@
         "locator_note": null,
         "source_ref": "osm:way:14805243",
         "source_url": "https://mapcarta.com/es/29102824",
-        "source_method": "OSM",
         "verified_at": "2026-10-09",
-        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "geocoding_source": "OSM"
       },
       "source_ids": [
         "SHR-LORETO-CONTACT"
@@ -266,9 +266,9 @@
         "locator_note": null,
         "source_ref": "osm:way:28778029",
         "source_url": "https://www.openstreetmap.org/way/28778029",
-        "source_method": "OSM",
         "verified_at": "2026-10-24",
-        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "geocoding_source": "OSM"
       },
       "source_ids": [
         "SHR-POMPEI-CONTACT"
@@ -293,9 +293,9 @@
         "locator_note": null,
         "source_ref": "FATIMA-SANCTUARY:official-gps",
         "source_url": "https://www.santuario-fatima.pt/pt/pages/indicacoes-para-a-peregrinacao-a-pe",
-        "source_method": "OFFICIAL_SOURCE",
         "verified_at": "2026-10-09",
-        "attribution": null
+        "attribution": null,
+        "geocoding_source": "OFFICIAL_SOURCE"
       },
       "source_ids": [
         "SHR-FATIMA-CONTACT"
@@ -321,9 +321,9 @@
         "locator_note": null,
         "source_ref": "osm:way:166962185",
         "source_url": "https://www.openstreetmap.org/way/166962185",
-        "source_method": "OSM",
         "verified_at": "2026-10-15",
-        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "geocoding_source": "OSM"
       },
       "source_ids": [
         "SG-R72-SITE-SG-INV-0152",
@@ -346,9 +346,9 @@
         "locator_note": null,
         "source_ref": "wikidata:Q205136",
         "source_url": "https://mapcarta.com/25251226",
-        "source_method": "OTHER",
         "verified_at": "2026-10-09",
-        "attribution": null
+        "attribution": null,
+        "geocoding_source": "OTHER"
       },
       "source_ids": [
         "wikidata:Q205136"
@@ -370,9 +370,9 @@
         "locator_note": null,
         "source_ref": "wikidata:Q24019734",
         "source_url": "https://www.wikidata.org/wiki/Q24019734",
-        "source_method": "OTHER",
         "verified_at": "2026-10-09",
-        "attribution": null
+        "attribution": null,
+        "geocoding_source": "OTHER"
       },
       "source_ids": [
         "wikidata:Q24019734"
@@ -397,9 +397,9 @@
         "locator_note": null,
         "source_ref": "osm:way:120733641",
         "source_url": "https://www.openstreetmap.org/way/120733641",
-        "source_method": "OSM",
         "verified_at": "2026-10-10",
-        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "geocoding_source": "OSM"
       },
       "source_ids": [
         "SHR-GUADALUPE-MX-CONTACT"
@@ -423,9 +423,9 @@
         "locator_note": null,
         "source_ref": "osm:way:672541959",
         "source_url": "https://www.openstreetmap.org/way/672541959",
-        "source_method": "OSM",
         "verified_at": "2026-10-10",
-        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "geocoding_source": "OSM"
       },
       "source_ids": [
         "SG-SITE-SG-GEO-P3-006",
@@ -448,9 +448,9 @@
         "locator_note": null,
         "source_ref": "osm:way:140348903",
         "source_url": "https://www.openstreetmap.org/way/140348903",
-        "source_method": "OSM",
         "verified_at": "2026-10-10",
-        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "geocoding_source": "OSM"
       },
       "source_ids": [
         "SG-SITE-SG-GEO-P3-009",
@@ -476,9 +476,9 @@
         "locator_note": null,
         "source_ref": "ATLAS-OBSCURA:champion-gps",
         "source_url": "https://www.atlasobscura.com/places/our-lady-of-champion-wisconsin",
-        "source_method": "OTHER",
         "verified_at": "2026-10-09",
-        "attribution": null
+        "attribution": null,
+        "geocoding_source": "OTHER"
       },
       "source_ids": [
         "SHR-CHAMPION-HOME"
@@ -502,10 +502,10 @@
         "precision": "address",
         "source_ref": "osm:way:1490282962",
         "source_url": "https://nominatim.openstreetmap.org/",
-        "source_method": "OSM_NOMINATIM",
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 0.84,
-        "verified_at": "2026-10-07"
+        "verified_at": "2026-10-07",
+        "geocoding_source": "OSM_NOMINATIM"
       },
       "official_url": "https://www.institute-christ-king.org/waterbury-home",
       "source_id": "src-icksp-st-patrick-parish-and-oratory-50-charles-street-waterbury-ct-06708-2",
@@ -529,10 +529,10 @@
         "precision": "building",
         "source_ref": "osm:way:823982027",
         "source_url": "https://nominatim.openstreetmap.org/",
-        "source_method": "OSM_NOMINATIM",
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
-        "verified_at": "2026-10-07"
+        "verified_at": "2026-10-07",
+        "geocoding_source": "OSM_NOMINATIM"
       },
       "official_url": "https://www.institute-christ-king.org/rockford-home",
       "source_id": "src-icksp-st-mary-oratory-517-elm-st-rockford-il-61102-6",
@@ -556,10 +556,10 @@
         "precision": "building",
         "source_ref": "osm:way:1355844466",
         "source_url": "https://nominatim.openstreetmap.org/",
-        "source_method": "OSM_NOMINATIM",
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
-        "verified_at": "2026-10-07"
+        "verified_at": "2026-10-07",
+        "geocoding_source": "OSM_NOMINATIM"
       },
       "official_url": "https://www.institute-christ-king.org/sulphur-home",
       "source_id": "src-icksp-st-francis-de-sales-oratory-802-s-huntington-sulphur-la-70663-8",
@@ -583,10 +583,10 @@
         "precision": "building",
         "source_ref": "osm:way:365379059",
         "source_url": "https://nominatim.openstreetmap.org/",
-        "source_method": "OSM_NOMINATIM",
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 0.95,
-        "verified_at": "2026-10-07"
+        "verified_at": "2026-10-07",
+        "geocoding_source": "OSM_NOMINATIM"
       },
       "official_url": "https://www.institute-christ-king.org/kansascity-home",
       "source_id": "src-icksp-old-st-patrick-oratory-old-st-patrick-oratory-806-cherry-street-kansas-city-10",
@@ -610,10 +610,10 @@
         "precision": "building",
         "source_ref": "osm:way:139761891",
         "source_url": "https://nominatim.openstreetmap.org/",
-        "source_method": "OSM_NOMINATIM",
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
-        "verified_at": "2026-10-07"
+        "verified_at": "2026-10-07",
+        "geocoding_source": "OSM_NOMINATIM"
       },
       "official_url": "https://www.institute-christ-king.org/stlouis-home",
       "source_id": "src-icksp-st-francis-de-sales-oratory-2653-ohio-avenue-st-louis-missouri-63118-11",
@@ -637,10 +637,10 @@
         "precision": "building",
         "source_ref": "osm:way:833622044",
         "source_url": "https://nominatim.openstreetmap.org/",
-        "source_method": "OSM_NOMINATIM",
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 0.89,
-        "verified_at": "2026-10-07"
+        "verified_at": "2026-10-07",
+        "geocoding_source": "OSM_NOMINATIM"
       },
       "official_url": "https://www.institute-christ-king.org/oswego-home",
       "source_id": "src-icksp-st-mary-of-the-assumption-parish-and-shrine-103-west-7th-street-oswego-ny-13126-14",
@@ -664,10 +664,10 @@
         "precision": "building",
         "source_ref": "osm:way:284445564",
         "source_url": "https://nominatim.openstreetmap.org/",
-        "source_method": "OSM_NOMINATIM",
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
-        "verified_at": "2026-10-07"
+        "verified_at": "2026-10-07",
+        "geocoding_source": "OSM_NOMINATIM"
       },
       "official_url": "https://www.institute-christ-king.org/queens-home",
       "source_id": "src-icksp-st-josaphat-oratory-34-32-210th-street-bayside-new-york-11361-15",
@@ -691,10 +691,10 @@
         "precision": "building",
         "source_ref": "osm:way:744387460",
         "source_url": "https://nominatim.openstreetmap.org/",
-        "source_method": "OSM_NOMINATIM",
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
-        "verified_at": "2026-10-07"
+        "verified_at": "2026-10-07",
+        "geocoding_source": "OSM_NOMINATIM"
       },
       "official_url": "https://www.institute-christ-king.org/columbus-home",
       "source_id": "src-icksp-st-leo-oratory-221-hanford-st-columbus-oh-43206-16",
@@ -718,10 +718,10 @@
         "precision": "building",
         "source_ref": "osm:way:1301083188",
         "source_url": "https://nominatim.openstreetmap.org/",
-        "source_method": "OSM_NOMINATIM",
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
-        "verified_at": "2026-10-07"
+        "verified_at": "2026-10-07",
+        "geocoding_source": "OSM_NOMINATIM"
       },
       "official_url": "https://www.institute-christ-king.org/milwaukee-home",
       "source_id": "src-icksp-st-stanislaus-oratory-524-w-historic-mitchell-street-milwaukee-wisconsin-53204-20",
@@ -745,10 +745,10 @@
         "precision": "building",
         "source_ref": "osm:way:657076951",
         "source_url": "https://nominatim.openstreetmap.org/",
-        "source_method": "OSM_NOMINATIM",
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
-        "verified_at": "2026-10-07"
+        "verified_at": "2026-10-07",
+        "geocoding_source": "OSM_NOMINATIM"
       },
       "official_url": "https://www.institute-christ-king.org/wausau-home",
       "source_id": "src-icksp-st-mary-s-oratory-325-grand-avenue-wausau-wisconsin-54403-mailing-address-22",
