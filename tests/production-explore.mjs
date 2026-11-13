@@ -75,7 +75,7 @@ assert.equal((js.match(/new lib\.Map\(/g)||[]).length,1,
   "Only one map instance may be created for the two Atlas lenses");
 assert.match(js,/getSource\("ao-selected-sites"\)\?\.setData/);
 assert.match(js,/renderSacredPlaceFallback\(/);
-assert.match(js,/schedule_status/); // see absence of misleading schedule rendering below
+assert.match(model,/schedule_status/); // the validation model enforces no imported schedules
 assert.doesNotMatch(js,/nextMass|next_mass|liveAvailability|<iframe|srcdoc|eval\(/i);
 assert.doesNotMatch(JSON.stringify(records),/"nextMass"|"mass_times"|"schedule_url"/i);
 assert.ok(!html.includes("src/find/"),"Do not expose the old repository tree as a website");
