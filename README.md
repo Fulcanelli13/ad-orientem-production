@@ -10,14 +10,14 @@ This is the **new, clean production repository**. It is **not** a fork, mirror o
 ## Current milestone
 
 Phase 1 foundation:
-- The new visual orientation follows the selected Claude **Home V9** prototype, including its painting-led hero, carousel pager, week ribbon, gold Mass entrance, typography, and four exact bottom-tab SVG icon drawings.
+- The new visual orientation follows the selected Claude **Home V9** prototype, including its painting-led hero, carousel pager, week ribbon, gold Mass entrance, typography, and four source-guided bottom-tab SVG icons.
 - Primary typefaces: Cinzel, Cormorant Garamond, EB Garamond. Tokens are recorded in `site/styles.css`.
 - Mobile-first Home layout and horizontal hero carousel; working hash navigation into clearly marked untransferred module entrances.
 - Neutral civil-week strip. The 1962 liturgical calendar is **not** imported.
-- **One approved CC0 artwork**: a locally served Home V9 compressed reproduction of Carlo Saraceni's *Paradise* from The Met. The image is a visual-study asset **not a day-specific calendar assignment**. See `site/artwork/provenance.json`.
+- **Three Met Open Access visual-study assets**, served locally: Carlo Saraceni's *Paradise*, Philippe de Champaigne's *The Annunciation*, and Ingres's *The Virgin Adoring the Host*. No day-specific Mass or Rosary mystery assignments are inferred. See `site/artwork/provenance.json` and `site/artwork/home-prayer-provenance.json`.
 - No Mass, prayer, formation, Atlas or calendar engines/data have been transferred.
 
-This is a **foundation, not a completed application**. Visual parity with the approved source has not been signed off.
+This is a **foundation, not a completed application**. Source-guided visual screenshot QA at 320 px, 390 px and desktop passed, including repair of the inherited prayer-wrapper layout defect. Full interactive acceptance, exact embedded font parity, final daily liturgical data and module activation are still pending.
 
 ## Publication
 
