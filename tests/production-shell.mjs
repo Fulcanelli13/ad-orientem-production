@@ -47,7 +47,7 @@ assert.equal(assets.assets.length,14,"Expected exactly fourteen approved font/ic
 for(const asset of assets.assets){
   const bytes=readFileSync(asset.destination);
   assert.equal(bytes.length,asset.size_bytes,"Asset length mismatch: "+asset.destination);
-  const hash=createHash("sha1").update(Buffer.from("blob "+bytes.length+"\\0")).update(bytes).digest("hex");
+  const hash=createHash("sha1").update(Buffer.concat([Buffer.from("blob "+bytes.length),Buffer.from([0]),bytes])).digest("hex");
   assert.equal(hash,asset.git_blob_sha,"Source blob mismatch: "+asset.destination);
 }
 assert.match(html,/assets\/brand\/typography\.css/,"Original font loader is not linked");
