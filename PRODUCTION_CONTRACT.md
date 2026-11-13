@@ -14,10 +14,10 @@ This is the **production application repository**. `Fulcanelli13/ad-orientem` re
 
 ## Phase 1: visual and deployment foundation (13 November 2026)
 
-- A mobile-first Home V9-inspired visual shell, using the approved **Cinzel**, **Cormorant Garamond** and **EB Garamond** families and reference design tokens.
+- A mobile-first, source-guided Home V9 layout (hero, pager, calendar ribbon, Mass entrance, prayer entrance, tab icons), using the approved **Cinzel**, **Cormorant Garamond** and **EB Garamond** families and reference design tokens.
 - Working local navigation between Home and clearly marked **not yet transferred** module entrance screens.
 - A neutral civil-week row; **not** a claim that the canonical 1962 Roman calendar has been imported.
-- An intentionally unassigned, CSS-only artwork slot. A curated painting is not imported before artwork provenance and rights are checked.
+- A single approved CC0 artwork, Carlo Saraceni's *Paradise*, self-hosted solely as the Home V9 visual-study painting. It has no canonical date assignment; its provenance is at `site/artwork/provenance.json`.
 - GitHub Actions deployment of curated `site/` output only.
 
 **Visual acceptance is still pending.** The font families are requested from a public stylesheet and use fallback fonts when offline; exact embedded font byte parity is not claimed. User-approved original images, icon masters and final mobile/desktop polish will be promoted selectively rather than guessed from the prototype.
