@@ -505,7 +505,8 @@
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 0.84,
         "verified_at": "2026-10-07",
-        "geocoding_source": "OSM_NOMINATIM"
+        "geocoding_source": "OSM_NOMINATIM",
+        "matched_country_code": "US"
       },
       "official_url": "https://www.institute-christ-king.org/waterbury-home",
       "source_id": "src-icksp-st-patrick-parish-and-oratory-50-charles-street-waterbury-ct-06708-2",
@@ -532,7 +533,8 @@
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
         "verified_at": "2026-10-07",
-        "geocoding_source": "OSM_NOMINATIM"
+        "geocoding_source": "OSM_NOMINATIM",
+        "matched_country_code": "US"
       },
       "official_url": "https://www.institute-christ-king.org/rockford-home",
       "source_id": "src-icksp-st-mary-oratory-517-elm-st-rockford-il-61102-6",
@@ -559,7 +561,8 @@
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
         "verified_at": "2026-10-07",
-        "geocoding_source": "OSM_NOMINATIM"
+        "geocoding_source": "OSM_NOMINATIM",
+        "matched_country_code": "US"
       },
       "official_url": "https://www.institute-christ-king.org/sulphur-home",
       "source_id": "src-icksp-st-francis-de-sales-oratory-802-s-huntington-sulphur-la-70663-8",
@@ -586,7 +589,8 @@
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 0.95,
         "verified_at": "2026-10-07",
-        "geocoding_source": "OSM_NOMINATIM"
+        "geocoding_source": "OSM_NOMINATIM",
+        "matched_country_code": "US"
       },
       "official_url": "https://www.institute-christ-king.org/kansascity-home",
       "source_id": "src-icksp-old-st-patrick-oratory-old-st-patrick-oratory-806-cherry-street-kansas-city-10",
@@ -613,7 +617,8 @@
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
         "verified_at": "2026-10-07",
-        "geocoding_source": "OSM_NOMINATIM"
+        "geocoding_source": "OSM_NOMINATIM",
+        "matched_country_code": "US"
       },
       "official_url": "https://www.institute-christ-king.org/stlouis-home",
       "source_id": "src-icksp-st-francis-de-sales-oratory-2653-ohio-avenue-st-louis-missouri-63118-11",
@@ -640,7 +645,8 @@
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 0.89,
         "verified_at": "2026-10-07",
-        "geocoding_source": "OSM_NOMINATIM"
+        "geocoding_source": "OSM_NOMINATIM",
+        "matched_country_code": "US"
       },
       "official_url": "https://www.institute-christ-king.org/oswego-home",
       "source_id": "src-icksp-st-mary-of-the-assumption-parish-and-shrine-103-west-7th-street-oswego-ny-13126-14",
@@ -667,7 +673,8 @@
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
         "verified_at": "2026-10-07",
-        "geocoding_source": "OSM_NOMINATIM"
+        "geocoding_source": "OSM_NOMINATIM",
+        "matched_country_code": "US"
       },
       "official_url": "https://www.institute-christ-king.org/queens-home",
       "source_id": "src-icksp-st-josaphat-oratory-34-32-210th-street-bayside-new-york-11361-15",
@@ -694,7 +701,8 @@
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
         "verified_at": "2026-10-07",
-        "geocoding_source": "OSM_NOMINATIM"
+        "geocoding_source": "OSM_NOMINATIM",
+        "matched_country_code": "US"
       },
       "official_url": "https://www.institute-christ-king.org/columbus-home",
       "source_id": "src-icksp-st-leo-oratory-221-hanford-st-columbus-oh-43206-16",
@@ -721,7 +729,8 @@
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
         "verified_at": "2026-10-07",
-        "geocoding_source": "OSM_NOMINATIM"
+        "geocoding_source": "OSM_NOMINATIM",
+        "matched_country_code": "US"
       },
       "official_url": "https://www.institute-christ-king.org/milwaukee-home",
       "source_id": "src-icksp-st-stanislaus-oratory-524-w-historic-mitchell-street-milwaukee-wisconsin-53204-20",
@@ -748,7 +757,8 @@
         "attribution": "© OpenStreetMap contributors, ODbL 1.0",
         "match_score": 1,
         "verified_at": "2026-10-07",
-        "geocoding_source": "OSM_NOMINATIM"
+        "geocoding_source": "OSM_NOMINATIM",
+        "matched_country_code": "US"
       },
       "official_url": "https://www.institute-christ-king.org/wausau-home",
       "source_id": "src-icksp-st-mary-s-oratory-325-grand-avenue-wausau-wisconsin-54403-mailing-address-22",
