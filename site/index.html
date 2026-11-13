@@ -71,18 +71,33 @@
     </div>
     <p class="calendar-disclosure" id="civil-disclosure">Civil week preview · canonical 1962 liturgical dates are not yet transferred.</p>
     <button class="enter" type="button" data-route="mass"><span class="t"><b>Enter the Mass</b><small>THE MISSAL · LITURGY · LIVE</small></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
-    <section class="sec prayer-door">
-      <div class="sech"><h2>Pray now</h2><button type="button" data-route="pray">All prayers ›</button></div>
-      <button class="hour-prayer" type="button" data-route="pray">
-        <span class="hour-art" aria-hidden="true"><span>✠</span></span>
-        <span class="hour-text"><small>PRAYER ENGINE · AWAITING TRANSFER</small><strong>The Angelus</strong><span>Enter the prayer collection</span><em>Enter prayer ›</em></span>
-      </button>
-      <div class="prayer-tiles">
-        <button data-route="pray" type="button"><span>✧</span><strong>Rosary</strong></button>
-        <button data-route="pray" type="button"><span>✣</span><strong>Divine Office</strong></button>
-        <button data-route="pray" type="button"><span>✠</span><strong>Angelus</strong></button>
-      </div>
-    </section>
+    <section class="sec prayer-door prayer-door-v9" id="home-hour-prayer">
+  <div class="sech"><h2>Pray now</h2><button type="button" data-route="pray">All prayers ›</button></div>
+  <div class="hour-prayer-frame">
+    <button class="hour-prayer" type="button" data-route="pray" aria-label="Angelus prayer entrance — module not yet transferred">
+      <span class="hour-image">
+        <img class="hour-painting" src="./artwork/champaigne-annunciation-home-v9.jpg" alt="" loading="lazy" decoding="async">
+      </span>
+      <span class="hour-copy">
+        <span class="hour-copy-main">
+          <small>PRAYER ENTRANCE · PREVIEW</small>
+          <strong>The Angelus</strong>
+          <span class="hour-description">The prayer engine awaits its approved transfer.</span>
+        </span>
+        <span class="hour-action" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></span>
+      </span>
+    </button>
+    <button type="button" class="hour-art-expand" id="prayer-art-expand" aria-label="View the entire Annunciation painting" aria-haspopup="dialog" aria-controls="prayer-art-dialog">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3H3v5M3 3l7 7M16 3h5v5M21 3l-7 7M3 16v5h5M3 21l7-7M21 16v5h-5M21 21l-7-7"/></svg>
+    </button>
+  </div>
+  <nav class="prayer-quicklinks" aria-label="Prayer family previews">
+    <button type="button" class="prayer-thumb" data-route="pray"><span class="prayer-thumb-art"><img src="./artwork/ingres-adoration-home-v9.jpg" alt="" loading="lazy"></span><span class="prayer-thumb-name">Rosary</span></button>
+    <button type="button" class="prayer-thumb" data-route="pray"><span class="prayer-thumb-art pending-art" aria-hidden="true">✠</span><span class="prayer-thumb-name">Divine Office</span></button>
+    <button type="button" class="prayer-thumb" data-route="pray"><span class="prayer-thumb-art"><img src="./artwork/champaigne-annunciation-home-v9.jpg" alt="" loading="lazy"></span><span class="prayer-thumb-name">Angelus</span></button>
+  </nav>
+  <p class="prayer-visual-note">Artwork is a Home visual study; these are not final Rosary mystery assignments.</p>
+</section>
     <section class="sec editorial-hold">
       <div class="sech"><h2>Customs &amp; traditions</h2><span class="section-hint">CURATION PENDING</span></div>
       <div class="custom-card"><span class="eyb">RESEARCH REMAINS SEPARATE</span><h3>The living customs of the Church</h3><p>Source-verified local customs will appear here after their owner-approved transfer.</p></div>
@@ -115,6 +130,13 @@
 </nav>
   </div>
 
+  <dialog id="prayer-art-dialog" class="artwork-dialog" aria-labelledby="prayer-art-title">
+    <h2 id="prayer-art-title">The Annunciation</h2>
+    <img src="./artwork/champaigne-annunciation-home-v9.jpg" alt="Philippe de Champaigne's Annunciation: the Virgin Mary receives the message of the angel Gabriel." loading="lazy">
+    <p>Philippe de Champaigne, ca. 1644 · The Metropolitan Museum of Art, 2004.31 · Public domain.</p>
+    <p><a href="https://www.metmuseum.org/art/collection/search/438724" target="_blank" rel="noopener noreferrer">Museum catalogue</a></p>
+    <form method="dialog"><button type="submit">Close</button></form>
+  </dialog>
   <dialog id="about-dialog" aria-labelledby="about-title">
     <h2 id="about-title">Ad Orientem · New production foundation</h2>
     <p>This is a source-guided Home V9 visual foundation. It includes one approved CC0 painting as a visual study, without assigning it to any liturgical date. No liturgical texts, prayer engines, canonical calendar data or Atlas datasets have been transferred.</p>
