@@ -1,0 +1,761 @@
+{
+  "schema": "AO_PRODUCTION_EXPLORE_SELECTED_V1",
+  "research_commit": "9b7fafd120b90632b2c376aed4f609235cd15709",
+  "source_blobs": {
+    "data/geography/seed-registry.v1.json": "5c59fb8ebd4e0f57387485d9b0c008ef9c36a703",
+    "data/directory/generated/icksp/venues.v1.json": "ade7d7fdc63733b588f81622fc2dbb8aeedf5ed1",
+    "data/directory/generated/icksp/ministries.v1.json": "838e40d761efa745ae1faecf4648b7cb0e0b4871",
+    "data/directory/generated/icksp/sources.v1.json": "5aaf8804965d37bd9da6534db6272584e6e8a670"
+  },
+  "scope": "Selected subset; NOT a global census; not live Mass availability",
+  "source_policy": "Never infer today's Mass or entrance from coordinates; geo precision and source URLs remain visible; no approved image transferred",
+  "sacred": [
+    {
+      "id": "place:MU:pere-laval-sainte-croix",
+      "name": "Centre Père Laval",
+      "aliases": [
+        "Caveau du Bienheureux Père Laval",
+        "Père Laval Shrine, Sainte-Croix"
+      ],
+      "place_type": "shrine",
+      "address": "Centre Père Laval, Sainte-Croix, Port-Louis, Mauritius",
+      "country_code": "MU",
+      "geo": {
+        "lat": -20.1478,
+        "lng": 57.52957,
+        "precision": "complex_anchor",
+        "indicative_only": true,
+        "locator_note": "Memorial/tomb anchor inside the Père Laval pilgrimage complex; not a precise entrance",
+        "source_ref": "osm:node:4423527716",
+        "source_url": "https://www.openstreetmap.org/node/4423527716",
+        "source_method": "OSM",
+        "verified_at": "2026-10-10",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+      },
+      "source_ids": [
+        "SHR-PERE-LAVAL-CENTRE"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:MU:saint-louis-cathedral-port-louis",
+      "name": "Cathédrale Saint-Louis — Port-Louis",
+      "aliases": [
+        "Saint Louis Cathedral Mauritius"
+      ],
+      "place_type": "cathedral",
+      "address": "Rue Dauphine, Port Louis, Mauritius",
+      "country_code": "MU",
+      "geo": {
+        "lat": -20.16454,
+        "lng": 57.50646,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "osm:way:158575993",
+        "source_url": "https://www.openstreetmap.org/way/158575993",
+        "source_method": "OSM",
+        "verified_at": "2026-10-19",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+      },
+      "source_ids": [
+        "AO-R87-SITE-R87-AO-R82-DISC-047",
+        "AO-R87-GEO-R87-AO-R82-DISC-047"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:MU:marie-reine-de-la-paix-port-louis",
+      "name": "Marie Reine de la Paix, Port-Louis",
+      "aliases": [],
+      "place_type": "pilgrimage_destination",
+      "address": "Marie Reine de la Paix, Port-Louis, Port-Louis, Mauritius",
+      "country_code": "MU",
+      "geo": {
+        "lat": -20.1704,
+        "lng": 57.49628,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "osm:node:5242566674",
+        "source_url": "https://www.openstreetmap.org/node/5242566674",
+        "source_method": "OSM",
+        "verified_at": "2026-10-24",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+      },
+      "source_ids": [
+        "AO-P24-SITE-SG-INV-0732"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:IE:knock-shrine",
+      "name": "Knock Shrine",
+      "aliases": [
+        "Sanctuary of Our Lady of Knock",
+        "Ireland's International Eucharistic and Marian Shrine"
+      ],
+      "place_type": "shrine",
+      "address": "Knock, Claremorris, Co. Mayo, F12 Y226, Ireland",
+      "country_code": "IE",
+      "geo": {
+        "lat": 53.79087,
+        "lng": -8.91819,
+        "precision": "complex_anchor",
+        "indicative_only": true,
+        "locator_note": null,
+        "source_ref": "osm:way:191789187",
+        "source_url": "https://mapcarta.com/W191789187",
+        "source_method": "OSM",
+        "verified_at": "2026-10-09",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+      },
+      "source_ids": [
+        "SHR-KNOCK-IDENTITY"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:IE:lough-derg-station-island",
+      "name": "Lough Derg — Sanctuary of Saint Patrick",
+      "aliases": [
+        "St Patrick's Purgatory",
+        "Station Island, Lough Derg"
+      ],
+      "place_type": "pilgrimage_destination",
+      "address": "Lough Derg, Sanctuary of Saint Patrick, Station Island, Pettigo, County Donegal, F94 PC60, Ireland",
+      "country_code": "IE",
+      "geo": {
+        "lat": 54.609217,
+        "lng": -7.871804,
+        "precision": "complex_anchor",
+        "indicative_only": true,
+        "locator_note": null,
+        "source_ref": "IRISH-ARCHAEOLOGICAL-EXCAVATION:2003-435",
+        "source_url": "https://excavations.ie/report/2003/Donegal/0009742/",
+        "source_method": "OTHER",
+        "verified_at": "2026-10-09",
+        "attribution": null
+      },
+      "source_ids": [
+        "SHR-LOUGH-DERG-CONTACT"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:FR:sanctuaire-notre-dame-de-lourdes",
+      "name": "Sanctuaire Notre-Dame de Lourdes",
+      "aliases": [
+        "Sanctuary of Our Lady of Lourdes"
+      ],
+      "place_type": "shrine",
+      "address": "1 avenue Mgr Théas, 65108 Lourdes Cedex, France",
+      "country_code": "FR",
+      "geo": {
+        "lat": 43.09738,
+        "lng": -0.05875,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "osm:node:4958231645",
+        "source_url": "https://www.openstreetmap.org/node/4958231645",
+        "source_method": "OSM",
+        "verified_at": "2026-10-07",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+      },
+      "source_ids": [
+        "SHR-LOURDES-CONTACT"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:FR:chartres-notre-dame",
+      "name": "Cathédrale Notre-Dame de Chartres",
+      "aliases": [
+        "Chartres Cathedral",
+        "Notre-Dame de Chartres"
+      ],
+      "place_type": "cathedral",
+      "address": "16 Cloître Notre-Dame, 28000 Chartres, France",
+      "country_code": "FR",
+      "geo": {
+        "lat": 48.4478611,
+        "lng": 1.4878889,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "CHARTRES-CATHEDRAL:official-gps",
+        "source_url": "https://www.cathedrale-chartres.org/visite/informations-pratiques/acceder/",
+        "source_method": "OFFICIAL_SOURCE",
+        "verified_at": "2026-10-09",
+        "attribution": null
+      },
+      "source_ids": [
+        "SHR-CHARTRES-CATHEDRAL"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:FR:sanctuaire-notre-dame-de-laghet",
+      "name": "Sanctuaire Notre-Dame de Laghet",
+      "aliases": [
+        "Notre-Dame de Laghet"
+      ],
+      "place_type": "shrine",
+      "address": "Route de Laghet, 06340 La Trinité, France",
+      "country_code": "FR",
+      "geo": {
+        "lat": 43.7533333333,
+        "lng": 7.3816666667,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "SHR-LAGHET-CONTACT:gps",
+        "source_url": "https://sanctuaire-laghet.fr/contact/",
+        "source_method": "OFFICIAL_SOURCE",
+        "verified_at": "2026-10-07",
+        "attribution": "Sanctuaire Notre-Dame de Laghet"
+      },
+      "source_ids": [
+        "SHR-LAGHET-CONTACT"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:IT:loreto-santa-casa",
+      "name": "Santuario Pontificio della Santa Casa di Loreto",
+      "aliases": [
+        "Basilica della Santa Casa",
+        "Holy House of Loreto"
+      ],
+      "place_type": "basilica",
+      "address": "Piazza della Madonna 1, 60025 Loreto (AN), Italy",
+      "country_code": "IT",
+      "geo": {
+        "lat": 43.44101,
+        "lng": 13.6108,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "osm:way:14805243",
+        "source_url": "https://mapcarta.com/es/29102824",
+        "source_method": "OSM",
+        "verified_at": "2026-10-09",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+      },
+      "source_ids": [
+        "SHR-LORETO-CONTACT"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:IT:pompei-rosary-shrine",
+      "name": "Pontificio Santuario della Beata Maria Vergine del Santo Rosario di Pompei",
+      "aliases": [
+        "Pontifical Shrine of Our Lady of the Rosary of Pompeii",
+        "Pompeii Rosary Shrine"
+      ],
+      "place_type": "basilica",
+      "address": "Piazza Bartolo Longo 1, 80045 Pompei (NA), Italy",
+      "country_code": "IT",
+      "geo": {
+        "lat": 40.75003,
+        "lng": 14.50055,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "osm:way:28778029",
+        "source_url": "https://www.openstreetmap.org/way/28778029",
+        "source_method": "OSM",
+        "verified_at": "2026-10-24",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+      },
+      "source_ids": [
+        "SHR-POMPEI-CONTACT"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:PT:fatima-sanctuary",
+      "name": "Santuário de Nossa Senhora do Rosário de Fátima",
+      "aliases": [
+        "Santuário de Fátima",
+        "Shrine of Our Lady of the Rosary of Fatima"
+      ],
+      "place_type": "shrine",
+      "address": "Rua de Santa Isabel 360, 2495-424 Fátima, Portugal",
+      "country_code": "PT",
+      "geo": {
+        "lat": 39.63112778,
+        "lng": -8.67318611,
+        "precision": "complex_anchor",
+        "indicative_only": true,
+        "locator_note": null,
+        "source_ref": "FATIMA-SANCTUARY:official-gps",
+        "source_url": "https://www.santuario-fatima.pt/pt/pages/indicacoes-para-a-peregrinacao-a-pe",
+        "source_method": "OFFICIAL_SOURCE",
+        "verified_at": "2026-10-09",
+        "attribution": null
+      },
+      "source_ids": [
+        "SHR-FATIMA-CONTACT"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:PT:santarem-santissimo-milagre",
+      "name": "Igreja de Santo Estêvão — Santuário do Santíssimo Milagre, Santarém",
+      "aliases": [
+        "Church of the Holy Miracle, Santarém",
+        "Igreja do Santíssimo Milagre",
+        "Sanctuaire du Très-Saint Miracle de Santarém"
+      ],
+      "place_type": "church",
+      "address": "Largo do Milagre, Santarém, Portugal",
+      "country_code": "PT",
+      "geo": {
+        "lat": 39.233463,
+        "lng": -8.681835,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "osm:way:166962185",
+        "source_url": "https://www.openstreetmap.org/way/166962185",
+        "source_method": "OSM",
+        "verified_at": "2026-10-15",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+      },
+      "source_ids": [
+        "SG-R72-SITE-SG-INV-0152",
+        "SG-R72-GEO-SG-INV-0152"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:ES:santiago-compostela-cathedral",
+      "name": "Catedral de Santiago de Compostela",
+      "aliases": [],
+      "place_type": "cathedral",
+      "address": "Praza do Obradoiro, 15705, Santiago de Compostela, Spain",
+      "country_code": "ES",
+      "geo": {
+        "lat": 42.88064,
+        "lng": -8.5445,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "wikidata:Q205136",
+        "source_url": "https://mapcarta.com/25251226",
+        "source_method": "OTHER",
+        "verified_at": "2026-10-09",
+        "attribution": null
+      },
+      "source_ids": [
+        "wikidata:Q205136"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:ES:basilica-del-pilar-zaragoza",
+      "name": "Basílica de Nuestra Señora del Pilar",
+      "aliases": [],
+      "place_type": "basilica",
+      "address": "Plaza del Pilar, 50003, Zaragoza, Spain",
+      "country_code": "ES",
+      "geo": {
+        "lat": 41.656883,
+        "lng": -0.878328,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "wikidata:Q24019734",
+        "source_url": "https://www.wikidata.org/wiki/Q24019734",
+        "source_method": "OTHER",
+        "verified_at": "2026-10-09",
+        "attribution": null
+      },
+      "source_ids": [
+        "wikidata:Q24019734"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:MX:basilica-guadalupe-mexico-city",
+      "name": "Insigne y Nacional Basílica de Santa María de Guadalupe",
+      "aliases": [
+        "Basílica de Guadalupe",
+        "Basilica of Our Lady of Guadalupe"
+      ],
+      "place_type": "basilica",
+      "address": "Fray Juan de Zumárraga No. 2, Villa Gustavo A. Madero, 07050 Ciudad de México, Mexico",
+      "country_code": "MX",
+      "geo": {
+        "lat": 19.48485,
+        "lng": -99.11786,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "osm:way:120733641",
+        "source_url": "https://www.openstreetmap.org/way/120733641",
+        "source_method": "OSM",
+        "verified_at": "2026-10-10",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+      },
+      "source_ids": [
+        "SHR-GUADALUPE-MX-CONTACT"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:IN:basilica-of-our-lady-of-good-health-vailankanni",
+      "name": "Basilica of Our Lady of Good Health, Vailankanni",
+      "aliases": [
+        "Basilica of Our Lady of Good Health, Velankanni"
+      ],
+      "place_type": "basilica",
+      "address": "Basilica of Our Lady of Good Health, Vailankanni, India",
+      "country_code": "IN",
+      "geo": {
+        "lat": 10.68025,
+        "lng": 79.84964,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "osm:way:672541959",
+        "source_url": "https://www.openstreetmap.org/way/672541959",
+        "source_method": "OSM",
+        "verified_at": "2026-10-10",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+      },
+      "source_ids": [
+        "SG-SITE-SG-GEO-P3-006",
+        "SG-COORD-SG-GEO-P3-006"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:PH:national-shrine-of-our-lady-of-lourdes-quezon-city",
+      "name": "National Shrine of Our Lady of Lourdes, Quezon City",
+      "aliases": [],
+      "place_type": "shrine",
+      "address": "National Shrine of Our Lady of Lourdes, Quezon City, Philippines",
+      "country_code": "PH",
+      "geo": {
+        "lat": 14.63018,
+        "lng": 120.99701,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "osm:way:140348903",
+        "source_url": "https://www.openstreetmap.org/way/140348903",
+        "source_method": "OSM",
+        "verified_at": "2026-10-10",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0"
+      },
+      "source_ids": [
+        "SG-SITE-SG-GEO-P3-009",
+        "SG-COORD-SG-GEO-P3-009"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "place:US:champion-shrine",
+      "name": "National Shrine of Our Lady of Champion",
+      "aliases": [
+        "Our Lady of Champion Shrine",
+        "Our Lady of Good Help Shrine"
+      ],
+      "place_type": "shrine",
+      "address": "4047 Chapel Drive, Champion, WI 54229, United States",
+      "country_code": "US",
+      "geo": {
+        "lat": 44.590609,
+        "lng": -87.773566,
+        "precision": "site",
+        "indicative_only": false,
+        "locator_note": null,
+        "source_ref": "ATLAS-OBSCURA:champion-gps",
+        "source_url": "https://www.atlasobscura.com/places/our-lady-of-champion-wisconsin",
+        "source_method": "OTHER",
+        "verified_at": "2026-10-09",
+        "attribution": null
+      },
+      "source_ids": [
+        "SHR-CHAMPION-HOME"
+      ],
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    }
+  ],
+  "tlm": [
+    {
+      "id": "ao-icksp-st-patrick-parish-and-oratory-50-charles-street-waterbury-ct-06708-2",
+      "name": "St. Patrick Parish and Oratory",
+      "venue_type": "oratory",
+      "address": "50 Charles Street, Waterbury, CT 06708",
+      "country_code": "US",
+      "community_id": "ICKSP",
+      "relationship": "served_by",
+      "liturgical_form": "TRADITIONAL_LATIN",
+      "geo": {
+        "lat": 41.5425024,
+        "lng": -73.0452011,
+        "precision": "address",
+        "source_ref": "osm:way:1490282962",
+        "source_url": "https://nominatim.openstreetmap.org/",
+        "source_method": "OSM_NOMINATIM",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "match_score": 0.84,
+        "verified_at": "2026-10-07"
+      },
+      "official_url": "https://www.institute-christ-king.org/waterbury-home",
+      "source_id": "src-icksp-st-patrick-parish-and-oratory-50-charles-street-waterbury-ct-06708-2",
+      "source_url": "https://www.institute-christ-king.org/waterbury-home",
+      "source_checked_at": "2026-10-07",
+      "schedule_status": "NOT_IMPORTED",
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "ao-icksp-st-mary-oratory-517-elm-st-rockford-il-61102-6",
+      "name": "St. Mary Oratory",
+      "venue_type": "oratory",
+      "address": "517 Elm St,, Rockford, IL 61102",
+      "country_code": "US",
+      "community_id": "ICKSP",
+      "relationship": "served_by",
+      "liturgical_form": "TRADITIONAL_LATIN",
+      "geo": {
+        "lat": 42.2720574,
+        "lng": -89.0984421,
+        "precision": "building",
+        "source_ref": "osm:way:823982027",
+        "source_url": "https://nominatim.openstreetmap.org/",
+        "source_method": "OSM_NOMINATIM",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "match_score": 1,
+        "verified_at": "2026-10-07"
+      },
+      "official_url": "https://www.institute-christ-king.org/rockford-home",
+      "source_id": "src-icksp-st-mary-oratory-517-elm-st-rockford-il-61102-6",
+      "source_url": "https://www.institute-christ-king.org/rockford-home",
+      "source_checked_at": "2026-10-07",
+      "schedule_status": "NOT_IMPORTED",
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "ao-icksp-st-francis-de-sales-oratory-802-s-huntington-sulphur-la-70663-8",
+      "name": "St. Francis de Sales Oratory",
+      "venue_type": "oratory",
+      "address": "802 S Huntington, Sulphur LA 70663",
+      "country_code": "US",
+      "community_id": "ICKSP",
+      "relationship": "served_by",
+      "liturgical_form": "TRADITIONAL_LATIN",
+      "geo": {
+        "lat": 30.2318623,
+        "lng": -93.3768603,
+        "precision": "building",
+        "source_ref": "osm:way:1355844466",
+        "source_url": "https://nominatim.openstreetmap.org/",
+        "source_method": "OSM_NOMINATIM",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "match_score": 1,
+        "verified_at": "2026-10-07"
+      },
+      "official_url": "https://www.institute-christ-king.org/sulphur-home",
+      "source_id": "src-icksp-st-francis-de-sales-oratory-802-s-huntington-sulphur-la-70663-8",
+      "source_url": "https://www.institute-christ-king.org/sulphur-home",
+      "source_checked_at": "2026-10-07",
+      "schedule_status": "NOT_IMPORTED",
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "ao-icksp-old-st-patrick-oratory-old-st-patrick-oratory-806-cherry-street-kansas-city-10",
+      "name": "Old St. Patrick Oratory",
+      "venue_type": "oratory",
+      "address": "Old St. Patrick Oratory, 806 Cherry Street, Kansas City,",
+      "country_code": "US",
+      "community_id": "ICKSP",
+      "relationship": "served_by",
+      "liturgical_form": "TRADITIONAL_LATIN",
+      "geo": {
+        "lat": 39.1041475,
+        "lng": -94.5763676,
+        "precision": "building",
+        "source_ref": "osm:way:365379059",
+        "source_url": "https://nominatim.openstreetmap.org/",
+        "source_method": "OSM_NOMINATIM",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "match_score": 0.95,
+        "verified_at": "2026-10-07"
+      },
+      "official_url": "https://www.institute-christ-king.org/kansascity-home",
+      "source_id": "src-icksp-old-st-patrick-oratory-old-st-patrick-oratory-806-cherry-street-kansas-city-10",
+      "source_url": "https://www.institute-christ-king.org/kansascity-home",
+      "source_checked_at": "2026-10-07",
+      "schedule_status": "NOT_IMPORTED",
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "ao-icksp-st-francis-de-sales-oratory-2653-ohio-avenue-st-louis-missouri-63118-11",
+      "name": "St. Francis de Sales Oratory",
+      "venue_type": "oratory",
+      "address": "2653 Ohio Avenue St. Louis, Missouri 63118",
+      "country_code": "US",
+      "community_id": "ICKSP",
+      "relationship": "served_by",
+      "liturgical_form": "TRADITIONAL_LATIN",
+      "geo": {
+        "lat": 38.6041963,
+        "lng": -90.2262096,
+        "precision": "building",
+        "source_ref": "osm:way:139761891",
+        "source_url": "https://nominatim.openstreetmap.org/",
+        "source_method": "OSM_NOMINATIM",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "match_score": 1,
+        "verified_at": "2026-10-07"
+      },
+      "official_url": "https://www.institute-christ-king.org/stlouis-home",
+      "source_id": "src-icksp-st-francis-de-sales-oratory-2653-ohio-avenue-st-louis-missouri-63118-11",
+      "source_url": "https://www.institute-christ-king.org/stlouis-home",
+      "source_checked_at": "2026-10-07",
+      "schedule_status": "NOT_IMPORTED",
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "ao-icksp-st-mary-of-the-assumption-parish-and-shrine-103-west-7th-street-oswego-ny-13126-14",
+      "name": "St. Mary of the Assumption Parish and Shrine",
+      "venue_type": "church",
+      "address": "103 West 7th Street, Oswego, NY 13126",
+      "country_code": "US",
+      "community_id": "ICKSP",
+      "relationship": "served_by",
+      "liturgical_form": "TRADITIONAL_LATIN",
+      "geo": {
+        "lat": 43.456437,
+        "lng": -76.5181515,
+        "precision": "building",
+        "source_ref": "osm:way:833622044",
+        "source_url": "https://nominatim.openstreetmap.org/",
+        "source_method": "OSM_NOMINATIM",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "match_score": 0.89,
+        "verified_at": "2026-10-07"
+      },
+      "official_url": "https://www.institute-christ-king.org/oswego-home",
+      "source_id": "src-icksp-st-mary-of-the-assumption-parish-and-shrine-103-west-7th-street-oswego-ny-13126-14",
+      "source_url": "https://www.institute-christ-king.org/oswego-home",
+      "source_checked_at": "2026-10-07",
+      "schedule_status": "NOT_IMPORTED",
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "ao-icksp-st-josaphat-oratory-34-32-210th-street-bayside-new-york-11361-15",
+      "name": "St. Josaphat Oratory",
+      "venue_type": "oratory",
+      "address": "34-32 210th Street, Bayside, New York 11361",
+      "country_code": "US",
+      "community_id": "ICKSP",
+      "relationship": "served_by",
+      "liturgical_form": "TRADITIONAL_LATIN",
+      "geo": {
+        "lat": 40.7685038,
+        "lng": -73.7774345,
+        "precision": "building",
+        "source_ref": "osm:way:284445564",
+        "source_url": "https://nominatim.openstreetmap.org/",
+        "source_method": "OSM_NOMINATIM",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "match_score": 1,
+        "verified_at": "2026-10-07"
+      },
+      "official_url": "https://www.institute-christ-king.org/queens-home",
+      "source_id": "src-icksp-st-josaphat-oratory-34-32-210th-street-bayside-new-york-11361-15",
+      "source_url": "https://www.institute-christ-king.org/queens-home",
+      "source_checked_at": "2026-10-07",
+      "schedule_status": "NOT_IMPORTED",
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "ao-icksp-st-leo-oratory-221-hanford-st-columbus-oh-43206-16",
+      "name": "St. Leo Oratory",
+      "venue_type": "oratory",
+      "address": "221 Hanford St, Columbus, OH 43206",
+      "country_code": "US",
+      "community_id": "ICKSP",
+      "relationship": "served_by",
+      "liturgical_form": "TRADITIONAL_LATIN",
+      "geo": {
+        "lat": 39.9362364,
+        "lng": -82.9890858,
+        "precision": "building",
+        "source_ref": "osm:way:744387460",
+        "source_url": "https://nominatim.openstreetmap.org/",
+        "source_method": "OSM_NOMINATIM",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "match_score": 1,
+        "verified_at": "2026-10-07"
+      },
+      "official_url": "https://www.institute-christ-king.org/columbus-home",
+      "source_id": "src-icksp-st-leo-oratory-221-hanford-st-columbus-oh-43206-16",
+      "source_url": "https://www.institute-christ-king.org/columbus-home",
+      "source_checked_at": "2026-10-07",
+      "schedule_status": "NOT_IMPORTED",
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "ao-icksp-st-stanislaus-oratory-524-w-historic-mitchell-street-milwaukee-wisconsin-53204-20",
+      "name": "St. Stanislaus Oratory",
+      "venue_type": "oratory",
+      "address": "524 W. Historic Mitchell Street, Milwaukee, Wisconsin 53204",
+      "country_code": "US",
+      "community_id": "ICKSP",
+      "relationship": "served_by",
+      "liturgical_form": "TRADITIONAL_LATIN",
+      "geo": {
+        "lat": 43.0125149,
+        "lng": -87.9172578,
+        "precision": "building",
+        "source_ref": "osm:way:1301083188",
+        "source_url": "https://nominatim.openstreetmap.org/",
+        "source_method": "OSM_NOMINATIM",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "match_score": 1,
+        "verified_at": "2026-10-07"
+      },
+      "official_url": "https://www.institute-christ-king.org/milwaukee-home",
+      "source_id": "src-icksp-st-stanislaus-oratory-524-w-historic-mitchell-street-milwaukee-wisconsin-53204-20",
+      "source_url": "https://www.institute-christ-king.org/milwaukee-home",
+      "source_checked_at": "2026-10-07",
+      "schedule_status": "NOT_IMPORTED",
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    },
+    {
+      "id": "ao-icksp-st-mary-s-oratory-325-grand-avenue-wausau-wisconsin-54403-mailing-address-22",
+      "name": "St. Mary's Oratory",
+      "venue_type": "oratory",
+      "address": "325 Grand Avenue, Wausau, Wisconsin 54403, Mailing Address:",
+      "country_code": "US",
+      "community_id": "ICKSP",
+      "relationship": "served_by",
+      "liturgical_form": "TRADITIONAL_LATIN",
+      "geo": {
+        "lat": 44.9537786,
+        "lng": -89.6231069,
+        "precision": "building",
+        "source_ref": "osm:way:657076951",
+        "source_url": "https://nominatim.openstreetmap.org/",
+        "source_method": "OSM_NOMINATIM",
+        "attribution": "© OpenStreetMap contributors, ODbL 1.0",
+        "match_score": 1,
+        "verified_at": "2026-10-07"
+      },
+      "official_url": "https://www.institute-christ-king.org/wausau-home",
+      "source_id": "src-icksp-st-mary-s-oratory-325-grand-avenue-wausau-wisconsin-54403-mailing-address-22",
+      "source_url": "https://www.institute-christ-king.org/wausau-home",
+      "source_checked_at": "2026-10-07",
+      "schedule_status": "NOT_IMPORTED",
+      "media_status": "NO_IMAGE_TRANSFERRED"
+    }
+  ]
+}
