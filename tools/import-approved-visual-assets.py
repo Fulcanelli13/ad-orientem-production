@@ -36,7 +36,7 @@ for row in assets:
             time.sleep(2 * (attempt + 1))
     else:
         raise RuntimeError(f"Could not fetch allowlisted asset {source_path}: {error}")
-    git_blob = hashlib.sha1(f"blob {len(payload)}\\0".encode() + payload).hexdigest()
+    git_blob = hashlib.sha1(b"blob " + str(len(payload)).encode() + bytes([0]) + payload).hexdigest()
     if git_blob != row["git_blob_sha"]:
         raise RuntimeError(f"Blob hash mismatch for {source_path}: {git_blob}")
     if len(payload) != row["size_bytes"]:
