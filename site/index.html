@@ -27,15 +27,17 @@
       <section id="home-view" class="view home-view" aria-label="Ad Orientem Home">
   <div class="home-hero" aria-roledescription="carousel" aria-label="Home highlights">
     <div class="hero-panel active" data-slide="0" aria-hidden="false">
-      <img class="hero-painting" src="./artwork/saraceni-paradise-v9.jpg" alt="Carlo Saraceni's Paradise, with the Holy Trinity, Our Lady, saints and angels" decoding="async" fetchpriority="high">
+      <div class="integrated-celebration-art" aria-hidden="true"></div>
       <div class="hero-shade" aria-hidden="true"></div>
-      <div class="art-tag">SACRED ART</div>
-      <a class="art-source" href="https://www.metmuseum.org/art/collection/search/437607" target="_blank" rel="noopener noreferrer" title="The Metropolitan Museum of Art — source and rights" aria-label="Artwork source and rights">i</a>
-      <div class="hero-caption">
-        <div class="when">GALLERY STUDY · APPROVED WORK</div>
-        <div class="la">Paradisus</div>
-        <h1>Paradise</h1>
-        <div class="meta"><span>CARLO SARACENI</span><span class="color-chip"><i class="sw" aria-hidden="true"></i>THE MET · CC0</span></div>
+      <div class="hero-caption integrated-day-caption">
+        <div class="day-date-line">
+          <span>TODAY</span>
+          <em id="home-current-date">Current day</em>
+          <button class="day-select" type="button" data-route="calendar" aria-label="Open the liturgical calendar">⌄</button>
+        </div>
+        <div class="when">1962 ROMAN CALENDAR · NOT YET TRANSFERRED</div>
+        <h1>The Liturgical Day</h1>
+        <div class="day-rubric"><span>✦ CALENDAR PENDING</span><span>● ARTWORK PENDING</span></div>
       </div>
     </div>
     <div class="hero-panel" data-slide="1" aria-hidden="true">
@@ -68,13 +70,13 @@
       <button class="hero-step" type="button" data-slide-move="1" aria-label="Next highlight">›</button>
     </div>
   </div>
-  <div class="home-pad">
+  <div class="home-pad integrated-home-order">
     <div class="calendar-ribbon" aria-label="Civil week and calendar entrance">
       <div class="civil-week" id="civil-week"></div>
       <button class="calendar-door" type="button" data-route="calendar" aria-label="Open calendar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/><circle cx="12" cy="14.5" r="1.3" fill="currentColor" stroke="none"/></svg><small>CAL.</small></button>
     </div>
     <p class="calendar-disclosure" id="civil-disclosure">Civil week preview · canonical 1962 liturgical dates are not yet transferred.</p>
-    <button class="enter" type="button" data-route="mass"><span class="t"><b>Enter the Mass</b><small>THE MISSAL · LITURGY · LIVE</small></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
+    <button class="enter" type="button" data-route="mass"><span class="t"><b>Enter the Mass</b><small>Liturgical reader awaiting transfer</small></span><span class="go" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></button>
     <section class="sec prayer-door prayer-door-v9" id="home-hour-prayer">
   <div class="sech"><h2>Pray now</h2><button type="button" data-route="pray">All prayers ›</button></div>
   <div class="hour-prayer-frame">
