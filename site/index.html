@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#070b11">
+  <meta name="description" content="Ad Orientem — production foundation for a contemplative traditional Roman Catholic app.">
+  <title>Ad Orientem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="wordmark">AD ORIENTEM</div>
+      <button class="about-button" id="about-button" type="button" aria-label="About this foundation" title="About this foundation">i</button>
+    </header>
+
+    <main id="main">
+      <section id="home-view" class="view home-view" aria-label="Ad Orientem home">
+        <div class="hero">
+          <div class="hero-art" aria-hidden="true"><div class="art-mount"><div class="art-mark">✠</div></div></div>
+          <div class="hero-shade" aria-hidden="true"></div>
+          <span class="art-label">SACRED ART <span class="art-status">· TO BE CURATED</span></span>
+          <div class="hero-caption">
+            <div class="when">THE NEW AD ORIENTEM</div>
+            <p class="latin">Ad orientem</p>
+            <h1>Ad Orientem</h1>
+            <div class="ornament" aria-hidden="true"><span></span>✦<span></span></div>
+            <p class="subtitle">Prayer, sacred liturgy, and the living tradition of the Church.</p>
+          </div>
+          <button class="art-info" id="art-info" type="button" aria-expanded="false" aria-controls="art-note" aria-label="Artwork status">i</button>
+          <p class="art-note" id="art-note" hidden>The artwork area is deliberately unassigned. No painting will be promoted until the selected image, reproduction and rights are verified.</p>
+        </div>
+
+        <div class="home-content">
+          <div class="calendar-ribbon">
+            <div class="civil-week" id="civil-week" aria-label="Current civil week"></div>
+            <button class="calendar-door" type="button" data-route="calendar" aria-label="Open calendar entrance">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.35" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M7.5 2.8v4.5m9-4.5v4.5M3.5 9.6h17"/></svg>
+              <small>CAL.</small>
+            </button>
+          </div>
+          <p class="calendar-disclosure" id="civil-disclosure">Civil dates only · the 1962 liturgical calendar has not been transferred.</p>
+
+          <button class="mass-enter" type="button" data-route="mass">
+            <span class="mass-enter-copy"><strong>Enter the Mass</strong><small>THE MISSAL · LITURGY · LIVE</small></span>
+            <span class="enter-arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="23" height="23" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+            </span>
+          </button>
+
+          <button class="prayer-door" type="button" data-route="pray">
+            <span class="door-symbol" aria-hidden="true">✧</span>
+            <span class="door-content"><span class="eyebrow">THE LIFE OF PRAYER</span><strong>Enter the Church</strong><small>The prayer experience will be transferred when approved.</small></span>
+            <span class="door-arrow" aria-hidden="true">›</span>
+          </button>
+
+          <div class="section-header"><h2>EXPLORE AD ORIENTEM</h2></div>
+          <div class="path-grid">
+            <button class="path-tile" type="button" data-route="calendar"><span class="path-icon" aria-hidden="true">◷</span><strong>Calendar</strong><small>The liturgical year</small></button>
+            <button class="path-tile" type="button" data-route="atlas"><span class="path-icon" aria-hidden="true">⌖</span><strong>Sacred Atlas</strong><small>Churches & communities</small></button>
+            <button class="path-tile" type="button" data-route="formation"><span class="path-icon" aria-hidden="true">✤</span><strong>Formation</strong><small>Faith & tradition</small></button>
+            <button class="path-tile" type="button" data-route="pray"><span class="path-icon" aria-hidden="true">✧</span><strong>Prayer</strong><small>Devotional life</small></button>
+          </div>
+          <p class="foundation-note"><span aria-hidden="true">✦</span> Production foundation · awaiting approved module transfers</p>
+        </div>
+      </section>
+
+      <section class="view module-view" id="module-view" aria-label="Module entrance" hidden>
+        <div class="module-top">
+          <button type="button" class="back-button" id="back-button" aria-label="Return to Home">‹</button>
+          <span class="eyebrow">AD ORIENTEM</span>
+        </div>
+        <div class="module-content">
+          <div class="module-symbol" aria-hidden="true">✠</div>
+          <p id="module-latin" class="latin"></p>
+          <h1 id="module-title" tabindex="-1"></h1>
+          <div class="ornament" aria-hidden="true"><span></span>✦<span></span></div>
+          <p id="module-description"></p>
+          <p class="module-status">NOT YET TRANSFERRED</p>
+          <button class="return-home" type="button" data-route="home">Return to Home</button>
+        </div>
+      </section>
+    </main>
+
+    <nav class="tabbar" aria-label="Main navigation">
+      <button type="button" class="tab active" data-route="home" aria-current="page"><span class="tab-icon" aria-hidden="true">⌂</span><span>Today</span></button>
+      <button type="button" class="tab" data-route="mass"><span class="tab-icon" aria-hidden="true">✠</span><span>Mass</span></button>
+      <button type="button" class="tab" data-route="pray"><span class="tab-icon" aria-hidden="true">✧</span><span>Pray</span></button>
+      <button type="button" class="tab" data-route="atlas"><span class="tab-icon" aria-hidden="true">⌖</span><span>Explore</span></button>
+    </nav>
+  </div>
+
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <h2 id="about-title">Ad Orientem · New production foundation</h2>
+    <p>This is the initial production shell built around the Home V9 visual direction. No liturgical texts, prayer engines, calendar, artwork registry or Atlas data have been transferred.</p>
+    <p>The typeface families and core colour tokens are taken from the approved prototype. Exact visual parity and final artwork composition remain subject to review.</p>
+    <form method="dialog"><button type="submit">Close</button></form>
+  </dialog>
+</body>
+</html>
