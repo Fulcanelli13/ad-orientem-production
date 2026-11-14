@@ -81,12 +81,37 @@ try{
     width+"px place cards cannot swipe horizontally: "+JSON.stringify(dom));
   assert.ok(dom.worldClickable,width+"px World View is obstructed: "+JSON.stringify(dom));
   assert.ok(dom.attribution,"Source map attribution control missing");
+  const rail=page.locator("#atlas-results");
+  const railMoved=await rail.evaluate(el=>{
+    el.scrollLeft=el.clientWidth;
+    const moved=el.scrollLeft>12;
+    el.scrollLeft=0;
+    return moved;
+  });
+  assert.equal(railMoved,true,width+"px horizontally swipeable card rail did not scroll");
   const handle=page.locator("#atlas-sheet-handle");
   await handle.click();
   assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"expanded");
   assert.equal(await handle.getAttribute("aria-expanded"),"true");
   await handle.click();
   assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek");
+  if(width===320){
+    const box=await handle.boundingBox();
+    const x=box.x+box.width/2,y=box.y+box.height/2;
+    await page.mouse.move(x,y);
+    await page.mouse.down();
+    await page.mouse.move(x,y-68,{steps:4});
+    await page.mouse.up();
+    assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"expanded",
+      "Dragging the sheet handle upward must expand the sheet");
+    const up=await handle.boundingBox();
+    await page.mouse.move(up.x+up.width/2,up.y+up.height/2);
+    await page.mouse.down();
+    await page.mouse.move(up.x+up.width/2,up.y+up.height/2+70,{steps:4});
+    await page.mouse.up();
+    assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek",
+      "Dragging the sheet handle downward must collapse the sheet");
+  }
   await page.screenshot({path:join("artifacts/production-explore",width+"-en-sacred-map.png"),
    animations:"disabled",fullPage:false});
   await page.locator("#atlas-results .atlas-result-button").first().click();
