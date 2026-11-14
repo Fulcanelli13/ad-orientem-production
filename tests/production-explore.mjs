@@ -112,12 +112,13 @@ assert.match(html,/\.\/explore\.css/);
 assert.match(js,/const BASEMAP = CLAUDE_MAP_STYLE;/);
 const claudeMap=read("site/explore/claude-map-style.js");
 assert.match(claudeMap,/const CLAUDE_MAP_STYLE|export const CLAUDE_MAP_STYLE/);
-assert.match(claudeMap,/tiles\\.openfreemap\\.org\\/planet/);
-assert.match(claudeMap,/water-edge/);
-assert.match(claudeMap,/place-country/);
-assert.match(claudeMap,/#12161c/);
-assert.doesNotMatch(claudeMap,/data\\/directory|AO\\.W|AO\\.REG|mass_times|nextMass|vercel/,
-  "Original CSS/cartography can transfer without the France-only demo dataset");
+assert.ok(claudeMap.includes("https://tiles.openfreemap.org/planet"));
+assert.ok(claudeMap.includes("water-edge"));
+assert.ok(claudeMap.includes("place-country"));
+assert.ok(claudeMap.includes("#12161c"));
+for(const held of ["data/directory","AO.W","AO.REG","mass_times","nextMass","vercel"]){
+ assert.equal(claudeMap.includes(held),false,"Demo datum must not transfer: "+held);
+}
 assert.match(js,/maplibre-gl@6\.13\.0/);
 assert.equal((js.match(/new lib\.Map\(/g)||[]).length,1,
   "Only one map instance may be created for the two Atlas lenses");
