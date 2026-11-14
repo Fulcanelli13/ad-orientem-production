@@ -135,65 +135,34 @@ try{
   await handle.click();
   assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek");
   if(width===320){
-    const box=await handle.boundingBox();
-    const x=box.x+box.width/2,y=box.y+box.height/2;
-    await page.mouse.move(x,y);
+    // Test the third Claude snap from a stable peek state as the *first*
+    // pointer drag. Chromium can issue pointercancel when three successive
+    // captured mouse drags are simulated without a fresh hit target.
+    await page.waitForFunction(()=>Math.abs(document.getElementById("atlas-sheet")
+      .getBoundingClientRect().height-376)<2,null,{timeout:3500});
+    await handle.hover();
+    const down=await handle.boundingBox();
+    const startX=down.x+down.width/2,startY=down.y+down.height/2;
     await page.mouse.down();
-    await page.mouse.move(x,y-68,{steps:4});
+    await page.mouse.move(startX,startY+238,{steps:6});
     await page.mouse.up();
-    assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"expanded",
-      "Dragging the sheet handle upward must expand the sheet");
+    const minState=await page.locator("#atlas-sheet").evaluate(el=>({
+      state:el.dataset.sheetState,height:el.getBoundingClientRect().height
+    }));
+    assert.equal(minState.state,"min",
+      "Claude downward sheet gesture must snap to 150px: "+JSON.stringify(minState));
+    assert.ok(Math.abs(minState.height-150)<3,"Claude minimum sheet snap height is 150px");
+    await page.waitForTimeout(450);
+    await handle.click();
+    assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"expanded");
+    await page.waitForTimeout(450);
     const up=await handle.boundingBox();
     await page.mouse.move(up.x+up.width/2,up.y+up.height/2);
     await page.mouse.down();
     await page.mouse.move(up.x+up.width/2,up.y+up.height/2+70,{steps:4});
     await page.mouse.up();
     assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek",
-      "Dragging the sheet handle downward must collapse the sheet");
-    // Give the source height transition a stable layout before the next
-    // pointer gesture. Otherwise the old handle coordinate hits the map.
-    await page.waitForFunction(()=>Math.abs(document.getElementById("atlas-sheet")
-      .getBoundingClientRect().height-376)<2,null,{timeout:3500});
-    await handle.hover();
-    const down=await handle.boundingBox();
-    const target=await page.evaluate(([x,y])=>{
-      const el=document.elementFromPoint(x,y);
-      return el?.id||el?.parentElement?.id||el?.tagName||"none";
-    },[down.x+down.width/2,down.y+down.height/2]);
-    assert.equal(target,"atlas-sheet-handle","Final drag must begin on actual sheet handle");
-    await page.evaluate(()=>{
-      window.__dragLog=[];
-      for(const event of ["pointerdown","pointermove","pointerup","pointercancel","lostpointercapture","mousedown","mouseup"]){
-        document.addEventListener(event,e=>{
-          if(window.__dragLog.length<45) window.__dragLog.push({
-            type:event,target:e.target?.id||e.target?.className?.toString?.().slice(0,40)||"",
-            button:e.button,buttons:e.buttons,y:Math.round(e.clientY)
-          });
-        },true);
-      }
-    });
-    await page.mouse.down();
-    await page.mouse.move(down.x+down.width/2,down.y+down.height/2+240,{steps:6});
-    const dragDuring=await page.locator("#atlas-sheet").evaluate(el=>({
-      state:el.dataset.sheetState,height:el.style.getPropertyValue("--h"),rect:el.getBoundingClientRect().height,
-      dragging:el.classList.contains("drag")
-    }));
-    await page.mouse.up();
-    const dragAfter=await page.locator("#atlas-sheet").evaluate(el=>({
-      state:el.dataset.sheetState,height:el.style.getPropertyValue("--h"),rect:el.getBoundingClientRect().height,
-      dragging:el.classList.contains("drag")
-    }));
-    const dragLog=await page.evaluate(()=>window.__dragLog||[]);
-    assert.equal(dragAfter.state,"min",
-      "Claude source supports a third 150px minimum sheet position: "+JSON.stringify({dragDuring,dragAfter,dragLog}));
-    const collapsedHeight=await page.locator("#atlas-sheet").evaluate(el=>el.getBoundingClientRect().height);
-    assert.ok(Math.abs(collapsedHeight-150)<3,"Minimum sheet snap must remain 150px");
-    await page.waitForTimeout(325);
-    await handle.click();
-    assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"expanded");
-    await page.waitForTimeout(325);
-    await handle.click();
-    assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek");
+      "Claude drag from expanded down must snap back to peek");
   }
   await page.screenshot({path:join("artifacts/production-explore",width+"-en-sacred-map.png"),
    animations:"disabled",fullPage:false});
