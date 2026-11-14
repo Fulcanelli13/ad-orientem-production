@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import {boundsForLens} from "../site/explore/lens-camera.js";
+import {boundsForLens} from "../site/explore/lens-camera.mjs";
 const sourceRecord=(lat,lng)=>({geo:{lat,lng}});
 assert.equal(boundsForLens(null),null);
 assert.equal(boundsForLens([]),null);
