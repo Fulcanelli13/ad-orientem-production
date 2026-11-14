@@ -39,8 +39,13 @@ try{
   await page.goto("http://127.0.0.1:"+port+"/",{waitUntil:"domcontentloaded"});
   await page.locator('[data-route="atlas"]').first().click();
   await page.locator("#atlas-view").waitFor({state:"visible"});
-  await page.waitForFunction(()=>document.querySelector("#atlas-count")?.textContent==="18 / 18",
+  await page.waitForFunction(()=>document.querySelector("#atlas-count")?.textContent==="10 / 10",
    null,{timeout:20000});
+  assert.equal(await page.locator("#atlas-lens-tlm").getAttribute("aria-selected"),"true",
+    "Claude source opens with TLM Atlas first");
+  await page.locator("#atlas-lens-sacred").click();
+  await page.waitForFunction(()=>document.querySelector("#atlas-count")?.textContent==="18 / 18",
+   null,{timeout:15000});
   await page.waitForFunction(()=>document.querySelectorAll("#atlas-map canvas").length===1,
    null,{timeout:30000});
   // Canvas allocation alone does not imply that tiles and source-backed pins
@@ -67,6 +72,16 @@ try{
       railSnap:css("atlas-results").scrollSnapType,
       worldClickable:at===document.getElementById("atlas-world") ||
         document.getElementById("atlas-world").contains(at),
+      claudeOrder:[...document.querySelectorAll("#atlas-lens-tlm,#atlas-lens-sacred")].map(el=>el.id),
+      searchRect:(()=>{const r=rect("atlas-search");return {top:r.top,bottom:r.bottom}})(),
+      tabRect:(()=>{const r=rect("atlas-lens-tlm");return {top:r.top,bottom:r.bottom}})(),
+      sheetDockGap:Math.abs(innerHeight-rect("atlas-sheet").bottom -
+        document.querySelector(".tabbar").getBoundingClientRect().height),
+      sourceCardHeight:document.querySelector("#atlas-results .atlas-result-button")?.getBoundingClientRect().height,
+      sheetCorners:(()=>{const style=css("atlas-sheet");return {
+        topLeft:style.borderTopLeftRadius,topRight:style.borderTopRightRadius,
+        bottomLeft:style.borderBottomLeftRadius,bottomRight:style.borderBottomRightRadius
+      }})(),
       attribution:Boolean(document.querySelector("#atlas-map .maplibregl-ctrl-attrib")),
       zoomButtons:[...document.querySelectorAll("#atlas-map .maplibregl-ctrl-zoom-in,#atlas-map .maplibregl-ctrl-zoom-out")]
         .map(el=>{
@@ -83,6 +98,16 @@ try{
     width+"px map must fill the atlas frame: "+JSON.stringify(dom));
   assert.ok(dom.sheetTop>dom.toolbarBottom+16&&dom.sheetHeight>=175,
     width+"px sheet covers floating map controls: "+JSON.stringify(dom));
+  assert.deepEqual(dom.claudeOrder,["atlas-lens-tlm","atlas-lens-sacred"]);
+  assert.ok(dom.searchRect.bottom<=dom.tabRect.top+2,
+    width+"px search must precede tabs as in Claude source: "+JSON.stringify(dom));
+  assert.ok(dom.sheetDockGap<=2,
+    width+"px Claude bottom sheet must dock directly above Home tabbar: "+JSON.stringify(dom));
+  assert.ok(Math.abs(dom.sourceCardHeight-226)<=2,
+    width+"px Claude source card height must be 226px: "+JSON.stringify(dom));
+  assert.deepEqual(dom.sheetCorners,{topLeft:"24px",topRight:"24px",
+    bottomLeft:"0px",bottomRight:"0px"},
+    width+"px sheet corners must match owner source, not a floating island");
   assert.equal(dom.sheetState,"peek");
   assert.ok(dom.railOverflow>20&&dom.railSnap.includes("x"),
     width+"px place cards cannot swipe horizontally: "+JSON.stringify(dom));
@@ -151,7 +176,7 @@ try{
    animations:"disabled",fullPage:false});
   await page.locator("#atlas-card .atlas-card-close").click();
   await page.locator("#atlas-world").click();
-  await page.locator('#atlas-view [data-route="home"]').click();
+  await page.locator('.tabbar [data-route="home"]').click();
   await page.locator("#home-view").waitFor({state:"visible"});
   await page.locator('[data-route="atlas"]').first().click();
   await page.locator("#atlas-view").waitFor({state:"visible"});
