@@ -67,7 +67,14 @@ try{
       railSnap:css("atlas-results").scrollSnapType,
       worldClickable:at===document.getElementById("atlas-world") ||
         document.getElementById("atlas-world").contains(at),
-      attribution:Boolean(document.querySelector("#atlas-map .maplibregl-ctrl-attrib"))
+      attribution:Boolean(document.querySelector("#atlas-map .maplibregl-ctrl-attrib")),
+      zoomButtons:[...document.querySelectorAll("#atlas-map .maplibregl-ctrl-zoom-in,#atlas-map .maplibregl-ctrl-zoom-out")]
+        .map(el=>{
+          const r=el.getBoundingClientRect();
+          const target=document.elementFromPoint((r.left+r.right)/2,(r.top+r.bottom)/2);
+          return {visible:r.width>=29&&r.height>=29,
+            reachable:target===el||el.contains(target)};
+        })
     };
   });
   assert.ok(dom.horizontalOverflow<=1,width+"px overflow: "+JSON.stringify(dom));
@@ -81,6 +88,9 @@ try{
     width+"px place cards cannot swipe horizontally: "+JSON.stringify(dom));
   assert.ok(dom.worldClickable,width+"px World View is obstructed: "+JSON.stringify(dom));
   assert.ok(dom.attribution,"Source map attribution control missing");
+  assert.equal(dom.zoomButtons.length,2,width+"px missing map zoom controls");
+  assert.ok(dom.zoomButtons.every(button=>button.visible&&button.reachable),
+    width+"px zoom button covered by floating controls: "+JSON.stringify(dom.zoomButtons));
   const rail=page.locator("#atlas-results");
   const railMoved=await rail.evaluate(el=>{
     el.scrollLeft=el.clientWidth;
