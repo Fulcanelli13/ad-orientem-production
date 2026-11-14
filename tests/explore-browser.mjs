@@ -135,9 +135,8 @@ try{
   await handle.click();
   assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek");
   if(width===320){
-    // Keep real pointer tests for short source gestures. Chromium cancels a
-    // long synthetic downward gesture after the sheet begins moving; do not
-    // pretend the 150px pointer gesture is accepted on this evidence.
+    // Verify the original short source gestures, then the 150px long
+    // downward drag while the stationary viewport owns pointer capture.
     await page.waitForFunction(()=>Math.abs(document.getElementById("atlas-sheet")
       .getBoundingClientRect().height-376)<2,null,{timeout:3500});
     const start=await handle.boundingBox();
@@ -157,6 +156,21 @@ try{
     await page.mouse.up();
     assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek",
       "Short downward pointer drag must restore Claude peek sheet");
+    await page.waitForFunction(()=>Math.abs(document.getElementById("atlas-sheet")
+      .getBoundingClientRect().height-376)<2,null,{timeout:3500});
+    await handle.hover();
+    const long=await handle.boundingBox();
+    const lx=long.x+long.width/2,ly=long.y+long.height/2;
+    await page.mouse.down();
+    await page.mouse.move(lx,ly+240,{steps:6});
+    await page.mouse.up();
+    const longState=await page.locator("#atlas-sheet").evaluate(el=>({
+      state:el.dataset.sheetState,
+      height:parseFloat(el.style.getPropertyValue("--h"))
+    }));
+    assert.equal(longState.state,"min",
+      "Long downward drag must reach Claude 150px minimum: "+JSON.stringify(longState));
+    assert.equal(longState.height,150);
     await handle.focus();
     await page.keyboard.press("ArrowDown");
     const minState=await page.locator("#atlas-sheet").evaluate(el=>({
