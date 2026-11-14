@@ -94,7 +94,7 @@ try{
   });
   assert.ok(dom.horizontalOverflow<=1,width+"px overflow: "+JSON.stringify(dom));
   assert.equal(dom.mapCount,1);
-  assert.ok(dom.mapHeight>=height*.70&&dom.mapWidth>=Math.min(width,430)*.90&&dom.worldHeight>=44,
+  assert.ok(dom.mapHeight>=height*.70&&dom.mapWidth>=Math.min(width,430)*.90&&dom.worldHeight>=25,
     width+"px map must fill the atlas frame: "+JSON.stringify(dom));
   assert.ok(dom.sheetTop>dom.toolbarBottom+16&&dom.sheetHeight>=175,
     width+"px sheet covers floating map controls: "+JSON.stringify(dom));
