@@ -1,11 +1,10 @@
 name: Review selected Explore core
 
 on:
-  # Every PR revision must be verified, including source-manifest, acceptance
-  # or production-contract edits. This workflow has READ-ONLY permissions and
-  # never deploys. Excluding docs let the latest reviewed head go unchecked.
+  # Every PR revision must be verified; no deployment or write permissions.
   pull_request:
-  workflow_dispatch:
+    types: [opened, reopened, synchronize, ready_for_review]
+  workflow_dispatch: {}
 
 permissions:
   contents: read
