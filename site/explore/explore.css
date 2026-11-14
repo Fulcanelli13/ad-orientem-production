@@ -91,3 +91,8 @@ button:disabled{opacity:.42;cursor:default}
 @media(min-width:650px){body{padding:18px}.app{height:calc(100dvh - 36px);border-radius:38px;border:1px solid var(--line2)}}
 @media(max-width:340px){.top{padding-left:10px;padding-right:10px}.where{top:calc(120px + var(--st))}.sh-h{padding-left:12px;padding-right:12px}.sh-h b{font-size:20px}.ways{padding-left:10px}.tabbar{padding-left:10px;padding-right:10px}.site-card{padding:9px;flex-wrap:wrap}.site-card b{font-size:16px}}
 @media(prefers-reduced-motion:reduce){.sheet{transition:none}}
+
+/* Grounded site-marker treatment; never imply pin precision. */
+.pin-marker{display:grid;place-items:center;width:32px;height:32px;border:1px solid rgba(234,214,166,.8);border-radius:50%;background:rgba(13,17,24,.94);color:#ead6a6;box-shadow:0 2px 12px #0008;font:24px/1 var(--disp)}
+.pin-marker:focus-visible{outline:2px solid #fff;outline-offset:3px}
+@media(hover:hover){.pin-marker:hover{background:#2b261e;transform:scale(1.08)}}
