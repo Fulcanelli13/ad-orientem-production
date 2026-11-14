@@ -379,8 +379,9 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
  position:absolute!important;left:0!important;right:0!important;
  bottom:var(--ao-tabbar)!important;top:auto!important;
  width:100%!important;margin:0!important;padding:0!important;
- height:min(376px,calc(100% - 160px - var(--ao-tabbar)))!important;
+ height:min(var(--h,376px),calc(100% - 160px - var(--ao-tabbar)))!important;
  min-height:0!important;max-height:none!important;
+ transition:height .45s cubic-bezier(.22,.8,.22,1);
  display:flex!important;flex-direction:column;
  border-radius:24px 24px 0 0!important;
  background:linear-gradient(180deg,rgba(11,16,24,.97),rgba(7,11,17,.99))!important;
@@ -389,8 +390,9 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
  backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)
 }
 #atlas-view .atlas-sheet[data-sheet-state="expanded"]{
- height:min(62%,calc(100% - 150px - var(--ao-tabbar)))!important
+ height:min(var(--h,62vh),calc(100% - 150px - var(--ao-tabbar)))!important
 }
+#atlas-view .atlas-sheet.drag{transition:none!important}
 #atlas-view .atlas-sheet-grip{
  width:100%;height:20px!important;flex:0 0 20px!important;
  min-height:20px!important;border-radius:24px 24px 0 0;
@@ -463,11 +465,11 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
 }
 #atlas-view .atlas-map-shell .maplibregl-ctrl-bottom-right,
 #atlas-view .atlas-map-shell .maplibregl-ctrl-bottom-left{
- bottom:calc(var(--ao-tabbar) + 378px)!important
+ bottom:calc(var(--ao-tabbar) + var(--atlas-sheet-height,376px) + 2px)!important
 }
 #atlas-view .atlas-content:has(.atlas-sheet[data-sheet-state="expanded"]) .maplibregl-ctrl-bottom-right,
 #atlas-view .atlas-content:has(.atlas-sheet[data-sheet-state="expanded"]) .maplibregl-ctrl-bottom-left{
- bottom:calc(var(--ao-tabbar) + 62% + 4px)!important
+ bottom:calc(var(--ao-tabbar) + var(--atlas-sheet-height,376px) + 2px)!important
 }
 #atlas-view .atlas-content:has(.atlas-card:not([hidden])){z-index:60!important}
 #atlas-view .atlas-card{z-index:60!important;inset:0!important;border-radius:0!important}
