@@ -147,9 +147,11 @@ function selectRecord(id,{fly=true}={}){
  const root=$("atlas-card");root.hidden=false;root.replaceChildren();
  const top=make("div","atlas-card-heading");
  const type=make("span","atlas-card-type",recordBadge(record));
+ const folioMeta=make("div","atlas-card-meta");
+ folioMeta.append(make("span","atlas-folio-kicker","LIBER LOCORUM"),type);
  const close=make("button","atlas-card-close","×");close.type="button";close.setAttribute("aria-label",tr("hide"));
  close.addEventListener("click",()=>{state.selectedId=null;root.hidden=true;renderSummary();$("atlas-sheet-handle").focus({preventScroll:true});});
- top.append(type,close);root.append(top);
+ top.append(folioMeta,close);root.append(top);
  root.append(make("h2","atlas-card-title",record.name));
  const figure=make("div","atlas-card-media");
  // This SVG belongs to the source-owned no-photo fallback, not an approved photograph.
