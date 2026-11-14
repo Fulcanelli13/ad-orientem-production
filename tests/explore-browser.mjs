@@ -203,6 +203,18 @@ try{
     "Missing coordinate-source link");
   await page.screenshot({path:join("artifacts/production-explore",width+"-en-sacred-folio.png"),
    animations:"disabled",fullPage:false});
+  if(width===320){
+    const firstTitle=await page.locator("#atlas-card .atlas-folio-ttl h1").innerText();
+    const related=page.locator("#atlas-card .atlas-folio-row").first();
+    assert.ok(await related.count()>0,"Source folio should link other selected Sacred Places");
+    await related.click();
+    assert.equal(await page.locator("#atlas-card .atlas-folio-closeall").count(),1,
+      "Following a related Place requires Claude's separate close-all action");
+    assert.notEqual(await page.locator("#atlas-card .atlas-folio-ttl h1").innerText(),firstTitle);
+    await page.locator("#atlas-card .atlas-folio-back").click();
+    assert.equal(await page.locator("#atlas-card .atlas-folio-ttl h1").innerText(),firstTitle,
+      "Claude folio Back must return to the prior canonical Place");
+  }
   await page.locator("#atlas-card .atlas-folio-back").click();
   await page.locator("#atlas-lens-tlm").click();
   await page.waitForFunction(()=>document.querySelector("#atlas-count")?.textContent==="10 / 10");
