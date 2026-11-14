@@ -55,3 +55,44 @@ Until these gates are met, keep `media_status: "NO_IMAGE_TRANSFERRED"` for **all
 ## Release fence
 
 PR #1 stays draft, unmerged and undeployed. A green Maps/Chromium test proves function, **not owner photographic or exact pixel approval**. No Vercel use; GitHub Actions and Pages only after sign-off.
+
+
+## Photo Finder owner-selection crosswalk — 14 November 2026
+
+**Correction to the initial R28-only check:** the statement that the 19-image R28 cohort has no pilot overlap is true, but incomplete. The earlier [451-decision Photo Finder export](https://github.com/Fulcanelli13/ad-orientem/blob/9b7fafd120b90632b2c376aed4f609235cd15709/data/geography/research/photo-finder-20261030/decisions.json), schema `AO_PLACE_PHOTO_DECISIONS_V1`, exported 30 October 2026, records exact owner-selected files for **six** of the 17 available pilot cover photographs. The research [Round 6 selected-cover manifest](https://github.com/Fulcanelli13/ad-orientem/blob/9b7fafd120b90632b2c376aed4f609235cd15709/data/geography/research/sacred-atlas-round6-selected-16-cover-manifest-20261103.v1.json) independently corroborates Santarém as `PHOTO_FINDER_2026-10-30_FIRST_IMAGE_KEEP`. This addendum supersedes only the earlier owner-selection inference, not the asset, source, or production hold.
+
+**Reconciled 28-site state:** **6/18** Sacred pilots have an exact owner-selected, research-available cover; **10/18** have a research cover *different from* an earlier owner-selected Photo Finder file; **1/18** (Lough Derg) has a research cover but no matching Photo Finder choice; **1/18** (Centre Père Laval) has no approved cover. The **10/10 TLM** pilots still have no matched approved venue cover. **0/28** images have been transferred to production. Existing `NO_IMAGE_TRANSFERRED` statuses are retained.
+
+### Six exact owner-choice matches — eligible for next verification, NOT yet published
+
+| Place ID | Exact image recorded in owner selection (rank 1) | Original SHA-1 | Reviewed research derivative SHA-256 | Source licence/photographer | Next gate |
+| --- | --- | --- | --- | --- | --- |
+| `place:MU:saint-louis-cathedral-port-louis` | `Port Louis, Saint Louis Cathedral.jpg` | `05eb7fcfee477bb5f430b5116e71fc554f11d05d` | `dac6c5a35082cf48872a58e81fc1ae2c284664b7df42b0295109e2c98f95a796` | CC0 1.0 — Karsten Ratzke | Verify derivative bytes, unchanged image content, crop, credits and responsive Claude cards/folio; **HOLD** |
+| `place:MU:marie-reine-de-la-paix-port-louis` | `MU-port-louis-kirche-maria.jpg` | `244370f72a2c1e2e22e0900a7894c7da425db5e1` | `266ae8ca823ef97fbae8f64d464d610deef81e0adf4017bc24d02bb2054f7f72` | CC BY-SA 4.0 — Balou46 | Verify derivative bytes, unchanged image content, crop, credits and responsive Claude cards/folio; **HOLD** |
+| `place:PT:santarem-santissimo-milagre` | `Fachada principal da Igreja de Santo Estêvão (Santo Milagre).jpg` | `81e7d94c1b10a57c1a83c46b2066cc164db7eb2c` | `7a320150aff3f046a619752bdbc3e8fff9ad4456b02e6a2550d5f2f91d1d24a3` | CC BY-SA 4.0 — Threeohsix | Verify derivative bytes, unchanged image content, crop, credits and responsive Claude cards/folio; **HOLD** |
+| `place:ES:santiago-compostela-cathedral` | `Santiago cathedral 2021.jpg` | `9df01e31367be942574086de8f93a68bf864b910` | `a7a2ce0bf381debca2e6b2a8e6209fd5033a6c55e7583b672cf4f59eafe6fa79` | CC BY-SA 4.0 — Fernando | Verify derivative bytes, unchanged image content, crop, credits and responsive Claude cards/folio; **HOLD** |
+| `place:ES:basilica-del-pilar-zaragoza` | `Cathedral-Basilica of Our Lady of the Pillar in Zaragoza at sunrise.jpg` | `2ff590392125b69d1e2b2408d34c6162d26ba74c` | `9270cdaee866a46606cd7b5ee6d5b028b9a7fc7327a200cae7878640ff7d2dee` | CC BY-SA 4.0 — Kateryna Baiduzha | Verify derivative bytes, unchanged image content, crop, credits and responsive Claude cards/folio; **HOLD** |
+| `place:PH:national-shrine-of-our-lady-of-lourdes-quezon-city` | `National Shrine of Our Lady of Lourdes, Q.C., Oct 2025 (1).jpg` | `10ab80a243bf765974648507340e4f6e77ae56b7` | `5c8f20b2afcd34c4c892967a507cc54e76421c42b59c45d20ff16a796ce9a179` | CC BY-SA 4.0 — Ralff Nestor Nacor | Verify derivative bytes, unchanged image content, crop, credits and responsive Claude cards/folio; **HOLD** |
+
+All six filenames exactly match the first-choice `decisions[id].files[0]` entry for that canonical Place; matching by Place alone would have produced false approvals. On 14 November 2026 the six original Wikimedia Commons description pages were opened and their stated photographer and CC0/CC BY-SA 4.0 licence labels were checked against the donor metadata. For the five BY-SA 4.0 files, include author, clickable original, licence link and clear modification notice with the actual card and folio; licence compatibility and any additional local reproduction restrictions must be evaluated before publication. A Git object blob SHA is **not** an independently recomputed SHA-256 or a device crop review.
+
+### Research cover is NOT the chosen photograph — do not silently substitute
+
+| Place ID | Research-registry candidate (not chosen) | Previously selected Photo Finder first file | Disposition |
+| --- | --- | --- | --- |
+| `place:IE:knock-shrine` | `PM Photography and A&D Wejcherts Architects Knock Basilica Exterior.jpg` | `Knock Shrine.jpg` | **HOLD** candidate; investigate exact chosen source and its rights/quality |
+| `place:FR:sanctuaire-notre-dame-de-lourdes` | `Sanctuary of Our Lady of Lourdes 07 2021 09.jpg` | `La Basilique de LOURDES - panoramio.jpg` | **HOLD** candidate; investigate exact chosen source and its rights/quality |
+| `place:FR:chartres-notre-dame` | `Chartres Cathédrale Notre-Dame de Chartres Fassade 04.jpg` | `Westfassade Chartres.jpg` | **HOLD** candidate; investigate exact chosen source and its rights/quality |
+| `place:FR:sanctuaire-notre-dame-de-laghet` | `Notre dame de Laghet.jpg` | `Monastery Notre-Dame de Laghet.jpg` | **HOLD** candidate; investigate exact chosen source and its rights/quality |
+| `place:IT:loreto-santa-casa` | `Loreto - Basilica della Santa Casa di Loreto - Veduta della piazza - 2023-09-27 15-43-48 001.jpg` | `Basilica Pontificia della Santa Casa di Loreto.jpg` | **HOLD** candidate; investigate exact chosen source and its rights/quality |
+| `place:IT:pompei-rosary-shrine` | `Pompei - Santuario della Beata Vergine del Rosario di Pompei - 2023-09-07 16-53-31 001.jpg` | `Pompei duomo.jpg` | **HOLD** candidate; investigate exact chosen source and its rights/quality |
+| `place:PT:fatima-sanctuary` | `Sanctuary of Our Lady of Fátima.jpg` | `2026-07-25 Basílica de Nossa Senhora do Rosário, Fátima 1.jpg` | **HOLD** candidate; investigate exact chosen source and its rights/quality |
+| `place:MX:basilica-guadalupe-mexico-city` | `Nueva Basilica de Nuestra Señora de Guadalupe - Mexico 2024.jpg` | `Mexico city Insigne y Nacional Basílica de Santa María de Guadalupe 7.JPG` | **HOLD** candidate; investigate exact chosen source and its rights/quality |
+| `place:IN:basilica-of-our-lady-of-good-health-vailankanni` | `Velankanni Church 2026.jpg` | `Shrine velankanni,tamilnadu - panoramio.jpg` | **HOLD** candidate; investigate exact chosen source and its rights/quality |
+| `place:US:champion-shrine` | `National Shrine of Our Lady of Champion July 2025 4 (Apparition Chapel).jpg` | `The National Shrine of Our Lady of Champion.jpg` | **HOLD** candidate; investigate exact chosen source and its rights/quality |
+
+**No matching owner selection:** `place:IE:lough-derg-station-island` — its research-registry cover remains held; do not label it owner-approved. **No research cover:** `place:MU:pere-laval-sainte-croix`. These do not imply deletion of either site.
+
+**Preserve other prior choices:** Round 1–4 pilgrimage-object/grotto selections (e.g. Lourdes grotto, Chartres Notre-Dame du Pilier, Fátima statue, Guadalupe tilma) are **gallery-subject choices** and are not permission to substitute a different exterior/cover photograph. Existing subject/underlying-work legal holds remain in force. Round 5–11 and R28 owner-selection cohort checks found no additional *exact currently staged cover* intersections beyond these six.
+
+**Next audited implementation boundary:** independently verify the six existing derivative binaries against their SHA-256 values, examine full-frame and mobile crop quality, confirm current original licensing/credit display, then stage *only those exact six* in a small draft production media commit with 320/390/430/desktop screenshots versus Claude's original. All nonmatching covers and all current TLM records retain no-image fallback. Do not merge or deploy PR #1 or alter its design geometry, fonts, gestures, cards or navigation without owner acceptance.
