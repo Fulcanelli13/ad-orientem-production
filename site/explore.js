@@ -283,15 +283,15 @@ function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
  }
  sc.append(links);
  if(record.community_id==="ICKSP"){
-  const nextMass=make("section","atlas-folio-nextm");
-  nextMass.id="folio-mass";
-  nextMass.append(make("small","",
+  const timetableNotice=make("section","atlas-folio-nextm");
+  timetableNotice.id="folio-mass";
+  timetableNotice.append(make("small","",
     state.language==="fr"?"Horaires des messes":"Mass timetable"));
-  nextMass.append(make("b","",tr("tnotice").split(".")[0]+"."));
-  nextMass.append(make("em","",state.language==="fr"?
+  timetableNotice.append(make("b","",tr("tnotice").split(".")[0]+"."));
+  timetableNotice.append(make("em","",state.language==="fr"?
    "Consulter la page officielle de l’institut pour les horaires actuels.":
    "Verify current services directly with the official institute."));
-  sc.append(nextMass);
+  sc.append(timetableNotice);
  }
  folioChapter(sc,"folio-place",
   record.community_id==="ICKSP"?
