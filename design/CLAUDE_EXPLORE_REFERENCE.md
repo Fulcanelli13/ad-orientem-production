@@ -67,16 +67,30 @@ horizontal scrolling, the real list state, short pointer drags, keyboard
 reachability of all three snap states, zoom controls, one map instance,
 source-backed folios, and navigation to Home.
 
-**Open interaction issue:** Chromium cancels an automated *long* downward
-pointer drag before it reaches the 150px minimum; the short up/down
-gestures and keyboard 150px snap pass. Do not claim full touch-gesture
-acceptance until that precise long gesture is verified on a physical phone
-or fixed and reproduced in a mobile touch test.
+**Gestures — corrected in automated browser testing:** A long downward
+pointer move was previously canceled when capture remained on the moving
+sheet handle. After moving pointer capture to the stationary Explore
+viewport and suppressing native drag/scroll arbitration only on Claude's
+handle/heading, the actual 240px drag to the 150px minimum passed
+[run 43589416941](https://github.com/Fulcanelli13/ad-orientem-production/actions/runs/43589416941)
+along with the other mobile/desktop browser checks. Keyboard access to
+all three snaps remains. **A physical touchscreen check is still required**
+before asserting touch-device equivalence.
 
-**Open visual/content differences:** the donor photograph-led cards have
-not been used, because approved exact-site photographs and their credits
-were not transferred. The map has sourced global pilot pins rather than
-the demo's France-specific region and markers. The source's complete
-`Liber Locorum` sections and some symbol treatments require the corresponding
-approved content/assets; these must not be fabricated. The newly verified
-structural match is **not** final owner pixel approval.
+**Folio — implemented source hierarchy, partial content:** The staged
+`Liber Locorum` presentation now follows Claude's actual `.ov`,
+`.hero`, `.ttl`, `.qa`, `.toc`, `.facts`, `.ch`,
+`.h3` and `.lk` structures: immersive 548px Sacred hero or
+source-faithful TLM band, safe map/source actions, sticky chapter navigation,
+verified fact rows and related-place history. The TLM timetable block
+explicitly states that Mass schedules were **not imported**.
+No synthetic story, sacrament timetable or falsely approved site photograph
+was inserted. Source/layout/browser checks passed on
+[run 43588937811](https://github.com/Fulcanelli13/ad-orientem-production/actions/runs/43588937811).
+
+**Open visual/content differences:** The donor photograph-led cards remain
+unavailable until approved exact-site media and credits are transferred.
+The map uses the verified global pilot rather than the original
+France demonstration markers. In-depth historical chapters and source
+image galleries are held pending documentary evidence and rights.
+The newly verified structural match is **not** final owner pixel approval.
