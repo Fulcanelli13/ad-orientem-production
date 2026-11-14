@@ -140,9 +140,24 @@ function renderSummary(){
   li.append(button);root.append(li);
  }
 }
+// Direct port of Claude's 3-position sheet: min 150, peek 376,
+// list 62% of map height. Keep real tabbar height instead of demo 84px.
+const snapHeight=stateName=>{
+ const el=$("atlas-view");
+ const available=el.clientHeight;
+ const bottom=document.querySelector(".tabbar")?.getBoundingClientRect().height||79;
+ const contentHeight=Math.max(200,available-bottom);
+ return stateName==="min"?150:stateName==="expanded"?Math.round(contentHeight*.62):376;
+};
 function setSheetState(next){
- const expanded=next==="expanded";
- $("atlas-sheet").dataset.sheetState=expanded?"expanded":"peek";
+ const stateName=["min","peek","expanded"].includes(next)?next:"peek";
+ const expanded=stateName==="expanded";
+ const h=snapHeight(stateName);
+ const sheet=$("atlas-sheet");
+ sheet.dataset.sheetState=stateName;
+ sheet.style.setProperty("--h",h+"px");
+ $("atlas-view").style.setProperty("--atlas-sheet-height",h+"px");
+ state.viewMode=expanded?"list":"cards";
  $("atlas-sheet-handle").setAttribute("aria-expanded",String(expanded));
  $("atlas-sheet-handle").setAttribute("aria-label",tr(expanded?"collapse":"expand"));
 }
@@ -271,27 +286,51 @@ async function startMap(){
 }
 function attachControls(){
  const handle=$("atlas-sheet-handle");
- let dragStart=null,lastDragAt=0;
- handle.addEventListener("pointerdown",event=>{
-  if(event.button!==0)return;
-  dragStart=event.clientY;
-  handle.setPointerCapture?.(event.pointerId);
- });
- handle.addEventListener("pointerup",event=>{
-  if(dragStart===null)return;
-  const dy=event.clientY-dragStart;
-  dragStart=null;
-  if(Math.abs(dy)>=24){
-   lastDragAt=Date.now();
-   setSheetState(dy<0?"expanded":"peek");
+ const sheet=$("atlas-sheet"),header=$("atlas-sheet-header");
+ let drag=null,lastDragAt=0;
+ const start=event=>{
+  if(event.button!==0||event.target.closest("button:not(#atlas-sheet-handle),a"))return;
+  const current=Number.parseFloat(sheet.style.getPropertyValue("--h"))||snapHeight("peek");
+  drag={y:event.clientY,h:current,moved:false};
+  sheet.classList.add("drag");
+  event.currentTarget.setPointerCapture?.(event.pointerId);
+ };
+ const move=event=>{
+  if(!drag)return;
+  const delta=event.clientY-drag.y;
+  if(Math.abs(delta)>4)drag.moved=true;
+  const next=Math.max(90,Math.min(snapHeight("expanded")+30,drag.h-delta));
+  sheet.style.setProperty("--h",next+"px");
+  $("atlas-view").style.setProperty("--atlas-sheet-height",next+"px");
+ };
+ const end=()=>{
+  if(!drag)return;
+  const states=["min","peek","expanded"];
+  let next;
+  if(!drag.moved)next=sheet.dataset.sheetState==="expanded"?"peek":"expanded";
+  else{
+   const current=Number.parseFloat(sheet.style.getPropertyValue("--h"))||snapHeight("peek");
+   next=states.reduce((best,candidate)=>
+    Math.abs(snapHeight(candidate)-current)<Math.abs(snapHeight(best)-current)?
+     candidate:best);
   }
+  lastDragAt=Date.now();
+  drag=null;sheet.classList.remove("drag");
+  const before=state.viewMode;
+  setSheetState(next);
+  if(before!==state.viewMode){renderHeader();renderSummary();}
+ };
+ [handle,header].forEach(el=>{
+  el.addEventListener("pointerdown",start);
+  el.addEventListener("pointermove",move);
+  el.addEventListener("pointerup",end);
+  el.addEventListener("pointercancel",end);
  });
- handle.addEventListener("pointercancel",()=>{dragStart=null;});
  handle.addEventListener("click",()=>{
-  // A release after dragging can synthesize a click. Only suppress the
-  // click immediately following the gesture, never the next deliberate tap.
   if(Date.now()-lastDragAt<300)return;
-  setSheetState($("atlas-sheet").dataset.sheetState==="expanded"?"peek":"expanded");
+  const before=state.viewMode;
+  setSheetState(sheet.dataset.sheetState==="expanded"?"peek":"expanded");
+  if(before!==state.viewMode){renderHeader();renderSummary();}
  });
  // Tabs also support arrow-key navigation while preserving the single map.
  for(const lens of ["sacred","tlm"]){
