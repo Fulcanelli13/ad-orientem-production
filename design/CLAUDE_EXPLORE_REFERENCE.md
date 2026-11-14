@@ -41,3 +41,42 @@ The sample has **201 France churches, 64 sacred places and 50 pilgrimages**; the
 5. Draft PR #1 is blocked from merge/deploy until these source-based visual criteria pass and the owner accepts the result.
 
 **Prior reconstruction is explicitly not a design donor.** The CSS sizing and layout choices introduced in the staged pilot before this reference comparison are provisional and may be reverted to match Claude, rather than being defended because tests pass.
+
+## Source-aligned implementation pass — 14 November 2026
+
+The exact donor's sheet implementation uses `let SH=330` at boot and
+`SNAP={min:150,peek:376,list:0}`, with `snapH("list")` computed as
+`Math.round(appH()*.62)`. The CSS fallback `var(--h,340px)` is not the
+interactive peek target. The production branch now implements these three
+states, with the sheet docked to the actual Home navigation.
+
+The production branch also restores from Claude's original markup and CSS:
+search-first header; **TLM Atlas / Sacred Atlas** order; original segmented
+control; Cinzel way tabs above the Cormorant sheet heading; horizontal
+226px cards with a 94px no-image band; a working Cards/List selector;
+source-derived gold-border vector cartography and the same dark/gold palette.
+The full original style is documented, rather than bundling its 4.6MB demo.
+
+**Latest proof:** GitHub Actions run
+[43587591191](https://github.com/Fulcanelli13/ad-orientem-production/actions/runs/43587591191)
+passed both the provenance/source contract job and Chromium at 320, 390, 430,
+and 1440 pixels. Screenshot artifact `production-explore-screenshots`.
+The browser tests verify the TLM-first state, tabs and search geometry,
+navigation-bar docking, 24px top/0px bottom sheet corners, 226px cards,
+horizontal scrolling, the real list state, short pointer drags, keyboard
+reachability of all three snap states, zoom controls, one map instance,
+source-backed folios, and navigation to Home.
+
+**Open interaction issue:** Chromium cancels an automated *long* downward
+pointer drag before it reaches the 150px minimum; the short up/down
+gestures and keyboard 150px snap pass. Do not claim full touch-gesture
+acceptance until that precise long gesture is verified on a physical phone
+or fixed and reproduced in a mobile touch test.
+
+**Open visual/content differences:** the donor photograph-led cards have
+not been used, because approved exact-site photographs and their credits
+were not transferred. The map has sourced global pilot pins rather than
+the demo's France-specific region and markers. The source's complete
+`Liber Locorum` sections and some symbol treatments require the corresponding
+approved content/assets; these must not be fabricated. The newly verified
+structural match is **not** final owner pixel approval.
