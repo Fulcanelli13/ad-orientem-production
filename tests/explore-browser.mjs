@@ -43,9 +43,26 @@ try{
    null,{timeout:20000});
   assert.equal(await page.locator("#atlas-lens-tlm").getAttribute("aria-selected"),"true",
     "Claude source opens with TLM Atlas first");
+  // Approved-source type filters must change cards AND GeoJSON, never invent services.
+  await page.locator('#atlas-ways button[data-atlas-facet="oratory"]').click();
+  assert.equal(await page.locator("#atlas-count").textContent(),"9 / 10",
+    "Exact nine source-typed oratories should be selected");
+  assert.equal(await page.locator("#atlas-results > li").count(),9);
+  await page.locator('#atlas-ways button[data-atlas-facet="all"]').click();
+  assert.equal(await page.locator("#atlas-count").textContent(),"10 / 10");
+  assert.equal(await page.locator('#atlas-ways button[data-atlas-facet="times"]').isDisabled(),true,
+    "Missing Mass-time data must remain unavailable");
   await page.locator("#atlas-lens-sacred").click();
   await page.waitForFunction(()=>document.querySelector("#atlas-count")?.textContent==="18 / 18",
    null,{timeout:15000});
+  await page.locator('#atlas-ways button[data-atlas-facet="shrine"]').click();
+  assert.equal(await page.locator("#atlas-count").textContent(),"7 / 18",
+    "Only the seven source-typed shrines belong in this category");
+  assert.equal(await page.locator("#atlas-results > li").count(),7);
+  await page.locator('#atlas-ways button[data-atlas-facet="all"]').click();
+  assert.equal(await page.locator("#atlas-count").textContent(),"18 / 18");
+  assert.equal(await page.locator('#atlas-ways button[data-atlas-facet="feasts"]').isDisabled(),true,
+    "Unimported feast layer cannot be activated");
   await page.waitForFunction(()=>document.querySelectorAll("#atlas-map canvas").length===1,
    null,{timeout:30000});
   // Canvas allocation alone does not imply that tiles and source-backed pins
