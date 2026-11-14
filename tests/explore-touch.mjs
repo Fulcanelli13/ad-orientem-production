@@ -57,6 +57,10 @@ try{
    null,{timeout:30000});
   assert.equal(await page.locator("#atlas-lens-tlm").getAttribute("aria-selected"),"true");
   const session=await context.newCDPSession(page);
+  await page.screenshot({
+   path:join("artifacts/production-explore-touch",width+"-touch-tlm-initial.png"),
+   animations:"disabled",fullPage:false
+  });
   const handle=page.locator("#atlas-sheet-handle");
   const sheet=page.locator("#atlas-sheet");
   const initial=await sheet.getAttribute("data-sheet-state");
@@ -95,12 +99,20 @@ try{
   await page.waitForTimeout(650); // scroll snap settles
   const after=await rail.evaluate(el=>el.scrollLeft);
   assert.ok(after>before+20,width+"px real touch card rail did not swipe: "+before+" -> "+after);
+  await page.screenshot({
+   path:join("artifacts/production-explore-touch",width+"-touch-sacred-swiped.png"),
+   animations:"disabled",fullPage:false
+  });
   const visibleCard=page.locator("#atlas-results .atlas-result-button").nth(1);
   await visibleCard.scrollIntoViewIfNeeded();
   await visibleCard.tap();
   await page.locator("#atlas-card").waitFor({state:"visible"});
   assert.equal(await page.locator("#atlas-card .atlas-folio-hero").count(),1);
   assert.ok(await page.locator("#atlas-card a[href^='https://']").count()>0);
+  await page.screenshot({
+   path:join("artifacts/production-explore-touch",width+"-touch-sacred-folio.png"),
+   animations:"disabled",fullPage:false
+  });
   await page.locator("#atlas-card .atlas-folio-back").tap();
   await page.locator('.tabbar [data-route="home"]').tap();
   await page.locator("#home-view").waitFor({state:"visible"});
@@ -112,8 +124,6 @@ try{
   assert.equal(geom.mapCount,1);
   assert.deepEqual(errors,[],width+"px errors: "+errors.join(" | "));
   findings.push({width,min:min.height,swipePixels:after-before,mapCount:geom.mapCount});
-  await page.screenshot({path:join("artifacts/production-explore-touch",width+"-touch-final.png"),
-   animations:"disabled",fullPage:false});
   await context.close();
  }
  console.log("PASS mobile CDP touch emulation",JSON.stringify(findings));
