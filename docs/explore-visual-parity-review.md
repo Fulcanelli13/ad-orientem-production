@@ -49,3 +49,15 @@ Before any gallery or 2,582-site expansion, evolve the staged production rendere
 6. Re-run functional browser checks **and screenshot-level owner comparison** at 320, 390, 430, desktop, EN/FR before owner approval. Status remains draft and main remains unchanged.
 
 **Do not add fake demo next-Mass times** just to make the redesigned cards look finished. The UI must honestly display source-covered metadata or a concise unavailable status. Only GitHub Actions + GitHub Pages may publish after sign-off.
+
+## Stage 3 implementation and verification — 14 November 2026
+
+This is a **later change to the staging branch**; the initial comparison above is retained as the earlier failure record rather than silently rewritten.
+
+- **Implemented:** the Atlas now uses a full-height MapLibre canvas; floating Home-integrated title, EN/FR toggle, two-lens segmented control, search, World View, mapped source pins and visible attribution; a pointer-draggable, safe-area-aware glass bottom sheet with horizontal scroll-snap cards and a separate full-height **Liber Locorum** source folio.
+- **Visual alignment:** the initial sheet and vertical card proportions were tuned against the owner's original `AO_Explore_AppDesign.html` (roughly 340px sheet and photograph-position card band), but the graphics intentionally remain explicit **illustrative category symbols** while separately curated site photos are withheld.
+- **Home source precedence:** the draft was reconciled with the latest `main` integrated Claude Home via a true two-parent merge (`3674ebce`). Offline Cinzel, Cormorant Garamond and EB Garamond assets, owner emblem, Home icon drawings, and newer date handling were retained; only the selected Explore route and support modules were added. No production publication was triggered.
+- **Automated evidence:** source/Excel controls and real Chromium **320/390/430/1440** EN/FR map + folio tests passed in [run 43582715370](https://github.com/Fulcanelli13/ad-orientem-production/actions/runs/43582715370). A stricter zoom-control hit-test and folio title also passed in [run 43583050452](https://github.com/Fulcanelli13/ad-orientem-production/actions/runs/43583050452). The 16-map/folio screenshots are in each run's `production-explore-screenshots` artifact.
+- **Owner acceptance remains OPEN.** This is a source-gated *functional and structural* match, not yet proof of the exact last Claude prototype's pixels or complete Sacred Atlas content. The known open differences are approved site photography, institution emblems/category medallions, full Liber Locorum editorial folio, richer map categories/filters and verified schedule data. Do not invent those to make screenshots look finished.
+
+**Release disposition stays DRAFT / no merge or deployment.** Preserve the 28-record pilot and its pinned CL2 Excel identities until the owner accepts the interface and selects the next content transfer.
