@@ -1,0 +1,559 @@
+/* Ad Orientem production Explore: one map, two curated lenses.
+   Deliberately independent from the old research app shell and runtime. */
+import {
+  validatedDataset, publishable, searchEntries, featureCollection,
+  sitePrecision, nearbySelected, sourceSynopsis, safeLink
+} from "./explore/model.js";
+import {renderSacredPlaceFallback} from "./explore/core/sacred-place-visual-fallback.js";
+import {CLAUDE_MAP_STYLE} from "./explore/claude-map-style.js";
+
+const $ = id => document.getElementById(id);
+const MAPLIBRE_MODULE = "https://unpkg.com/maplibre-gl@6.13.0/dist/maplibre-gl.mjs";
+const BASEMAP = CLAUDE_MAP_STYLE;
+const WORLD = {center:[14,15],zoom:1.25};
+const dictionary={
+ en:{
+  heading:"Sacred geography",subtitle:"The map for discovering · the card for deciding",
+  sacred:"Sacred Atlas",tlm:"TLM Atlas",search:"Search a church, shrine, town…",reset:"World view",
+  filter:"Selected sites",list:"Browse places",source:"Coordinate source",
+  official:"Official institute page",method:"Location evidence",
+  discover:"Discover",hide:"Close",nearby:"Nearby selected sites · straight-line distance",
+  notice:"Curated starting selection · not a complete worldwide directory",
+  tnotice:"Mass times are not imported. Confirm services directly with the official institute.",
+  snote:"A site pin identifies a documented site or indicative complex anchor, not an entrance.",
+  initial:"Choose a pin or a place below",viewMap:"View on map",empty:"No matching selected places",
+  noPhoto:"No site photograph has been transferred to this production selection.",
+  pending:"Loading the map and selected source records",
+  unavailable:"Interactive tiles unavailable. The source-backed place list remains usable.",
+  showAll:"Clear search",featured:"Reviewed source",credit:"Geographic coordinates and source",
+  lang:"Français",place:"Place",pattern:"No live Mass time claim",expand:"Expand places",collapse:"Collapse places",openFolio:"Discover place",churches:"churches",places:"sacred places",selected:"source-backed pilot",cards:"Cards",listMode:"List",churchWay:"Churches",massWay:"Mass times",placeWay:"Places",pilgrimWay:"Pilgrimages",feastWay:"Feasts",notImported:"Not imported"
+ },
+ fr:{
+  heading:"Géographie sacrée",subtitle:"La carte pour découvrir · la fiche pour comprendre",
+  sacred:"Atlas sacré",tlm:"Atlas TLM",search:"Rechercher une église, un sanctuaire, une ville…",reset:"Vue du monde",
+  filter:"Sites sélectionnés",list:"Parcourir les lieux",source:"Source des coordonnées",
+  official:"Site officiel de l'institut",method:"Justificatif du lieu",
+  discover:"Découvrir",hide:"Fermer",nearby:"Autres lieux sélectionnés · à vol d'oiseau",
+  notice:"Sélection de départ · ce n'est pas un répertoire mondial complet",
+  tnotice:"Les horaires des messes ne sont pas importés. Vérifier auprès de l'institut.",
+  snote:"Le repère cartographique ne constitue pas une indication d'entrée précise.",
+  initial:"Choisir un repère ou un lieu ci-dessous",viewMap:"Voir sur la carte",empty:"Aucun lieu trouvé",
+  noPhoto:"Aucune photographie du lieu n'a été transférée dans cette sélection.",
+  pending:"Chargement de la carte et des sources retenues",
+  unavailable:"Carte interactive indisponible. La liste des lieux sourcés reste utilisable.",
+  showAll:"Effacer la recherche",featured:"Source documentée",credit:"Coordonnées et source",
+  lang:"English",place:"Lieu",pattern:"Aucun horaire de messe confirmé",expand:"Déployer les lieux",collapse:"Réduire les lieux",openFolio:"Découvrir le lieu",churches:"églises",places:"lieux sacrés",selected:"sélection documentée",cards:"Cartes",listMode:"Liste",churchWay:"Églises",massWay:"Horaires",placeWay:"Lieux",pilgrimWay:"Pèlerinages",feastWay:"Fêtes",notImported:"Non importé"
+ }
+};
+const state={
+ initialized:false,lens:"tlm",language:"en",data:null,selectedId:null,
+ map:null,sourceLoaded:false,loading:null,all:[],query:"",viewMode:"cards",folioHistory:[],lastError:null,
+};
+const tr=key=>dictionary[state.language][key]||key;
+const make=(tag,className,txt)=>{
+ const el=document.createElement(tag);
+ if(className)el.className=className;
+ if(txt!=null)el.textContent=txt;
+ return el;
+};
+function external(url,text,klass) {
+ const href=safeLink(url);if(!href)return null;
+ const a=make("a",klass||"",text);
+ a.href=href;a.rel="noopener noreferrer";a.target="_blank";
+ return a;
+}
+function setStatus(message,failed=false){
+ const node=$("atlas-map-status");
+ node.textContent=message||"";
+ node.classList.toggle("error",Boolean(failed));
+ node.hidden=!message;
+}
+function visibleEntries(){
+ return searchEntries(state.all,state.query);
+}
+function activeRecord(id){
+ return state.all.find(row=>row.id===id)||null;
+}
+function renderHeader() {
+ $("atlas-heading").textContent=tr("heading");
+ $("atlas-subtitle").textContent=tr("subtitle");
+ $("atlas-search").placeholder=tr("search");
+ $("atlas-search").setAttribute("aria-label",tr("search"));
+ $("atlas-world").textContent=tr("reset");
+ $("atlas-world").setAttribute("aria-label",tr("reset"));
+ $("atlas-language").textContent=tr("lang");
+ $("atlas-selection-note").textContent=tr("notice");
+ $("atlas-map-hint").textContent=state.lens==="tlm"?tr("tnotice"):tr("snote");
+ const ways=$("atlas-ways");ways.replaceChildren();
+ const keys=state.lens==="tlm"?["churchWay","massWay"]:["placeWay","pilgrimWay","feastWay"];
+ keys.forEach((key,index)=>{
+  const el=make("span","atlas-way"+(index===0?" active":" withheld"),tr(key));
+  if(index!==0){el.setAttribute("aria-disabled","true");el.title=tr("notImported");}
+  ways.append(el);
+ });
+ $("atlas-sheet-subtitle").textContent=tr("selected");
+ $("atlas-list-toggle").textContent=tr(state.viewMode==="cards"?"listMode":"cards");
+ $("atlas-list-toggle").setAttribute("aria-pressed",String(state.viewMode==="list"));
+ $("atlas-lens-sacred").textContent=tr("sacred");
+ $("atlas-lens-tlm").textContent=tr("tlm");
+ const expanded=$("atlas-sheet").dataset.sheetState==="expanded";
+ $("atlas-sheet-handle").setAttribute("aria-expanded",String(expanded));
+ $("atlas-sheet-handle").setAttribute("aria-label",tr(expanded?"collapse":"expand"));
+ for(const lens of ["sacred","tlm"]){
+  const button=$("atlas-lens-"+lens);
+  const active=lens===state.lens;
+  button.classList.toggle("active",active);
+  button.setAttribute("aria-selected",String(active));
+  button.tabIndex=active?0:-1;
+ }
+}
+function recordBadge(record){
+ return record.community_id==="ICKSP"?"ICKSP":String(record.place_type||"place").replace(/_/g," ");
+}
+function renderSummary(){
+ const records=visibleEntries();
+ $("atlas-count").textContent=records.length+" / "+state.all.length;
+ $("atlas-results-title").textContent=records.length+" "+tr(state.lens==="tlm"?"churches":"places");
+ $("atlas-results").classList.toggle("is-list",state.viewMode==="list");
+ const root=$("atlas-results");
+ root.replaceChildren();
+ if(!records.length){
+  root.append(make("li","atlas-no-results",tr("empty")));
+  return;
+ }
+ for(const entry of records){
+  const li=make("li","atlas-result");
+  const button=make("button","atlas-result-button");
+  button.type="button";button.dataset.atlasId=entry.id;
+  button.setAttribute("aria-label",tr("openFolio")+": "+entry.name);
+  button.setAttribute("aria-pressed",String(entry.id===state.selectedId));
+  const media=make("span","atlas-result-media");
+  // Exact-site approved imagery has not been transferred. No demo photographs.
+  media.innerHTML=renderSacredPlaceFallback(
+    {place_type:entry.place_type||"church"},state.language,"preview");
+  const copy=make("span","atlas-result-copy");
+  copy.append(make("small","atlas-result-kicker",recordBadge(entry)));
+  copy.append(make("strong","atlas-result-name",entry.name));
+  copy.append(make("span","atlas-result-location",entry.address));
+  copy.append(make("span","atlas-result-action",tr("discover")+"  →"));
+  button.append(media,copy);
+  li.append(button);root.append(li);
+ }
+}
+// Direct port of Claude's 3-position sheet: min 150, peek 376,
+// list 62% of map height. Keep real tabbar height instead of demo 84px.
+const snapHeight=stateName=>{
+ const el=$("atlas-view");
+ const available=el.clientHeight;
+ const bottom=document.querySelector(".tabbar")?.getBoundingClientRect().height||79;
+ const contentHeight=Math.max(200,available-bottom);
+ return stateName==="min"?150:stateName==="expanded"?Math.round(contentHeight*.62):376;
+};
+function setSheetState(next){
+ const stateName=["min","peek","expanded"].includes(next)?next:"peek";
+ const expanded=stateName==="expanded";
+ const h=snapHeight(stateName);
+ const sheet=$("atlas-sheet");
+ sheet.dataset.sheetState=stateName;
+ sheet.style.setProperty("--h",h+"px");
+ $("atlas-view").style.setProperty("--atlas-sheet-height",h+"px");
+ state.viewMode=expanded?"list":"cards";
+ $("atlas-sheet-handle").setAttribute("aria-expanded",String(expanded));
+ $("atlas-sheet-handle").setAttribute("aria-label",tr(expanded?"collapse":"expand"));
+}
+function appendLabel(parent,head,body){
+ if(!body)return;
+ const section=make("div","atlas-detail-field");
+ section.append(make("small","atlas-field-label",head));
+ section.append(make("p","",body));
+ parent.append(section);
+}
+// Claude's original source hierarchy: immersive hero, actions, chapter
+// navigation, factual folio, related sites. Content is ONLY verified pilot data.
+function mapPinUrl(entry){
+ const lat=Number(entry.geo.lat),lng=Number(entry.geo.lng);
+ if(!Number.isFinite(lat)||!Number.isFinite(lng))return null;
+ const url=new URL("https://www.openstreetmap.org/");
+ url.searchParams.set("mlat",String(lat));
+ url.searchParams.set("mlon",String(lng));
+ url.hash="map=15/"+lat+"/"+lng;
+ return url.href;
+}
+function folioLink(root,record,text,url,primary=false){
+ const a=external(url,text,"atlas-folio-action"+(primary?" primary":""));
+ if(a)root.append(a);
+}
+function folioFacts(data){
+ const wrap=make("div","atlas-folio-facts");
+ for(const [title,body] of data){
+  if(!body)continue;
+  const item=make("div","atlas-folio-fact");
+  item.append(make("small","",title),make("b","",body));
+  wrap.append(item);
+ }
+ return wrap;
+}
+function folioChapter(root,id,title,body){
+ const heading=make("h3","atlas-folio-section",title);
+ heading.id=id;
+ root.append(heading);
+ if(body)root.append(body);
+}
+function folioRow(title,detail,action){
+ const b=make("button","atlas-folio-row");
+ b.type="button";
+ const copy=make("span","atlas-folio-row-copy");
+ copy.append(make("b","",title),make("small","",detail));
+ b.append(copy,make("span","atlas-folio-chevron","›"));
+ b.addEventListener("click",action);
+ return b;
+}
+function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
+ const record=activeRecord(id);if(!record)return;
+ if(fromFolio&&state.selectedId&&state.selectedId!==id){
+  state.folioHistory.push(state.selectedId);
+ }else if(!back){state.folioHistory=[];}
+ state.selectedId=record.id;
+ const root=$("atlas-card");
+ root.hidden=false;root.replaceChildren();root.scrollTop=0;
+ const exit=()=>{
+  if(state.folioHistory.length){
+   const previous=state.folioHistory.pop();
+   selectRecord(previous,{fly:false,back:true});
+  }else{
+   state.selectedId=null;root.hidden=true;renderSummary();
+   $("atlas-sheet-handle").focus({preventScroll:true});
+  }
+ };
+ const backButton=make("button","atlas-folio-back","‹");
+ backButton.type="button";backButton.setAttribute("aria-label",tr("hide"));
+ backButton.addEventListener("click",exit);
+ root.append(backButton);
+ if(state.folioHistory.length){
+  const closeAll=make("button","atlas-folio-closeall","×");
+  closeAll.type="button";closeAll.setAttribute("aria-label",tr("hide"));
+  closeAll.addEventListener("click",()=>{
+   state.folioHistory=[];state.selectedId=null;root.hidden=true;renderSummary();
+   $("atlas-sheet-handle").focus({preventScroll:true});
+  });
+  root.append(closeAll);
+ }
+ const sc=make("div","atlas-folio-scroll");
+ const hero=make("header","atlas-folio-hero atlas-folio-hero-band");
+ // The donor's .hero would take a verified exact-site photograph. This
+ // fallback is deliberately marked as a symbol, never a licensed photo.
+ const media=make("div","atlas-folio-hero-symbol");
+ media.innerHTML=renderSacredPlaceFallback(
+   {place_type:record.place_type||record.venue_type||"church"},
+   state.language,"preview");
+ const title=make("div","atlas-folio-ttl");
+ title.append(make("small","",
+   record.community_id==="ICKSP"?"ICKSP · "+record.country_code:
+   recordBadge(record)+" · "+record.country_code));
+ title.append(make("h1","",record.name));
+ if(record.community_id==="ICKSP")title.append(make("p","",record.address));
+ hero.append(media,title);sc.append(hero);
+ const actions=make("div","atlas-folio-actions");
+ // These links point to source/indicative map positions, not a verified
+ // entrance or confirmed service. No "Directions" wording is inferred.
+ folioLink(actions,record,
+  state.language==="fr"?"Position sur la carte":"Map position",
+  mapPinUrl(record),true);
+ if(record.community_id==="ICKSP")
+  folioLink(actions,record,tr("official"),record.official_url);
+ folioLink(actions,record,tr("source"),record.geo.source_url);
+ if(actions.childElementCount)sc.append(actions);
+ const links=make("nav","atlas-folio-toc");
+ links.setAttribute("aria-label",
+  state.language==="fr"?"Chapitres du lieu":"Place chapters");
+ const chapters=record.community_id==="ICKSP"?
+  [[state.language==="fr"?"Messes":"Mass","#folio-mass"],
+   [state.language==="fr"?"L’église":"Church","#folio-place"],
+   [state.language==="fr"?"Sources":"Sources","#folio-source"]]:
+  [[state.language==="fr"?"Le lieu":"Place","#folio-place"],
+   [state.language==="fr"?"Sources":"Sources","#folio-source"],
+   [state.language==="fr"?"À proximité":"Nearby","#folio-near"]];
+ for(const [label,anchor] of chapters){
+  const b=make("button","",label);b.type="button";
+  b.addEventListener("click",()=>sc.querySelector(anchor)?.scrollIntoView({
+   behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"instant":"smooth",
+   block:"start"
+  }));
+  links.append(b);
+ }
+ sc.append(links);
+ if(record.community_id==="ICKSP"){
+  const timetableNotice=make("section","atlas-folio-nextm");
+  timetableNotice.id="folio-mass";
+  timetableNotice.append(make("small","",
+    state.language==="fr"?"Horaires des messes":"Mass timetable"));
+  timetableNotice.append(make("b","",tr("tnotice").split(".")[0]+"."));
+  timetableNotice.append(make("em","",state.language==="fr"?
+   "Consulter la page officielle de l’institut pour les horaires actuels.":
+   "Verify current services directly with the official institute."));
+  sc.append(timetableNotice);
+ }
+ folioChapter(sc,"folio-place",
+  record.community_id==="ICKSP"?
+   (state.language==="fr"?"L’église":"The church"):
+   (state.language==="fr"?"Le lieu":"The place"),
+  folioFacts([
+   [state.language==="fr"?"Adresse":"Address",record.address],
+   [state.language==="fr"?"Repère":"Pin",sitePrecision(record,state.language)],
+   [state.language==="fr"?"Desservi par":"Served by",record.community_id==="ICKSP"?
+     "Institute of Christ the King Sovereign Priest":null],
+   [state.language==="fr"?"Photographie":"Photograph",state.language==="fr"?
+     "Aucune photographie du lieu approuvée":"No approved exact-site photograph"]
+  ]));
+ const synopsis=sourceSynopsis(record,state.language);
+ if(synopsis){
+  const chapter=make("section","atlas-folio-chapter");
+  chapter.append(make("p","",synopsis));
+  sc.append(chapter);
+ }else{
+  sc.append(make("p","atlas-folio-unrecorded",
+    state.language==="fr"?
+    "Le guide historique et illustré de ce lieu n’a pas encore été transféré.":
+    "The historical and illustrated guide for this place has not yet been transferred."));
+ }
+ folioChapter(sc,"folio-source",
+  state.language==="fr"?"Sources et vérification":"Sources and verification",
+  folioFacts([
+   [state.language==="fr"?"Précision":"Precision",sitePrecision(record,state.language)],
+   [state.language==="fr"?"Référence":"Source ref",record.geo.source_ref],
+   [state.language==="fr"?"Contrôlé":"Checked",record.geo.verified_at],
+   [state.language==="fr"?"Site canonique":"Canonical site",
+    record.cl2_site_id||record.id]
+  ]));
+ if(record.geo.locator_note)
+  sc.append(make("p","atlas-folio-unrecorded",record.geo.locator_note));
+ const near=nearbySelected(record,state.all,3);
+ if(near.length){
+  const section=make("div","atlas-folio-near");
+  folioChapter(sc,"folio-near",state.language==="fr"?
+   "Lieux à proximité":"Places nearby",null);
+  for(const n of near)
+   section.append(folioRow(n.title,
+     n.distance_km+" km · "+(state.language==="fr"?"à vol d’oiseau":"straight-line distance"),
+     ()=>selectRecord(n.place_id,{fromFolio:true,fly:false})));
+  sc.append(section);
+ }
+ sc.append(make("p","atlas-folio-note",
+  state.language==="fr"?
+  "Les positions et distances indiquent des repères documentés, non des entrées vérifiées. Vérifier les sources avant une visite.":
+  "Positions and distances describe documented sites, not verified entrances. Consult the original sources before visiting."));
+ root.append(sc);
+ renderSummary();
+ if(fly&&state.map)state.map.flyTo({
+  center:[Number(record.geo.lng),Number(record.geo.lat)],
+  zoom:Math.max(7,state.map.getZoom()),duration:650,essential:false
+ });
+}
+function renderLens(lens){
+ if(lens!=="sacred"&&lens!=="tlm")return;
+ state.lens=lens;state.selectedId=null;
+ state.viewMode="cards";setSheetState("peek");
+ state.all=state.data?state.data[lens]:[];
+ $("atlas-card").hidden=true;
+ $("atlas-card").replaceChildren();
+ renderHeader();renderSummary();syncMap();
+}
+function syncMap(){
+ if(!state.map||!state.sourceLoaded)return;
+ state.map.getSource("ao-selected-sites")?.setData(featureCollection(visibleEntries()));
+ // Reuse the one map/source, but make the active lens visibly distinct.
+ if(state.map.getLayer("ao-selected-pins"))
+  state.map.setPaintProperty("ao-selected-pins","circle-color",
+   state.lens==="sacred"?"#c9ad78":"#e6d8b4");
+}
+async function loadDataset(){
+ const res=await fetch("./explore/selected-sites.v1.json",{cache:"no-cache"});
+ if(!res.ok)throw new Error("Selected source records unavailable: "+res.status);
+ const raw=await res.json();return validatedDataset(raw);
+}
+function ensureMapLibreCss(){
+ if(document.getElementById("atlas-maplibre-css"))return;
+ const css=make("link");css.id="atlas-maplibre-css";css.rel="stylesheet";
+ css.href="https://unpkg.com/maplibre-gl@6.13.0/dist/maplibre-gl.css";
+ document.head.append(css);
+}
+let mapLibreModulePromise;
+function loadMapLibre(){
+ // MapLibre v6 is ES-module-only: there is no UMD maplibre-gl.js bundle.
+ // This pinned import is the same published ESM distribution used by research.
+ if (!mapLibreModulePromise) mapLibreModulePromise=import(MAPLIBRE_MODULE);
+ return mapLibreModulePromise;
+}
+async function startMap(){
+ ensureMapLibreCss();
+ const lib=await loadMapLibre();
+ if(!lib?.Map)throw new Error("MapLibre browser module unavailable");
+ if(state.map){state.map.resize();return;}
+ state.map=new lib.Map({
+  container:"atlas-map",style:BASEMAP,
+  center:WORLD.center,zoom:WORLD.zoom,minZoom:1,maxZoom:18,
+  attributionControl:true,dragRotate:false,pitchWithRotate:false,
+ });
+ state.map.addControl(new lib.NavigationControl({showCompass:false}),"top-right");
+ state.map.on("load",()=>{
+  if(state.sourceLoaded)return;
+  state.map.addSource("ao-selected-sites",{type:"geojson",data:featureCollection(visibleEntries())});
+  state.map.addLayer({id:"ao-selected-halos",type:"circle",source:"ao-selected-sites",
+   paint:{"circle-radius":11,"circle-color":"rgba(201,173,120,.14)",
+    "circle-stroke-width":0}});
+  state.map.addLayer({id:"ao-selected-pins",type:"circle",source:"ao-selected-sites",
+   paint:{"circle-radius":["interpolate",["linear"],["zoom"],1,5,8,8],
+    "circle-color":state.lens==="sacred"?"#c9ad78":"#e6d8b4",
+    "circle-stroke-color":"#131c27","circle-stroke-width":2}});
+  state.map.on("click","ao-selected-pins",ev=>{
+   const id=ev.features?.[0]?.properties?.id;
+   if(id)selectRecord(id,{fly:false});
+  });
+  state.map.on("mouseenter","ao-selected-pins",()=>state.map.getCanvas().style.cursor="pointer");
+  state.map.on("mouseleave","ao-selected-pins",()=>state.map.getCanvas().style.cursor="");
+  state.sourceLoaded=true;setStatus("");
+ });
+ state.map.on("error",ev=>{
+  if(!state.sourceLoaded)setStatus(tr("unavailable"),true);
+  if(ev?.error)state.lastError=String(ev.error.message||ev.error);
+ });
+}
+function attachControls(){
+ const handle=$("atlas-sheet-handle");
+ const sheet=$("atlas-sheet"),header=$("atlas-sheet-header");
+ // Capture gestures on the stationary viewport. Capturing on the moving
+ // sheet/handle can cause Chromium to cancel a long drag mid-gesture.
+ const capture=$("atlas-view");
+ let drag=null,lastDragAt=0;
+ const start=event=>{
+  if(event.button!==0||event.target.closest("button:not(#atlas-sheet-handle),a"))return;
+  // Disallow native touch scrolling, dragging and text selection only on
+  // the two source-authored sheet drag surfaces. Map gestures are unchanged.
+  event.preventDefault();
+  const current=Number.parseFloat(sheet.style.getPropertyValue("--h"))||snapHeight("peek");
+  drag={y:event.clientY,h:current,moved:false};
+  sheet.classList.add("drag");
+  capture.setPointerCapture?.(event.pointerId);
+ };
+ const move=event=>{
+  if(!drag)return;
+  const delta=event.clientY-drag.y;
+  if(Math.abs(delta)>4)drag.moved=true;
+  const next=Math.max(90,Math.min(snapHeight("expanded")+30,drag.h-delta));
+  sheet.style.setProperty("--h",next+"px");
+  $("atlas-view").style.setProperty("--atlas-sheet-height",next+"px");
+ };
+ const end=()=>{
+  if(!drag)return;
+  const states=["min","peek","expanded"];
+  let next;
+  if(!drag.moved)next=sheet.dataset.sheetState==="expanded"?"peek":"expanded";
+  else{
+   const current=Number.parseFloat(sheet.style.getPropertyValue("--h"))||snapHeight("peek");
+   next=states.reduce((best,candidate)=>
+    Math.abs(snapHeight(candidate)-current)<Math.abs(snapHeight(best)-current)?
+     candidate:best);
+  }
+  lastDragAt=Date.now();
+  drag=null;sheet.classList.remove("drag");
+  const before=state.viewMode;
+  setSheetState(next);
+  if(before!==state.viewMode){renderHeader();renderSummary();}
+ };
+ [handle,header].forEach(el=>el.addEventListener("pointerdown",start));
+ capture.addEventListener("pointermove",move);
+ capture.addEventListener("pointerup",end);
+ capture.addEventListener("pointercancel",()=>{
+  // A canceled gesture must not activate a different sheet state.
+  if(!drag)return;
+  drag=null;sheet.classList.remove("drag");
+  setSheetState(sheet.dataset.sheetState);
+ });
+ handle.addEventListener("click",()=>{
+  if(Date.now()-lastDragAt<300)return;
+  const before=state.viewMode;
+  setSheetState(sheet.dataset.sheetState==="expanded"?"peek":"expanded");
+  if(before!==state.viewMode){renderHeader();renderSummary();}
+ });
+ // Nonvisual keyboard path ensures all three owner-source snap positions
+ // remain accessible when browser gesture arbitration cancels long drags.
+ handle.addEventListener("keydown",event=>{
+  if(!["ArrowDown","ArrowUp","Home","End"].includes(event.key))return;
+  event.preventDefault();
+  const before=state.viewMode;
+  setSheetState(event.key==="ArrowDown"||event.key==="Home"?"min":"expanded");
+  if(before!==state.viewMode){renderHeader();renderSummary();}
+ });
+ // Tabs also support arrow-key navigation while preserving the single map.
+ for(const lens of ["sacred","tlm"]){
+  $("atlas-lens-"+lens).addEventListener("keydown",event=>{
+   if(event.key!=="ArrowLeft"&&event.key!=="ArrowRight")return;
+   event.preventDefault();
+   const next=lens==="sacred"?"tlm":"sacred";
+   renderLens(next);
+   $("atlas-lens-"+next).focus();
+  });
+ }
+ $("atlas-search").addEventListener("input",ev=>{
+  state.query=ev.currentTarget.value;state.selectedId=null;
+  $("atlas-card").hidden=true;renderSummary();syncMap();
+ });
+ $("atlas-near").addEventListener("click",()=>{
+  // The owner prototype exposes Near me as a user-triggered action.
+  // Never request precise position on mount, store it, or infer a church.
+  if(!navigator.geolocation){setStatus(
+    state.language==="fr"?"Localisation indisponible.":"Location unavailable.",true);return;}
+  navigator.geolocation.getCurrentPosition(position=>{
+    setStatus("");
+    if(state.map)state.map.flyTo({
+      center:[position.coords.longitude,position.coords.latitude],
+      zoom:Math.max(9,state.map.getZoom()),duration:650,essential:false
+    });
+  },()=>{
+    setStatus(state.language==="fr"?"Position non disponible.":"Location was not shared.",true);
+  },{enableHighAccuracy:false,timeout:8000,maximumAge:60000});
+ });
+ $("atlas-list-toggle").addEventListener("click",()=>{
+  state.viewMode=state.viewMode==="cards"?"list":"cards";
+  setSheetState(state.viewMode==="list"?"expanded":"peek");
+  renderHeader();renderSummary();
+ });
+ $("atlas-lens-sacred").addEventListener("click",()=>renderLens("sacred"));
+ $("atlas-lens-tlm").addEventListener("click",()=>renderLens("tlm"));
+ $("atlas-world").addEventListener("click",()=>{
+  if(state.map){state.map.flyTo({center:WORLD.center,zoom:WORLD.zoom,duration:600,essential:false});}
+  else $("atlas-results").focus();
+ });
+ $("atlas-language").addEventListener("click",()=>{
+  state.language=state.language==="en"?"fr":"en";
+  renderHeader();renderSummary();
+  if(state.selectedId)selectRecord(state.selectedId,{fly:false});
+ });
+ $("atlas-results").addEventListener("click",ev=>{
+  const button=ev.target.closest("button[data-atlas-id]");
+  if(button)selectRecord(button.dataset.atlasId);
+ });
+}
+export async function mountExplore(){
+ if(state.initialized){
+  if(state.map)requestAnimationFrame(()=>state.map.resize());
+  return;
+ }
+ state.initialized=true;
+ attachControls();setSheetState("peek");renderHeader();
+ setStatus(tr("pending"));
+ try{
+  state.data=await loadDataset();
+  state.all=state.data.tlm;
+  renderSummary();
+ }catch(e){
+  setStatus("Atlas records could not be validated: "+String(e.message||e),true);
+  return;
+ }
+ try{await startMap();}
+ catch(e){state.lastError=String(e.message||e);setStatus(tr("unavailable"),true);}
+}
+export function exploreDebugState(){
+ return {mounted:state.initialized,sourceLoaded:state.sourceLoaded,mapCount:state.map?1:0,
+  lens:state.lens,selectedRecords:state.all.length,error:state.lastError};
+}

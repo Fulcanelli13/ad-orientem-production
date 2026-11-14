@@ -36,3 +36,7 @@ For every feature, specify:
 5. Revert/rollback point and deployment verification.
 
 Do not import a feature merely because it exists in the research repository.
+
+## Stage 2 Explore — draft integration only
+
+The owner-selected Sacred Atlas / TLM Atlas pilot is staged in [draft PR #1](https://github.com/Fulcanelli13/ad-orientem-production/pull/1), using one MapLibre instance, 18 source-backed Sacred Places, 10 Excel-matched ICKSP venues and a prototype-led floating-control/swipe-sheet design. No unverified site imagery, newly approved coordinates, Mass schedules or old-repository bulk transfer. The newer integrated Claude Home, licensed offline typefaces and owner icons take precedence. No merge or publication without visual review; GitHub Actions + GitHub Pages remain the only deploy path.

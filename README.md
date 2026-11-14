@@ -29,3 +29,7 @@ Configure Settings → Pages → Build and deployment → **GitHub Actions**, if
 ## Working principle
 
 Promote features one at a time **after the owner selects the exact approved donor**. Preserve source provenance, artwork rights, dependencies, mobile acceptance criteria, and a rollback path. Do not import old workflows or research scaffolding.
+
+## Explore — production draft only (14 November 2026)
+
+[Draft PR #1](https://github.com/Fulcanelli13/ad-orientem-production/pull/1) stages one MapLibre map for Sacred Atlas / TLM Atlas, 18 sourced Sacred Places and 10 Excel-matched ICKSP TLM venues, with floating controls, draggable swipe-card sheet and immersive source folios. It is **not merged or deployed**. The later integrated Claude Home baseline and approved offline typography remain authoritative. Visual acceptance remains pending, and unapproved site images or Mass times are not represented as facts.
