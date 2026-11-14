@@ -427,6 +427,9 @@ function attachControls(){
  let drag=null,lastDragAt=0;
  const start=event=>{
   if(event.button!==0||event.target.closest("button:not(#atlas-sheet-handle),a"))return;
+  // Disallow native touch scrolling, dragging and text selection only on
+  // the two source-authored sheet drag surfaces. Map gestures are unchanged.
+  event.preventDefault();
   const current=Number.parseFloat(sheet.style.getPropertyValue("--h"))||snapHeight("peek");
   drag={y:event.clientY,h:current,moved:false};
   sheet.classList.add("drag");
