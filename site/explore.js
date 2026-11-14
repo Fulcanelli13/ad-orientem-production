@@ -47,7 +47,7 @@ const dictionary={
 };
 const state={
  initialized:false,lens:"tlm",language:"en",data:null,selectedId:null,
- map:null,sourceLoaded:false,loading:null,all:[],query:"",viewMode:"cards",lastError:null,
+ map:null,sourceLoaded:false,loading:null,all:[],query:"",viewMode:"cards",folioHistory:[],lastError:null,
 };
 const tr=key=>dictionary[state.language][key]||key;
 const make=(tag,className,txt)=>{
@@ -168,52 +168,186 @@ function appendLabel(parent,head,body){
  section.append(make("p","",body));
  parent.append(section);
 }
-function selectRecord(id,{fly=true}={}){
+// Claude's original source hierarchy: immersive hero, actions, chapter
+// navigation, factual folio, related sites. Content is ONLY verified pilot data.
+function mapPinUrl(entry){
+ const lat=Number(entry.geo.lat),lng=Number(entry.geo.lng);
+ if(!Number.isFinite(lat)||!Number.isFinite(lng))return null;
+ const url=new URL("https://www.openstreetmap.org/");
+ url.searchParams.set("mlat",String(lat));
+ url.searchParams.set("mlon",String(lng));
+ url.hash="map=15/"+lat+"/"+lng;
+ return url.href;
+}
+function folioLink(root,record,text,url,primary=false){
+ const a=external(url,text,"atlas-folio-action"+(primary?" primary":""));
+ if(a)root.append(a);
+}
+function folioFacts(data){
+ const wrap=make("div","atlas-folio-facts");
+ for(const [title,body] of data){
+  if(!body)continue;
+  const item=make("div","atlas-folio-fact");
+  item.append(make("small","",title),make("b","",body));
+  wrap.append(item);
+ }
+ return wrap;
+}
+function folioChapter(root,id,title,body){
+ const heading=make("h3","atlas-folio-section",title);
+ heading.id=id;
+ root.append(heading);
+ if(body)root.append(body);
+}
+function folioRow(title,detail,action){
+ const b=make("button","atlas-folio-row");
+ b.type="button";
+ const copy=make("span","atlas-folio-row-copy");
+ copy.append(make("b","",title),make("small","",detail));
+ b.append(copy,make("span","atlas-folio-chevron","›"));
+ b.addEventListener("click",action);
+ return b;
+}
+function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
  const record=activeRecord(id);if(!record)return;
+ if(fromFolio&&state.selectedId&&state.selectedId!==id){
+  state.folioHistory.push(state.selectedId);
+ }else if(!back){state.folioHistory=[];}
  state.selectedId=record.id;
- const root=$("atlas-card");root.hidden=false;root.replaceChildren();
- const top=make("div","atlas-card-heading");
- const type=make("span","atlas-card-type",recordBadge(record));
- const folioMeta=make("div","atlas-card-meta");
- folioMeta.append(make("span","atlas-folio-kicker","LIBER LOCORUM"),type);
- const close=make("button","atlas-card-close","×");close.type="button";close.setAttribute("aria-label",tr("hide"));
- close.addEventListener("click",()=>{state.selectedId=null;root.hidden=true;renderSummary();$("atlas-sheet-handle").focus({preventScroll:true});});
- top.append(folioMeta,close);root.append(top);
- root.append(make("h2","atlas-card-title",record.name));
- const figure=make("div","atlas-card-media");
- // This SVG belongs to the source-owned no-photo fallback, not an approved photograph.
- figure.innerHTML=renderSacredPlaceFallback({place_type:record.place_type||"church"},state.language,"preview");
- root.append(figure);
- appendLabel(root,tr("place"),record.address);
- appendLabel(root,tr("method"),sitePrecision(record,state.language));
- const synopsis=sourceSynopsis(record,state.language);
- if(synopsis)root.append(make("p","atlas-card-synopsis",synopsis));
- if(record.geo.locator_note)root.append(make("p","atlas-card-caution",record.geo.locator_note));
- const links=make("div","atlas-source-links");
- const source=external(record.geo.source_url,tr("source"),"atlas-source-link");
- if(source)links.append(source);
- if(record.community_id==="ICKSP"){
-  const official=external(record.official_url,tr("official"),"atlas-source-link primary");
-  if(official)links.prepend(official);
- }
- if(links.childElementCount)root.append(links);
- root.append(make("p","atlas-card-remark",record.community_id==="ICKSP"?tr("tnotice"):tr("noPhoto")));
- if(state.lens==="sacred"){
-  const nearby=nearbySelected(record,state.all,3);
-  if(nearby.length){
-   const section=make("section","atlas-nearby");
-   section.append(make("h3","",tr("nearby")));
-   for(const next of nearby){
-    const b=make("button","atlas-nearby-button",next.title+" · "+next.distance_km+" km");
-    b.type="button";b.addEventListener("click",()=>selectRecord(next.place_id));
-    section.append(b);
-   }
-   root.append(section);
+ const root=$("atlas-card");
+ root.hidden=false;root.replaceChildren();root.scrollTop=0;
+ const exit=()=>{
+  if(state.folioHistory.length){
+   const previous=state.folioHistory.pop();
+   selectRecord(previous,{fly:false,back:true});
+  }else{
+   state.selectedId=null;root.hidden=true;renderSummary();
+   $("atlas-sheet-handle").focus({preventScroll:true});
   }
+ };
+ const backButton=make("button","atlas-folio-back","‹");
+ backButton.type="button";backButton.setAttribute("aria-label",tr("hide"));
+ backButton.addEventListener("click",exit);
+ root.append(backButton);
+ if(state.folioHistory.length){
+  const closeAll=make("button","atlas-folio-closeall","×");
+  closeAll.type="button";closeAll.setAttribute("aria-label",tr("hide"));
+  closeAll.addEventListener("click",()=>{
+   state.folioHistory=[];state.selectedId=null;root.hidden=true;renderSummary();
+   $("atlas-sheet-handle").focus({preventScroll:true});
+  });
+  root.append(closeAll);
  }
- root.scrollTop=0;
+ const sc=make("div","atlas-folio-scroll");
+ const hero=make("header","atlas-folio-hero atlas-folio-hero-band");
+ // The donor's .hero would take a verified exact-site photograph. This
+ // fallback is deliberately marked as a symbol, never a licensed photo.
+ const media=make("div","atlas-folio-hero-symbol");
+ media.innerHTML=renderSacredPlaceFallback(
+   {place_type:record.place_type||record.venue_type||"church"},
+   state.language,"preview");
+ const title=make("div","atlas-folio-ttl");
+ title.append(make("small","",
+   record.community_id==="ICKSP"?"ICKSP · "+record.country_code:
+   recordBadge(record)+" · "+record.country_code));
+ title.append(make("h1","",record.name));
+ if(record.community_id==="ICKSP")title.append(make("p","",record.address));
+ hero.append(media,title);sc.append(hero);
+ const actions=make("div","atlas-folio-actions");
+ // These links point to source/indicative map positions, not a verified
+ // entrance or confirmed service. No "Directions" wording is inferred.
+ folioLink(actions,record,
+  state.language==="fr"?"Position sur la carte":"Map position",
+  mapPinUrl(record),true);
+ if(record.community_id==="ICKSP")
+  folioLink(actions,record,tr("official"),record.official_url);
+ folioLink(actions,record,tr("source"),record.geo.source_url);
+ if(actions.childElementCount)sc.append(actions);
+ const links=make("nav","atlas-folio-toc");
+ links.setAttribute("aria-label",
+  state.language==="fr"?"Chapitres du lieu":"Place chapters");
+ const chapters=record.community_id==="ICKSP"?
+  [[state.language==="fr"?"Messes":"Mass","#folio-mass"],
+   [state.language==="fr"?"L’église":"Church","#folio-place"],
+   [state.language==="fr"?"Sources":"Sources","#folio-source"]]:
+  [[state.language==="fr"?"Le lieu":"Place","#folio-place"],
+   [state.language==="fr"?"Sources":"Sources","#folio-source"],
+   [state.language==="fr"?"À proximité":"Nearby","#folio-near"]];
+ for(const [label,anchor] of chapters){
+  const b=make("button","",label);b.type="button";
+  b.addEventListener("click",()=>sc.querySelector(anchor)?.scrollIntoView({
+   behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"instant":"smooth",
+   block:"start"
+  }));
+  links.append(b);
+ }
+ sc.append(links);
+ if(record.community_id==="ICKSP"){
+  const nextMass=make("section","atlas-folio-nextm");
+  nextMass.id="folio-mass";
+  nextMass.append(make("small","",
+    state.language==="fr"?"Horaires des messes":"Mass timetable"));
+  nextMass.append(make("b","",tr("tnotice").split(".")[0]+"."));
+  nextMass.append(make("em","",state.language==="fr"?
+   "Consulter la page officielle de l’institut pour les horaires actuels.":
+   "Verify current services directly with the official institute."));
+  sc.append(nextMass);
+ }
+ folioChapter(sc,"folio-place",
+  record.community_id==="ICKSP"?
+   (state.language==="fr"?"L’église":"The church"):
+   (state.language==="fr"?"Le lieu":"The place"),
+  folioFacts([
+   [state.language==="fr"?"Adresse":"Address",record.address],
+   [state.language==="fr"?"Repère":"Pin",sitePrecision(record,state.language)],
+   [state.language==="fr"?"Desservi par":"Served by",record.community_id==="ICKSP"?
+     "Institute of Christ the King Sovereign Priest":null],
+   [state.language==="fr"?"Photographie":"Photograph",state.language==="fr"?
+     "Aucune photographie du lieu approuvée":"No approved exact-site photograph"]
+  ]));
+ const synopsis=sourceSynopsis(record,state.language);
+ if(synopsis){
+  const chapter=make("section","atlas-folio-chapter");
+  chapter.append(make("p","",synopsis));
+  sc.append(chapter);
+ }else{
+  sc.append(make("p","atlas-folio-unrecorded",
+    state.language==="fr"?
+    "Le guide historique et illustré de ce lieu n’a pas encore été transféré.":
+    "The historical and illustrated guide for this place has not yet been transferred."));
+ }
+ folioChapter(sc,"folio-source",
+  state.language==="fr"?"Sources et vérification":"Sources and verification",
+  folioFacts([
+   [state.language==="fr"?"Précision":"Precision",sitePrecision(record,state.language)],
+   [state.language==="fr"?"Référence":"Source ref",record.geo.source_ref],
+   [state.language==="fr"?"Contrôlé":"Checked",record.geo.verified_at],
+   [state.language==="fr"?"Site canonique":"Canonical site",
+    record.cl2_site_id||record.id]
+  ]));
+ if(record.geo.locator_note)
+  sc.append(make("p","atlas-folio-unrecorded",record.geo.locator_note));
+ const near=nearbySelected(record,state.all,3);
+ if(near.length){
+  const section=make("div","atlas-folio-near");
+  folioChapter(sc,"folio-near",state.language==="fr"?
+   "Lieux à proximité":"Places nearby",null);
+  for(const n of near)
+   section.append(folioRow(n.title,
+     n.distance_km+" km · "+(state.language==="fr"?"à vol d’oiseau":"straight-line distance"),
+     ()=>selectRecord(n.place_id,{fromFolio:true,fly:false})));
+  sc.append(section);
+ }
+ sc.append(make("p","atlas-folio-note",
+  state.language==="fr"?
+  "Les positions et distances indiquent des repères documentés, non des entrées vérifiées. Vérifier les sources avant une visite.":
+  "Positions and distances describe documented sites, not verified entrances. Consult the original sources before visiting."));
+ root.append(sc);
  renderSummary();
- if(fly&&state.map)state.map.flyTo({center:[Number(record.geo.lng),Number(record.geo.lat)],zoom:Math.max(7,state.map.getZoom()),duration:650,essential:false});
+ if(fly&&state.map)state.map.flyTo({
+  center:[Number(record.geo.lng),Number(record.geo.lat)],
+  zoom:Math.max(7,state.map.getZoom()),duration:650,essential:false
+ });
 }
 function renderLens(lens){
  if(lens!=="sacred"&&lens!=="tlm")return;
