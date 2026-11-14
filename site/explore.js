@@ -257,7 +257,7 @@ async function startMap(){
 }
 function attachControls(){
  const handle=$("atlas-sheet-handle");
- let dragStart=null,ignoreClick=false;
+ let dragStart=null,lastDragAt=0;
  handle.addEventListener("pointerdown",event=>{
   if(event.button!==0)return;
   dragStart=event.clientY;
@@ -268,13 +268,15 @@ function attachControls(){
   const dy=event.clientY-dragStart;
   dragStart=null;
   if(Math.abs(dy)>=24){
-   ignoreClick=true;
+   lastDragAt=Date.now();
    setSheetState(dy<0?"expanded":"peek");
   }
  });
  handle.addEventListener("pointercancel",()=>{dragStart=null;});
  handle.addEventListener("click",()=>{
-  if(ignoreClick){ignoreClick=false;return;}
+  // A release after dragging can synthesize a click. Only suppress the
+  // click immediately following the gesture, never the next deliberate tap.
+  if(Date.now()-lastDragAt<300)return;
   setSheetState($("atlas-sheet").dataset.sheetState==="expanded"?"peek":"expanded");
  });
  // Tabs also support arrow-key navigation while preserving the single map.
