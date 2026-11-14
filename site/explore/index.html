@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070b11">
+<title>Explore · Ad Orientem (Review)</title>
+<link rel="stylesheet" href="../assets/brand/typography.css">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="./explore.css">
+<script type="module" src="./explore.mjs"></script>
+</head>
+<body>
+<main class="app" id="explore-app">
+  <div id="map" role="application" aria-label="Explore map"></div>
+  <div class="map-fallback" id="map-fallback" hidden>
+    <div class="map-fallback-inner">
+      <span class="fallback-mark" aria-hidden="true">⌖</span>
+      <p>Map temporarily unavailable</p>
+      <small>Search and the site directory remain accessible. The map needs WebGL and an online style source.</small>
+      <button type="button" id="map-retry">Retry map</button>
+    </div>
+  </div>
+  <div class="top">
+    <div class="nav">
+      <button id="open-search" class="sfield glass" type="button" aria-label="Search churches, shrines or towns">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg>
+        <span>Search a church, shrine, town…</span>
+      </button>
+      <button id="near" class="icb glass" type="button" aria-label="Locate me" title="Locate me">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="1.8" fill="currentColor" stroke="none"/></svg>
+      </button>
+    </div>
+    <div class="coll" role="tablist" aria-label="Explore map collection">
+      <button type="button" role="tab" id="tab-tlm" aria-selected="true" class="on" data-mode="tlm">TLM Atlas</button>
+      <button type="button" role="tab" id="tab-sac" aria-selected="false" data-mode="sac">Sacred Atlas</button>
+    </div>
+  </div>
+  <button type="button" class="where glass" id="where" aria-label="Choose a map region">World <span aria-hidden="true">⌄</span></button>
+  <div class="map-controls" aria-label="Map controls">
+    <button type="button" id="zoom-in" aria-label="Zoom in">+</button>
+    <button type="button" id="zoom-out" aria-label="Zoom out">−</button>
+    <button type="button" id="reset-view" aria-label="View world map">⌖</button>
+  </div>
+  <section class="sheet" id="sheet" aria-label="Explore results">
+    <button class="grab" id="sheet-handle" type="button" aria-label="Expand or collapse results" aria-expanded="false"><span></span></button>
+    <div class="ways" id="ways" role="group" aria-label="Explore views"></div>
+    <div class="sh-h" id="sheet-head">
+      <div class="t"><b id="results-title">Traditional Mass nearby</b><small id="results-subtitle">Approved locations only</small></div>
+      <button id="toggle-sheet" class="pill" type="button" aria-expanded="false">Expand</button>
+    </div>
+    <div class="sh-b" id="results" aria-live="polite"></div>
+  </section>
+  <nav class="tabbar" aria-label="Ad Orientem main navigation">
+    <a href="../index.html#home" class="tab"><img src="../assets/icons/home.png" alt=""><span>Today</span></a>
+    <a href="../index.html#pray" class="tab"><img src="../assets/icons/prayer.png" alt=""><span>Pray</span></a>
+    <a href="../index.html#formation" class="tab"><img src="../assets/icons/book.png" alt=""><span>Formation</span></a>
+    <span class="tab on" aria-current="page"><img src="../assets/icons/sacred-atlas.svg" alt=""><span>Explore</span></span>
+  </nav>
+  <section class="overlay" id="search-panel" role="dialog" aria-modal="true" aria-label="Search Explore" hidden>
+    <header class="panel-header"><button id="close-search" type="button" aria-label="Close search">‹</button><h2>Search Explore</h2></header>
+    <label for="search-input" class="field-label">Church, town, shrine or canonical site ID</label>
+    <input id="search-input" autocomplete="off" type="search" placeholder="Search approved places…" />
+    <p class="search-help">Search works across the approved registry, regardless of map zoom.</p>
+    <div id="search-results" class="search-results" aria-live="polite"></div>
+  </section>
+  <section class="overlay" id="place-panel" role="dialog" aria-modal="true" aria-label="Place details" hidden>
+    <header class="panel-header"><button id="close-place" type="button" aria-label="Close place details">‹</button><h2 id="place-name">Place</h2></header>
+    <div class="profile" id="place-profile"></div>
+  </section>
+  <p class="review-flag">REVIEW · CANONICAL DATA ONLY</p>
+</main>
+</body>
+</html>
