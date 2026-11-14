@@ -128,6 +128,10 @@ try{
   await handle.click();
   assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"expanded");
   assert.equal(await handle.getAttribute("aria-expanded"),"true");
+  assert.ok(await page.locator("#atlas-results").evaluate(el=>el.classList.contains("is-list")),
+    "Claude expanded mode must present a real vertically scrollable list");
+  await page.screenshot({path:join("artifacts/production-explore",width+"-en-sacred-list.png"),
+    animations:"disabled",fullPage:false});
   await handle.click();
   assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek");
   if(width===320){
@@ -146,6 +150,21 @@ try{
     await page.mouse.up();
     assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek",
       "Dragging the sheet handle downward must collapse the sheet");
+    const down=await handle.boundingBox();
+    await page.mouse.move(down.x+down.width/2,down.y+down.height/2);
+    await page.mouse.down();
+    await page.mouse.move(down.x+down.width/2,down.y+down.height/2+240,{steps:6});
+    await page.mouse.up();
+    assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"min",
+      "Claude source supports a third 150px minimum sheet position");
+    const collapsedHeight=await page.locator("#atlas-sheet").evaluate(el=>el.getBoundingClientRect().height);
+    assert.ok(Math.abs(collapsedHeight-150)<3,"Minimum sheet snap must remain 150px");
+    await page.waitForTimeout(325);
+    await handle.click();
+    assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"expanded");
+    await page.waitForTimeout(325);
+    await handle.click();
+    assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek");
   }
   await page.screenshot({path:join("artifacts/production-explore",width+"-en-sacred-map.png"),
    animations:"disabled",fullPage:false});
