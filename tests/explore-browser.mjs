@@ -177,13 +177,19 @@ try{
    animations:"disabled",fullPage:false});
   await page.locator("#atlas-results .atlas-result-button").first().click();
   await page.locator("#atlas-card").waitFor({state:"visible"});
+  assert.equal(await page.locator("#atlas-card .atlas-folio-hero").count(),1,
+    "The source folio must use Claude's immersive hero, not a generic details panel");
+  assert.equal(await page.locator("#atlas-card .atlas-folio-toc").count(),1,
+    "Claude source requires chapter navigation inside the folio");
+  assert.ok(await page.locator("#atlas-card .atlas-folio-fact").count()>1,
+    "A source-backed place folio must include factual rows");
   assert.equal(await page.locator("#atlas-card [data-visual-kind='category-symbol']").count(),1,
     "No unapproved images should be substituted for missing verified media");
   assert.ok(await page.locator("#atlas-card a[href^='https://']").count()>=1,
     "Missing coordinate-source link");
   await page.screenshot({path:join("artifacts/production-explore",width+"-en-sacred-folio.png"),
    animations:"disabled",fullPage:false});
-  await page.locator("#atlas-card .atlas-card-close").click();
+  await page.locator("#atlas-card .atlas-folio-back").click();
   await page.locator("#atlas-lens-tlm").click();
   await page.waitForFunction(()=>document.querySelector("#atlas-count")?.textContent==="10 / 10");
   assert.equal(await page.locator("#atlas-results > li").count(),10);
@@ -192,7 +198,9 @@ try{
   assert.ok(await page.locator("#atlas-card a[href*='institute-christ-king.org']").count()>=1,
     "TLM venue official institute evidence missing");
   assert.match(await page.locator("#atlas-card").innerText(),/Mass times are not imported/);
-  await page.locator("#atlas-card .atlas-card-close").click();
+  assert.equal(await page.locator("#atlas-card .atlas-folio-nextm").count(),1,
+    "The original TLM folio timetable section must state the data hold");
+  await page.locator("#atlas-card .atlas-folio-back").click();
   await page.locator("#atlas-language").click();
   assert.match(await page.locator("#atlas-map-hint").innerText(),/horaires/);
   await page.screenshot({path:join("artifacts/production-explore",width+"-fr-tlm-map.png"),
@@ -200,7 +208,7 @@ try{
   await page.locator("#atlas-results .atlas-result-button").first().click();
   await page.screenshot({path:join("artifacts/production-explore",width+"-fr-tlm-folio.png"),
    animations:"disabled",fullPage:false});
-  await page.locator("#atlas-card .atlas-card-close").click();
+  await page.locator("#atlas-card .atlas-folio-back").click();
   await page.locator("#atlas-world").click();
   await page.locator('.tabbar [data-route="home"]').click();
   await page.locator("#home-view").waitFor({state:"visible"});
