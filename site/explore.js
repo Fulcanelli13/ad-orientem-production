@@ -25,7 +25,7 @@ const dictionary={
   pending:"Loading the map and selected source records",
   unavailable:"Interactive tiles unavailable. The source-backed place list remains usable.",
   showAll:"Clear search",featured:"Reviewed source",credit:"Geographic coordinates and source",
-  lang:"Français",place:"Place",pattern:"No live Mass time claim"
+  lang:"Français",place:"Place",pattern:"No live Mass time claim",expand:"Expand places",collapse:"Collapse places",openFolio:"Discover place"
  },
  fr:{
   heading:"Géographie sacrée",subtitle:"La carte pour découvrir · la fiche pour comprendre",
@@ -41,7 +41,7 @@ const dictionary={
   pending:"Chargement de la carte et des sources retenues",
   unavailable:"Carte interactive indisponible. La liste des lieux sourcés reste utilisable.",
   showAll:"Effacer la recherche",featured:"Source documentée",credit:"Coordonnées et source",
-  lang:"English",place:"Lieu",pattern:"Aucun horaire de messe confirmé"
+  lang:"English",place:"Lieu",pattern:"Aucun horaire de messe confirmé",expand:"Déployer les lieux",collapse:"Réduire les lieux",openFolio:"Découvrir le lieu"
  }
 };
 const state={
@@ -86,6 +86,9 @@ function renderHeader() {
  $("atlas-results-title").textContent=tr("list");
  $("atlas-lens-sacred").textContent=tr("sacred");
  $("atlas-lens-tlm").textContent=tr("tlm");
+ const expanded=$("atlas-sheet").dataset.sheetState==="expanded";
+ $("atlas-sheet-handle").setAttribute("aria-expanded",String(expanded));
+ $("atlas-sheet-handle").setAttribute("aria-label",tr(expanded?"collapse":"expand"));
  for(const lens of ["sacred","tlm"]){
   const button=$("atlas-lens-"+lens);
   const active=lens===state.lens;
@@ -110,13 +113,26 @@ function renderSummary(){
   const li=make("li","atlas-result");
   const button=make("button","atlas-result-button");
   button.type="button";button.dataset.atlasId=entry.id;
-  button.setAttribute("aria-label",tr("discover")+": "+entry.name);
+  button.setAttribute("aria-label",tr("openFolio")+": "+entry.name);
   button.setAttribute("aria-pressed",String(entry.id===state.selectedId));
-  button.append(make("small","atlas-result-kicker",recordBadge(entry)));
-  button.append(make("strong","atlas-result-name",entry.name));
-  button.append(make("span","atlas-result-location",entry.address));
+  const media=make("span","atlas-result-media");
+  // Exact-site approved imagery has not been transferred. No demo photographs.
+  media.innerHTML=renderSacredPlaceFallback(
+    {place_type:entry.place_type||"church"},state.language,"preview");
+  const copy=make("span","atlas-result-copy");
+  copy.append(make("small","atlas-result-kicker",recordBadge(entry)));
+  copy.append(make("strong","atlas-result-name",entry.name));
+  copy.append(make("span","atlas-result-location",entry.address));
+  copy.append(make("span","atlas-result-action",tr("discover")+"  →"));
+  button.append(media,copy);
   li.append(button);root.append(li);
  }
+}
+function setSheetState(next){
+ const expanded=next==="expanded";
+ $("atlas-sheet").dataset.sheetState=expanded?"expanded":"peek";
+ $("atlas-sheet-handle").setAttribute("aria-expanded",String(expanded));
+ $("atlas-sheet-handle").setAttribute("aria-label",tr(expanded?"collapse":"expand"));
 }
 function appendLabel(parent,head,body){
  if(!body)return;
@@ -132,7 +148,7 @@ function selectRecord(id,{fly=true}={}){
  const top=make("div","atlas-card-heading");
  const type=make("span","atlas-card-type",recordBadge(record));
  const close=make("button","atlas-card-close","×");close.type="button";close.setAttribute("aria-label",tr("hide"));
- close.addEventListener("click",()=>{state.selectedId=null;root.hidden=true;renderSummary();});
+ close.addEventListener("click",()=>{state.selectedId=null;root.hidden=true;renderSummary();$("atlas-sheet-handle").focus({preventScroll:true});});
  top.append(type,close);root.append(top);
  root.append(make("h2","atlas-card-title",record.name));
  const figure=make("div","atlas-card-media");
@@ -166,14 +182,14 @@ function selectRecord(id,{fly=true}={}){
    root.append(section);
   }
  }
- const topOfCard=root.getBoundingClientRect().top;
- if(topOfCard>window.innerHeight*.85)root.scrollIntoView({behavior:"smooth",block:"nearest"});
+ root.scrollTop=0;
  renderSummary();
  if(fly&&state.map)state.map.flyTo({center:[Number(record.geo.lng),Number(record.geo.lat)],zoom:Math.max(7,state.map.getZoom()),duration:650,essential:false});
 }
 function renderLens(lens){
  if(lens!=="sacred"&&lens!=="tlm")return;
  state.lens=lens;state.selectedId=null;
+ setSheetState("peek");
  state.all=state.data?state.data[lens]:[];
  $("atlas-card").hidden=true;
  $("atlas-card").replaceChildren();
@@ -240,6 +256,37 @@ async function startMap(){
  });
 }
 function attachControls(){
+ const handle=$("atlas-sheet-handle");
+ let dragStart=null,ignoreClick=false;
+ handle.addEventListener("pointerdown",event=>{
+  if(event.button!==0)return;
+  dragStart=event.clientY;
+  handle.setPointerCapture?.(event.pointerId);
+ });
+ handle.addEventListener("pointerup",event=>{
+  if(dragStart===null)return;
+  const dy=event.clientY-dragStart;
+  dragStart=null;
+  if(Math.abs(dy)>=24){
+   ignoreClick=true;
+   setSheetState(dy<0?"expanded":"peek");
+  }
+ });
+ handle.addEventListener("pointercancel",()=>{dragStart=null;});
+ handle.addEventListener("click",()=>{
+  if(ignoreClick){ignoreClick=false;return;}
+  setSheetState($("atlas-sheet").dataset.sheetState==="expanded"?"peek":"expanded");
+ });
+ // Tabs also support arrow-key navigation while preserving the single map.
+ for(const lens of ["sacred","tlm"]){
+  $("atlas-lens-"+lens).addEventListener("keydown",event=>{
+   if(event.key!=="ArrowLeft"&&event.key!=="ArrowRight")return;
+   event.preventDefault();
+   const next=lens==="sacred"?"tlm":"sacred";
+   renderLens(next);
+   $("atlas-lens-"+next).focus();
+  });
+ }
  $("atlas-search").addEventListener("input",ev=>{
   state.query=ev.currentTarget.value;state.selectedId=null;
   $("atlas-card").hidden=true;renderSummary();syncMap();
@@ -266,7 +313,7 @@ export async function mountExplore(){
   return;
  }
  state.initialized=true;
- attachControls();renderHeader();
+ attachControls();setSheetState("peek");renderHeader();
  setStatus(tr("pending"));
  try{
   state.data=await loadDataset();
