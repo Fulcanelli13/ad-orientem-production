@@ -62,12 +62,16 @@ jobs:
         run: |
           npm install --no-save --ignore-scripts --no-audit --no-fund @playwright/test@1.64.1
           npx playwright install --with-deps chromium
-      - name: Run full map and source-link acceptance
+      - name: Run source-aligned desktop and mobile-pointer acceptance
         run: node --experimental-default-type=module tests/explore-browser.mjs
+      - name: Run real Chromium touch-emulation acceptance
+        run: node --experimental-default-type=module tests/explore-touch.mjs
       - name: Preserve EN/FR 320-1440 screenshots
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: production-explore-screenshots
-          path: artifacts/production-explore
+          path: |
+            artifacts/production-explore
+            artifacts/production-explore-touch
           if-no-files-found: warn
