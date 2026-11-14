@@ -477,3 +477,73 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
  #atlas-view .atlas-sheet{left:0!important;right:auto!important;width:390px!important}
  #atlas-view .atlas-results{overflow-x:auto!important}
 }
+
+/* CLAUDE WAY TABS AND LIST: .sheet .ways, .way, .pill, .rows, .row
+   transcribed from AO_Explore_AppDesign.html; unavailable datasets remain
+   labelled as held, not represented by inert fake buttons. */
+#atlas-view .atlas-ways{
+ display:flex;flex:0 0 auto;align-items:center;gap:20px;
+ height:34px;margin:0 0 12px;padding:0 18px;
+ border-bottom:1px solid var(--ao-line);overflow:hidden
+}
+#atlas-view .atlas-way{
+ position:relative;display:flex;align-items:center;
+ flex:0 0 auto;height:34px;padding:0;
+ font:600 9.5px var(--ao-cap);letter-spacing:1.9px;
+ text-transform:uppercase;color:var(--ao-mu2);white-space:nowrap
+}
+#atlas-view .atlas-way.active{color:var(--ao-ink)}
+#atlas-view .atlas-way.active:after{
+ content:"";position:absolute;bottom:-1px;left:0;right:0;height:1.5px;background:var(--ao-gold)
+}
+#atlas-view .atlas-way.withheld{opacity:.45}
+#atlas-view .atlas-sheet-heading{flex:1;min-width:0}
+#atlas-view .atlas-sheet-heading small{
+ display:block;font:italic 400 14.5px var(--ao-serif);color:var(--ao-mu2);
+ margin-top:2px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis
+}
+#atlas-view .atlas-pill{
+ flex:0 0 auto;height:32px;min-height:32px;padding:0 13px;border-radius:999px;
+ border:1px solid rgba(201,173,120,.45);background:none;
+ font:600 9px var(--ao-cap);letter-spacing:1.6px;text-transform:uppercase;
+ color:var(--ao-gold2)
+}
+#atlas-view .atlas-count.atlas-a11y{
+ position:absolute!important;width:1px!important;height:1px!important;
+ padding:0!important;margin:-1px!important;overflow:hidden!important;
+ clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important
+}
+#atlas-view .atlas-results.is-list{
+ display:flex!important;flex-direction:column!important;gap:0!important;
+ overflow-x:hidden!important;overflow-y:auto!important;
+ scroll-snap-type:none!important;padding:0 18px 10px!important
+}
+#atlas-view .atlas-results.is-list .atlas-result{
+ flex:0 0 auto!important;height:auto!important;min-height:75px;width:100%;scroll-snap-align:none
+}
+#atlas-view .atlas-results.is-list .atlas-result-button{
+ display:flex!important;flex-direction:row!important;align-items:center;
+ width:100%;height:75px!important;min-height:75px!important;max-height:75px!important;
+ border:0!important;border-bottom:1px solid var(--ao-line)!important;
+ border-radius:0!important;background:transparent!important;
+ padding:10px 0!important;gap:12px!important;box-shadow:none!important
+}
+#atlas-view .atlas-results.is-list .atlas-result-media{
+ flex:0 0 54px!important;width:54px!important;height:54px!important;min-height:54px!important;
+ padding:0!important;border-radius:13px!important;border:0!important;
+ box-shadow:0 0 0 1px rgba(255,255,255,.08) inset;
+ display:grid;place-items:center
+}
+#atlas-view .atlas-results.is-list .atlas-result-media .aoSacredPlaceSymbolPlate{width:42px;height:42px}
+#atlas-view .atlas-results.is-list .atlas-result-media svg{width:40px;height:40px}
+#atlas-view .atlas-results.is-list .atlas-result-copy{
+ padding:0!important;min-width:0;justify-content:center;gap:3px!important
+}
+#atlas-view .atlas-results.is-list .atlas-result-name{
+ font:500 19px/1.12 var(--ao-corm)!important;-webkit-line-clamp:1!important
+}
+#atlas-view .atlas-results.is-list .atlas-result-location{
+ font:italic 400 14px var(--ao-serif)!important;color:var(--ao-mu2);
+ -webkit-line-clamp:1!important
+}
+#atlas-view .atlas-results.is-list .atlas-result-action{display:none!important}
