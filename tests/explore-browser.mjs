@@ -161,6 +161,17 @@ try{
       return el?.id||el?.parentElement?.id||el?.tagName||"none";
     },[down.x+down.width/2,down.y+down.height/2]);
     assert.equal(target,"atlas-sheet-handle","Final drag must begin on actual sheet handle");
+    await page.evaluate(()=>{
+      window.__dragLog=[];
+      for(const event of ["pointerdown","pointermove","pointerup","pointercancel","lostpointercapture","mousedown","mouseup"]){
+        document.addEventListener(event,e=>{
+          if(window.__dragLog.length<45) window.__dragLog.push({
+            type:event,target:e.target?.id||e.target?.className?.toString?.().slice(0,40)||"",
+            button:e.button,buttons:e.buttons,y:Math.round(e.clientY)
+          });
+        },true);
+      }
+    });
     await page.mouse.down();
     await page.mouse.move(down.x+down.width/2,down.y+down.height/2+240,{steps:6});
     const dragDuring=await page.locator("#atlas-sheet").evaluate(el=>({
@@ -172,8 +183,9 @@ try{
       state:el.dataset.sheetState,height:el.style.getPropertyValue("--h"),rect:el.getBoundingClientRect().height,
       dragging:el.classList.contains("drag")
     }));
+    const dragLog=await page.evaluate(()=>window.__dragLog||[]);
     assert.equal(dragAfter.state,"min",
-      "Claude source supports a third 150px minimum sheet position: "+JSON.stringify({dragDuring,dragAfter}));
+      "Claude source supports a third 150px minimum sheet position: "+JSON.stringify({dragDuring,dragAfter,dragLog}));
     const collapsedHeight=await page.locator("#atlas-sheet").evaluate(el=>el.getBoundingClientRect().height);
     assert.ok(Math.abs(collapsedHeight-150)<3,"Minimum sheet snap must remain 150px");
     await page.waitForTimeout(325);
