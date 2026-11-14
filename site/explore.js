@@ -7,6 +7,7 @@ import {
 import {renderSacredPlaceFallback} from "./explore/core/sacred-place-visual-fallback.js";
 import {CLAUDE_MAP_STYLE} from "./explore/claude-map-style.js";
 import {boundsForLens} from "./explore/lens-camera.js";
+import {facetOptions,filterEntriesByFacet} from "./explore/category-facets.js";
 
 const $ = id => document.getElementById(id);
 const MAPLIBRE_MODULE = "https://unpkg.com/maplibre-gl@6.13.0/dist/maplibre-gl.mjs";
@@ -48,7 +49,7 @@ const dictionary={
 };
 const state={
  initialized:false,lens:"tlm",language:"en",data:null,selectedId:null,
- map:null,sourceLoaded:false,loading:null,all:[],query:"",viewMode:"cards",folioHistory:[],lastError:null,
+ map:null,sourceLoaded:false,loading:null,all:[],query:"",facet:"all",viewMode:"cards",folioHistory:[],lastError:null,
 };
 const tr=key=>dictionary[state.language][key]||key;
 const make=(tag,className,txt)=>{
@@ -70,7 +71,7 @@ function setStatus(message,failed=false){
  node.hidden=!message;
 }
 function visibleEntries(){
- return searchEntries(state.all,state.query);
+ return filterEntriesByFacet(searchEntries(state.all,state.query),state.lens,state.facet);
 }
 function activeRecord(id){
  return state.all.find(row=>row.id===id)||null;
@@ -86,12 +87,18 @@ function renderHeader() {
  $("atlas-selection-note").textContent=tr("notice");
  $("atlas-map-hint").textContent=state.lens==="tlm"?tr("tnotice"):tr("snote");
  const ways=$("atlas-ways");ways.replaceChildren();
- const keys=state.lens==="tlm"?["churchWay","massWay"]:["placeWay","pilgrimWay","feastWay"];
- keys.forEach((key,index)=>{
-  const el=make("span","atlas-way"+(index===0?" active":" withheld"),tr(key));
-  if(index!==0){el.setAttribute("aria-disabled","true");el.title=tr("notImported");}
-  ways.append(el);
- });
+ ways.setAttribute("role","group");
+ ways.setAttribute("aria-label",state.language==="fr"?"Filtrer les lieux par catégorie":"Filter places by category");
+ for(const facet of facetOptions(state.lens,state.language)){
+  const button=make("button","atlas-way"+(state.facet===facet.id?" active":"")+
+    (facet.held?" withheld":""),facet.label);
+  button.type="button";
+  button.dataset.atlasFacet=facet.id;
+  button.disabled=facet.held;
+  if(facet.held)button.title=tr("notImported");
+  button.setAttribute("aria-pressed",String(!facet.held&&state.facet===facet.id));
+  ways.append(button);
+ }
  $("atlas-sheet-subtitle").textContent=tr("selected");
  $("atlas-list-toggle").textContent=tr(state.viewMode==="cards"?"listMode":"cards");
  $("atlas-list-toggle").setAttribute("aria-pressed",String(state.viewMode==="list"));
@@ -352,7 +359,7 @@ function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
 }
 function renderLens(lens){
  if(lens!=="sacred"&&lens!=="tlm")return;
- state.lens=lens;state.selectedId=null;
+ state.lens=lens;state.selectedId=null;state.facet="all";
  state.viewMode="cards";setSheetState("peek");
  state.all=state.data?state.data[lens]:[];
  $("atlas-card").hidden=true;
@@ -437,6 +444,17 @@ async function startMap(){
  });
 }
 function attachControls(){
+ $("atlas-ways").addEventListener("click",event=>{
+  const button=event.target.closest("button[data-atlas-facet]");
+  if(!button || button.disabled)return;
+  const facet=facetOptions(state.lens,state.language).find(f=>f.id===button.dataset.atlasFacet);
+  if(!facet || facet.held || facet.id===state.facet)return;
+  state.facet=facet.id;
+  state.selectedId=null;
+  $("atlas-card").hidden=true;
+  $("atlas-card").replaceChildren();
+  renderHeader();renderSummary();syncMap();
+ });
  const handle=$("atlas-sheet-handle");
  const sheet=$("atlas-sheet"),header=$("atlas-sheet-header");
  // Capture gestures on the stationary viewport. Capturing on the moving
