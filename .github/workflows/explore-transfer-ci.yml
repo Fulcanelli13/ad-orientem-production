@@ -41,6 +41,7 @@ jobs:
           node --experimental-default-type=module tests/explore-selected-core.mjs
           node --experimental-default-type=module tests/production-explore.mjs
           node tests/explore-camera.mjs
+          node --experimental-default-type=module tests/explore-facets.mjs
       - name: Ensure existing Home V9 shell remains unaffected
         run: node tests/production-shell.mjs
 
