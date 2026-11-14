@@ -75,8 +75,8 @@ try{
       claudeOrder:[...document.querySelectorAll("#atlas-lens-tlm,#atlas-lens-sacred")].map(el=>el.id),
       searchRect:(()=>{const r=rect("atlas-search");return {top:r.top,bottom:r.bottom}})(),
       tabRect:(()=>{const r=rect("atlas-lens-tlm");return {top:r.top,bottom:r.bottom}})(),
-      sheetDockGap:Math.abs(innerHeight-rect("atlas-sheet").bottom -
-        document.querySelector(".tabbar").getBoundingClientRect().height),
+      sheetDockGap:Math.abs(document.querySelector(".tabbar").getBoundingClientRect().top -
+        rect("atlas-sheet").bottom),
       sourceCardHeight:document.querySelector("#atlas-results .atlas-result-button")?.getBoundingClientRect().height,
       sheetCorners:(()=>{const style=css("atlas-sheet");return {
         topLeft:style.borderTopLeftRadius,topRight:style.borderTopRightRadius,
