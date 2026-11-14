@@ -6,6 +6,7 @@ import {
 } from "./explore/model.js";
 import {renderSacredPlaceFallback} from "./explore/core/sacred-place-visual-fallback.js";
 import {CLAUDE_MAP_STYLE} from "./explore/claude-map-style.js";
+import {boundsForLens} from "./explore/lens-camera.js";
 
 const $ = id => document.getElementById(id);
 const MAPLIBRE_MODULE = "https://unpkg.com/maplibre-gl@6.13.0/dist/maplibre-gl.mjs";
@@ -384,6 +385,23 @@ function loadMapLibre(){
  if (!mapLibreModulePromise) mapLibreModulePromise=import(MAPLIBRE_MODULE);
  return mapLibreModulePromise;
 }
+function frameInitialLens() {
+ if(!state.map || !state.sourceLoaded) return;
+ const bounds=boundsForLens(state.all);
+ if(!bounds)return; // Globally dispersed lenses retain the WORLD view.
+ const visible=$("atlas-view");
+ const sheet=$("atlas-sheet");
+ const height=visible?.clientHeight||844;
+ const sheetHeight=Number.parseFloat(sheet?.style.getPropertyValue("--h"))||376;
+ state.map.fitBounds(bounds,{
+  padding:{
+   top:Math.min(180,Math.max(100,Math.round(height*.17))),
+   bottom:Math.min(Math.max(160,sheetHeight+34),Math.floor(height*.65)),
+   left:30,right:30
+  },
+  maxZoom:7,duration:0
+ });
+}
 async function startMap(){
  ensureMapLibreCss();
  const lib=await loadMapLibre();
@@ -411,7 +429,7 @@ async function startMap(){
   });
   state.map.on("mouseenter","ao-selected-pins",()=>state.map.getCanvas().style.cursor="pointer");
   state.map.on("mouseleave","ao-selected-pins",()=>state.map.getCanvas().style.cursor="");
-  state.sourceLoaded=true;setStatus("");
+  state.sourceLoaded=true;setStatus("");frameInitialLens();
  });
  state.map.on("error",ev=>{
   if(!state.sourceLoaded)setStatus(tr("unavailable"),true);
