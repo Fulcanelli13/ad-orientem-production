@@ -5,10 +5,11 @@ import {
   sitePrecision, nearbySelected, sourceSynopsis, safeLink
 } from "./explore/model.js";
 import {renderSacredPlaceFallback} from "./explore/core/sacred-place-visual-fallback.js";
+import {CLAUDE_MAP_STYLE} from "./explore/claude-map-style.js";
 
 const $ = id => document.getElementById(id);
 const MAPLIBRE_MODULE = "https://unpkg.com/maplibre-gl@6.13.0/dist/maplibre-gl.mjs";
-const BASEMAP = "https://tiles.openfreemap.org/styles/dark";
+const BASEMAP = CLAUDE_MAP_STYLE;
 const WORLD = {center:[14,15],zoom:1.25};
 const dictionary={
  en:{
