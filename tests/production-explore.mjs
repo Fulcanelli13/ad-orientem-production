@@ -46,6 +46,35 @@ for(const venue of records.tlm){
   assert.ok(venue.geo.match_score>=.8,"Insufficient map-source matching");
   assert.equal(venue.geo.matched_country_code,venue.country_code);
 }
+// Independently reconciled against the owner-controlled 11 Nov 2026 Excel
+// "All 2582 CL2 Sites" sheet (column A anchor, B source, I mapped,
+// J/K latitude/longitude). This is a PINNED regression snapshot, not a
+// replacement for the Excel approval process or a claim of verified entrance.
+const excelPins=[
+  [1914,"RG-BA2F9352176D","ao-icksp-st-patrick-parish-and-oratory-50-charles-street-waterbury-ct-06708-2",41.5425024,-73.0452011],
+  [1074,"RG-6DBC750C2D78","ao-icksp-st-anthony-of-padua-oratory-1360-pleasant-valley-way-west-orange-nj-07052-13",40.7786437,-74.2787642],
+  [1151,"RG-74DADFAB20FB","ao-icksp-st-francis-de-sales-oratory-802-s-huntington-sulphur-la-70663-8",30.2318623,-93.3768603],
+  [1660,"RG-AA3084B4438A","ao-icksp-old-st-patrick-oratory-old-st-patrick-oratory-806-cherry-street-kansas-city-10",39.1041475,-94.5763676],
+  [1982,"RG-C249D8633DD4","ao-icksp-st-francis-de-sales-oratory-2653-ohio-avenue-st-louis-missouri-63118-11",38.6041963,-90.2262096],
+  [2217,"RG-D88E7C5895A1","ao-icksp-st-mary-of-the-assumption-parish-and-shrine-103-west-7th-street-oswego-ny-13126-14",43.456437,-76.5181515],
+  [623,"RG-3F7AED9AE120","ao-icksp-st-josaphat-oratory-34-32-210th-street-bayside-new-york-11361-15",40.7685038,-73.7774345],
+  [507,"RG-33FE09F8ECB4","ao-icksp-st-leo-oratory-221-hanford-st-columbus-oh-43206-16",39.9362364,-82.9890858],
+  [2403,"RG-ED91CF8BBA84","ao-icksp-st-stanislaus-oratory-524-w-historic-mitchell-street-milwaukee-wisconsin-53204-20",43.0125149,-87.9172578],
+  [1348,"RG-893DF94815D8","ao-icksp-st-mary-s-oratory-325-grand-avenue-wausau-wisconsin-54403-mailing-address-22",44.9537786,-89.6231069],
+];
+assert.equal(excelPins.length,10);
+const tlmById=new Map(records.tlm.map(item=>[item.id,item]));
+for(const [row,anchor,id,lat,lng] of excelPins){
+  const record=tlmById.get(id);
+  assert.ok(record,"Missing Excel-matched canonical physical site: "+id);
+  assert.equal(record.cl2_site_id,anchor,"Wrong CL2 identity at Excel row "+row);
+  assert.equal(record.cl2_excel_row,row,"Wrong Excel source row for "+id);
+  assert.equal(record.cl2_status,"MAPPED_IN_PRIOR_APP");
+  assert.ok(Math.abs(record.geo.lat-lat)<1e-7 &&
+            Math.abs(record.geo.lng-lng)<1e-7,
+    "Coordinate changed without Excel-first approval: "+id);
+}
+
 const invalid=structuredClone(data);
 invalid.tlm[0].geo.source_ref="";
 assert.throws(()=>validatedDataset(invalid),/Held or duplicate record/);
