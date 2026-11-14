@@ -332,6 +332,15 @@ function attachControls(){
   setSheetState(sheet.dataset.sheetState==="expanded"?"peek":"expanded");
   if(before!==state.viewMode){renderHeader();renderSummary();}
  });
+ // Nonvisual keyboard path ensures all three owner-source snap positions
+ // remain accessible when browser gesture arbitration cancels long drags.
+ handle.addEventListener("keydown",event=>{
+  if(!["ArrowDown","ArrowUp","Home","End"].includes(event.key))return;
+  event.preventDefault();
+  const before=state.viewMode;
+  setSheetState(event.key==="ArrowDown"||event.key==="Home"?"min":"expanded");
+  if(before!==state.viewMode){renderHeader();renderSummary();}
+ });
  // Tabs also support arrow-key navigation while preserving the single map.
  for(const lens of ["sacred","tlm"]){
   $("atlas-lens-"+lens).addEventListener("keydown",event=>{
