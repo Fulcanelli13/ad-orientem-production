@@ -211,7 +211,7 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
  .atlas-sheet{left:24px;right:auto;bottom:17px;width:min(600px,calc(100% - 48px));height:245px;max-height:calc(100% - 225px)}
  .atlas-sheet[data-sheet-state="expanded"]{height:min(56%,520px)}
  .atlas-result{flex-basis:265px}
- .atlas-map-shell .maplibregl-ctrl-top-right{top:28px;right:20px}
+ .atlas-map-shell .maplibregl-ctrl-top-right{top:240px;right:20px}
  .atlas-map-shell .maplibregl-ctrl-bottom-right{bottom:20px!important}
  .atlas-map-shell .maplibregl-ctrl-bottom-left{bottom:20px!important}
  .atlas-content:has(.atlas-sheet[data-sheet-state="expanded"]) .maplibregl-ctrl-bottom-right,
@@ -279,3 +279,7 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
  .atlas-result{flex-basis:calc(100vw - 48px)}
  .atlas-result-name{font-size:20px}
 }
+
+/* Folio heading is an editorial title, not a new source claim. */
+.atlas-card-meta{display:flex;flex-direction:column;gap:4px}
+.atlas-folio-kicker{font:600 9px/1.2 var(--cap);letter-spacing:2px;color:var(--gold2)}
