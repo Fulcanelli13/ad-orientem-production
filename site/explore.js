@@ -6,7 +6,7 @@ import {
 } from "./explore/model.js";
 import {renderSacredPlaceFallback} from "./explore/core/sacred-place-visual-fallback.js";
 import {CLAUDE_MAP_STYLE} from "./explore/claude-map-style.js";
-import {boundsForLens} from "./explore/lens-camera.mjs";
+import {boundsForLens} from "./explore/lens-camera.js";
 
 const $ = id => document.getElementById(id);
 const MAPLIBRE_MODULE = "https://unpkg.com/maplibre-gl@6.13.0/dist/maplibre-gl.mjs";
