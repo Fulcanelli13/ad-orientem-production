@@ -1,0 +1,7 @@
+{
+  "schema": "ao.explore.approved-sites.v1",
+  "generated_at": null,
+  "source_registry": null,
+  "sites": [],
+  "note": "Empty intentionally; this file must be generated solely from explicitly Excel-approved canonical site records. Never seed from prototype sample locations."
+}
