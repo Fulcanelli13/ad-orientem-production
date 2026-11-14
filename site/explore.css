@@ -710,3 +710,10 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
 @media(prefers-reduced-motion:reduce){
  #atlas-view .atlas-folio-scroll{scroll-behavior:auto}
 }
+
+/* Drag only on Claude's grabber or heading; never disable the map canvas. */
+#atlas-view .atlas-sheet-grip,
+#atlas-view .atlas-grip-line,
+#atlas-view .atlas-sheet-header{
+ touch-action:none!important;user-select:none!important;-webkit-user-select:none!important
+}
