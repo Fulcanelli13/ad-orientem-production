@@ -26,7 +26,7 @@ const dictionary={
   pending:"Loading the map and selected source records",
   unavailable:"Interactive tiles unavailable. The source-backed place list remains usable.",
   showAll:"Clear search",featured:"Reviewed source",credit:"Geographic coordinates and source",
-  lang:"Français",place:"Place",pattern:"No live Mass time claim",expand:"Expand places",collapse:"Collapse places",openFolio:"Discover place"
+  lang:"Français",place:"Place",pattern:"No live Mass time claim",expand:"Expand places",collapse:"Collapse places",openFolio:"Discover place",churches:"churches",places:"sacred places",selected:"source-backed pilot",cards:"Cards",listMode:"List",churchWay:"Churches",massWay:"Mass times",placeWay:"Places",pilgrimWay:"Pilgrimages",feastWay:"Feasts",notImported:"Not imported"
  },
  fr:{
   heading:"Géographie sacrée",subtitle:"La carte pour découvrir · la fiche pour comprendre",
@@ -42,12 +42,12 @@ const dictionary={
   pending:"Chargement de la carte et des sources retenues",
   unavailable:"Carte interactive indisponible. La liste des lieux sourcés reste utilisable.",
   showAll:"Effacer la recherche",featured:"Source documentée",credit:"Coordonnées et source",
-  lang:"English",place:"Lieu",pattern:"Aucun horaire de messe confirmé",expand:"Déployer les lieux",collapse:"Réduire les lieux",openFolio:"Découvrir le lieu"
+  lang:"English",place:"Lieu",pattern:"Aucun horaire de messe confirmé",expand:"Déployer les lieux",collapse:"Réduire les lieux",openFolio:"Découvrir le lieu",churches:"églises",places:"lieux sacrés",selected:"sélection documentée",cards:"Cartes",listMode:"Liste",churchWay:"Églises",massWay:"Horaires",placeWay:"Lieux",pilgrimWay:"Pèlerinages",feastWay:"Fêtes",notImported:"Non importé"
  }
 };
 const state={
  initialized:false,lens:"tlm",language:"en",data:null,selectedId:null,
- map:null,sourceLoaded:false,loading:null,all:[],query:"",lastError:null,
+ map:null,sourceLoaded:false,loading:null,all:[],query:"",viewMode:"cards",lastError:null,
 };
 const tr=key=>dictionary[state.language][key]||key;
 const make=(tag,className,txt)=>{
@@ -84,7 +84,16 @@ function renderHeader() {
  $("atlas-language").textContent=tr("lang");
  $("atlas-selection-note").textContent=tr("notice");
  $("atlas-map-hint").textContent=state.lens==="tlm"?tr("tnotice"):tr("snote");
- $("atlas-results-title").textContent=tr("list");
+ const ways=$("atlas-ways");ways.replaceChildren();
+ const keys=state.lens==="tlm"?["churchWay","massWay"]:["placeWay","pilgrimWay","feastWay"];
+ keys.forEach((key,index)=>{
+  const el=make("span","atlas-way"+(index===0?" active":" withheld"),tr(key));
+  if(index!==0){el.setAttribute("aria-disabled","true");el.title=tr("notImported");}
+  ways.append(el);
+ });
+ $("atlas-sheet-subtitle").textContent=tr("selected");
+ $("atlas-list-toggle").textContent=tr(state.viewMode==="cards"?"listMode":"cards");
+ $("atlas-list-toggle").setAttribute("aria-pressed",String(state.viewMode==="list"));
  $("atlas-lens-sacred").textContent=tr("sacred");
  $("atlas-lens-tlm").textContent=tr("tlm");
  const expanded=$("atlas-sheet").dataset.sheetState==="expanded";
@@ -104,6 +113,8 @@ function recordBadge(record){
 function renderSummary(){
  const records=visibleEntries();
  $("atlas-count").textContent=records.length+" / "+state.all.length;
+ $("atlas-results-title").textContent=records.length+" "+tr(state.lens==="tlm"?"churches":"places");
+ $("atlas-results").classList.toggle("is-list",state.viewMode==="list");
  const root=$("atlas-results");
  root.replaceChildren();
  if(!records.length){
@@ -192,7 +203,7 @@ function selectRecord(id,{fly=true}={}){
 function renderLens(lens){
  if(lens!=="sacred"&&lens!=="tlm")return;
  state.lens=lens;state.selectedId=null;
- setSheetState("peek");
+ state.viewMode="cards";setSheetState("peek");
  state.all=state.data?state.data[lens]:[];
  $("atlas-card").hidden=true;
  $("atlas-card").replaceChildren();
@@ -310,6 +321,11 @@ function attachControls(){
   },()=>{
     setStatus(state.language==="fr"?"Position non disponible.":"Location was not shared.",true);
   },{enableHighAccuracy:false,timeout:8000,maximumAge:60000});
+ });
+ $("atlas-list-toggle").addEventListener("click",()=>{
+  state.viewMode=state.viewMode==="cards"?"list":"cards";
+  setSheetState(state.viewMode==="list"?"expanded":"peek");
+  renderHeader();renderSummary();
  });
  $("atlas-lens-sacred").addEventListener("click",()=>renderLens("sacred"));
  $("atlas-lens-tlm").addEventListener("click",()=>renderLens("tlm"));
