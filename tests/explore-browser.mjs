@@ -150,8 +150,17 @@ try{
     await page.mouse.up();
     assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek",
       "Dragging the sheet handle downward must collapse the sheet");
+    // Give the source height transition a stable layout before the next
+    // pointer gesture. Otherwise the old handle coordinate hits the map.
+    await page.waitForFunction(()=>Math.abs(document.getElementById("atlas-sheet")
+      .getBoundingClientRect().height-376)<2,null,{timeout:3500});
+    await handle.hover();
     const down=await handle.boundingBox();
-    await page.mouse.move(down.x+down.width/2,down.y+down.height/2);
+    const target=await page.evaluate(([x,y])=>{
+      const el=document.elementFromPoint(x,y);
+      return el?.id||el?.parentElement?.id||el?.tagName||"none";
+    },[down.x+down.width/2,down.y+down.height/2]);
+    assert.equal(target,"atlas-sheet-handle","Final drag must begin on actual sheet handle");
     await page.mouse.down();
     await page.mouse.move(down.x+down.width/2,down.y+down.height/2+240,{steps:6});
     const dragDuring=await page.locator("#atlas-sheet").evaluate(el=>({
