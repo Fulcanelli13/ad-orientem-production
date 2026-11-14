@@ -149,7 +149,10 @@
               </div>
               <p id="atlas-map-hint" class="atlas-map-hint">Map pins identify sites, not always precise entrances.</p>
             </div>
-            <section class="atlas-sheet" aria-labelledby="atlas-results-title">
+            <section class="atlas-sheet" id="atlas-sheet" data-sheet-state="peek" aria-labelledby="atlas-results-title">
+              <button id="atlas-sheet-handle" class="atlas-sheet-grip" type="button" aria-controls="atlas-results" aria-expanded="false" aria-label="Expand places sheet">
+                <span class="atlas-grip-line" aria-hidden="true"></span>
+              </button>
               <header class="atlas-sheet-header">
                 <h2 id="atlas-results-title">Browse places</h2>
                 <span id="atlas-count" class="atlas-count" aria-live="polite">—</span>
