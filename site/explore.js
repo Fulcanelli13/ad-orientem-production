@@ -421,13 +421,16 @@ async function startMap(){
 function attachControls(){
  const handle=$("atlas-sheet-handle");
  const sheet=$("atlas-sheet"),header=$("atlas-sheet-header");
+ // Capture gestures on the stationary viewport. Capturing on the moving
+ // sheet/handle can cause Chromium to cancel a long drag mid-gesture.
+ const capture=$("atlas-view");
  let drag=null,lastDragAt=0;
  const start=event=>{
   if(event.button!==0||event.target.closest("button:not(#atlas-sheet-handle),a"))return;
   const current=Number.parseFloat(sheet.style.getPropertyValue("--h"))||snapHeight("peek");
   drag={y:event.clientY,h:current,moved:false};
   sheet.classList.add("drag");
-  event.currentTarget.setPointerCapture?.(event.pointerId);
+  capture.setPointerCapture?.(event.pointerId);
  };
  const move=event=>{
   if(!drag)return;
@@ -454,11 +457,14 @@ function attachControls(){
   setSheetState(next);
   if(before!==state.viewMode){renderHeader();renderSummary();}
  };
- [handle,header].forEach(el=>{
-  el.addEventListener("pointerdown",start);
-  el.addEventListener("pointermove",move);
-  el.addEventListener("pointerup",end);
-  el.addEventListener("pointercancel",end);
+ [handle,header].forEach(el=>el.addEventListener("pointerdown",start));
+ capture.addEventListener("pointermove",move);
+ capture.addEventListener("pointerup",end);
+ capture.addEventListener("pointercancel",()=>{
+  // A canceled gesture must not activate a different sheet state.
+  if(!drag)return;
+  drag=null;sheet.classList.remove("drag");
+  setSheetState(sheet.dataset.sheetState);
  });
  handle.addEventListener("click",()=>{
   if(Date.now()-lastDragAt<300)return;
