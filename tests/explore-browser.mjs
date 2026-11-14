@@ -50,25 +50,54 @@ try{
   assert.equal(await page.locator(".atlas-switch > button").count(),2,"Exactly two top-level Atlases");
   assert.equal(await page.locator(".tabbar > button").count(),4,"Exactly four original bottom tabs");
   assert.equal(await page.locator("#atlas-results > li").count(),18);
-  const dom=await page.evaluate(()=>({
-    horizontalOverflow:document.documentElement.scrollWidth-innerWidth,
-    mapCount:document.querySelectorAll("#atlas-map canvas").length,
-    worldHeight:document.getElementById("atlas-world").getBoundingClientRect().height,
-    mapHeight:document.getElementById("atlas-map").getBoundingClientRect().height,
-    attribution:Boolean(document.querySelector("#atlas-map .maplibregl-ctrl-attrib"))
-  }));
+  const dom=await page.evaluate(()=>{
+    const rect=id=>document.getElementById(id).getBoundingClientRect();
+    const css=id=>getComputedStyle(document.getElementById(id));
+    const world=rect("atlas-world"),sheet=rect("atlas-sheet");
+    const result=rect("atlas-results"),map=rect("atlas-map"),toolbar=rect("atlas-search");
+    const at=document.elementFromPoint((world.left+world.right)/2,(world.top+world.bottom)/2);
+    return {
+      horizontalOverflow:document.documentElement.scrollWidth-innerWidth,
+      mapCount:document.querySelectorAll("#atlas-map canvas").length,
+      worldHeight:world.height,mapHeight:map.height,mapWidth:map.width,
+      frameHeight:rect("atlas-view").height,toolbarBottom:toolbar.bottom,
+      sheetTop:sheet.top,sheetHeight:sheet.height,
+      sheetState:document.getElementById("atlas-sheet").dataset.sheetState,
+      railOverflow:document.getElementById("atlas-results").scrollWidth-document.getElementById("atlas-results").clientWidth,
+      railSnap:css("atlas-results").scrollSnapType,
+      worldClickable:at===document.getElementById("atlas-world") ||
+        document.getElementById("atlas-world").contains(at),
+      attribution:Boolean(document.querySelector("#atlas-map .maplibregl-ctrl-attrib"))
+    };
+  });
   assert.ok(dom.horizontalOverflow<=1,width+"px overflow: "+JSON.stringify(dom));
   assert.equal(dom.mapCount,1);
-  assert.ok(dom.mapHeight>=300&&dom.worldHeight>=44,JSON.stringify(dom));
+  assert.ok(dom.mapHeight>=height*.70&&dom.mapWidth>=Math.min(width,430)*.90&&dom.worldHeight>=44,
+    width+"px map must fill the atlas frame: "+JSON.stringify(dom));
+  assert.ok(dom.sheetTop>dom.toolbarBottom+16&&dom.sheetHeight>=175,
+    width+"px sheet covers floating map controls: "+JSON.stringify(dom));
+  assert.equal(dom.sheetState,"peek");
+  assert.ok(dom.railOverflow>20&&dom.railSnap.includes("x"),
+    width+"px place cards cannot swipe horizontally: "+JSON.stringify(dom));
+  assert.ok(dom.worldClickable,width+"px World View is obstructed: "+JSON.stringify(dom));
   assert.ok(dom.attribution,"Source map attribution control missing");
+  const handle=page.locator("#atlas-sheet-handle");
+  await handle.click();
+  assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"expanded");
+  assert.equal(await handle.getAttribute("aria-expanded"),"true");
+  await handle.click();
+  assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek");
+  await page.screenshot({path:join("artifacts/production-explore",width+"-en-sacred-map.png"),
+   animations:"disabled",fullPage:false});
   await page.locator("#atlas-results .atlas-result-button").first().click();
   await page.locator("#atlas-card").waitFor({state:"visible"});
   assert.equal(await page.locator("#atlas-card [data-visual-kind='category-symbol']").count(),1,
     "No unapproved images should be substituted for missing verified media");
   assert.ok(await page.locator("#atlas-card a[href^='https://']").count()>=1,
     "Missing coordinate-source link");
-  await page.screenshot({path:join("artifacts/production-explore",width+"-en-sacred.png"),
-   animations:"disabled",fullPage:true});
+  await page.screenshot({path:join("artifacts/production-explore",width+"-en-sacred-folio.png"),
+   animations:"disabled",fullPage:false});
+  await page.locator("#atlas-card .atlas-card-close").click();
   await page.locator("#atlas-lens-tlm").click();
   await page.waitForFunction(()=>document.querySelector("#atlas-count")?.textContent==="10 / 10");
   assert.equal(await page.locator("#atlas-results > li").count(),10);
@@ -77,10 +106,15 @@ try{
   assert.ok(await page.locator("#atlas-card a[href*='institute-christ-king.org']").count()>=1,
     "TLM venue official institute evidence missing");
   assert.match(await page.locator("#atlas-card").innerText(),/Mass times are not imported/);
+  await page.locator("#atlas-card .atlas-card-close").click();
   await page.locator("#atlas-language").click();
   assert.match(await page.locator("#atlas-map-hint").innerText(),/horaires/);
-  await page.screenshot({path:join("artifacts/production-explore",width+"-fr-tlm.png"),
-   animations:"disabled",fullPage:true});
+  await page.screenshot({path:join("artifacts/production-explore",width+"-fr-tlm-map.png"),
+   animations:"disabled",fullPage:false});
+  await page.locator("#atlas-results .atlas-result-button").first().click();
+  await page.screenshot({path:join("artifacts/production-explore",width+"-fr-tlm-folio.png"),
+   animations:"disabled",fullPage:false});
+  await page.locator("#atlas-card .atlas-card-close").click();
   await page.locator("#atlas-world").click();
   await page.locator('#atlas-view [data-route="home"]').click();
   await page.locator("#home-view").waitFor({state:"visible"});
