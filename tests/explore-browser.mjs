@@ -154,9 +154,17 @@ try{
     await page.mouse.move(down.x+down.width/2,down.y+down.height/2);
     await page.mouse.down();
     await page.mouse.move(down.x+down.width/2,down.y+down.height/2+240,{steps:6});
+    const dragDuring=await page.locator("#atlas-sheet").evaluate(el=>({
+      state:el.dataset.sheetState,height:el.style.getPropertyValue("--h"),rect:el.getBoundingClientRect().height,
+      dragging:el.classList.contains("drag")
+    }));
     await page.mouse.up();
-    assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"min",
-      "Claude source supports a third 150px minimum sheet position");
+    const dragAfter=await page.locator("#atlas-sheet").evaluate(el=>({
+      state:el.dataset.sheetState,height:el.style.getPropertyValue("--h"),rect:el.getBoundingClientRect().height,
+      dragging:el.classList.contains("drag")
+    }));
+    assert.equal(dragAfter.state,"min",
+      "Claude source supports a third 150px minimum sheet position: "+JSON.stringify({dragDuring,dragAfter}));
     const collapsedHeight=await page.locator("#atlas-sheet").evaluate(el=>el.getBoundingClientRect().height);
     assert.ok(Math.abs(collapsedHeight-150)<3,"Minimum sheet snap must remain 150px");
     await page.waitForTimeout(325);
