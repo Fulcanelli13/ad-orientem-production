@@ -484,16 +484,21 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
    transcribed from AO_Explore_AppDesign.html; unavailable datasets remain
    labelled as held, not represented by inert fake buttons. */
 #atlas-view .atlas-ways{
- display:flex;flex:0 0 auto;align-items:center;gap:20px;
- height:34px;margin:0 0 12px;padding:0 18px;
- border-bottom:1px solid var(--ao-line);overflow:hidden
+ display:flex;flex:0 0 auto;align-items:center;gap:18px;
+ height:42px;margin:0 0 10px;padding:0 18px;
+ border-bottom:1px solid var(--ao-line);
+ overflow-x:auto;overflow-y:hidden;scrollbar-width:none;
+ overscroll-behavior-x:contain;touch-action:pan-x;
 }
+#atlas-view .atlas-ways::-webkit-scrollbar{display:none}
 #atlas-view .atlas-way{
  position:relative;display:flex;align-items:center;
- flex:0 0 auto;height:34px;padding:0;
- font:600 9.5px var(--ao-cap);letter-spacing:1.9px;
+ flex:0 0 auto;height:42px;min-height:42px;padding:0 2px;
+ font:600 9.5px var(--ao-cap);letter-spacing:1.6px;
  text-transform:uppercase;color:var(--ao-mu2);white-space:nowrap
 }
+#atlas-view button.atlas-way:focus-visible{outline:2px solid var(--ao-gold2);outline-offset:-3px}
+#atlas-view button.atlas-way:disabled{cursor:default}
 #atlas-view .atlas-way.active{color:var(--ao-ink)}
 #atlas-view .atlas-way.active:after{
  content:"";position:absolute;bottom:-1px;left:0;right:0;height:1.5px;background:var(--ao-gold)
