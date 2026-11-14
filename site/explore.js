@@ -13,7 +13,7 @@ const WORLD = {center:[14,15],zoom:1.25};
 const dictionary={
  en:{
   heading:"Sacred geography",subtitle:"The map for discovering · the card for deciding",
-  sacred:"Sacred Atlas",tlm:"TLM Atlas",search:"Search places",reset:"World view",
+  sacred:"Sacred Atlas",tlm:"TLM Atlas",search:"Search a church, shrine, town…",reset:"World view",
   filter:"Selected sites",list:"Browse places",source:"Coordinate source",
   official:"Official institute page",method:"Location evidence",
   discover:"Discover",hide:"Close",nearby:"Nearby selected sites · straight-line distance",
@@ -29,7 +29,7 @@ const dictionary={
  },
  fr:{
   heading:"Géographie sacrée",subtitle:"La carte pour découvrir · la fiche pour comprendre",
-  sacred:"Atlas sacré",tlm:"Atlas TLM",search:"Rechercher un lieu",reset:"Vue du monde",
+  sacred:"Atlas sacré",tlm:"Atlas TLM",search:"Rechercher une église, un sanctuaire, une ville…",reset:"Vue du monde",
   filter:"Sites sélectionnés",list:"Parcourir les lieux",source:"Source des coordonnées",
   official:"Site officiel de l'institut",method:"Justificatif du lieu",
   discover:"Découvrir",hide:"Fermer",nearby:"Autres lieux sélectionnés · à vol d'oiseau",
@@ -45,7 +45,7 @@ const dictionary={
  }
 };
 const state={
- initialized:false,lens:"sacred",language:"en",data:null,selectedId:null,
+ initialized:false,lens:"tlm",language:"en",data:null,selectedId:null,
  map:null,sourceLoaded:false,loading:null,all:[],query:"",lastError:null,
 };
 const tr=key=>dictionary[state.language][key]||key;
@@ -295,6 +295,21 @@ function attachControls(){
   state.query=ev.currentTarget.value;state.selectedId=null;
   $("atlas-card").hidden=true;renderSummary();syncMap();
  });
+ $("atlas-near").addEventListener("click",()=>{
+  // The owner prototype exposes Near me as a user-triggered action.
+  // Never request precise position on mount, store it, or infer a church.
+  if(!navigator.geolocation){setStatus(
+    state.language==="fr"?"Localisation indisponible.":"Location unavailable.",true);return;}
+  navigator.geolocation.getCurrentPosition(position=>{
+    setStatus("");
+    if(state.map)state.map.flyTo({
+      center:[position.coords.longitude,position.coords.latitude],
+      zoom:Math.max(9,state.map.getZoom()),duration:650,essential:false
+    });
+  },()=>{
+    setStatus(state.language==="fr"?"Position non disponible.":"Location was not shared.",true);
+  },{enableHighAccuracy:false,timeout:8000,maximumAge:60000});
+ });
  $("atlas-lens-sacred").addEventListener("click",()=>renderLens("sacred"));
  $("atlas-lens-tlm").addEventListener("click",()=>renderLens("tlm"));
  $("atlas-world").addEventListener("click",()=>{
@@ -321,7 +336,7 @@ export async function mountExplore(){
  setStatus(tr("pending"));
  try{
   state.data=await loadDataset();
-  state.all=state.data.sacred;
+  state.all=state.data.tlm;
   renderSummary();
  }catch(e){
   setStatus("Atlas records could not be validated: "+String(e.message||e),true);
