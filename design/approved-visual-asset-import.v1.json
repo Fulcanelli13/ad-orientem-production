@@ -1,0 +1,98 @@
+{
+  "schema": "AO_PRODUCTION_APPROVED_VISUAL_ASSET_IMPORT_V1",
+  "date": "2026-11-13",
+  "source": {
+    "repository": "Fulcanelli13/ad-orientem",
+    "commit": "2b4b0fee3128fae83c942aff6d5991780bfaf0e5",
+    "pr": 2925,
+    "summary": "Owner-approved typography and active navigation assets from verified research commit"
+  },
+  "purpose": "Exact Claude design typography and owner's navigation symbols only; no liturgical or app modules migrated",
+  "transfer_policy": "Allowlist only; sha1 Git blob hashes and sizes must match before any file is written; retain source paths",
+  "assets": [
+    {
+      "source": "assets/fonts/claude-v9/OFL-cinzel.txt",
+      "destination": "site/assets/fonts/OFL-cinzel.txt",
+      "git_blob_sha": "afdfd1412be934fe7cc40a5a2c5e06e354c44dcf",
+      "size_bytes": 4383
+    },
+    {
+      "source": "assets/fonts/claude-v9/OFL-cormorantgaramond.txt",
+      "destination": "site/assets/fonts/OFL-cormorantgaramond.txt",
+      "git_blob_sha": "507d70f4565352dbfcf2dfc9b42eb092b57c0be8",
+      "size_bytes": 4387
+    },
+    {
+      "source": "assets/fonts/claude-v9/OFL-ebgaramond.txt",
+      "destination": "site/assets/fonts/OFL-ebgaramond.txt",
+      "git_blob_sha": "c1ec5e1818415eab6f8fca95a230af477d64eb61",
+      "size_bytes": 4398
+    },
+    {
+      "source": "assets/fonts/claude-v9/cinzel-variable.woff",
+      "destination": "site/assets/fonts/cinzel-variable.woff",
+      "git_blob_sha": "4482f56d31fe3cb04175d6537b7157a8c8a116b2",
+      "size_bytes": 37216
+    },
+    {
+      "source": "assets/fonts/claude-v9/cormorant-italic-variable.woff",
+      "destination": "site/assets/fonts/cormorant-italic-variable.woff",
+      "git_blob_sha": "d8e88c2cdded96feda16b865e4208fe003af9cb0",
+      "size_bytes": 65732
+    },
+    {
+      "source": "assets/fonts/claude-v9/cormorant-variable.woff",
+      "destination": "site/assets/fonts/cormorant-variable.woff",
+      "git_blob_sha": "5bc99479edaba27686971ba1dd8a599229d5ca93",
+      "size_bytes": 83768
+    },
+    {
+      "source": "assets/fonts/claude-v9/eb-garamond-italic-variable.woff",
+      "destination": "site/assets/fonts/eb-garamond-italic-variable.woff",
+      "git_blob_sha": "2cbe65879d50e14cd0181ffcaae80d1ca747334e",
+      "size_bytes": 125460
+    },
+    {
+      "source": "assets/fonts/claude-v9/eb-garamond-variable.woff",
+      "destination": "site/assets/fonts/eb-garamond-variable.woff",
+      "git_blob_sha": "a47375c23b6dc3e0b9be9217319bf40a7e9d5dde",
+      "size_bytes": 131176
+    },
+    {
+      "source": "assets/active/navigation/ao-brand-emblem.png",
+      "destination": "site/assets/brand/ao-brand-emblem.png",
+      "git_blob_sha": "76cd0db8058f0b7c8637e53f12885c32a7d5e5c5",
+      "size_bytes": 111327
+    },
+    {
+      "source": "assets/active/navigation/ao-nav-home.png",
+      "destination": "site/assets/icons/home.png",
+      "git_blob_sha": "ae0168d64df8ac57423a2c36ff5de03d2d7f354c",
+      "size_bytes": 275696
+    },
+    {
+      "source": "assets/active/navigation/ao-nav-pray.png",
+      "destination": "site/assets/icons/prayer.png",
+      "git_blob_sha": "60f7cfac570cd2899a03dd0bf0377d0de74fffba",
+      "size_bytes": 179557
+    },
+    {
+      "source": "assets/active/navigation/ao-nav-learn.png",
+      "destination": "site/assets/icons/book.png",
+      "git_blob_sha": "d04369f84a57c4520f55cb0891c86dcfe7b570e9",
+      "size_bytes": 97422
+    },
+    {
+      "source": "assets/active/navigation/ao-nav-calendar.png",
+      "destination": "site/assets/icons/calendar.png",
+      "git_blob_sha": "35d433cb0d2dd5168e73444081c8263370eec575",
+      "size_bytes": 119742
+    },
+    {
+      "source": "assets/active/navigation/ao-nav-settings.png",
+      "destination": "site/assets/icons/settings.png",
+      "git_blob_sha": "ef65950bf6585cf7f287bf8fb8ebd86356d2331d",
+      "size_bytes": 123856
+    }
+  ]
+}

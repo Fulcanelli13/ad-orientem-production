@@ -1,0 +1,57 @@
+/* Source-exact font assets from owner-selected Claude integrated prototype.
+   SHA-locked import source: Fulcanelli13/ad-orientem @ 2b4b0fee3128fae83c942aff6d5991780bfaf0e5.
+   SIL OFL 1.1 licences are retained in ../fonts/OFL-*.txt.
+   Cormorant numerals are intentionally supplied by EB Garamond, as Claude's ao.css specifies. */
+@font-face {
+  font-family: 'Cinzel';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('../fonts/cinzel-variable.woff') format('woff');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('../fonts/eb-garamond-variable.woff') format('woff');
+}
+@font-face {
+  font-family: 'EB Garamond';
+  font-style: italic;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('../fonts/eb-garamond-italic-variable.woff') format('woff');
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('../fonts/cormorant-variable.woff') format('woff');
+  unicode-range: U+0000-002F, U+003A-10FFFF;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('../fonts/cormorant-italic-variable.woff') format('woff');
+  unicode-range: U+0000-002F, U+003A-10FFFF;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('../fonts/eb-garamond-variable.woff') format('woff');
+  unicode-range: U+0030-0039;
+}
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url('../fonts/eb-garamond-italic-variable.woff') format('woff');
+  unicode-range: U+0030-0039;
+}

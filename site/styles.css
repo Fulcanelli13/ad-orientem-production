@@ -163,7 +163,7 @@ the prototype's JS dataset, fonts or unverified illustrative painting bank. */
 
 /* Home V9 visual acceptance pass · painting-led prayer composition.
    Keep this single set of overrides until the source-only V9 rules are consolidated. */
-.home-pad .prayer-door-v9{margin-top:21px}
+.home-pad .prayer-door-v9{display:block;width:100%;margin-top:21px;padding:0;border:0;background:none;text-align:initial;align-items:initial;gap:0;border-radius:0}
 .home-pad .prayer-door-v9 .sech{margin-bottom:9px}
 .home-pad .prayer-door-v9 .hour-prayer-frame{position:relative}
 .home-pad .prayer-door-v9 .hour-prayer{display:block;position:relative;min-height:0;height:auto;overflow:hidden;border:1px solid rgba(214,180,124,.5);border-radius:18px;background:#11161c;color:var(--ink);padding:0;width:100%;text-align:left;transform:none}
@@ -191,3 +191,78 @@ the prototype's JS dataset, fonts or unverified illustrative painting bank. */
 .artwork-dialog a{color:var(--gold2)}
 @media(max-width:340px){.home-pad .prayer-door-v9 .hour-image{height:165px;min-height:165px}.home-pad .prayer-door-v9 .hour-copy{padding:11px 12px}.home-pad .prayer-door-v9 .hour-copy strong{font-size:24px}.home-pad .prayer-door-v9 .prayer-thumb{min-width:89px;height:101px}.home-pad .prayer-door-v9 .prayer-thumb-art{height:70px;flex-basis:70px}}
 @media(prefers-reduced-motion:reduce){.home-pad .prayer-door-v9 *{transition:none}}
+
+/* --- Source-exact assets from the integrated Claude prototype (13 Nov 2026).
+   Font WOFF files and nav icons are verified by Git blob SHA, not copied from
+   the old implementation shell. The Sacred Atlas icon is the owner's globe/pin. */
+.app-header{height:calc(78px + env(safe-area-inset-top));padding:calc(18px + env(safe-area-inset-top)) 14px 0;display:flex;justify-content:center;align-items:flex-start;pointer-events:none}
+.app-header .brand-lockup{display:flex;align-items:center;justify-content:center;gap:7px;min-height:28px;pointer-events:none}
+.app-header .brand-emblem{display:block;width:25px;height:25px;object-fit:contain;flex:0 0 auto}
+.app-header .wordmark{font:600 12px/1 var(--cap);letter-spacing:4.4px;color:var(--ink);text-shadow:0 1px 12px rgba(0,0,0,.65)}
+.app-header .header-actions{position:absolute;right:13px;top:calc(14px + env(safe-area-inset-top));display:flex;gap:8px;align-items:center;pointer-events:auto}
+.app-header .header-calendar,.app-header .about-button{position:relative;top:auto;right:auto;display:grid;place-items:center;width:34px;height:34px;background:transparent;border:0;border-radius:50%;color:var(--ink);pointer-events:auto}
+.app-header .header-calendar:hover,.app-header .about-button:hover{background:rgba(255,255,255,.075)}
+.icon-mask{display:inline-block;width:23px;height:23px;flex-shrink:0;background-color:currentColor;-webkit-mask-position:center;-webkit-mask-repeat:no-repeat;-webkit-mask-size:contain;mask-position:center;mask-repeat:no-repeat;mask-size:contain}
+.icon-home{-webkit-mask-image:url('./assets/icons/home.png');mask-image:url('./assets/icons/home.png')}
+.icon-prayer{-webkit-mask-image:url('./assets/icons/prayer.png');mask-image:url('./assets/icons/prayer.png')}
+.icon-book{-webkit-mask-image:url('./assets/icons/book.png');mask-image:url('./assets/icons/book.png')}
+.icon-calendar{-webkit-mask-image:url('./assets/icons/calendar.png');mask-image:url('./assets/icons/calendar.png')}
+.icon-settings{-webkit-mask-image:url('./assets/icons/settings.png');mask-image:url('./assets/icons/settings.png')}
+.icon-atlas{-webkit-mask-image:url('./assets/icons/sacred-atlas.svg');mask-image:url('./assets/icons/sacred-atlas.svg')}
+.app-header .icon-mask{width:21px;height:21px}
+.tabbar .tab .icon-mask{width:23px;height:23px;color:var(--mu2);margin-top:1px}
+.tabbar .tab.active .icon-mask{color:var(--gold2)}
+@media(max-width:340px){.app-header .brand-lockup{gap:4px}.app-header .brand-emblem{width:22px;height:22px}.app-header .wordmark{font-size:11px;letter-spacing:3px}.app-header .header-actions{right:7px;gap:1px}.app-header .header-calendar,.app-header .about-button{width:29px;height:29px}}
+
+
+/* Integrated Home source hierarchy (Nov 13 screenshots + R2 integrated donor).
+   Celebration → Mass entrance → week ribbon; missing data explicitly held.
+   This deliberately supersedes standalone V9's gallery-first hero. */
+.home-hero{height:clamp(365px,calc(100dvh - 330px),550px);min-height:365px;background:#17120e}
+.home-hero .integrated-celebration-art{position:absolute;inset:0;background:radial-gradient(ellipse 95% 63% at 52% 31%,rgba(116,77,43,.75),transparent 75%),linear-gradient(180deg,#15100d 1%,#2b2017 31%,#17120f 67%,#090c11 100%)}
+.home-hero .hero-panel[data-slide="0"] .hero-shade{background:linear-gradient(180deg,rgba(7,11,17,.34),transparent 22%,rgba(7,11,17,.025) 42%,rgba(7,11,17,.5) 74%,var(--bg) 100%)}
+.home-hero .integrated-day-caption{bottom:55px;left:13px;right:13px;padding:0;text-align:center}
+.home-hero .day-date-line{display:flex;align-items:center;justify-content:center;gap:8px;min-height:24px}
+.home-hero .day-date-line span{color:#a1bc8c;font:600 10px var(--cap);letter-spacing:2px}
+.home-hero .day-date-line em{font:italic 18px var(--corm);color:#f0e3d1}
+.home-hero .day-select{font:20px var(--corm);color:#f1e3d1;padding:0 3px}
+.home-hero .integrated-day-caption .when{font:600 8.5px var(--cap);letter-spacing:2px;color:#d5a69b;margin:11px 0 7px}
+.home-hero .integrated-day-caption h1{font:500 clamp(40px,11.2vw,51px)/1.03 var(--corm);letter-spacing:-.3px;margin:3px 0 10px;color:#f0e6d6}
+.home-hero .day-rubric{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 12px;color:#e8d5c8;font:600 8.8px var(--cap);letter-spacing:1.3px}
+.home-hero .day-rubric span:nth-child(2){color:var(--mu2)}
+.home-hero .hero-pager{bottom:9px}
+.home-pad.integrated-home-order{display:flex;flex-direction:column}
+.home-pad.integrated-home-order>.enter{order:0;min-height:61px;margin:0 0 9px;padding:12px 16px 12px 18px;border-radius:18px;border:1px solid rgba(255,255,255,.31);background:rgba(40,42,45,.83);color:#ede6d7;box-shadow:none}
+.home-pad.integrated-home-order>.enter b{font:600 19px/1.05 var(--corm);color:#efe9dd}
+.home-pad.integrated-home-order>.enter small{font:italic 14px/1.2 var(--corm);letter-spacing:0;color:rgba(239,231,216,.74);margin-top:4px}
+.home-pad.integrated-home-order>.enter .go{width:39px;height:39px;background:rgba(224,224,225,.15);color:#eeeae5}
+.home-pad.integrated-home-order>.calendar-ribbon{order:1;margin:9px 0 0;grid-template-columns:minmax(0,1fr) 46px;gap:7px}
+.home-pad.integrated-home-order>.calendar-disclosure{order:2;margin:7px 2px 0;color:var(--mu3);font:italic 11px/1.25 var(--serif)}
+.home-pad.integrated-home-order>.prayer-door{order:3}
+.home-pad.integrated-home-order>.editorial-hold{order:4}
+.home-pad.integrated-home-order>.foundation-note{order:5}
+.home-pad.integrated-home-order .civil-week{min-height:63px;padding:5px 3px;border-color:rgba(255,255,255,.12)}
+.home-pad.integrated-home-order .civil-day{padding:4px 0 4px;gap:4px}
+.home-pad.integrated-home-order .civil-day small{font:600 8px var(--cap);letter-spacing:1.2px;color:#a8b9d2}
+.home-pad.integrated-home-order .civil-day span{font:500 16px/1.1 var(--corm)}
+.home-pad.integrated-home-order .civil-day:after{width:18px;height:3px;margin-top:3px}
+.home-pad.integrated-home-order .calendar-door{min-width:45px}
+@media(max-width:340px){.home-hero{height:clamp(365px,calc(100dvh - 330px),550px);min-height:365px}.home-hero .integrated-day-caption h1{font-size:39px}.home-pad.integrated-home-order .civil-day small{font-size:7px;letter-spacing:.3px}.home-pad.integrated-home-order>.enter{min-height:57px}.home-pad.integrated-home-order>.calendar-ribbon{grid-template-columns:minmax(0,1fr) 38px;gap:5px}}
+
+
+/* Render source icons as actual images; Chrome's file-screenshot context may
+   suppress external CSS masks, while these alpha PNGs remain deterministic. */
+.app-header .brand-emblem{filter:brightness(0) invert(1);opacity:.82}
+.nav-image{display:block;object-fit:contain;flex-shrink:0;width:23px;height:23px;filter:brightness(0) invert(1);opacity:.72;transition:opacity .2s}
+.tabbar .tab .nav-image{width:23px;height:23px;margin-top:1px}
+.tabbar .tab.active .nav-image{opacity:1;filter:brightness(0) saturate(100%) invert(84%) sepia(22%) saturate(380%) hue-rotate(356deg) brightness(99%) contrast(85%)}
+.app-header .nav-image{width:22px;height:22px;opacity:.88}
+@media(max-width:340px){.app-header .nav-image{width:20px;height:20px}}
+
+
+/* Source silhouettes are now inline vector paths derived from the approved
+   160px alpha icons: independent of file-origin image loading and CSS masks. */
+.nav-svg{display:block;width:23px;height:23px;flex-shrink:0;color:var(--mu2);overflow:visible;-webkit-mask-image:none!important;mask-image:none!important}
+.tabbar .tab.active .nav-svg{color:var(--gold2)}
+.app-header .nav-svg{width:21px;height:21px;color:var(--ink)}
+@media(max-width:340px){.app-header .nav-svg{width:19px;height:19px}.home-hero .integrated-day-caption .when{font-size:7px;letter-spacing:1.1px}}
