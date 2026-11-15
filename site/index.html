@@ -8,6 +8,7 @@
   <title>Ad Orientem</title>
   <link rel="stylesheet" href="./assets/brand/typography.css">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./explore.css">
   <script src="./app.js" defer></script>
 </head>
 <body>
@@ -126,6 +127,56 @@
           <button class="return-home" type="button" data-route="home">Return to Home</button>
         </div>
       </section>
+      <section id="atlas-view" class="view atlas-view" aria-label="Explore the selected Atlas" hidden>
+        <div class="atlas-frame">
+          <header class="atlas-top">
+            <h1 id="atlas-heading" class="atlas-a11y">Explore</h1>
+            <p id="atlas-subtitle" class="atlas-a11y">The map for discovering · the card for deciding</p>
+            <div class="atlas-toolbar" role="search">
+              <label class="atlas-search-field" for="atlas-search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="11" cy="11" r="6.5"></circle><path d="M20 20l-4.2-4.2"></path></svg>
+                <input id="atlas-search" class="atlas-search" type="search" autocomplete="off" placeholder="Search a church, shrine, town…" aria-label="Search a church, shrine or town">
+              </label>
+              <button id="atlas-near" class="atlas-near" type="button" aria-label="Near me">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M12 2.5v3M12 18.5v3M2.5 12h3M18.5 12h3"></path><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" fill="currentColor" r="1.8"></circle></svg>
+              </button>
+            </div>
+            <nav class="atlas-switch" role="tablist" aria-label="Explore atlas collections">
+              <button id="atlas-lens-tlm" role="tab" class="active" type="button" aria-selected="true">TLM Atlas</button>
+              <button id="atlas-lens-sacred" role="tab" type="button" aria-selected="false">Sacred Atlas</button>
+            </nav>
+          </header>
+          <button id="atlas-world" class="atlas-world" type="button" aria-label="World view">World view</button>
+          <button type="button" id="atlas-language" class="atlas-lang" aria-label="Switch Atlas language">FR</button>
+          <p id="atlas-selection-note" class="atlas-notice">Curated starting selection · not a complete worldwide directory</p>
+          <div class="atlas-content">
+            <div class="atlas-map-column">
+              <div class="atlas-map-shell">
+                <div id="atlas-map" aria-label="Interactive map of selected source-backed sites"></div>
+                <p id="atlas-map-status" class="atlas-map-state" role="status">Loading source-backed sites</p>
+              </div>
+              <p id="atlas-map-hint" class="atlas-map-hint">Map pins identify sites, not always precise entrances.</p>
+            </div>
+            <section class="atlas-sheet" id="atlas-sheet" data-sheet-state="peek" aria-labelledby="atlas-results-title">
+              <button id="atlas-sheet-handle" class="atlas-sheet-grip" type="button" aria-controls="atlas-results" aria-expanded="false" aria-label="Expand places sheet">
+                <span class="atlas-grip-line" aria-hidden="true"></span>
+              </button>
+              <div id="atlas-ways" class="atlas-ways" aria-label="Available Atlas views"></div>
+              <header id="atlas-sheet-header" class="atlas-sheet-header">
+                <div class="atlas-sheet-heading">
+                  <h2 id="atlas-results-title">Selected churches</h2>
+                  <small id="atlas-sheet-subtitle">Source-backed pilot</small>
+                </div>
+                <button id="atlas-list-toggle" class="atlas-pill" type="button" aria-controls="atlas-results" aria-pressed="false">List</button>
+                <span id="atlas-count" class="atlas-count atlas-a11y" aria-live="polite">—</span>
+              </header>
+              <ul id="atlas-results" class="atlas-results" tabindex="0" aria-label="Selected Atlas records"></ul>
+            </section>
+            <article id="atlas-card" class="atlas-card" hidden aria-label="Source-backed place profile"></article>
+          </div>
+          <p class="atlas-end-note">Initial verified selection only. No inferred upcoming Mass times, unapproved photographs or unverified site entrances.</p>
+        </div>
+      </section>
     </main>
 
     <nav class="tabbar" aria-label="Main navigation">
@@ -145,7 +196,7 @@
   </dialog>
   <dialog id="about-dialog" aria-labelledby="about-title">
     <h2 id="about-title">Ad Orientem · New production foundation</h2>
-    <p>This is a source-guided Home V9 visual foundation. It includes one approved CC0 painting as a visual study, without assigning it to any liturgical date. No liturgical texts, prayer engines, canonical calendar data or Atlas datasets have been transferred.</p>
+    <p>This is a source-guided Home V9 visual foundation. It includes one approved CC0 painting as a visual study, without assigning it to any liturgical date. The selected Atlas pilot is under draft review; liturgical texts, prayer engines and canonical calendar data have not yet been transferred.</p>
     <p>The Cinzel, Cormorant Garamond and EB Garamond families, source-derived spacing, hero treatment, icon drawings and navigation come from the approved Home V9 prototype. Exact font-file parity and final visual acceptance remain subject to review.</p>
     <form method="dialog"><button type="submit">Close</button></form>
   </dialog>
