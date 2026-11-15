@@ -1,9 +1,9 @@
 {
   "schema": "ao.sacred-art.gallery-image-provenance.v1",
   "import_date": "2026-11-15",
-  "source_contract": "17 distinct local gallery paintings / 19 image-bearing records, with six owner-selected 2026-11-15 Batch 4 images sourced from exact museum object records. Independent institution rights checks: 5 Cleveland Open Access CC0 + 1 Met public domain. Image provenance, SHA-256, uncropped derivative dimensions and source URLs in per-batch source manifest. No implicit new prayer-card approval.",
-  "local_image_count": 17,
-  "catalogue_record_images_count": 19,
+  "source_contract": "28 distinct local gallery images / 30 image-bearing catalogue records; 11 additional owner-selected gallery paintings acquired under exact institution records in Batch 05 (8 Met public domain, 3 Cleveland CC0), source image bytes and SHA-256s recorded; originals remain at institutions, permanent uncropped 2000px WebP derivatives hosted locally; prayer-stage default approvals remain independent.",
+  "local_image_count": 28,
+  "catalogue_record_images_count": 30,
   "duplicate_same_original": [
     {
       "physical_artwork": "Met object 438724",
@@ -24,7 +24,7 @@
       "note": "Two historical catalogue records refer to one physical Girardin painting and share one local image; prayer associations remain unchanged."
     }
   ],
-  "pending": "843 catalogue entries remain metadata-only. Image originals remain at their verified institutional sources unless explicitly separately archived; locally held gallery derivatives are permanent. Prayer and cinematic QA is independent.",
+  "pending": "832 catalogue records remain metadata-only. Source JPEGs for Batch 05 are verified against institution URLs but not archived as originals; permanent full-composition derivatives are locally held in production. Individual prayer cinematic QA is separate.",
   "sources": [
     {
       "artwork_id": "PRAYER::saints--saraceni",
@@ -430,6 +430,325 @@
       "rights_evidence_url": "https://www.metmuseum.org/art/collection/search/436502",
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Open Access / public-domain image",
       "quality_gate": "INSTITUTIONAL_OBJECT_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "NEW::met-816514",
+      "path": "site/gallery/images/caccia-madonna-infant-john-met-816514-2000.webp",
+      "title": "Madonna and Child with the Infant Saint John the Baptist",
+      "artist": "Orsola Maddalena Caccia",
+      "image_bytes": 724442,
+      "git_blob_sha": "db3bef99f937a9c7d53a7684f047d6119e88b9d9",
+      "sha256": "690112a318c1f48e067c568ffe60f071a6fc521451d1ade3a74011c913a22925",
+      "pixel_dimensions": [
+        1928,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch05.v1.json",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/816514",
+      "museum_record_id": "816514",
+      "museum_title": "Madonna and Child with the Infant Saint John the Baptist",
+      "source_url": "https://images.metmuseum.org/CRDImages/ep/original/DP-19776-001.jpg",
+      "source_sha256": "cb59c2a44dcb96190f48b134ab5cefa682cadc0c9337c330104b01d467ef7131",
+      "source_dimensions_px": [
+        3856,
+        4000
+      ],
+      "source_bytes": 5679424,
+      "rights_evidence_url": "https://www.metmuseum.org/art/collection/search/816514",
+      "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
+      "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "NEW::cma-1916.812",
+      "path": "site/gallery/images/luini-virgin-child-cma-1916-812-2000.webp",
+      "title": "Virgin and Child",
+      "artist": "Attributed to Bernardino Luini",
+      "image_bytes": 747146,
+      "git_blob_sha": "88fabd38264f2cb38281f96073352733da2144aa",
+      "sha256": "b73af524b1e5a5cccb546c1bce437c8f21bf2a7b261932b49c99fd3a6894a74f",
+      "pixel_dimensions": [
+        1494,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch05.v1.json",
+      "museum_api_url": "https://openaccess-api.clevelandart.org/api/artworks/1916.812",
+      "museum_record_id": "97177",
+      "museum_title": "Virgin and Child",
+      "source_url": "https://openaccess-cdn.clevelandart.org/1916.812/1916.812_print.jpg",
+      "source_sha256": "e7941ab1c97482a939f3a9bdb2b0704e86d086a81a3d585cecafa4e0b76c72a2",
+      "source_dimensions_px": [
+        2540,
+        3400
+      ],
+      "source_bytes": 7339254,
+      "rights_evidence_url": "https://www.clevelandart.org/art/1916.812",
+      "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
+      "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "REVIEW::met:436781",
+      "path": "site/gallery/images/joest-adoration-christ-child-met-436781-2000.webp",
+      "title": "The Adoration of the Christ Child",
+      "artist": "Jan Joest of Kalkar",
+      "image_bytes": 712046,
+      "git_blob_sha": "7285f42c866e7a176d56b7a21929ab54381963de",
+      "sha256": "2a54e73fbb90ae1689b42bcb93a12feccedc86b1c6e6e08967407f0dd6ea14e9",
+      "pixel_dimensions": [
+        1390,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch05.v1.json",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436781",
+      "museum_record_id": "436781",
+      "museum_title": "The Adoration of the Christ Child",
+      "source_url": "https://images.metmuseum.org/CRDImages/ep/original/DT8852.jpg",
+      "source_sha256": "c68cefb090b0f7b0009b1ee6d97a41304e9ffa5d7e1dd500e8ef3f39d2a15bd2",
+      "source_dimensions_px": [
+        2586,
+        3722
+      ],
+      "source_bytes": 3233524,
+      "rights_evidence_url": "https://www.metmuseum.org/art/collection/search/436781",
+      "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
+      "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "REVIEW::met:436966",
+      "path": "site/gallery/images/mantegna-adoration-shepherds-met-436966-2000.webp",
+      "title": "The Adoration of the Shepherds",
+      "artist": "Andrea Mantegna",
+      "image_bytes": 654482,
+      "git_blob_sha": "53a0de6ee480a38432621fb88385ab30e1965ae2",
+      "sha256": "21fd5e0f36d0fa77315ec4790e75de575470314e0e78d00682e97ed81b5d607d",
+      "pixel_dimensions": [
+        2000,
+        1472
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch05.v1.json",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436966",
+      "museum_record_id": "436966",
+      "museum_title": "The Adoration of the Shepherds",
+      "source_url": "https://images.metmuseum.org/CRDImages/ep/original/DP213831.jpg",
+      "source_sha256": "03dc8f5602352e7b175d0cc4b61d881f2a85785958018c52d4b389bf5a28ac2b",
+      "source_dimensions_px": [
+        3911,
+        2879
+      ],
+      "source_bytes": 2994396,
+      "rights_evidence_url": "https://www.metmuseum.org/art/collection/search/436966",
+      "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
+      "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "REVIEW::met:435853",
+      "path": "site/gallery/images/carracci-coronation-virgin-met-435853-2000.webp",
+      "title": "The Coronation of the Virgin",
+      "artist": "Annibale Carracci",
+      "image_bytes": 394040,
+      "git_blob_sha": "d289d2974680059c15b5e927821632d4170de4bc",
+      "sha256": "7b2abffecf48d02347d6e7963aa9a63a36feaec8a815b5391b68c3bb6984b98a",
+      "pixel_dimensions": [
+        2000,
+        1711
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch05.v1.json",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/435853",
+      "museum_record_id": "435853",
+      "museum_title": "The Coronation of the Virgin",
+      "source_url": "https://images.metmuseum.org/CRDImages/ep/original/DP-27033-001.jpg",
+      "source_sha256": "b003bebfb3c751013faa5f878e68dadd595c7573aad1e2587cb32cc176a3c264",
+      "source_dimensions_px": [
+        4000,
+        3421
+      ],
+      "source_bytes": 4043603,
+      "rights_evidence_url": "https://www.metmuseum.org/art/collection/search/435853",
+      "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
+      "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::cma-78982",
+      "path": "site/gallery/images/konig-resurrection-cma-2017-192-2000.webp",
+      "title": "The Resurrection of Christ",
+      "artist": "Johann König",
+      "image_bytes": 411370,
+      "git_blob_sha": "b0e7131bb012b24ce42a3b32f21bdfa28385963f",
+      "sha256": "20d184681d1e124aceb06e19e86956588dbb23514ffb7e19bb5fe84d930693ef",
+      "pixel_dimensions": [
+        1506,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch05.v1.json",
+      "museum_api_url": "https://openaccess-api.clevelandart.org/api/artworks/2017.192",
+      "museum_record_id": "78982",
+      "museum_title": "The Resurrection of Christ",
+      "source_url": "https://openaccess-cdn.clevelandart.org/2017.192/2017.192_print.jpg",
+      "source_sha256": "f213c24c55e83432752c310ab3e6bf7c533c4627f22ceefc4481b7eee17af6e5",
+      "source_dimensions_px": [
+        2561,
+        3400
+      ],
+      "source_bytes": 1932047,
+      "rights_evidence_url": "https://www.clevelandart.org/art/2017.192",
+      "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
+      "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::met-436791",
+      "path": "site/gallery/images/joos-van-cleve-annunciation-met-436791-2000.webp",
+      "title": "The Annunciation",
+      "artist": "Joos van Cleve",
+      "image_bytes": 792624,
+      "git_blob_sha": "8107e277d04eb1a926f6ff17172eaffccc7e1882",
+      "sha256": "a5d326cbb91cbaceede6fffe76a2ad870aca4acf66e5328c7a433434648df0b1",
+      "pixel_dimensions": [
+        1864,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch05.v1.json",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436791",
+      "museum_record_id": "436791",
+      "museum_title": "The Annunciation",
+      "source_url": "https://images.metmuseum.org/CRDImages/ep/original/DP-19433-001.jpg",
+      "source_sha256": "f294a91e54d1e073bbabf9c5d5ce4d8576febe145dff2ce5d278fc47dfb43d15",
+      "source_dimensions_px": [
+        3729,
+        4000
+      ],
+      "source_bytes": 6327199,
+      "rights_evidence_url": "https://www.metmuseum.org/art/collection/search/436791",
+      "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
+      "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::met-436835",
+      "path": "site/gallery/images/kulmbach-ascension-met-436835-2000.webp",
+      "title": "The Ascension of Christ",
+      "artist": "Hans Süss von Kulmbach",
+      "image_bytes": 498770,
+      "git_blob_sha": "08c4f82050648f8e05329c8d4fd9d006d91c6342",
+      "sha256": "edc022507a048681a708cfab2a86281b1451bf79e54f40c8b06067c89ae9cc0e",
+      "pixel_dimensions": [
+        1264,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch05.v1.json",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436835",
+      "museum_record_id": "436835",
+      "museum_title": "The Ascension of Christ",
+      "source_url": "https://images.metmuseum.org/CRDImages/ep/original/DP-17612-001.jpg",
+      "source_sha256": "889c57548f01237cb9031d81650832e74ac9f89112131a5bf32ded0317353a90",
+      "source_dimensions_px": [
+        2528,
+        4000
+      ],
+      "source_bytes": 4162432,
+      "rights_evidence_url": "https://www.metmuseum.org/art/collection/search/436835",
+      "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
+      "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "NEW::met-437524",
+      "path": "site/gallery/images/rubens-coronation-sketch-met-437524-2000.webp",
+      "title": "The Coronation of the Virgin (oil sketch)",
+      "artist": "Peter Paul Rubens",
+      "image_bytes": 691192,
+      "git_blob_sha": "0eecbfba7b2403096cef56ac6af2c3c0e9774229",
+      "sha256": "835f785c960a866f57698fe2c03124b116adf4fb37bfc2edb05a35fc6fbb4307",
+      "pixel_dimensions": [
+        1634,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch05.v1.json",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437524",
+      "museum_record_id": "437524",
+      "museum_title": "The Coronation of the Virgin",
+      "source_url": "https://images.metmuseum.org/CRDImages/ep/original/DT7932.jpg",
+      "source_sha256": "9416f3a1f193c5fb5cf9e65bc329feb73fbc07187d0a11b09e5087579d0c9ab6",
+      "source_dimensions_px": [
+        3036,
+        3716
+      ],
+      "source_bytes": 2891571,
+      "rights_evidence_url": "https://www.metmuseum.org/art/collection/search/437524",
+      "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
+      "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::met-436794",
+      "path": "site/gallery/images/joos-van-cleve-last-judgment-met-436794-2000.webp",
+      "title": "The Last Judgment",
+      "artist": "Joos van Cleve",
+      "image_bytes": 391174,
+      "git_blob_sha": "9613b7ea315fe0aab3d8802a0eed6ecfcce2ea2f",
+      "sha256": "4d1e2197dd247e5f63dfbe6d99d91dbdda90351bb9741503cced20bfa1a54324",
+      "pixel_dimensions": [
+        1548,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch05.v1.json",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436794",
+      "museum_record_id": "436794",
+      "museum_title": "The Last Judgment",
+      "source_url": "https://images.metmuseum.org/CRDImages/ep/original/DP-26502-001.jpg",
+      "source_sha256": "a96c2979bbce3032a6fa7c0a1213833c645ec3586e612ae814080808838bedeb",
+      "source_dimensions_px": [
+        3095,
+        4000
+      ],
+      "source_bytes": 3459692,
+      "rights_evidence_url": "https://www.metmuseum.org/art/collection/search/436794",
+      "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
+      "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::cma-148758",
+      "path": "site/gallery/images/caravaggio-crucifixion-andrew-cma-1976-2-2000.webp",
+      "title": "The Crucifixion of Saint Andrew",
+      "artist": "Caravaggio",
+      "image_bytes": 499084,
+      "git_blob_sha": "3d7a0ef06e1dc55d64fb2946a438f2d114725e1a",
+      "sha256": "e7417cbdcd877cb26881e1128ca1b7c95c60cd2320363ba9c595e53f753aaedc",
+      "pixel_dimensions": [
+        1508,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch05.v1.json",
+      "museum_api_url": "https://openaccess-api.clevelandart.org/api/artworks/1976.2",
+      "museum_record_id": "148758",
+      "museum_title": "The Crucifixion of Saint Andrew",
+      "source_url": "https://openaccess-cdn.clevelandart.org/1976.2/1976.2_print.jpg",
+      "source_sha256": "ee2b7edf0e0d1b731e6f57e8a8434a079bcd51717da1bd1af8c2c018bcda4833",
+      "source_dimensions_px": [
+        2563,
+        3400
+      ],
+      "source_bytes": 2841935,
+      "rights_evidence_url": "https://www.clevelandart.org/art/1976.2",
+      "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
+      "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
       "exact_original_image_for_prayer": false
     }
