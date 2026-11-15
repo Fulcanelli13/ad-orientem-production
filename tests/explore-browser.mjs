@@ -310,6 +310,10 @@ try{
     await handle.click();
     assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek");
   }
+  // The earlier search filter test leaves keyboard focus in the field.
+  // Capture the standard, unfocused Claude view without suppressing the
+  // accessible focus outline used when a user actively types.
+  await page.locator("#atlas-search").blur();
   await waitForMapReady("sacred-map-screenshot");
   await page.screenshot({path:join("artifacts/production-explore",width+"-en-sacred-map.png"),
    animations:"disabled",fullPage:false});

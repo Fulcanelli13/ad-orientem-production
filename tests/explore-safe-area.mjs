@@ -95,8 +95,16 @@ try{
     overflow:document.documentElement.scrollWidth-innerWidth};
   });
   const contextName=JSON.stringify(scenario);
-  assert.ok(g.search.top>=scenario.top+8,"Search overlaps simulated cutout "+contextName+" "+JSON.stringify(g));
+  // Claude's mobile source starts the search 4px below the actual safe
+  // area, not 14px, and places region/language controls after the header.
+  assert.ok(g.search.top>=scenario.top+3,"Search overlaps simulated cutout "+contextName+" "+JSON.stringify(g));
+  assert.ok(g.world.top>=g.header.bottom+7,
+   "World control intersects Atlas header "+contextName+" "+JSON.stringify(g));
+  assert.ok(g.language.top>=g.header.bottom+7,
+   "Language control intersects Atlas header "+contextName);
   assert.ok(g.world.top>=scenario.top+80,"World button overlaps cutout "+contextName);
+  requireClose(g.world.top,g.header.bottom+10,"Claude world offset "+contextName);
+  requireClose(g.language.top,g.world.top,"Source language/world row "+contextName);
   assert.ok(g.language.top>=scenario.top+80,"Language button overlaps cutout "+contextName);
   assert.ok(g.zoomIn.top>=scenario.top+8,"Map zoom controls overlap cutout "+contextName);
   assert.ok(g.navButton.bottom<=scenario.height-scenario.bottom+1,

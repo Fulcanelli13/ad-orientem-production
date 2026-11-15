@@ -81,3 +81,34 @@ already published on main is not modified or rolled back.
 The clean integration parent merge can add a commit, but not restore the
 old 130-commit backlog. Review exact diff relative to the *updated*
 main and run both Explore and Gallery regression guards.
+
+## Claude source visual parity: first measured correction
+Owner donor `AO_Explore_AppDesign(1).html` (SHA-256
+`97d56600db6118e1a826004d90970db155aa7f7e2c5662e1b6acec0a04b4e771`)
+was reopened against actual current-PR screenshots, not inferred from
+the old research UI. At 390px, the source search field starts around
+6px from the visible screen top; the staged production field starts around
+15px. The donor's mobile CSS expressly uses `padding-top: 4px +
+safe-area-inset-top`, while draft Explore overrode this with `14px +
+safe-area-inset-top`. The corrected draft uses the original 4px offset
+without abandoning hardware safe-area padding.
+
+The owner source computes the place/region pill position by
+`topH() - 6`, with `topH() = header.offsetHeight + 16`:
+**10px below the actual bottom of the header**. The draft instead
+hard-coded `top:107px + safe-area`, placing World/FR controls too close
+to the selected Atlas switch at 390px. The correction measures the
+actual header extent and positions both controls 10px below, including
+on viewport changes and font resizing. The semantic World/FR controls
+are unchanged; France-only demo regions are not imported.
+
+The QA screenshot's bright search rectangle came from test focus
+retained after exercising the search filter. The capture test now blurs
+the input before taking the ordinary **unfocused** map screenshot.
+Production retains the visible keyboard-focus outline when genuinely
+focused; it is not a CSS restyling or accessibility regression.
+Source style, photos, markers, folios, fonts, tab bar and publication
+boundary are unchanged. Phone safe-area tests assert the real
+header-to-pill separation rather than relying on a hard-coded top
+position. No owner aesthetic approval or physical-device test is
+implied.

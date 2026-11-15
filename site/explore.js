@@ -189,7 +189,7 @@ const snapHeight=stateName=>{
  // Full-height phones retain Claude's exact original 376px peek.
  const header=document.querySelector("#atlas-view .atlas-top");
  const paddingTop=Number.parseFloat(getComputedStyle(header).paddingTop)||14;
- const safeTop=Math.max(0,paddingTop-14);
+ const safeTop=Math.max(0,paddingTop-4);
  const reserved=300+safeTop;
  const mobile=window.matchMedia("(max-width: 799px)").matches;
  return mobile?Math.min(376,Math.max(150,available-bottom-reserved)):376;
@@ -613,11 +613,25 @@ async function startMap(){
   if(ev?.error)state.lastError=String(ev.error.message||ev.error);
  });
 }
+// Claude positions the region selector immediately BELOW the entire
+// flexible source header: topH() - 6, where topH = header height + 16.
+// Preserve that relationship across EN/FR, fonts and mobile safe areas.
+function alignAtlasTopControls(){
+ const atlas=$("atlas-view");
+ if(atlas.hidden)return;
+ const header=atlas.querySelector(".atlas-top");
+ const relativeBottom=header.getBoundingClientRect().bottom-
+  atlas.getBoundingClientRect().top;
+ atlas.style.setProperty("--ao-atlas-pill-top",
+  Math.round(relativeBottom+10)+"px");
+}
 function attachControls(){
  // Claude's sheet snap height must be recalculated when the available
  // viewport changes after mount (rotation, browser chrome, soft keyboard).
  // Do not remount MapLibre, reset the lens, or re-frame selected places.
  const search=$("atlas-search"),atlas=$("atlas-view"),sheet=$("atlas-sheet");
+ // Match Claude's header-dependent region placement even after font loads.
+ new ResizeObserver(alignAtlasTopControls).observe(atlas.querySelector(".atlas-top"));
  let resizeFrame=0;
  const syncViewport=()=>{
   resizeFrame=0;
@@ -631,6 +645,7 @@ function attachControls(){
    atlas.style.setProperty("--ao-visual-height",Math.round(usable)+"px");
   else atlas.style.removeProperty("--ao-visual-height");
   setSheetState(sheet.dataset.sheetState||"peek");
+  alignAtlasTopControls();
   if(state.map){state.map.resize();updateSacredMarkers();}
  };
  const scheduleViewport=()=>{
@@ -785,12 +800,14 @@ export async function mountExplore(){
    // Resuming an already-mounted Atlas after a route change must use
    // the current viewport dimensions, not the prior phone orientation.
    setSheetState($("atlas-sheet").dataset.sheetState||"peek");
+   alignAtlasTopControls();
    updateSacredMarkers();
   });
   return;
  }
  state.initialized=true;
  attachControls();setSheetState("peek");renderHeader();
+ alignAtlasTopControls();
  setStatus(tr("pending"));
  try{
   state.data=await loadDataset();

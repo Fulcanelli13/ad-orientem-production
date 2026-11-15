@@ -316,7 +316,7 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
 #atlas-view .atlas-top{
  position:absolute;z-index:10;left:0;right:0;top:0;height:auto;
  display:flex!important;flex-direction:column;align-items:stretch!important;
- padding:calc(14px + env(safe-area-inset-top)) 14px 18px!important;margin:0;gap:8px!important;
+ padding:calc(4px + env(safe-area-inset-top)) 14px 18px!important;margin:0;gap:8px!important;
  pointer-events:none;background:linear-gradient(180deg,
  rgba(7,11,17,.94) 0%,rgba(7,11,17,.72) 72%,rgba(7,11,17,0))
 }
@@ -365,7 +365,7 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
  box-shadow:0 0 0 1px rgba(201,173,120,.4) inset!important
 }
 #atlas-view .atlas-world,#atlas-view .atlas-lang{
- position:absolute!important;top:calc(107px + env(safe-area-inset-top))!important;z-index:11;
+ position:absolute!important;top:var(--ao-atlas-pill-top,calc(124px + env(safe-area-inset-top)))!important;z-index:11;
  height:26px;min-height:26px!important;width:auto;min-width:0!important;
  max-width:none;border-radius:999px!important;
  padding:4px 10px!important;font:600 9px var(--ao-cap)!important;
