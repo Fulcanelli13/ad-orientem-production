@@ -34,3 +34,8 @@ Run `node tools/validate-prayer-artwork-assets.mjs` after checkout. It validates
 - The master tracks unassigned records instead of inventing prayer placements: **611 older records require further editorial classification**.
 - The complete review is in `site/prayers/angelus-part-paintings.v1.json`; seven associations are contextual/scene-only and are NOT owner-approved Angelus part selections.
 - Nothing is auto-published or selected as a prayer-card primary. The original 860-item catalogue and original 660 card links remain intact.
+
+
+### Editorial approval scope (v2 index correction)
+
+`candidate_prayer_card_ids` includes all historically eligible/crosswalk/prototype card links, not necessarily explicit owner-approved matches. `owner_approved_exact_card_ids` and `owner_approved_parent_prayer_ids` are **separate, narrower subsets** derived from the original link-level approval flags. No historical candidate is silently relabelled approved. The precise current coverage is 249 works with at least one candidate link, 114 with an exact approved card link, and 15 with a parent prayer approval. Counts are per unique artwork record, not per association.
