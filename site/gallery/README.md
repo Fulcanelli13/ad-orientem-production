@@ -7,13 +7,13 @@ This is a **new, deliberately scoped** Sacred Art destination inside the existin
 ## What is real today
 
 - `catalogue.v1.json`: **all 862 currently tracked artwork records** (860 historical master records plus two preserved Angelus contextual records), searchable by artwork, artist, collection, scene category and reviewed prayer part.
-- **Eleven distinct locally hosted painting images** (thirteen historical registry records link to those eleven paintings; Champaigne and Girardin each have two old records for the same original).
+- **Seventeen distinct locally hosted painting images** (nineteen historical catalogue records have images; Champaigne and Girardin each have two historical records for the same physical artwork).
 - `gallery.js`: searchable/scrollable gallery, curated-vs-research filter, On display, Angelus review, prayer-matched and image-pending views, and a full-composition painting/detail dialog.
 - `gallery.css`: source-derived Cinzel/Cormorant/EB typography and existing Home colours; scoped selectors only.
-- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for all eleven on-display reproductions, including five newly acquired uncropped gallery derivatives.
+- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for all seventeen on-display reproductions, including six additional museum-sourced, uncropped 2000-pixel gallery WebPs in Batch 04.
 - No external remote URLs are used for gallery image rendering. Museum URLs are links to source records, not image substitutions.
 
-**Important:** **862 artwork records does not mean 862 locally acquired paintings.** Eleven distinct paintings are now displayed with exact local files. Carracci's previously low-resolution preview has been replaced; three additional owner-selected paintings have source-matched images; Saraceni's gallery image has also been upgraded. Five new gallery derivatives were prepared at up to 2,000 pixels on their longest edge, without cropping. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
+**Important:** **862 artwork records does not mean 862 locally acquired paintings.** Seventeen distinct paintings are now displayed with exact local files. The earlier Carracci preview and Saraceni image were replaced; Batch 04 adds six further previously selected works, all checked against official museum objects and image reuse status. The gallery WebPs retain full artwork composition, downsampled at most to 2,000 pixels on their longest edge. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
 
 Artwork inclusion in this registry does not itself mean the owner approved it for prayer placement. The separate `owner_selected_artwork`, `prayer_parts`, `exact_prayer_cards`, `eligible_card_count` and image rights fields remain independent.
 
@@ -32,6 +32,12 @@ Artwork inclusion in this registry does not itself mean the owner approved it fo
 | Bernardo Cavallino — *Adoration of the Shepherds* | Cleveland Museum of Art CC0, archive-verified original | `site/gallery/images/cavallino-shepherds-cma-1968-100-2000.webp` |
 | Laurent Girardin — *The Trinity* | Cleveland Museum of Art CC0, archive-verified original; two catalogue IDs | `site/gallery/images/girardin-trinity-cma-1960-79-2000.webp` |
 | Georges de La Tour — *The Penitent Magdalen* | Met Open Access/CC0, archive-verified original | `site/gallery/images/latour-penitent-magdalen-met-436839-2000.webp` |
+| Carlo Dolci — *Adoration of the Shepherds* | Cleveland Museum of Art accession 1968.22, CC0 print original | `site/gallery/images/dolci-adoration-shepherds-cma-1968-22-2000.webp` |
+| Hendrik van Balen — *The Trinity* | Cleveland Museum of Art accession 1996.26, CC0 print original | `site/gallery/images/van-balen-trinity-cma-1996-26-2000.webp` |
+| Bartolomé Esteban Murillo — *The Immaculate Conception* | Cleveland Museum of Art accession 1959.189, CC0 print original | `site/gallery/images/murillo-immaculate-cma-1959-189-2000.webp` |
+| German Danube School — *The Visitation* | Cleveland Museum of Art accession 1950.91, CC0 print original | `site/gallery/images/danube-visitation-cma-1950-91-2000.webp` |
+| Paolo Veronese and workshop — *The Annunciation* | Cleveland Museum of Art accession 1950.251, CC0 print original | `site/gallery/images/veronese-annunciation-cma-1950-251-2000.webp` |
+| Luca Giordano — *The Annunciation* | Met object 436502, public-domain museum primary image | `site/gallery/images/giordano-annunciation-met-436502-2000.webp` |
 
 All gallery WebPs are **gallery reproductions only**. Their prior `app-data/sacred-art/staged-images/` references remain intact, with **prayer-level cinematic/image-quality QA held**. This gallery release is *not* permission to use those files as primary images in Angelus, Rosary, Mass or Calendar.
 
@@ -49,7 +55,7 @@ Future Claude prayer prototypes will reference this canonical artwork catalogue 
 
 ## Checks and rollback
 
-The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, eleven distinct image identities (including five source-hash-verified mobile derivatives), no remote gallery image loading, and preservation of the four-tab navigation.
+The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, seventeen distinct image identities (including six institutionally rights-verified Batch 04 derivatives), no remote gallery image loading, and preservation of the four-tab navigation.
 
 The production branch's premerge commit is the rollback reference. Only the `site/` directory publishes.
 
@@ -89,3 +95,22 @@ Five new permanent local image derivatives have been acquired and SHA-256 verifi
 The exact source hashes, binary byte counts, derivative sizes, native image dimensions, rights evidence and pinned research commit are preserved in `app-data/sacred-art/gallery-image-import-batch03.v1.json`, and published image provenance in `site/gallery/image-provenance.v1.json`. Images are hosted locally from `site/gallery/images/`; external museum URLs remain source/rights references, not runtime image dependencies.
 
 This release **does not change** any original IDs, 36 Angelus painting records, their part-level links, prayer-stage defaults, selection status, bottom navigation, design, Home image references or deployment mechanism. The same one GitHub Pages workflow publishes the curated `site/` directory. No additional prayer screens are being integrated.
+
+### Gallery image batch 04 · 15 November 2026
+
+Six previously owner-selected, still-unillustrated catalogue works have acquired **institutional-source, permanently local images**. All images were created as uncropped WebP derivatives whose longest side is 2,000px, retaining full image aspect and subject composition.
+
+The sources were independently verified using the **Cleveland Museum of Art Open Access API** (five objects with `share_license_status=CC0`) and **Metropolitan Museum of Art Collection API** (one object with `isPublicDomain=true`). Before download, the import matched museum accession/object ID, title and artist against the existing catalogue. Each source JPEG's SHA-256, byte size and pixel dimensions are recorded, alongside the derivative's SHA-256, Git blob SHA and dimensions, in `app-data/sacred-art/gallery-image-import-batch04.v1.json`. The gallery holds the WebP derivative; these newly retrieved source JPEGs are **not** claimed as separately archived in the repository.
+
+| Painting | Museum record | Local gallery pixels |
+|---|---|---|
+| Carlo Dolci — Adoration of the Shepherds | CMA 1968.22 | 1,597×2,000 |
+| Hendrik van Balen — The Trinity | CMA 1996.26 | 1,600×2,000 |
+| Bartolomé Esteban Murillo — The Immaculate Conception | CMA 1959.189 | 1,148×2,000 |
+| German Danube School — The Visitation | CMA 1950.91 | 1,481×2,000 |
+| Paolo Veronese and workshop — The Annunciation | CMA 1950.251 | 1,801×2,000 |
+| Luca Giordano — The Annunciation | Met object 436502 | 1,463×2,000 |
+
+**Current state: 862 original catalogue entries; 17 distinct paintings with local images, represented by 19 catalogue entries; 843 image-pending records.** No painting IDs, prior owner selections, Angelus relationships, prayer defaults, Claude-designed Home screens, or gallery presentation rules were changed. Existing non-certified historical rights notes remain unchanged; the separate verified photographic rights evidence is held in image provenance and the acquisition manifest. No outside image URLs are used at runtime.
+
+The only deployment remains GitHub Actions → GitHub Pages, publishing the curated `site/` directory. This batch imports no new prayer prototype.

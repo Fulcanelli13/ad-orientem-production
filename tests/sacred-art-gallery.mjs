@@ -11,6 +11,7 @@ const index = json('app-data/sacred-art/artwork-assignment-index.v2.json');
 const gallery = json('site/gallery/catalogue.v1.json');
 const images = json('site/gallery/image-provenance.v1.json');
 const importEvidence = json('app-data/sacred-art/gallery-image-import-batch03.v1.json');
+const batch04 = json('app-data/sacred-art/gallery-image-import-batch04.v1.json');
 const staged = json('app-data/sacred-art/staged-image-provenance.v1.json');
 const angelus = json('site/prayers/angelus-part-paintings.v1.json');
 const html = read('site/index.html');
@@ -23,9 +24,9 @@ assert.equal(gallery.records.length, 862);
 assert.equal(gallery.counts.total_records, 862);
 assert.equal(gallery.counts.angelus_review_records, 36);
 assert.equal(gallery.counts.unassigned, 611);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings, 11);
-assert.equal(gallery.counts.image_available_records, 13);
-assert.equal(gallery.records.filter(x => x.image !== null).length, 13);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings, 17);
+assert.equal(gallery.counts.image_available_records, 19);
+assert.equal(gallery.records.filter(x => x.image !== null).length, 19);
 assert.equal(gallery.records.filter(x => x.prayer_parts.length).length, 36);
 assert.equal(new Set(gallery.records.map(x => x.id)).size, 862);
 assert.deepEqual(new Set(gallery.records.map(x => x.id)),
@@ -48,8 +49,8 @@ for (const original of angelus.artworks) {
   assert.equal(record.prayer_parts.length,
     angelus.part_artwork_links.filter(x=>x.artwork_id===original.artwork_id).length);
 }
-assert.equal(images.sources.length,11);
-assert.equal(gallery.counts.verified_image_files,11);
+assert.equal(images.sources.length,17);
+assert.equal(gallery.counts.verified_image_files,17);
 const verifiedArchiveOriginalIds = new Set(['CANONICAL::ART-hilippe-de-hampaigne-he-nnunciation','CANONICAL::met-438434','CANONICAL::met-436672']);
 const srcFiles = new Set();
 for (const art of gallery.records) {
@@ -64,7 +65,7 @@ for (const art of gallery.records) {
     'Incorrect image format');
   srcFiles.add('site/'+art.image.src.slice(2));
 }
-assert.equal(srcFiles.size,11);
+assert.equal(srcFiles.size,17);
 for (const entry of images.sources) {
   assert(srcFiles.has(entry.path));
   assert.equal(statSync(resolve(base,entry.path)).size,entry.image_bytes);
@@ -107,6 +108,49 @@ for (const entry of importEvidence.sources) {
 assert.equal(importEvidence.sources.filter(x=>x.key==='carracci').length,1);
 assert.equal(importEvidence.sources.find(x=>x.key==='carracci').original_preserved_in_research,false);
 assert.equal(gallery.records.find(x=>x.id==='CANONICAL::met-438338').image.pixel_height,1592);
+// Batch 04: six new exact museum objects; do not create new artwork records or prayer approvals.
+assert.equal(batch04.schema,'ao.sacred-art.gallery-image-import.v1');
+assert.equal(batch04.batch,'2026-11-15-batch04');
+assert.equal(batch04.sources.length,6);
+assert.equal(new Set(batch04.sources.map(x=>x.artwork_id)).size,6);
+assert.equal(batch04.sources.filter(x=>x.museum==='CMA').length,5);
+assert.equal(batch04.sources.filter(x=>x.museum==='MET').length,1);
+for(const src of batch04.sources){
+  const work=gallery.records.find(x=>x.id===src.artwork_id);
+  assert(work?.owner_selected_artwork,'New image cannot imply unselected art');
+  assert.equal(work.title,src.title,'Museum artwork identity must match existing catalogue');
+  assert.equal(work.image?.src,'./'+src.local_path.slice('site/'.length));
+  assert.equal(work.image?.usage,'GALLERY_IMAGE_ONLY__PRAYER_ASSIGNMENTS_UNCHANGED');
+  assert.equal(work.image?.quality,'UNCROPPED_2000PX_LOCAL_WEBP__INSTITUTIONAL_SOURCE_VERIFIED');
+  assert.deepEqual([work.image.pixel_width,work.image.pixel_height],src.local_dimensions_px);
+  assert.equal(src.uncropped,true);
+  assert.equal(src.source_original_persisted_in_production,false);
+  assert(src.source_dimensions_px.every(x=>x>=1800),'Source print/master dimensions must be substantive');
+  assert.equal(Math.max(...src.local_dimensions_px),2000);
+  assert(src.source_bytes>100000 && src.local_bytes>100000);
+  assert(src.museum_api_url.startsWith('https://'),'Source must have real museum API verification');
+  if(src.museum==='CMA') {
+    assert.equal(src.image_license_status,'CC0');
+    assert(src.museum_api_url.startsWith('https://openaccess-api.clevelandart.org/api/artworks/'));
+    assert(src.source_url.startsWith('https://openaccess-cdn.clevelandart.org/'));
+  }else{
+    assert.equal(src.image_license_status,'PUBLIC_DOMAIN');
+    assert.equal(src.object_id,436502);
+    assert(src.source_url.startsWith('https://images.metmuseum.org/'));
+  }
+  const bytes=readFileSync(resolve(base,src.local_path));
+  assert.equal(bytes.length,src.local_bytes);
+  assert.equal(createHash('sha256').update(bytes).digest('hex'),src.local_sha256);
+  assert.equal(createHash('sha1').update('blob '+bytes.length+'\0').update(bytes).digest('hex'),src.local_git_blob_sha);
+  const image=images.sources.find(x=>x.artwork_id===src.artwork_id);
+  assert(image,'Published provenance entry missing');
+  assert.equal(image.path,src.local_path);
+  assert.equal(image.source_sha256,src.source_sha256);
+  assert.equal(image.sha256,src.local_sha256);
+  assert.equal(image.release_scope,'GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT');
+  const original=index.artworks.find(x=>x.artwork_id===src.artwork_id);
+  assert.deepEqual(work.exact_prayer_cards,original.owner_approved_exact_card_ids);
+}
 assert.equal(images.duplicate_same_original.length,2);
 assert.equal(gallery.records.filter(x=>x.image?.src==='./gallery/images/girardin-trinity-cma-1960-79-2000.webp').length,2);
 assert.equal(images.duplicate_same_original[0].image,'site/gallery/images/champaigne-annunciation-met-438724-original.jpg');
@@ -139,4 +183,4 @@ assert(js.includes('catalogue.records'));
 assert(css.includes('.ao-gallery'));
 assert(css.includes('.home-pad.integrated-home-order>.sacred-art-entry'));
 assert(!html.includes('https://fonts.googleapis.com'),'No remote font dependencies');
-console.log('Sacred Art gallery validated: 862 records, 36 Angelus works, 11 hosted paintings / 13 record references, five source-hash-verified mobile derivatives; 0 remote runtime images and 0 new prayer defaults.');
+console.log('Sacred Art gallery validated: 862 records, 36 Angelus works, 17 hosted paintings / 19 image-bearing records, six museum-license-checked 2000px derivatives in batch 04, 0 remote runtime images and 0 new prayer defaults.');
