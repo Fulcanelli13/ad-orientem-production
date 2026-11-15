@@ -150,7 +150,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "CANONICAL::cma-159488",
@@ -172,7 +173,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::commons:21885843",
@@ -199,7 +201,8 @@
         "verified_git_blob": "76987cc209da38f7fe500e09a44f631990fd4cb4"
       },
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "released-photo:souls",
@@ -218,7 +221,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "NEW::met-917618",
@@ -239,7 +243,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "RECENT575::145",
@@ -258,7 +263,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::commons:74171702",
@@ -279,7 +285,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::met:435853",
@@ -300,7 +307,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::commons:73497418",
@@ -319,7 +327,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::commons:116926387",
@@ -338,7 +347,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "owner-selected:holy-trinity:dolci-1640",
@@ -357,7 +367,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::commons:65493548",
@@ -378,7 +389,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "CANONICAL::nga-46",
@@ -399,7 +411,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::commons:22002144",
@@ -419,7 +432,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "CANONICAL::cma-135659",
@@ -438,7 +452,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::nga:52",
@@ -457,7 +472,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "PRAYER::saints--saraceni",
@@ -481,7 +497,8 @@
         "rights": "site/artwork/provenance.json"
       },
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "LEGACY::soulsCarracci",
@@ -498,7 +515,8 @@
       "source_alias_key": "soulsCarracci",
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_RIGHTS_UNKNOWN__DO_NOT_PUBLISH"
     },
     {
       "artwork_id": "LEGACY::soulsTeresa",
@@ -515,7 +533,8 @@
       "source_alias_key": "soulsTeresa",
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_RIGHTS_UNKNOWN__DO_NOT_PUBLISH"
     },
     {
       "artwork_id": "released-photo:angelus",
@@ -541,7 +560,8 @@
         "rights": "Met open access CC0, prior provenance"
       },
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "owner-selected:holy-trinity:rubens-1620",
@@ -567,7 +587,8 @@
         "verified_git_blob": "845ba67cd91852740f2b04cbc3b77e598644215c"
       },
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::commons:87865020",
@@ -586,7 +607,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::kmska:skpzca",
@@ -605,7 +627,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "CANONICAL::cma-78982",
@@ -625,7 +648,8 @@
       "source_alias_key": "konig",
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "released-photo:regina",
@@ -645,7 +669,8 @@
       "source_alias_key": "rubens",
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "CANONICAL::cma-127572",
@@ -666,7 +691,8 @@
       "source_alias_key": "veronese",
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "owner-selected:holy-trinity:reni-1625",
@@ -685,7 +711,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::commons:22145562",
@@ -706,7 +733,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::cma:146167",
@@ -728,7 +756,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::walters:4625",
@@ -747,7 +776,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "CANONICAL::met-436502",
@@ -768,7 +798,8 @@
       "source_alias_key": "giordano",
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "CANONICAL::met-436791",
@@ -788,7 +819,8 @@
       "source_alias_key": "vancleve",
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::commons:158771859",
@@ -809,7 +841,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "released-photo:girardin",
@@ -831,7 +864,8 @@
       "source_alias_key": "trinityGirardin",
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "owner-selected:holy-trinity:durer-1511",
@@ -850,7 +884,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     },
     {
       "artwork_id": "REVIEW::commons:55389333",
@@ -871,7 +906,8 @@
       "source_alias_key": null,
       "local_binary": null,
       "publication_status": "NOT_AUTO_PUBLISHABLE",
-      "primary_card_assignment": null
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
     }
   ],
   "part_artwork_links": [
