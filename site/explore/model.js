@@ -13,6 +13,24 @@ const safeLink = url => {
 const coord = geo => geo && Number.isFinite(Number(geo.lat)) &&
   Number.isFinite(Number(geo.lng)) && Math.abs(Number(geo.lat)) <= 90 &&
   Math.abs(Number(geo.lng)) <= 180;
+function verifiedPhoto(entry) {
+  const m=entry?.media;
+  if(!m || !/^\.\/explore\/media\/[A-Za-z0-9-]+\.webp$/.test(plain(m.src)) ||
+     !safeLink(m.source_url) || !safeLink(m.license_url) ||
+     !/^https:\/\/commons\.wikimedia\.org\/wiki\/File:/.test(m.source_url) ||
+     !/^https:\/\/creativecommons\.org\//.test(m.license_url) ||
+     !/^[a-f0-9]{64}$/.test(plain(m.sha256)) ||
+     !/^[a-f0-9]{40}$/.test(plain(m.original_sha1)) ||
+     !plain(m.photographer) || !plain(m.alt_en) || !plain(m.alt_fr) ||
+     !plain(m.change_notice) ||
+     !["CC0 1.0","CC BY-SA 4.0"].includes(m.license) ||
+     !Number.isInteger(m.width) || m.width<900 ||
+     !Number.isInteger(m.height) || m.height<700 ||
+     !/^(?:[0-9]{1,3})% (?:[0-9]{1,3})%$/.test(plain(m.card_position)) ||
+     !/^(?:[0-9]{1,3})% (?:[0-9]{1,3})%$/.test(plain(m.hero_position)))
+    return false;
+  return true;
+}
 export function publishable(entry, lens) {
   if (!entry || !plain(entry.id) || !plain(entry.name) ||
       !plain(entry.address) || !plain(entry.country_code) ||
@@ -22,7 +40,8 @@ export function publishable(entry, lens) {
     return /^place:/.test(entry.id) && Array.isArray(entry.source_ids) &&
       entry.source_ids.length > 0 && plain(entry.geo.verified_at).length > 0 &&
       plain(entry.geo.precision) !== "unknown" &&
-      entry.media_status === "NO_IMAGE_TRANSFERRED";
+      (entry.media_status === "NO_IMAGE_TRANSFERRED" && !entry.media ||
+       entry.media_status === "OWNER_SELECTED_PHOTO_TRANSFERRED" && verifiedPhoto(entry));
   }
   if (lens === "tlm") {
     return /^ao-icksp-/.test(entry.id) &&

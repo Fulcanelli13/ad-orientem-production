@@ -72,6 +72,8 @@ try{
   assert.equal(await page.locator(".atlas-switch > button").count(),2,"Exactly two top-level Atlases");
   assert.equal(await page.locator(".tabbar > button").count(),4,"Exactly four original bottom tabs");
   assert.equal(await page.locator("#atlas-results > li").count(),18);
+  assert.equal(await page.locator("#atlas-results .atlas-result--photo").count(),6,
+    "Only the six owner-selected photos may replace placeholder cards");
   const dom=await page.evaluate(()=>{
     const rect=id=>document.getElementById(id).getBoundingClientRect();
     const css=id=>getComputedStyle(document.getElementById(id));
@@ -233,6 +235,55 @@ try{
       "Claude folio Back must return to the prior canonical Place");
   }
   await page.locator("#atlas-card .atlas-folio-back").click();
+  // Claude's source-authored .card .im+.bd and .hero img are exercised
+  // at exact responsive widths, with the six owner-selected originals only.
+  const selectedPhotos=[
+    ["place:MU:saint-louis-cathedral-port-louis","saint-louis"],
+    ["place:MU:marie-reine-de-la-paix-port-louis","marie-reine"],
+    ["place:PT:santarem-santissimo-milagre","santarem"],
+    ["place:ES:santiago-compostela-cathedral","santiago"],
+    ["place:ES:basilica-del-pilar-zaragoza","pilar"],
+    ["place:PH:national-shrine-of-our-lady-of-lourdes-quezon-city","quezon"]
+  ];
+  for(const [photoId,slug] of selectedPhotos){
+    const card=page.locator('#atlas-results .atlas-result-button[data-atlas-id="'+photoId+'"]');
+    assert.equal(await card.count(),1,"No exact selected photo card: "+photoId);
+    await card.scrollIntoViewIfNeeded();
+    const img=card.locator(".atlas-result-photo");
+    await img.evaluate(el=>el.decode());
+    assert.ok(await img.evaluate(el=>el.naturalWidth>=900));
+    assert.equal(await card.locator(".atlas-result-photo-credit").count(),1);
+    const dims=await card.evaluate(el=>({h:el.getBoundingClientRect().height,
+      image:getComputedStyle(el.querySelector(".atlas-result-media")).position,
+      copy:getComputedStyle(el.querySelector(".atlas-result-copy")).position}));
+    assert.ok(Math.abs(dims.h-226)<=2 && dims.image==="absolute" && dims.copy==="absolute",
+      "Photo card cannot abandon Claude overlay geometry: "+JSON.stringify(dims));
+    if(width===390 || (width===320 && ["santarem","santiago","pilar"].includes(slug))
+       || (width===430 && ["marie-reine","quezon"].includes(slug))
+       || (width===1440 && ["saint-louis","pilar"].includes(slug))){
+      await page.screenshot({path:join("artifacts/production-explore",
+        width+"-en-photo-"+slug+"-card.png"),animations:"disabled",fullPage:false});
+    }
+    await card.click();
+    const folio=page.locator("#atlas-card");
+    await folio.waitFor({state:"visible"});
+    const heroImg=folio.locator(".atlas-folio-hero-photo .atlas-folio-photo-image");
+    assert.equal(await heroImg.count(),1,"Photo folio must use donor image hero");
+    await heroImg.evaluate(el=>el.decode());
+    const credit=folio.locator(".atlas-folio-photo-credit");
+    assert.equal(await credit.count(),1,"Photo credit must be visible in folio");
+    assert.match(await credit.innerText(),/Resized and converted to WebP/);
+    assert.equal(await credit.locator('a[href*="commons.wikimedia.org"]').count(),1);
+    assert.equal(await credit.locator('a[href*="creativecommons.org"]').count(),1);
+    assert.equal(await folio.locator("[data-visual-kind='category-symbol']").count(),0);
+    if(width===390 || (width===320 && ["santarem","santiago","pilar"].includes(slug))
+       || (width===430 && ["marie-reine","quezon"].includes(slug))
+       || (width===1440 && ["saint-louis","pilar"].includes(slug))){
+      await page.screenshot({path:join("artifacts/production-explore",
+        width+"-en-photo-"+slug+"-folio.png"),animations:"disabled",fullPage:false});
+    }
+    await folio.locator(".atlas-folio-back").click();
+  }
   await page.locator("#atlas-lens-tlm").click();
   await page.waitForFunction(()=>document.querySelector("#atlas-count")?.textContent==="10 / 10");
   assert.equal(await page.locator("#atlas-results > li").count(),10);

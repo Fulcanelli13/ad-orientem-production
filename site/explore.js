@@ -76,6 +76,19 @@ function visibleEntries(){
 function activeRecord(id){
  return state.all.find(row=>row.id===id)||null;
 }
+function chosenPhoto(record){
+ return record?.media_status==="OWNER_SELECTED_PHOTO_TRANSFERRED"?record.media:null;
+}
+function photoCredit(photo){
+ const credit=make("div","atlas-folio-photo-credit");
+ credit.append(document.createTextNode((state.language==="fr"?"Photographie : ":"Photograph: ")+photo.photographer+" · "));
+ const source=external(photo.source_url,state.language==="fr"?"Source originale":"Original source");
+ const licence=external(photo.license_url,photo.license);
+ if(source)credit.append(source,document.createTextNode(" · "));
+ if(licence)credit.append(licence);
+ credit.append(document.createTextNode(state.language==="fr"?" · Image redimensionnée et convertie au format WebP.":" · Resized and converted to WebP."));
+ return credit;
+}
 function renderHeader() {
  $("atlas-heading").textContent=tr("heading");
  $("atlas-subtitle").textContent=tr("subtitle");
@@ -130,15 +143,25 @@ function renderSummary(){
   return;
  }
  for(const entry of records){
-  const li=make("li","atlas-result");
+  const photo=chosenPhoto(entry);
+  const li=make("li","atlas-result"+(photo?" atlas-result--photo":""));
   const button=make("button","atlas-result-button");
   button.type="button";button.dataset.atlasId=entry.id;
   button.setAttribute("aria-label",tr("openFolio")+": "+entry.name);
   button.setAttribute("aria-pressed",String(entry.id===state.selectedId));
   const media=make("span","atlas-result-media");
-  // Exact-site approved imagery has not been transferred. No demo photographs.
-  media.innerHTML=renderSacredPlaceFallback(
-    {place_type:entry.place_type||"church"},state.language,"preview");
+  if(photo){
+   const img=make("img","atlas-result-photo");
+   img.src=photo.src;
+   img.alt=state.language==="fr"?photo.alt_fr:photo.alt_en;
+   img.loading="lazy";img.decoding="async";
+   img.style.objectPosition=photo.card_position;
+   media.append(img,make("small","atlas-result-photo-credit",
+     photo.photographer+" · "+photo.license));
+  }else{
+   media.innerHTML=renderSacredPlaceFallback(
+     {place_type:entry.place_type||"church"},state.language,"preview");
+  }
   const copy=make("span","atlas-result-copy");
   copy.append(make("small","atlas-result-kicker",recordBadge(entry)));
   copy.append(make("strong","atlas-result-name",entry.name));
@@ -247,13 +270,22 @@ function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
   root.append(closeAll);
  }
  const sc=make("div","atlas-folio-scroll");
- const hero=make("header","atlas-folio-hero atlas-folio-hero-band");
- // The donor's .hero would take a verified exact-site photograph. This
- // fallback is deliberately marked as a symbol, never a licensed photo.
- const media=make("div","atlas-folio-hero-symbol");
- media.innerHTML=renderSacredPlaceFallback(
-   {place_type:record.place_type||record.venue_type||"church"},
-   state.language,"preview");
+ const photo=chosenPhoto(record);
+ const hero=make("header","atlas-folio-hero "+
+   (photo?"atlas-folio-hero-photo":"atlas-folio-hero-band"));
+ let media;
+ if(photo){
+  media=make("img","atlas-folio-photo-image");
+  media.src=photo.src;
+  media.alt=state.language==="fr"?photo.alt_fr:photo.alt_en;
+  media.decoding="async";
+  media.style.objectPosition=photo.hero_position;
+ }else{
+  media=make("div","atlas-folio-hero-symbol");
+  media.innerHTML=renderSacredPlaceFallback(
+    {place_type:record.place_type||record.venue_type||"church"},
+    state.language,"preview");
+ }
  const title=make("div","atlas-folio-ttl");
  title.append(make("small","",
    record.community_id==="ICKSP"?"ICKSP · "+record.country_code:
@@ -261,6 +293,7 @@ function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
  title.append(make("h1","",record.name));
  if(record.community_id==="ICKSP")title.append(make("p","",record.address));
  hero.append(media,title);sc.append(hero);
+ if(photo)sc.append(photoCredit(photo));
  const actions=make("div","atlas-folio-actions");
  // These links point to source/indicative map positions, not a verified
  // entrance or confirmed service. No "Directions" wording is inferred.
@@ -310,8 +343,10 @@ function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
    [state.language==="fr"?"Repère":"Pin",sitePrecision(record,state.language)],
    [state.language==="fr"?"Desservi par":"Served by",record.community_id==="ICKSP"?
      "Institute of Christ the King Sovereign Priest":null],
-   [state.language==="fr"?"Photographie":"Photograph",state.language==="fr"?
-     "Aucune photographie du lieu approuvée":"No approved exact-site photograph"]
+   [state.language==="fr"?"Photographie":"Photograph",photo?
+     photo.photographer+" · "+photo.license:
+     state.language==="fr"?"Aucune photographie du lieu approuvée":
+       "No approved exact-site photograph"]
   ]));
  const synopsis=sourceSynopsis(record,state.language);
  if(synopsis){

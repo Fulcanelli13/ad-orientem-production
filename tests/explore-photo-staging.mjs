@@ -30,6 +30,24 @@ assert.equal(manifest.assets.filter(a=>a.license==="CC BY-SA 4.0").length,5);
 const data=JSON.parse(readFileSync("site/explore/selected-sites.v1.json","utf8"));
 assert.equal(data.sacred.length,18);
 assert.equal(data.tlm.length,10);
-for(const item of [...data.sacred,...data.tlm])
- assert.equal(item.media_status,"NO_IMAGE_TRANSFERRED","Site may not use unstaged photos: "+item.id);
-console.log("PASS six owner-selected photo files: byte-size, SHA-256, WebP dimensions; no site import");
+const photoIds=new Set(manifest.assets.map(a=>a.place_id));
+for(const item of [...data.sacred,...data.tlm]){
+ const selected=photoIds.has(item.id);
+ assert.equal(item.media_status,selected?"OWNER_SELECTED_PHOTO_TRANSFERRED":"NO_IMAGE_TRANSFERRED",
+  "Incorrect photo transfer boundary: "+item.id);
+ if(!selected){assert.equal(item.media,undefined);continue;}
+ const staged=manifest.assets.find(a=>a.place_id===item.id);
+ assert.equal(item.media.src,"./explore/media/"+staged.staged_path.split("/").at(-1));
+ assert.equal(item.media.source_url,staged.source_url);
+ assert.equal(item.media.photographer,staged.photographer);
+ assert.equal(item.media.license,staged.license);
+ assert.equal(item.media.license_url,staged.license_url);
+ assert.equal(item.media.sha256,staged.derivative_sha256);
+ const publicationFile="site/"+item.media.src.slice(2);
+ const live=readFileSync(publicationFile);
+ const candidate=readFileSync(staged.staged_path);
+ assert.deepEqual(live,candidate,"Published image bytes must equal the owner-reviewed derivative");
+ assert.equal(createHash("sha256").update(live).digest("hex"),staged.derivative_sha256);
+}
+assert.equal(data.tlm.filter(x=>x.media).length,0);
+console.log("PASS six exact owner-selected Explore photos: published bytes, source rights, staged SHA-256, remaining 22 no-photo sites");

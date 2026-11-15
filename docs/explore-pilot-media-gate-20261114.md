@@ -1,6 +1,6 @@
 # Explore pilot — source-exact image release review (14 November 2026)
 
-**Disposition: SOURCE-VERIFIED RESEARCH CANDIDATES ONLY. No image authorized for transfer or publication by this report.**
+**Historical 14 November source audit:** the initial research-only hold and staging decisions below are retained as a record. Subsequent draft integration of six exact owner-selected images is documented at the end. **No public publication or merge is authorized.**
 
 ## Scope and immutable provenance
 
@@ -109,3 +109,14 @@ Initial composition constraints for the 226px horizontal Claude cards: portrait 
 The current Commons file pages state one CC0 and five CC BY-SA 4.0 licences. A future approved UI transfer must include photographer credit, source and licence links, notice of WebP resizing, and appropriate share-alike terms. Source labels and checksums passed; final responsive cropping, any additional underlying-property rights, and the owner’s visual sign-off are **not yet passed**.
 
 **Release status: HOLD**. Draft PR #1 remains unmerged, with no photographs in the served site and no deployment.
+
+
+## Six exact-owner-photo draft renderer integration — 15 November 2026
+
+The six source-identical, SHA-256 verified owner-selected WebPs are now **copied to `site/explore/media/` in production draft PR #1**, for screenshot-based review **only**. The original review candidates under `review/explore-photo-candidates/` remain pinned, with image bytes unchanged. These are the same six original research Git blobs, not new photographs, generated variants or automatic substitutions.
+
+The selected `site/explore/selected-sites.v1.json` has **six** `OWNER_SELECTED_PHOTO_TRANSFERRED` Sacred records with source URLs, authorship, original SHA-1, derivative SHA-256, current declared Commons licence, resized/WebP modification notice, bilingual alt text and explicit card/folio composition positions. **12/18 Sacred** records and **all 10 TLM** records retain `NO_IMAGE_TRANSFERRED` and Claude's existing no-photo symbol; all exact IDs, Excel CL2 pins and Mass schedule holds remain unchanged.
+
+The renderer adds **only photo-state branches**: Claude's original `.card .im+.bd` full-bleed photo overlay structure within the existing 226px swipe-card, and `.hero img` with `.cr` photo credit in the immersive Liber Locorum folio, retaining the present 548px hero container and approved Home design. Each visible card identifies the photographer and licence; folios include direct clickable links to the original Commons image and CC0/CC BY-SA 4.0 terms, plus the modification notice. No unrelated film effects, fonts, proportions or navigation changes are permitted.
+
+CI now verifies the exact six photo bytes against both staged research copies, source IDs, rights metadata, remaining 22 held records and real browser image load. Screenshots are written at 320/390/430/1440px, including photographic card and folio states. **A green functional CI result does NOT mean visual acceptance:** verify photographic crop, text contrast, attribution legibility and source-to-implementation parity against the original Claude HTML before the owner decides whether to merge. Physical device validation and owner sign-off remain open; the branch is **draft, unmerged and undeployed**. GitHub Actions and Pages are the only publication pipeline.

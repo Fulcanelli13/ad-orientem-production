@@ -29,10 +29,27 @@ for(const place of records.sacred){
   assert.ok(place.source_ids.length>=1&&place.geo.source_ref&&place.geo.source_url);
   assert.ok(place.geo.verified_at,"Coordinate source date missing: "+place.id);
   assert.ok(safeLink(place.geo.source_url));
-  assert.equal(place.media_status,"NO_IMAGE_TRANSFERRED");
+  assert.ok(["NO_IMAGE_TRANSFERRED","OWNER_SELECTED_PHOTO_TRANSFERRED"].includes(place.media_status));
+  if(place.media_status==="OWNER_SELECTED_PHOTO_TRANSFERRED"){
+    assert.ok(place.media.src.startsWith("./explore/media/"));
+    assert.ok(safeLink(place.media.source_url));
+    assert.ok(safeLink(place.media.license_url));
+    assert.ok(place.media.photographer && place.media.alt_en && place.media.alt_fr);
+  } else assert.equal(place.media,undefined,"Held places cannot have photo metadata");
+
   if(place.geo.precision==="complex_anchor")
     assert.match(sitePrecision(place,"en"),/Indicative/);
 }
+const selectedPhotoIds=[
+ "place:MU:saint-louis-cathedral-port-louis",
+ "place:MU:marie-reine-de-la-paix-port-louis",
+ "place:PT:santarem-santissimo-milagre",
+ "place:ES:santiago-compostela-cathedral",
+ "place:ES:basilica-del-pilar-zaragoza",
+ "place:PH:national-shrine-of-our-lady-of-lourdes-quezon-city"
+];
+assert.deepEqual(records.sacred.filter(x=>x.media).map(x=>x.id).sort(),selectedPhotoIds.slice().sort(),
+ "Only six exact owner-selected photos may appear");
 for(const venue of records.tlm){
   assert.equal(publishable(venue,"tlm"),true,"Venue must pass official ministry and geo: "+venue.id);
   assert.equal(venue.community_id,"ICKSP");
