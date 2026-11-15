@@ -63,7 +63,7 @@ try{
   await page.waitForFunction(()=>document.querySelector("#atlas-count")?.textContent==="10 / 10",
     null,{timeout:20000});
   await page.waitForFunction(()=>
-    document.querySelector("#atlas-map .maplibregl-ctrl-zoom-out")&&
+    document.querySelector("#atlas-map .maplibregl-ctrl-attrib.maplibregl-compact .maplibregl-ctrl-attrib-button")&&
     document.querySelector("#atlas-sheet-handle")?.getBoundingClientRect().height>=20,
     null,{timeout:30000});
   const g=await page.evaluate(()=>{
@@ -81,8 +81,7 @@ try{
    };
    return {search:box("#atlas-search"),header:box("#atlas-view .atlas-top"),
     world:box("#atlas-world"),language:box("#atlas-language"),
-    zoomIn:box("#atlas-map .maplibregl-ctrl-zoom-in"),
-    zoomOut:box("#atlas-map .maplibregl-ctrl-zoom-out"),
+    attribution:box("#atlas-map .maplibregl-ctrl-attrib-button"),
     sheet:box("#atlas-sheet"),handle:box("#atlas-sheet-handle"),
     nav:box(".tabbar"),navButton:box('.tabbar [data-route="atlas"]'),
     peekCss:Number.parseFloat(document.querySelector("#atlas-sheet").style.getPropertyValue("--h")),
@@ -90,7 +89,7 @@ try{
     searchClickable:at("#atlas-search"),
     worldClickable:at("#atlas-world"),
     languageClickable:at("#atlas-language"),
-    zoomClickable:at("#atlas-map .maplibregl-ctrl-zoom-in"),
+    attributionClickable:at("#atlas-map .maplibregl-ctrl-attrib-button"),
     handleClickable:at("#atlas-sheet-handle"),
     overflow:document.documentElement.scrollWidth-innerWidth};
   });
@@ -106,17 +105,18 @@ try{
   requireClose(g.world.top,g.header.bottom+10,"Claude world offset "+contextName);
   requireClose(g.language.top,g.world.top,"Source language/world row "+contextName);
   assert.ok(g.language.top>=scenario.top+80,"Language button overlaps cutout "+contextName);
-  assert.ok(g.zoomIn.top>=scenario.top+8,"Map zoom controls overlap cutout "+contextName);
+  assert.ok(g.attribution.top>=scenario.top+8,
+   "Compact map attribution overlaps top cutout "+contextName);
   assert.ok(g.navButton.bottom<=scenario.height-scenario.bottom+1,
    "Navigation content intersects home indicator "+contextName+" "+JSON.stringify(g));
   requireClose(g.nav.bottom,scenario.height,"Tabbar bottom "+contextName);
   requireClose(g.sheet.bottom,g.nav.top,"Claude sheet/tabbar docking "+contextName);
-  assert.ok(g.zoomOut.bottom+10<=g.sheet.top,
-   "Bottom sheet covers visible map zoom buttons "+contextName+" "+JSON.stringify(g));
+  assert.ok(g.attribution.bottom<=g.sheet.top+1,
+   "Bottom sheet covers required compact attribution "+contextName+" "+JSON.stringify(g));
   requireClose(g.peekCss,scenario.peek,"Peek height "+contextName);
   requireClose(g.sheet.height,scenario.peek,"Visible peek height "+contextName);
   assert.ok(g.navClickable&&g.searchClickable&&g.worldClickable&&
-   g.languageClickable&&g.zoomClickable&&g.handleClickable,
+   g.languageClickable&&g.attributionClickable&&g.handleClickable,
    "A system-area control is obstructed "+contextName+" "+JSON.stringify(g));
   assert.ok(g.overflow<=1,"Horizontal overflow "+contextName);
   await page.screenshot({path:join("artifacts/production-explore-safe-area",
@@ -142,7 +142,7 @@ try{
   assert.deepEqual(errors,[],"Browser error for "+contextName);
   findings.push({name:scenario.label,searchTop:Math.round(g.search.top),
    sheetTop:Math.round(g.sheet.top),sheetHeight:Math.round(g.sheet.height),
-   zoomBottom:Math.round(g.zoomOut.bottom),
+   attributionBottom:Math.round(g.attribution.bottom),
    navContentBottom:Math.round(g.navButton.bottom),folioBackTop:Math.round(folio.backTop)});
   await context.close();
  }

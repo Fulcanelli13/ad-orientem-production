@@ -571,9 +571,10 @@ async function startMap(){
  state.map=new lib.Map({
   container:"atlas-map",style:BASEMAP,
   center:WORLD.center,zoom:WORLD.zoom,minZoom:1,maxZoom:18,
-  attributionControl:true,dragRotate:false,pitchWithRotate:false,
+  // Exact owner Claude donor: compact attribution, gestures only.
+  // Preserve provider/source credit behind MapLibre's accessible info control.
+  attributionControl:{compact:true},dragRotate:false,pitchWithRotate:false,
  });
- state.map.addControl(new lib.NavigationControl({showCompass:false}),"top-right");
  state.map.on("load",()=>{
   if(state.sourceLoaded)return;
   state.map.addSource("ao-selected-sites",{type:"geojson",data:featureCollection(visibleEntries())});

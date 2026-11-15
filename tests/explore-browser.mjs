@@ -201,14 +201,19 @@ try{
         bottomLeft:style.borderBottomLeftRadius,bottomRight:style.borderBottomRightRadius
       }})(),
       attribution:Boolean(document.querySelector("#atlas-map .maplibregl-ctrl-attrib")),
+      attributionCompact:document.querySelector("#atlas-map .maplibregl-ctrl-attrib")
+        ?.classList.contains("maplibregl-compact"),
       attributionText:document.querySelector("#atlas-map .maplibregl-ctrl-attrib")?.textContent||"",
-      zoomButtons:[...document.querySelectorAll("#atlas-map .maplibregl-ctrl-zoom-in,#atlas-map .maplibregl-ctrl-zoom-out")]
-        .map(el=>{
-          const r=el.getBoundingClientRect();
-          const target=document.elementFromPoint((r.left+r.right)/2,(r.top+r.bottom)/2);
-          return {visible:r.width>=29&&r.height>=29,
-            reachable:target===el||el.contains(target)};
-        })
+      attributionToggle:(()=>{
+        const button=document.querySelector("#atlas-map .maplibregl-ctrl-attrib-button");
+        if(!button)return null;
+        const r=button.getBoundingClientRect();
+        const target=document.elementFromPoint((r.left+r.right)/2,(r.top+r.bottom)/2);
+        return {width:r.width,height:r.height,
+          reachable:target===button||button.contains(target)};
+      })(),
+      zoomButtons:document.querySelectorAll(
+        "#atlas-map .maplibregl-ctrl-zoom-in,#atlas-map .maplibregl-ctrl-zoom-out").length
     };
   });
   assert.ok(dom.horizontalOverflow<=1,width+"px overflow: "+JSON.stringify(dom));
@@ -236,9 +241,12 @@ try{
     width+"px rendered map must credit OpenStreetMap contributors");
   assert.match(dom.attributionText,/OpenMapTiles/i,
     width+"px rendered map must credit OpenMapTiles");
-  assert.equal(dom.zoomButtons.length,2,width+"px missing map zoom controls");
-  assert.ok(dom.zoomButtons.every(button=>button.visible&&button.reachable),
-    width+"px zoom button covered by floating controls: "+JSON.stringify(dom.zoomButtons));
+  assert.equal(dom.zoomButtons,0,
+    width+"px unexpected white zoom buttons: Claude uses map gestures only");
+  assert.equal(dom.attributionCompact,true,
+    width+"px source requires MapLibre's compact information control");
+  assert.ok(dom.attributionToggle?.width>=20 && dom.attributionToggle?.reachable,
+    width+"px compact attribution info must remain tappable: "+JSON.stringify(dom));
   const rail=page.locator("#atlas-results");
   const railMoved=await rail.evaluate(el=>{
     el.scrollLeft=el.clientWidth;

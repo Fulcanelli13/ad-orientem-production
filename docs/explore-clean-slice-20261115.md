@@ -112,3 +112,20 @@ boundary are unchanged. Phone safe-area tests assert the real
 header-to-pill separation rather than relying on a hard-coded top
 position. No owner aesthetic approval or physical-device test is
 implied.
+
+## MapLibre controls: exact donor parity
+The owner donor `AO_Explore_AppDesign(1).html` (SHA-256
+`97d56600db6118e1a826004d90970db155aa7f7e2c5662e1b6acec0a04b4e771`)
+instantiates `new maplibregl.Map({attributionControl:{compact:true},…})`
+and **does not call `addControl(new NavigationControl(...))`**. The
+prior PR added two stark white +/− buttons and displayed a wide
+source-attribution bar above the sheet, neither reflected in the
+approved source screenshot. The current draft restores the exact
+compact-attribution option, removes only the extra zoom widget and
+retains MapLibre's normal gesture/keyboard navigation. Provider
+attribution is **not deleted or hidden**: its compact info control
+remains tappable above the sheet with full source links in the
+expandable panel. MapLibre CSS, source credits and terms remain intact.
+Regression assertions check the compact button's geometry and absence
+of the unsolicited zoom control in all browser widths and simulated
+safe-area layouts. This is donor fidelity, not a new UX aesthetic.
