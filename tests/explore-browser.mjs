@@ -9,7 +9,7 @@ import assert from "node:assert/strict";
 const base=resolve("site");
 const contentType={".html":"text/html; charset=utf-8",".js":"application/javascript; charset=utf-8",
   ".css":"text/css; charset=utf-8",".json":"application/json; charset=utf-8",
-  ".jpg":"image/jpeg",".png":"image/png",".svg":"image/svg+xml"};
+  ".jpg":"image/jpeg",".png":"image/png",".svg":"image/svg+xml",".webp":"image/webp"};
 const server=createServer((req,res)=>{
  try{
   let pathname=decodeURIComponent(new URL(req.url,"http://localhost").pathname);
