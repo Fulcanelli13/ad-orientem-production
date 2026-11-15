@@ -261,6 +261,10 @@ try{
   assert.equal(await handle.getAttribute("aria-expanded"),"true");
   assert.ok(await page.locator("#atlas-results").evaluate(el=>el.classList.contains("is-list")),
     "Claude expanded mode must present a real vertically scrollable list");
+  // A preceding search assertion leaves keyboard focus in the input.
+  // Blur for the neutral expanded-list review capture, without changing
+  // the production keyboard-focus indicator or interaction semantics.
+  await page.locator("#atlas-search").blur();
   await page.screenshot({path:join("artifacts/production-explore",width+"-en-sacred-list.png"),
     animations:"disabled",fullPage:false});
   await handle.click();
