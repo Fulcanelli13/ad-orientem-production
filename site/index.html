@@ -8,8 +8,10 @@
   <title>Ad Orientem</title>
   <link rel="stylesheet" href="./assets/brand/typography.css">
   <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./gallery/gallery.css">
   <link rel="stylesheet" href="./explore.css">
   <script src="./app.js" defer></script>
+  <script src="./gallery/gallery.js" defer></script>
 </head>
 <body>
   <div class="app">
@@ -105,6 +107,20 @@
   </nav>
   <p class="prayer-visual-note">Artwork is a Home visual study; these are not final Rosary mystery assignments.</p>
 </section>
+    <section class="sec sacred-art-entry" id="home-sacred-art">
+      <div class="sech"><h2>Sacred Art</h2><button type="button" data-route="gallery">View gallery ›</button></div>
+      <button class="gallery-home-door" type="button" data-route="gallery" aria-label="Open the permanent Sacred Art Gallery">
+        <span class="gallery-home-art" aria-hidden="true">
+          <img src="./gallery/images/rubens-holy-trinity-2000.webp" alt="" loading="lazy" decoding="async">
+          <img src="./gallery/images/van-dyck-lance-thrust-2400.webp" alt="" loading="lazy" decoding="async">
+          <img src="./gallery/images/tanner-annunciation-1920.webp" alt="" loading="lazy" decoding="async">
+        </span>
+        <span class="gallery-home-copy">
+          <span><strong>The permanent gallery</strong><small>Explore verified reproductions and the complete art catalogue</small></span>
+          <em aria-hidden="true">›</em>
+        </span>
+      </button>
+    </section>
     <section class="sec editorial-hold">
       <div class="sech"><h2>Customs &amp; traditions</h2><span class="section-hint">CURATION PENDING</span></div>
       <div class="custom-card"><span class="eyb">RESEARCH REMAINS SEPARATE</span><h3>The living customs of the Church</h3><p>Source-verified local customs will appear here after their owner-approved transfer.</p></div>
@@ -126,6 +142,30 @@
           <p class="module-status">NOT YET TRANSFERRED</p>
           <button class="return-home" type="button" data-route="home">Return to Home</button>
         </div>
+      </section>
+      <section class="view ao-gallery" id="gallery-view" aria-label="Sacred Art Gallery" hidden>
+        <button type="button" class="gallery-back" data-route="home" aria-label="Return to Home">‹</button>
+        <div class="gallery-kicker">AD ORIENTEM · SACRED ART</div>
+        <h1 id="gallery-title" tabindex="-1">The Gallery</h1>
+        <p class="gallery-intro">A permanent record of paintings chosen and researched for Ad Orientem. Original images join the gallery as their reproductions are verified.</p>
+        <div class="gallery-count" aria-label="Gallery inventory">
+          <div><strong id="gallery-photo-count">—</strong><small>PAINTINGS ON DISPLAY</small></div>
+          <div><strong id="gallery-total-count">—</strong><small>CATALOGUED RECORDS</small></div>
+          <div><strong id="gallery-angelus-count">—</strong><small>ANGELUS REVIEW</small></div>
+        </div>
+        <p class="gallery-collection-label">EXPLORE THE COLLECTION</p>
+        <label class="gallery-search"><span aria-hidden="true">⌕</span><input id="gallery-search" type="search" placeholder="Artist, painting, prayer…" aria-label="Search paintings by artist, title or prayer" autocomplete="off"></label>
+        <div class="gallery-filters" role="group" aria-label="Filter paintings">
+          <button type="button" data-gallery-filter="display" aria-pressed="true">On display</button>
+          <button type="button" data-gallery-filter="all" aria-pressed="false">All records</button>
+          <button type="button" data-gallery-filter="selected" aria-pressed="false">Owner selected</button>
+          <button type="button" data-gallery-filter="angelus" aria-pressed="false">Angelus review</button>
+          <button type="button" data-gallery-filter="matched" aria-pressed="false">Prayer matched</button>
+          <button type="button" data-gallery-filter="missing" aria-pressed="false">Images pending</button>
+        </div>
+        <p class="gallery-results-note" id="gallery-results-status" aria-live="polite">Preparing gallery catalogue…</p>
+        <div id="gallery-grid" class="gallery-grid" aria-label="Artwork catalogue"></div>
+        <button type="button" class="gallery-more" id="gallery-more" hidden>Show more paintings</button>
       </section>
       <section id="atlas-view" class="view atlas-view" aria-label="Explore the selected Atlas" hidden>
         <div class="atlas-frame">
@@ -179,6 +219,11 @@
       </section>
     </main>
 
+    <dialog id="gallery-detail-dialog" class="gallery-detail-dialog" aria-label="Sacred Art painting details">
+      <div class="gallery-detail-top"><span class="gallery-detail-label">AD ORIENTEM · ARTWORK</span><button type="button" id="gallery-detail-close" class="gallery-detail-close" aria-label="Close painting details">×</button></div>
+      <div id="gallery-detail-body"></div>
+    </dialog>
+
     <nav class="tabbar" aria-label="Main navigation">
       <button type="button" class="tab active" data-route="home" aria-current="page"><svg class="nav-svg icon-home" viewBox="0 0 160 160" fill="currentColor" fill-rule="evenodd" aria-hidden="true"><path d="M134 94 L87 51 L80 46 L78 47 L25 94 L24 96 L24 149 L25 151 L63 151 L64 150 L64 113 L66 109 L71 104 L76 102 L81 102 L87 104 L92 109 L94 113 L94 149 L95 151 L133 151 L135 149 L135 96 Z M118 17 L115 19 L115 34 L134 52 L135 51 L135 19 L133 17 Z M4 77 L4 80 L7 84 L14 91 L18 91 L79 37 L81 37 L141 91 L145 91 L155 80 L154 75 L153 75 L121 44 L120 44 L118 41 L117 41 L82 8 L78 8 L74 11 L58 27 L57 27 L45 39 L44 39 L32 51 L31 51 L19 63 L18 63 L6 75 L5 75 Z"/></svg><span>Today</span></button>
       <button type="button" class="tab" data-route="pray"><svg class="nav-svg icon-prayer" viewBox="0 0 160 160" fill="currentColor" fill-rule="evenodd" aria-hidden="true"><path d="M79 129 L77 132 L69 139 L69 145 L70 146 L71 154 L72 155 L87 155 L88 153 L88 149 L89 148 L89 144 L90 143 L90 139 L87 137 L80 130 L80 129 Z M81 95 L81 120 L82 121 L82 125 L83 127 L90 134 L91 134 L92 132 L92 128 L93 127 L93 122 L91 119 L90 111 L86 103 L86 101 L84 97 Z M77 95 L75 96 L72 102 L72 104 L68 113 L68 118 L65 123 L66 125 L66 129 L67 130 L67 134 L70 133 L75 128 L77 124 Z M35 102 L31 114 L31 117 L28 124 L28 127 L25 134 L24 141 L23 142 L23 148 L24 150 L29 154 L32 155 L66 155 L67 154 L61 125 L42 134 L40 136 L38 136 L36 134 L41 130 L63 119 L64 112 L71 95 L75 91 L78 90 L81 90 L87 94 L92 104 L94 110 L94 113 L95 114 L95 118 L97 120 L122 133 L122 135 L119 136 L97 125 L97 129 L96 130 L96 134 L95 135 L95 140 L94 141 L92 154 L93 155 L127 155 L132 153 L135 149 L136 143 L135 142 L132 128 L123 101 L115 94 L102 90 L96 87 L92 81 L89 83 L83 84 L82 85 L72 84 L67 81 L61 88 L42 95 L39 97 Z M104 71 L102 73 L102 75 L113 86 L116 86 L117 85 L117 82 L106 71 Z M57 72 L55 71 L52 72 L43 81 L42 84 L44 86 L47 86 L57 76 Z M110 52 L110 56 L112 57 L130 57 L132 56 L133 54 L131 51 L111 51 Z M26 53 L26 55 L29 57 L47 57 L49 55 L49 52 L48 51 L27 51 Z M75 34 L66 38 L62 42 L58 50 L57 60 L60 69 L67 77 L74 80 L85 80 L90 78 L94 75 L98 70 L101 63 L101 51 L98 44 L91 37 L84 34 Z M114 20 L112 20 L100 32 L99 35 L101 37 L104 37 L116 25 L116 22 Z M43 21 L43 25 L55 37 L58 37 L59 36 L58 31 L47 20 Z M79 4 L77 5 L76 7 L76 25 L77 27 L80 28 L82 26 L82 6 Z"/></svg><span>Pray</span></button>
@@ -196,7 +241,7 @@
   </dialog>
   <dialog id="about-dialog" aria-labelledby="about-title">
     <h2 id="about-title">Ad Orientem · New production foundation</h2>
-    <p>This is a source-guided Home V9 visual foundation. It includes one approved CC0 painting as a visual study, without assigning it to any liturgical date. The selected Atlas pilot is under draft review; liturgical texts, prayer engines and canonical calendar data have not yet been transferred.</p>
+    <p>This is a source-guided Home V9 visual foundation. It includes one approved CC0 painting as a visual study, without assigning it to any liturgical date. The selected Atlas pilot is under draft review; liturgical texts, prayer engines and canonical calendar data have not been transferred.</p>
     <p>The Cinzel, Cormorant Garamond and EB Garamond families, source-derived spacing, hero treatment, icon drawings and navigation come from the approved Home V9 prototype. Exact font-file parity and final visual acceptance remain subject to review.</p>
     <form method="dialog"><button type="submit">Close</button></form>
   </dialog>

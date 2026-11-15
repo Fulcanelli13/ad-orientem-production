@@ -27,7 +27,7 @@ const MODULES = Object.freeze({
   }
 });
 const byId = (id) => document.getElementById(id);
-const VALID_ROUTES = new Set(["home", ...Object.keys(MODULES)]);
+const VALID_ROUTES = new Set(["home", "gallery", ...Object.keys(MODULES)]);
 
 function routeFromHash() {
   const route = decodeURIComponent(window.location.hash.replace(/^#/, ""));
@@ -36,19 +36,21 @@ function routeFromHash() {
 function showRoute(route, updateHistory = true) {
   if (!VALID_ROUTES.has(route)) route = "home";
   const home = route === "home";
+  const gallery = route === "gallery";
   const explore = route === "atlas";
   byId("home-view").hidden = !home;
-  byId("module-view").hidden = home || explore;
+  byId("module-view").hidden = home || gallery || explore;
+  byId("gallery-view").hidden = !gallery;
   byId("atlas-view").hidden = !explore;
-  if (!home && !explore) {
+  if (!home && !gallery && !explore) {
     const details = MODULES[route];
     byId("module-title").textContent = details.title;
     byId("module-latin").textContent = details.latin;
     byId("module-description").textContent = details.description;
   }
   if (explore) {
-    // Load the curated Atlas only after its existing Home V9 entrance opens.
-    // The single MapLibre instance is reused on later visits.
+    // Mount the selected Atlas only when its existing Home entrance opens.
+    // Reuse the same MapLibre instance across later visits.
     import("./explore.js")
       .then(module => module.mountExplore())
       .catch(error => {
@@ -66,7 +68,12 @@ function showRoute(route, updateHistory = true) {
     window.history.pushState({ route }, "", "#" + route);
   }
   window.scrollTo({ top: 0, behavior: "instant" });
-  if (!home && !explore) byId("module-title").focus({ preventScroll: true });
+  if (gallery) {
+    byId("gallery-title").focus({ preventScroll: true });
+    window.AO_OPEN_SACRED_ART_GALLERY?.();
+  } else if (!home && !explore) {
+    byId("module-title").focus({ preventScroll: true });
+  }
 }
 function createCivilWeek() {
   const now = new Date();

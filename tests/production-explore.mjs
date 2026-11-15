@@ -158,4 +158,13 @@ for(const file of ["geo-provenance","heritage-map","place-source-synopsis","sacr
 assert.equal(exploreDebugState().mounted,false,"Map must not initialize before Atlas opens");
 assert.ok(statSync("site/explore/selected-sites.v1.json").size<55_000,
   "Curated subset only: not the full worldwide research registry");
+// Newer production main includes Sacred Art Gallery. Explore cannot
+// replace that independently published module or steal its route.
+assert.match(html,/id="gallery-view"/,"Permanent painting gallery missing after transfer");
+assert.match(html,/id="home-sacred-art"/,"Owner gallery entrance missing");
+assert.match(html,/src="\.\/gallery\/gallery\.js"/,"Gallery script must remain");
+assert.match(app,/const gallery = route === "gallery"/,"Gallery route must remain independent");
+assert.match(app,/byId\("gallery-view"\)\.hidden = !gallery/);
+assert.match(app,/window\.AO_OPEN_SACRED_ART_GALLERY\?\.\(\)/);
+assert.match(app,/byId\("atlas-view"\)\.hidden = !explore/);
 console.log("PASS production Explore: 18 Sacred, 10 TLM, verified sources, one map, four existing tabs and no fake schedules");

@@ -65,3 +65,19 @@ If the owner later publishes this slice and rejects it, revert its
 single integration commit. The research repository and previous draft
 are unaffected. Production is still deployed solely by the existing
 GitHub Pages Actions workflow.
+
+## Gallery coexistence on current main
+During validation, production main advanced to
+`c613d77bfa357250b2e6546d7ce63d6f024ca19e`, adding the owner's
+permanent Sacred Art Gallery (862 records and physical originals).
+The integration branch must **inherit that complete new main tree**
+and retain its `site/gallery/`, `site/app.js` Gallery route,
+`site/index.html` Gallery presentation, new `pages.yml`
+validation and existing prayer/artwork registry. Only the two shared
+Home navigation/mount files receive an intentional dual-route
+reconciliation. The Explore branch remains **draft**; the Gallery
+already published on main is not modified or rolled back.
+
+The clean integration parent merge can add a commit, but not restore the
+old 130-commit backlog. Review exact diff relative to the *updated*
+main and run both Explore and Gallery regression guards.
