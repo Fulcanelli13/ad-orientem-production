@@ -3,7 +3,7 @@
 // This production policy NEVER infers Marian/Christological/saint associations
 // from a place name or fabricates Mass activity from venue coordinates.
 export const CLAUDE_SACRED_GLYPHS=Object.freeze({
- marian:'<path d="M12 3l1.6 5.2L19 6.6l-3.4 4.3L21 12l-5.4 1.1L19 17.4l-5.4-1.6L12 21l-1.6-5.2L5 17.4l3.4-4.3L3 12l5.4 1.6L5 6.6l5.4 1.6z" fill="currentColor"/>',
+ marian:'<path d="M12 3l1.6 5.2L19 6.6l-3.4 4.3L21 12l-5.4 1.1L19 17.4l-5.4-1.6L12 21l-1.6-5.2L5 17.4l3.4-4.3L3 12l5.4-1.1L5 6.6l5.4 1.6z" fill="currentColor"/>',
  christ:'<path d="M10.2 3h3.6v7.2H21v3.6h-7.2V21h-3.6v-7.2H3v-3.6h7.2z" fill="currentColor"/>',
  saint:'<circle cx="12" cy="8.5" r="5.2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M6 21c.6-4.4 3-6.6 6-6.6s5.4 2.2 6 6.6z" fill="currentColor"/>',
  church:'<path d="M12 2.5v3M10.6 4h2.8" stroke="currentColor" stroke-width="1.4"/><path d="M5 12a7 7 0 0114 0z" fill="currentColor"/><path d="M4 12h16v8.5H4z" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M10.4 20.5v-4a1.6 1.6 0 013.2 0v4" fill="currentColor"/>'
