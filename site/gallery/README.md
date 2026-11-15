@@ -7,13 +7,13 @@ This is a **new, deliberately scoped** Sacred Art destination inside the existin
 ## What is real today
 
 - `catalogue.v1.json`: **all 862 currently tracked artwork records** (860 historical master records plus two preserved Angelus contextual records), searchable by artwork, artist, collection, scene category and reviewed prayer part.
-- **Eight locally held painting image files** (nine historical registry rows link to those eight paintings, including two interim museum-backed thumbnails for which larger originals are still required).
+- **Eight locally held painting image files** (nine historical registry rows link to those eight paintings, including one interim museum-backed thumbnail for which a larger original is still required).
 - `gallery.js`: searchable/scrollable gallery, curated-vs-research filter, On display, Angelus review, prayer-matched and image-pending views, and a full-composition painting/detail dialog.
 - `gallery.css`: source-derived Cinzel/Cormorant/EB typography and existing Home colours; scoped selectors only.
-- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for all eight on-display photographs, including quality classification for two interim previews.
+- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for all eight on-display photographs, including three improved archived originals and one remaining interim preview.
 - No external remote URLs are used for gallery image rendering. Museum URLs are links to source records, not image substitutions.
 
-**Important:** **862 artwork records does not mean 862 locally acquired paintings.** Eight paintings are currently displayed with local image files: six previously held reproductions (three Home JPEGs and three previously staged WebPs), plus two archive-derived museum-matched low-resolution previews. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
+**Important:** **862 artwork records does not mean 862 locally acquired paintings.** Eight paintings are currently displayed with local image files: six previously held reproductions (two Home JPEGs now replaced with original-size Met JPEGs and three previously staged WebPs), the archived full-size Hondius JPEG now replacing its preview, and one remaining Carracci low-resolution preview. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
 
 Artwork inclusion in this registry does not itself mean the owner approved it for prayer placement. The separate `owner_selected_artwork`, `prayer_parts`, `exact_prayer_cards`, `eligible_card_count` and image rights fields remain independent.
 
@@ -22,11 +22,13 @@ Artwork inclusion in this registry does not itself mean the owner approved it fo
 | Painting | Source | App image |
 |---|---|---|
 | Carlo Saraceni — *Paradise* | Existing Met CC0 Home image | `site/artwork/saraceni-paradise-v9.jpg` |
-| Philippe de Champaigne — *The Annunciation* | Existing Met CC0 Home image, also indexed under `released-photo:angelus` | `site/artwork/champaigne-annunciation-home-v9.jpg` |
-| Jean-Auguste-Dominique Ingres — *The Virgin Adoring the Host* | Existing Met CC0 Home image | `site/artwork/ingres-adoration-home-v9.jpg` |
+| Philippe de Champaigne — *The Annunciation* | Existing Met CC0 Home image, also indexed under `released-photo:angelus` | `site/gallery/images/champaigne-annunciation-met-438724-original.jpg` |
+| Jean-Auguste-Dominique Ingres — *The Virgin Adoring the Host* | Existing Met CC0 Home image | `site/gallery/images/ingres-adoration-met-438434-original.jpg` |
 | Anthony van Dyck — *The Lance Thrust* | Provenance-recorded KMSKA/Flemish Art Collection CC0 | `site/gallery/images/van-dyck-lance-thrust-2400.webp` |
 | Peter Paul Rubens — *The Holy Trinity* | Provenance-recorded KMSKA/Flemish Art Collection CC0 | `site/gallery/images/rubens-holy-trinity-2000.webp` |
 | Henry Ossawa Tanner — *The Annunciation* | Public Domain Mark 1.0 reproduction, SHA-verified research original | `site/gallery/images/tanner-annunciation-1920.webp` |
+| Abraham Hondius — *Christ among the Doctors* | SHA-verified research-archive full JPEG; independent Met master-photo matching pending | `site/gallery/images/hondius-christ-doctors-met-436672-original.jpg` |
+| Annibale Carracci — *The Burial of Christ* | Met-associated archived preview (full-size original pending) | `site/gallery/images/carracci-burial-of-christ-met-438338-preview.webp` |
 
 The three new public WebPs are **gallery reproductions only**. Their prior `app-data/sacred-art/staged-images/` references remain intact, with **prayer-level cinematic/image-quality QA held**. This gallery release is *not* permission to use those files as primary images in Angelus, Rosary, Mass or Calendar.
 
@@ -44,7 +46,7 @@ Future Claude prayer prototypes will reference this canonical artwork catalogue 
 
 ## Checks and rollback
 
-The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, eight image identities (including two limited preview files), no remote gallery image loading, and preservation of the four-tab navigation.
+The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, eight image identities (including one limited preview and three archived originals), no remote gallery image loading, and preservation of the four-tab navigation.
 
 The production branch's premerge commit is the rollback reference. Only the `site/` directory publishes.
 
@@ -58,3 +60,13 @@ Two more **previously owner-approved** Met paintings have permanent, locally hos
 The exact WebP bytes are now in `site/gallery/images/`; the museum photo source and pixel dimensions are recorded in `image-provenance.v1.json`. Met catalogue identity and corresponding CC0 photographic rights are documented, but those **8 KB/7 KB archived preview derivatives are NOT a replacement for the verified full-resolution institutional image**. They remain visible only as gallery previews, explicitly marked in the UI. A future original-image recovery should *replace their photos in the same artwork IDs*, never add duplicate artwork records or alter prayer assignments.
 
 **Coverage is now eight physical painting images across nine indexed records**, with 853 catalogue records still awaiting a local image. All 862 artwork entries, all Angelus review relationships and all existing prayer approvals remain unchanged.
+
+### Larger archived originals recovered · 15 November 2026
+
+Three existing owner-selected gallery records now use **real, locally hosted, larger JPEGs**, transferred from the active research archive at pinned commit `14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a`. The transfer was executed by a one-time GitHub Actions job on a feature branch and verified Git object hashes before committing binary files. The Met originals for the first two paintings also match SHA-256 hashes in the approved source manifest.
+
+- **Champaigne, The Annunciation:** Met object 438724; 3,055,151 bytes; 3,741×3,658; museum original SHA-256 `ae59a42e39896646d3d18d4761e04b8ce6fa1d84bfaa9f79bd23f8d72aa95be6`. Both historical catalogue IDs still point to one physical image. The small Home preview is untouched, so the donor design is preserved.
+- **Ingres, The Virgin Adoring the Host:** Met object 438434; 2,467,303 bytes; 3,122×3,813; museum original SHA-256 `973f73b66952bf34619cc75c6f6bfb38109a8877e95b48655605576c552ad934`. The small Home preview remains unchanged.
+- **Hondius, Christ among the Doctors:** Met object 436672; 2,015,792-byte JPEG copied byte-for-byte from `assets/prayer/released/hondius-doctors-original.jpg`, Git object SHA `29283ed54ca7c9913a6e377d47b74c2b4af0eab1`. The archived file is substantially larger than the interim preview; independent byte-matching to The Met's original photographic master remains outstanding, so provenance does not claim that stronger proof.
+
+The **gallery remains at 862 registry entries, 8 distinct on-display paintings across 9 image-bearing registry records**. No artworks, approvals, prayer cards, bottom tabs, navigation, Claude layouts or deployment platform were changed. The **Carracci burial painting is the only remaining interim low-resolution gallery preview** from this batch. Higher-resolution prayer-screen cinematic approval remains separate from gallery use.
