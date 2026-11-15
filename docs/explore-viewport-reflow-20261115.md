@@ -70,3 +70,13 @@ system bars, app-mode orientation APIs, hardware viewport cutouts,
 IME composition, real pinch gestures or physical-device performance.
 No actual phone was tested. Owner visual approval and physical-phone
 signoff remain open. Draft PR only; no merge or deployment.
+
+## Per-revision release proof
+
+Automated success is **commit-specific**. A previously green PR run does
+not validate later changes to the keyboard/rotation handling. The
+`Review selected Explore core` workflow must execute against the
+current PR head and pass both source-integrity and browser jobs, including
+the new synthetic keyboard/rotation cases, before this module can be
+proposed for owner visual signoff. An absent check counts as
+**not verified**, not as success; there is no auto-merge or auto-deploy.
