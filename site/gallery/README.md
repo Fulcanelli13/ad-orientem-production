@@ -7,13 +7,13 @@ This is a **new, deliberately scoped** Sacred Art destination inside the existin
 ## What is real today
 
 - `catalogue.v1.json`: **all 862 currently tracked artwork records** (860 historical master records plus two preserved Angelus contextual records), searchable by artwork, artist, collection, scene category and reviewed prayer part.
-- **Six locally held, actual painting image files** (seven historical registry rows link to those six paintings because the same Metropolitan Museum Champaigne object exists under two record IDs).
+- **Eight locally held painting image files** (nine historical registry rows link to those eight paintings, including two interim museum-backed thumbnails for which larger originals are still required).
 - `gallery.js`: searchable/scrollable gallery, curated-vs-research filter, On display, Angelus review, prayer-matched and image-pending views, and a full-composition painting/detail dialog.
 - `gallery.css`: source-derived Cinzel/Cormorant/EB typography and existing Home colours; scoped selectors only.
-- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for the six on-display photographs.
+- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for all eight on-display photographs, including quality classification for two interim previews.
 - No external remote URLs are used for gallery image rendering. Museum URLs are links to source records, not image substitutions.
 
-**Important:** **862 artwork records does not mean 862 locally acquired paintings.** Exactly six original local reproductions are currently displayed (three pre-existing Home JPEGs, three copied byte-for-byte from approved nonpublished WebP staging). The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
+**Important:** **862 artwork records does not mean 862 locally acquired paintings.** Eight paintings are currently displayed with local image files: six previously held reproductions (three Home JPEGs and three previously staged WebPs), plus two archive-derived museum-matched low-resolution previews. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
 
 Artwork inclusion in this registry does not itself mean the owner approved it for prayer placement. The separate `owner_selected_artwork`, `prayer_parts`, `exact_prayer_cards`, `eligible_card_count` and image rights fields remain independent.
 
@@ -44,6 +44,17 @@ Future Claude prayer prototypes will reference this canonical artwork catalogue 
 
 ## Checks and rollback
 
-The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, six image identities, no remote gallery image loading, and preservation of the four-tab navigation.
+The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, eight image identities (including two limited preview files), no remote gallery image loading, and preservation of the four-tab navigation.
 
 The production branch's premerge commit is the rollback reference. Only the `site/` directory publishes.
+
+### Incremental gallery image batch · 15 November 2026
+
+Two more **previously owner-approved** Met paintings have permanent, locally hosted images. They are *interim previews*, not high-resolution museum originals:
+
+- **Abraham Hondius — *Christ among the Doctors*** (1668), The Met object 436672, accession 1974.368, 410×316 source WebP, 8,434 bytes. Archived owner-approved preview. Museum-backed reproduction: [Met object](https://www.metmuseum.org/art/collection/search/436672), [Met-donated CC0 photo record](https://commons.wikimedia.org/wiki/File:Christ_among_the_Doctors_MET_DP147792.jpg).
+- **Annibale Carracci — *The Burial of Christ*** (1595), The Met object 438338, accession 1998.188, 379×470 source WebP, 6,762 bytes. Archived owner-approved preview. Museum-backed reproduction: [Met object](https://www.metmuseum.org/art/collection/search/438338), [Met-donated CC0 photo record](https://commons.wikimedia.org/wiki/File:The_Burial_of_Christ_MET_1998.188.jpg).
+
+The exact WebP bytes are now in `site/gallery/images/`; the museum photo source and pixel dimensions are recorded in `image-provenance.v1.json`. Met catalogue identity and corresponding CC0 photographic rights are documented, but those **8 KB/7 KB archived preview derivatives are NOT a replacement for the verified full-resolution institutional image**. They remain visible only as gallery previews, explicitly marked in the UI. A future original-image recovery should *replace their photos in the same artwork IDs*, never add duplicate artwork records or alter prayer assignments.
+
+**Coverage is now eight physical painting images across nine indexed records**, with 853 catalogue records still awaiting a local image. All 862 artwork entries, all Angelus review relationships and all existing prayer approvals remain unchanged.
