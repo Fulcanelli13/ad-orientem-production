@@ -119,8 +119,35 @@ try{
    g.languageClickable&&g.attributionClickable&&g.handleClickable,
    "A system-area control is obstructed "+contextName+" "+JSON.stringify(g));
   assert.ok(g.overflow<=1,"Horizontal overflow "+contextName);
+  const attributionState=await page.evaluate(()=>{
+   const root=document.querySelector("#atlas-map .maplibregl-ctrl-attrib");
+   const inner=root?.querySelector(".maplibregl-ctrl-attrib-inner");
+   return {classes:root?.className,expanded:root?.classList.contains("maplibregl-compact-show"),
+    innerDisplay:inner?getComputedStyle(inner).display:null,
+    links:[...(inner?.querySelectorAll("a")||[])].map(a=>a.href)};
+  });
+  assert.equal(attributionState.expanded,false,
+   "Claude info control must start collapsed: "+contextName+" "+JSON.stringify(attributionState));
+  assert.equal(attributionState.innerDisplay,"none",
+   "Source credits should not obscure the map before Info opens: "+contextName+
+   " "+JSON.stringify(attributionState));
+  assert.ok(attributionState.links.some(link=>/openstreetmap\.org/.test(link)),
+   "OpenStreetMap attribution link must remain in the DOM: "+contextName);
   await page.screenshot({path:join("artifacts/production-explore-safe-area",
     scenario.label+"-map.png"),animations:"disabled",fullPage:false});
+  if(scenario.label==="baseline-390"){
+   await page.locator("#atlas-map .maplibregl-ctrl-attrib-button").click();
+   const opened=await page.evaluate(()=>{
+    const root=document.querySelector("#atlas-map .maplibregl-ctrl-attrib");
+    const inner=root.querySelector(".maplibregl-ctrl-attrib-inner");
+    return {expanded:root.classList.contains("maplibregl-compact-show"),
+      visible:getComputedStyle(inner).display!=="none",
+      text:inner.textContent};
+   });
+   assert.ok(opened.expanded&&opened.visible&&/OpenStreetMap/.test(opened.text),
+    "Info must disclose full map-provider credits: "+JSON.stringify(opened));
+   await page.locator("#atlas-map .maplibregl-ctrl-attrib-button").click();
+  }
   await page.locator("#atlas-lens-sacred").click();
   await page.waitForFunction(()=>document.querySelector("#atlas-count")?.textContent==="18 / 18");
   await page.locator("#atlas-results .atlas-result-button").first().click();

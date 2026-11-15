@@ -129,3 +129,15 @@ expandable panel. MapLibre CSS, source credits and terms remain intact.
 Regression assertions check the compact button's geometry and absence
 of the unsolicited zoom control in all browser widths and simulated
 safe-area layouts. This is donor fidelity, not a new UX aesthetic.
+
+The initial compact-mode screenshots still exposed a long attribution
+line above the sheet, although the `maplibregl-compact` class was
+present. Claude's *bundled* MapLibre stylesheet includes explicit
+collapsed/expanded attribution-inner rules; the production loader
+gets its CSS separately and can lack the correct cascade. The
+scoped fallback now reproduces those two source rules locally:
+the text is concealed only when the compact button is **closed**,
+and fully restored (including OSM/provider source links) when opened.
+The test checks collapsed layout and interaction on the baseline
+phone, plus collapsed content and retained links on five phone safe
+area configurations. Attribution remains available and is not removed.
