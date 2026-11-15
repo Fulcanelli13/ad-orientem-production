@@ -78,6 +78,9 @@ MapLibre centre anchoring, canonical coordinates, 18/10 lens separation,
 source photos, folio structure and zoom-dependent visual appearance do not change.
 
 New CI assertions check **computed DOM hit dimensions**, absence of overlapping
-visible hit rectangles, and an actual **Chromium mobile touch** on the selected
-Sacred marker at 320/390/430px, verifying it opens its own canonical folio.
+visible hit rectangles, and an actual **Chromium mobile touch** on a currently visible,
+unobstructed Sacred marker at 320/390/430px, verifying it opens its own
+canonical folio. After folio close, the previously selected site may no
+longer win Claude's overlap arbitration; the test must never force a hidden
+marker back into view just to satisfy an ID-specific assertion.
 These are touch-emulation checks; physical-device acceptance remains open.

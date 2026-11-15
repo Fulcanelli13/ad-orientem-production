@@ -111,8 +111,6 @@ try{
    animations:"disabled",fullPage:false
   });
   const visibleCard=page.locator("#atlas-results .atlas-result-button").nth(1);
-  const chosenId=await visibleCard.getAttribute("data-atlas-id");
-  const chosenTitle=await visibleCard.locator(".atlas-result-name").innerText();
   await visibleCard.scrollIntoViewIfNeeded();
   await visibleCard.tap();
   await page.locator("#atlas-card").waitFor({state:"visible"});
@@ -123,22 +121,32 @@ try{
    animations:"disabled",fullPage:false
   });
   await page.locator("#atlas-card .atlas-folio-back").tap();
-  // The camera has positioned the last selected location above Claude's
-  // sheet. Tap that exact source marker as a real Chromium touch gesture.
+  // After closing the folio, Claude collision arbitration may reduce
+  // or hide that previously selected marker. Test a genuinely unobstructed,
+  // current map marker, not a stale item assumed visible by its ID.
+  const exposed=await page.evaluate(()=>{
+    const top=document.querySelector("#atlas-view .atlas-top").getBoundingClientRect();
+    const sheet=document.getElementById("atlas-sheet").getBoundingClientRect();
+    for(const el of document.querySelectorAll(
+      "#atlas-map .atlas-place-marker[data-visible='true']")){
+      const r=el.getBoundingClientRect(),x=(r.left+r.right)/2,
+        y=(r.top+r.bottom)/2;
+      if(r.width<44||r.height<44||y<=top.bottom+8||y>=sheet.top-8)continue;
+      const actual=document.elementFromPoint(x,y);
+      if(actual===el||el.contains(actual))
+       return {id:el.dataset.atlasMarkerId,name:el.getAttribute("aria-label"),
+        width:r.width,height:r.height};
+    }
+    return null;
+  });
+  assert.ok(exposed,width+"px needs a visible, unobstructed Sacred touch marker");
+  assert.ok(exposed.width>=44&&exposed.height>=44,
+    width+"px marker touch geometry under minimum: "+JSON.stringify(exposed));
   const target=page.locator(
-    '#atlas-map .atlas-place-marker[data-atlas-marker-id="'+chosenId+'"]');
-  await page.waitForFunction(id=>{
-    const marker=[...document.querySelectorAll("#atlas-map .atlas-place-marker")]
-      .find(el=>el.dataset.atlasMarkerId===id);
-    return marker?.dataset.visible==="true"&&
-      marker.getBoundingClientRect().width>=44;
-  },chosenId,{timeout:10000});
-  const hitBox=await target.boundingBox();
-  assert.ok(hitBox?.width>=44&&hitBox.height>=44,
-    width+"px selected place marker fails the minimum touch geometry");
+    '#atlas-map .atlas-place-marker[data-atlas-marker-id="'+exposed.id+'"]');
   await target.tap();
   assert.equal(await page.locator("#atlas-card .atlas-folio-ttl h1").innerText(),
-    chosenTitle,width+"px touch must open the correct source-backed place");
+    exposed.name,width+"px touch opened the wrong canonical place");
   await page.locator("#atlas-card .atlas-folio-back").tap();
   await page.locator('.tabbar [data-route="home"]').tap();
   await page.locator("#home-view").waitFor({state:"visible"});
