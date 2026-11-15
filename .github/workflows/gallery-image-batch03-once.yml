@@ -73,5 +73,18 @@ jobs:
           git add site/gallery/images/{carracci-burial-met-438338-1592,cavallino-shepherds-cma-1968-100-2000,girardin-trinity-cma-1960-79-2000,latour-penitent-magdalen-met-436839-2000,saraceni-paradise-met-437607-2000}.webp app-data/sacred-art/gallery-image-import-batch03.v1.json
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Recover five selected gallery reproductions with source checksums"
-          git push origin "HEAD:$GITHUB_REF_NAME"
+          if ! git diff --cached --quiet; then
+            git commit -m "Recover five selected gallery reproductions with source checksums"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
+      - name: Validate source hashes, gallery catalogue and preserved prayer contracts
+        shell: bash
+        run: |
+          set -euo pipefail
+          node --check site/gallery/gallery.js
+          node tests/sacred-art-gallery.mjs
+          node tests/production-shell.mjs
+          node tools/validate-prayer-artwork-assets.mjs
+          node tests/prayer-artwork-activation.mjs
+          node tests/angelus-a1-donor-crosswalk.mjs
+          node tests/angelus-part-artwork-coverage.mjs
