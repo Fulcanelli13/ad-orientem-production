@@ -57,3 +57,28 @@ The original Claude-derived A1 adapter and its unmodified styling file are pinne
 `angelus-a1-stage-bridge.mjs` returns source-owned movements with stable editorial aliases and unit-scoped eligible art; it cannot activate artwork. `tests/angelus-a1-donor-crosswalk.mjs` validates the grouping and rejects implicit stage primaries.
 
 No actual Claude prayer screen is transferred yet. The correct follow-on is to select and preserve the later, explicit **13 November Caption Match prototype** (not merely this 11 November A1 donor), reconcile its real screen IDs, canonical EN/FR/Latin recitation and visual/camera transitions, then perform 320/390/desktop QA. Preserve the interactive church entrance and all established prayer navigation.
+
+
+## Unified Angelus painting review — all works preserved (15 November)
+
+The user-supplied `AO_Angelus_Unified_Painting_Prototypes_Review(1).html` (SHA-256 `c9534432641836971440115b74c5523e17c35dba9812b6c8d7d5e54bf43c6131`) contains 36 DISTINCT artwork IDs and 47 original part-to-artwork links. All are now permanently indexed in `angelus-part-paintings.v1.json` and queryable through `angelus-part-paintings.mjs`.
+
+| Original painting part | Candidates | Status |
+|---|---:|---|
+| Angelus versicles | 11 | Prayer-family candidate; not a chosen A1-stage painting |
+| Hail Mary | 12 | Reusable complete-prayer-unit candidates |
+| Angelus Collect | 1 | Exact prayer-unit candidate, never automatically the entire stage background |
+| Gloria Patri | 5 | Part-level choices, no confirmed primary |
+| Trinity scene-only alternatives | 5 | Approved in other contexts, **not approved for Gloria** |
+| Faithful departed | 1 | Prayer-part candidate, rights restrictions retained |
+| Souls contextual alternatives | 2 | Historical All Souls selection / proposal; **not an Angelus approval** |
+| Regina Cæli | 4 | Prayer-family candidates |
+| Regina Cæli Collect | 6 | Exact prayer-unit candidates |
+
+The **40 part-level owner selections** and **seven contextual links** remain explicitly distinct. The source's display/default selections were for a local review prototype; they are NOT imported as final app defaults. Every original painting is attributed to one or more groups, with no loss of source IDs, provenance or rights warnings. Two historical Souls IDs absent from the previous 860-entry catalogue remain separately represented; no guessed deduplication.
+
+`angelusPaintingOptionsForStage()` and `angelusPaintingsForPart()` return *editorial options*, not ready-to-display image sources. Existing local images are referenced where known, but independent photographic rights, mobile QA and owner-selected primaries remain separate gates. Never embed source review's remote preview URLs in runtime prayer screens.
+
+`app-data/sacred-art/artwork-assignment-index.v2.json` now accounts for all 860 earlier catalogue records plus the two historical context records: 862 total tracked. This is a **coverage inventory**, not a claim that all historical paintings have been assigned to cards: 611 of the earlier catalogue records still have no verified prayer-card, part, destination or scene relation. That queue must be curated rather than auto-fitted by title or assumed to be owner-approved.
+
+Run `node tests/angelus-part-artwork-coverage.mjs` to certify all source rows and preserved scope. Claude's presentational original remains unaltered; these mappings do not replace the UI.

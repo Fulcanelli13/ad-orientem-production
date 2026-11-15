@@ -25,3 +25,12 @@ The full 3,516-entry historical archive stays in the original research repositor
 Run `node tools/validate-prayer-artwork-assets.mjs` after checkout. It validates all stable IDs, link referential integrity, staged WebP bytes, and absence of implicit publication permission. When prayer modules are implemented, bind explicitly approved runtime IDs to locally QA-cleared images, preserving the approved Claude integrated experience and painting-led camera animations.
 
 **Only `site/` is published** by the existing GitHub Actions/Pages workflow. No site, UI, typography or deployment workflow changes are included in this import.
+
+
+## Unified assignment coverage (15 November, add-on)
+
+- `artwork-assignment-index.v2.json`: cross-reference of **all 860** catalogue records plus **two historical Angelus Souls records** absent from the previous master, totaling 862 tracked records.
+- The source records **660 original card–art links** plus **47 distinct part associations** from the uploaded Angelus review (36 works, nine part groups).
+- The master tracks unassigned records instead of inventing prayer placements: **611 older records require further editorial classification**.
+- The complete review is in `site/prayers/angelus-part-paintings.v1.json`; seven associations are contextual/scene-only and are NOT owner-approved Angelus part selections.
+- Nothing is auto-published or selected as a prayer-card primary. The original 860-item catalogue and original 660 card links remain intact.

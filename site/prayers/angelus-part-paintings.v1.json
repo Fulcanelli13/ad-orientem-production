@@ -1,0 +1,1759 @@
+{
+  "schema": "ao.prayers.angelus-part-painting-registry.v1",
+  "generated_at": "2026-11-15",
+  "source": {
+    "filename": "AO_Angelus_Unified_Painting_Prototypes_Review(1).html",
+    "sha256": "c9534432641836971440115b74c5523e17c35dba9812b6c8d7d5e54bf43c6131",
+    "content_blocks": [
+      "CURATED",
+      "CURATED_GROUPS",
+      "CURATED_ALIAS",
+      "CURATED_EXACT_IMAGES"
+    ],
+    "review_decisions_embedded": false,
+    "demo_default_choices_are_not_owner_approval": true
+  },
+  "policy": {
+    "schema_stable_id": "use original artwork_id; no inferred merged physical-object identity",
+    "library_scope": "complete_uploaded_angelus_review",
+    "all_contextual_work_ids_preserved": true,
+    "all_group_links_recorded": true,
+    "prayer_stage_primary_authorization": false,
+    "automatic_external_image_fetch_in_app": false,
+    "do_not_treat_context_as_owner_choice": true,
+    "source_rights_not_independently_revalidated": true,
+    "do_not_replace_claude_design": true
+  },
+  "editorial_parts": [
+    {
+      "part_id": "angelus",
+      "label": "Angelus · versicles",
+      "kind": "PRAYER_FAMILY",
+      "source_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "canonical_display_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "versicle_response",
+      "artwork_count": 11
+    },
+    {
+      "part_id": "ave",
+      "label": "Hail Mary",
+      "kind": "PRAYER_UNIT",
+      "source_scope": "OWNER_SELECTED_FOR_RECURRING_PRAYER_UNIT_NOT_EXACT_STAGE_BACKGROUND",
+      "canonical_display_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "ave_maria",
+      "artwork_count": 12
+    },
+    {
+      "part_id": "angelus_collect",
+      "label": "Angelus · Oremus",
+      "kind": "PRAYER_UNIT",
+      "source_scope": "EXACT_PRAYER_UNIT_CANDIDATE_NO_STAGE_PRIMARY",
+      "canonical_display_keys": [
+        "angelus.a1.prayer"
+      ],
+      "unit_role": "collect",
+      "artwork_count": 1
+    },
+    {
+      "part_id": "dox",
+      "label": "Gloria Patri",
+      "kind": "PRAYER_UNIT",
+      "source_scope": "OWNER_SELECTED_FOR_GLORIA_PATRI_NOT_EXACT_A1_SCREEN",
+      "canonical_display_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "gloria_patri",
+      "artwork_count": 5
+    },
+    {
+      "part_id": "dox_scene",
+      "label": "Trinity · scene selections",
+      "kind": "SCENE_CONTEXT",
+      "source_scope": "APPROVED_FOR_OTHER_CONTEXT_NOT_SELECTED_FOR_GLORIA",
+      "canonical_display_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "gloria_patri",
+      "artwork_count": 5
+    },
+    {
+      "part_id": "departed",
+      "label": "Faithful departed",
+      "kind": "PRAYER_UNIT",
+      "source_scope": "OWNER_SELECTED_FOR_DEPARTED_PRAYER_UNIT_NOT_EXACT_SCREEN",
+      "canonical_display_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "faithful_departed",
+      "artwork_count": 1
+    },
+    {
+      "part_id": "departed_context",
+      "label": "Souls · earlier choices",
+      "kind": "CONTEXTUAL_ALTERNATIVE",
+      "source_scope": "HISTORICAL_ALL_SOULS_OR_UNAPPROVED_CONTEXT_NOT_ANGELUS_PLACEMENT",
+      "canonical_display_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "faithful_departed",
+      "artwork_count": 2
+    },
+    {
+      "part_id": "regina",
+      "label": "Regina Cæli",
+      "kind": "PRAYER_FAMILY",
+      "source_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "canonical_display_keys": [
+        "regina_caeli.a1.rejoice",
+        "regina_caeli.a1.resurrection"
+      ],
+      "unit_role": "regina_antiphon",
+      "artwork_count": 4
+    },
+    {
+      "part_id": "regina_collect",
+      "label": "Regina Cæli · Oremus",
+      "kind": "PRAYER_UNIT",
+      "source_scope": "EXACT_PRAYER_UNIT_CANDIDATE_NO_STAGE_PRIMARY",
+      "canonical_display_keys": [
+        "regina_caeli.a1.prayer"
+      ],
+      "unit_role": "collect",
+      "artwork_count": 6
+    }
+  ],
+  "artworks": [
+    {
+      "artwork_id": "REVIEW::smk:KMSSP13",
+      "title": "The Annunciation",
+      "artist": "Federico Barocci",
+      "institution": "Statens Museum for Kunst, Copenhagen",
+      "source_url": "https://open.smk.dk/artwork/image/KMSsp13",
+      "prototype_preview_url": "https://iip-thumb.smk.dk/iiif/jp2/br86b7451_kmssp13.tif.jp2/full/!2048,/0/default.jpg",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "SMK Open free use for out-of-copyright painting",
+      "source_placement_labels": [
+        "ave",
+        "angelus",
+        "j1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::smk:KMSSP13",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "CANONICAL::cma-159488",
+      "title": "The Trinity",
+      "artist": "Hendrik van Balen (Flemish, 1575–1632)",
+      "institution": "Cleveland Museum of Art",
+      "source_url": "https://clevelandart.org/art/1996.26",
+      "prototype_preview_url": "https://openaccess-cdn.clevelandart.org/1996.26/1996.26_web.jpg",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "source_rights_note": "NOT_CERTIFIED",
+      "source_placement_labels": [
+        "cross",
+        "dox"
+      ],
+      "source_scene_ids": [
+        "DEV-06"
+      ],
+      "existing_master_catalogue_id": "CANONICAL::cma-159488",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::commons:21885843",
+      "title": "The Annunciation (1898)",
+      "artist": "Henry Ossawa Tanner",
+      "institution": "Philadelphia Museum of Art, W1899-1-1",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Henry_Ossawa_Tanner%2C_American_%28active_France%29_-_The_Annunciation_-_Google_Art_Project.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Henry_Ossawa_Tanner%2C_American_%28active_France%29_-_The_Annunciation_-_Google_Art_Project.jpg?width=720",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "Commons PDM file via Google Art Project; museum webpage rights notice is educational-use only",
+      "source_placement_labels": [
+        "angelus",
+        "j1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::commons:21885843",
+      "source_alias_key": null,
+      "local_binary": {
+        "source_repo_file": "app-data/sacred-art/staged-images/tanner-annunciation-1898-1920.webp",
+        "published_file": null,
+        "stage": "STAGED_ONLY",
+        "rights": "Wikimedia Commons Public Domain Mark 1.0; not a CC0 grant",
+        "verified_file_size": 287246,
+        "verified_git_blob": "76987cc209da38f7fe500e09a44f631990fd4cb4"
+      },
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "released-photo:souls",
+      "title": "Madonna and Child with Souls in Purgatory",
+      "artist": "Luca Giordano",
+      "institution": "Museum of Fine Arts, Houston · BF.2004.1",
+      "source_url": "https://emuseum.mfah.org/objects/64360/madonna-and-child-with-souls-in-purgatory",
+      "prototype_preview_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Luca_Giordano_-_Madonna_and_Child_with_Souls_in_Purgatory_-_BF.2004.1_-_Museum_of_Fine_Arts.jpg",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "MFAH explicitly limits website public-domain images to non-commercial use; commercial/retail requires licensing",
+      "source_placement_labels": [
+        "departed"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "released-photo:souls",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "NEW::met-917618",
+      "title": "The Holy Trinity",
+      "artist": "José Campeche",
+      "institution": "Metropolitan Museum of Art",
+      "source_url": "https://images.metmuseum.org/CRDImages/ad/original/DP-44679-003.jpg",
+      "prototype_preview_url": "https://images.metmuseum.org/CRDImages/ad/original/DP-44679-003.jpg",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "source_rights_note": "Met CC0 — 2700×4000 master acquired and SHA-256 verified",
+      "source_placement_labels": [
+        "dox"
+      ],
+      "source_scene_ids": [
+        "DEV-06"
+      ],
+      "existing_master_catalogue_id": "NEW::met-917618",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "RECENT575::145",
+      "title": "The Holy Trinity",
+      "artist": "Artus Wolffort",
+      "institution": "Groeningemuseum · Bruges",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Artus_Wolffort_-_The_Holy_Trinity.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Artus_Wolffort_-_The_Holy_Trinity.jpg?width=520",
+      "original_owner_record_state": "OWNER_APPROVED_CURATED",
+      "source_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "source_placement_labels": [],
+      "source_scene_ids": [
+        "DEV-06"
+      ],
+      "existing_master_catalogue_id": "RECENT575::145",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::commons:74171702",
+      "title": "The Annunciation",
+      "artist": "Frans Francken the Younger",
+      "institution": "Original Commons selection (identity unverified)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frans_Francken,_II_-_The_Annunciation_-_1971.876_-_Art_Institute_of_Chicago.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Frans_Francken%2C_II_-_The_Annunciation_-_1971.876_-_Art_Institute_of_Chicago.jpg?width=720",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "Commons public domain photo of AIC accession 1971.876; source-specific reuse evidence on file",
+      "source_placement_labels": [
+        "ave",
+        "angelus",
+        "j1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::commons:74171702",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::met:435853",
+      "title": "The Coronation of the Virgin",
+      "artist": "Annibale Carracci",
+      "institution": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/435853",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "CC0 / public-domain institution download",
+      "source_placement_labels": [
+        "salve",
+        "regina",
+        "g5"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::met:435853",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::commons:73497418",
+      "title": "The Immaculate Conception",
+      "artist": "Carlo Maratta (Maratti)",
+      "institution": "Bildergalerie Sanssouci, Potsdam (candidate)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Carlo_Maratta_-_Maria_Immaculata%2C_c1685.1688_-_Bildergalerie_Sanssouci%2C_Potsdam.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carlo_Maratta_-_Maria_Immaculata%2C_c1685.1688_-_Bildergalerie_Sanssouci%2C_Potsdam.jpg?width=720",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "Commons PDM Google Art Project reproduction, pending exact selected-object match",
+      "source_placement_labels": [
+        "ave"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::commons:73497418",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::commons:116926387",
+      "title": "Our Lady of the Immaculate Conception and Saint Michael Fighting the Bad Angel",
+      "artist": "Unknown Spanish painter (Luca Giordano manner)",
+      "institution": "Museo de Huesca / Gobierno de Aragón",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Our_Lady_of_the_Immaculate_Conception_and_St._Michael_Fighting_the_Bad_Angel_-_1700.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Our_Lady_of_the_Immaculate_Conception_and_St._Michael_Fighting_the_Bad_Angel_-_1700.jpg?width=720",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "Commons PDM label; institutional image credited to Gobierno de Aragón and named photographer",
+      "source_placement_labels": [
+        "ave"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::commons:116926387",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:dolci-1640",
+      "title": "The Trinity in Glory",
+      "artist": "Carlo Dolci",
+      "institution": "RISD Museum · 59.009",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Carlo_Dolci_-_The_Trinity_in_Glory_-_59.009_-_Rhode_Island_School_of_Design_Museum.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Carlo_Dolci_-_The_Trinity_in_Glory_-_59.009_-_Rhode_Island_School_of_Design_Museum.jpg?width=520",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "source_rights_note": "RISD CC0, clean but limited source",
+      "source_placement_labels": [],
+      "source_scene_ids": [
+        "DEV-06"
+      ],
+      "existing_master_catalogue_id": "owner-selected:holy-trinity:dolci-1640",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::commons:65493548",
+      "title": "Coronation of the Virgin",
+      "artist": "Peter Paul Rubens and workshop",
+      "institution": "Royal Museums of Fine Arts Belgium, inv. 162",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Coronation_of_the_Virgin.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter_Paul_Rubens_-_Coronation_of_the_Virgin.jpg?width=720",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "Commons PDM faithful reproduction; source photography not institutional release",
+      "source_placement_labels": [
+        "salve",
+        "regina",
+        "g5"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::commons:65493548",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "CANONICAL::nga-46",
+      "title": "The Annunciation",
+      "artist": "Jan van Eyck",
+      "institution": "National Gallery of Art, Washington",
+      "source_url": "https://www.nga.gov/artworks/46-annunciation",
+      "prototype_preview_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Jan_van_Eyck_-_The_Annunciation_-_Google_Art_Project_crop.jpg/960px-Jan_van_Eyck_-_The_Annunciation_-_Google_Art_Project_crop.jpg",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "CC0 / public-domain institution download",
+      "source_placement_labels": [
+        "ave",
+        "angelus",
+        "j1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "CANONICAL::nga-46",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::commons:22002144",
+      "title": "The Resurrection",
+      "artist": "Sebastiano Ricci",
+      "institution": "Dulwich Picture Gallery, DPG195",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ricci%2C_Sebastiano_-_The_Resurrection_-_Google_Art_Project.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Ricci%2C_Sebastiano_-_The_Resurrection_-_Google_Art_Project.jpg?width=720",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "Dulwich official commercial reproduction is licensed for purchase; Commons PD-art copy has separate claim",
+      "source_placement_labels": [
+        "regina_collect",
+        "g1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::commons:22002144",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "CANONICAL::cma-135659",
+      "title": "The Immaculate Conception",
+      "artist": "Bartolomé Esteban Murillo",
+      "institution": "Cleveland Museum of Art",
+      "source_url": "https://www.clevelandart.org/art/1959.189",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "CC0 / public-domain institution download",
+      "source_placement_labels": [
+        "ave"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "CANONICAL::cma-135659",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::nga:52",
+      "title": "Christ Appearing to the Virgin",
+      "artist": "Follower of Rogier van der Weyden",
+      "institution": "National Gallery of Art, Washington",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Christ_Appearing_to_the_Virgin_A22130.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Christ_Appearing_to_the_Virgin_A22130.jpg?width=720",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "Public domain (NGA open-access; Commons provenance)",
+      "source_placement_labels": [
+        "regina_collect"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::nga:52",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "PRAYER::saints--saraceni",
+      "title": "Paradise (ca. 1598)",
+      "artist": "Carlo Saraceni",
+      "institution": "Metropolitan Museum of Art, 1971.93 / Met ID 437607",
+      "source_url": "https://www.metmuseum.org/art/collection/search/437607",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "Metropolitan Museum of Art open-access CC0 master",
+      "source_placement_labels": [
+        "dox"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "PRAYER::saints--saraceni",
+      "source_alias_key": null,
+      "local_binary": {
+        "source_repo_file": "site/artwork/saraceni-paradise-v9.jpg",
+        "published_file": "site/artwork/saraceni-paradise-v9.jpg",
+        "stage": "PUBLISHED_ONLY_AS_HOME_ASSET__PRAYER_NOT_AUTHORIZED",
+        "rights": "site/artwork/provenance.json"
+      },
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "LEGACY::soulsCarracci",
+      "title": "An Angel Frees the Souls of Purgatory",
+      "artist": "Ludovico Carracci",
+      "institution": "Vatican Pinacoteca (previous Angelus prototype)",
+      "source_url": "",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "PREVIOUS_ALL_SOULS_APPROVAL__NOT_IN_THIS_REGISTRY",
+      "source_rights_note": "",
+      "source_placement_labels": [],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": null,
+      "source_alias_key": "soulsCarracci",
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_RIGHTS_UNKNOWN__DO_NOT_PUBLISH"
+    },
+    {
+      "artwork_id": "LEGACY::soulsTeresa",
+      "title": "Saint Teresa of Ávila Interceding for Souls in Purgatory",
+      "artist": "Workshop of Peter Paul Rubens",
+      "institution": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/437542",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "CONTEXTUAL_ALTERNATIVE__NOT_DEPARTED_APPROVED",
+      "source_rights_note": "",
+      "source_placement_labels": [],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": null,
+      "source_alias_key": "soulsTeresa",
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_RIGHTS_UNKNOWN__DO_NOT_PUBLISH"
+    },
+    {
+      "artwork_id": "released-photo:angelus",
+      "title": "The Annunciation",
+      "artist": "Philippe de Champaigne",
+      "institution": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/438724",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "CC0 / public-domain institution download",
+      "source_placement_labels": [
+        "ave",
+        "angelus",
+        "j1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "released-photo:angelus",
+      "source_alias_key": "champaigne",
+      "local_binary": {
+        "source_repo_file": "site/artwork/champaigne-annunciation-home-v9.jpg",
+        "published_file": "site/artwork/champaigne-annunciation-home-v9.jpg",
+        "stage": "HOME_PREVIEW_ONLY__PRAYER_NOT_AUTHORIZED",
+        "rights": "Met open access CC0, prior provenance"
+      },
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:rubens-1620",
+      "title": "The Holy Trinity",
+      "artist": "Peter Paul Rubens",
+      "institution": "KMSKA Antwerp · 314",
+      "source_url": "https://iiif.kmska.be/c/iiif/2/public@28958.tif/full/full/0/default.jpg",
+      "prototype_preview_url": "https://iiif.kmska.be/c/iiif/2/public@28958.tif/full/full/0/default.jpg",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "source_rights_note": "KMSKA/Flemish Art Collection CC0",
+      "source_placement_labels": [],
+      "source_scene_ids": [
+        "DEV-06"
+      ],
+      "existing_master_catalogue_id": "owner-selected:holy-trinity:rubens-1620",
+      "source_alias_key": null,
+      "local_binary": {
+        "source_repo_file": "app-data/sacred-art/staged-images/rubens-holy-trinity-kmska314-2000.webp",
+        "published_file": null,
+        "stage": "STAGED_ONLY",
+        "rights": "KMSKA/Flemish Art Collection labels image CC0 per source recovery manifest",
+        "verified_file_size": 685798,
+        "verified_git_blob": "845ba67cd91852740f2b04cbc3b77e598644215c"
+      },
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::commons:87865020",
+      "title": "The Virgin in Prayer",
+      "artist": "Sassoferrato (Giovanni Battista Salvi)",
+      "institution": "Multiple distinct objects: Nationalmuseum, National Gallery London, Walters and NCMA",
+      "source_url": "https://collection.nationalmuseum.se/en/collection/item/19839/",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "Nationalmuseum faithful image public domain; exact selected Commons curid cannot be matched to this separate version",
+      "source_placement_labels": [
+        "ave"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::commons:87865020",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::kmska:skpzca",
+      "title": "Christ Triumphant (Christus Triomfator)",
+      "artist": "Michiel Coxie I",
+      "institution": "Royal Museum of Fine Arts Antwerp / Vlaamse Kunstcollectie",
+      "source_url": "https://iiif.kmska.be/iiif/2/382/manifest.json",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "KMSKA image specifically marked CC0; institution IIIF",
+      "source_placement_labels": [
+        "dox"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::kmska:skpzca",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "CANONICAL::cma-78982",
+      "title": "The Resurrection of Christ",
+      "artist": "Johann König",
+      "institution": "Cleveland Museum of Art",
+      "source_url": "https://www.clevelandart.org/art/2017.192",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "CC0 / public-domain institution download",
+      "source_placement_labels": [
+        "regina_collect",
+        "g1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "CANONICAL::cma-78982",
+      "source_alias_key": "konig",
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "released-photo:regina",
+      "title": "Resurrection of Christ (triptych centre)",
+      "artist": "Peter Paul Rubens",
+      "institution": "Cathedral of Our Lady, Antwerp / KIK-IRPA",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Resurrection_of_Christ_triptych_%28central_panel%29.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter_Paul_Rubens_-_Resurrection_of_Christ_triptych_%28central_panel%29.jpg?width=720",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "Commons PDM two-dimensional faithful reproduction",
+      "source_placement_labels": [
+        "regina_collect",
+        "g1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "released-photo:regina",
+      "source_alias_key": "rubens",
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "CANONICAL::cma-127572",
+      "title": "The Annunciation",
+      "artist": "Paolo Veronese and workshop",
+      "institution": "Cleveland Museum of Art",
+      "source_url": "https://www.clevelandart.org/art/1950.251",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "CC0 / public-domain institution download",
+      "source_placement_labels": [
+        "ave",
+        "angelus",
+        "j1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "CANONICAL::cma-127572",
+      "source_alias_key": "veronese",
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:reni-1625",
+      "title": "The Holy Trinity",
+      "artist": "Guido Reni",
+      "institution": "Santissima Trinità dei Pellegrini, Rome ·",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Trinit%C3%A0_-_Guido_Reni.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/La_Trinit%C3%A0_-_Guido_Reni.jpg?width=520",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "source_rights_note": "Photographic rights unresolved; clean source too small",
+      "source_placement_labels": [],
+      "source_scene_ids": [
+        "DEV-06"
+      ],
+      "existing_master_catalogue_id": "owner-selected:holy-trinity:reni-1625",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::commons:22145562",
+      "title": "The Annunciation",
+      "artist": "Francesco Solimena",
+      "institution": "SMK candidate (KMS7976), pending owner-selected file ID match",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Francesco_Solimena,_Mari%C3%A6_Bebudelse,_,_KMS7976,_Statens_Museum_for_Kunst.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Francesco_Solimena%2C_Mari%C3%A6_Bebudelse%2C_%2C_KMS7976%2C_Statens_Museum_for_Kunst.jpg?width=720",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "Museum-supplied CC0 (SMK KMS7976)",
+      "source_placement_labels": [
+        "ave",
+        "angelus",
+        "j1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::commons:22145562",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::cma:146167",
+      "title": "The Risen Christ Appearing to the Virgin",
+      "artist": "Francesco Solimena",
+      "institution": "Cleveland Museum of Art",
+      "source_url": "https://www.clevelandart.org/art/1971.63",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "CC0 / public-domain institution download",
+      "source_placement_labels": [
+        "angelus_collect",
+        "regina",
+        "regina_collect",
+        "g1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::cma:146167",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::walters:4625",
+      "title": "The Annunciation",
+      "artist": "Santi di Tito",
+      "institution": "Walters Art Museum",
+      "source_url": "https://art.thewalters.org/object/37.1677/",
+      "prototype_preview_url": "https://art.thewalters.org/images/art/PL9_37.1677_Fnt_SL.jpg",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "CC0 / public-domain institution download",
+      "source_placement_labels": [
+        "angelus"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::walters:4625",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "CANONICAL::met-436502",
+      "title": "The Annunciation",
+      "artist": "Luca Giordano",
+      "institution": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436502",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "CC0 / public-domain institution download",
+      "source_placement_labels": [
+        "ave",
+        "angelus",
+        "j1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "CANONICAL::met-436502",
+      "source_alias_key": "giordano",
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "CANONICAL::met-436791",
+      "title": "The Annunciation",
+      "artist": "Joos van Cleve",
+      "institution": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436791",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "CC0 / public-domain institution download",
+      "source_placement_labels": [
+        "angelus",
+        "j1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "CANONICAL::met-436791",
+      "source_alias_key": "vancleve",
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::commons:158771859",
+      "title": "Christ Appears to the Three Marys",
+      "artist": "Laurent de La Hyre",
+      "institution": "Louvre, INV 5356",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Apparition_de_J%C3%A9sus_aux_trois_Marie_-_Laurent_de_La_Hyre_-_Mus%C3%A9e_du_Louvre_Peintures_INV_5356_%3B_MR_1849.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Apparition_de_J%C3%A9sus_aux_trois_Marie_-_Laurent_de_La_Hyre_-_Mus%C3%A9e_du_Louvre_Peintures_INV_5356_%3B_MR_1849.jpg?width=720",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "Commons PDM claim, but reproduction is a visitor camera photograph",
+      "source_placement_labels": [
+        "regina",
+        "regina_collect",
+        "g1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::commons:158771859",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "released-photo:girardin",
+      "title": "The Trinity",
+      "artist": "Laurent Girardin",
+      "institution": "Cleveland Museum of Art",
+      "source_url": "https://www.clevelandart.org/art/1960.79",
+      "prototype_preview_url": "https://openaccess-cdn.clevelandart.org/1960.79/1960.79_web.jpg",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "source_rights_note": "CC0 / public-domain institution download",
+      "source_placement_labels": [
+        "cross",
+        "dox"
+      ],
+      "source_scene_ids": [
+        "DEV-06"
+      ],
+      "existing_master_catalogue_id": "released-photo:girardin",
+      "source_alias_key": "trinityGirardin",
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:durer-1511",
+      "title": "The Adoration of the Holy Trinity",
+      "artist": "Albrecht Dürer",
+      "institution": "Kunsthistorisches Museum, Vienna · GG 838",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_Adoration_of_the_Trinity_(Landauer_Altar)_-_Google_Art_Project.jpg",
+      "prototype_preview_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Albrecht_D%C3%BCrer_-_Adoration_of_the_Trinity_(Landauer_Altar)_-_Google_Art_Project.jpg?width=520",
+      "original_owner_record_state": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "source_rights_note": "Commons PD-Art vs KHM commercial-use terms unresolved",
+      "source_placement_labels": [],
+      "source_scene_ids": [
+        "DEV-06"
+      ],
+      "existing_master_catalogue_id": "owner-selected:holy-trinity:durer-1511",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    },
+    {
+      "artwork_id": "REVIEW::commons:55389333",
+      "title": "The Annunciation",
+      "artist": "Giovanni Lanfranco",
+      "institution": "Original Commons selection (identity unverified)",
+      "source_url": "https://commons.wikimedia.org/?curid=55389333",
+      "prototype_preview_url": null,
+      "original_owner_record_state": "OWNER_SELECTED_FOR_PRAYER",
+      "source_rights_note": "Exact image source and rights unverified",
+      "source_placement_labels": [
+        "ave",
+        "angelus",
+        "j1"
+      ],
+      "source_scene_ids": [],
+      "existing_master_catalogue_id": "REVIEW::commons:55389333",
+      "source_alias_key": null,
+      "local_binary": null,
+      "publication_status": "NOT_AUTO_PUBLISHABLE",
+      "primary_card_assignment": null,
+      "photo_rights_review_status": "SOURCE_NOTE_PRESENT__INDEPENDENT_VERIFICATION_PENDING"
+    }
+  ],
+  "part_artwork_links": [
+    {
+      "artwork_id": "CANONICAL::nga-46",
+      "part_id": "angelus",
+      "part_label": "Angelus · versicles",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "versicle_response",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "CANONICAL::met-436502",
+      "part_id": "angelus",
+      "part_label": "Angelus · versicles",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "versicle_response",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "released-photo:angelus",
+      "part_id": "angelus",
+      "part_label": "Angelus · versicles",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "versicle_response",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "CANONICAL::cma-127572",
+      "part_id": "angelus",
+      "part_label": "Angelus · versicles",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "versicle_response",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "CANONICAL::met-436791",
+      "part_id": "angelus",
+      "part_label": "Angelus · versicles",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "versicle_response",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::walters:4625",
+      "part_id": "angelus",
+      "part_label": "Angelus · versicles",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "versicle_response",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::smk:KMSSP13",
+      "part_id": "angelus",
+      "part_label": "Angelus · versicles",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "versicle_response",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:21885843",
+      "part_id": "angelus",
+      "part_label": "Angelus · versicles",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "versicle_response",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:22145562",
+      "part_id": "angelus",
+      "part_label": "Angelus · versicles",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "versicle_response",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:74171702",
+      "part_id": "angelus",
+      "part_label": "Angelus · versicles",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "versicle_response",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:55389333",
+      "part_id": "angelus",
+      "part_label": "Angelus · versicles",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "versicle_response",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "CANONICAL::nga-46",
+      "part_id": "ave",
+      "part_label": "Hail Mary",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_RECURRING_PRAYER_UNIT_NOT_EXACT_STAGE_BACKGROUND",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "ave_maria",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "CANONICAL::met-436502",
+      "part_id": "ave",
+      "part_label": "Hail Mary",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_RECURRING_PRAYER_UNIT_NOT_EXACT_STAGE_BACKGROUND",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "ave_maria",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "released-photo:angelus",
+      "part_id": "ave",
+      "part_label": "Hail Mary",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_RECURRING_PRAYER_UNIT_NOT_EXACT_STAGE_BACKGROUND",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "ave_maria",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "CANONICAL::cma-127572",
+      "part_id": "ave",
+      "part_label": "Hail Mary",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_RECURRING_PRAYER_UNIT_NOT_EXACT_STAGE_BACKGROUND",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "ave_maria",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "CANONICAL::cma-135659",
+      "part_id": "ave",
+      "part_label": "Hail Mary",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_RECURRING_PRAYER_UNIT_NOT_EXACT_STAGE_BACKGROUND",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "ave_maria",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::smk:KMSSP13",
+      "part_id": "ave",
+      "part_label": "Hail Mary",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_RECURRING_PRAYER_UNIT_NOT_EXACT_STAGE_BACKGROUND",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "ave_maria",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:22145562",
+      "part_id": "ave",
+      "part_label": "Hail Mary",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_RECURRING_PRAYER_UNIT_NOT_EXACT_STAGE_BACKGROUND",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "ave_maria",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:74171702",
+      "part_id": "ave",
+      "part_label": "Hail Mary",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_RECURRING_PRAYER_UNIT_NOT_EXACT_STAGE_BACKGROUND",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "ave_maria",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:55389333",
+      "part_id": "ave",
+      "part_label": "Hail Mary",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_RECURRING_PRAYER_UNIT_NOT_EXACT_STAGE_BACKGROUND",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "ave_maria",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:73497418",
+      "part_id": "ave",
+      "part_label": "Hail Mary",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_RECURRING_PRAYER_UNIT_NOT_EXACT_STAGE_BACKGROUND",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "ave_maria",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:87865020",
+      "part_id": "ave",
+      "part_label": "Hail Mary",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_RECURRING_PRAYER_UNIT_NOT_EXACT_STAGE_BACKGROUND",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "ave_maria",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:116926387",
+      "part_id": "ave",
+      "part_label": "Hail Mary",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_RECURRING_PRAYER_UNIT_NOT_EXACT_STAGE_BACKGROUND",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.announcement",
+        "angelus.a1.fiat",
+        "angelus.a1.incarnation"
+      ],
+      "unit_role": "ave_maria",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::cma:146167",
+      "part_id": "angelus_collect",
+      "part_label": "Angelus · Oremus",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "EXACT_PRAYER_UNIT_CANDIDATE_NO_STAGE_PRIMARY",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.prayer"
+      ],
+      "unit_role": "collect",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::cma:146167",
+      "part_id": "regina",
+      "part_label": "Regina Cæli",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "regina_caeli.a1.rejoice",
+        "regina_caeli.a1.resurrection"
+      ],
+      "unit_role": "regina_antiphon",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::met:435853",
+      "part_id": "regina",
+      "part_label": "Regina Cæli",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "regina_caeli.a1.rejoice",
+        "regina_caeli.a1.resurrection"
+      ],
+      "unit_role": "regina_antiphon",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:158771859",
+      "part_id": "regina",
+      "part_label": "Regina Cæli",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "regina_caeli.a1.rejoice",
+        "regina_caeli.a1.resurrection"
+      ],
+      "unit_role": "regina_antiphon",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:65493548",
+      "part_id": "regina",
+      "part_label": "Regina Cæli",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_PRAYER_FAMILY_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "regina_caeli.a1.rejoice",
+        "regina_caeli.a1.resurrection"
+      ],
+      "unit_role": "regina_antiphon",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::cma:146167",
+      "part_id": "regina_collect",
+      "part_label": "Regina Cæli · Oremus",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "EXACT_PRAYER_UNIT_CANDIDATE_NO_STAGE_PRIMARY",
+      "applicable_editorial_stage_keys": [
+        "regina_caeli.a1.prayer"
+      ],
+      "unit_role": "collect",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "CANONICAL::cma-78982",
+      "part_id": "regina_collect",
+      "part_label": "Regina Cæli · Oremus",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "EXACT_PRAYER_UNIT_CANDIDATE_NO_STAGE_PRIMARY",
+      "applicable_editorial_stage_keys": [
+        "regina_caeli.a1.prayer"
+      ],
+      "unit_role": "collect",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::nga:52",
+      "part_id": "regina_collect",
+      "part_label": "Regina Cæli · Oremus",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "EXACT_PRAYER_UNIT_CANDIDATE_NO_STAGE_PRIMARY",
+      "applicable_editorial_stage_keys": [
+        "regina_caeli.a1.prayer"
+      ],
+      "unit_role": "collect",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "released-photo:regina",
+      "part_id": "regina_collect",
+      "part_label": "Regina Cæli · Oremus",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "EXACT_PRAYER_UNIT_CANDIDATE_NO_STAGE_PRIMARY",
+      "applicable_editorial_stage_keys": [
+        "regina_caeli.a1.prayer"
+      ],
+      "unit_role": "collect",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:158771859",
+      "part_id": "regina_collect",
+      "part_label": "Regina Cæli · Oremus",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "EXACT_PRAYER_UNIT_CANDIDATE_NO_STAGE_PRIMARY",
+      "applicable_editorial_stage_keys": [
+        "regina_caeli.a1.prayer"
+      ],
+      "unit_role": "collect",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:22002144",
+      "part_id": "regina_collect",
+      "part_label": "Regina Cæli · Oremus",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "EXACT_PRAYER_UNIT_CANDIDATE_NO_STAGE_PRIMARY",
+      "applicable_editorial_stage_keys": [
+        "regina_caeli.a1.prayer"
+      ],
+      "unit_role": "collect",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "CANONICAL::cma-159488",
+      "part_id": "dox",
+      "part_label": "Gloria Patri",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_GLORIA_PATRI_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "gloria_patri",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "released-photo:girardin",
+      "part_id": "dox",
+      "part_label": "Gloria Patri",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_GLORIA_PATRI_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "gloria_patri",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "NEW::met-917618",
+      "part_id": "dox",
+      "part_label": "Gloria Patri",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_GLORIA_PATRI_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "gloria_patri",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "REVIEW::kmska:skpzca",
+      "part_id": "dox",
+      "part_label": "Gloria Patri",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_GLORIA_PATRI_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "gloria_patri",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "PRAYER::saints--saraceni",
+      "part_id": "dox",
+      "part_label": "Gloria Patri",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_GLORIA_PATRI_NOT_EXACT_A1_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "gloria_patri",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "released-photo:souls",
+      "part_id": "departed",
+      "part_label": "Faithful departed",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": true,
+      "owner_approved_for_this_part": true,
+      "editorial_scope": "OWNER_SELECTED_FOR_DEPARTED_PRAYER_UNIT_NOT_EXACT_SCREEN",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "faithful_departed",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:dolci-1640",
+      "part_id": "dox_scene",
+      "part_label": "Trinity · scene selections",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": false,
+      "owner_approved_for_this_part": false,
+      "editorial_scope": "APPROVED_FOR_OTHER_CONTEXT_NOT_SELECTED_FOR_GLORIA",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "gloria_patri",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:reni-1625",
+      "part_id": "dox_scene",
+      "part_label": "Trinity · scene selections",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": false,
+      "owner_approved_for_this_part": false,
+      "editorial_scope": "APPROVED_FOR_OTHER_CONTEXT_NOT_SELECTED_FOR_GLORIA",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "gloria_patri",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "RECENT575::145",
+      "part_id": "dox_scene",
+      "part_label": "Trinity · scene selections",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": false,
+      "owner_approved_for_this_part": false,
+      "editorial_scope": "APPROVED_FOR_OTHER_CONTEXT_NOT_SELECTED_FOR_GLORIA",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "gloria_patri",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:durer-1511",
+      "part_id": "dox_scene",
+      "part_label": "Trinity · scene selections",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": false,
+      "owner_approved_for_this_part": false,
+      "editorial_scope": "APPROVED_FOR_OTHER_CONTEXT_NOT_SELECTED_FOR_GLORIA",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "gloria_patri",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:rubens-1620",
+      "part_id": "dox_scene",
+      "part_label": "Trinity · scene selections",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": false,
+      "owner_approved_for_this_part": false,
+      "editorial_scope": "APPROVED_FOR_OTHER_CONTEXT_NOT_SELECTED_FOR_GLORIA",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "gloria_patri",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "LEGACY::soulsCarracci",
+      "part_id": "departed_context",
+      "part_label": "Souls · earlier choices",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": false,
+      "owner_approved_for_this_part": false,
+      "editorial_scope": "HISTORICAL_ALL_SOULS_OR_UNAPPROVED_CONTEXT_NOT_ANGELUS_PLACEMENT",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "faithful_departed",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    },
+    {
+      "artwork_id": "LEGACY::soulsTeresa",
+      "part_id": "departed_context",
+      "part_label": "Souls · earlier choices",
+      "source_group": "CURATED_GROUPS",
+      "in_source_placements": false,
+      "owner_approved_for_this_part": false,
+      "editorial_scope": "HISTORICAL_ALL_SOULS_OR_UNAPPROVED_CONTEXT_NOT_ANGELUS_PLACEMENT",
+      "applicable_editorial_stage_keys": [
+        "angelus.a1.conclusion"
+      ],
+      "unit_role": "faithful_departed",
+      "selected_as_stage_primary": false,
+      "local_image_release_approved": false
+    }
+  ],
+  "source_groups": {
+    "angelus": [
+      "CANONICAL::nga-46",
+      "CANONICAL::met-436502",
+      "released-photo:angelus",
+      "CANONICAL::cma-127572",
+      "CANONICAL::met-436791",
+      "REVIEW::walters:4625",
+      "REVIEW::smk:KMSSP13",
+      "REVIEW::commons:21885843",
+      "REVIEW::commons:22145562",
+      "REVIEW::commons:74171702",
+      "REVIEW::commons:55389333"
+    ],
+    "ave": [
+      "CANONICAL::nga-46",
+      "CANONICAL::met-436502",
+      "released-photo:angelus",
+      "CANONICAL::cma-127572",
+      "CANONICAL::cma-135659",
+      "REVIEW::smk:KMSSP13",
+      "REVIEW::commons:22145562",
+      "REVIEW::commons:74171702",
+      "REVIEW::commons:55389333",
+      "REVIEW::commons:73497418",
+      "REVIEW::commons:87865020",
+      "REVIEW::commons:116926387"
+    ],
+    "angelus_collect": [
+      "REVIEW::cma:146167"
+    ],
+    "regina": [
+      "REVIEW::cma:146167",
+      "REVIEW::met:435853",
+      "REVIEW::commons:158771859",
+      "REVIEW::commons:65493548"
+    ],
+    "regina_collect": [
+      "REVIEW::cma:146167",
+      "CANONICAL::cma-78982",
+      "REVIEW::nga:52",
+      "released-photo:regina",
+      "REVIEW::commons:158771859",
+      "REVIEW::commons:22002144"
+    ],
+    "dox": [
+      "CANONICAL::cma-159488",
+      "released-photo:girardin",
+      "NEW::met-917618",
+      "REVIEW::kmska:skpzca",
+      "PRAYER::saints--saraceni"
+    ],
+    "departed": [
+      "released-photo:souls"
+    ],
+    "dox_scene": [
+      "owner-selected:holy-trinity:dolci-1640",
+      "owner-selected:holy-trinity:reni-1625",
+      "RECENT575::145",
+      "owner-selected:holy-trinity:durer-1511",
+      "owner-selected:holy-trinity:rubens-1620"
+    ],
+    "departed_context": [
+      "LEGACY::soulsCarracci",
+      "LEGACY::soulsTeresa"
+    ]
+  },
+  "unmerged_historical_ids": [
+    "LEGACY::soulsCarracci",
+    "LEGACY::soulsTeresa"
+  ],
+  "unresolved_source_photo_rights": [
+    "REVIEW::smk:KMSSP13",
+    "CANONICAL::cma-159488",
+    "REVIEW::commons:21885843",
+    "RECENT575::145",
+    "REVIEW::commons:73497418",
+    "REVIEW::commons:116926387",
+    "REVIEW::commons:65493548",
+    "REVIEW::commons:22002144",
+    "LEGACY::soulsCarracci",
+    "LEGACY::soulsTeresa",
+    "released-photo:regina",
+    "owner-selected:holy-trinity:reni-1625",
+    "REVIEW::commons:158771859",
+    "owner-selected:holy-trinity:durer-1511",
+    "REVIEW::commons:55389333"
+  ],
+  "active_prayer_default_assignments": []
+}
