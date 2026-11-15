@@ -43,6 +43,8 @@ jobs:
           node tests/prayer-artwork-activation.mjs
           node tests/angelus-a1-donor-crosswalk.mjs
           node tests/angelus-part-artwork-coverage.mjs
+          node --check site/gallery/gallery.js
+          node tests/sacred-art-gallery.mjs
           if grep -Rni 'vercel' site/; then
             echo 'Vercel references are not allowed in the production site.' >&2
             exit 1
@@ -63,6 +65,29 @@ jobs:
             if [ -f "screenshots/$LABEL.png" ]; then
               echo "$LABEL: $(stat -c '%s bytes' "screenshots/$LABEL.png")"
             fi
+          done
+      - name: Capture gallery at phone widths
+        shell: bash
+        run: |
+          set -euo pipefail
+          CHROME="$(command -v google-chrome || command -v chromium || command -v chromium-browser || true)"
+          if [ -z "$CHROME" ]; then
+            echo "Chrome unavailable; gallery screenshots skipped."
+            exit 0
+          fi
+          python3 -m http.server 8876 --bind 127.0.0.1 --directory site > "$RUNNER_TEMP/ao-gallery-server.log" 2>&1 &
+          SERVER_PID=$!
+          trap 'kill "$SERVER_PID" 2>/dev/null || true' EXIT
+          sleep 1
+          mkdir -p screenshots
+          for VIEW in "390 844 gallery-390" "320 700 gallery-320"; do
+            read -r WIDTH HEIGHT LABEL <<< "$VIEW"
+            timeout 35s "$CHROME" --headless --no-sandbox --disable-gpu --disable-dev-shm-usage \
+              --hide-scrollbars --force-device-scale-factor=1 --virtual-time-budget=4000 \
+              --user-data-dir="$RUNNER_TEMP/ao-gallery-$LABEL" --window-size="$WIDTH,$HEIGHT" \
+              --screenshot="screenshots/$LABEL.png" "http://127.0.0.1:8876/#gallery" >/dev/null 2>&1
+            test -s "screenshots/$LABEL.png"
+            echo "$LABEL: $(stat -c '%s' "screenshots/$LABEL.png") bytes"
           done
       - name: Attach viewport screenshots for visual acceptance
         uses: actions/upload-artifact@v4

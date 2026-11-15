@@ -27,7 +27,7 @@ const MODULES = Object.freeze({
   }
 });
 const byId = (id) => document.getElementById(id);
-const VALID_ROUTES = new Set(["home", ...Object.keys(MODULES)]);
+const VALID_ROUTES = new Set(["home", "gallery", ...Object.keys(MODULES)]);
 
 function routeFromHash() {
   const route = decodeURIComponent(window.location.hash.replace(/^#/, ""));
@@ -36,9 +36,11 @@ function routeFromHash() {
 function showRoute(route, updateHistory = true) {
   if (!VALID_ROUTES.has(route)) route = "home";
   const home = route === "home";
+  const gallery = route === "gallery";
   byId("home-view").hidden = !home;
-  byId("module-view").hidden = home;
-  if (!home) {
+  byId("module-view").hidden = home || gallery;
+  byId("gallery-view").hidden = !gallery;
+  if (!home && !gallery) {
     const details = MODULES[route];
     byId("module-title").textContent = details.title;
     byId("module-latin").textContent = details.latin;
@@ -54,7 +56,12 @@ function showRoute(route, updateHistory = true) {
     window.history.pushState({ route }, "", "#" + route);
   }
   window.scrollTo({ top: 0, behavior: "instant" });
-  if (!home) byId("module-title").focus({ preventScroll: true });
+  if (gallery) {
+    byId("gallery-title").focus({ preventScroll: true });
+    window.AO_OPEN_SACRED_ART_GALLERY?.();
+  } else if (!home) {
+    byId("module-title").focus({ preventScroll: true });
+  }
 }
 function createCivilWeek() {
   const now = new Date();
