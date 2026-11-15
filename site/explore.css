@@ -299,7 +299,7 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
  --ao-corm:'Cormorant Garamond','EB Garamond',Georgia,serif;
  --ao-serif:'EB Garamond',Georgia,serif;
  --ao-tabbar:calc(79px + env(safe-area-inset-bottom));
- height:100dvh!important;min-height:0!important;overflow:hidden!important;
+ height:var(--ao-visual-height,100dvh)!important;min-height:0!important;overflow:hidden!important;
  padding:0!important;background:var(--ao-bg)
 }
 #atlas-view .atlas-frame{height:100%;max-width:none;padding:0!important;overflow:hidden}
@@ -885,4 +885,35 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
 #atlas-view .atlas-map-label[hidden]{display:none}
 @media(prefers-reduced-motion:reduce){
  #atlas-view .atlas-map-med{transition:none!important}
+}
+
+/* Explore keyboard/rotation only. No change to normal Claude geometry:
+   visualViewport may shrink under mobile OSK without resizing CSS 100dvh.
+   Temporarily remove the navigation from the smaller visible area so the
+   existing source-backed search results stay usable, not behind the keys. */
+#atlas-view.atlas-keyboard-visible{
+ --ao-tabbar:0px;
+ height:var(--ao-visual-height,100dvh)!important;
+}
+body:has(#atlas-view:not([hidden]).atlas-keyboard-visible) .tabbar{
+ visibility:hidden;pointer-events:none;
+}
+@media(max-height:580px){
+ #atlas-view:has(#atlas-search:focus) .maplibregl-ctrl-top-right{
+  visibility:hidden!important;pointer-events:none!important;
+ }
+}
+/* A physical phone rotated to landscape is not a desktop, even if its
+   width exceeds 800px. Suppress desktop body gutters only for the active
+   Explore route; use Claude's map/sheet geometry in the short viewport. */
+@media(orientation:landscape) and (max-height:500px) and (pointer:coarse){
+ body:has(#atlas-view:not([hidden])){padding:0!important}
+ body:has(#atlas-view:not([hidden])) .app{min-height:100dvh!important}
+ #atlas-view{height:var(--ao-visual-height,100dvh)!important}
+ body:has(#atlas-view:not([hidden])) .tabbar{
+  bottom:0!important;border-radius:0!important;
+ }
+ #atlas-view .atlas-map-shell .maplibregl-ctrl-top-right{
+  visibility:hidden!important;pointer-events:none!important;
+ }
 }

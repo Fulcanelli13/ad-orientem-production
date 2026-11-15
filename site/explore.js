@@ -178,7 +178,8 @@ function renderSummary(){
 const snapHeight=stateName=>{
  const el=$("atlas-view");
  const available=el.clientHeight;
- const bottom=document.querySelector(".tabbar")?.getBoundingClientRect().height||79;
+ const bottom=el.classList.contains("atlas-keyboard-visible")?0:
+  (document.querySelector(".tabbar")?.getBoundingClientRect().height||79);
  const contentHeight=Math.max(200,available-bottom);
  if(stateName==="min")return 150;
  if(stateName==="expanded")return Math.round(contentHeight*.62);
@@ -613,6 +614,34 @@ async function startMap(){
  });
 }
 function attachControls(){
+ // Claude's sheet snap height must be recalculated when the available
+ // viewport changes after mount (rotation, browser chrome, soft keyboard).
+ // Do not remount MapLibre, reset the lens, or re-frame selected places.
+ const search=$("atlas-search"),atlas=$("atlas-view"),sheet=$("atlas-sheet");
+ let resizeFrame=0;
+ const syncViewport=()=>{
+  resizeFrame=0;
+  if(atlas.hidden)return;
+  const vv=window.visualViewport;
+  const usable=vv?Math.min(window.innerHeight,vv.height+vv.offsetTop):window.innerHeight;
+  const keyboardVisible=document.activeElement===search &&
+   Number.isFinite(usable)&&window.innerHeight-usable>140;
+  atlas.classList.toggle("atlas-keyboard-visible",keyboardVisible);
+  if(keyboardVisible)
+   atlas.style.setProperty("--ao-visual-height",Math.round(usable)+"px");
+  else atlas.style.removeProperty("--ao-visual-height");
+  setSheetState(sheet.dataset.sheetState||"peek");
+  if(state.map){state.map.resize();updateSacredMarkers();}
+ };
+ const scheduleViewport=()=>{
+  if(resizeFrame)return;
+  resizeFrame=requestAnimationFrame(syncViewport);
+ };
+ window.addEventListener("resize",scheduleViewport);
+ window.visualViewport?.addEventListener("resize",scheduleViewport);
+ window.visualViewport?.addEventListener("scroll",scheduleViewport);
+ search.addEventListener("focus",scheduleViewport);
+ search.addEventListener("blur",scheduleViewport);
  $("atlas-ways").addEventListener("click",event=>{
   const button=event.target.closest("button[data-atlas-facet]");
   if(!button || button.disabled)return;
@@ -625,7 +654,7 @@ function attachControls(){
   renderHeader();renderSummary();syncMap();
  });
  const handle=$("atlas-sheet-handle");
- const sheet=$("atlas-sheet"),header=$("atlas-sheet-header");
+ const header=$("atlas-sheet-header");
  // Capture gestures on the stationary viewport. Capturing on the moving
  // sheet/handle can cause Chromium to cancel a long drag mid-gesture.
  const capture=$("atlas-view");
@@ -741,7 +770,13 @@ function attachControls(){
 }
 export async function mountExplore(){
  if(state.initialized){
-  if(state.map)requestAnimationFrame(()=>state.map.resize());
+  if(state.map)requestAnimationFrame(()=>{
+   state.map.resize();
+   // Resuming an already-mounted Atlas after a route change must use
+   // the current viewport dimensions, not the prior phone orientation.
+   setSheetState($("atlas-sheet").dataset.sheetState||"peek");
+   updateSacredMarkers();
+  });
   return;
  }
  state.initialized=true;
