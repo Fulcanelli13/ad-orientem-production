@@ -130,14 +130,14 @@ Regression assertions check the compact button's geometry and absence
 of the unsolicited zoom control in all browser widths and simulated
 safe-area layouts. This is donor fidelity, not a new UX aesthetic.
 
-The initial compact-mode screenshots still exposed a long attribution
-line above the sheet, although the `maplibregl-compact` class was
-present. Claude's *bundled* MapLibre stylesheet includes explicit
-collapsed/expanded attribution-inner rules; the production loader
-gets its CSS separately and can lack the correct cascade. The
-scoped fallback now reproduces those two source rules locally:
-the text is concealed only when the compact button is **closed**,
-and fully restored (including OSM/provider source links) when opened.
-The test checks collapsed layout and interaction on the baseline
-phone, plus collapsed content and retained links on five phone safe
-area configurations. Attribution remains available and is not removed.
+MapLibre's `compact:true` is **not** an initially hidden attribution:
+its documented first-load state shows the full provider credits until
+the user first drags the map; only then does it collapse to Info. This
+is why the screenshots show attribution text even though the zoom
+controls have been removed. The initial extra CSS fallback was not
+necessary and is withdrawn, rather than forcing away required source
+credits. The regression test explicitly checks three states: initial
+expanded source credits and valid OSM links, collapse after a genuine
+map drag, and full expansion from the Info control. The design review
+must not mistake a MapLibre runtime state for a Claude screenshot
+styling defect.

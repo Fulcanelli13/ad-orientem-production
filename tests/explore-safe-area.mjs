@@ -126,16 +126,36 @@ try{
     innerDisplay:inner?getComputedStyle(inner).display:null,
     links:[...(inner?.querySelectorAll("a")||[])].map(a=>a.href)};
   });
-  assert.equal(attributionState.expanded,false,
-   "Claude info control must start collapsed: "+contextName+" "+JSON.stringify(attributionState));
-  assert.equal(attributionState.innerDisplay,"none",
-   "Source credits should not obscure the map before Info opens: "+contextName+
+  // MapLibre 6.x follows Claude's original attributionControl:{compact:true}:
+  // credit text is initially expanded, then collapses on the first map drag.
+  // Do not force it closed on initialization or delete required licensing.
+  assert.equal(attributionState.expanded,true,
+   "Source attribution starts expanded until a map drag: "+contextName+
+   " "+JSON.stringify(attributionState));
+  assert.equal(attributionState.innerDisplay,"block",
+   "Initial map-provider credits must remain readable: "+contextName+
    " "+JSON.stringify(attributionState));
   assert.ok(attributionState.links.some(link=>/openstreetmap\.org/.test(link)),
    "OpenStreetMap attribution link must remain in the DOM: "+contextName);
   await page.screenshot({path:join("artifacts/production-explore-safe-area",
     scenario.label+"-map.png"),animations:"disabled",fullPage:false});
   if(scenario.label==="baseline-390"){
+   // A map drag, not an artificial initial collapse, triggers source
+   // MapLibre's documented compact attribution transition.
+   const map=page.locator("#atlas-map");
+   const bounds=await map.boundingBox();
+   const start={x:bounds.x+55,y:bounds.y+245};
+   await page.mouse.move(start.x,start.y);
+   await page.mouse.down();
+   await page.mouse.move(start.x+42,start.y+18,{steps:7});
+   await page.mouse.up();
+   await page.waitForFunction(()=>
+    !document.querySelector("#atlas-map .maplibregl-ctrl-attrib")
+     ?.classList.contains("maplibregl-compact-show"),null,{timeout:6000});
+   const collapsed=await page.locator(
+    "#atlas-map .maplibregl-ctrl-attrib-inner").evaluate(el=>
+     getComputedStyle(el).display);
+   assert.equal(collapsed,"none","Map drag must collapse compact credit text");
    await page.locator("#atlas-map .maplibregl-ctrl-attrib-button").click();
    const opened=await page.evaluate(()=>{
     const root=document.querySelector("#atlas-map .maplibregl-ctrl-attrib");
@@ -145,7 +165,7 @@ try{
       text:inner.textContent};
    });
    assert.ok(opened.expanded&&opened.visible&&/OpenStreetMap/.test(opened.text),
-    "Info must disclose full map-provider credits: "+JSON.stringify(opened));
+    "Info must reopen all map-provider credits: "+JSON.stringify(opened));
    await page.locator("#atlas-map .maplibregl-ctrl-attrib-button").click();
   }
   await page.locator("#atlas-lens-sacred").click();

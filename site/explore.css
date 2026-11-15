@@ -917,14 +917,3 @@ body:has(#atlas-view:not([hidden]).atlas-keyboard-visible) .tabbar{
   visibility:hidden!important;pointer-events:none!important;
  }
 }
-
-/* Self-contained MapLibre compact-attribution fallback. The original Claude
-   donor ships these collapse/expand rules with the bundled MapLibre CSS;
-   a separately loaded provider stylesheet may not deliver them in time.
-   Keep the legal links in DOM and show them when the user opens Info. */
-#atlas-view .atlas-map-shell .maplibregl-ctrl-attrib.maplibregl-compact:not(.maplibregl-compact-show) .maplibregl-ctrl-attrib-inner{
- display:none!important;
-}
-#atlas-view .atlas-map-shell .maplibregl-ctrl-attrib.maplibregl-compact-show .maplibregl-ctrl-attrib-inner{
- display:block!important;
-}
