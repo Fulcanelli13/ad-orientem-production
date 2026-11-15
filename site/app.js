@@ -18,7 +18,7 @@ const MODULES = Object.freeze({
   atlas: {
     title: "The Sacred Atlas",
     latin: "In omnem terram",
-    description: "The canonical church and community registry, verified locations and Sacred Atlas interface are still in the research repository."
+    description: "A selected, source-verified Atlas pilot is being reviewed. The worldwide registry and complete directory are not yet transferred."
   },
   formation: {
     title: "Formation",
@@ -37,14 +37,26 @@ function showRoute(route, updateHistory = true) {
   if (!VALID_ROUTES.has(route)) route = "home";
   const home = route === "home";
   const gallery = route === "gallery";
+  const explore = route === "atlas";
   byId("home-view").hidden = !home;
-  byId("module-view").hidden = home || gallery;
+  byId("module-view").hidden = home || gallery || explore;
   byId("gallery-view").hidden = !gallery;
-  if (!home && !gallery) {
+  byId("atlas-view").hidden = !explore;
+  if (!home && !gallery && !explore) {
     const details = MODULES[route];
     byId("module-title").textContent = details.title;
     byId("module-latin").textContent = details.latin;
     byId("module-description").textContent = details.description;
+  }
+  if (explore) {
+    // Mount the selected Atlas only when its existing Home entrance opens.
+    // Reuse the same MapLibre instance across later visits.
+    import("./explore.js")
+      .then(module => module.mountExplore())
+      .catch(error => {
+        const status = byId("atlas-map-status");
+        if (status) status.textContent = "The selected Atlas could not start: " + String(error.message || error);
+      });
   }
   document.querySelectorAll(".tabbar .tab").forEach(button => {
     const selected = button.dataset.route === route;
@@ -59,7 +71,7 @@ function showRoute(route, updateHistory = true) {
   if (gallery) {
     byId("gallery-title").focus({ preventScroll: true });
     window.AO_OPEN_SACRED_ART_GALLERY?.();
-  } else if (!home) {
+  } else if (!home && !explore) {
     byId("module-title").focus({ preventScroll: true });
   }
 }
