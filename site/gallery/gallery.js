@@ -93,6 +93,7 @@
     caption.append(textEl("strong","",item.title),textEl("span","gallery-artist",item.artist));
     if (hasImage) {
       caption.append(textEl("span","gallery-type",
+        item.image?.quality?.startsWith("LOW_RES_PREVIEW") ? "CURATED · PREVIEW IMAGE" :
         item.owner_selected_artwork ? "CURATED · LOCAL IMAGE" : "LOCAL IMAGE"));
     } else {
       caption.append(textEl("span","gallery-type",
@@ -152,12 +153,16 @@
       textEl("p","gallery-detail-artist",item.artist));
     if (item.institution) inside.append(detailMeta("Collection:",item.institution));
     inside.append(detailMeta("Gallery:",
+      item.image?.quality?.startsWith("LOW_RES_PREVIEW")
+        ? "Permanent local preview; high-resolution museum original still pending" :
       item.image?.src ? "Reproduction held permanently in the app" :
         "Artwork record catalogued; local reproduction pending acquisition"));
     inside.append(detailMeta("Curation:",
       item.owner_selected_artwork ? "Owner-selected artwork (not a prayer-card primary)" :
         "Historical or research catalogue record; approval scope preserved"));
     if (item.image?.provenance) inside.append(detailMeta("Image provenance:",item.image.provenance));
+    if (item.image?.quality?.startsWith("LOW_RES_PREVIEW"))
+      inside.append(detailMeta("Image quality:","Low-resolution preview only. Do not upscale or use for prayer cinematic backgrounds."));
     if (item.image?.usage?.includes("PRAYER_QA_PENDING"))
       inside.append(detailMeta("Prayer use:","Cinematic photograph and individual prayer-card approval remain pending"));
     if (item.rights_note) inside.append(detailMeta("Recorded rights note:",item.rights_note));
