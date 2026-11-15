@@ -11,10 +11,12 @@ This directory provides **actual app-readable artwork attribution data and a fai
 
 An **approved candidate for a mystery or prayer card** is *not* a chosen primary image. No default has been selected for any of these cards. A route-level painting selection, such as Angelus in general, is *not* approval for each individual versicle/response card.
 
-Only two exact-card candidates have identified locally stored image binaries:
+Three exact-card candidates have identified locally stored image binaries:
 
 1. **Joyful I / Annunciation** — Philippe de Champaigne, *The Annunciation*, Met object 438724, the existing small Home-preview JPEG in `site/artwork/`. Rights are documented as Met Open Access/CC0, but full-image prayer-camera QA is outstanding. This is an **option**, not the chosen primary.
 2. **Sorrowful V / Crucifixion** — Anthony van Dyck, *The Lance Thrust*, the WebP stored under `app-data/sacred-art/staged-images/`. Its rights provenance is recorded, but it is not in the published site, and phone/cinematic image QA is outstanding. This is an **option**, not the chosen primary.
+
+3. **Joyful I / Annunciation** — Henry Ossawa Tanner, *The Annunciation* (1898), the uncropped 1,920-pixel WebP imported from the original research binary with a public-domain reproduction record. This is staged outside the published site; final phone/cinematic QA and an explicit primary choice are outstanding.
 
 Other exact-card-approved works require original-image recovery, source/rights checks, and compression/crop QA. The Luminous slots are included by user request but do not yet have verified exact-card approvals in this imported selection matrix.
 
