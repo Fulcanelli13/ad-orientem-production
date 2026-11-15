@@ -1,0 +1,35 @@
+name: One-time transfer of three approved gallery originals
+on:
+  push:
+    branches:
+      - feature/gallery-met-originals-20261115
+    paths:
+      - .github/workflows/gallery-originals-once.yml
+permissions:
+  contents: write
+jobs:
+  copy-approved-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Transfer pinned exact original images from active research repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE_REF="14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a"
+          BASE="https://raw.githubusercontent.com/Fulcanelli13/ad-orientem/$SOURCE_REF"
+          mkdir -p site/gallery/images
+          curl --fail --location --retry 3 --silent --show-error "$BASE/assets/home/c3-approved-met/angelus-met-438724.jpg" -o site/gallery/images/champaigne-annunciation-met-438724-original.jpg
+          curl --fail --location --retry 3 --silent --show-error "$BASE/assets/home/c3-approved-met/adoration-met-438434.jpg" -o site/gallery/images/ingres-adoration-met-438434-original.jpg
+          curl --fail --location --retry 3 --silent --show-error "$BASE/assets/prayer/released/hondius-doctors-original.jpg" -o site/gallery/images/hondius-christ-doctors-met-436672-original.jpg
+          printf '%s  %s\n' 'ae59a42e39896646d3d18d4761e04b8ce6fa1d84bfaa9f79bd23f8d72aa95be6' 'site/gallery/images/champaigne-annunciation-met-438724-original.jpg' '973f73b66952bf34619cc75c6f6bfb38109a8877e95b48655605576c552ad934' 'site/gallery/images/ingres-adoration-met-438434-original.jpg' | sha256sum --check
+          test "$(git hash-object site/gallery/images/champaigne-annunciation-met-438724-original.jpg)" = "d5e92365196b361c29e3f3d5cc8b5cca2926c2ed"
+          test "$(git hash-object site/gallery/images/ingres-adoration-met-438434-original.jpg)" = "9b2e3a6bad988308a4e5e661c47877b32720134b"
+          test "$(git hash-object site/gallery/images/hondius-christ-doctors-met-436672-original.jpg)" = "29283ed54ca7c9913a6e377d47b74c2b4af0eab1"
+          git add site/gallery/images/champaigne-annunciation-met-438724-original.jpg site/gallery/images/ingres-adoration-met-438434-original.jpg site/gallery/images/hondius-christ-doctors-met-436672-original.jpg
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Import three SHA-verified approved museum originals for gallery"
+          git push origin "HEAD:$GITHUB_REF_NAME"
