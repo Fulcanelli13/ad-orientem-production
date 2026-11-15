@@ -1,9 +1,9 @@
 {
   "schema": "ao.sacred-art.gallery-image-provenance.v1",
   "import_date": "2026-11-15",
-  "source_contract": "Release of these exact image bytes as Gallery thumbnails/full-composition viewer only, as requested by the owner. Do not infer permission to use in LIVE Mass, Calendar, Rosary or prayer cinematics.",
-  "local_image_count": 6,
-  "catalogue_record_images_count": 7,
+  "source_contract": "Release of these exact image bytes as Gallery thumbnails/full-composition viewer only, as requested by the owner. Do not infer permission to use in LIVE Mass, Calendar, Rosary or prayer cinematics. Two new gallery thumbnails are original-asset-identity-matched low-resolution embedded preview WebPs; high-resolution replacement pending. Met OA/CC0 evidence in each record. Never claim them to be recovered full-resolution images.",
+  "local_image_count": 8,
+  "catalogue_record_images_count": 9,
   "duplicate_same_original": [
     {
       "physical_artwork": "Met object 438724",
@@ -87,6 +87,50 @@
       "source_record": "app-data/sacred-art/staged-images/tanner-annunciation-1898-1920.webp",
       "recorded_reproduction_rights": "Wikimedia Commons Public Domain Mark 1.0; not a CC0 grant",
       "release_scope": "GALLERY_PUBLIC_THUMBNAIL_ONLY__PRAYER_CINEMATIC_QA_PENDING",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::met-436672",
+      "path": "site/gallery/images/hondius-christ-among-the-doctors-met-436672-preview.webp",
+      "title": "Christ among the Doctors",
+      "artist": "Abraham Hondius",
+      "image_bytes": 8434,
+      "git_blob_sha": "de99d03c4c01eb359f0a07283aeba2d58ae1e9f2",
+      "source_record": "app-data/sacred-art/artwork-catalogue-01.v1.json or -02.v1.json, image_url embedded WebP under CANONICAL::met-436672",
+      "recorded_reproduction_rights": "Metropolitan Museum of Art donated photographic reproduction under CC0; Commons file source and Met institutional OA policy",
+      "met_object_id": 436672,
+      "met_accession": "1974.368",
+      "museum_object_url": "https://www.metmuseum.org/art/collection/search/436672",
+      "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:Christ_among_the_Doctors_MET_DP147792.jpg",
+      "pixel_dimensions": [
+        410,
+        316
+      ],
+      "quality_gate": "INTERIM_GALLERY_PREVIEW_ONLY__ORIGINAL_IMAGE_NOT_TRANSFERRED",
+      "source_identity_checked": "Artwork visually checked against Met object and exact artist/title; original JPEG byte identity not established",
+      "release_scope": "GALLERY_PREVIEW_ONLY__NO_PRAYER_STAGE_OR_DAY_IMAGE_APPROVAL",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::met-438338",
+      "path": "site/gallery/images/carracci-burial-of-christ-met-438338-preview.webp",
+      "title": "The Burial of Christ",
+      "artist": "Annibale Carracci",
+      "image_bytes": 6762,
+      "git_blob_sha": "588db46ec733728aa0c5f85f80b6fdf069427787",
+      "source_record": "app-data/sacred-art/artwork-catalogue-01.v1.json or -02.v1.json, image_url embedded WebP under CANONICAL::met-438338",
+      "recorded_reproduction_rights": "Metropolitan Museum of Art donated photographic reproduction under CC0; Commons file source and Met institutional OA policy",
+      "met_object_id": 438338,
+      "met_accession": "1998.188",
+      "museum_object_url": "https://www.metmuseum.org/art/collection/search/438338",
+      "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:The_Burial_of_Christ_MET_1998.188.jpg",
+      "pixel_dimensions": [
+        379,
+        470
+      ],
+      "quality_gate": "INTERIM_GALLERY_PREVIEW_ONLY__ORIGINAL_IMAGE_NOT_TRANSFERRED",
+      "source_identity_checked": "Artwork visually checked against Met object and exact artist/title; original JPEG byte identity not established",
+      "release_scope": "GALLERY_PREVIEW_ONLY__NO_PRAYER_STAGE_OR_DAY_IMAGE_APPROVAL",
       "exact_original_image_for_prayer": false
     }
   ]
