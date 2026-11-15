@@ -524,7 +524,17 @@
             }
           ],
           "source_url": "https://commons.wikimedia.org/wiki/File:Henry_Ossawa_Tanner%2C_American_%28active_France%29_-_The_Annunciation_-_Google_Art_Project.jpg",
-          "local_asset": null,
+          "local_asset": {
+            "file": null,
+            "repository_path": "app-data/sacred-art/staged-images/tanner-annunciation-1898-1920.webp",
+            "physical_status": "STAGED_NOT_IN_SITE",
+            "museum": "Philadelphia Museum of Art",
+            "accession": "W1899-1-1",
+            "source": "https://www.philamuseum.org/objects/104384",
+            "rights": "Public Domain Mark 1.0 faithful 2D reproduction, per source provenance",
+            "photo_qa": "PHONE_VISUAL_AND_CINEMATIC_QA_PENDING",
+            "card_use_authorized": false
+          },
           "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
         },
         {
