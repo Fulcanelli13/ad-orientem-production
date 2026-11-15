@@ -1,0 +1,136 @@
+name: One-time verified Sacred Art gallery import — batch 06
+on:
+  push:
+    branches: [feature/gallery-image-batch06-20261115]
+    paths: [.github/workflows/gallery-image-batch06-once.yml]
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify institutional records and store full-composition derivatives
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet Pillow
+          python3 - <<'PY'
+          import hashlib, io, json, re, time, unicodedata, urllib.request, urllib.parse
+          from pathlib import Path
+          from PIL import Image,ImageOps
+          specs=[
+            dict(key='solimena-risen-virgin',id='REVIEW::cma:146167',museum='CMA',accession='1971.63',title='The Risen Christ Appearing to the Virgin',artist='solimena',filename='solimena-risen-christ-virgin-cma-1971-63-2000.webp'),
+            dict(key='jordaens-betrayal',id='REVIEW::cma:145148',museum='CMA',accession='1970.32',title='The Betrayal of Christ',artist='jordaens',filename='jordaens-betrayal-christ-cma-1970-32-2000.webp'),
+            dict(key='valdes-assumption-study',id='REVIEW::cma:153773',museum='CMA',accession='1987.7',title='Study for "The Assumption of the Virgin" for San Augustín, Seville',artist='valdes',filename='valdes-leal-assumption-study-cma-1987-7-2000.webp'),
+            dict(key='sodoma-crucifixion',id='CANONICAL::cma-97147',museum='CMA',accession='1916.786',title='The Crucifixion',artist='sodoma',filename='sodoma-crucifixion-cma-1916-786-2000.webp'),
+            dict(key='preparation-crucifixion',id='CANONICAL::cma-97181',museum='CMA',accession='1916.816',title='Preparation for the Crucifixion',artist=None,filename='preparation-crucifixion-cma-1916-816-2000.webp'),
+            dict(key='ecce-homo-sodoma',id='REVIEW::met:437978',museum='MET',object_id=437978,title='Christ Presented to the People (Ecce Homo)',artist='sodoma',filename='sodoma-ecce-homo-met-437978-2000.webp'),
+            dict(key='poussin-agony',id='CANONICAL::met-442488',museum='MET',object_id=442488,title='The Agony in the Garden',artist='poussin',filename='poussin-agony-garden-met-442488-2000.webp'),
+            dict(key='murillo-crucifixion',id='REVIEW::met:437172',museum='MET',object_id=437172,title='The Crucifixion',artist='murillo',filename='murillo-crucifixion-met-437172-2000.webp'),
+            dict(key='rubens-teresa-purgatory',id='CANONICAL::met-437542',museum='MET',object_id=437542,title='Saint Teresa of Avila Interceding for Souls in Purgatory',artist='rubens',filename='rubens-workshop-teresa-purgatory-met-437542-2000.webp'),
+            dict(key='campeche-trinity',id='NEW::met-917618',museum='MET',object_id=917618,title='The Holy Trinity',artist='campeche',filename='campeche-trinity-met-917618-2000.webp')
+          ]
+          def norm(s):
+            s=''.join(c for c in unicodedata.normalize('NFKD',str(s).casefold()) if not unicodedata.combining(c))
+            return ' '.join(w for w in re.findall('[a-z0-9]+',s) if w not in ('a','an','the','for','of','in','to','and'))
+          def title_agrees(a,b):
+            a,b=norm(a),norm(b)
+            if a==b or a in b or b in a:return True
+            ta,tb=set(a.split()),set(b.split())
+            return len(ta&tb)>=2 and len(ta&tb)/max(1,min(len(ta),len(tb)))>=0.75
+          catalogue=json.loads(Path('site/gallery/catalogue.v1.json').read_text())
+          works={r['id']:r for r in catalogue['records']}
+          for s in specs:
+            work=works.get(s['id'])
+            assert work and work['owner_selected_artwork'] and work['image'] is None, 'Missing selected image-pending catalogue record '+s['id']
+            assert title_agrees(work['title'],s['title']), 'Curated title differs '+s['id']
+          def fetch(url):
+            assert url.startswith('https://')
+            last=None
+            for attempt in range(4):
+              try:
+                req=urllib.request.Request(url,headers={'User-Agent':'AdOrientemSacredArtGallery/1.0 (museum open-access record verification)'})
+                with urllib.request.urlopen(req,timeout=70) as resp:
+                  return resp.read()
+              except Exception as exc:
+                last=exc
+                if attempt<3:time.sleep(2*(attempt+1))
+            raise RuntimeError('Museum source fetch failed '+url+' '+str(last))
+          out=Path('site/gallery/images');out.mkdir(parents=True,exist_ok=True)
+          imported=[];skipped=[]
+          for spec in specs:
+            try:
+              if spec['museum']=='CMA':
+                api='https://openaccess-api.clevelandart.org/api/artworks/'+spec['accession']
+                record=json.loads(fetch(api))['data']
+                if isinstance(record,list):assert len(record)==1;record=record[0]
+                assert record['accession_number']==spec['accession'],'Accession mismatch'
+                assert record.get('share_license_status')=='CC0','Museum reuse not explicitly CC0'
+                museum_title=record['title']
+                creators=json.dumps(record.get('creators') or [],ensure_ascii=False)
+                url=record['images']['print']['url']
+                assert urllib.parse.urlparse(url).hostname=='openaccess-cdn.clevelandart.org','Unexpected museum file host'
+                rights='Cleveland Museum of Art CC0 Open Access'
+                license_code='CC0'
+                object_id=str(record['id'])
+                source_page='https://www.clevelandart.org/art/'+spec['accession']
+              else:
+                api='https://collectionapi.metmuseum.org/public/collection/v1/objects/'+str(spec['object_id'])
+                record=json.loads(fetch(api))
+                assert record['objectID']==spec['object_id'],'Museum object mismatch'
+                assert record.get('isPublicDomain') is True,'Met public-domain right not confirmed'
+                museum_title=record['title']
+                creators=record['artistDisplayName']
+                url=record['primaryImage']
+                assert urllib.parse.urlparse(url).hostname=='images.metmuseum.org','Unexpected Met image host'
+                rights='The Metropolitan Museum of Art Public Domain / Open Access'
+                license_code='PUBLIC_DOMAIN'
+                object_id=str(record['objectID'])
+                source_page='https://www.metmuseum.org/art/collection/search/'+str(spec['object_id'])
+              assert title_agrees(spec['title'],museum_title),f'Official title does not match: {spec["title"]} vs {museum_title}'
+              if spec['artist']:
+                assert spec['artist'] in norm(creators),f'Artist does not match: {creators}'
+              original=fetch(url)
+              assert original[:2]==b'\xff\xd8','Expected institutional JPEG source'
+              with Image.open(io.BytesIO(original)) as im:
+                im.load();im=ImageOps.exif_transpose(im)
+                native=list(im.size)
+                assert min(native)>=700 and max(native)>=1700,'Source photo below gallery quality gate'
+                aspect=im.width/im.height
+                if im.mode!='RGB': im=im.convert('RGB')
+                if max(im.size)>2000:im.thumbnail((2000,2000),Image.Resampling.LANCZOS)
+                dims=list(im.size)
+                assert abs(im.width/im.height-aspect)<0.002,'Unexpected crop or distortion'
+                dest=out/spec['filename']
+                im.save(dest,'WEBP',quality=88,method=6)
+              blob=dest.read_bytes()
+              assert blob[:4]==b'RIFF' and blob[8:12]==b'WEBP'
+              imported.append(dict(
+                key=spec['key'],artwork_id=spec['id'],museum=spec['museum'],
+                institution_object_id=object_id,museum_api_url=api,museum_page=source_page,
+                museum_title=museum_title,museum_creator=creators,official_license=license_code,
+                recorded_reproduction_rights=rights,source_image_url=url,
+                source_bytes=len(original),source_dimensions_px=native,source_sha256=hashlib.sha256(original).hexdigest(),
+                source_git_blob_sha=hashlib.sha1(b'blob '+str(len(original)).encode()+b'\0'+original).hexdigest(),
+                local_path='site/gallery/images/'+spec['filename'],local_bytes=len(blob),local_dimensions_px=dims,
+                local_sha256=hashlib.sha256(blob).hexdigest(),
+                local_git_blob_sha=hashlib.sha1(b'blob '+str(len(blob)).encode()+b'\0'+blob).hexdigest(),
+                full_composition=True,source_original_locally_persisted=False,scope='GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT'))
+              print('VERIFIED',spec['id'],native,'=>',dims,len(blob),'bytes',flush=True)
+            except Exception as e:
+              skipped.append(dict(artwork_id=spec['id'],reason=str(e),requires_independent_review=True))
+              print('SKIPPED',spec['id'],str(e),flush=True)
+          assert len(imported)>=6,'Fewer than six source-verified paintings; abort gallery transfer'
+          manifest=dict(schema='ao.sacred-art.gallery-image-import.v1',batch='2026-11-15-batch06',
+            policy='Only owner-selected existing catalogue records. Match museum accession/object, exact title and creator; verify museum image CC0/public-domain status. Preserve source SHA256, dimensions, full-composition local derivative hash. Do not infer primary prayer approvals. No claim of separately archived source JPEG.',
+            sources=imported,skipped=skipped)
+          Path('app-data/sacred-art/gallery-image-import-batch06.v1.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')
+          PY
+          git add site/gallery/images/*.webp app-data/sacred-art/gallery-image-import-batch06.v1.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --cached --quiet; then
+            git commit -m "Acquire verified gallery artwork images for batch 06"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
