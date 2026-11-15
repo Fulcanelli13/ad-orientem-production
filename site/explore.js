@@ -625,6 +625,14 @@ export async function mountExplore(){
  catch(e){state.lastError=String(e.message||e);setStatus(tr("unavailable"),true);}
 }
 export function exploreDebugState(){
- return {mounted:state.initialized,sourceLoaded:state.sourceLoaded,mapCount:state.map?1:0,
-  lens:state.lens,selectedRecords:state.all.length,error:state.lastError};
+ // Nonvisual map readiness for browser acceptance. Initial 'load' alone
+ // cannot certify tiles after a later flyTo. Never alters map behaviour.
+ const map=state.map;
+ const moving=map?map.isMoving():false;
+ const tilesLoaded=map?map.areTilesLoaded():false;
+ const mapLoaded=map?map.loaded():false;
+ return {mounted:state.initialized,sourceLoaded:state.sourceLoaded,mapCount:map?1:0,
+  lens:state.lens,selectedRecords:state.all.length,error:state.lastError,
+  cameraMoving:moving,tilesLoaded,mapLoaded,
+  mapReady:!!map && state.sourceLoaded && !moving && tilesLoaded && mapLoaded};
 }

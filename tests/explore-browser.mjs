@@ -35,7 +35,39 @@ try{
    viewport:{width,height},reducedMotion:"reduce",locale:"en-US",
    deviceScaleFactor:1,ignoreHTTPSErrors:false});
   const page=await context.newPage(),errors=[];
+  const tileNetwork={ok:0,httpErrors:[],failed:[]};
   page.on("pageerror",error=>errors.push(String(error.message||error)));
+  page.on("response",response=>{
+    if(!response.url().includes("tiles.openfreemap.org"))return;
+    if(response.status()>=400)tileNetwork.httpErrors.push(
+      response.status()+" "+response.url());
+    else if(response.url().includes("/planet/"))tileNetwork.ok++;
+  });
+  page.on("requestfailed",request=>{
+    if(request.url().includes("tiles.openfreemap.org") &&
+       !/ERR_ABORTED/.test(request.failure()?.errorText||""))
+      tileNetwork.failed.push((request.failure()?.errorText||"unknown")+
+        " "+request.url());
+  });
+  const mapSnapshot=()=>page.evaluate(async()=>{
+    const {exploreDebugState}=await import("./explore.js");
+    return exploreDebugState();
+  });
+  const waitForMapReady=async label=>{
+    try{
+      await page.waitForFunction(async()=>{
+        const {exploreDebugState}=await import("./explore.js");
+        return exploreDebugState().mapReady;
+      },null,{timeout:30000,polling:125});
+      // The state check may precede the browser compositor by a frame.
+      await page.evaluate(()=>new Promise(resolve=>
+        requestAnimationFrame(()=>requestAnimationFrame(resolve))));
+    }catch(error){
+      const diagnostic={label,state:await mapSnapshot(),tileNetwork};
+      throw new Error("Map tiles/camera did not settle for "+width+
+        "px "+JSON.stringify(diagnostic)+"; "+String(error.message||error));
+    }
+  };
   await page.goto("http://127.0.0.1:"+port+"/",{waitUntil:"domcontentloaded"});
   await page.locator('[data-route="atlas"]').first().click();
   await page.locator("#atlas-view").waitFor({state:"visible"});
@@ -69,6 +101,8 @@ try{
   // are ready. The "load" event hides this status only after adding GeoJSON.
   await page.waitForFunction(()=>document.getElementById("atlas-map-status")?.hidden===true,
    null,{timeout:30000});
+  // The 'load' status reports initial source creation, not tiles after pan.
+  await waitForMapReady("initial-mapped-lens");
   assert.equal(await page.locator(".atlas-switch > button").count(),2,"Exactly two top-level Atlases");
   assert.equal(await page.locator(".tabbar > button").count(),4,"Exactly four original bottom tabs");
   assert.equal(await page.locator("#atlas-results > li").count(),18);
@@ -206,6 +240,7 @@ try{
     await handle.click();
     assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek");
   }
+  await waitForMapReady("sacred-map-screenshot");
   await page.screenshot({path:join("artifacts/production-explore",width+"-en-sacred-map.png"),
    animations:"disabled",fullPage:false});
   await page.locator("#atlas-results .atlas-result-button").first().click();
@@ -261,6 +296,7 @@ try{
     if(width===390 || (width===320 && ["santarem","santiago","pilar"].includes(slug))
        || (width===430 && ["marie-reine","quezon"].includes(slug))
        || (width===1440 && ["saint-louis","pilar"].includes(slug))){
+      await waitForMapReady("photo-card-"+slug);
       await page.screenshot({path:join("artifacts/production-explore",
         width+"-en-photo-"+slug+"-card.png"),animations:"disabled",fullPage:false});
     }
@@ -297,6 +333,7 @@ try{
   await page.locator("#atlas-card .atlas-folio-back").click();
   await page.locator("#atlas-language").click();
   assert.match(await page.locator("#atlas-map-hint").innerText(),/horaires/);
+  await waitForMapReady("tlm-map-after-country-hops");
   await page.screenshot({path:join("artifacts/production-explore",width+"-fr-tlm-map.png"),
    animations:"disabled",fullPage:false});
   await page.locator("#atlas-results .atlas-result-button").first().click();
@@ -311,7 +348,10 @@ try{
   assert.equal(await page.locator("#atlas-map canvas").count(),1,
     "TLM/Sacred and Home return must never remount MapLibre");
   assert.deepEqual(errors,[],width+"px console errors: "+errors.slice(0,3).join(" | "));
-  outcomes.push({width,height,records:"18 Sacred / 10 TLM",mapCount:1,overflow:dom.horizontalOverflow});
+  outcomes.push({width,height,records:"18 Sacred / 10 TLM",
+    mapCount:1,overflow:dom.horizontalOverflow,
+    tiles:{responses:tileNetwork.ok,httpErrors:tileNetwork.httpErrors.length,
+      requestFailures:tileNetwork.failed.length},ready:await mapSnapshot()});
   await context.close();
  }
  console.log("PASS real production Explore MapLibre",JSON.stringify(outcomes));

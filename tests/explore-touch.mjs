@@ -55,6 +55,12 @@ try{
    null,{timeout:20000});
   await page.waitForFunction(()=>document.getElementById("atlas-map-status")?.hidden===true,
    null,{timeout:30000});
+  // A completed MapLibre load is weaker than rendered tile/camera idleness.
+  const mapReady=()=>page.waitForFunction(async()=>{
+    const {exploreDebugState}=await import("./explore.js");
+    return exploreDebugState().mapReady;
+  },null,{timeout:30000,polling:125});
+  await mapReady();
   assert.equal(await page.locator("#atlas-lens-tlm").getAttribute("aria-selected"),"true");
   const session=await context.newCDPSession(page);
   await page.screenshot({
@@ -89,6 +95,7 @@ try{
   assert.equal(await sheet.getAttribute("data-sheet-state"),"peek");
   await page.locator("#atlas-lens-sacred").tap();
   await page.waitForFunction(()=>document.querySelector("#atlas-count")?.textContent==="18 / 18");
+  await mapReady();
   const rail=page.locator("#atlas-results");
   const before=await rail.evaluate(el=>el.scrollLeft);
   const box=await rail.boundingBox();
