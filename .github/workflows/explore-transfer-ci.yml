@@ -33,6 +33,7 @@ jobs:
           done
           node --experimental-default-type=module --check site/explore.js
           node --experimental-default-type=module --check site/explore/model.js
+          node --experimental-default-type=module --check site/explore/marker-policy.js
           node --experimental-default-type=module --check tests/production-explore.mjs
           node --check tests/explore-selected-core.mjs
           for file in src/find/heritage-map.js src/find/place-source-synopsis.js src/find/geo-provenance.js src/find/sacred-place-visual-fallback.js; do
@@ -43,6 +44,7 @@ jobs:
           node tests/explore-photo-staging.mjs
           node tests/explore-camera.mjs
           node --experimental-default-type=module tests/explore-facets.mjs
+          node --experimental-default-type=module tests/explore-markers.mjs
       - name: Ensure existing Home V9 shell remains unaffected
         run: node tests/production-shell.mjs
 

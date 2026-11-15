@@ -122,6 +122,12 @@ try{
   assert.equal(await page.locator(".atlas-switch > button").count(),2,"Exactly two top-level Atlases");
   assert.equal(await page.locator(".tabbar > button").count(),4,"Exactly four original bottom tabs");
   assert.equal(await page.locator("#atlas-results > li").count(),18);
+  assert.equal(await page.locator("#atlas-map .atlas-place-marker").count(),18,
+    "Claude's 18 exact-source Sacred medallions must be anchored to one map");
+  assert.equal(await page.locator("#atlas-map .atlas-place-marker[data-visible='true']").count()>0,true,
+    "At least one selected source marker must be visible in the current lens");
+  assert.equal((await mapSnapshot()).tlmTapDiameter,40,
+    "Source-neutral TLM dots retain a 40px invisible pointer target");
   assert.equal(await page.locator("#atlas-results .atlas-result--photo").count(),6,
     "Only the six owner-selected photos may replace placeholder cards");
   const dom=await page.evaluate(()=>{
@@ -326,6 +332,11 @@ try{
     const folio=page.locator("#atlas-card");
     await folio.waitFor({state:"visible"});
     await assertSelectedPinInVisibleMap(slug);
+    const mark=page.locator('#atlas-map button.atlas-place-marker[data-atlas-marker-id="'+photoId+'"]');
+    assert.equal(await mark.getAttribute("data-visible"),"true",
+      "The verified selected marker must be visible in Claude's padded map");
+    assert.equal(await mark.getAttribute("data-mode"),"ph",
+      "Only selected and explicitly approved photo records receive 52px medallions");
     const heroImg=folio.locator(".atlas-folio-hero-photo .atlas-folio-photo-image");
     assert.equal(await heroImg.count(),1,"Photo folio must use donor image hero");
     await heroImg.evaluate(el=>el.decode());
@@ -342,8 +353,18 @@ try{
         width+"-en-photo-"+slug+"-folio.png"),animations:"disabled",fullPage:false});
     }
     await folio.locator(".atlas-folio-back").click();
+    if(width===390 && slug==="santiago"){
+      // An isolated, source-backed marker must be a real touch/click target,
+      // not merely a decorative SVG drawn at the correct coordinate.
+      await mark.click();
+      assert.equal(await page.locator("#atlas-card .atlas-folio-ttl h1").innerText(),
+        "Catedral de Santiago de Compostela");
+      await page.locator("#atlas-card .atlas-folio-back").click();
+    }
   }
   await page.locator("#atlas-lens-tlm").click();
+  assert.equal(await page.locator("#atlas-map .atlas-place-marker[data-visible='true']").count(),0,
+    "Sacred medallions may never remain on TLM Atlas");
   await page.waitForFunction(()=>document.querySelector("#atlas-count")?.textContent==="10 / 10");
   assert.equal(await page.locator("#atlas-results > li").count(),10);
   await page.locator("#atlas-results .atlas-result-button").first().click();

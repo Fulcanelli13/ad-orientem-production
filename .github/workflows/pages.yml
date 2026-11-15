@@ -47,6 +47,8 @@ jobs:
           done
           node --experimental-default-type=module --check site/explore.js
           node --experimental-default-type=module --check site/explore/model.js
+          node --experimental-default-type=module --check site/explore/marker-policy.js
+          node --experimental-default-type=module tests/explore-markers.mjs
           node --experimental-default-type=module tests/explore-selected-core.mjs
           node --experimental-default-type=module tests/production-explore.mjs
           if grep -Rni 'vercel' site/; then

@@ -8,6 +8,8 @@ import {renderSacredPlaceFallback} from "./explore/core/sacred-place-visual-fall
 import {CLAUDE_MAP_STYLE} from "./explore/claude-map-style.js";
 import {boundsForLens} from "./explore/lens-camera.js";
 import {facetOptions,filterEntriesByFacet} from "./explore/category-facets.js";
+import {CLAUDE_SACRED_GLYPHS,sacredMarkerMode,verifiedMarkerGlyph,
+  markerLabelVisible,visibleMarkerGeometry} from "./explore/marker-policy.js";
 
 const $ = id => document.getElementById(id);
 const MAPLIBRE_MODULE = "https://unpkg.com/maplibre-gl@6.13.0/dist/maplibre-gl.mjs";
@@ -49,7 +51,7 @@ const dictionary={
 };
 const state={
  initialized:false,lens:"tlm",language:"en",data:null,selectedId:null,
- map:null,sourceLoaded:false,mapFailed:false,loading:null,all:[],query:"",facet:"all",viewMode:"cards",folioHistory:[],lastError:null,
+ map:null,sourceLoaded:false,mapFailed:false,markers:null,loading:null,all:[],query:"",facet:"all",viewMode:"cards",folioHistory:[],lastError:null,
 };
 const tr=key=>dictionary[state.language][key]||key;
 const make=(tag,className,txt)=>{
@@ -252,7 +254,7 @@ function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
    const previous=state.folioHistory.pop();
    selectRecord(previous,{fly:false,back:true});
   }else{
-   state.selectedId=null;root.hidden=true;renderSummary();
+   state.selectedId=null;root.hidden=true;renderSummary();updateSacredMarkers();
    $("atlas-sheet-handle").focus({preventScroll:true});
   }
  };
@@ -265,7 +267,7 @@ function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
   closeAll.type="button";closeAll.setAttribute("aria-label",tr("hide"));
   closeAll.addEventListener("click",()=>{
    state.folioHistory=[];state.selectedId=null;root.hidden=true;renderSummary();
-   $("atlas-sheet-handle").focus({preventScroll:true});
+   updateSacredMarkers();$("atlas-sheet-handle").focus({preventScroll:true});
   });
   root.append(closeAll);
  }
@@ -386,7 +388,7 @@ function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
   "Les positions et distances indiquent des repères documentés, non des entrées vérifiées. Vérifier les sources avant une visite.":
   "Positions and distances describe documented sites, not verified entrances. Consult the original sources before visiting."));
  root.append(sc);
- renderSummary();
+ renderSummary();updateSacredMarkers();
  if(fly&&state.map)moveMapToVisiblePoint(
   [Number(record.geo.lng),Number(record.geo.lat)],
   Math.max(7,state.map.getZoom()));
@@ -400,13 +402,95 @@ function renderLens(lens){
  $("atlas-card").replaceChildren();
  renderHeader();renderSummary();syncMap();
 }
+// Claude's original source used HTML MapLibre markers (not plain GL circles)
+// at 7 / 22 / 52px sizes; this small verified-site pool is independent from
+// its France-only regional labels, demo timetables and generated photos.
+const markerShortName=name=>String(name).replace(
+ /^(Sanctuaire|Basilique|Cathédrale|Chapelle|Sanctuary of|Abbaye|Église)\s+(de\s+la\s+|du\s+|de\s+|d')?/i,"")
+ .replace(/^Notre-Dame/,"N.-D.").slice(0,42);
+function installSacredMarkers(lib){
+ if(state.markers||!state.map||!state.data)return;
+ state.markers=state.data.sacred.map(record=>{
+  const root=make("button","atlas-place-marker");
+  root.type="button";root.dataset.atlasMarkerId=record.id;
+  root.setAttribute("aria-label",record.name);
+  const med=make("span","atlas-map-med");
+  const glyph=verifiedMarkerGlyph(record);
+  if(glyph){
+   const icon=make("span","atlas-map-glyph");
+   icon.innerHTML='<svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true">'+
+     CLAUDE_SACRED_GLYPHS[glyph]+"</svg>";
+   med.append(icon);
+  }
+  const label=make("span","atlas-map-label",markerShortName(record.name));
+  root.append(med,label);
+  root.addEventListener("click",ev=>{
+   ev.stopPropagation();selectRecord(record.id);
+  });
+  const marker=new lib.Marker({element:root,anchor:"center"})
+   .setLngLat([Number(record.geo.lng),Number(record.geo.lat)]).addTo(state.map);
+  return {record,root,med,label,marker};
+ });
+ updateSacredMarkers();
+}
+function updateSacredMarkers(){
+ if(!state.map||!state.markers)return;
+ const sacred=state.lens==="sacred";
+ const filtered=sacred?new Set(visibleEntries().map(p=>p.id)):new Set();
+ const zoom=state.map.getZoom();
+ const width=state.map.getContainer().clientWidth;
+ const height=state.map.getContainer().clientHeight;
+ const occupied=[];
+ const ordered=[...state.markers].sort((a,b)=>
+  Number(b.record.id===state.selectedId)-Number(a.record.id===state.selectedId));
+ for(const item of ordered){
+  const {record,root,med,label}=item;
+  const selected=record.id===state.selectedId;
+  const p=state.map.project([Number(record.geo.lng),Number(record.geo.lat)]);
+  const mode=sacredMarkerMode(record,zoom,selected);
+  const {diameter,collisionRadius}=visibleMarkerGeometry(zoom,selected,mode);
+  const hit=[p.x-collisionRadius,p.y-collisionRadius,
+             p.x+collisionRadius,p.y+collisionRadius];
+  const inView=p.x>=0&&p.y>=0&&p.x<=width&&p.y<=height;
+  const collides=occupied.some(b=>hit[0]<b[2]&&hit[2]>b[0]&&
+                         hit[1]<b[3]&&hit[3]>b[1]);
+  const show=filtered.has(record.id)&&inView&&(selected||!collides);
+  root.dataset.visible=String(show);
+  root.hidden=!show;
+  root.tabIndex=show?0:-1;
+  if(!show)continue;
+  occupied.push(hit);
+  root.dataset.mode=mode;
+  root.dataset.selected=String(selected);
+  root.style.setProperty("--ao-marker-size",diameter+"px");
+  med.className="atlas-map-med atlas-map-med--"+mode;
+  const hasPhoto=mode==="ph";
+  med.style.backgroundImage=hasPhoto?'url("'+record.media.src+'")':"";
+  if(hasPhoto){
+   med.replaceChildren();
+  }else if(!med.childElementCount){
+   const glyph=verifiedMarkerGlyph(record);
+   if(glyph){
+    const icon=make("span","atlas-map-glyph");
+    icon.innerHTML='<svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true">'+
+      CLAUDE_SACRED_GLYPHS[glyph]+"</svg>";
+    med.append(icon);
+   }
+  }
+  label.hidden=!markerLabelVisible(zoom,selected,mode);
+ }
+}
+
 function syncMap(){
  if(!state.map||!state.sourceLoaded)return;
  state.map.getSource("ao-selected-sites")?.setData(featureCollection(visibleEntries()));
- // Reuse the one map/source, but make the active lens visibly distinct.
- if(state.map.getLayer("ao-selected-pins"))
-  state.map.setPaintProperty("ao-selected-pins","circle-color",
-   state.lens==="sacred"?"#c9ad78":"#e6d8b4");
+ // Claude's Sacred markers are DOM medallions, TLM remains MapLibre dots.
+ // No TLM schedule is imported; never express unverified Mass activity.
+ for(const id of ["ao-selected-pins","ao-selected-halos","ao-selected-hit"]){
+  if(state.map.getLayer(id))state.map.setLayoutProperty(id,"visibility",
+   state.lens==="tlm"?"visible":"none");
+ }
+ updateSacredMarkers();
 }
 async function loadDataset(){
  const res=await fetch("./explore/selected-sites.v1.json",{cache:"no-cache"});
@@ -480,19 +564,30 @@ async function startMap(){
   if(state.sourceLoaded)return;
   state.map.addSource("ao-selected-sites",{type:"geojson",data:featureCollection(visibleEntries())});
   state.map.addLayer({id:"ao-selected-halos",type:"circle",source:"ao-selected-sites",
-   paint:{"circle-radius":11,"circle-color":"rgba(201,173,120,.14)",
+   layout:{visibility:"visible"},
+   paint:{"circle-radius":8,"circle-color":"rgba(170,160,145,0.08)",
     "circle-stroke-width":0}});
   state.map.addLayer({id:"ao-selected-pins",type:"circle",source:"ao-selected-sites",
-   paint:{"circle-radius":["interpolate",["linear"],["zoom"],1,5,8,8],
-    "circle-color":state.lens==="sacred"?"#c9ad78":"#e6d8b4",
-    "circle-stroke-color":"#131c27","circle-stroke-width":2}});
-  state.map.on("click","ao-selected-pins",ev=>{
+   layout:{visibility:"visible"},
+   paint:{"circle-radius":["interpolate",["linear"],["zoom"],1,3.2,10,4.5],
+    "circle-color":"#a9a195",
+    "circle-stroke-color":"#0c0f14","circle-stroke-width":1}});
+  // A transparent 40px hit diameter keeps Claude's 3.2px neutral dot
+  // independently touchable; it does not imply a scheduled Mass.
+  state.map.addLayer({id:"ao-selected-hit",type:"circle",source:"ao-selected-sites",
+   layout:{visibility:"visible"},
+   paint:{"circle-radius":20,"circle-color":"#ffffff",
+    "circle-opacity":0.001,"circle-stroke-width":0}});
+  state.map.on("click","ao-selected-hit",ev=>{
    const id=ev.features?.[0]?.properties?.id;
    if(id)selectRecord(id,{fly:false});
   });
-  state.map.on("mouseenter","ao-selected-pins",()=>state.map.getCanvas().style.cursor="pointer");
-  state.map.on("mouseleave","ao-selected-pins",()=>state.map.getCanvas().style.cursor="");
+  state.map.on("mouseenter","ao-selected-hit",()=>state.map.getCanvas().style.cursor="pointer");
+  state.map.on("mouseleave","ao-selected-hit",()=>state.map.getCanvas().style.cursor="");
   state.sourceLoaded=true;
+  installSacredMarkers(lib);
+  syncMap();
+  state.map.on("move",updateSacredMarkers);
   setStatus(state.mapFailed?tr("unavailable"):"",state.mapFailed);
   frameInitialLens();
  });
@@ -666,5 +761,9 @@ export function exploreDebugState(){
   error:state.lastError,mapFailed:state.mapFailed,
   cameraMoving:moving,tilesLoaded,mapLoaded,
   mapReady:!!map && state.sourceLoaded && !moving && tilesLoaded && mapLoaded,
+  sacredMarkers:state.markers?.length||0,
+  visibleSacredMarkers:(state.markers||[]).filter(o=>o.root.dataset.visible==="true").length,
+  tlmTapDiameter:map?.getLayer("ao-selected-hit")?
+    2*map.getPaintProperty("ao-selected-hit","circle-radius"):0,
   selectedCameraPoint:projected?{x:projected.x,y:projected.y}:null};
 }
