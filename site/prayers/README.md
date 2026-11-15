@@ -41,3 +41,19 @@ The clean production repo currently contains only the neutral *Pray* entrance pl
 **QA command:** `node tests/prayer-artwork-activation.mjs`. The existing production artwork validation script must also pass.
 
 The previous `main` commit is the rollback point. GitHub Actions / GitHub Pages remain the sole publishing pipeline.
+
+
+## A1 Angelus and Regina Cæli — source-faithful stage crosswalk
+
+The original Claude-derived A1 adapter and its unmodified styling file are pinned in `design/prayer-donors/2026-11-11-a1/` as a **nonpublished reference**, sourced from research draft PR #2879 (Git blobs pinned in `angelus-regina-a1-crosswalk.v1.json`). This **11 November donor does not supersede later approved Caption Match and adaptive timing decisions**.
+
+`angelus-regina-a1-crosswalk.v1.json` maps the legacy editorial painting-stage IDs into the actual A1 devotional card structure. Unlike the previous 5+4 editorial rows, the runtime A1 groups Intercessio and Collect into one `prayer` movement for each form:
+
+- Angelus: `announcement [0,1]`, `fiat [2,3]`, `incarnation [4,5]`, `prayer [6,7]`, optional `conclusion []` (three full Gloria Patri repetitions and historical additions).
+- Regina Cæli: `rejoice [0]`, `resurrection [1]`, `prayer [2,3]`, optional `conclusion []`.
+
+**Seven exact Collect painting selections (Angelus 1, Regina Cæli 6)** therefore attach to the *Collect prayer unit*, not to the entire painting background for the multi-unit stage. Their primary painting remains unset. The separate 11 Angelus and 4 Regina Cæli parent-prayer candidates remain contextual references, not stage-specific selections.
+
+`angelus-a1-stage-bridge.mjs` returns source-owned movements with stable editorial aliases and unit-scoped eligible art; it cannot activate artwork. `tests/angelus-a1-donor-crosswalk.mjs` validates the grouping and rejects implicit stage primaries.
+
+No actual Claude prayer screen is transferred yet. The correct follow-on is to select and preserve the later, explicit **13 November Caption Match prototype** (not merely this 11 November A1 donor), reconcile its real screen IDs, canonical EN/FR/Latin recitation and visual/camera transitions, then perform 320/390/desktop QA. Preserve the interactive church entrance and all established prayer navigation.
