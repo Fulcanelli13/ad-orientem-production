@@ -67,7 +67,7 @@ for (const entry of images.sources) {
   assert(srcFiles.has(entry.path));
   assert.equal(statSync(resolve(base,entry.path)).size,entry.image_bytes);
   const blob = readFileSync(resolve(base,entry.path));
-  assert.equal(createHash('sha1').update('blob '+blob.length+'\\0'.replace('\\0','\0')).update(blob).digest('hex'),entry.git_blob_sha,'Source Git blob hash mismatch: '+entry.path);
+  assert.equal(createHash('sha1').update('blob '+blob.length+'\0').update(blob).digest('hex'),entry.git_blob_sha,'Source Git blob hash mismatch: '+entry.path);
   if (entry.sha256) assert.equal(createHash('sha256').update(blob).digest('hex'),entry.sha256,'Original SHA256 mismatch: '+entry.path);
   if (entry.path.startsWith('site/gallery/images/') && staged.staged_images.some(x=>x.work_id===entry.artwork_id)) {
     const match = staged.staged_images.find(x=>x.work_id===entry.artwork_id);
@@ -97,7 +97,7 @@ for (const id of verifiedArchiveOriginalIds) {
   const work=gallery.records.find(x=>x.id===id);
   const photo=images.sources.find(x=>x.artwork_id===id);
   assert(work?.owner_selected_artwork,'Only previously selected paintings receive original files');
-  assert(work?.image?.src=== './'+photo?.path.replace(/^site\\//,''),'Original missing gallery binding');
+  assert(work?.image?.src === './'+photo?.path.slice('site/'.length),'Original missing gallery binding');
   assert(photo?.image_bytes>2000000,'Image file must be an original-sized JPEG');
   assert(photo?.release_scope==='GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT');
   assert(!work.image.quality.startsWith('LOW_RES_PREVIEW'));
