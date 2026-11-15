@@ -387,10 +387,9 @@ function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
   "Positions and distances describe documented sites, not verified entrances. Consult the original sources before visiting."));
  root.append(sc);
  renderSummary();
- if(fly&&state.map)state.map.flyTo({
-  center:[Number(record.geo.lng),Number(record.geo.lat)],
-  zoom:Math.max(7,state.map.getZoom()),duration:650,essential:false
- });
+ if(fly&&state.map)moveMapToVisiblePoint(
+  [Number(record.geo.lng),Number(record.geo.lat)],
+  Math.max(7,state.map.getZoom()));
 }
 function renderLens(lens){
  if(lens!=="sacred"&&lens!=="tlm")return;
@@ -426,6 +425,28 @@ function loadMapLibre(){
  // This pinned import is the same published ESM distribution used by research.
  if (!mapLibreModulePromise) mapLibreModulePromise=import(MAPLIBRE_MODULE);
  return mapLibreModulePromise;
+}
+function mapCameraPadding(){
+ // Restore Claude's PAD(): active controls above, sheet and tabbar below.
+ // Measure the actual integrated Home geometry instead of assuming an
+ // 84px demo tabbar or a fixed physical-device viewport.
+ const map=$("atlas-map")?.getBoundingClientRect();
+ const top=document.querySelector("#atlas-view .atlas-top")?.getBoundingClientRect();
+ const sheet=$("atlas-sheet")?.getBoundingClientRect();
+ if(!map)return {top:130,bottom:480,left:30,right:30};
+ return {
+  top:Math.max(0,Math.ceil((top?.bottom??map.top)-map.top))+10,
+  bottom:Math.max(0,Math.ceil(map.bottom-(sheet?.top??map.bottom)))+24,
+  left:30,right:30
+ };
+}
+function moveMapToVisiblePoint(center,zoom){
+ const options={center,zoom,padding:mapCameraPadding()};
+ // MapLibre's reduced-motion flyTo fallback drops 'padding'. An immediate
+ // jumpTo preserves both accessibility and Claude's visible camera focus.
+ if(window.matchMedia("(prefers-reduced-motion: reduce)").matches)
+  state.map.jumpTo(options);
+ else state.map.flyTo({...options,duration:650,essential:false});
 }
 function frameInitialLens() {
  if(!state.map || !state.sourceLoaded) return;
@@ -576,10 +597,9 @@ function attachControls(){
     state.language==="fr"?"Localisation indisponible.":"Location unavailable.",true);return;}
   navigator.geolocation.getCurrentPosition(position=>{
     setStatus("");
-    if(state.map)state.map.flyTo({
-      center:[position.coords.longitude,position.coords.latitude],
-      zoom:Math.max(9,state.map.getZoom()),duration:650,essential:false
-    });
+    if(state.map)moveMapToVisiblePoint(
+      [position.coords.longitude,position.coords.latitude],
+      Math.max(9,state.map.getZoom()));
   },()=>{
     setStatus(state.language==="fr"?"Position non disponible.":"Location was not shared.",true);
   },{enableHighAccuracy:false,timeout:8000,maximumAge:60000});
@@ -631,8 +651,12 @@ export function exploreDebugState(){
  const moving=map?map.isMoving():false;
  const tilesLoaded=map?map.areTilesLoaded():false;
  const mapLoaded=map?map.loaded():false;
+ const selected=state.selectedId?activeRecord(state.selectedId):null;
+ const projected=map&&selected?map.project([
+  Number(selected.geo.lng),Number(selected.geo.lat)]):null;
  return {mounted:state.initialized,sourceLoaded:state.sourceLoaded,mapCount:map?1:0,
   lens:state.lens,selectedRecords:state.all.length,error:state.lastError,
   cameraMoving:moving,tilesLoaded,mapLoaded,
-  mapReady:!!map && state.sourceLoaded && !moving && tilesLoaded && mapLoaded};
+  mapReady:!!map && state.sourceLoaded && !moving && tilesLoaded && mapLoaded,
+  selectedCameraPoint:projected?{x:projected.x,y:projected.y}:null};
 }

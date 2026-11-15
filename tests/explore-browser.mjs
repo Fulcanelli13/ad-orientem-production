@@ -68,6 +68,22 @@ try{
         "px "+JSON.stringify(diagnostic)+"; "+String(error.message||error));
     }
   };
+  const assertSelectedPinInVisibleMap=async label=>{
+    await waitForMapReady("visible-focus-"+label);
+    const f=await page.evaluate(async()=>{
+      const {exploreDebugState}=await import("./explore.js");
+      const point=exploreDebugState().selectedCameraPoint;
+      const map=document.getElementById("atlas-map").getBoundingClientRect();
+      const top=document.querySelector("#atlas-view .atlas-top").getBoundingClientRect();
+      const sheet=document.getElementById("atlas-sheet").getBoundingClientRect();
+      return {point,top:top.bottom-map.top+8,bottom:sheet.top-map.top-23,
+        left:30,right:map.width-30};
+    });
+    assert.ok(f.point && f.point.x>f.left && f.point.x<f.right &&
+      f.point.y>f.top && f.point.y<f.bottom,
+      "Selected "+label+" pin remains behind top controls or bottom sheet "+
+      width+"px: "+JSON.stringify(f));
+  };
   await page.goto("http://127.0.0.1:"+port+"/",{waitUntil:"domcontentloaded"});
   await page.locator('[data-route="atlas"]').first().click();
   await page.locator("#atlas-view").waitFor({state:"visible"});
@@ -245,6 +261,7 @@ try{
    animations:"disabled",fullPage:false});
   await page.locator("#atlas-results .atlas-result-button").first().click();
   await page.locator("#atlas-card").waitFor({state:"visible"});
+  await assertSelectedPinInVisibleMap("initial-sacred-folio");
   assert.equal(await page.locator("#atlas-card .atlas-folio-hero").count(),1,
     "The source folio must use Claude's immersive hero, not a generic details panel");
   assert.equal(await page.locator("#atlas-card .atlas-folio-toc").count(),1,
@@ -303,6 +320,7 @@ try{
     await card.click();
     const folio=page.locator("#atlas-card");
     await folio.waitFor({state:"visible"});
+    await assertSelectedPinInVisibleMap(slug);
     const heroImg=folio.locator(".atlas-folio-hero-photo .atlas-folio-photo-image");
     assert.equal(await heroImg.count(),1,"Photo folio must use donor image hero");
     await heroImg.evaluate(el=>el.decode());
