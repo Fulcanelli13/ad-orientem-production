@@ -1,0 +1,317 @@
+{
+  "schema": "ao.prayers.angelus-regina-a1-crosswalk.v1",
+  "created": "2026-11-15",
+  "donor": {
+    "repository": "Fulcanelli13/ad-orientem",
+    "branch": "feature/angelus-a1-definitive-caption-20261111",
+    "pull_request": "https://github.com/Fulcanelli13/ad-orientem/pull/2879",
+    "status": "DRAFT_UNMERGED",
+    "js_blob_sha": "80c6c38fd6d9aae4ea715f7a9e3f534ad9b7fee9",
+    "styles_blob_sha": "0b53abaff710fca0f91f0b77894050359347ef7a",
+    "original_js": "src/pray/angelus-a1-definitive.js",
+    "original_css": "src/pray/angelus-a1-definitive-styles.js",
+    "new_production_snapshot": "design/prayer-donors/2026-11-11-a1/",
+    "source_contract": "A1_DATA in src/pray/devotional-card-deck.js at branch; not a copy of source text",
+    "known_later_user_changes": [
+      "Caption Match hairline title directly above ℣/℟, titles never above complete Ave Maria/Collect",
+      "Light/mute adaptive to word count per current language, minimum 1.75 seconds per line",
+      "Cinematic full composition on conclusion; deliberate smooth artwork pan while praying",
+      "Keep all original Claude cameras/fonts/painting selections and existing interactive-church entry"
+    ]
+  },
+  "scope": "SEMANTIC_CARD_CROSSWALK_ONLY; no runtime DOM port, no source text or image assignment",
+  "status": "NOT_A_PRAYER_ENGINE; NO_RENDERING; NO_VISUAL_APPROVAL",
+  "exact_source_unit_counts": {
+    "angelus": 8,
+    "regina_caeli": 4
+  },
+  "stage_counts_with_optional_conclusion": {
+    "angelus": 5,
+    "regina_caeli": 4
+  },
+  "stage_counts_without_conclusion": {
+    "angelus": 4,
+    "regina_caeli": 3
+  },
+  "family_runtime_routes": {
+    "angelus": "pray.angelus_regina",
+    "regina_caeli": "pray.angelus_regina"
+  },
+  "primary_selection_policy": "Stage image stays UNSET even if the collect unit has an exact-card-approved artwork.",
+  "stages": [
+    {
+      "form": "angelus",
+      "stage_id": "announcement",
+      "latin": "Angelus Domini",
+      "unit_indices": [
+        0,
+        1
+      ],
+      "editorial_keys": [
+        "angelus.annuntiatio"
+      ],
+      "units": [
+        {
+          "kind": "vr",
+          "subtype": "versicle_response",
+          "editorial_card_key": "angelus.annuntiatio",
+          "legacy_editorial_id": "STG-pray.angelus-05",
+          "content_role": "First versicle and response",
+          "exact_approved_artwork_binding": "NONE"
+        },
+        {
+          "kind": "prayer",
+          "subtype": "ave_maria",
+          "editorial_card_key": "angelus.annuntiatio",
+          "legacy_editorial_id": "STG-pray.angelus-05",
+          "content_role": "Complete Hail Mary, title-less within card",
+          "exact_approved_artwork_binding": "NONE"
+        }
+      ],
+      "display_card_key": "angelus.a1.announcement",
+      "runtime_card_id": null,
+      "verified_runtime_card_id": false,
+      "primary_artwork_id": null,
+      "painting_activation": "OFF_WAITING_FOR_APPROVAL_AND_SOURCE_IMAGE_QA",
+      "source_authority": "RESEARCH_DRAFT_2879_A1_STAGE_PLAN_ONLY"
+    },
+    {
+      "form": "angelus",
+      "stage_id": "fiat",
+      "latin": "Ecce ancilla",
+      "unit_indices": [
+        2,
+        3
+      ],
+      "editorial_keys": [
+        "angelus.fiat"
+      ],
+      "units": [
+        {
+          "kind": "vr",
+          "subtype": "versicle_response",
+          "editorial_card_key": "angelus.fiat",
+          "legacy_editorial_id": "STG-pray.angelus-06",
+          "content_role": "Second versicle and response",
+          "exact_approved_artwork_binding": "NONE"
+        },
+        {
+          "kind": "prayer",
+          "subtype": "ave_maria",
+          "editorial_card_key": "angelus.fiat",
+          "legacy_editorial_id": "STG-pray.angelus-06",
+          "content_role": "Complete Hail Mary, title-less within card",
+          "exact_approved_artwork_binding": "NONE"
+        }
+      ],
+      "display_card_key": "angelus.a1.fiat",
+      "runtime_card_id": null,
+      "verified_runtime_card_id": false,
+      "primary_artwork_id": null,
+      "painting_activation": "OFF_WAITING_FOR_APPROVAL_AND_SOURCE_IMAGE_QA",
+      "source_authority": "RESEARCH_DRAFT_2879_A1_STAGE_PLAN_ONLY"
+    },
+    {
+      "form": "angelus",
+      "stage_id": "incarnation",
+      "latin": "Et Verbum caro",
+      "unit_indices": [
+        4,
+        5
+      ],
+      "editorial_keys": [
+        "angelus.incarnatio"
+      ],
+      "units": [
+        {
+          "kind": "vr",
+          "subtype": "versicle_response",
+          "editorial_card_key": "angelus.incarnatio",
+          "legacy_editorial_id": "STG-pray.angelus-07",
+          "content_role": "Third versicle and response; custom-dependent posture cue",
+          "exact_approved_artwork_binding": "NONE"
+        },
+        {
+          "kind": "prayer",
+          "subtype": "ave_maria",
+          "editorial_card_key": "angelus.incarnatio",
+          "legacy_editorial_id": "STG-pray.angelus-07",
+          "content_role": "Complete Hail Mary, title-less within card",
+          "exact_approved_artwork_binding": "NONE"
+        }
+      ],
+      "display_card_key": "angelus.a1.incarnation",
+      "runtime_card_id": null,
+      "verified_runtime_card_id": false,
+      "primary_artwork_id": null,
+      "painting_activation": "OFF_WAITING_FOR_APPROVAL_AND_SOURCE_IMAGE_QA",
+      "source_authority": "RESEARCH_DRAFT_2879_A1_STAGE_PLAN_ONLY"
+    },
+    {
+      "form": "angelus",
+      "stage_id": "prayer",
+      "latin": "Oremus",
+      "unit_indices": [
+        6,
+        7
+      ],
+      "editorial_keys": [
+        "angelus.intercessio",
+        "angelus.collect"
+      ],
+      "units": [
+        {
+          "kind": "vr",
+          "subtype": "versicle_response",
+          "editorial_card_key": "angelus.intercessio",
+          "legacy_editorial_id": "STG-pray.angelus-08",
+          "content_role": "Pray for us / that we may be made worthy",
+          "exact_approved_artwork_binding": "NONE"
+        },
+        {
+          "kind": "collect",
+          "subtype": "collect",
+          "editorial_card_key": "angelus.collect",
+          "legacy_editorial_id": "STG-pray.angelus-09",
+          "content_role": "Angelus Collect; one approved exact artwork only for this prayer unit",
+          "exact_approved_artwork_binding": "EXACT_SUBUNIT_ONLY__NEVER_STAGE_PRIMARY"
+        }
+      ],
+      "display_card_key": "angelus.a1.prayer",
+      "runtime_card_id": null,
+      "verified_runtime_card_id": false,
+      "primary_artwork_id": null,
+      "painting_activation": "OFF_WAITING_FOR_APPROVAL_AND_SOURCE_IMAGE_QA",
+      "source_authority": "RESEARCH_DRAFT_2879_A1_STAGE_PLAN_ONLY"
+    },
+    {
+      "form": "angelus",
+      "stage_id": "conclusion",
+      "latin": "Conclusio",
+      "unit_indices": [],
+      "editorial_keys": [],
+      "optional": true,
+      "appendix": [
+        "Gloria Patri (three complete repetitions)",
+        "Faithful departed",
+        "Divine assistance"
+      ],
+      "units": [],
+      "display_card_key": "angelus.a1.conclusion",
+      "runtime_card_id": null,
+      "verified_runtime_card_id": false,
+      "primary_artwork_id": null,
+      "painting_activation": "OFF_WAITING_FOR_APPROVAL_AND_SOURCE_IMAGE_QA",
+      "source_authority": "RESEARCH_DRAFT_2879_A1_STAGE_PLAN_ONLY"
+    },
+    {
+      "form": "regina_caeli",
+      "stage_id": "rejoice",
+      "latin": "Regina cæli",
+      "unit_indices": [
+        0
+      ],
+      "editorial_keys": [
+        "regina_caeli.rejoice"
+      ],
+      "units": [
+        {
+          "kind": "antiphon",
+          "subtype": "antiphon_verse",
+          "editorial_card_key": "regina_caeli.rejoice",
+          "legacy_editorial_id": "STG-pray.angelus_regina-01",
+          "content_role": "Regina Cæli opening antiphon",
+          "exact_approved_artwork_binding": "NONE"
+        }
+      ],
+      "display_card_key": "regina_caeli.a1.rejoice",
+      "runtime_card_id": null,
+      "verified_runtime_card_id": false,
+      "primary_artwork_id": null,
+      "painting_activation": "OFF_WAITING_FOR_APPROVAL_AND_SOURCE_IMAGE_QA",
+      "source_authority": "RESEARCH_DRAFT_2879_A1_STAGE_PLAN_ONLY"
+    },
+    {
+      "form": "regina_caeli",
+      "stage_id": "resurrection",
+      "latin": "Resurrexit",
+      "unit_indices": [
+        1
+      ],
+      "editorial_keys": [
+        "regina_caeli.resurrexit"
+      ],
+      "units": [
+        {
+          "kind": "antiphon",
+          "subtype": "antiphon_verse",
+          "editorial_card_key": "regina_caeli.resurrexit",
+          "legacy_editorial_id": "STG-pray.angelus_regina-02",
+          "content_role": "Resurrection antiphon",
+          "exact_approved_artwork_binding": "NONE"
+        }
+      ],
+      "display_card_key": "regina_caeli.a1.resurrection",
+      "runtime_card_id": null,
+      "verified_runtime_card_id": false,
+      "primary_artwork_id": null,
+      "painting_activation": "OFF_WAITING_FOR_APPROVAL_AND_SOURCE_IMAGE_QA",
+      "source_authority": "RESEARCH_DRAFT_2879_A1_STAGE_PLAN_ONLY"
+    },
+    {
+      "form": "regina_caeli",
+      "stage_id": "prayer",
+      "latin": "Gaude et lætare",
+      "unit_indices": [
+        2,
+        3
+      ],
+      "editorial_keys": [
+        "regina_caeli.intercession",
+        "regina_caeli.collect"
+      ],
+      "units": [
+        {
+          "kind": "vr",
+          "subtype": "versicle_response",
+          "editorial_card_key": "regina_caeli.intercession",
+          "legacy_editorial_id": "STG-pray.angelus_regina-03",
+          "content_role": "Rejoice / pray for us versicle and response",
+          "exact_approved_artwork_binding": "NONE"
+        },
+        {
+          "kind": "collect",
+          "subtype": "collect",
+          "editorial_card_key": "regina_caeli.collect",
+          "legacy_editorial_id": "STG-pray.angelus_regina-04",
+          "content_role": "Regina Cæli Collect; six approved exact candidate works only for this unit",
+          "exact_approved_artwork_binding": "EXACT_SUBUNIT_ONLY__NEVER_STAGE_PRIMARY"
+        }
+      ],
+      "display_card_key": "regina_caeli.a1.prayer",
+      "runtime_card_id": null,
+      "verified_runtime_card_id": false,
+      "primary_artwork_id": null,
+      "painting_activation": "OFF_WAITING_FOR_APPROVAL_AND_SOURCE_IMAGE_QA",
+      "source_authority": "RESEARCH_DRAFT_2879_A1_STAGE_PLAN_ONLY"
+    },
+    {
+      "form": "regina_caeli",
+      "stage_id": "conclusion",
+      "latin": "Conclusio",
+      "unit_indices": [],
+      "editorial_keys": [],
+      "optional": true,
+      "appendix": [
+        "Historical conclusion only when canonical source supplies it"
+      ],
+      "units": [],
+      "display_card_key": "regina_caeli.a1.conclusion",
+      "runtime_card_id": null,
+      "verified_runtime_card_id": false,
+      "primary_artwork_id": null,
+      "painting_activation": "OFF_WAITING_FOR_APPROVAL_AND_SOURCE_IMAGE_QA",
+      "source_authority": "RESEARCH_DRAFT_2879_A1_STAGE_PLAN_ONLY"
+    }
+  ]
+}
