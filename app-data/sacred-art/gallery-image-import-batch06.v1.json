@@ -1,0 +1,306 @@
+{
+  "schema": "ao.sacred-art.gallery-image-import.v1",
+  "batch": "2026-11-15-batch06",
+  "policy": "Only owner-selected existing catalogue records. Match museum accession/object, exact title and creator; verify museum image CC0/public-domain status. Preserve source SHA256, dimensions, full-composition local derivative hash. Do not infer primary prayer approvals. No claim of separately archived source JPEG. One selected source is held for discrepancy between institutional follower-of attribution and the existing catalogue's direct artist attribution.",
+  "sources": [
+    {
+      "key": "solimena-risen-virgin",
+      "artwork_id": "REVIEW::cma:146167",
+      "museum": "CMA",
+      "institution_object_id": "146167",
+      "museum_api_url": "https://openaccess-api.clevelandart.org/api/artworks/1971.63",
+      "museum_page": "https://www.clevelandart.org/art/1971.63",
+      "museum_title": "The Risen Christ Appearing to the Virgin",
+      "museum_creator": "[{\"id\": 2315, \"description\": \"Francesco Solimena (Italian, 1657–1747)\", \"extent\": null, \"qualifier\": null, \"role\": \"artist\", \"biography\": null, \"name_in_original_language\": null, \"birth_year\": \"1657\", \"death_year\": \"1747\", \"use_in_caption\": true, \"include_extent\": false, \"weight\": 1}]",
+      "official_license": "CC0",
+      "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
+      "source_image_url": "https://openaccess-cdn.clevelandart.org/1971.63/1971.63_print.jpg",
+      "source_bytes": 5431957,
+      "source_dimensions_px": [
+        2611,
+        3400
+      ],
+      "source_sha256": "fc56709dc44acc72b086626c759e90d32d6ec311f5be7ff76696861d78812389",
+      "source_git_blob_sha": "63feb5da38fafbb7e5929242282193bef897a53a",
+      "local_path": "site/gallery/images/solimena-risen-christ-virgin-cma-1971-63-2000.webp",
+      "local_bytes": 248192,
+      "local_dimensions_px": [
+        1536,
+        2000
+      ],
+      "local_sha256": "c6e67b4cdd8665e31cf429d7467912788e07f1f7d55f76ffbdc4fe74aedfebfb",
+      "local_git_blob_sha": "7040142f6084d4938d1a5cd5e93d1f2fa5cbd09d",
+      "full_composition": true,
+      "source_original_locally_persisted": false,
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT"
+    },
+    {
+      "key": "jordaens-betrayal",
+      "artwork_id": "REVIEW::cma:145148",
+      "museum": "CMA",
+      "institution_object_id": "145148",
+      "museum_api_url": "https://openaccess-api.clevelandart.org/api/artworks/1970.32",
+      "museum_page": "https://www.clevelandart.org/art/1970.32",
+      "museum_title": "The Betrayal of Christ",
+      "museum_creator": "[{\"id\": 2824, \"description\": \"Jacob Jordaens (Flemish, 1593–1678)\", \"extent\": null, \"qualifier\": null, \"role\": \"artist\", \"biography\": null, \"name_in_original_language\": null, \"birth_year\": \"1593\", \"death_year\": \"1678\", \"use_in_caption\": true, \"include_extent\": false, \"weight\": 1}]",
+      "official_license": "CC0",
+      "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
+      "source_image_url": "https://openaccess-cdn.clevelandart.org/1970.32/1970.32_print.jpg",
+      "source_bytes": 5890395,
+      "source_dimensions_px": [
+        3400,
+        3076
+      ],
+      "source_sha256": "2e0924ecef399614734de679bd99068b02fed825d7afdf95c773e11befc21517",
+      "source_git_blob_sha": "6d20e051d05c70b6db58e8f94079176520da5dac",
+      "local_path": "site/gallery/images/jordaens-betrayal-christ-cma-1970-32-2000.webp",
+      "local_bytes": 246672,
+      "local_dimensions_px": [
+        2000,
+        1809
+      ],
+      "local_sha256": "c074b1fe2930b876edf29cc5bd841050a7a232597b653201d42f97ee9f6e4e3a",
+      "local_git_blob_sha": "a54807e6dea381501fa4ad8ec84bd245610f5e22",
+      "full_composition": true,
+      "source_original_locally_persisted": false,
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT"
+    },
+    {
+      "key": "valdes-assumption-study",
+      "artwork_id": "REVIEW::cma:153773",
+      "museum": "CMA",
+      "institution_object_id": "153773",
+      "museum_api_url": "https://openaccess-api.clevelandart.org/api/artworks/1987.7",
+      "museum_page": "https://www.clevelandart.org/art/1987.7",
+      "museum_title": "Study for \"The Assumption of the Virgin\" for San Augustín, Seville",
+      "museum_creator": "[{\"id\": 5174, \"description\": \"Juan de Valdés Leal (Spanish, 1622–1690)\", \"extent\": null, \"qualifier\": null, \"role\": \"artist\", \"biography\": null, \"name_in_original_language\": null, \"birth_year\": \"1622\", \"death_year\": \"1690\", \"use_in_caption\": true, \"include_extent\": false, \"weight\": 1}]",
+      "official_license": "CC0",
+      "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
+      "source_image_url": "https://openaccess-cdn.clevelandart.org/1987.7/1987.7_print.jpg",
+      "source_bytes": 5844050,
+      "source_dimensions_px": [
+        2262,
+        3400
+      ],
+      "source_sha256": "36e01402871abcabc221acdb99f318b5b3f3fc563d4f9d06c7a57b7e69f6a14f",
+      "source_git_blob_sha": "1eff7a0cbf53ae776de9cd551901ab57cf91e1c8",
+      "local_path": "site/gallery/images/valdes-leal-assumption-study-cma-1987-7-2000.webp",
+      "local_bytes": 548706,
+      "local_dimensions_px": [
+        1331,
+        2000
+      ],
+      "local_sha256": "dd0275e52e444391c6fa2460441b70bf56860666ff996edee89dd78d4bd8f13a",
+      "local_git_blob_sha": "971a0e5e18353bd011156cf0f51564336306e192",
+      "full_composition": true,
+      "source_original_locally_persisted": false,
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT"
+    },
+    {
+      "key": "preparation-crucifixion",
+      "artwork_id": "CANONICAL::cma-97181",
+      "museum": "CMA",
+      "institution_object_id": "97181",
+      "museum_api_url": "https://openaccess-api.clevelandart.org/api/artworks/1916.816",
+      "museum_page": "https://www.clevelandart.org/art/1916.816",
+      "museum_title": "Preparation for the Crucifixion",
+      "museum_creator": "[]",
+      "official_license": "CC0",
+      "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
+      "source_image_url": "https://openaccess-cdn.clevelandart.org/1916.816/1916.816_print.jpg",
+      "source_bytes": 7553922,
+      "source_dimensions_px": [
+        2837,
+        3400
+      ],
+      "source_sha256": "944ba04f66faaf903df9b945dc32952b8bf0b0f5e606eb45f7073c0739c7cc74",
+      "source_git_blob_sha": "a5a5c7d47fdb83c947b9b5770b591989b403c38d",
+      "local_path": "site/gallery/images/preparation-crucifixion-cma-1916-816-2000.webp",
+      "local_bytes": 632348,
+      "local_dimensions_px": [
+        1669,
+        2000
+      ],
+      "local_sha256": "7f7e18983bc512577bcc93c499822d63a45aa616a12448ad29e374c45dfa1f20",
+      "local_git_blob_sha": "7c80f0eeca946d355b4984c600df6f80b77fcf87",
+      "full_composition": true,
+      "source_original_locally_persisted": false,
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT"
+    },
+    {
+      "key": "ecce-homo-sodoma",
+      "artwork_id": "REVIEW::met:437978",
+      "museum": "MET",
+      "institution_object_id": "437978",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437978",
+      "museum_page": "https://www.metmuseum.org/art/collection/search/437978",
+      "museum_title": "Christ Presented to the People (Ecce Homo)",
+      "museum_creator": "Sodoma (Giovanni Antonio Bazzi)",
+      "official_license": "PUBLIC_DOMAIN",
+      "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / Open Access",
+      "source_image_url": "https://images.metmuseum.org/CRDImages/ep/original/DT4034.jpg",
+      "source_bytes": 3579324,
+      "source_dimensions_px": [
+        3611,
+        3662
+      ],
+      "source_sha256": "cfe165e22f7b9fe81b1952fc1f81c909a1de49ccbcf50d764b09f77d76aae7d6",
+      "source_git_blob_sha": "bea73b0e4bac79a7976225e3a055bf034b9e293f",
+      "local_path": "site/gallery/images/sodoma-ecce-homo-met-437978-2000.webp",
+      "local_bytes": 901076,
+      "local_dimensions_px": [
+        1972,
+        2000
+      ],
+      "local_sha256": "34a592d817f77bca3b6ffcb0ca4e3d226e3ca36f38f936ae1aab1d6f47bf22f6",
+      "local_git_blob_sha": "05a7b458cf527b29634ca809cc6138671173c662",
+      "full_composition": true,
+      "source_original_locally_persisted": false,
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT"
+    },
+    {
+      "key": "poussin-agony",
+      "artwork_id": "CANONICAL::met-442488",
+      "museum": "MET",
+      "institution_object_id": "442488",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/442488",
+      "museum_page": "https://www.metmuseum.org/art/collection/search/442488",
+      "museum_title": "The Agony in the Garden",
+      "museum_creator": "Nicolas Poussin",
+      "official_license": "PUBLIC_DOMAIN",
+      "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / Open Access",
+      "source_image_url": "https://images.metmuseum.org/CRDImages/ep/original/DP-23235-001.jpg",
+      "source_bytes": 3749251,
+      "source_dimensions_px": [
+        3153,
+        4000
+      ],
+      "source_sha256": "acc13b2f34ed893edb300bbebd0dea66ddd95d824b8bd9fb94bc1e2a9d17abaf",
+      "source_git_blob_sha": "45dfa2fe882dffac5528259a26eddb59d0096b46",
+      "local_path": "site/gallery/images/poussin-agony-garden-met-442488-2000.webp",
+      "local_bytes": 245020,
+      "local_dimensions_px": [
+        1576,
+        2000
+      ],
+      "local_sha256": "db0fcd14f981f642029398ec3cb98e025679afdfc3db9706fcabfe1dfa38fefa",
+      "local_git_blob_sha": "f8c812dcda733b4c47fdc19fd02c633cc5bc5f60",
+      "full_composition": true,
+      "source_original_locally_persisted": false,
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT"
+    },
+    {
+      "key": "murillo-crucifixion",
+      "artwork_id": "REVIEW::met:437172",
+      "museum": "MET",
+      "institution_object_id": "437172",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437172",
+      "museum_page": "https://www.metmuseum.org/art/collection/search/437172",
+      "museum_title": "The Crucifixion",
+      "museum_creator": "Bartolomé Estebán Murillo",
+      "official_license": "PUBLIC_DOMAIN",
+      "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / Open Access",
+      "source_image_url": "https://images.metmuseum.org/CRDImages/ep/original/DT10248.jpg",
+      "source_bytes": 2650081,
+      "source_dimensions_px": [
+        2422,
+        3722
+      ],
+      "source_sha256": "6f9a798dd2c845f617a1f3e76c7f1e7da78bc1ff63bb95e4264c4ecc1305d589",
+      "source_git_blob_sha": "5bad08ead182fa3da1a4d3c3961d54a6c990242d",
+      "local_path": "site/gallery/images/murillo-crucifixion-met-437172-2000.webp",
+      "local_bytes": 655070,
+      "local_dimensions_px": [
+        1301,
+        2000
+      ],
+      "local_sha256": "ed792c0909182d9c6fe3709c88162d5a1ecd7557c08f7567126406a6c392142c",
+      "local_git_blob_sha": "865bab35828151c51614ce211564da84d65d1215",
+      "full_composition": true,
+      "source_original_locally_persisted": false,
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT"
+    },
+    {
+      "key": "rubens-teresa-purgatory",
+      "artwork_id": "CANONICAL::met-437542",
+      "museum": "MET",
+      "institution_object_id": "437542",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/437542",
+      "museum_page": "https://www.metmuseum.org/art/collection/search/437542",
+      "museum_title": "Saint Teresa of Avila Interceding for Souls in Purgatory",
+      "museum_creator": "Peter Paul Rubens",
+      "official_license": "PUBLIC_DOMAIN",
+      "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / Open Access",
+      "source_image_url": "https://images.metmuseum.org/CRDImages/ep/original/DP-18296-013.jpg",
+      "source_bytes": 4103505,
+      "source_dimensions_px": [
+        3094,
+        4000
+      ],
+      "source_sha256": "8d1914deed2b46063f9c4ae89a8471b1ada97fc09f0604b62443280070c4cf0e",
+      "source_git_blob_sha": "6dc7c445ae1db271ddbc1e6fe0e0a750f43419e1",
+      "local_path": "site/gallery/images/rubens-workshop-teresa-purgatory-met-437542-2000.webp",
+      "local_bytes": 412846,
+      "local_dimensions_px": [
+        1547,
+        2000
+      ],
+      "local_sha256": "c350a4f4acb4e511611a7352b6f3176f08cb72aec5e2368f7729f45969874d65",
+      "local_git_blob_sha": "ea2430db301f6e85ce87edfcaf53c4da5635e792",
+      "full_composition": true,
+      "source_original_locally_persisted": false,
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT"
+    },
+    {
+      "key": "campeche-trinity",
+      "artwork_id": "NEW::met-917618",
+      "museum": "MET",
+      "institution_object_id": "917618",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/917618",
+      "museum_page": "https://www.metmuseum.org/art/collection/search/917618",
+      "museum_title": "The Trinity",
+      "museum_creator": "José Campeche",
+      "official_license": "PUBLIC_DOMAIN",
+      "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / Open Access",
+      "source_image_url": "https://images.metmuseum.org/CRDImages/ad/original/DP-44679-003.jpg",
+      "source_bytes": 3692616,
+      "source_dimensions_px": [
+        2700,
+        4000
+      ],
+      "source_sha256": "8578e12ebb3c067c567b882fb48e9ca1d008c71ab6e53f3590269892711065bb",
+      "source_git_blob_sha": "99ed180bbc8de03daac0720113904a0d3144f350",
+      "local_path": "site/gallery/images/campeche-trinity-met-917618-2000.webp",
+      "local_bytes": 390144,
+      "local_dimensions_px": [
+        1350,
+        2000
+      ],
+      "local_sha256": "8da6cd85b56fc950544142010e3d1d8030362663d56dbff445f6cf8c6622a1e0",
+      "local_git_blob_sha": "562746a325b7d7327b83d6e0e18ebe99db4dd662",
+      "full_composition": true,
+      "source_original_locally_persisted": false,
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT"
+    }
+  ],
+  "skipped": [],
+  "held_for_attribution_review": [
+    {
+      "artwork_id": "CANONICAL::cma-97147",
+      "museum": "CMA",
+      "official_title": "The Crucifixion",
+      "official_artist": "Follower of Sodoma",
+      "museum_creator_record": "[{\"id\": 2246, \"description\": \"Sodoma (Italian, 1477–1549)\", \"extent\": null, \"qualifier\": \"follower of\", \"role\": \"artist\", \"biography\": null, \"name_in_original_language\": null, \"birth_year\": \"1477\", \"death_year\": \"1549\", \"use_in_caption\": true, \"include_extent\": false, \"weight\": 1}]",
+      "existing_catalogue_artist": "Sodoma (Italian, 1477–1549)",
+      "source_record_url": "https://www.clevelandart.org/art/1916.786",
+      "source_image_sha256": "022572a6fa03b4ff9e1a04dc6b92345b2239b0c2998468e58705028b1dad073b",
+      "source_image_dimensions_px": [
+        2673,
+        3400
+      ],
+      "verified_reuse_rights": "Cleveland Museum of Art CC0 Open Access",
+      "reason": "Museum currently attributes the work to a follower of Sodoma; existing owner-selected catalogue record names Sodoma directly. Exact image identity and rights established but prevent misleading attribution in public gallery pending registry reconciliation.",
+      "image_not_published": true
+    }
+  ]
+}
