@@ -1,13 +1,13 @@
 {
   "schema": "ao.sacred-art.gallery-image-provenance.v1",
   "import_date": "2026-11-15",
-  "source_contract": "Release of these exact image bytes as Gallery thumbnails/full-composition viewer only, as requested by the owner. Do not infer permission to use in LIVE Mass, Calendar, Rosary or prayer cinematics. Two new gallery thumbnails are original-asset-identity-matched low-resolution embedded preview WebPs; high-resolution replacement pending. Met OA/CC0 evidence in each record. Never claim them to be recovered full-resolution images.",
+  "source_contract": "Gallery-hosted exact archived originals for Champaigne and Ingres with Met Open Access CC0 and SHA256 proof; Hondius full JPEG copied with pinned original Git blob identity, independent photo-original QA pending. Carracci remains an explicitly low-resolution interim preview. No prayer-card primary or cinematic image approval inferred.",
   "local_image_count": 8,
   "catalogue_record_images_count": 9,
   "duplicate_same_original": [
     {
       "physical_artwork": "Met object 438724",
-      "image": "site/artwork/champaigne-annunciation-home-v9.jpg",
+      "image": "site/gallery/images/champaigne-annunciation-met-438724-original.jpg",
       "record_ids": [
         "CANONICAL::ART-hilippe-de-hampaigne-he-nnunciation",
         "released-photo:angelus"
@@ -15,7 +15,7 @@
       "note": "The same physical image is referenced by two historical registry records, displayed once in gallery's image collection."
     }
   ],
-  "pending": "All other records have metadata only; photo image identity, source rights, optimum reproduction and mobile QA must be resolved incrementally.",
+  "pending": "All other records are metadata-only; one Carracci photo remains low-res interim. Prayer/card image QA stays independent of gallery artwork availability.",
   "sources": [
     {
       "artwork_id": "PRAYER::saints--saraceni",
@@ -31,27 +31,39 @@
     },
     {
       "artwork_id": "CANONICAL::ART-hilippe-de-hampaigne-he-nnunciation",
-      "path": "site/artwork/champaigne-annunciation-home-v9.jpg",
+      "path": "site/gallery/images/champaigne-annunciation-met-438724-original.jpg",
       "title": "The Annunciation",
       "artist": "Philippe de Champaigne",
-      "image_bytes": 40006,
-      "git_blob_sha": "70ff680b44bd095faf4399a5f48f98122ab799e5",
-      "source_record": "site/artwork/home-prayer-provenance.json",
-      "recorded_reproduction_rights": "Met Open Access / CC0",
-      "release_scope": "EXISTING_HOME_IMAGE_NOW_REUSED_IN_GALLERY",
-      "exact_original_image_for_prayer": false
+      "image_bytes": 3055151,
+      "git_blob_sha": "d5e92365196b361c29e3f3d5cc8b5cca2926c2ed",
+      "source_record": "Fulcanelli13/ad-orientem@14cd9d3:assets/home/c3-approved-met/angelus-met-438724.jpg",
+      "recorded_reproduction_rights": "Metropolitan Museum of Art Open Access/CC0; owner-approved original via source-manifest.json",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false,
+      "quality_gate": "EXACT_ARCHIVED_MET_MUSEUM_ORIGINAL_SHA256_VERIFIED",
+      "sha256": "ae59a42e39896646d3d18d4761e04b8ce6fa1d84bfaa9f79bd23f8d72aa95be6",
+      "pixel_dimensions": [
+        3741,
+        3658
+      ]
     },
     {
       "artwork_id": "CANONICAL::met-438434",
-      "path": "site/artwork/ingres-adoration-home-v9.jpg",
+      "path": "site/gallery/images/ingres-adoration-met-438434-original.jpg",
       "title": "The Virgin Adoring the Host",
       "artist": "Jean Auguste Dominique Ingres",
-      "image_bytes": 38062,
-      "git_blob_sha": "4e28329c16c1d673c8d2110c76475f6be2343ce3",
-      "source_record": "site/artwork/home-prayer-provenance.json",
-      "recorded_reproduction_rights": "Met Open Access / CC0",
-      "release_scope": "EXISTING_HOME_IMAGE_NOW_REUSED_IN_GALLERY",
-      "exact_original_image_for_prayer": false
+      "image_bytes": 2467303,
+      "git_blob_sha": "9b2e3a6bad988308a4e5e661c47877b32720134b",
+      "source_record": "Fulcanelli13/ad-orientem@14cd9d3:assets/home/c3-approved-met/adoration-met-438434.jpg",
+      "recorded_reproduction_rights": "Metropolitan Museum of Art Open Access/CC0; owner-approved original via source-manifest.json",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false,
+      "quality_gate": "EXACT_ARCHIVED_MET_MUSEUM_ORIGINAL_SHA256_VERIFIED",
+      "sha256": "973f73b66952bf34619cc75c6f6bfb38109a8877e95b48655605576c552ad934",
+      "pixel_dimensions": [
+        3122,
+        3813
+      ]
     },
     {
       "artwork_id": "CANONICAL::ART-nthony-van-yck-he-ance-hrust",
@@ -91,24 +103,20 @@
     },
     {
       "artwork_id": "CANONICAL::met-436672",
-      "path": "site/gallery/images/hondius-christ-among-the-doctors-met-436672-preview.webp",
+      "path": "site/gallery/images/hondius-christ-doctors-met-436672-original.jpg",
       "title": "Christ among the Doctors",
       "artist": "Abraham Hondius",
-      "image_bytes": 8434,
-      "git_blob_sha": "de99d03c4c01eb359f0a07283aeba2d58ae1e9f2",
-      "source_record": "app-data/sacred-art/artwork-catalogue-01.v1.json or -02.v1.json, image_url embedded WebP under CANONICAL::met-436672",
-      "recorded_reproduction_rights": "Metropolitan Museum of Art donated photographic reproduction under CC0; Commons file source and Met institutional OA policy",
+      "image_bytes": 2015792,
+      "git_blob_sha": "29283ed54ca7c9913a6e377d47b74c2b4af0eab1",
+      "source_record": "Fulcanelli13/ad-orientem@14cd9d3:assets/prayer/released/hondius-doctors-original.jpg",
+      "recorded_reproduction_rights": "The Met Open Access/CC0 source associated with object 436672; archive file hash pinned; exact Met master-image byte matching pending",
       "met_object_id": 436672,
       "met_accession": "1974.368",
       "museum_object_url": "https://www.metmuseum.org/art/collection/search/436672",
       "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:Christ_among_the_Doctors_MET_DP147792.jpg",
-      "pixel_dimensions": [
-        410,
-        316
-      ],
-      "quality_gate": "INTERIM_GALLERY_PREVIEW_ONLY__ORIGINAL_IMAGE_NOT_TRANSFERRED",
-      "source_identity_checked": "Artwork visually checked against Met object and exact artist/title; original JPEG byte identity not established",
-      "release_scope": "GALLERY_PREVIEW_ONLY__NO_PRAYER_STAGE_OR_DAY_IMAGE_APPROVAL",
+      "quality_gate": "FULL_ARCHIVED_JPEG__MUSEUM_ORIGINAL_PHOTOGRAPH_MATCH_PENDING",
+      "source_identity_checked": "Research archive JPEG git blob hash verified against existing source file; photo reproduction not yet independently byte-matched to Met institution",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
       "exact_original_image_for_prayer": false
     },
     {
