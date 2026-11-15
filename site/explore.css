@@ -817,3 +817,11 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
  color:var(--ao-gold2);
  text-decoration:underline;text-underline-offset:2px;
 }
+
+/* Map/CDN failure only: keep the existing source-backed directory and
+   its warning visible above Claude's fixed sheet. No normal map CSS. */
+#atlas-view .atlas-map-state.error:not([hidden]){
+ bottom:calc(var(--ao-tabbar,79px) + var(--atlas-sheet-height,376px) + 16px)!important;
+ left:14px!important;right:14px!important;
+ z-index:12!important;
+}

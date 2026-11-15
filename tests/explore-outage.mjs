@@ -137,6 +137,24 @@ try{
    }finally{clearTimeout(deadline);}
   }
   assert.ok(denied.length>0,"No outage traffic intercepted for "+mode);
+  await page.waitForFunction(()=>{
+    const status=document.getElementById("atlas-map-status");
+    return status && !status.hidden && status.classList.contains("error");
+  },null,{timeout:15000});
+  const fallback=await page.evaluate(()=>{
+    const status=document.getElementById("atlas-map-status");
+    const heading=document.querySelector("#atlas-view .atlas-top");
+    const sheet=document.getElementById("atlas-sheet");
+    const a=status.getBoundingClientRect(),b=heading.getBoundingClientRect(),
+      c=sheet.getBoundingClientRect();
+    return {noticeText:status.textContent,
+      aboveSheet:a.bottom<c.top-8,belowControls:a.top>b.bottom+5,
+      rect:{top:a.top,bottom:a.bottom},sheetTop:c.top,controlsBottom:b.bottom};
+  });
+  assert.match(fallback.noticeText,/Interactive tiles unavailable/);
+  assert.ok(fallback.aboveSheet && fallback.belowControls,
+    "Unavailable notice must be visible between Claude controls and sheet: "+
+    JSON.stringify(fallback));
   assert.equal(await page.locator(".tabbar button").count(),4);
   assert.equal(await page.locator("#atlas-results > li").count(),10);
   const originalCardHeight=await page.locator("#atlas-results .atlas-result-button").first()
@@ -154,6 +172,8 @@ try{
   assert.ok(await page.locator("#atlas-results").evaluate(el=>el.classList.contains("is-list")));
   await page.locator("#atlas-language").click();
   assert.equal(await page.locator("#atlas-lens-tlm").innerText(),"Atlas TLM");
+  assert.match(await page.locator("#atlas-map-status").innerText(),/Carte interactive indisponible/,
+    "Outage warning must follow EN/FR locale, without changing Claude layout");
   await page.locator("#atlas-sheet-handle").click();
   assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek");
   await page.locator('.tabbar [data-route="home"]').click();

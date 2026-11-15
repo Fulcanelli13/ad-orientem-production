@@ -49,7 +49,7 @@ const dictionary={
 };
 const state={
  initialized:false,lens:"tlm",language:"en",data:null,selectedId:null,
- map:null,sourceLoaded:false,loading:null,all:[],query:"",facet:"all",viewMode:"cards",folioHistory:[],lastError:null,
+ map:null,sourceLoaded:false,mapFailed:false,loading:null,all:[],query:"",facet:"all",viewMode:"cards",folioHistory:[],lastError:null,
 };
 const tr=key=>dictionary[state.language][key]||key;
 const make=(tag,className,txt)=>{
@@ -492,10 +492,15 @@ async function startMap(){
   });
   state.map.on("mouseenter","ao-selected-pins",()=>state.map.getCanvas().style.cursor="pointer");
   state.map.on("mouseleave","ao-selected-pins",()=>state.map.getCanvas().style.cursor="");
-  state.sourceLoaded=true;setStatus("");frameInitialLens();
+  state.sourceLoaded=true;
+  setStatus(state.mapFailed?tr("unavailable"):"",state.mapFailed);
+  frameInitialLens();
  });
  state.map.on("error",ev=>{
-  if(!state.sourceLoaded)setStatus(tr("unavailable"),true);
+  // A failed vector tile/font may occur after MapLibre's initial 'load'.
+  // Keep the existing warning visible while the local directory works.
+  state.mapFailed=true;
+  setStatus(tr("unavailable"),true);
   if(ev?.error)state.lastError=String(ev.error.message||ev.error);
  });
 }
@@ -618,6 +623,7 @@ function attachControls(){
  $("atlas-language").addEventListener("click",()=>{
   state.language=state.language==="en"?"fr":"en";
   renderHeader();renderSummary();
+  if(state.mapFailed)setStatus(tr("unavailable"),true);
   if(state.selectedId)selectRecord(state.selectedId,{fly:false});
  });
  $("atlas-results").addEventListener("click",ev=>{
@@ -642,7 +648,8 @@ export async function mountExplore(){
   return;
  }
  try{await startMap();}
- catch(e){state.lastError=String(e.message||e);setStatus(tr("unavailable"),true);}
+ catch(e){state.lastError=String(e.message||e);
+  state.mapFailed=true;setStatus(tr("unavailable"),true);}
 }
 export function exploreDebugState(){
  // Nonvisual map readiness for browser acceptance. Initial 'load' alone
@@ -655,7 +662,8 @@ export function exploreDebugState(){
  const projected=map&&selected?map.project([
   Number(selected.geo.lng),Number(selected.geo.lat)]):null;
  return {mounted:state.initialized,sourceLoaded:state.sourceLoaded,mapCount:map?1:0,
-  lens:state.lens,selectedRecords:state.all.length,error:state.lastError,
+  lens:state.lens,selectedRecords:state.all.length,
+  error:state.lastError,mapFailed:state.mapFailed,
   cameraMoving:moving,tilesLoaded,mapLoaded,
   mapReady:!!map && state.sourceLoaded && !moving && tilesLoaded && mapLoaded,
   selectedCameraPoint:projected?{x:projected.x,y:projected.y}:null};
