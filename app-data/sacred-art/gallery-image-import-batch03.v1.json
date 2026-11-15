@@ -1,0 +1,154 @@
+{
+  "schema": "ao.sacred-art.gallery-image-import.v1",
+  "batch": "2026-11-15-batch03",
+  "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+  "policy": "Only owner-selected works already in the 862-record gallery. Research archive originals stay in research; Met-donated Commons source stays at Commons. Gallery stores verified uncropped WebP derivatives; no prayer-stage promotion.",
+  "sources": [
+    {
+      "key": "carracci",
+      "artwork_ids": [
+        "CANONICAL::met-438338"
+      ],
+      "origin": "Wikimedia Commons donated by The Metropolitan Museum of Art; identical object 438338 / accession 1998.188",
+      "filename": "carracci-burial-met-438338-1592.webp",
+      "rights": "Met-donated Commons CC0 1.0",
+      "evidence": "https://commons.wikimedia.org/wiki/File:The_Burial_of_Christ_MET_1998.188.jpg",
+      "source_sha256": "de4ea21e1ddd03c534ad6ff85f208a76781ad6beff9c4ddb981b95fc6a25ad21",
+      "source_git_blob_sha": "8109b4efa5bb8d8a5678cf6df67c087f66d0c603",
+      "source_bytes": 774816,
+      "source_dimensions_px": [
+        1270,
+        1592
+      ],
+      "local_path": "site/gallery/images/carracci-burial-met-438338-1592.webp",
+      "local_git_blob_sha": "9f65374f46fdbbd0592896f6548f9a361b370917",
+      "local_sha256": "d520a1e43d36f577accc6f7e32dd736fad09d21f5d4685822032eb263f3845a9",
+      "local_bytes": 636158,
+      "local_dimensions_px": [
+        1270,
+        1592
+      ],
+      "original_preserved_in_research": false,
+      "no_crop": true,
+      "quality": "FULL_COMPOSITION_GALLERY_WEBP_FROM_ARCHIVED_SOURCE",
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_ASSIGNMENT"
+    },
+    {
+      "key": "cavallino",
+      "artwork_ids": [
+        "CANONICAL::cma-143644"
+      ],
+      "origin": "Fulcanelli13/ad-orientem@14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a:assets/prayer/released/cavallino-shepherds-original.jpg",
+      "filename": "cavallino-shepherds-cma-1968-100-2000.webp",
+      "rights": "Cleveland Museum of Art CC0",
+      "evidence": "https://www.clevelandart.org/art/1968.100",
+      "source_sha256": "115e78e0c096c9274051fa89f277d93392cec097474d183c1e4f20a371960268",
+      "source_git_blob_sha": "de079cefeb7af4b5a1dd82f1b3d400d240a815f6",
+      "source_bytes": 6445697,
+      "source_dimensions_px": [
+        3400,
+        2905
+      ],
+      "local_path": "site/gallery/images/cavallino-shepherds-cma-1968-100-2000.webp",
+      "local_git_blob_sha": "17458a73dc02d27e17b017fab6d95788728596c3",
+      "local_sha256": "d06f5b77166b4dfa3733cca5161ce885728b90308a622467953316f94e284487",
+      "local_bytes": 251674,
+      "local_dimensions_px": [
+        2000,
+        1709
+      ],
+      "original_preserved_in_research": true,
+      "no_crop": true,
+      "quality": "FULL_COMPOSITION_GALLERY_WEBP_FROM_ARCHIVED_SOURCE",
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_ASSIGNMENT"
+    },
+    {
+      "key": "girardin",
+      "artwork_ids": [
+        "CANONICAL::cma-136507",
+        "released-photo:girardin"
+      ],
+      "origin": "Fulcanelli13/ad-orientem@14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a:assets/prayer/released/girardin-trinity-original.jpg",
+      "filename": "girardin-trinity-cma-1960-79-2000.webp",
+      "rights": "Cleveland Museum of Art CC0",
+      "evidence": "https://www.clevelandart.org/art/1960.79",
+      "source_sha256": "161aa1edd73d63709ed835e5e20e3ee5e7a175358d0a52a00a8c0ea86840a050",
+      "source_git_blob_sha": "ee2778b57a6df0dc03f8ce0b569333228c896f6a",
+      "source_bytes": 8508548,
+      "source_dimensions_px": [
+        2830,
+        3400
+      ],
+      "local_path": "site/gallery/images/girardin-trinity-cma-1960-79-2000.webp",
+      "local_git_blob_sha": "143e1a3b5e21f5f8aa3e371adf44cd0e3153241e",
+      "local_sha256": "0e415168be1abfebee71f271ea9c3ea4767fde8a8f47e3022b4f748aa8f7f418",
+      "local_bytes": 846540,
+      "local_dimensions_px": [
+        1665,
+        2000
+      ],
+      "original_preserved_in_research": true,
+      "no_crop": true,
+      "quality": "FULL_COMPOSITION_GALLERY_WEBP_FROM_ARCHIVED_SOURCE",
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_ASSIGNMENT"
+    },
+    {
+      "key": "latour",
+      "artwork_ids": [
+        "CANONICAL::met-436839"
+      ],
+      "origin": "Fulcanelli13/ad-orientem@14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a:assets/prayer/released/latour-penitent-magdalen-met-original.jpg",
+      "filename": "latour-penitent-magdalen-met-436839-2000.webp",
+      "rights": "Metropolitan Museum of Art public-domain Open Access / CC0",
+      "evidence": "https://www.metmuseum.org/art/collection/search/436839",
+      "source_sha256": "408b6ed786d8a1bb24a9f407c0a0fa8bf6f4211c2d30dd0f4d14b9bea9047d18",
+      "source_git_blob_sha": "19dcce15cd0916d57f3eae246bfe487979615e76",
+      "source_bytes": 3255733,
+      "source_dimensions_px": [
+        2947,
+        4000
+      ],
+      "local_path": "site/gallery/images/latour-penitent-magdalen-met-436839-2000.webp",
+      "local_git_blob_sha": "ae5387f7b19a4b076aed19c8b6ae0d6ba3a3d98b",
+      "local_sha256": "476cf7b262f5e086535bab17d79bec34409a2af6ced33eb285833c73ab128a3a",
+      "local_bytes": 271800,
+      "local_dimensions_px": [
+        1473,
+        2000
+      ],
+      "original_preserved_in_research": true,
+      "no_crop": true,
+      "quality": "FULL_COMPOSITION_GALLERY_WEBP_FROM_ARCHIVED_SOURCE",
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_ASSIGNMENT"
+    },
+    {
+      "key": "saraceni",
+      "artwork_ids": [
+        "PRAYER::saints--saraceni"
+      ],
+      "origin": "Fulcanelli13/ad-orientem@14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a:assets/home/class-i-2026/saraceni-paradise-met-1971-93-original.jpg",
+      "filename": "saraceni-paradise-met-437607-2000.webp",
+      "rights": "Metropolitan Museum of Art Open Access / CC0",
+      "evidence": "https://www.metmuseum.org/art/collection/search/437607",
+      "source_sha256": "0d2f44968a83af250b13382b29585e18fcde78c5b36261e348f3498cefacd40c",
+      "source_git_blob_sha": "dcff19a6efaf2e7a6c71bca7f362119ac6af342b",
+      "source_bytes": 2879956,
+      "source_dimensions_px": [
+        3273,
+        3695
+      ],
+      "local_path": "site/gallery/images/saraceni-paradise-met-437607-2000.webp",
+      "local_git_blob_sha": "335fb54cf62f9f7241be217d9021bb87360c9aa0",
+      "local_sha256": "4e02fb698c686b8766a610bd5118bf7f2cf80606ee35e519f6b21a466c934ea5",
+      "local_bytes": 555472,
+      "local_dimensions_px": [
+        1772,
+        2000
+      ],
+      "original_preserved_in_research": true,
+      "no_crop": true,
+      "quality": "FULL_COMPOSITION_GALLERY_WEBP_FROM_ARCHIVED_SOURCE",
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_ASSIGNMENT"
+    }
+  ]
+}
