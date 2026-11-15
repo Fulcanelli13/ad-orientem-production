@@ -32,7 +32,8 @@ jobs:
           records={r['id']:r for r in catalog['records']}
           for spec in specs:
             r=records.get(spec['artwork_id'])
-            assert r and r['owner_selected_artwork'] and r['image'] is None, f"Not an owner-selected image-pending painting: {spec['artwork_id']}"
+            assert r and r['owner_selected_artwork'], f"Not an owner-selected painting: {spec['artwork_id']}"
+            assert r['image'] is None or r['image'].get('src')=='./gallery/images/'+spec['filename'], f"Unexpected pre-existing image binding: {spec['artwork_id']}"
             assert r['title'].casefold()==spec['title'].casefold(), f"Title mismatch: {spec}"
             if spec['artist_token']:
               assert spec['artist_token'] in r['artist'].casefold()
