@@ -111,8 +111,18 @@ try{
   await handle.tap();
   assert.equal(await page.locator("#atlas-sheet").getAttribute("data-sheet-state"),"peek");
   const first=page.locator("#atlas-results .atlas-result-button").first();
+  const firstId=await first.getAttribute("data-atlas-id");
   await first.scrollIntoViewIfNeeded();
   await first.tap();
+  await page.locator("#atlas-card").waitFor({state:"visible"});
+  assert.equal(await page.evaluate(()=>document.activeElement?.classList.contains("atlas-folio-back")),true,
+   "WebKit fullscreen folio must receive focus on Back");
+  await page.keyboard.press("Escape");
+  assert.equal(await page.locator("#atlas-card").isHidden(),true,
+   "WebKit Escape must dismiss the folio");
+  assert.equal(await page.evaluate(()=>document.activeElement?.dataset.atlasId),firstId,
+   "WebKit must return focus to the originating place card");
+  await page.keyboard.press("Enter");
   await page.locator("#atlas-card").waitFor({state:"visible"});
   assert.equal(await page.locator("#atlas-card .atlas-folio-hero").count(),1,
    "Source-authored place folio missing in WebKit");
