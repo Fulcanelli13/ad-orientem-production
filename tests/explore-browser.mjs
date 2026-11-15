@@ -124,6 +124,24 @@ try{
   assert.equal(await page.locator("#atlas-results > li").count(),18);
   assert.equal(await page.locator("#atlas-map .atlas-place-marker").count(),18,
     "Claude's 18 exact-source Sacred medallions must be anchored to one map");
+  // Search must update the rendered Sacred marker overlay, not only the
+  // carousel or the old MapLibre GeoJSON source underneath it.
+  const visibleMarkerId=await page.locator(
+    "#atlas-map .atlas-place-marker[data-visible='true']").first()
+    .getAttribute("data-atlas-marker-id");
+  assert.ok(visibleMarkerId,"Need a source marker already in the current map camera");
+  const visibleMarkerName=await page.locator(
+    '#atlas-results button[data-atlas-id="'+visibleMarkerId+'"] .atlas-result-name'
+  ).innerText();
+  await page.locator("#atlas-search").fill(visibleMarkerName);
+  assert.equal(await page.locator("#atlas-count").textContent(),"1 / 18");
+  assert.equal(await page.locator("#atlas-map .atlas-place-marker[data-visible='true']").count(),1,
+    "Source text search must leave exactly one visible Sacred marker");
+  assert.equal(await page.locator(
+    '#atlas-map .atlas-place-marker[data-atlas-marker-id="'+visibleMarkerId+'"]'
+  ).getAttribute("data-visible"),"true");
+  await page.locator("#atlas-search").fill("");
+  assert.equal(await page.locator("#atlas-count").textContent(),"18 / 18");
   assert.equal(await page.locator("#atlas-map .atlas-place-marker[data-visible='true']").count()>0,true,
     "At least one selected source marker must be visible in the current lens");
   assert.equal((await mapSnapshot()).tlmTapDiameter,40,
@@ -359,6 +377,12 @@ try{
       await mark.click();
       assert.equal(await page.locator("#atlas-card .atlas-folio-ttl h1").innerText(),
         "Catedral de Santiago de Compostela");
+      await page.locator("#atlas-card .atlas-folio-back").click();
+      await mark.focus();
+      await page.keyboard.press("Enter");
+      assert.equal(await page.locator("#atlas-card .atlas-folio-ttl h1").innerText(),
+        "Catedral de Santiago de Compostela",
+        "The source marker must open its canonical folio by keyboard");
       await page.locator("#atlas-card .atlas-folio-back").click();
     }
   }

@@ -35,5 +35,18 @@ const fake={place_type:"shrine",name:"Notre-Dame of an imaginary place",
 assert.equal(verifiedMarkerGlyph(fake),null);
 assert.equal(sacredMarkerMode(fake,8,true),"sm",
  "Remote/unapproved photograph must not be admitted");
+
+import {createHash} from "node:crypto";
+const ownerGlyphSha256=Object.freeze({
+ marian:"a8d6556722e16cfaead046a02c5aa11b88931941c9fbeaac0ecc7a81dfe30f6a",
+ christ:"bb718c331130c2bd1d384c9ac264e251691503bb57c370c7e1124e5d7108246c",
+ saint:"057b3ec2fb65bf1396614a7bd2d614cb58e933f0f76da400616fb02416d758f7",
+ church:"fbbde91cb71b27237f91c862c1e662c1cc7a568d34a118334dd642cc6b2fda64"
+});
+for(const [kind,digest] of Object.entries(ownerGlyphSha256)){
+ const actual=createHash("sha256").update(CLAUDE_SACRED_GLYPHS[kind],"utf8").digest("hex");
+ assert.equal(actual,digest,
+  "Claude owner source SVG drift: "+kind+" (source file SHA-256 97d56600db6118e1a826004d90970db155aa7f7e2c5662e1b6acec0a04b4e771)");
+}
 // The original donor is not imported into the production repository.
 console.log("PASS Claude 7/22/52px medallion, six owner-photo and unlit TLM source contract");
