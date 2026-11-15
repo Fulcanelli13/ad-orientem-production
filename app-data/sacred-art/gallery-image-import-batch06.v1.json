@@ -1,7 +1,7 @@
 {
   "schema": "ao.sacred-art.gallery-image-import.v1",
   "batch": "2026-11-15-batch06",
-  "policy": "Only owner-selected existing catalogue records. Match museum accession/object, exact title and creator; verify museum image CC0/public-domain status. Preserve source SHA256, dimensions, full-composition local derivative hash. Do not infer primary prayer approvals. No claim of separately archived source JPEG.",
+  "policy": "Only owner-selected existing catalogue records. Match museum accession/object, exact title and creator; verify museum image CC0/public-domain status. Preserve source SHA256, dimensions, full-composition local derivative hash. Do not infer primary prayer approvals. No claim of separately archived source JPEG. One selected source is held for discrepancy between institutional follower-of attribution and the existing catalogue's direct artist attribution.",
   "sources": [
     {
       "key": "solimena-risen-virgin",
@@ -92,37 +92,6 @@
       ],
       "local_sha256": "dd0275e52e444391c6fa2460441b70bf56860666ff996edee89dd78d4bd8f13a",
       "local_git_blob_sha": "971a0e5e18353bd011156cf0f51564336306e192",
-      "full_composition": true,
-      "source_original_locally_persisted": false,
-      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT"
-    },
-    {
-      "key": "sodoma-crucifixion",
-      "artwork_id": "CANONICAL::cma-97147",
-      "museum": "CMA",
-      "institution_object_id": "97147",
-      "museum_api_url": "https://openaccess-api.clevelandart.org/api/artworks/1916.786",
-      "museum_page": "https://www.clevelandart.org/art/1916.786",
-      "museum_title": "The Crucifixion",
-      "museum_creator": "[{\"id\": 2246, \"description\": \"Sodoma (Italian, 1477–1549)\", \"extent\": null, \"qualifier\": \"follower of\", \"role\": \"artist\", \"biography\": null, \"name_in_original_language\": null, \"birth_year\": \"1477\", \"death_year\": \"1549\", \"use_in_caption\": true, \"include_extent\": false, \"weight\": 1}]",
-      "official_license": "CC0",
-      "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
-      "source_image_url": "https://openaccess-cdn.clevelandart.org/1916.786/1916.786_print.jpg",
-      "source_bytes": 8293229,
-      "source_dimensions_px": [
-        2673,
-        3400
-      ],
-      "source_sha256": "022572a6fa03b4ff9e1a04dc6b92345b2239b0c2998468e58705028b1dad073b",
-      "source_git_blob_sha": "380a4504950cfe26b75b49d3077c4dfbf4218431",
-      "local_path": "site/gallery/images/sodoma-crucifixion-cma-1916-786-2000.webp",
-      "local_bytes": 941204,
-      "local_dimensions_px": [
-        1572,
-        2000
-      ],
-      "local_sha256": "f4e37a5b7235c4b607a806f102a440f148d5b78c90331daa5ed702759767040f",
-      "local_git_blob_sha": "68a352bcf7a6ba02e6168a4cf2f677d6cf850438",
       "full_composition": true,
       "source_original_locally_persisted": false,
       "scope": "GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT"
@@ -314,5 +283,24 @@
       "scope": "GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT"
     }
   ],
-  "skipped": []
+  "skipped": [],
+  "held_for_attribution_review": [
+    {
+      "artwork_id": "CANONICAL::cma-97147",
+      "museum": "CMA",
+      "official_title": "The Crucifixion",
+      "official_artist": "Follower of Sodoma",
+      "museum_creator_record": "[{\"id\": 2246, \"description\": \"Sodoma (Italian, 1477–1549)\", \"extent\": null, \"qualifier\": \"follower of\", \"role\": \"artist\", \"biography\": null, \"name_in_original_language\": null, \"birth_year\": \"1477\", \"death_year\": \"1549\", \"use_in_caption\": true, \"include_extent\": false, \"weight\": 1}]",
+      "existing_catalogue_artist": "Sodoma (Italian, 1477–1549)",
+      "source_record_url": "https://www.clevelandart.org/art/1916.786",
+      "source_image_sha256": "022572a6fa03b4ff9e1a04dc6b92345b2239b0c2998468e58705028b1dad073b",
+      "source_image_dimensions_px": [
+        2673,
+        3400
+      ],
+      "verified_reuse_rights": "Cleveland Museum of Art CC0 Open Access",
+      "reason": "Museum currently attributes the work to a follower of Sodoma; existing owner-selected catalogue record names Sodoma directly. Exact image identity and rights established but prevent misleading attribution in public gallery pending registry reconciliation.",
+      "image_not_published": true
+    }
+  ]
 }
