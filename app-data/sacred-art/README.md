@@ -16,7 +16,7 @@ The STG/COV/ROUTE card identifiers in the imported source are historical or edit
 
 The matrix records **zero automatically publishable images** because exact-card selection, reproduction provenance, final image quality and production runtime IDs are independent gates. It is normal for a selected work to have a missing final binary or to appear in more than one card's candidates.
 
-Three images already live in `site/artwork/` for *Home* studies/previews and are not thereby selected for any prayer stage. Two other owner-selected, rights-documented WebP files are retained under `staged-images/`; they are **not live** until final pixel, crop and mobile-cinematic QA and card-level authorization. The Dolci source file remains in the independent research archive and is not yet physically copied into this branch.
+Three images already live in `site/artwork/` for *Home* studies/previews and are not thereby selected for any prayer stage. Three other owner-selected, rights-documented WebP files are retained under `staged-images/`; they are **not live** until final pixel, crop and mobile-cinematic QA and card-level authorization. The additional staged image is Tanner’s *Annunciation* (1898), preserved from the original research WebP with Public Domain Mark provenance; it is a **Joyful I candidate only**, not an approved primary. The Dolci source file remains in the independent research archive and is not yet physically copied into this branch.
 
 The full 3,516-entry historical archive stays in the original research repository and the cited curation workbook. This curated app-source registry includes its relevant prayer-card data without moving rejected or research-only paintings into the live app.
 

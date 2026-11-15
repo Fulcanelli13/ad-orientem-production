@@ -44,11 +44,13 @@ for (const card of manifest.cards) {
     assert.equal(c.local_asset.card_use_authorized, false);
   }
 }
-assert.equal(matchedLocal, 2, 'Only two exact-card choices currently point to existing image binaries');
+assert.equal(matchedLocal, 3, 'Three exact-card choices currently point to locally stored image binaries');
 assert(getApprovedCardArtworkOptions(manifest,'rosary.joyful.1')
   .some(a => a.artwork_id === 'released-photo:angelus' && a.site_asset_path));
 assert(getApprovedCardArtworkOptions(manifest,'rosary.sorrowful.5')
   .some(a => a.artwork_id === 'CANONICAL::ART-nthony-van-yck-he-ance-hrust'));
+assert(getApprovedCardArtworkOptions(manifest,'rosary.joyful.1')
+  .some(a => a.artwork_id === 'REVIEW::commons:21885843' && a.photo_qa === 'PHONE_VISUAL_AND_CINEMATIC_QA_PENDING'));
 assert.equal(getApprovedCardArtworkOptions(manifest,'rosary.luminous.1').length,0);
 assert.equal(getApprovedCardArtworkOptions(manifest,'unknown').length,0);
 assert.equal(findPrayerCard(manifest,'unknown'),null);
@@ -72,4 +74,4 @@ const bad = structuredClone(testManifest);
 bad.cards.find(c => c.card_key === 'rosary.joyful.1').reviewed_stage_image_primary = 'not-in-catalogue';
 assert.throws(() => validatePrayerArtworkManifest(bad));
 
-console.log('Prayer artwork adapter valid: 29 slots (Angelus 5, Regina 4, Rosary 15+5 held), 105 exact approved candidates, 2 local candidate binaries, 0 runtime defaults.');
+console.log('Prayer artwork adapter valid: 29 slots (Angelus 5, Regina 4, Rosary 15+5 held), 105 exact approved candidates, 3 local candidate binaries, 0 runtime defaults.');
