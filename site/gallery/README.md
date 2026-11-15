@@ -7,13 +7,13 @@ This is a **new, deliberately scoped** Sacred Art destination inside the existin
 ## What is real today
 
 - `catalogue.v1.json`: **all 862 currently tracked artwork records** (860 historical master records plus two preserved Angelus contextual records), searchable by artwork, artist, collection, scene category and reviewed prayer part.
-- **Seventeen distinct locally hosted painting images** (nineteen historical catalogue records have images; Champaigne and Girardin each have two historical records for the same physical artwork).
+- **Twenty-eight distinct locally hosted painting images** (thirty catalogue records have images; Champaigne and Girardin each have two historical records for one physical artwork).
 - `gallery.js`: searchable/scrollable gallery, curated-vs-research filter, On display, Angelus review, prayer-matched and image-pending views, and a full-composition painting/detail dialog.
 - `gallery.css`: source-derived Cinzel/Cormorant/EB typography and existing Home colours; scoped selectors only.
-- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for all seventeen on-display reproductions, including six additional museum-sourced, uncropped 2000-pixel gallery WebPs in Batch 04.
+- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for all twenty-eight on-display reproductions, including eleven exact-museum-object-matched, open-access, uncropped gallery WebPs in Batch 05.
 - No external remote URLs are used for gallery image rendering. Museum URLs are links to source records, not image substitutions.
 
-**Important:** **862 artwork records does not mean 862 locally acquired paintings.** Seventeen distinct paintings are now displayed with exact local files. The earlier Carracci preview and Saraceni image were replaced; Batch 04 adds six further previously selected works, all checked against official museum objects and image reuse status. The gallery WebPs retain full artwork composition, downsampled at most to 2,000 pixels on their longest edge. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
+**Important:** **862 artwork records does not mean 862 locally acquired paintings.** Twenty-eight distinct paintings are now displayed with local files. The earlier Carracci preview and Saraceni image were upgraded; Batch 04 added six paintings, and Batch 05 added eleven more selected works after exact museum object, artist, title and Open Access licence checks. The gallery WebPs retain full artwork composition, downsampled at most to 2,000 pixels on their longest edge. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
 
 Artwork inclusion in this registry does not itself mean the owner approved it for prayer placement. The separate `owner_selected_artwork`, `prayer_parts`, `exact_prayer_cards`, `eligible_card_count` and image rights fields remain independent.
 
@@ -38,6 +38,17 @@ Artwork inclusion in this registry does not itself mean the owner approved it fo
 | German Danube School — *The Visitation* | Cleveland Museum of Art accession 1950.91, CC0 print original | `site/gallery/images/danube-visitation-cma-1950-91-2000.webp` |
 | Paolo Veronese and workshop — *The Annunciation* | Cleveland Museum of Art accession 1950.251, CC0 print original | `site/gallery/images/veronese-annunciation-cma-1950-251-2000.webp` |
 | Luca Giordano — *The Annunciation* | Met object 436502, public-domain museum primary image | `site/gallery/images/giordano-annunciation-met-436502-2000.webp` |
+| Orsola Maddalena Caccia — *Madonna and Child with the Infant Saint John the Baptist* | Met 816514, public domain | `site/gallery/images/caccia-madonna-infant-john-met-816514-2000.webp` |
+| Attributed to Bernardino Luini — *Virgin and Child* | Cleveland Museum of Art 1916.812, CC0 | `site/gallery/images/luini-virgin-child-cma-1916-812-2000.webp` |
+| Jan Joest of Kalkar — *The Adoration of the Christ Child* | Met 436781, public domain | `site/gallery/images/joest-adoration-christ-child-met-436781-2000.webp` |
+| Andrea Mantegna — *The Adoration of the Shepherds* | Met 436966, public domain | `site/gallery/images/mantegna-adoration-shepherds-met-436966-2000.webp` |
+| Annibale Carracci — *The Coronation of the Virgin* | Met 435853, public domain | `site/gallery/images/carracci-coronation-virgin-met-435853-2000.webp` |
+| Johann König — *The Resurrection of Christ* | Cleveland Museum of Art 2017.192, CC0 | `site/gallery/images/konig-resurrection-cma-2017-192-2000.webp` |
+| Joos van Cleve — *The Annunciation* | Met 436791, public domain | `site/gallery/images/joos-van-cleve-annunciation-met-436791-2000.webp` |
+| Hans Süss von Kulmbach — *The Ascension of Christ* | Met 436835, public domain | `site/gallery/images/kulmbach-ascension-met-436835-2000.webp` |
+| Peter Paul Rubens — *The Coronation of the Virgin* (oil sketch) | Met 437524, public domain | `site/gallery/images/rubens-coronation-sketch-met-437524-2000.webp` |
+| Joos van Cleve — *The Last Judgment* | Met 436794, public domain | `site/gallery/images/joos-van-cleve-last-judgment-met-436794-2000.webp` |
+| Caravaggio — *The Crucifixion of Saint Andrew* | Cleveland Museum of Art 1976.2, CC0 | `site/gallery/images/caravaggio-crucifixion-andrew-cma-1976-2-2000.webp` |
 
 All gallery WebPs are **gallery reproductions only**. Their prior `app-data/sacred-art/staged-images/` references remain intact, with **prayer-level cinematic/image-quality QA held**. This gallery release is *not* permission to use those files as primary images in Angelus, Rosary, Mass or Calendar.
 
@@ -55,7 +66,7 @@ Future Claude prayer prototypes will reference this canonical artwork catalogue 
 
 ## Checks and rollback
 
-The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, seventeen distinct image identities (including six institutionally rights-verified Batch 04 derivatives), no remote gallery image loading, and preservation of the four-tab navigation.
+The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, twenty-eight distinct image identities (including eleven further institutionally rights-verified Batch 05 derivatives), no remote gallery image loading, and preservation of the four-tab navigation.
 
 The production branch's premerge commit is the rollback reference. Only the `site/` directory publishes.
 
@@ -111,6 +122,17 @@ The sources were independently verified using the **Cleveland Museum of Art Open
 | Paolo Veronese and workshop — The Annunciation | CMA 1950.251 | 1,801×2,000 |
 | Luca Giordano — The Annunciation | Met object 436502 | 1,463×2,000 |
 
-**Current state: 862 original catalogue entries; 17 distinct paintings with local images, represented by 19 catalogue entries; 843 image-pending records.** No painting IDs, prior owner selections, Angelus relationships, prayer defaults, Claude-designed Home screens, or gallery presentation rules were changed. Existing non-certified historical rights notes remain unchanged; the separate verified photographic rights evidence is held in image provenance and the acquisition manifest. No outside image URLs are used at runtime.
+**Batch 04 closeout: 862 original catalogue entries; 17 distinct paintings with local images, represented by 19 catalogue entries; 843 image-pending records at that point.** No painting IDs, prior owner selections, Angelus relationships, prayer defaults, Claude-designed Home screens, or gallery presentation rules were changed. Existing non-certified historical rights notes remain unchanged; the separate verified photographic rights evidence is held in image provenance and the acquisition manifest. No outside image URLs are used at runtime.
 
 The only deployment remains GitHub Actions → GitHub Pages, publishing the curated `site/` directory. This batch imports no new prayer prototype.
+
+
+### Gallery image batch 05 · 15 November 2026
+
+Eleven further **previously selected** artworks, including the owner-approved infant-Jesus paintings by Caccia and attributed to Luini, now have permanent locally hosted images. These are not new catalogue entries or new prayer-screen defaults.
+
+The acquisition workflow validated each museum's **exact accession/object ID**, official **title and artist attribution**, **CC0 / public-domain status**, and linked primary/print museum source JPEG. All source image sizes, SHA-256 checksums, official metadata records and the resulting uncropped WebP derivatives' hashes and dimensions are preserved in `app-data/sacred-art/gallery-image-import-batch05.v1.json`. Every image in this batch has its longer side at **2,000px**, and no painting was cropped.
+
+Eight source photographs are from The Met Open Access / public-domain collection and three from Cleveland Museum of Art CC0 Open Access. These images were sourced from the museums' APIs; the original JPEGs are **not claimed to be separately preserved in production**. The permanent gallery WebP files are in `site/gallery/images/`.
+
+**Current coverage: 862 catalogue records, 28 physically distinct paintings hosted locally across 30 historical catalogue records; 832 catalogue records still awaiting images.** The previous 36 Angelus artwork records and all established prayer-part/candidate links remain intact. Home, Calendar, Mass, Rosary, and Claude's presentation are unchanged. No external runtime image dependencies or new deployment mechanism were introduced.
