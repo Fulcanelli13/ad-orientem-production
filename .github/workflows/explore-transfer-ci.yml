@@ -60,7 +60,7 @@ jobs:
         run: node tests/sacred-art-gallery.mjs
 
   browser-acceptance:
-    name: Real phone and desktop Atlas
+    name: Chromium desktop and simulated mobile Atlas
     needs: [explore-transfer]
     if: github.event_name == 'pull_request' || github.ref_name != 'main'
     runs-on: ubuntu-latest
@@ -104,4 +104,31 @@ jobs:
             artifacts/production-explore-safe-area
             artifacts/production-explore-viewport
             artifacts/production-explore-outage
+          if-no-files-found: warn
+
+  webkit-compatibility:
+    name: WebKit mobile engine smoke (not physical Safari)
+    needs: [explore-transfer]
+    if: github.event_name == 'pull_request' || github.ref_name != 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out this production PR only
+        uses: actions/checkout@v4
+      - name: Use Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install pinned Playwright WebKit engine
+        run: |
+          npm install --no-save --ignore-scripts --no-audit --no-fund @playwright/test@1.64.1
+          npx playwright install --with-deps webkit
+      - name: Validate usable Atlas in WebKit at mobile widths
+        run: node --experimental-default-type=module tests/explore-webkit.mjs
+      - name: Preserve WebKit mobile review captures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-explore-webkit-screenshots
+          path: artifacts/production-explore-webkit
           if-no-files-found: warn
