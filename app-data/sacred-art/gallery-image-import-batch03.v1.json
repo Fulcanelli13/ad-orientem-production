@@ -2,7 +2,7 @@
   "schema": "ao.sacred-art.gallery-image-import.v1",
   "batch": "2026-11-15-batch03",
   "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
-  "policy": "Only owner-selected works already in 862-record registry. Keep original source bytes in research; gallery stores faithful uncropped WebP derivatives for mobile. No prayer-stage promotion.",
+  "policy": "Only already owner-selected works within the existing 862-record gallery. Pinned research originals remain in the research repository; the Carracci source remains at its museum-donated CC0 Commons file page. Gallery hosts verified uncropped WebP derivatives. No prayer-stage promotion.",
   "sources": [
     {
       "key": "carracci",
@@ -28,10 +28,11 @@
         1270,
         1592
       ],
-      "original_preserved_in_research": true,
+      "original_preserved_in_research": false,
       "no_crop": true,
       "quality": "FULL_COMPOSITION_GALLERY_WEBP_FROM_ARCHIVED_SOURCE",
-      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_ASSIGNMENT"
+      "scope": "GALLERY_ONLY_NO_NEW_PRAYER_ASSIGNMENT",
+      "original_preserved_on_source": "Wikimedia Commons institutional Met-donated CC0 original; original SHA-1 and SHA-256 recorded in this manifest"
     },
     {
       "key": "cavallino",
