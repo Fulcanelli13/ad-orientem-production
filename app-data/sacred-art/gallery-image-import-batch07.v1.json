@@ -410,5 +410,10 @@
     }
   ],
   "skipped": [],
-  "source_failures": []
+  "source_failures": [],
+  "curatorial_qualifications": {
+    "REVIEW::smk:KMSSP186": "Institutional production notes mention a Rubens workshop attribution; inherited selected artist unchanged and uncertainty disclosed.",
+    "REVIEW::smk:KMSSP48": "Institutional image service returned a 1294x1600 JPEG thumbnail, not a 2000px master; gallery image reproduces those source pixels without upscaling.",
+    "NEW::nga-46127": "Official NGA attribution: Master of the Prado 'Adoration of the Magi'; inherited broad 'Netherlandish master' text preserved."
+  }
 }
