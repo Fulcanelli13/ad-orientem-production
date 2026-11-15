@@ -31,5 +31,13 @@ jobs:
           git add site/gallery/images/champaigne-annunciation-met-438724-original.jpg site/gallery/images/ingres-adoration-met-438434-original.jpg site/gallery/images/hondius-christ-doctors-met-436672-original.jpg
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "Import three SHA-verified approved museum originals for gallery"
-          git push origin "HEAD:$GITHUB_REF_NAME"
+          if ! git diff --cached --quiet; then
+            git commit -m "Import three SHA-verified approved museum originals for gallery"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
+          node --check site/gallery/gallery.js
+          node tests/sacred-art-gallery.mjs
+          node tests/production-shell.mjs
+          node tests/prayer-artwork-activation.mjs
+          node tests/angelus-a1-donor-crosswalk.mjs
+          node tests/angelus-part-artwork-coverage.mjs
