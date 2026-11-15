@@ -43,7 +43,7 @@ for(const stage of [...angelus,...regina]) {
   if(stage.stage_id==='prayer')continue;
   assert.equal(angelusA1ApprovedUnitOptions(crosswalk,artworks,stage.key).length,0);
 }
-assert.equal(angelusA1ApprovedUnitOptions(crosswalk,artworks,'nonexistent'),0);
+assert.equal(angelusA1ApprovedUnitOptions(crosswalk,artworks,'nonexistent').length,0);
 assert.throws(()=>angelusA1Movements(crosswalk,'unknown'));
 const mutated=structuredClone(crosswalk);
 mutated.stages[0].primary_artwork_id='AUTO_SELECTED';
