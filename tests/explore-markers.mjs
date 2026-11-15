@@ -6,7 +6,7 @@ import {CLAUDE_SACRED_GLYPHS,CLAUDE_MARKER_SIZES,
 const manifest=JSON.parse(readFileSync("site/explore/selected-sites.v1.json","utf8"));
 assert.deepEqual(CLAUDE_MARKER_SIZES,{dot:7,sm:22,ph:52});
 assert.deepEqual(Object.keys(CLAUDE_SACRED_GLYPHS).sort(),
- ["church","christ","marian","saint"]);
+ ["christ","church","marian","saint"]);
 const titles=manifest.sacred.map(x=>x.id);
 assert.equal(titles.length,18);
 assert.equal(manifest.tlm.length,10);
