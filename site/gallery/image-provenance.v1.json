@@ -1,9 +1,9 @@
 {
   "schema": "ao.sacred-art.gallery-image-provenance.v1",
   "import_date": "2026-11-15",
-  "source_contract": "37 distinct local gallery painting images / 39 image-bearing catalogue records. Batch 06 added 9 previously owner-selected works from exact Cleveland CC0 and Met public-domain museum images, preserving source/photo hashes, 2000px uncropped derivative. One follower-of-Sodoma attribution discrepancy was held out of publication. No new prayer-card primary selection or changes to existing associations.",
-  "local_image_count": 37,
-  "catalogue_record_images_count": 39,
+  "source_contract": "49 distinct local gallery painting images / 51 image-bearing historical records. Batch 07 adds 12 owner-selected works: 7 NGA images explicitly openaccess=1 and 5 SMK object-number/artist matched, public_domain=true. Source byte/hash, exact museum record and uncropped app derivatives are documented. SMK Rubens workshop notes and 1600px Dolci source limitations are explicit, without implying new prayer placement approval.",
+  "local_image_count": 49,
+  "catalogue_record_images_count": 51,
   "duplicate_same_original": [
     {
       "physical_artwork": "Met object 438724",
@@ -24,7 +24,7 @@
       "note": "Two historical catalogue records refer to one physical Girardin painting and share one local image; prayer associations remain unchanged."
     }
   ],
-  "pending": "823 catalogue records remain metadata-only, including 1 owner-selected attribution-discrepancy hold (CANONICAL::cma-97147). Museum source JPEGs from Batch 06 are rights and hash verified but not claimed as permanently archived, unlike their hosted uncropped WebP derivatives. Prayer-stage image approval remains independent.",
+  "pending": "811 catalogue entries remain metadata-only. Source files for Batch 07 remain at museum services, with app-local WebP derivatives and cryptographic provenance; do not claim full museum master downloaded for NGA 2000px IIIF requests or SMK thumbnail. Gallery approval does not imply primary prayer cinematic approval.",
   "sources": [
     {
       "artwork_id": "PRAYER::saints--saraceni",
@@ -1019,6 +1019,402 @@
       "rights_evidence_url": "https://www.metmuseum.org/art/collection/search/917618",
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / Open Access",
       "quality_gate": "EXACT_INSTITUTIONAL_OBJECT_TITLE_CREATOR_AND_RIGHTS__UNCROPPED_2000PX_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::nga-46",
+      "path": "site/gallery/images/van-eyck-annunciation-nga-46-2000.webp",
+      "title": "The Annunciation",
+      "artist": "Jan van Eyck",
+      "image_bytes": 403642,
+      "git_blob_sha": "a610ceb730ebb76cda5d0cc89e8381704a4698e1",
+      "sha256": "0d7e9ef51ec93ff108d429f16c9fb4631d63a1dbeed2ae96409dea88b316c1f9",
+      "pixel_dimensions": [
+        758,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch07.v1.json",
+      "museum_api_url": "https://raw.githubusercontent.com/NationalGalleryOfArt/opendata/main/data/objects.csv#objectID=46",
+      "museum_record_id": "46",
+      "museum_title": "The Annunciation",
+      "museum_artist": "Jan van Eyck",
+      "source_url": "https://api.nga.gov/iiif/46633bd6-4834-40fb-8ce0-fb975c731dc1/full/!2000,2000/0/default.jpg",
+      "source_sha256": "0b53927c95328d7ed5d33d64b14a32bb2cd5be5ce2494dd36ff920b7670ad086",
+      "source_dimensions_px": [
+        758,
+        2000
+      ],
+      "source_bytes": 523702,
+      "source_native_dimensions_px": [
+        15339,
+        40461
+      ],
+      "rights_evidence_url": "https://www.nga.gov/artworks/46",
+      "recorded_reproduction_rights": "National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)",
+      "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "NEW::nga-41656",
+      "path": "site/gallery/images/master-catholic-kings-christ-doctors-nga-41656-2000.webp",
+      "title": "Christ among the Doctors",
+      "artist": "Master of the Catholic Kings",
+      "image_bytes": 514470,
+      "git_blob_sha": "35c0b0066c9a31eef77590bfe08884a472314118",
+      "sha256": "23f327700c6a18c6791b7ddd4a86f7abcb22b6dc7dbe640da5c0df506756d623",
+      "pixel_dimensions": [
+        1202,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch07.v1.json",
+      "museum_api_url": "https://raw.githubusercontent.com/NationalGalleryOfArt/opendata/main/data/objects.csv#objectID=41656",
+      "museum_record_id": "41656",
+      "museum_title": "Christ among the Doctors",
+      "museum_artist": "Master of the Catholic Kings",
+      "source_url": "https://api.nga.gov/iiif/a3148763-333a-4e64-ae77-bd37a93b4a34/full/!2000,2000/0/default.jpg",
+      "source_sha256": "4acf9953ee728489400d6c743ed1ba42c5bd9880d8506ded2a511276c79d2a20",
+      "source_dimensions_px": [
+        1202,
+        2000
+      ],
+      "source_bytes": 724853,
+      "source_native_dimensions_px": [
+        12319,
+        20490
+      ],
+      "rights_evidence_url": "https://www.nga.gov/artworks/41656",
+      "recorded_reproduction_rights": "National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)",
+      "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::nga-41696",
+      "path": "site/gallery/images/bachiacca-flagellation-nga-41696-2000.webp",
+      "title": "The Flagellation of Christ",
+      "artist": "Bachiacca",
+      "image_bytes": 600322,
+      "git_blob_sha": "550335fc42a0afba71481a56fddaac2dd23f3025",
+      "sha256": "556869fb7201361491e2cee943dc7fb5953f49775e8675f0dbff1b365919401b",
+      "pixel_dimensions": [
+        1682,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch07.v1.json",
+      "museum_api_url": "https://raw.githubusercontent.com/NationalGalleryOfArt/opendata/main/data/objects.csv#objectID=41696",
+      "museum_record_id": "41696",
+      "museum_title": "The Flagellation of Christ",
+      "museum_artist": "Bachiacca",
+      "source_url": "https://api.nga.gov/iiif/618a3d88-ccc6-4fbd-8fbd-0e1d671ace07/full/!2000,2000/0/default.jpg",
+      "source_sha256": "f725ff659e94506d7780320e9b27565d6a78354069b9a783aaebc0cd66ef846e",
+      "source_dimensions_px": [
+        1682,
+        2000
+      ],
+      "source_bytes": 886130,
+      "source_native_dimensions_px": [
+        6323,
+        7520
+      ],
+      "rights_evidence_url": "https://www.nga.gov/artworks/41696",
+      "recorded_reproduction_rights": "National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)",
+      "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "REVIEW::nga:431",
+      "path": "site/gallery/images/lotto-nativity-nga-431-2000.webp",
+      "title": "The Nativity",
+      "artist": "Lorenzo Lotto",
+      "image_bytes": 449898,
+      "git_blob_sha": "b6c679afd2979d0b3fec17f50db1f345161eebd4",
+      "sha256": "7527c10b755be898fa920f0c67f752f5244bb2179049aca74671fc40342b9efc",
+      "pixel_dimensions": [
+        1527,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch07.v1.json",
+      "museum_api_url": "https://raw.githubusercontent.com/NationalGalleryOfArt/opendata/main/data/objects.csv#objectID=431",
+      "museum_record_id": "431",
+      "museum_title": "The Nativity",
+      "museum_artist": "Lorenzo Lotto",
+      "source_url": "https://api.nga.gov/iiif/d33bbc5c-8152-4af1-9778-c3fc63020877/full/!2000,2000/0/default.jpg",
+      "source_sha256": "e1d46cadb08593d2d5cf4ab9eeae0dd1dd37475bbe7fa11cc4e19f9b9b9a73c1",
+      "source_dimensions_px": [
+        1527,
+        2000
+      ],
+      "source_bytes": 713026,
+      "source_native_dimensions_px": [
+        9407,
+        12320
+      ],
+      "rights_evidence_url": "https://www.nga.gov/artworks/431",
+      "recorded_reproduction_rights": "National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)",
+      "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "NEW::nga-46127",
+      "path": "site/gallery/images/netherlandish-presentation-nga-46127-2000.webp",
+      "title": "The Presentation in the Temple",
+      "artist": "Netherlandish master",
+      "image_bytes": 640900,
+      "git_blob_sha": "406ba0cfedbbfd2fcda80b5a6ae01ebec92a2b53",
+      "sha256": "aeaf50337372cd3a8212c2d89537323d0bdff24d1309ba85d3b0be6f6c9f09fe",
+      "pixel_dimensions": [
+        1656,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch07.v1.json",
+      "museum_api_url": "https://raw.githubusercontent.com/NationalGalleryOfArt/opendata/main/data/objects.csv#objectID=46127",
+      "museum_record_id": "46127",
+      "museum_title": "The Presentation in the Temple",
+      "museum_artist": "Master of the Prado \"Adoration of the Magi\"",
+      "source_url": "https://api.nga.gov/iiif/a1871fb3-fa75-4868-ab25-8870b9e833c7/full/!2000,2000/0/default.jpg",
+      "source_sha256": "bf3f8c6130b0733fafe3456cea9c521ff0dfb3079ee08dbf428a98f4d57f9b28",
+      "source_dimensions_px": [
+        1656,
+        2000
+      ],
+      "source_bytes": 916251,
+      "source_native_dimensions_px": [
+        10307,
+        12448
+      ],
+      "rights_evidence_url": "https://www.nga.gov/artworks/46127",
+      "recorded_reproduction_rights": "National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)",
+      "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
+      "attribution_or_image_scope_note": "NGA attributes this work specifically to Master of the Prado 'Adoration of the Magi'; the inherited broader Netherlandish master label remains.",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::nga-46185",
+      "path": "site/gallery/images/savoldo-shepherds-nga-46185-2000.webp",
+      "title": "The Adoration of the Shepherds",
+      "artist": "Giovanni Girolamo Savoldo",
+      "image_bytes": 346470,
+      "git_blob_sha": "2b85090ecad6ab224a8d8843f316bc94ed62375a",
+      "sha256": "d2d1501c34c09740c0d88b36968165790a2c4fd4ab313f9ec14c7f4f0b623eca",
+      "pixel_dimensions": [
+        2000,
+        1388
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch07.v1.json",
+      "museum_api_url": "https://raw.githubusercontent.com/NationalGalleryOfArt/opendata/main/data/objects.csv#objectID=46185",
+      "museum_record_id": "46185",
+      "museum_title": "The Adoration of the Shepherds",
+      "museum_artist": "Giovanni Girolamo Savoldo",
+      "source_url": "https://api.nga.gov/iiif/2503e799-4135-4df3-91bd-48bdfbbf2873/full/!2000,2000/0/default.jpg",
+      "source_sha256": "9e5446cac48b049ce92758b30befd7748a0be427bd7a48cdb3e34dd22b57d09e",
+      "source_dimensions_px": [
+        2000,
+        1388
+      ],
+      "source_bytes": 576200,
+      "source_native_dimensions_px": [
+        17977,
+        12477
+      ],
+      "rights_evidence_url": "https://www.nga.gov/artworks/46185",
+      "recorded_reproduction_rights": "National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)",
+      "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "REVIEW::nga:52",
+      "path": "site/gallery/images/weyden-follower-christ-virgin-nga-52-2000.webp",
+      "title": "Christ Appearing to the Virgin",
+      "artist": "Follower of Rogier van der Weyden",
+      "image_bytes": 474368,
+      "git_blob_sha": "49b344f71390ddc22b0d805af37789aa068619ba",
+      "sha256": "790e9a6256cce0cdf468ddd0a5ef63f0743b86bdb73b08573b758076550b9c41",
+      "pixel_dimensions": [
+        1142,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch07.v1.json",
+      "museum_api_url": "https://raw.githubusercontent.com/NationalGalleryOfArt/opendata/main/data/objects.csv#objectID=52",
+      "museum_record_id": "52",
+      "museum_title": "Christ Appearing to the Virgin",
+      "museum_artist": "Follower of Rogier van der Weyden",
+      "source_url": "https://api.nga.gov/iiif/89d562d2-a933-4218-bb2a-2e0f325af98b/full/!2000,2000/0/default.jpg",
+      "source_sha256": "a6e1c857f7b1cdcca9c4d0ffe2a2b1d7daf762403a83e70c2b38c91f301d1204",
+      "source_dimensions_px": [
+        1142,
+        2000
+      ],
+      "source_bytes": 658918,
+      "source_native_dimensions_px": [
+        17287,
+        30283
+      ],
+      "rights_evidence_url": "https://www.nga.gov/artworks/52",
+      "recorded_reproduction_rights": "National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)",
+      "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "REVIEW::smk:KMSSP13",
+      "path": "site/gallery/images/barocci-annunciation-smk-kmssp13-2000.webp",
+      "title": "The Annunciation",
+      "artist": "Federico Barocci",
+      "image_bytes": 296840,
+      "git_blob_sha": "fac79f50ec1dadd2acc84cfaa8a543e385538055",
+      "sha256": "43ab7f93b39b0640c6c76016730fce941ebb2dfe7aad9454df0b655bb28f613c",
+      "pixel_dimensions": [
+        1556,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch07.v1.json",
+      "museum_api_url": "https://api.smk.dk/api/v1/art/search/?keys=KMSsp13&rows=50",
+      "museum_record_id": "KMSsp13",
+      "museum_title": "[{'title': 'Jomfru Marias bebudelse', 'type': 'museumstitel', 'language': 'dansk'}]",
+      "museum_artist": "{\"artist\": [\"Federico Barocci\"], \"artists\": null, \"artist_name\": null, \"artist_names\": null, \"production\": [{\"creator\": \"Barocci, Federico\", \"creator_forename\": \"Federico\", \"creator_surname\": \"Barocci\", \"creator_date_of_birth\": \"1535-01-31T00:00:00.000Z\", \"creator_date_of_death\": \"1612-01-01T00:00:00.000Z\", \"creator_nationality\": \"Italiensk\", \"creator_gender\": \"MALE\", \"creator_history\": \"Tegninger: Tu. ital. mag. II. B., 9 Tilskr.: Gl. blyantspåskr. verso.\", \"creator_lref\": \"1368_person\"}], \"creator\": null, \"creators\": null}",
+      "source_url": "https://api.smk.dk/api/v1/download/W3siaW1nX3VybCI6Imh0dHBzOi8vaWlwLnNtay5kay9paWlmL2pwMi9icjg2Yjc0NTFfa21zc3AxMy50aWYuanAyL2Z1bGwvZnVsbC8wL25hdGl2ZS5qcGciLCJwdWJsaWNfZG9tYWluIjp0cnVlLCJvYmplY3RfbnVtYmVyIjoiS01Tc3AxMyIsIm51bSI6IiJ9XQ==/KMSsp13.jpg",
+      "source_sha256": "1477e2fe3b97347d01a74baa3e09eac7164b7e6a8e424d2700c48bc90472184f",
+      "source_dimensions_px": [
+        4150,
+        5334
+      ],
+      "source_bytes": 12878803,
+      "source_native_dimensions_px": null,
+      "rights_evidence_url": "https://open.smk.dk/en/artwork/image/KMSsp13",
+      "recorded_reproduction_rights": "SMK public-domain artwork; institutional API public_domain=true",
+      "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "REVIEW::smk:KMSSP186",
+      "path": "site/gallery/images/rubens-christ-cross-smk-kmssp186-2000.webp",
+      "title": "Christ on the Cross",
+      "artist": "Peter Paul Rubens",
+      "image_bytes": 300634,
+      "git_blob_sha": "12ace05323c37f598e2167c319d9c73bbc487be4",
+      "sha256": "2d24b406d565d6fd246292891a2f05cdc02870e4d6bc16480a587c5a7225973c",
+      "pixel_dimensions": [
+        1425,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch07.v1.json",
+      "museum_api_url": "https://api.smk.dk/api/v1/art/search/?keys=KMSsp186&rows=50",
+      "museum_record_id": "KMSsp186",
+      "museum_title": "[{'title': 'Kristus på korset', 'type': 'museumstitel', 'language': 'dansk'}]",
+      "museum_artist": "{\"artist\": [\"Peter Paul Rubens\"], \"artists\": null, \"artist_name\": null, \"artist_names\": null, \"production\": [{\"creator\": \"Rubens, Peter Paul\", \"creator_forename\": \"Peter Paul\", \"creator_surname\": \"Rubens\", \"creator_date_of_birth\": \"1577-06-28T00:00:00.000Z\", \"creator_date_of_death\": \"1640-05-30T00:00:00.000Z\", \"creator_nationality\": \"Flamsk\", \"creator_gender\": \"MALE\", \"creator_role\": \"Tilskrevet\", \"notes\": \"Tilskrevet Peter Paul Rubens' værksted\", \"creator_lref\": \"1899_person\"}, {\"creator\": \"Momper, Joos de II\", \"creator_forename\": \"Joos de II\", \"creator_surname\": \"Momper\", \"creator_date_of_birth\": \"1564-01-01T00:00:00.000Z\", \"creator_date_of_death\": \"1635-01-01T00:00:00.000Z\", \"creator_nationality\": \"Flamsk\", \"creator_gender\": \"MALE\", \"creator_role\": \"Stil\", \"notes\": \"Landskabet med Golgatha er af en anden hånd, i en stil meget tæt på Joos de Momper (d.y.) Anført af Morell, at baggrunden var af Jodocus de Momper.\", \"creator_lref\": \"31360_person\"}], \"creator\": null, \"creators\": null}",
+      "source_url": "https://api.smk.dk/api/v1/download/W3siaW1nX3VybCI6Imh0dHBzOi8vaWlwLnNtay5kay9paWlmL2pwMi9wMjY3Nno4MDVfS01TS01Tc3AxODYtY3JvcHBlZC50aWYuanAyL2Z1bGwvZnVsbC8wL25hdGl2ZS5qcGciLCJwdWJsaWNfZG9tYWluIjp0cnVlLCJvYmplY3RfbnVtYmVyIjoiS01Tc3AxODYiLCJudW0iOiIifV0=/KMSsp186.jpg",
+      "source_sha256": "8c532aa75c7d76a63eeb0b8bfe0ed8d9a3e4d0a2938ca66f446d0f73412f1ebe",
+      "source_dimensions_px": [
+        4645,
+        6520
+      ],
+      "source_bytes": 15952981,
+      "source_native_dimensions_px": null,
+      "rights_evidence_url": "https://open.smk.dk/en/artwork/image/KMSsp186",
+      "recorded_reproduction_rights": "SMK public-domain artwork; institutional API public_domain=true",
+      "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
+      "attribution_or_image_scope_note": "SMK lists Peter Paul Rubens but qualifies workshop attribution in its production notes. Owner-selected inherited artist field kept, not promoted to certain autograph.",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "REVIEW::smk:KMSSP48",
+      "path": "site/gallery/images/dolci-agony-garden-smk-kmssp48-2000.webp",
+      "title": "Christ's Agony in the Garden of Gethsemane",
+      "artist": "Carlo Dolci",
+      "image_bytes": 89910,
+      "git_blob_sha": "3a61af59c7bc213a017619f1845a1b71884998a9",
+      "sha256": "d1ee59c968ad27e8c2597ab324916fd08b4abac9d91721596b06fcb55ea394e7",
+      "pixel_dimensions": [
+        1294,
+        1600
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch07.v1.json",
+      "museum_api_url": "https://api.smk.dk/api/v1/art/search/?keys=KMSsp48&rows=50",
+      "museum_record_id": "KMSsp48",
+      "museum_title": "[{'title': 'Kristus i Gethsemane', 'type': 'museumstitel', 'language': 'dansk'}]",
+      "museum_artist": "{\"artist\": [\"Carlo Dolci\"], \"artists\": null, \"artist_name\": null, \"artist_names\": null, \"production\": [{\"creator\": \"Dolci, Carlo\", \"creator_forename\": \"Carlo\", \"creator_surname\": \"Dolci\", \"creator_date_of_birth\": \"1616-01-01T00:00:00.000Z\", \"creator_date_of_death\": \"1687-01-01T00:00:00.000Z\", \"creator_nationality\": \"Italiensk\", \"creator_gender\": \"MALE\", \"creator_lref\": \"1630_person\"}], \"creator\": null, \"creators\": null}",
+      "source_url": "https://api.smk.dk/api/v1/thumbnail/f475a680-16f0-4640-b05f-fd58d7664677.jpg",
+      "source_sha256": "9d7ba6c7d9b34a2de877574f3724c9f12f34de8a18cba27beae8132d547f2aa0",
+      "source_dimensions_px": [
+        1294,
+        1600
+      ],
+      "source_bytes": 114767,
+      "source_native_dimensions_px": null,
+      "rights_evidence_url": "https://open.smk.dk/en/artwork/image/KMSsp48",
+      "recorded_reproduction_rights": "SMK public-domain artwork; institutional API public_domain=true",
+      "quality_gate": "MUSEUM_PUBLIC_DOMAIN_SOURCE_1600PX__UNCROPPED_AS_SERVED",
+      "attribution_or_image_scope_note": "The available SMK source is a 1600px institution-served thumbnail; no false high-resolution claim.",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "REVIEW::smk:KMSSP365",
+      "path": "site/gallery/images/ter-brugghen-crowned-thorns-smk-kmssp365-2000.webp",
+      "title": "Christ Crowned with Thorns",
+      "artist": "Hendrick ter Brugghen",
+      "image_bytes": 411886,
+      "git_blob_sha": "a5bcfa6505b299bfb295a0b87d0b57ade55a5e5d",
+      "sha256": "f7a96777cac12aedde3c16bedf87fbd432d24957de65f80d4fe94debcf721a3f",
+      "pixel_dimensions": [
+        2000,
+        1718
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch07.v1.json",
+      "museum_api_url": "https://api.smk.dk/api/v1/art/search/?keys=KMSsp365&rows=50",
+      "museum_record_id": "KMSsp365",
+      "museum_title": "[{'title': 'Kristi tornekroning', 'type': 'museumstitel', 'language': 'dansk'}, {'title': 'Kristi forhånelse', 'type': 'museumstitel', 'language': 'dansk'}]",
+      "museum_artist": "{\"artist\": [\"Hendrick ter Brugghen\"], \"artists\": null, \"artist_name\": null, \"artist_names\": null, \"production\": [{\"creator\": \"Brugghen, Hendrick ter\", \"creator_forename\": \"Hendrick ter\", \"creator_surname\": \"Brugghen\", \"creator_date_of_birth\": \"1588-01-01T00:00:00.000Z\", \"creator_date_of_death\": \"1629-11-01T00:00:00.000Z\", \"creator_nationality\": \"Hollandsk\", \"creator_gender\": \"MALE\", \"creator_lref\": \"1520_person\"}], \"creator\": null, \"creators\": null}",
+      "source_url": "https://api.smk.dk/api/v1/download/W3siaW1nX3VybCI6Imh0dHBzOi8vaWlwLnNtay5kay9paWlmL2pwMi9odDI0d244NW5fa21zc3AzNjUtY3JvcHBlZC50aWYuanAyL2Z1bGwvZnVsbC8wL25hdGl2ZS5qcGciLCJwdWJsaWNfZG9tYWluIjp0cnVlLCJvYmplY3RfbnVtYmVyIjoiS01Tc3AzNjUiLCJudW0iOiIifV0=/KMSsp365.jpg",
+      "source_sha256": "42b03795f044029b7620e1c45ef74d44db10955e2c4bef14001904f948e7b338",
+      "source_dimensions_px": [
+        5817,
+        4997
+      ],
+      "source_bytes": 20422970,
+      "source_native_dimensions_px": null,
+      "rights_evidence_url": "https://open.smk.dk/en/artwork/image/KMSsp365",
+      "recorded_reproduction_rights": "SMK public-domain artwork; institutional API public_domain=true",
+      "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "REVIEW::smk:KMS1168",
+      "path": "site/gallery/images/frantz-clein-presentation-baptism-smk-kms1168-2000.webp",
+      "title": "The Presentation of Christ in the Temple, and the Baptism of Christ",
+      "artist": "Frantz Clein",
+      "image_bytes": 530120,
+      "git_blob_sha": "b1e9bcc30bade1b318bf65a864439a662ba2d0d8",
+      "sha256": "1a723c0096acb09b6f275eeda65e2c2a434109ec361f1e2c6c8c10e778679626",
+      "pixel_dimensions": [
+        2000,
+        1164
+      ],
+      "source_record": "app-data/sacred-art/gallery-image-import-batch07.v1.json",
+      "museum_api_url": "https://api.smk.dk/api/v1/art/search/?keys=KMS1168&rows=50",
+      "museum_record_id": "KMS1168",
+      "museum_title": "[{'title': 'Jesusbarnets fremstilling i templet og Kristi dåb', 'type': 'museumstitel', 'language': 'dansk'}]",
+      "museum_artist": "{\"artist\": [\"Frantz Clein\"], \"artists\": null, \"artist_name\": null, \"artist_names\": null, \"production\": [{\"creator\": \"Clein, Frantz\", \"creator_forename\": \"Frantz\", \"creator_surname\": \"Clein\", \"creator_date_of_birth\": \"1582-01-01T00:00:00.000Z\", \"creator_date_of_death\": \"1658-01-01T00:00:00.000Z\", \"creator_gender\": \"MALE\", \"creator_history\": \"Frantz Clein var i København i hvert fald fra 1617, som det bevidnes i en tegning i Kobberstiksamlingen. I årene 1617-23 var han beskæftiget med udsmykningsopgaver for Christian IV, først og fremmest til Rosenborg. Her udførte han adskillige malerier til det omfattende billedprogram i Christian IVs riddersal. Becketts tilskrivning til C. af hele Skrivekammerets udsmykning drages i tvivl af Me?r Stein, som mener, at loftsmaleriet såvel her som i Dronningens Gemak, det såkaldte Musikanterloft, snarere er udført af Søren Kiær. Uanset tilskrivningen spores en stærk påvirkning fra ferraresisk, illusionistisk maleri fra 1500-tallet, især Garofalos loftsdekorationer til Palazzo Costabili og Palazzo Seminario. Større rimelighed er der i at tilskrive C. Skrivekammerets øvrige loftsfelter, nogle bemalede dørfyldinger samt groteskerne i vindueslysningernes paneler. Den engelske ambassadør i Danmark, Sir Robert Anstruther, anbefalede C. til prins Charles af England, som dog ved kunstnerens ankomst til England 1623 var i Spanien. C. blev vel modtaget af James I, som ønskede at beholde ham i sin tjeneste, hvorfor han samme år sendte ham tilbage til Christian IV med et brev til denne om tilladelse til at beholde ham, hvilket dog først kom endeligt i stand i 1625. Ved tapetmanufakturen Mortlake udførte han originaltegninger til en række billedtæppeserier. Inden for rumdekoration var han især kendt for sine grotesker, som han desuden udgav i stikværket Several Borders of Grotesco Worke (1654?). Sammen med arkitekten Inigo Jones synes han en overgang at have været toneangivende for kongefamiliens og aristokratiets boligindretning, hvor den italienske smag var kommet på mode, og han leverede endvidere forlæg til adskillige kobberstukne bogillustrationer. Blandt sine elever talte C. den engelske maler William Dobson (1611-1646). Tre af C.s børn var ligeledes udøvende kunstnere, nemlig sønnerne Francis (1625-1650) og John *1629, samt datteren Penelope, aktiv 1640-1668. De ernærede sig hovedsagelig som miniaturemalere.\", \"creator_lref\": \"6367_person\"}], \"creator\": null, \"creators\": null}",
+      "source_url": "https://api.smk.dk/api/v1/download/W3siaW1nX3VybCI6Imh0dHBzOi8vaWlwLnNtay5kay9paWlmL2pwMi9zbjAwYjE2MjFfa21zMTE2OC50aWYucmVjb25zdHJ1Y3RlZC50aWYuanAyL2Z1bGwvZnVsbC8wL25hdGl2ZS5qcGciLCJwdWJsaWNfZG9tYWluIjp0cnVlLCJvYmplY3RfbnVtYmVyIjoiS01TMTE2OCIsIm51bSI6IiJ9XQ==/KMS1168.jpg",
+      "source_sha256": "1f9678e090f165799b526aea466171148d43551d00ccfe46519d3bf88192f3c9",
+      "source_dimensions_px": [
+        3714,
+        2162
+      ],
+      "source_bytes": 5913845,
+      "source_native_dimensions_px": null,
+      "rights_evidence_url": "https://open.smk.dk/en/artwork/image/KMS1168",
+      "recorded_reproduction_rights": "SMK public-domain artwork; institutional API public_domain=true",
+      "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
       "exact_original_image_for_prayer": false
     }
