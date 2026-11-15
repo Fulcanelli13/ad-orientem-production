@@ -18,7 +18,7 @@ const MODULES = Object.freeze({
   atlas: {
     title: "The Sacred Atlas",
     latin: "In omnem terram",
-    description: "The canonical church and community registry, verified locations and Sacred Atlas interface are still in the research repository."
+    description: "A selected, source-verified Atlas pilot is being reviewed. The worldwide registry and complete directory are not yet transferred."
   },
   formation: {
     title: "Formation",
@@ -36,13 +36,25 @@ function routeFromHash() {
 function showRoute(route, updateHistory = true) {
   if (!VALID_ROUTES.has(route)) route = "home";
   const home = route === "home";
+  const explore = route === "atlas";
   byId("home-view").hidden = !home;
-  byId("module-view").hidden = home;
-  if (!home) {
+  byId("module-view").hidden = home || explore;
+  byId("atlas-view").hidden = !explore;
+  if (!home && !explore) {
     const details = MODULES[route];
     byId("module-title").textContent = details.title;
     byId("module-latin").textContent = details.latin;
     byId("module-description").textContent = details.description;
+  }
+  if (explore) {
+    // Load the curated Atlas only after its existing Home V9 entrance opens.
+    // The single MapLibre instance is reused on later visits.
+    import("./explore.js")
+      .then(module => module.mountExplore())
+      .catch(error => {
+        const status = byId("atlas-map-status");
+        if (status) status.textContent = "The selected Atlas could not start: " + String(error.message || error);
+      });
   }
   document.querySelectorAll(".tabbar .tab").forEach(button => {
     const selected = button.dataset.route === route;
@@ -54,7 +66,7 @@ function showRoute(route, updateHistory = true) {
     window.history.pushState({ route }, "", "#" + route);
   }
   window.scrollTo({ top: 0, behavior: "instant" });
-  if (!home) byId("module-title").focus({ preventScroll: true });
+  if (!home && !explore) byId("module-title").focus({ preventScroll: true });
 }
 function createCivilWeek() {
   const now = new Date();
