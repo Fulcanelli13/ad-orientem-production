@@ -64,6 +64,12 @@ try{
      document.querySelector(".tabbar").getBoundingClientRect().top),
    overflow:document.documentElement.scrollWidth-innerWidth};
  });
+ // The source sheet deliberately animates its height for ~450ms.
+ // Geometry assertions must measure a settled frame, not an interim one.
+ const settleSheet=expected=>page.waitForFunction(expected=>{
+  const el=document.querySelector("#atlas-sheet");
+  return !!el&&Math.abs(el.getBoundingClientRect().height-expected)<=2;
+ },expected,{timeout:5000,polling:50});
  const baseline=await geometry();
  close(baseline.sheet.height,376,"baseline source peek");
  assert.equal(baseline.canvas,1);
@@ -76,6 +82,7 @@ try{
   await page.setViewportSize(scenario);
   await page.waitForFunction(()=>document.querySelector("#atlas-sheet")?.
    style.getPropertyValue("--h")==="150px");
+  await settleSheet(150);
   const g=await geometry();
   close(g.view.height,scenario.height,"layout-viewport height");
   close(g.sheet.height,150,"keyboard-shrunk sheet");
@@ -89,6 +96,7 @@ try{
  }
  await page.setViewportSize({width:390,height:780});
  await page.waitForFunction(()=>document.querySelector("#atlas-sheet")?.style.getPropertyValue("--h")==="376px");
+ await settleSheet(376);
  close((await geometry()).sheet.height,376,"restored source peek");
  await page.locator("#atlas-search").fill("");
  await page.locator("#atlas-search").blur();
@@ -106,6 +114,7 @@ try{
  });
  assert.ok(overridden,"Cannot emulate visualViewport keyboard contraction");
  await page.waitForFunction(()=>document.querySelector("#atlas-view")?.classList.contains("atlas-keyboard-visible"));
+ await settleSheet(150);
  const visualKeyboard=await geometry();
  close(visualKeyboard.view.height,455,"visualViewport OSK height",3);
  close(visualKeyboard.sheet.height,150,"keyboard-state peek");
@@ -129,6 +138,7 @@ try{
  await page.evaluate(()=>{window.location.hash="#atlas";});
  await page.locator("#atlas-view").waitFor({state:"visible"});
  await page.waitForFunction(()=>!document.querySelector("#atlas-view")?.classList.contains("atlas-keyboard-visible"));
+ await settleSheet(376);
  const restored=await geometry();
  close(restored.sheet.height,376,"keyboard closed source peek");
  assert.equal(restored.navVisible,true);
@@ -155,6 +165,7 @@ try{
  }
  await page.setViewportSize({width:390,height:780});
  await page.waitForFunction(()=>document.querySelector("#atlas-sheet")?.style.getPropertyValue("--h")==="376px");
+ await settleSheet(376);
  const back=await geometry();
  close(back.sheet.height,376,"portrait after landscape");
  assert.equal(back.canvas,1);
