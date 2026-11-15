@@ -41,6 +41,7 @@ jobs:
           node tests/production-shell.mjs
           node tools/validate-prayer-artwork-assets.mjs
           node tests/prayer-artwork-activation.mjs
+          node tests/angelus-a1-donor-crosswalk.mjs
           if grep -Rni 'vercel' site/; then
             echo 'Vercel references are not allowed in the production site.' >&2
             exit 1
