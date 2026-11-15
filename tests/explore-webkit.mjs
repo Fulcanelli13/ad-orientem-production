@@ -76,6 +76,29 @@ try{
   await page.locator("#atlas-search").fill("");
   await page.waitForFunction(()=>document.getElementById("atlas-count")?.textContent==="18 / 18");
   await page.locator("#atlas-search").blur();
+  // A list can be functional while WebGL is still drawing blank frames.
+  // The screenshot and map-facing compatibility gate must wait for
+  // MapLibre source, tile requests and camera movement to settle.
+  const waitForRenderedMap=async label=>{
+   try{
+    await page.waitForFunction(async()=>{
+     const {exploreDebugState}=await import("./explore.js");
+     return exploreDebugState().mapReady;
+    },null,{timeout:30000,polling:125});
+    await page.evaluate(()=>new Promise(done=>
+      requestAnimationFrame(()=>requestAnimationFrame(done))));
+   }catch(error){
+    const debug=await page.evaluate(async()=>{
+     const {exploreDebugState}=await import("./explore.js");
+     const s=exploreDebugState();
+     return {mapReady:s.mapReady,mapFailed:s.mapFailed,mapLoaded:s.mapLoaded,
+      tilesLoaded:s.tilesLoaded,cameraMoving:s.cameraMoving,error:s.error};
+    });
+    throw new Error("WebKit "+label+" map not settled: "+JSON.stringify(debug)+
+      " ; "+String(error.message||error));
+   }
+  };
+  await waitForRenderedMap("Sacred");
   await page.screenshot({path:join("artifacts/production-explore-webkit",width+"-en-sacred-map.png"),
    animations:"disabled",fullPage:false});
   const handle=page.locator("#atlas-sheet-handle");
@@ -94,6 +117,7 @@ try{
   assert.equal(await page.locator("#atlas-card .atlas-folio-hero").count(),1,
    "Source-authored place folio missing in WebKit");
   assert.equal(await page.locator("#atlas-card .atlas-folio-toc").count(),1);
+  await waitForRenderedMap("Sacred folio");
   await page.screenshot({path:join("artifacts/production-explore-webkit",width+"-en-sacred-folio.png"),
    animations:"disabled",fullPage:false});
   await page.locator("#atlas-card .atlas-folio-back").tap();
@@ -102,6 +126,7 @@ try{
    "French-localized search prompt missing");
   await page.locator("#atlas-lens-tlm").tap();
   await page.waitForFunction(()=>document.getElementById("atlas-count")?.textContent==="10 / 10");
+  await waitForRenderedMap("French TLM");
   assert.equal(await page.locator('#atlas-ways button[data-atlas-facet="times"]').isDisabled(),true,
    "Never offer unverified TLM Mass times");
   await page.screenshot({path:join("artifacts/production-explore-webkit",width+"-fr-tlm-map.png"),
