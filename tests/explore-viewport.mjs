@@ -114,10 +114,14 @@ try{
  });
  assert.ok(overridden,"Cannot emulate visualViewport keyboard contraction");
  await page.waitForFunction(()=>document.querySelector("#atlas-view")?.classList.contains("atlas-keyboard-visible"));
- await settleSheet(150);
+ // With the Home tabbar temporarily hidden under the visual-only keyboard,
+ // 455px usable height - 300px map-control reserve = 155px peek.
+ // The 150px value is a floor, not the universal keyboard-height target.
+ const visualKeyboardPeek=155;
+ await settleSheet(visualKeyboardPeek);
  const visualKeyboard=await geometry();
  close(visualKeyboard.view.height,455,"visualViewport OSK height",3);
- close(visualKeyboard.sheet.height,150,"keyboard-state peek");
+ close(visualKeyboard.sheet.height,visualKeyboardPeek,"keyboard-state peek");
  assert.equal(visualKeyboard.navVisible,false,
   "Navigation should be noninteractive behind visual-only keyboard");
  assert.ok(visualKeyboard.search.bottom<visualKeyboard.sheet.top,
