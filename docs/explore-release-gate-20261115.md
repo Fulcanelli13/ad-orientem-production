@@ -33,3 +33,16 @@
 5. **Publication:** explicitly approve this PR before merging; the only public path is production `main` → GitHub Actions → GitHub Pages. The old research repository remains active.
 
 **Release decision: HOLD.** Browser checks prove functional behaviour of the limited pilot, **not** final visual/physical-device acceptance or reliability of external third parties. Terms may change; recheck near a public release.
+
+
+## Deliberate external outage acceptance — 15 November 2026
+
+The external CDN/tile dependency is now exercised by a dedicated **read-only Playwright fault-injection test**, `tests/explore-outage.mjs`, rather than assumed from the presence of a static fallback.
+
+- `maplibre-cdn`: block all `unpkg.com` requests, including the MapLibre ESM import; verify a visible unavailable state **without blocking** the local place directory.
+- `tiles-and-glyphs`: allow the normal MapLibre ESM, deliberately abort `tiles.openfreemap.org` vector/glyph requests; verify the map canvas may remain present but the local cards/folios still work.
+- At 390px, verify **every one of the 10 TLM venue and 18 Sacred Place folios** opens with its precise source identity and usable primary evidence link. At 320px, run an additional representative smoke path for each lens and outage mode.
+- In both cases: exact 10/18 result counts, unmodified 226px cards, functioning typed search and empty-state handling, category-preserving photo/no-photo distinctions, locally served photo integrity/credits where present, TLM no-invented-schedule warning, switchable English/French controls, vertical list mode, and route Home→Explore.
+- Save screenshots under `artifacts/production-explore-outage/` in the existing nondeploying PR Actions workflow. The browser test must fail if the local curated JSON/photos or key controls stop working during an unrelated network outage.
+
+**Important scope:** This is a simulated **provider failure while the app's own GitHub Pages origin remains accessible**, *not* proof that Explore works fully offline or that a user can load the entire application when their internet connection is disconnected. Full offline caching is not implemented or authorized. The approved Claude map/card/folio CSS, photos, fonts, gestures and navigation remain untouched by this test addition. Owner visual acceptance and physical-phone testing remain separate release holds.
