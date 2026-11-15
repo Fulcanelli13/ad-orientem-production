@@ -51,7 +51,7 @@ const dictionary={
 };
 const state={
  initialized:false,lens:"tlm",language:"en",data:null,selectedId:null,
- map:null,sourceLoaded:false,mapFailed:false,markers:null,loading:null,all:[],query:"",facet:"all",viewMode:"cards",folioHistory:[],lastError:null,
+ map:null,sourceLoaded:false,mapFailed:false,markers:null,loading:null,all:[],query:"",facet:"all",viewMode:"cards",folioHistory:[],folioReturn:null,lastError:null,
 };
 const tr=key=>dictionary[state.language][key]||key;
 const make=(tag,className,txt)=>{
@@ -253,8 +253,30 @@ function folioRow(title,detail,action){
  b.addEventListener("click",action);
  return b;
 }
+// Fullscreen folios replace the map's visible content, but the original
+// card/marker should remain the keyboard return point after dismissal.
+function closeFolioToAtlas(){
+ const origin=state.folioReturn;
+ const root=$("atlas-card");
+ state.folioHistory=[];state.selectedId=null;
+ root.hidden=true;root.replaceChildren();
+ renderSummary();updateSacredMarkers();
+ const card=[...$("atlas-results").querySelectorAll("button[data-atlas-id]")]
+  .find(button=>button.dataset.atlasId===origin?.id);
+ const marker=state.markers?.find(item=>item.record.id===origin?.id)?.root;
+ const target=(origin?.kind==="marker"&&marker?.dataset.visible==="true"?marker:card)
+  ||card||$("atlas-sheet-handle");
+ state.folioReturn=null;
+ target.focus({preventScroll:true});
+}
 function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
  const record=activeRecord(id);if(!record)return;
+ if($("atlas-card").hidden){
+  state.folioReturn={
+   id:record.id,
+   kind:document.activeElement?.closest?.(".atlas-place-marker")?"marker":"card"
+  };
+ }
  if(fromFolio&&state.selectedId&&state.selectedId!==id){
   state.folioHistory.push(state.selectedId);
  }else if(!back){state.folioHistory=[];}
@@ -265,10 +287,7 @@ function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
   if(state.folioHistory.length){
    const previous=state.folioHistory.pop();
    selectRecord(previous,{fly:false,back:true});
-  }else{
-   state.selectedId=null;root.hidden=true;renderSummary();updateSacredMarkers();
-   $("atlas-sheet-handle").focus({preventScroll:true});
-  }
+  }else closeFolioToAtlas();
  };
  const backButton=make("button","atlas-folio-back","‹");
  backButton.type="button";backButton.setAttribute("aria-label",tr("hide"));
@@ -277,10 +296,7 @@ function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
  if(state.folioHistory.length){
   const closeAll=make("button","atlas-folio-closeall","×");
   closeAll.type="button";closeAll.setAttribute("aria-label",tr("hide"));
-  closeAll.addEventListener("click",()=>{
-   state.folioHistory=[];state.selectedId=null;root.hidden=true;renderSummary();
-   updateSacredMarkers();$("atlas-sheet-handle").focus({preventScroll:true});
-  });
+  closeAll.addEventListener("click",closeFolioToAtlas);
   root.append(closeAll);
  }
  const sc=make("div","atlas-folio-scroll");
@@ -401,6 +417,9 @@ function selectRecord(id,{fly=true,fromFolio=false,back=false}={}){
   "Positions and distances describe documented sites, not verified entrances. Consult the original sources before visiting."));
  root.append(sc);
  renderSummary();updateSacredMarkers();
+ // Keyboard/screen-reader users enter the newly opened fullscreen folio,
+ // rather than remaining on a card underneath the covering panel.
+ backButton.focus({preventScroll:true});
  if(fly&&state.map)moveMapToVisiblePoint(
   [Number(record.geo.lng),Number(record.geo.lat)],
   Math.max(7,state.map.getZoom()));
@@ -658,6 +677,11 @@ function attachControls(){
  window.visualViewport?.addEventListener("scroll",scheduleViewport);
  search.addEventListener("focus",scheduleViewport);
  search.addEventListener("blur",scheduleViewport);
+ $("atlas-card").addEventListener("keydown",event=>{
+  if(event.key!=="Escape"||$("atlas-card").hidden)return;
+  event.preventDefault();event.stopPropagation();
+  closeFolioToAtlas();
+ });
  $("atlas-ways").addEventListener("click",event=>{
   const button=event.target.closest("button[data-atlas-facet]");
   if(!button || button.disabled)return;
