@@ -86,7 +86,7 @@ assert(html.includes('href="./gallery/gallery.css"'));
 assert(app.includes('const VALID_ROUTES = new Set(["home", "gallery", ...Object.keys(MODULES)])'));
 assert(app.includes('byId("gallery-view").hidden = !gallery'));
 assert(app.includes('window.AO_OPEN_SACRED_ART_GALLERY?.()'));
-assert.equal((html.match(/class="tab"/g)||[]).length,4,'Do not add a new permanent nav tab');
+assert.equal((html.match(/class="tab(?:\\s|")/g)||[]).length,4,'Do not add a new permanent nav tab');
 assert(js.includes('fetch(dataUrl'));
 assert(!js.includes('img.src = item.image_url_source_only'));
 assert(!js.includes('img.src = item.source_url'));
