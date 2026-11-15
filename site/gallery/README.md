@@ -10,7 +10,7 @@ This is a **new, deliberately scoped** Sacred Art destination inside the existin
 - **Eight locally held painting image files** (nine historical registry rows link to those eight paintings, including two interim museum-backed thumbnails for which larger originals are still required).
 - `gallery.js`: searchable/scrollable gallery, curated-vs-research filter, On display, Angelus review, prayer-matched and image-pending views, and a full-composition painting/detail dialog.
 - `gallery.css`: source-derived Cinzel/Cormorant/EB typography and existing Home colours; scoped selectors only.
-- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for the six on-display photographs.
+- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for all eight on-display photographs, including quality classification for two interim previews.
 - No external remote URLs are used for gallery image rendering. Museum URLs are links to source records, not image substitutions.
 
 **Important:** **862 artwork records does not mean 862 locally acquired paintings.** Eight paintings are currently displayed with local image files: six previously held reproductions (three Home JPEGs and three previously staged WebPs), plus two archive-derived museum-matched low-resolution previews. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
@@ -44,7 +44,7 @@ Future Claude prayer prototypes will reference this canonical artwork catalogue 
 
 ## Checks and rollback
 
-The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, six image identities, no remote gallery image loading, and preservation of the four-tab navigation.
+The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, eight image identities (including two limited preview files), no remote gallery image loading, and preservation of the four-tab navigation.
 
 The production branch's premerge commit is the rollback reference. Only the `site/` directory publishes.
 
