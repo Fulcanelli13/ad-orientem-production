@@ -1,4 +1,5 @@
 import assert from 'node:assert/strict';
+import { createHash } from 'node:crypto';
 import { readFileSync, existsSync, statSync } from 'node:fs';
 import { resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -47,6 +48,7 @@ for (const original of angelus.artworks) {
     angelus.part_artwork_links.filter(x=>x.artwork_id===original.artwork_id).length);
 }
 assert.equal(images.sources.length,8);
+const verifiedArchiveOriginalIds = new Set(['CANONICAL::ART-hilippe-de-hampaigne-he-nnunciation','CANONICAL::met-438434','CANONICAL::met-436672']);
 const srcFiles = new Set();
 for (const art of gallery.records) {
   assert(!art.image || art.image.src.startsWith('./'));
@@ -64,7 +66,10 @@ assert.equal(srcFiles.size,8);
 for (const entry of images.sources) {
   assert(srcFiles.has(entry.path));
   assert.equal(statSync(resolve(base,entry.path)).size,entry.image_bytes);
-  if (entry.path.startsWith('site/gallery/images/') && entry.quality_gate !== 'INTERIM_GALLERY_PREVIEW_ONLY__ORIGINAL_IMAGE_NOT_TRANSFERRED') {
+  const blob = readFileSync(resolve(base,entry.path));
+  assert.equal(createHash('sha1').update('blob '+blob.length+'\0').update(blob).digest('hex'),entry.git_blob_sha,'Source Git blob hash mismatch: '+entry.path);
+  if (entry.sha256) assert.equal(createHash('sha256').update(blob).digest('hex'),entry.sha256,'Original SHA256 mismatch: '+entry.path);
+  if (entry.path.startsWith('site/gallery/images/') && staged.staged_images.some(x=>x.work_id===entry.artwork_id)) {
     const match = staged.staged_images.find(x=>x.work_id===entry.artwork_id);
     assert(match,'Missing staged provenance');
     assert.equal(entry.git_blob_sha,match.git_blob_sha);
@@ -73,8 +78,8 @@ for (const entry of images.sources) {
     assert.deepEqual(galleryBytes,stagedBytes,'Copied image must be byte-for-byte identical');
   }
 }
-assert.equal(images.sources.filter(x=>x.quality_gate==='INTERIM_GALLERY_PREVIEW_ONLY__ORIGINAL_IMAGE_NOT_TRANSFERRED').length,2);
-const previewIds=['CANONICAL::met-436672','CANONICAL::met-438338'];
+assert.equal(images.sources.filter(x=>x.quality_gate==='INTERIM_GALLERY_PREVIEW_ONLY__ORIGINAL_IMAGE_NOT_TRANSFERRED').length,1);
+const previewIds=['CANONICAL::met-438338'];
 for(const id of previewIds){
   const work=gallery.records.find(x=>x.id===id);
   const photo=images.sources.find(x=>x.artwork_id===id);
@@ -86,7 +91,17 @@ for(const id of previewIds){
   assert.equal(photo?.release_scope,'GALLERY_PREVIEW_ONLY__NO_PRAYER_STAGE_OR_DAY_IMAGE_APPROVAL');
 }
 assert.equal(images.duplicate_same_original.length,1);
-assert.equal(gallery.records.filter(x=>x.image?.src==='./artwork/champaigne-annunciation-home-v9.jpg').length,2);
+assert.equal(images.duplicate_same_original[0].image,'site/gallery/images/champaigne-annunciation-met-438724-original.jpg');
+assert.equal(gallery.records.filter(x=>x.image?.src==='./gallery/images/champaigne-annunciation-met-438724-original.jpg').length,2);
+for (const id of verifiedArchiveOriginalIds) {
+  const work=gallery.records.find(x=>x.id===id);
+  const photo=images.sources.find(x=>x.artwork_id===id);
+  assert(work?.owner_selected_artwork,'Only previously selected paintings receive original files');
+  assert(work?.image?.src === './'+photo?.path.slice('site/'.length),'Original missing gallery binding');
+  assert(photo?.image_bytes>2000000,'Image file must be an original-sized JPEG');
+  assert(photo?.release_scope==='GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT');
+  assert(!work.image.quality.startsWith('LOW_RES_PREVIEW'));
+}
 
 // UI is scoped and nav contains no extra bottom tab. No remote image is loaded by runtime.
 assert(html.includes('id="gallery-view"'));
@@ -106,4 +121,4 @@ assert(js.includes('catalogue.records'));
 assert(css.includes('.ao-gallery'));
 assert(css.includes('.home-pad.integrated-home-order>.sacred-art-entry'));
 assert(!html.includes('https://fonts.googleapis.com'),'No remote font dependencies');
-console.log('Sacred Art gallery validated: 862 records, 36 Angelus works, 8 hosted images (2 lower-res interim previews) / 9 record references; 0 external image loads and 0 prayer defaults.');
+console.log('Sacred Art gallery validated: 862 records, 36 Angelus works, 8 hosted images (3 higher-resolution archived JPEGs, 1 lower-res interim preview) / 9 record references; 0 external image loads and 0 new prayer defaults.');
