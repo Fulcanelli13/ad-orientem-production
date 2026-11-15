@@ -1,0 +1,99 @@
+{
+  "schema": "ao.production.sacred-art.asset-provenance.v1",
+  "created_on": "2026-11-15",
+  "source": "Owner-selected sacred art from the unified 2026-11-15 prayer-card and painting curation records",
+  "state": "NONPUBLISHED_ASSET_STAGING",
+  "public_path_release_ready": false,
+  "editorial_policy": "Selection for a painting or prayer context does not establish an approved default for a specific prayer card.",
+  "existing_site_files": [
+    {
+      "work_id": "PRAYER::saints--saraceni",
+      "title": "Paradise",
+      "artist": "Carlo Saraceni",
+      "path": "site/artwork/saraceni-paradise-v9.jpg",
+      "usage": "Home visual study only",
+      "provenance": "site/artwork/provenance.json"
+    },
+    {
+      "work_id": "CANONICAL::ART-hilippe-de-hampaigne-he-nnunciation",
+      "title": "The Annunciation",
+      "artist": "Philippe de Champaigne",
+      "path": "site/artwork/champaigne-annunciation-home-v9.jpg",
+      "usage": "Home prayer preview only",
+      "provenance": "site/artwork/home-prayer-provenance.json"
+    },
+    {
+      "work_id": "CANONICAL::met-438434",
+      "title": "The Virgin Adoring the Host",
+      "artist": "Jean Auguste Dominique Ingres",
+      "path": "site/artwork/ingres-adoration-home-v9.jpg",
+      "usage": "Home prayer preview only",
+      "provenance": "site/artwork/home-prayer-provenance.json"
+    }
+  ],
+  "staged_images": [
+    {
+      "work_id": "CANONICAL::ART-nthony-van-yck-he-ance-hrust",
+      "artist": "Anthony van Dyck",
+      "title": "Christ on the Cross, The Lance Thrust",
+      "path": "app-data/sacred-art/staged-images/van-dyck-kmska297-lance-thrust-2400.webp",
+      "git_blob_sha": "769c9aa8f45373c84172107142b32e06cf27c1f6",
+      "size_bytes": 470390,
+      "source_repository": "Fulcanelli13/ad-orientem",
+      "source_repository_path": "assets/home/class-i-2026/van-dyck-kmska297-lance-thrust-2400.webp",
+      "institution": "KMSKA Antwerp",
+      "source_url": "https://vlaamsekunstcollectie.be/en/collectie/297",
+      "rights_evidence": "Flemish Art Collection labels the reproduction CC0; inherited from recovery manifest; final QA still pending",
+      "actual_image_qa": "SOURCE_REPO_BINARY_COPIED; FINAL_100_PERCENT_PIXEL_AND_PHONE_QA_PENDING",
+      "card_assignment": null,
+      "release_state": "STAGED_ONLY"
+    },
+    {
+      "work_id": "owner-selected:holy-trinity:rubens-1620",
+      "artist": "Peter Paul Rubens",
+      "title": "The Holy Trinity (1620)",
+      "path": "app-data/sacred-art/staged-images/rubens-holy-trinity-kmska314-2000.webp",
+      "git_blob_sha": "845ba67cd91852740f2b04cbc3b77e598644215c",
+      "size_bytes": 685798,
+      "size_px": [
+        1945,
+        2000
+      ],
+      "sha256": "904372f5f2828f0e182ad2ca086bfbb69219fef9a23b1080e45d7ad237eb131b",
+      "source_original_sha256": "cd3477e583cf55ca2bd651aad191b916ec84a4af73b3ed36dc7e4e48b9c0ef38",
+      "source_original_size_px": [
+        19178,
+        19721
+      ],
+      "source_archive": "AO_Sacred_Art_Source_Recovery_Batch04_2026-11-15_TRINITY_TWO_VERIFIED_ORIGINALS.zip",
+      "institution": "KMSKA Antwerp",
+      "source_url": "https://vlaamsekunstcollectie.be/en/collectie/314",
+      "rights_evidence": "KMSKA/Flemish Art Collection labels image CC0 per source recovery manifest",
+      "actual_image_qa": "EXACT_BINARY_DECODED_AND_VISUAL_INSPECTION; FINAL_100_PERCENT_PIXEL_AND_PHONE_QA_PENDING",
+      "card_assignment": null,
+      "release_state": "STAGED_ONLY"
+    }
+  ],
+  "source_recovery_not_transferred": [
+    {
+      "work_id": "owner-selected:holy-trinity:dolci-1640",
+      "title": "The Trinity in Glory",
+      "artist": "Carlo Dolci",
+      "source_archive": "AO_Sacred_Art_Source_Recovery_Batch04_2026-11-15_TRINITY_TWO_VERIFIED_ORIGINALS.zip",
+      "size_px": [
+        658,
+        768
+      ],
+      "sha256": "75c1a3e323e9ba53f49ffbc9399006524f43578e764a99d7bb5b4d292bcaea51",
+      "note": "Source bytes available in curation archive, but not yet copied into production GitHub; keep status unresolved."
+    }
+  ],
+  "publication_rules": [
+    "App must bind by stable artwork ID and checked runtime card ID, not guessed STG/COV IDs.",
+    "Never auto-publish external preview URLs as production image assets.",
+    "Do not assign a selected picture to a specific prayer stage without specific approval.",
+    "Only site/ is deployed; files under app-data/ are source-held and private from published-site paths.",
+    "Preserve Claude's integrated UI, typography, prayer captions and painting-camera behaviour.",
+    "GitHub Actions and GitHub Pages only; no Vercel."
+  ]
+}
