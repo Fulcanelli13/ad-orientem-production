@@ -152,6 +152,7 @@ try{
         bottomLeft:style.borderBottomLeftRadius,bottomRight:style.borderBottomRightRadius
       }})(),
       attribution:Boolean(document.querySelector("#atlas-map .maplibregl-ctrl-attrib")),
+      attributionText:document.querySelector("#atlas-map .maplibregl-ctrl-attrib")?.textContent||"",
       zoomButtons:[...document.querySelectorAll("#atlas-map .maplibregl-ctrl-zoom-in,#atlas-map .maplibregl-ctrl-zoom-out")]
         .map(el=>{
           const r=el.getBoundingClientRect();
@@ -182,6 +183,10 @@ try{
     width+"px place cards cannot swipe horizontally: "+JSON.stringify(dom));
   assert.ok(dom.worldClickable,width+"px World View is obstructed: "+JSON.stringify(dom));
   assert.ok(dom.attribution,"Source map attribution control missing");
+  assert.match(dom.attributionText,/OpenStreetMap/i,
+    width+"px rendered map must credit OpenStreetMap contributors");
+  assert.match(dom.attributionText,/OpenMapTiles/i,
+    width+"px rendered map must credit OpenMapTiles");
   assert.equal(dom.zoomButtons.length,2,width+"px missing map zoom controls");
   assert.ok(dom.zoomButtons.every(button=>button.visible&&button.reachable),
     width+"px zoom button covered by floating controls: "+JSON.stringify(dom.zoomButtons));
