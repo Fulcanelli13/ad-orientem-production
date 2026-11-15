@@ -1,0 +1,188 @@
+name: One-time source-checked cross-museum gallery import batch 07
+on:
+  push:
+    branches: [feature/gallery-image-batch07-20261115]
+    paths: [.github/workflows/gallery-image-batch07-once.yml]
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Match NGA Open Access and SMK public-domain art and produce local uncropped images
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet Pillow
+          python3 - <<'PY'
+          import csv,hashlib,io,json,re,time,unicodedata,urllib.request,urllib.parse
+          from pathlib import Path
+          from PIL import Image,ImageOps
+
+          specs=[
+            dict(id='CANONICAL::nga-46',key='van-eyck-annunciation',museum='NGA',object_id=46,artist='eyck',title='The Annunciation',filename='van-eyck-annunciation-nga-46-2000.webp'),
+            dict(id='NEW::nga-41656',key='master-catholic-kings-doctors',museum='NGA',object_id=41656,artist='catholic kings',title='Christ among the Doctors',filename='master-catholic-kings-christ-doctors-nga-41656-2000.webp'),
+            dict(id='CANONICAL::nga-41696',key='bachiacca-flagellation',museum='NGA',object_id=41696,artist='bachiacca',title='The Flagellation of Christ',filename='bachiacca-flagellation-nga-41696-2000.webp'),
+            dict(id='REVIEW::nga:431',key='lotto-nativity',museum='NGA',object_id=431,artist='lotto',title='The Nativity',filename='lotto-nativity-nga-431-2000.webp'),
+            dict(id='NEW::nga-46127',key='netherlandish-presentation',museum='NGA',object_id=46127,artist='netherlandish',title='The Presentation in the Temple',filename='netherlandish-presentation-nga-46127-2000.webp'),
+            dict(id='CANONICAL::nga-46185',key='savoldo-shepherds',museum='NGA',object_id=46185,artist='savoldo',title='The Adoration of the Shepherds',filename='savoldo-shepherds-nga-46185-2000.webp'),
+            dict(id='REVIEW::nga:52',key='weyden-follower-risen-virgin',museum='NGA',object_id=52,artist='weyden',title='Christ Appearing to the Virgin',filename='weyden-follower-christ-virgin-nga-52-2000.webp'),
+            dict(id='REVIEW::smk:KMSSP13',key='barocci-annunciation',museum='SMK',object_number='KMSsp13',artist='barocci',title='The Annunciation',filename='barocci-annunciation-smk-kmssp13-2000.webp'),
+            dict(id='REVIEW::smk:KMSSP186',key='rubens-cross',museum='SMK',object_number='KMSsp186',artist='rubens',title='Christ on the Cross',filename='rubens-christ-cross-smk-kmssp186-2000.webp'),
+            dict(id='REVIEW::smk:KMSSP48',key='dolci-agony',museum='SMK',object_number='KMSsp48',artist='dolci',title="Christ's Agony in the Garden of Gethsemane",filename='dolci-agony-garden-smk-kmssp48-2000.webp'),
+            dict(id='REVIEW::smk:KMSSP365',key='ter-brugghen-crowned',museum='SMK',object_number='KMSsp365',artist='brugghen',title='Christ Crowned with Thorns',filename='ter-brugghen-crowned-thorns-smk-kmssp365-2000.webp'),
+            dict(id='REVIEW::smk:KMS1168',key='frantz-clein-presentation',museum='SMK',object_number='KMS1168',artist='clein',title='The Presentation of Christ in the Temple, and the Baptism of Christ',filename='frantz-clein-presentation-baptism-smk-kms1168-2000.webp')
+          ]
+          def norm(x):
+            x=''.join(c for c in unicodedata.normalize('NFKD',str(x).casefold()) if not unicodedata.combining(c))
+            return ' '.join(w for w in re.findall('[a-z0-9]+',x) if w not in ('a','an','the','and','of','for','to','with','in'))
+          def compatible_title(a,b):
+            a,b=norm(a),norm(b)
+            if a==b or a in b or b in a:return True
+            sa,sb=set(a.split()),set(b.split())
+            return bool(sa and sb) and len(sa&sb)/min(len(sa),len(sb))>=0.75 and len(sa&sb)>=2
+          def fetch(url,timeout=120):
+            assert url.startswith('https://'),url
+            last=None
+            for i in range(3):
+              try:
+                req=urllib.request.Request(url,headers={'User-Agent':'AdOrientemGallerySourceVerification/1.0 (open access cultural collections)'})
+                with urllib.request.urlopen(req,timeout=timeout) as response:
+                  return response.read()
+              except Exception as e:
+                last=e
+                if i<2: time.sleep(2*(i+1))
+            raise RuntimeError(f"source failed {url}: {last}")
+
+          catalogue={r['id']:r for r in json.loads(Path('site/gallery/catalogue.v1.json').read_text())['records']}
+          for spec in specs:
+            r=catalogue.get(spec['id'])
+            assert r and r.get('owner_selected_artwork') and r.get('image') is None, 'Not an existing owner-selected image-pending artwork: '+spec['id']
+            assert compatible_title(r['title'],spec['title']), 'Inconsistent local catalogue title: '+spec['id']
+
+          nga_ids={str(spec['object_id']) for spec in specs if spec['museum']=='NGA'}
+          base='https://raw.githubusercontent.com/NationalGalleryOfArt/opendata/main/data/'
+          nga_objects={}
+          nga_images={}
+          download_failures=[]
+          try:
+            raw=fetch(base+'objects.csv',timeout=150).decode('utf-8-sig',errors='replace')
+            for r in csv.DictReader(io.StringIO(raw)):
+              oid=str(r.get('objectID') or r.get('objectid') or '')
+              if oid in nga_ids: nga_objects[oid]=r
+            del raw
+            raw=fetch(base+'published_images.csv',timeout=180).decode('utf-8-sig',errors='replace')
+            for r in csv.DictReader(io.StringIO(raw)):
+              oid=str(r.get('depictstmsobjectid') or r.get('depictsTMSObjectID') or '')
+              if oid not in nga_ids or str(r.get('openaccess','')).lower() not in ('1','true'):
+                continue
+              prev=nga_images.get(oid)
+              score=(r.get('viewtype','').lower()=='primary',int(float(r.get('width') or 0))*int(float(r.get('height') or 0)))
+              oldscore=(prev.get('viewtype','').lower()=='primary',int(float(prev.get('width') or 0))*int(float(prev.get('height') or 0))) if prev else (False,0)
+              if prev is None or score>oldscore: nga_images[oid]=r
+            del raw
+            print('NGA OFFICIAL CSV', 'objects',len(nga_objects),'image objects',len(nga_images),flush=True)
+          except Exception as e:
+            download_failures.append({'provider':'NGA','reason':str(e)})
+            print('NGA-DATA-SOURCE-UNAVAILABLE',str(e),flush=True)
+
+          def fetch_smk(spec):
+            query=urllib.parse.urlencode({'keys':spec['object_number'],'rows':50})
+            api='https://api.smk.dk/api/v1/art/search/?'+query
+            payload=json.loads(fetch(api))
+            items=payload.get('items') or payload.get('data') or payload.get('results') or []
+            if isinstance(items,dict):items=items.get('items') or items.get('data') or []
+            if not isinstance(items,list):raise ValueError('Unknown museum API item shape')
+            print('SMK SEARCH',spec['object_number'],'candidates',len(items),flush=True)
+            recs=[x for x in items if str(x.get('object_number','')).lower()==spec['object_number'].lower()]
+            if len(recs)!=1:raise ValueError('No unique matching SMK object_number; possible museum reassignment')
+            r=recs[0]
+            pd=r.get('public_domain')
+            assert pd is True or str(pd).lower()=='true','SMK object not affirmatively public domain'
+            creator_blob=json.dumps({k:r.get(k) for k in ('artist','artists','artist_name','artist_names','production','creator','creators')},ensure_ascii=False)
+            assert spec['artist'] in norm(creator_blob),'SMK artist identity inconsistent: '+creator_blob[:300]
+            official_title=str(r.get('title') or r.get('titles') or r.get('title_en') or '')
+            assert official_title, 'SMK official title not provided'
+            image_native=r.get('image_native')
+            image_iiif=r.get('image_iiif')
+            raw_url=image_iiif or image_native
+            if isinstance(raw_url,dict):raw_url=raw_url.get('url') or raw_url.get('id')
+            if isinstance(raw_url,list):raw_url=raw_url[0]
+            assert isinstance(raw_url,str) and raw_url.startswith('https://'),'No direct institutional image URL'
+            host=urllib.parse.urlparse(raw_url).hostname or ''
+            assert host.endswith('smk.dk'), 'Image source not on SMK domain: '+host
+            if '/iiif/' in raw_url:
+              iiif=raw_url.replace('/info.json','').rstrip('/')
+              if re.search(r'/full/[^/]+/0/[^/]+\.jpg$',iiif): url=iiif
+              else:url=iiif+'/full/!2000,2000/0/default.jpg'
+            else:url=raw_url
+            rights='SMK public-domain artwork; institutional API public_domain=true'
+            return api,r,official_title,creator_blob,url,'PUBLIC_DOMAIN',rights
+
+          imported=[];skipped=[];out=Path('site/gallery/images');out.mkdir(parents=True,exist_ok=True)
+          for spec in specs:
+            try:
+              if spec['museum']=='NGA':
+                oid=str(spec['object_id'])
+                rec=nga_objects[oid]
+                img=nga_images[oid]
+                title=rec.get('title') or ''
+                assert compatible_title(spec['title'],title),f'NGA title mismatch expected {spec["title"]} got {title}'
+                creator=rec.get('attribution') or rec.get('artist') or ''
+                # The NGA title and objectID are from the official objects dataset; NGA web page contains the historical artist attribution.
+                assert str(img.get('depictstmsobjectid'))==oid
+                assert str(img.get('openaccess'))=='1','NGA not explicitly in Open Access subset'
+                baseurl=img.get('iiifURL') or img.get('iiifurl') or ''
+                assert baseurl.startswith('https://') and (urllib.parse.urlparse(baseurl).hostname or '').endswith('nga.gov') and '/iiif/' in baseurl, 'Missing official NGA IIIF URL'
+                url=baseurl.rstrip('/')+'/full/!2000,2000/0/default.jpg'
+                api=base+'objects.csv#objectID='+oid
+                rights='National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)'
+                page='https://www.nga.gov/artworks/'+oid
+                license_code='CC0'
+                institution_id=oid
+                source_native=[int(float(img.get('width') or 0)),int(float(img.get('height') or 0))]
+                assert max(source_native)>=1700, 'NGA source image resolution too low'
+              else:
+                api,rec,title,creator,url,license_code,rights=fetch_smk(spec)
+                page='https://open.smk.dk/en/artwork/image/'+spec['object_number']
+                institution_id=spec['object_number']
+                source_native=None
+              raw=fetch(url,timeout=120)
+              with Image.open(io.BytesIO(raw)) as im:
+                im.load();im=ImageOps.exif_transpose(im)
+                native=list(im.size)
+                assert max(native)>=1500 and min(native)>=500, 'Downloaded image below quality gate'
+                aspect=im.width/im.height
+                if im.mode!='RGB':im=im.convert('RGB')
+                if max(im.size)>2000:im.thumbnail((2000,2000),Image.Resampling.LANCZOS)
+                dimensions=list(im.size)
+                assert abs(im.width/im.height-aspect)<0.002, 'Crop or aspect distortion'
+                destination=out/spec['filename']
+                im.save(destination,'WEBP',quality=88,method=6)
+              local=destination.read_bytes()
+              assert local[:4]==b'RIFF' and local[8:12]==b'WEBP'
+              imported.append(dict(artwork_id=spec['id'],key=spec['key'],museum=spec['museum'],museum_api_url=api,museum_page=page,institution_object_id=institution_id,
+                source_record_title=title,source_record_artist=creator,official_license=license_code,recorded_reproduction_rights=rights,
+                source_image_url=url,source_bytes=len(raw),source_dimensions_px=native,source_native_dimensions_px=source_native,
+                source_sha256=hashlib.sha256(raw).hexdigest(),source_git_blob_sha=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest(),
+                local_path='site/gallery/images/'+spec['filename'],local_bytes=len(local),local_dimensions_px=dimensions,
+                local_sha256=hashlib.sha256(local).hexdigest(),local_git_blob_sha=hashlib.sha1(b'blob '+str(len(local)).encode()+b'\0'+local).hexdigest(),
+                full_composition=True,source_original_locally_persisted=False,scope='GALLERY_ONLY_NO_NEW_PRAYER_ASSIGNMENTS'))
+              print('VERIFIED',spec['id'],native,'=>',dimensions,len(local),'bytes',flush=True)
+            except Exception as e:
+              skipped.append(dict(artwork_id=spec['id'],museum=spec['museum'],reason=str(e),requires_review=True))
+              print('SKIPPED',spec['id'],str(e),flush=True)
+          assert len(imported)>=3,'Fewer than 3 exact selected open access source images available; stop import'
+          manifest=dict(schema='ao.sacred-art.gallery-image-import.v1',batch='2026-11-15-batch07',
+            policy='Only previously owner-selected catalogue IDs with no image. NGA object and published-image CSV matched by exact object ID with image openaccess=1; SMK public-domain object ID/creator matched. Source-image byte/hash and uncropped permanent 2000px gallery WebP hash recorded. No prayer-stage assignments implied. Source image not locally retained.',
+            sources=imported,skipped=skipped,source_failures=download_failures)
+          Path('app-data/sacred-art/gallery-image-import-batch07.v1.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')
+          PY
+          git add site/gallery/images/*.webp app-data/sacred-art/gallery-image-import-batch07.v1.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --cached --quiet; then
+            git commit -m "Import museum-verified NGA and SMK gallery works"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
