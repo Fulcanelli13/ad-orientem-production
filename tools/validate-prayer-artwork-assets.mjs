@@ -33,4 +33,4 @@ for (const img of provenance.staged_images) {
   assert.equal(bytes.subarray(8, 12).toString('ascii'), 'WEBP');
 }
 assert.equal(provenance.public_path_release_ready, false);
-console.log('Sacred-art curation registry valid: 860 works, 288 card slots, 660 distinct links, 2 staged WebP files; no runtime defaults.');
+console.log('Sacred-art curation registry valid: 860 works, 288 card slots, 660 distinct links, ' + provenance.staged_images.length + ' staged WebP files; no runtime defaults.');
