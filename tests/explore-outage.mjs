@@ -90,6 +90,8 @@ try{
     ignoreHTTPSErrors:false});
   const page=await context.newPage();
   const denied=[],localResponses=[],exceptions=[];
+  let notifyDenied;
+  const firstBlockedRequest=new Promise(resolve=>{notifyDenied=resolve;});
   page.on("pageerror",error=>exceptions.push(String(error.message||error)));
   page.on("response",response=>{
    if(response.url().startsWith(url))localResponses.push({
@@ -97,11 +99,11 @@ try{
   });
   if(mode==="maplibre-cdn"){
    await page.route("**/unpkg.com/**",route=>{
-    denied.push(route.request().url());return route.abort("failed");
+    denied.push(route.request().url());notifyDenied();return route.abort("failed");
    });
   }else{
    await page.route("**/tiles.openfreemap.org/**",route=>{
-    denied.push(route.request().url());return route.abort("failed");
+    denied.push(route.request().url());notifyDenied();return route.abort("failed");
    });
   }
   await page.goto(url,{waitUntil:"domcontentloaded"});
@@ -120,6 +122,19 @@ try{
   }else{
    await page.waitForFunction(()=>document.querySelectorAll("#atlas-map canvas").length===1,
     null,{timeout:20000});
+  }
+  // MapLibre allocates its canvas before async style/glyph/tile requests.
+  // Wait for an actual intercepted request rather than using canvas presence
+  // as proof that fault injection reached the network.
+  if(!denied.length){
+   let deadline;
+   try{
+    await Promise.race([
+      firstBlockedRequest,
+      new Promise((_,reject)=>{deadline=setTimeout(()=>
+        reject(new Error("No external "+mode+" request attempted within 8s")),8000);})
+    ]);
+   }finally{clearTimeout(deadline);}
   }
   assert.ok(denied.length>0,"No outage traffic intercepted for "+mode);
   assert.equal(await page.locator(".tabbar button").count(),4);
