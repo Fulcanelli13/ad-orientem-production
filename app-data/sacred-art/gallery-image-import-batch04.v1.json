@@ -1,0 +1,199 @@
+{
+  "schema": "ao.sacred-art.gallery-image-import.v1",
+  "batch": "2026-11-15-batch04",
+  "source_policy": "Direct institutional metadata API and original or print image; explicit CC0 or public-domain status validated; JPEG SHA-256 and uncropped WebP derivative SHA-256 recorded. No claim source originals locally persisted. Image availability is not prayer primary approval.",
+  "sources": [
+    {
+      "key": "dolci-shepherds",
+      "artwork_id": "CANONICAL::cma-143784",
+      "museum": "CMA",
+      "accession": "1968.22",
+      "title": "Adoration of the Shepherds",
+      "filename": "dolci-adoration-shepherds-cma-1968-22-2000.webp",
+      "museum_api_url": "https://openaccess-api.clevelandart.org/api/artworks/1968.22",
+      "museum_record_id": "143784",
+      "museum_page": "https://www.clevelandart.org/art/1968.22",
+      "source_url": "https://openaccess-cdn.clevelandart.org/1968.22/1968.22_print.jpg",
+      "rights": "Cleveland Museum of Art CC0 Open Access",
+      "image_license_status": "CC0",
+      "source_sha256": "5de97b5cb76dbbaaf40dad652b5788667fa1e41a65327db10363e7d675eef2cc",
+      "source_git_blob_sha": "2f81fbd78dc6f1180dbd193a3d59f3e2ee7e598e",
+      "source_bytes": 3056285,
+      "source_dimensions_px": [
+        2715,
+        3400
+      ],
+      "local_path": "site/gallery/images/dolci-adoration-shepherds-cma-1968-22-2000.webp",
+      "local_sha256": "618a1ac8b77faa8c71832357df0d8e87312e52844133ce12fda5f1cf90f73e5d",
+      "local_git_blob_sha": "366fe795d23ba773f8501c22f47900c6be7df057",
+      "local_bytes": 542612,
+      "local_dimensions_px": [
+        1597,
+        2000
+      ],
+      "uncropped": true,
+      "source_original_persisted_in_production": false,
+      "scope": "GALLERY_ONLY_NO_PRAYER_ACTIVATION"
+    },
+    {
+      "key": "van-balen-trinity",
+      "artwork_id": "CANONICAL::cma-159488",
+      "museum": "CMA",
+      "accession": "1996.26",
+      "title": "The Trinity",
+      "filename": "van-balen-trinity-cma-1996-26-2000.webp",
+      "museum_api_url": "https://openaccess-api.clevelandart.org/api/artworks/1996.26",
+      "museum_record_id": "159488",
+      "museum_page": "https://www.clevelandart.org/art/1996.26",
+      "source_url": "https://openaccess-cdn.clevelandart.org/1996.26/1996.26_print.jpg",
+      "rights": "Cleveland Museum of Art CC0 Open Access",
+      "image_license_status": "CC0",
+      "source_sha256": "1880866ce9b1cfc27c59a177fbe16689d6d2a595aa69b3cf2fbf9a62c59f49a7",
+      "source_git_blob_sha": "70c717d2ae72ae67a4eb79a369cb18c9b371a44f",
+      "source_bytes": 4353315,
+      "source_dimensions_px": [
+        2720,
+        3400
+      ],
+      "local_path": "site/gallery/images/van-balen-trinity-cma-1996-26-2000.webp",
+      "local_sha256": "80db57b0b50fc5e3105aaa50bce6003327d183d3fdabf3bdbec796c8d4fb05d5",
+      "local_git_blob_sha": "2fbf2aafc3fc9fbeacede423c47de26d239ca569",
+      "local_bytes": 318788,
+      "local_dimensions_px": [
+        1600,
+        2000
+      ],
+      "uncropped": true,
+      "source_original_persisted_in_production": false,
+      "scope": "GALLERY_ONLY_NO_PRAYER_ACTIVATION"
+    },
+    {
+      "key": "murillo-immaculate",
+      "artwork_id": "CANONICAL::cma-135659",
+      "museum": "CMA",
+      "accession": "1959.189",
+      "title": "The Immaculate Conception",
+      "filename": "murillo-immaculate-cma-1959-189-2000.webp",
+      "museum_api_url": "https://openaccess-api.clevelandart.org/api/artworks/1959.189",
+      "museum_record_id": "135659",
+      "museum_page": "https://www.clevelandart.org/art/1959.189",
+      "source_url": "https://openaccess-cdn.clevelandart.org/1959.189/1959.189_print.jpg",
+      "rights": "Cleveland Museum of Art CC0 Open Access",
+      "image_license_status": "CC0",
+      "source_sha256": "9630b345caf4062287f16d9d8e0b728b87938f4a3b22eb1ae43d888c518f9d6a",
+      "source_git_blob_sha": "675a56204831273925136b5c754be70b58d4357c",
+      "source_bytes": 4691706,
+      "source_dimensions_px": [
+        1951,
+        3400
+      ],
+      "local_path": "site/gallery/images/murillo-immaculate-cma-1959-189-2000.webp",
+      "local_sha256": "5c912bc62674fac0b4e99b169bfc71c7e56e87658bb437dbc4c99a6bc5d68be4",
+      "local_git_blob_sha": "e46d49eb1c92152c7674bfc9a6913aac842e17a9",
+      "local_bytes": 319296,
+      "local_dimensions_px": [
+        1148,
+        2000
+      ],
+      "uncropped": true,
+      "source_original_persisted_in_production": false,
+      "scope": "GALLERY_ONLY_NO_PRAYER_ACTIVATION"
+    },
+    {
+      "key": "danube-visitation",
+      "artwork_id": "NEW::cma-1950.91",
+      "museum": "CMA",
+      "accession": "1950.91",
+      "title": "The Visitation",
+      "filename": "danube-visitation-cma-1950-91-2000.webp",
+      "museum_api_url": "https://openaccess-api.clevelandart.org/api/artworks/1950.91",
+      "museum_record_id": "128075",
+      "museum_page": "https://www.clevelandart.org/art/1950.91",
+      "source_url": "https://openaccess-cdn.clevelandart.org/1950.91/1950.91_print.jpg",
+      "rights": "Cleveland Museum of Art CC0 Open Access",
+      "image_license_status": "CC0",
+      "source_sha256": "8aa5c6f68dac839907b00f72a5ac44903c47c41b59b990384b306977dd468415",
+      "source_git_blob_sha": "29c1b54035aefbda4515af9b00e880798cca5899",
+      "source_bytes": 5780065,
+      "source_dimensions_px": [
+        2517,
+        3400
+      ],
+      "local_path": "site/gallery/images/danube-visitation-cma-1950-91-2000.webp",
+      "local_sha256": "3da6cedffe3fade4127931693650d6e93a9677e884d4ecf3ab8768c8e1b513af",
+      "local_git_blob_sha": "f2aafb0ef36fc5aa8b1d8fed6b0feba81b110b82",
+      "local_bytes": 386062,
+      "local_dimensions_px": [
+        1481,
+        2000
+      ],
+      "uncropped": true,
+      "source_original_persisted_in_production": false,
+      "scope": "GALLERY_ONLY_NO_PRAYER_ACTIVATION"
+    },
+    {
+      "key": "veronese-annunciation",
+      "artwork_id": "CANONICAL::cma-127572",
+      "museum": "CMA",
+      "accession": "1950.251",
+      "title": "The Annunciation",
+      "filename": "veronese-annunciation-cma-1950-251-2000.webp",
+      "museum_api_url": "https://openaccess-api.clevelandart.org/api/artworks/1950.251",
+      "museum_record_id": "127572",
+      "museum_page": "https://www.clevelandart.org/art/1950.251",
+      "source_url": "https://openaccess-cdn.clevelandart.org/1950.251/1950.251_print.jpg",
+      "rights": "Cleveland Museum of Art CC0 Open Access",
+      "image_license_status": "CC0",
+      "source_sha256": "07bceb9a3161ea2cbf10bbe19c26a3e37b95696df261804565cb7a325f64f9ab",
+      "source_git_blob_sha": "07ecf277f72978d2e089158c40efab37995e7300",
+      "source_bytes": 2943344,
+      "source_dimensions_px": [
+        3061,
+        3400
+      ],
+      "local_path": "site/gallery/images/veronese-annunciation-cma-1950-251-2000.webp",
+      "local_sha256": "a35bcb57b18164b7d2e32ea4f0e0926f7a6e46e285a28e46e1c3130f91fb01bd",
+      "local_git_blob_sha": "d780cde3d47af23869a66435aaecb04cccc79a3c",
+      "local_bytes": 489264,
+      "local_dimensions_px": [
+        1801,
+        2000
+      ],
+      "uncropped": true,
+      "source_original_persisted_in_production": false,
+      "scope": "GALLERY_ONLY_NO_PRAYER_ACTIVATION"
+    },
+    {
+      "key": "giordano-annunciation",
+      "artwork_id": "CANONICAL::met-436502",
+      "museum": "MET",
+      "object_id": 436502,
+      "title": "The Annunciation",
+      "filename": "giordano-annunciation-met-436502-2000.webp",
+      "museum_api_url": "https://collectionapi.metmuseum.org/public/collection/v1/objects/436502",
+      "museum_record_id": "436502",
+      "museum_page": "https://www.metmuseum.org/art/collection/search/436502",
+      "source_url": "https://images.metmuseum.org/CRDImages/ep/original/DP-22842-001.jpg",
+      "rights": "The Metropolitan Museum of Art Open Access / public-domain image",
+      "image_license_status": "PUBLIC_DOMAIN",
+      "source_sha256": "a76e00046346849d284e777072cff343a60faefa218178663071a08a10dc74b8",
+      "source_git_blob_sha": "9d6aefe629cc6fa9221944fc00bfda474c1fd453",
+      "source_bytes": 2720236,
+      "source_dimensions_px": [
+        2926,
+        4000
+      ],
+      "local_path": "site/gallery/images/giordano-annunciation-met-436502-2000.webp",
+      "local_sha256": "baf43c8aef2cdaf2b991c3f66bd439aa803b702b5b52f7a5ba1189b2f1c8ff92",
+      "local_git_blob_sha": "a0decbaf3f24bffcca01ff8d458cdd357b80c21f",
+      "local_bytes": 230424,
+      "local_dimensions_px": [
+        1463,
+        2000
+      ],
+      "uncropped": true,
+      "source_original_persisted_in_production": false,
+      "scope": "GALLERY_ONLY_NO_PRAYER_ACTIVATION"
+    }
+  ]
+}
