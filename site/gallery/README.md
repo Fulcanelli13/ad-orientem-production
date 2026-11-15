@@ -38,7 +38,7 @@ For each painting submitted or approved later:
 3. Acquire a clean, preferably unframed original. Create a high-quality local mobile derivative, preserving the full composition. Note the exact SHA-256, dimensions and image QA.
 4. Place it under `site/gallery/images/`, and add the app-local file path and provenance to `catalogue.v1.json` and `image-provenance.v1.json`.
 5. Update the gallery counts and run `node tests/sacred-art-gallery.mjs`. Keep any prayer-card primary approval **separate**.
-6. Follow the one existing GitHub Pages publish workflow. Do not transfer research PR queues or deploy via Vercel.
+6. Follow the one existing GitHub Pages publish workflow. Do not transfer research PR queues or use a second deployment platform.
 
 Future Claude prayer prototypes will reference this canonical artwork catalogue and its existing owner-approved matching relationships. No prayer re-curation is required to add a gallery image.
 
