@@ -72,6 +72,37 @@
       "actual_image_qa": "EXACT_BINARY_DECODED_AND_VISUAL_INSPECTION; FINAL_100_PERCENT_PIXEL_AND_PHONE_QA_PENDING",
       "card_assignment": null,
       "release_state": "STAGED_ONLY"
+    },
+    {
+      "work_id": "REVIEW::commons:21885843",
+      "artist": "Henry Ossawa Tanner",
+      "title": "The Annunciation (1898)",
+      "path": "app-data/sacred-art/staged-images/tanner-annunciation-1898-1920.webp",
+      "git_blob_sha": "76987cc209da38f7fe500e09a44f631990fd4cb4",
+      "size_bytes": 287246,
+      "size_px": [
+        1920,
+        1551
+      ],
+      "sha256": "13c8b82ea117c57d462a776e22796777e94e38ef3e7e286a566af7077a415209",
+      "source_original_sha256": "c21eb8b3cbf5b2e873c9bfcd42422b48490ea30b595a9b783c8580313b8f39fc",
+      "source_original_size_px": [
+        4717,
+        3811
+      ],
+      "source_repository": "Fulcanelli13/ad-orientem",
+      "source_repository_path": "assets/pray/angelus/tanner-annunciation-1898.webp",
+      "source_provenance_path": "assets/pray/angelus/tanner-annunciation-1898.provenance.json",
+      "institution": "Philadelphia Museum of Art",
+      "source_url": "https://www.philamuseum.org/objects/104384",
+      "rights_evidence": "Wikimedia Commons Public Domain Mark 1.0; not a CC0 grant",
+      "actual_image_qa": "1920x1551 no-crop WebP source from research; phone visual / cinematic QA pending",
+      "card_assignment": null,
+      "editorial_eligible_card_keys": [
+        "rosary.joyful.1"
+      ],
+      "owner_approved_candidate": true,
+      "release_state": "STAGED_ONLY"
     }
   ],
   "source_recovery_not_transferred": [
