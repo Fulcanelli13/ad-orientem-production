@@ -7,13 +7,13 @@ This is a **new, deliberately scoped** Sacred Art destination inside the existin
 ## What is real today
 
 - `catalogue.v1.json`: **all 862 currently tracked artwork records** (860 historical master records plus two preserved Angelus contextual records), searchable by artwork, artist, collection, scene category and reviewed prayer part.
-- **Thirty-seven distinct locally hosted painting images** (thirty-nine catalogue records have images; Champaigne and Girardin each have two historical records for one physical artwork).
+- **Forty-nine distinct locally hosted artwork images** (fifty-one catalogue records have images; Champaigne and Girardin each have two historical records for one physical artwork).
 - `gallery.js`: searchable/scrollable gallery, curated-vs-research filter, On display, Angelus review, prayer-matched and image-pending views, and a full-composition painting/detail dialog.
 - `gallery.css`: source-derived Cinzel/Cormorant/EB typography and existing Home colours; scoped selectors only.
-- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for all thirty-seven on-display reproductions, including nine further exact-museum-object-matched, open-access, uncropped gallery WebPs in Batch 06.
+- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for all forty-nine on-display reproductions, including twelve source-verified NGA / SMK museum artworks added in Batch 07.
 - No external remote URLs are used for gallery image rendering. Museum URLs are links to source records, not image substitutions.
 
-**Important:** **862 artwork records does not mean 862 locally acquired paintings.** Thirty-seven distinct paintings are now displayed with local files. Batches 04, 05 and 06 added previously selected works after institutional object, title, artist and Open Access checks, with one attribution conflict held for review. The gallery WebPs retain full artwork composition, downsampled at most to 2,000 pixels on their longest edge. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
+**Important:** **862 artwork records does not mean 862 locally acquired paintings.** Forty-nine distinct museum-source artworks are now displayed with local files. Batches 04–07 added previously selected works after object, title/creator, photographic reuse and image quality checks; one historical Sodoma attribution conflict remains held for review. The gallery WebPs retain full artwork composition, downsampled at most to 2,000 pixels on their longest edge. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
 
 Artwork inclusion in this registry does not itself mean the owner approved it for prayer placement. The separate `owner_selected_artwork`, `prayer_parts`, `exact_prayer_cards`, `eligible_card_count` and image rights fields remain independent.
 
@@ -58,6 +58,18 @@ Artwork inclusion in this registry does not itself mean the owner approved it fo
 | Bartolomé Esteban Murillo — *The Crucifixion* | Met 437172, public domain | `site/gallery/images/murillo-crucifixion-met-437172-2000.webp` |
 | Workshop of Peter Paul Rubens — *Saint Teresa of Avila Interceding for Souls in Purgatory* | Met 437542, public domain; institution credits Rubens directly, catalogue retains workshop attribution | `site/gallery/images/rubens-workshop-teresa-purgatory-met-437542-2000.webp` |
 | José Campeche — *The Holy Trinity* | Met 917618, public domain | `site/gallery/images/campeche-trinity-met-917618-2000.webp` |
+| Jan van Eyck — *The Annunciation* | National Gallery of Art 46, CC0 | `site/gallery/images/van-eyck-annunciation-nga-46-2000.webp` |
+| Master of the Catholic Kings — *Christ among the Doctors* | National Gallery of Art 41656, CC0 | `site/gallery/images/master-catholic-kings-christ-doctors-nga-41656-2000.webp` |
+| Bachiacca — *The Flagellation of Christ* | National Gallery of Art 41696, CC0 | `site/gallery/images/bachiacca-flagellation-nga-41696-2000.webp` |
+| Lorenzo Lotto — *The Nativity* | National Gallery of Art 431, CC0 | `site/gallery/images/lotto-nativity-nga-431-2000.webp` |
+| Netherlandish master — *The Presentation in the Temple* | National Gallery of Art 46127, CC0; NGA gives specific Master of the Prado Adoration title | `site/gallery/images/netherlandish-presentation-nga-46127-2000.webp` |
+| Giovanni Girolamo Savoldo — *The Adoration of the Shepherds* | National Gallery of Art 46185, CC0 | `site/gallery/images/savoldo-shepherds-nga-46185-2000.webp` |
+| Follower of Rogier van der Weyden — *Christ Appearing to the Virgin* | National Gallery of Art 52, CC0 | `site/gallery/images/weyden-follower-christ-virgin-nga-52-2000.webp` |
+| Federico Barocci — *The Annunciation* | Statens Museum for Kunst KMSsp13, public domain | `site/gallery/images/barocci-annunciation-smk-kmssp13-2000.webp` |
+| Peter Paul Rubens — *Christ on the Cross* | Statens Museum for Kunst KMSsp186, public domain; workshop qualification in museum production notes | `site/gallery/images/rubens-christ-cross-smk-kmssp186-2000.webp` |
+| Carlo Dolci — *Christ's Agony in the Garden* | Statens Museum for Kunst KMSsp48, public domain; 1600px institutional source | `site/gallery/images/dolci-agony-garden-smk-kmssp48-2000.webp` |
+| Hendrick ter Brugghen — *Christ Crowned with Thorns* | Statens Museum for Kunst KMSsp365, public domain | `site/gallery/images/ter-brugghen-crowned-thorns-smk-kmssp365-2000.webp` |
+| Frantz Clein — *Presentation in the Temple and Baptism of Christ* | Statens Museum for Kunst KMS1168, public domain | `site/gallery/images/frantz-clein-presentation-baptism-smk-kms1168-2000.webp` |
 
 All gallery WebPs are **gallery reproductions only**. Their prior `app-data/sacred-art/staged-images/` references remain intact, with **prayer-level cinematic/image-quality QA held**. This gallery release is *not* permission to use those files as primary images in Angelus, Rosary, Mass or Calendar.
 
@@ -75,7 +87,7 @@ Future Claude prayer prototypes will reference this canonical artwork catalogue 
 
 ## Checks and rollback
 
-The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, thirty-seven distinct image identities (including nine institutionally rights-verified Batch 06 derivatives and one unpublished attribution hold), no remote gallery image loading, and preservation of the four-tab navigation.
+The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, forty-nine distinct image identities (including twelve source-verified NGA/SMK Batch 07 derivatives; the separate Sodoma attribution hold remains unpublished), no remote gallery image loading, and preservation of the four-tab navigation.
 
 The production branch's premerge commit is the rollback reference. Only the `site/` directory publishes.
 
@@ -154,4 +166,17 @@ Four images come from the Cleveland Museum of Art’s CC0 Open Access records an
 
 **Attribution hold:** the Cleveland Museum of Art attributes *The Crucifixion* (1916.786) to a **follower of Sodoma**, whereas the inherited artwork registry lists Sodoma without qualification. The object image and reuse rights were verified, but this discrepancy requires a separate curatorial correction. The image was deliberately excluded from the public gallery, not assigned to the old catalogue ID, and documented in the same import manifest under `held_for_attribution_review`. A workshop-versus-master difference also remains recorded in the image provenance for the Rubens *Saint Teresa* painting, whose historical catalogue attribution was preserved.
 
-**Current coverage: 862 catalogue entries, 37 distinct displayed paintings across 39 image-bearing historical rows; 823 catalogue entries await local images.** The 36 Angelus review paintings, historical card links, approvals, Claude interface and the sole GitHub Actions → GitHub Pages publication workflow are unchanged. None of the new images is automatically promoted to a prayer cinematic/default.
+**Batch 06 closeout: 862 catalogue entries, 37 distinct displayed paintings across 39 image-bearing historical rows; 823 catalogue entries awaited local images at that point.** The 36 Angelus review paintings, historical card links, approvals, Claude interface and the sole GitHub Actions → GitHub Pages publication workflow are unchanged. None of the new images is automatically promoted to a prayer cinematic/default.
+
+### Gallery image batch 07 · 15 November 2026
+
+Twelve additional **previously owner-selected, image-pending** artworks now have source-verified local WebP files: seven from the National Gallery of Art (Washington, USA), and five from the Statens Museum for Kunst (Copenhagen, Denmark).
+
+- **NGA:** Official `NationalGalleryOfArt/opendata` object records and `published_images.csv` were joined using the exact NGA object ID. Each chosen *primary* image had the explicit `openaccess=1` indicator (the NGA CC0 free-use policy); the gallery version was made from the institution's IIIF image service. Original source native dimensions are recorded from NGA metadata, but only a 2,000-pixel institution-served rendition was actually downloaded; we do not claim to store a larger original.
+- **SMK:** Each selected object number was matched to its current official museum API record, confirmed `public_domain=true`, checked its creator metadata, and downloaded from the institution's image service. Original Danish museum titles and creator data are preserved in the import manifest rather than silently translated or overwritten.
+
+For every imported image, `app-data/sacred-art/gallery-image-import-batch07.v1.json` records its museum object ID, official metadata source, rights determination, source photo URL, bytes, SHA-256, dimensions, local WebP dimensions, SHA-256 and Git blob SHA. All 12 files live permanently in `site/gallery/images/`. The gallery does not load museum image URLs at runtime.
+
+**Curation distinctions:** SMK's Rubens *Christ on the Cross* record includes a workshop attribution qualification in its production notes; this is recorded in provenance without claiming autograph certainty. Its Carlo Dolci *Agony in the Garden* was served at 1,294×1,600, so its gallery image is clearly marked as a source-limited reproduction, not a 2,000px original or an upscaled picture. NGA's *Presentation in the Temple* has a more specific Master of the Prado “Adoration of the Magi” attribution; the existing broader historical catalogue label remains intact.
+
+**Current coverage: 862 catalogue records, 49 distinct locally hosted artworks across 51 historical image-bearing records, 811 catalogue records awaiting local images.** The 36 Angelus review records, all prayer and Rosary associations, owner's existing selections, Claude layout, Home, and the GitHub-only publication workflow are unchanged. This is gallery acquisition, not prayer-screen activation.
