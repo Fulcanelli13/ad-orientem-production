@@ -329,8 +329,23 @@ try{
   await waitForMapReady("sacred-map-screenshot");
   await page.screenshot({path:join("artifacts/production-explore",width+"-en-sacred-map.png"),
    animations:"disabled",fullPage:false});
+  const firstSacredId=await page.locator("#atlas-results .atlas-result-button").first()
+    .getAttribute("data-atlas-id");
   await page.locator("#atlas-results .atlas-result-button").first().click();
   await page.locator("#atlas-card").waitFor({state:"visible"});
+  assert.equal(await page.evaluate(()=>document.activeElement?.classList.contains("atlas-folio-back")),true,
+    "Opening a fullscreen folio must move keyboard focus to its Back control");
+  if(width===390){
+    await page.keyboard.press("Escape");
+    assert.equal(await page.locator("#atlas-card").isHidden(),true,
+      "Escape must dismiss a fullscreen folio");
+    assert.equal(await page.evaluate(()=>document.activeElement?.dataset.atlasId),firstSacredId,
+      "Folio dismissal must focus the original place card");
+    await page.keyboard.press("Enter");
+    assert.equal(await page.locator("#atlas-card").isVisible(),true,
+      "Restored card must be keyboard-activatable after Escape");
+    assert.equal(await page.evaluate(()=>document.activeElement?.classList.contains("atlas-folio-back")),true);
+  }
   await assertSelectedPinInVisibleMap("initial-sacred-folio");
   assert.equal(await page.locator("#atlas-card .atlas-folio-hero").count(),1,
     "The source folio must use Claude's immersive hero, not a generic details panel");
@@ -424,7 +439,11 @@ try{
       assert.equal(await page.locator("#atlas-card .atlas-folio-ttl h1").innerText(),
         "Catedral de Santiago de Compostela",
         "The source marker must open its canonical folio by keyboard");
-      await page.locator("#atlas-card .atlas-folio-back").click();
+      assert.equal(await page.evaluate(()=>document.activeElement?.classList.contains("atlas-folio-back")),true);
+      await page.keyboard.press("Escape");
+      assert.equal(await page.locator("#atlas-card").isHidden(),true);
+      assert.equal(await page.evaluate(()=>document.activeElement?.dataset.atlasMarkerId),photoId,
+        "Closing the folio opened from a marker must return focus to that marker");
     }
   }
   await page.locator("#atlas-lens-tlm").click();
