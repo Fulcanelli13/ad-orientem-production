@@ -1,0 +1,2248 @@
+{
+  "schema": "ao.prayers.artwork-card-bindings.v1",
+  "created": "2026-11-15",
+  "donor": "AO_PRAYER_CARD_ARTWORK_MAPPING_V2 in app-data/sacred-art",
+  "production_repo": "Fulcanelli13/ad-orientem-production",
+  "interpretation": "Stable editorial keys are not production runtime card IDs; all primary assignments unset; never infer a default from candidate order.",
+  "runtime_status": "PRAYER_ENGINE_NOT_TRANSFERRED",
+  "rendering_status": "NOT_CONNECTED_TO_LIVE_UI",
+  "site_assets_reused_without_copy": [
+    "artwork/champaigne-annunciation-home-v9.jpg"
+  ],
+  "approval_gates": [
+    "Owner-reviewed exact card primary",
+    "Source/licence verification",
+    "Original-reproduction and mobile cinematic QA",
+    "Runtime card mapping against approved Claude prayer module",
+    "Deploy only after passing all gates"
+  ],
+  "parent_prayer_candidates": [
+    {
+      "route": "angelus",
+      "candidates": [
+        {
+          "artwork_id": "CANONICAL::nga-46",
+          "title": "The Annunciation",
+          "artist": "Jan van Eyck",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        },
+        {
+          "artwork_id": "CANONICAL::met-436502",
+          "title": "The Annunciation",
+          "artist": "Luca Giordano",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        },
+        {
+          "artwork_id": "released-photo:angelus",
+          "title": "The Annunciation",
+          "artist": "Philippe de Champaigne",
+          "local_asset": {
+            "file": "artwork/champaigne-annunciation-home-v9.jpg",
+            "physical_status": "PUBLISHED_HOME_PREVIEW",
+            "museum": "Metropolitan Museum of Art",
+            "object_id": 438724,
+            "rights": "Met Open Access / CC0",
+            "photo_qa": "NOT_VERIFIED_FOR_CINEMATIC_PRAYER_VIEW",
+            "card_use_authorized": false
+          },
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        },
+        {
+          "artwork_id": "CANONICAL::cma-127572",
+          "title": "The Annunciation",
+          "artist": "Paolo Veronese and workshop",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        },
+        {
+          "artwork_id": "CANONICAL::met-436791",
+          "title": "The Annunciation",
+          "artist": "Joos van Cleve",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        },
+        {
+          "artwork_id": "REVIEW::walters:4625",
+          "title": "The Annunciation",
+          "artist": "Santi di Tito",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        },
+        {
+          "artwork_id": "REVIEW::smk:KMSSP13",
+          "title": "The Annunciation",
+          "artist": "Federico Barocci",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        },
+        {
+          "artwork_id": "REVIEW::commons:21885843",
+          "title": "The Annunciation (1898)",
+          "artist": "Henry Ossawa Tanner",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        },
+        {
+          "artwork_id": "REVIEW::commons:22145562",
+          "title": "The Annunciation",
+          "artist": "Francesco Solimena",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        },
+        {
+          "artwork_id": "REVIEW::commons:74171702",
+          "title": "The Annunciation",
+          "artist": "Frans Francken the Younger",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        },
+        {
+          "artwork_id": "REVIEW::commons:55389333",
+          "title": "The Annunciation",
+          "artist": "Giovanni Lanfranco",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        }
+      ]
+    },
+    {
+      "route": "regina_caeli",
+      "candidates": [
+        {
+          "artwork_id": "REVIEW::cma:146167",
+          "title": "The Risen Christ Appearing to the Virgin",
+          "artist": "Francesco Solimena",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        },
+        {
+          "artwork_id": "REVIEW::met:435853",
+          "title": "The Coronation of the Virgin",
+          "artist": "Annibale Carracci",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        },
+        {
+          "artwork_id": "REVIEW::commons:158771859",
+          "title": "Christ Appears to the Three Marys",
+          "artist": "Laurent de La Hyre",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        },
+        {
+          "artwork_id": "REVIEW::commons:65493548",
+          "title": "Coronation of the Virgin",
+          "artist": "Peter Paul Rubens and workshop",
+          "local_asset": null,
+          "scope": "PARENT_PRAYER_ONLY_NO_CARD_APPROVAL"
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "card_key": "angelus.annuntiatio",
+      "legacy_card_id": "STG-pray.angelus-05",
+      "family": "angelus",
+      "season": "outside_easter",
+      "card_label": "Annuntiatio — The Angel of the Lord",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [],
+      "approved_exact_count": 0,
+      "research_only_candidates_count": 1,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "angelus.fiat",
+      "legacy_card_id": "STG-pray.angelus-06",
+      "family": "angelus",
+      "season": "outside_easter",
+      "card_label": "Fiat — Behold the handmaid",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [],
+      "approved_exact_count": 0,
+      "research_only_candidates_count": 1,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "angelus.incarnatio",
+      "legacy_card_id": "STG-pray.angelus-07",
+      "family": "angelus",
+      "season": "outside_easter",
+      "card_label": "Incarnatio — The Word made flesh",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [],
+      "approved_exact_count": 0,
+      "research_only_candidates_count": 1,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "angelus.intercessio",
+      "legacy_card_id": "STG-pray.angelus-08",
+      "family": "angelus",
+      "season": "outside_easter",
+      "card_label": "Intercessio — Pray for us",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [],
+      "approved_exact_count": 0,
+      "research_only_candidates_count": 1,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "angelus.collect",
+      "legacy_card_id": "STG-pray.angelus-09",
+      "family": "angelus",
+      "season": "outside_easter",
+      "card_label": "Oratio — Collect",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "REVIEW::cma:146167",
+          "title": "The Risen Christ Appearing to the Virgin",
+          "artist": "Francesco Solimena",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "angelus_collect"
+            }
+          ],
+          "source_url": "https://www.clevelandart.org/art/1971.63",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 1,
+      "research_only_candidates_count": 1,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "regina_caeli.rejoice",
+      "legacy_card_id": "STG-pray.angelus_regina-01",
+      "family": "regina_caeli",
+      "season": "easter",
+      "card_label": "Regina Cæli — Rejoice, Queen of Heaven",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [],
+      "approved_exact_count": 0,
+      "research_only_candidates_count": 1,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "regina_caeli.resurrexit",
+      "legacy_card_id": "STG-pray.angelus_regina-02",
+      "family": "regina_caeli",
+      "season": "easter",
+      "card_label": "Resurrexit — He has risen",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [],
+      "approved_exact_count": 0,
+      "research_only_candidates_count": 0,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "regina_caeli.intercession",
+      "legacy_card_id": "STG-pray.angelus_regina-03",
+      "family": "regina_caeli",
+      "season": "easter",
+      "card_label": "Ora pro nobis — Intercession",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [],
+      "approved_exact_count": 0,
+      "research_only_candidates_count": 1,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "regina_caeli.collect",
+      "legacy_card_id": "STG-pray.angelus_regina-04",
+      "family": "regina_caeli",
+      "season": "easter",
+      "card_label": "Oremus — Collect",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "REVIEW::cma:146167",
+          "title": "The Risen Christ Appearing to the Virgin",
+          "artist": "Francesco Solimena",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "regina_collect"
+            }
+          ],
+          "source_url": "https://www.clevelandart.org/art/1971.63",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::cma-78982",
+          "title": "The Resurrection of Christ",
+          "artist": "Johann König",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "regina_collect"
+            }
+          ],
+          "source_url": "https://www.clevelandart.org/art/2017.192",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::nga:52",
+          "title": "Christ Appearing to the Virgin",
+          "artist": "Follower of Rogier van der Weyden",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "regina_collect"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Christ_Appearing_to_the_Virgin_A22130.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "released-photo:regina",
+          "title": "Resurrection of Christ (triptych centre)",
+          "artist": "Peter Paul Rubens",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "regina_collect"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Resurrection_of_Christ_triptych_%28central_panel%29.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:158771859",
+          "title": "Christ Appears to the Three Marys",
+          "artist": "Laurent de La Hyre",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "regina_collect"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Apparition_de_J%C3%A9sus_aux_trois_Marie_-_Laurent_de_La_Hyre_-_Mus%C3%A9e_du_Louvre_Peintures_INV_5356_%3B_MR_1849.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:22002144",
+          "title": "The Resurrection",
+          "artist": "Sebastiano Ricci",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "regina_collect"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ricci%2C_Sebastiano_-_The_Resurrection_-_Google_Art_Project.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 6,
+      "research_only_candidates_count": 0,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.joyful.1",
+      "legacy_card_id": "STG-pray.rosary-02",
+      "family": "rosary",
+      "mystery_set": "joyful",
+      "card_label": "Joyful I — Annunciation",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "CANONICAL::nga-46",
+          "title": "The Annunciation",
+          "artist": "Jan van Eyck",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Final batch (V6 decisions)",
+              "source_key": "j1"
+            }
+          ],
+          "source_url": "https://www.nga.gov/artworks/46-annunciation",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::met-436502",
+          "title": "The Annunciation",
+          "artist": "Luca Giordano",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j1"
+            }
+          ],
+          "source_url": "https://www.metmuseum.org/art/collection/search/436502",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "released-photo:angelus",
+          "title": "The Annunciation",
+          "artist": "Philippe de Champaigne",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j1"
+            }
+          ],
+          "source_url": "https://www.metmuseum.org/art/collection/search/438724",
+          "local_asset": {
+            "file": "artwork/champaigne-annunciation-home-v9.jpg",
+            "physical_status": "PUBLISHED_HOME_PREVIEW",
+            "museum": "Metropolitan Museum of Art",
+            "object_id": 438724,
+            "rights": "Met Open Access / CC0",
+            "photo_qa": "NOT_VERIFIED_FOR_CINEMATIC_PRAYER_VIEW",
+            "card_use_authorized": false
+          },
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::cma-127572",
+          "title": "The Annunciation",
+          "artist": "Paolo Veronese and workshop",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j1"
+            }
+          ],
+          "source_url": "https://www.clevelandart.org/art/1950.251",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::met-436791",
+          "title": "The Annunciation",
+          "artist": "Joos van Cleve",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j1"
+            }
+          ],
+          "source_url": "https://www.metmuseum.org/art/collection/search/436791",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::smk:KMSSP13",
+          "title": "The Annunciation",
+          "artist": "Federico Barocci",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Final batch (V6 decisions)",
+              "source_key": "j1"
+            }
+          ],
+          "source_url": "https://open.smk.dk/artwork/image/KMSsp13",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:21885843",
+          "title": "The Annunciation (1898)",
+          "artist": "Henry Ossawa Tanner",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j1"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Henry_Ossawa_Tanner%2C_American_%28active_France%29_-_The_Annunciation_-_Google_Art_Project.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:22145562",
+          "title": "The Annunciation",
+          "artist": "Francesco Solimena",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j1"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Francesco_Solimena,_Mari%C3%A6_Bebudelse,_,_KMS7976,_Statens_Museum_for_Kunst.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:74171702",
+          "title": "The Annunciation",
+          "artist": "Frans Francken the Younger",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j1"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Frans_Francken,_II_-_The_Annunciation_-_1971.876_-_Art_Institute_of_Chicago.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:55389333",
+          "title": "The Annunciation",
+          "artist": "Giovanni Lanfranco",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j1"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/?curid=55389333",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 10,
+      "research_only_candidates_count": 1,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.joyful.2",
+      "legacy_card_id": "STG-pray.rosary-03",
+      "family": "rosary",
+      "mystery_set": "joyful",
+      "card_label": "Joyful II — Visitation",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "NEW::cma-1950.91",
+          "title": "The Visitation",
+          "artist": "German Danube School",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "j2"
+            }
+          ],
+          "source_url": "https://www.clevelandart.org/art/1950.91",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::louvre-inv297",
+          "title": "The Visitation",
+          "artist": "Domenico Ghirlandaio",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "j2"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:La_Visitation_avec_Marie-Jacobie_et_Marie-Salomé_-_Domenico_Ghirlandaio_-_Musée_du_Louvre_Peintures_INV_297_;_MR_240.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::princeton-y1994-17",
+          "title": "The Visitation",
+          "artist": "Philippe de Champaigne",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "j2"
+            }
+          ],
+          "source_url": "https://artmuseum.princeton.edu/art/collections/objects/34052",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::sam-2011.12",
+          "title": "The Visitation",
+          "artist": "Philippe de Champaigne",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "j2"
+            }
+          ],
+          "source_url": "https://art.seattleartmuseum.org/objects/39482/the-visitation",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::carmignano-pontormo-visitation",
+          "title": "The Visitation (Carmignano)",
+          "artist": "Pontormo (Jacopo Carucci)",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "j2"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Pontormo-visitation-after-restorationRGB.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 5,
+      "research_only_candidates_count": 0,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.joyful.3",
+      "legacy_card_id": "STG-pray.rosary-04",
+      "family": "rosary",
+      "mystery_set": "joyful",
+      "card_label": "Joyful III — Nativity",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "REVIEW::met:436966",
+          "title": "The Adoration of the Shepherds",
+          "artist": "Andrea Mantegna",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://www.metmuseum.org/art/collection/search/436966",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::cma-143644",
+          "title": "Adoration of the Shepherds",
+          "artist": "Bernardo Cavallino",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://www.clevelandart.org/art/1968.100",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::cma-143784",
+          "title": "Adoration of the Shepherds",
+          "artist": "Carlo Dolci",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://www.clevelandart.org/art/1968.22",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::met-435900",
+          "title": "The Adoration of the Shepherds with Saint Catherine of Alexandria",
+          "artist": "Cigoli (Ludovico Cardi)",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://www.metmuseum.org/art/collection/search/435900",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::nga:431",
+          "title": "The Nativity",
+          "artist": "Lorenzo Lotto",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Final batch (V6 decisions)",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://www.nga.gov/artworks/431",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::met:436781",
+          "title": "The Adoration of the Christ Child",
+          "artist": "Jan Joest of Kalkar",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://collectionapi.metmuseum.org/api/collection/v1/iiif/436781/796610/main-image",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:23100292",
+          "title": "The Adoration of the Shepherds",
+          "artist": "Barent Fabritius",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Fabritius_Adoration_of_the_shepherds.JPG",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:93153411",
+          "title": "The Nativity or the Adoration of the Angels",
+          "artist": "Gerard Seghers",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Final batch (V6 decisions)",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_The_Nativity_or_the_Adoration_of_the_Angels.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "released-photo:visit",
+          "title": "The Adoration of the Shepherds",
+          "artist": "Gerrit van Honthorst",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Adoration_of_the_shepherds,_by_Gerard_van_Honthorst.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:31782068",
+          "title": "The Adoration of the Shepherds",
+          "artist": "Guido Reni",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:The_Adoration_of_the_Shepherds_by_Guido_Reni.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:146550068",
+          "title": "French: La Nativité | Nativity \" \"",
+          "artist": "Aertgen van Leyden",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:La_Nativit%C3%A9_-_Mus%C3%A9e_du_Louvre_Peintures_RF_2502.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:115220164",
+          "title": "Adoration of the Magi",
+          "artist": "Denys Calvaert",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Denys_Calvaert_Anbetung_der_K%C3%B6nige.png",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:52809691",
+          "title": "Adoration of the Magi",
+          "artist": "Jacob Jordaens",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-Adoration_of_the_Magi.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:40907107",
+          "title": "Adoration of the Magi",
+          "artist": "Massimo Stanzione",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://www.sothebys.com/en/auctions/ecatalogue/2015/master-paintings-n09363/lot.54.html",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:153011",
+          "title": "Dutch: De aanbidding van de herders | The Adoration of the Shepherds",
+          "artist": "Matthias Stom",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Gerard_van_Honthorst_%E2%80%94_Adoration_of_the_Shepherds.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:15177097",
+          "title": "The Adoration of the Shepherds",
+          "artist": "Philippe de Champaigne",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Adoration_of_the_Shepherds-Philippe_de_Champaigne-MBA_Lyon_A52-IMG_0394.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:34140055",
+          "title": "Adoration of the Magi",
+          "artist": "Workshop of Peter Paul Rubens",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Workshop_of_Peter_Paul_Rubens_-_The_Adoration_of_the_Magi.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 17,
+      "research_only_candidates_count": 7,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.joyful.4",
+      "legacy_card_id": "STG-pray.rosary-05",
+      "family": "rosary",
+      "mystery_set": "joyful",
+      "card_label": "Joyful IV — Presentation",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "REVIEW::cma:139532",
+          "title": "Study for \"The Presentation of Christ in the Temple\" (for Saint Ulrich, Vienna)",
+          "artist": "Franz Anton Maulbertsch (Austrian, 1724–1796)",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j4"
+            }
+          ],
+          "source_url": "https://clevelandart.org/art/1963.326",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::nga-46127",
+          "title": "The Presentation in the Temple",
+          "artist": "Netherlandish master",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "j4"
+            }
+          ],
+          "source_url": "https://www.nga.gov/artworks/46127-presentation-temple",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::smk:KMS1168",
+          "title": "The Presentation of Christ in the Temple, and the Baptism of Christ",
+          "artist": "Frantz Clein",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Final batch (V6 decisions)",
+              "source_key": "j4"
+            }
+          ],
+          "source_url": "https://open.smk.dk/en/artwork/image/KMS1168",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::ART-hilippe-de-hampaigne-resentation-of-esus-at-the-emple",
+          "title": "Presentation of Jesus at the Temple",
+          "artist": "Philippe de Champaigne",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "j4"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Philippe%20de%20Champaigne-Pr%C3%A9sentation%20au%20temple.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:41334838",
+          "title": "Presentation of Jesus Christ at the Temple",
+          "artist": "Nicolas Labbé",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j4"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Labb%C3%A9-Pr%C3%A9sentation_au_temple.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 5,
+      "research_only_candidates_count": 3,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.joyful.5",
+      "legacy_card_id": "STG-pray.rosary-06",
+      "family": "rosary",
+      "mystery_set": "joyful",
+      "card_label": "Joyful V — Finding in the Temple",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "CANONICAL::met-436672",
+          "title": "Christ among the Doctors",
+          "artist": "Abraham Hondius",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j5"
+            }
+          ],
+          "source_url": "https://www.metmuseum.org/art/collection/search/436672",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::nga-41656",
+          "title": "Christ among the Doctors",
+          "artist": "Master of the Catholic Kings",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "j5"
+            }
+          ],
+          "source_url": "https://www.nga.gov/artworks/41656-christ-among-doctors",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::rijks:200546455",
+          "title": "Christ among the Doctors",
+          "artist": "Orazio Borgianni",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Final batch (V6 decisions)",
+              "source_key": "j5"
+            }
+          ],
+          "source_url": "https://www.rijksmuseum.nl/en/collection/object/Christ-among-the-Doctors--772da83cfe721b5f90d374153664ddfb",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:98001263",
+          "title": "Christ among the Doctors \" \"",
+          "artist": "Dirck van Baburen",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j5"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Dirck_van_Baburen_-_Christ_among_the_Doctors_-_NG.M.00109_-_National_Museum_of_Art%2C_Architecture_and_Design.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::luma-1983-06",
+          "title": "Christ among the Doctors",
+          "artist": "Matthias Stomer",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "j5"
+            }
+          ],
+          "source_url": "https://www.luc.edu/luma/collections/martindarcysjcollection/christamongthedoctors/",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:98817605",
+          "title": "Christ among the Doctors \" \"",
+          "artist": "Giovanni Battista Cima da Conegliano",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "j5"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Cima_da_Conegliano_-_Christ_among_the_Doctors_-_M.Ob.625_MNW_-_National_Museum_in_Warsaw.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 6,
+      "research_only_candidates_count": 3,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.sorrowful.1",
+      "legacy_card_id": "STG-pray.rosary-07",
+      "family": "rosary",
+      "mystery_set": "sorrowful",
+      "card_label": "Sorrowful I — Agony in the Garden",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "REVIEW::cma:145148",
+          "title": "The Betrayal of Christ",
+          "artist": "Jacob Jordaens (Flemish, 1593–1678)",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s1"
+            }
+          ],
+          "source_url": "https://www.clevelandart.org/art/1970.32",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::met-442488",
+          "title": "The Agony in the Garden",
+          "artist": "Nicolas Poussin",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s1"
+            }
+          ],
+          "source_url": "https://www.metmuseum.org/art/collection/search/442488",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::smk:KMSSP48",
+          "title": "Christ's Agony in the Garden of Gethsemane",
+          "artist": "Carlo Dolci",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "s1"
+            }
+          ],
+          "source_url": "https://open.smk.dk/en/artwork/image/KMSSP48",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:83091432",
+          "title": "Guercino - Christ is praying in the Garden of Gethsemane before his arrest. In the agony of doubt, NMW A 7",
+          "artist": "Guercino",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s1"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Guercino_-_Christ_is_praying_in_the_Garden_of_Gethsemane_before_his_arrest._In_the_agony_of_doubt%2C_NMW_A_7.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::ngi-L14702",
+          "title": "The Taking of Christ",
+          "artist": "Caravaggio",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Final batch (V6 decisions)",
+              "source_key": "s1"
+            }
+          ],
+          "source_url": "https://onlinecollection.nationalgallery.ie/objects/2882/the-taking-of-christ",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::hermitage-4612",
+          "title": "Christ in the Garden of Gethsemane",
+          "artist": "Gerrit van Honthorst",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "s1"
+            }
+          ],
+          "source_url": "https://resources.metmuseum.org/resources/metpublications/pdf/Dutch_and_Flemish_Paintings_from_the_Hermitage.pdf",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:160522197",
+          "title": "Arrest of Christ",
+          "artist": "David Teniers the Younger",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s1"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Arrest_of_Christ%29.jpeg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:44750556",
+          "title": "Christ in the Garden of Gethsemane",
+          "artist": "Giovanni Battista Tiepolo",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s1"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:1753_Tiepolo_Christus_in_Gethsemane_anagoria.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 8,
+      "research_only_candidates_count": 2,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.sorrowful.2",
+      "legacy_card_id": "STG-pray.rosary-08",
+      "family": "rosary",
+      "mystery_set": "sorrowful",
+      "card_label": "Sorrowful II — Scourging at the Pillar",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "CANONICAL::nga-41696",
+          "title": "The Flagellation of Christ",
+          "artist": "Bachiacca",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "s2"
+            }
+          ],
+          "source_url": "https://www.nga.gov/artworks/41696",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::nga:227488",
+          "title": "Christ Gathering His Garments after the Flagellation",
+          "artist": "Juan Correa",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "s2"
+            }
+          ],
+          "source_url": "https://www.nga.gov/artworks/227488",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::kmska:8e7t4v",
+          "title": "The Scourging of Christ",
+          "artist": "Jan Cossiers",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Final batch (V6 decisions)",
+              "source_key": "s2"
+            }
+          ],
+          "source_url": "https://iiif.kmska.be/iiif/2/41/manifest.json",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::ART-eter-aul-ubens-courging-at-the-illar-ntwerp-osary-cycle",
+          "title": "Scourging at the Pillar — Antwerp Rosary cycle",
+          "artist": "Peter Paul Rubens",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "s2"
+            }
+          ],
+          "source_url": "https://www.mskgent.be/en/collection/1910-z",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:15216589",
+          "title": "Christ at the Column (Rouen)",
+          "artist": "Caravaggio",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s2"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Christ_at_the_Column-Caravaggio_%28c._1607%29.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::capodimonte-caravaggio-flagellation",
+          "title": "The Flagellation of Christ",
+          "artist": "Caravaggio",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "s2"
+            }
+          ],
+          "source_url": "https://capodimonte.cultura.gov.it/",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 6,
+      "research_only_candidates_count": 2,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.sorrowful.3",
+      "legacy_card_id": "STG-pray.rosary-09",
+      "family": "rosary",
+      "mystery_set": "sorrowful",
+      "card_label": "Sorrowful III — Crowning with Thorns",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "REVIEW::walters:9018",
+          "title": "Ecce Homo",
+          "artist": "Luca Giordano",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "s3"
+            }
+          ],
+          "source_url": "https://art.thewalters.org/object/37.243/",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::met:437978",
+          "title": "Christ Presented to the People (Ecce Homo)",
+          "artist": "Sodoma",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s3"
+            }
+          ],
+          "source_url": "https://www.metmuseum.org/art/collection/search/437978",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::khm-caravaggio-crowning-thorns",
+          "title": "The Crowning with Thorns",
+          "artist": "Attributed to Caravaggio (attribution disputed)",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Final batch (V6 decisions)",
+              "source_key": "s3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:The_Crowning_with_Thorns-Caravaggio_(1602).jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::rijks:20028095",
+          "title": "Christ Crowned with Thorns",
+          "artist": "Gerard van Honthorst",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "s3"
+            }
+          ],
+          "source_url": "https://www.rijksmuseum.nl/en/collection/object/De-doornenkroning-van-Jezus--9c89ad27853218f13af2effaf52cd6ea",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::smk:KMSSP365",
+          "title": "Christ Crowned with Thorns",
+          "artist": "Hendrick ter Brugghen",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "s3"
+            }
+          ],
+          "source_url": "https://open.smk.dk/en/artwork/image/KMSSP365",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::rijks:20026365",
+          "title": "Ecce Homo",
+          "artist": "Matthias Stom",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "s3"
+            }
+          ],
+          "source_url": "https://www.rijksmuseum.nl/en/collection/object/Ecce-Homo--f435a0bd43cfa3a361ebb60220e9b4d3",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:20637285",
+          "title": "Christ Crowned with Thorns",
+          "artist": "Dirck van Baburen",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Le_Couronnement_d%27%C3%A9pines.JPG",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 7,
+      "research_only_candidates_count": 3,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.sorrowful.4",
+      "legacy_card_id": "STG-pray.rosary-10",
+      "family": "rosary",
+      "mystery_set": "sorrowful",
+      "card_label": "Sorrowful IV — Carrying the Cross",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "REVIEW::rijks:200109414",
+          "title": "Christ on the Way to Calvary",
+          "artist": "Jacques Jordaens",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Final batch (V6 decisions)",
+              "source_key": "s4"
+            }
+          ],
+          "source_url": "https://id.rijksmuseum.nl/200109414",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:22178536",
+          "title": "The Way to Calvary",
+          "artist": "Domenichino (Domenico Zampieri) (Italian, 1581 - 1641)",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s4"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Domenichino_(Domenico_Zampieri)_(Italian)_-_The_Way_to_Calvary_-_Google_Art_Project.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-05-imon-of-yrene-elps",
+          "title": "San Polo Via Crucis — Station 05: Simon of Cyrene Helps",
+          "artist": "Giandomenico Tiepolo",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "s4"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_V_-_Simon_of_Cyrene_helps_Jesus_carry_the_cross_by_Giandomenico_Tiepolo.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-02-esus-akes-p-the-ross",
+          "title": "San Polo Via Crucis — Station 02: Jesus Takes Up the Cross",
+          "artist": "Giandomenico Tiepolo",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s4"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_II_-_Jesus_carries_his_cross_by_Giandomenico_Tiepolo.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 4,
+      "research_only_candidates_count": 0,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.sorrowful.5",
+      "legacy_card_id": "STG-pray.rosary-11",
+      "family": "rosary",
+      "mystery_set": "sorrowful",
+      "card_label": "Sorrowful V — Crucifixion",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "CANONICAL::cma-97181",
+          "title": "Preparation for the Crucifixion",
+          "artist": "Attribution not recorded",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s5"
+            }
+          ],
+          "source_url": "https://www.clevelandart.org/art/1916.816",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::met:437172",
+          "title": "The Crucifixion",
+          "artist": "Bartolomé Estebán Murillo",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s5"
+            }
+          ],
+          "source_url": "https://www.metmuseum.org/art/collection/search/437172",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::smk:KMSSP186",
+          "title": "Christ on the Cross",
+          "artist": "Peter Paul Rubens",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Final batch (V6 decisions)",
+              "source_key": "s5"
+            }
+          ],
+          "source_url": "https://open.smk.dk/en/artwork/image/KMSSP186",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:45227477",
+          "title": "French: Le Calvaire | Christ Crucified with the Virgin, Saint John and Mary Magdalene",
+          "artist": "Anthony van Dyck",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s5"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:CrucifixionVanDyckLouvre.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::ART-nthony-van-yck-he-ance-hrust",
+          "title": "The Lance Thrust",
+          "artist": "Anthony van Dyck",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s5"
+            }
+          ],
+          "source_url": "https://vlaamsekunstcollectie.be/en/collectie/297",
+          "local_asset": {
+            "file": null,
+            "repository_path": "app-data/sacred-art/staged-images/van-dyck-kmska297-lance-thrust-2400.webp",
+            "physical_status": "STAGED_NOT_IN_SITE",
+            "museum": "KMSKA Antwerp",
+            "source": "https://vlaamsekunstcollectie.be/en/collectie/297",
+            "rights": "CC0 per staged-image provenance",
+            "photo_qa": "FINAL_PIXEL_AND_PHONE_QA_PENDING",
+            "card_use_authorized": false
+          },
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::cma:127664",
+          "title": "Crucifixion",
+          "artist": "Artist unknown",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s5"
+            }
+          ],
+          "source_url": "https://clevelandart.org/art/1950.345",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::cma-97147",
+          "title": "The Crucifixion",
+          "artist": "Sodoma (Italian, 1477–1549)",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s5"
+            }
+          ],
+          "source_url": "https://clevelandart.org/art/1916.786",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:33831598",
+          "title": "German: Christus am Kreuz | Crucifixion of Christ \" \"",
+          "artist": "Annibale Carracci",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s5"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_Crocifissione_Berlino.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-12-eath-on-the-ross",
+          "title": "San Polo Via Crucis — Station 12: Death on the Cross",
+          "artist": "Giandomenico Tiepolo",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s5"
+            }
+          ],
+          "source_url": "https://github.com/Fulcanelli13/ad-orientem/blob/main/assets/stations/san-polo/station-12.webp",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:115166028",
+          "title": "Crucifixion",
+          "artist": "Hans Jordaens III",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s5"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Hans_Jordaens_(III)_-_The_Crucifixion.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:4965555",
+          "title": "French: La crucifixion",
+          "artist": "Philippe de Champaigne",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "s5"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Champaigne_La_Crucifixion.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 11,
+      "research_only_candidates_count": 6,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.glorious.1",
+      "legacy_card_id": "STG-pray.rosary-12",
+      "family": "rosary",
+      "mystery_set": "glorious",
+      "card_label": "Glorious I — Resurrection",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "REVIEW::cma:146167",
+          "title": "The Risen Christ Appearing to the Virgin",
+          "artist": "Francesco Solimena",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "g1"
+            }
+          ],
+          "source_url": "https://www.clevelandart.org/art/1971.63",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::cma-78982",
+          "title": "The Resurrection of Christ",
+          "artist": "Johann König",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "g1"
+            }
+          ],
+          "source_url": "https://www.clevelandart.org/art/2017.192",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "released-photo:regina",
+          "title": "Resurrection of Christ (triptych centre)",
+          "artist": "Peter Paul Rubens",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "g1"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Resurrection_of_Christ_triptych_%28central_panel%29.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:158771859",
+          "title": "Christ Appears to the Three Marys",
+          "artist": "Laurent de La Hyre",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "g1"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Apparition_de_J%C3%A9sus_aux_trois_Marie_-_Laurent_de_La_Hyre_-_Mus%C3%A9e_du_Louvre_Peintures_INV_5356_%3B_MR_1849.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:22002144",
+          "title": "The Resurrection",
+          "artist": "Sebastiano Ricci",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "g1"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Ricci%2C_Sebastiano_-_The_Resurrection_-_Google_Art_Project.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 5,
+      "research_only_candidates_count": 4,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.glorious.2",
+      "legacy_card_id": "STG-pray.rosary-13",
+      "family": "rosary",
+      "mystery_set": "glorious",
+      "card_label": "Glorious II — Ascension",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "CANONICAL::met-436835",
+          "title": "The Ascension of Christ",
+          "artist": "Hans Süss von Kulmbach",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "g2"
+            }
+          ],
+          "source_url": "https://www.metmuseum.org/art/collection/search/436835",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::ART-rtus-olffort-scension-ntwerp-osary-cycle",
+          "title": "The Ascension — Antwerp Rosary cycle",
+          "artist": "Attributed to Artus Wolffort",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "g2"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Artus_Wolffort_-_Ascension_of_Jesus_Christ.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 2,
+      "research_only_candidates_count": 0,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.glorious.3",
+      "legacy_card_id": "STG-pray.rosary-14",
+      "family": "rosary",
+      "mystery_set": "glorious",
+      "card_label": "Glorious III — Pentecost",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "NEW::vandyck-potsdam-pentecost",
+          "title": "Pentecost",
+          "artist": "Anthony van Dyck",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "g3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Dyck,_Anthonis_van_-_Pouring_of_the_Holy_Ghost_-_Bildergalerie_Sanssouci.jpeg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::vatican-reni-pentecost-1608",
+          "title": "Pentecost (fresco)",
+          "artist": "Guido Reni",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "g3"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Guido_Reni,_Pentecoste,_circa_1609_-FG_02.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "CANONICAL::ART-ean-estout-entecost",
+          "title": "Pentecost",
+          "artist": "Jean II Restout",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "g3"
+            }
+          ],
+          "source_url": "https://collections.louvre.fr/ark:/53355/cl010062538",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::ncma-G.52.11.1",
+          "title": "The Pentecost",
+          "artist": "Workshop of Ambrosius Benson",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "g3"
+            }
+          ],
+          "source_url": "https://collection.ncartmuseum.org/objects/551/the-pentecost",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 4,
+      "research_only_candidates_count": 0,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.glorious.4",
+      "legacy_card_id": "STG-pray.rosary-15",
+      "family": "rosary",
+      "mystery_set": "glorious",
+      "card_label": "Glorious IV — Assumption",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "REVIEW::cma:153773",
+          "title": "Study for \"The Assumption of the Virgin\" for San Augustín, Seville",
+          "artist": "Juan de Valdés Leal (Spanish, 1622–1690)",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "g4"
+            }
+          ],
+          "source_url": "https://www.clevelandart.org/art/1987.7",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::rijks:200108871",
+          "title": "Assumption of the Virgin",
+          "artist": "Jacob de Wet I",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Final batch (V6 decisions)",
+              "source_key": "g4"
+            }
+          ],
+          "source_url": "https://www.rijksmuseum.nl/en/collection/object/Assumption-of-the-Virgin--c9dd4a4bacd2d05276d325e01e6aa17c",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::lyon-reni-assumption-A123",
+          "title": "The Assumption of the Virgin",
+          "artist": "Guido Reni",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "g4"
+            }
+          ],
+          "source_url": "https://www.mba-lyon.fr/fr/fiche-oeuvre/lassomption-de-la-vierge",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:15973724",
+          "title": "Assumption of Mary",
+          "artist": "Charles de La Fosse",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "g4"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Charles_de_La_Fosse_-_L%27Assomption_vers_1680.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 4,
+      "research_only_candidates_count": 0,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.glorious.5",
+      "legacy_card_id": "STG-pray.rosary-16",
+      "family": "rosary",
+      "mystery_set": "glorious",
+      "card_label": "Glorious V — Coronation",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [
+        {
+          "artwork_id": "REVIEW::met:435853",
+          "title": "The Coronation of the Virgin",
+          "artist": "Annibale Carracci",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "g5"
+            }
+          ],
+          "source_url": "https://www.metmuseum.org/art/collection/search/435853",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::met-437524",
+          "title": "The Coronation of the Virgin (oil sketch)",
+          "artist": "Peter Paul Rubens",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Batches 2–5 (V6 preserved)",
+              "source_key": "g5"
+            }
+          ],
+          "source_url": "https://www.metmuseum.org/art/collection/search/437524",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "NEW::vatican-oddi-raphael",
+          "title": "Coronation of the Virgin (Oddi Altarpiece)",
+          "artist": "Raphael",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Final batch (V6 decisions)",
+              "source_key": "g5"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Pala_degli_Oddi_(Raphael)_September_2015-1a.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        },
+        {
+          "artwork_id": "REVIEW::commons:65493548",
+          "title": "Coronation of the Virgin",
+          "artist": "Peter Paul Rubens and workshop",
+          "evidence": [
+            {
+              "type": "OWNER_APPROVED_PRAYER_PLACEMENT",
+              "source": "Original export · 2026-11-13",
+              "source_key": "g5"
+            }
+          ],
+          "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Coronation_of_the_Virgin.jpg",
+          "local_asset": null,
+          "image_release_state": "BLOCKED_UNTIL_PHOTO_QA_AND_EXPLICIT_PRIMARY_CHOICE"
+        }
+      ],
+      "approved_exact_count": 4,
+      "research_only_candidates_count": 0,
+      "active_image": null,
+      "implementation_state": "EDITORIAL_MAPPING_PREPARED__NOT_ACTIVATED"
+    },
+    {
+      "card_key": "rosary.luminous.1",
+      "legacy_card_id": null,
+      "family": "rosary",
+      "mystery_set": "luminous",
+      "card_label": "Baptism of Christ",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [],
+      "approved_exact_count": 0,
+      "research_only_candidates_count": 0,
+      "active_image": null,
+      "implementation_state": "LUMINOUS_CARD_PROPOSED__CURATION_NOT_RECONCILED"
+    },
+    {
+      "card_key": "rosary.luminous.2",
+      "legacy_card_id": null,
+      "family": "rosary",
+      "mystery_set": "luminous",
+      "card_label": "Wedding Feast at Cana",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [],
+      "approved_exact_count": 0,
+      "research_only_candidates_count": 0,
+      "active_image": null,
+      "implementation_state": "LUMINOUS_CARD_PROPOSED__CURATION_NOT_RECONCILED"
+    },
+    {
+      "card_key": "rosary.luminous.3",
+      "legacy_card_id": null,
+      "family": "rosary",
+      "mystery_set": "luminous",
+      "card_label": "Proclamation of the Kingdom",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [],
+      "approved_exact_count": 0,
+      "research_only_candidates_count": 0,
+      "active_image": null,
+      "implementation_state": "LUMINOUS_CARD_PROPOSED__CURATION_NOT_RECONCILED"
+    },
+    {
+      "card_key": "rosary.luminous.4",
+      "legacy_card_id": null,
+      "family": "rosary",
+      "mystery_set": "luminous",
+      "card_label": "Transfiguration",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [],
+      "approved_exact_count": 0,
+      "research_only_candidates_count": 0,
+      "active_image": null,
+      "implementation_state": "LUMINOUS_CARD_PROPOSED__CURATION_NOT_RECONCILED"
+    },
+    {
+      "card_key": "rosary.luminous.5",
+      "legacy_card_id": null,
+      "family": "rosary",
+      "mystery_set": "luminous",
+      "card_label": "Institution of the Eucharist",
+      "editorial_kind": "CARD_STAGE",
+      "production_runtime_card_id": null,
+      "production_runtime_verified": false,
+      "reviewed_stage_image_primary": null,
+      "owner_selected_primary": false,
+      "approved_exact_candidates": [],
+      "approved_exact_count": 0,
+      "research_only_candidates_count": 0,
+      "active_image": null,
+      "implementation_state": "LUMINOUS_CARD_PROPOSED__CURATION_NOT_RECONCILED"
+    }
+  ]
+}
