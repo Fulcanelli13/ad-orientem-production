@@ -88,8 +88,7 @@ try{
     "resized-"+scenario.height+".png"),animations:"disabled"});
  }
  await page.setViewportSize({width:390,height:780});
- await page.waitForFunction(()=>document.querySelector("#atlas-sheet")?
-  .style.getPropertyValue("--h")==="376px");
+ await page.waitForFunction(()=>document.querySelector("#atlas-sheet")?.style.getPropertyValue("--h")==="376px");
  close((await geometry()).sheet.height,376,"restored source peek");
  await page.locator("#atlas-search").fill("");
  await page.locator("#atlas-search").blur();
@@ -106,8 +105,7 @@ try{
   }catch{return false;}
  });
  assert.ok(overridden,"Cannot emulate visualViewport keyboard contraction");
- await page.waitForFunction(()=>document.querySelector("#atlas-view")?
-  .classList.contains("atlas-keyboard-visible"));
+ await page.waitForFunction(()=>document.querySelector("#atlas-view")?.classList.contains("atlas-keyboard-visible"));
  const visualKeyboard=await geometry();
  close(visualKeyboard.view.height,455,"visualViewport OSK height",3);
  close(visualKeyboard.sheet.height,150,"keyboard-state peek");
@@ -130,8 +128,7 @@ try{
  });
  await page.evaluate(()=>{window.location.hash="#atlas";});
  await page.locator("#atlas-view").waitFor({state:"visible"});
- await page.waitForFunction(()=>!document.querySelector("#atlas-view")?
-  .classList.contains("atlas-keyboard-visible"));
+ await page.waitForFunction(()=>!document.querySelector("#atlas-view")?.classList.contains("atlas-keyboard-visible"));
  const restored=await geometry();
  close(restored.sheet.height,376,"keyboard closed source peek");
  assert.equal(restored.navVisible,true);
@@ -140,8 +137,7 @@ try{
  // Genuine viewport aspect-ratio rotation in Chromium, using mobile/coarse.
  for(const dims of [{width:844,height:390},{width:740,height:360}]){
   await page.setViewportSize(dims);
-  await page.waitForFunction(()=>document.querySelector("#atlas-view")?
-    .getBoundingClientRect().height===window.innerHeight);
+  await page.waitForFunction(()=>document.querySelector("#atlas-view")?.getBoundingClientRect().height===window.innerHeight);
   const g=await geometry();
   close(g.view.height,dims.height,"landscape viewport");
   assert.ok(g.search.top>=0&&g.search.bottom<g.sheet.top,
@@ -158,8 +154,7 @@ try{
    "landscape-"+dims.width+".png"),animations:"disabled"});
  }
  await page.setViewportSize({width:390,height:780});
- await page.waitForFunction(()=>document.querySelector("#atlas-sheet")?
-  .style.getPropertyValue("--h")==="376px");
+ await page.waitForFunction(()=>document.querySelector("#atlas-sheet")?.style.getPropertyValue("--h")==="376px");
  const back=await geometry();
  close(back.sheet.height,376,"portrait after landscape");
  assert.equal(back.canvas,1);
