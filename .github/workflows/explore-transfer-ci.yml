@@ -1,0 +1,105 @@
+name: Review selected Explore core
+
+on:
+  # Read-only source review; never run this workflow on production pushes.
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+    paths:
+      - 'site/explore/**'
+      - 'site/explore.js'
+      - 'site/explore.css'
+      - 'tests/explore*.mjs'
+      - '.github/workflows/explore-transfer-ci.yml'
+  # Manual runs must explicitly select a research-free Explore PR branch.
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: explore-review-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  explore-transfer:
+    name: Provenance, projection and production-boundary contracts
+    # Workflow is registered on main but only checks Explore PR source.
+    if: github.event_name == 'pull_request' || github.ref_name != 'main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out this production PR only
+        uses: actions/checkout@v4
+      - name: Use Node 22 without installing research dependencies
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate source-owned Explore invariants
+        run: |
+          set -euo pipefail
+          mkdir -p site/explore/core
+          for file in heritage-map place-source-synopsis geo-provenance sacred-place-visual-fallback; do
+            cp "src/find/$file.js" "site/explore/core/$file.js"
+          done
+          node --experimental-default-type=module --check site/explore.js
+          node --experimental-default-type=module --check site/explore/model.js
+          node --experimental-default-type=module --check site/explore/marker-policy.js
+          node --experimental-default-type=module --check tests/production-explore.mjs
+          node --check tests/explore-selected-core.mjs
+          for file in src/find/heritage-map.js src/find/place-source-synopsis.js src/find/geo-provenance.js src/find/sacred-place-visual-fallback.js; do
+            node --experimental-default-type=module --check "$file"
+          done
+          node --experimental-default-type=module tests/explore-selected-core.mjs
+          node --experimental-default-type=module tests/production-explore.mjs
+          node tests/explore-photo-staging.mjs
+          node tests/explore-camera.mjs
+          node --experimental-default-type=module tests/explore-facets.mjs
+          node --experimental-default-type=module tests/explore-markers.mjs
+      - name: Ensure existing Home V9 shell remains unaffected
+        run: node tests/production-shell.mjs
+
+  browser-acceptance:
+    name: Real phone and desktop Atlas
+    needs: [explore-transfer]
+    if: github.event_name == 'pull_request' || github.ref_name != 'main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out this production PR only
+        uses: actions/checkout@v4
+      - name: Use Node 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Build curated site-only Explore module copies
+        run: |
+          set -euo pipefail
+          mkdir -p site/explore/core
+          for file in heritage-map place-source-synopsis geo-provenance sacred-place-visual-fallback; do
+            cp "src/find/$file.js" "site/explore/core/$file.js"
+          done
+      - name: Install Playwright test runner
+        run: |
+          npm install --no-save --ignore-scripts --no-audit --no-fund @playwright/test@1.64.1
+          npx playwright install --with-deps chromium
+      - name: Run source-aligned desktop and mobile-pointer acceptance
+        run: node --experimental-default-type=module tests/explore-browser.mjs
+      - name: Run real Chromium touch-emulation acceptance
+        run: node --experimental-default-type=module tests/explore-touch.mjs
+      - name: Check notched and compact mobile safe-area geometry
+        run: node --experimental-default-type=module tests/explore-safe-area.mjs
+      - name: Reflow Explore when keyboard or orientation changes
+        run: node --experimental-default-type=module tests/explore-viewport.mjs
+      - name: Exercise full local place directory under external map outages
+        run: node --experimental-default-type=module tests/explore-outage.mjs
+      - name: Preserve EN/FR 320-1440 screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: production-explore-screenshots
+          path: |
+            artifacts/production-explore
+            artifacts/production-explore-touch
+            artifacts/production-explore-safe-area
+            artifacts/production-explore-viewport
+            artifacts/production-explore-outage
+          if-no-files-found: warn
