@@ -1,0 +1,122 @@
+name: One-time museum source import for Sacred Art gallery batch 05
+on:
+  push:
+    branches: [feature/gallery-image-batch05-20261115]
+    paths: [.github/workflows/gallery-image-batch05-once.yml]
+permissions:
+  contents: write
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Acquire object-matched CC0 institutional paintings without cropping
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet Pillow
+          python3 - <<'PY'
+          import hashlib, io, json, re, time, unicodedata, urllib.request, urllib.parse
+          from pathlib import Path
+          from PIL import Image, ImageOps
+          specs=[
+            dict(key='caccia-madonna-john',artwork_id='NEW::met-816514',museum='MET',object_id=816514,artist='caccia',title='Madonna and Child with the Infant Saint John the Baptist',filename='caccia-madonna-infant-john-met-816514-2000.webp'),
+            dict(key='luini-virgin-child',artwork_id='NEW::cma-1916.812',museum='CMA',accession='1916.812',artist='luini',title='Virgin and Child',filename='luini-virgin-child-cma-1916-812-2000.webp'),
+            dict(key='joest-adoration',artwork_id='REVIEW::met:436781',museum='MET',object_id=436781,artist='joest',title='The Adoration of the Christ Child',filename='joest-adoration-christ-child-met-436781-2000.webp'),
+            dict(key='mantegna-shepherds',artwork_id='REVIEW::met:436966',museum='MET',object_id=436966,artist='mantegna',title='The Adoration of the Shepherds',filename='mantegna-adoration-shepherds-met-436966-2000.webp'),
+            dict(key='carracci-coronation',artwork_id='REVIEW::met:435853',museum='MET',object_id=435853,artist='carracci',title='The Coronation of the Virgin',filename='carracci-coronation-virgin-met-435853-2000.webp'),
+            dict(key='konig-resurrection',artwork_id='CANONICAL::cma-78982',museum='CMA',accession='2017.192',artist='konig',title='The Resurrection of Christ',filename='konig-resurrection-cma-2017-192-2000.webp'),
+            dict(key='van-cleve-annunciation',artwork_id='CANONICAL::met-436791',museum='MET',object_id=436791,artist='cleve',title='The Annunciation',filename='joos-van-cleve-annunciation-met-436791-2000.webp'),
+            dict(key='kulmbach-ascension',artwork_id='CANONICAL::met-436835',museum='MET',object_id=436835,artist='kulmbach',title='The Ascension of Christ',filename='kulmbach-ascension-met-436835-2000.webp'),
+            dict(key='rubens-coronation',artwork_id='NEW::met-437524',museum='MET',object_id=437524,artist='rubens',title='The Coronation of the Virgin',filename='rubens-coronation-sketch-met-437524-2000.webp'),
+            dict(key='van-cleve-judgment',artwork_id='CANONICAL::met-436794',museum='MET',object_id=436794,artist='cleve',title='The Last Judgment',filename='joos-van-cleve-last-judgment-met-436794-2000.webp'),
+            dict(key='caravaggio-andrew',artwork_id='CANONICAL::cma-148758',museum='CMA',accession='1976.2',artist='caravaggio',title='The Crucifixion of Saint Andrew',filename='caravaggio-crucifixion-andrew-cma-1976-2-2000.webp')
+          ]
+          def norm(x):
+            x=''.join(c for c in unicodedata.normalize('NFKD',x.casefold()) if not unicodedata.combining(c))
+            return ' '.join(w for w in re.findall('[a-z0-9]+',x) if w not in ('the','a','an'))
+          records={r['id']:r for r in json.loads(Path('site/gallery/catalogue.v1.json').read_text())['records']}
+          for s in specs:
+            r=records.get(s['artwork_id'])
+            assert r is not None and r['owner_selected_artwork'] and r['image'] is None, 'Only already selected pending-image paintings may be imported: '+s['artwork_id']
+            assert norm(s['title']) in norm(r['title']) or norm(r['title']) in norm(s['title']), 'Existing art title mismatch: '+s['artwork_id']
+          def fetch(url):
+            assert url.startswith('https://')
+            err=None
+            for i in range(4):
+              try:
+                req=urllib.request.Request(url,headers={'User-Agent':'AdOrientemInstitutionalArtGallery/1.0 (open source art verification)'})
+                with urllib.request.urlopen(req,timeout=70) as resp:
+                  return resp.read()
+              except Exception as exc:
+                err=exc
+                if i<3: time.sleep(i+1)
+            raise RuntimeError(f'Request failed {url}: {err}')
+          def same_title(a,b):
+            a=norm(a);b=norm(b)
+            return a==b or a.startswith(b+' ') or b.startswith(a+' ')
+          imported=[];skipped=[]
+          out=Path('site/gallery/images');out.mkdir(parents=True,exist_ok=True)
+          for s in specs:
+            try:
+              if s['museum']=='CMA':
+                api='https://openaccess-api.clevelandart.org/api/artworks/'+s['accession']
+                r=json.loads(fetch(api))['data']
+                if isinstance(r,list): assert len(r)==1;r=r[0]
+                assert r['accession_number']==s['accession'], 'Accession mismatch'
+                assert r.get('share_license_status')=='CC0','Museum image not CC0'
+                museum_artist=json.dumps(r.get('creators') or [],ensure_ascii=False)
+                museum_title=r['title']
+                photo_url=r['images']['print']['url']
+                assert urllib.parse.urlparse(photo_url).hostname=='openaccess-cdn.clevelandart.org'
+                institution_id=str(r['id'])
+                page='https://www.clevelandart.org/art/'+s['accession']
+                lic='CC0'
+              else:
+                api='https://collectionapi.metmuseum.org/public/collection/v1/objects/'+str(s['object_id'])
+                r=json.loads(fetch(api))
+                assert r['objectID']==s['object_id'], 'Met object ID mismatch'
+                assert r['isPublicDomain'] is True,'Museum image not public domain'
+                museum_artist=r['artistDisplayName']
+                museum_title=r['title']
+                photo_url=r['primaryImage']
+                assert urllib.parse.urlparse(photo_url).hostname=='images.metmuseum.org'
+                institution_id=str(r['objectID'])
+                page='https://www.metmuseum.org/art/collection/search/'+str(s['object_id'])
+                lic='PUBLIC_DOMAIN'
+              assert s['artist'] in norm(museum_artist),'Artist does not match institution object'
+              assert same_title(s['title'],museum_title),f'Title mismatch: expected {s["title"]!r} museum {museum_title!r}'
+              photo=fetch(photo_url)
+              assert photo[:2]==b'\xff\xd8','Downloaded file not JPEG'
+              with Image.open(io.BytesIO(photo)) as im:
+                im.load()
+                im=ImageOps.exif_transpose(im)
+                orig=list(im.size)
+                assert max(orig)>=1700,f'Institution source too small {orig}'
+                ratio=im.width/im.height
+                if im.mode!='RGB':im=im.convert('RGB')
+                if max(im.size)>2000:im.thumbnail((2000,2000),Image.Resampling.LANCZOS)
+                target=list(im.size)
+                assert abs(im.width/im.height-ratio)<0.002
+                dst=out/s['filename']
+                im.save(dst,'WEBP',quality=88,method=6)
+              local=dst.read_bytes()
+              assert local[:4]==b'RIFF' and local[8:12]==b'WEBP'
+              item={k:v for k,v in s.items() if k!='artist'}
+              item.update(museum_api_url=api,museum_page=page,institution_object_id=institution_id,official_museum_title=museum_title,official_museum_creator=museum_artist,official_license=lic,source_image_url=photo_url,source_bytes=len(photo),source_dimensions_px=orig,source_sha256=hashlib.sha256(photo).hexdigest(),source_git_blob_sha=hashlib.sha1(b'blob '+str(len(photo)).encode()+b'\0'+photo).hexdigest(),local_path='site/gallery/images/'+s['filename'],local_bytes=len(local),local_dimensions_px=target,local_sha256=hashlib.sha256(local).hexdigest(),local_git_blob_sha=hashlib.sha1(b'blob '+str(len(local)).encode()+b'\0'+local).hexdigest(),full_composition=True,source_original_locally_persisted=False,scope='GALLERY_ONLY_NO_NEW_PRAYER_IMAGE_ASSIGNMENT')
+              imported.append(item)
+              print('VERIFIED',s['key'],museum_title,orig,'=>',target,len(local),'bytes',flush=True)
+            except Exception as e:
+              skipped.append({'artwork_id':s['artwork_id'],'reason':str(e),'requires_separate_review':True})
+              print('SKIPPED',s['key'],str(e),flush=True)
+          assert len(imported)>=5,'Insufficient institutionally verified images to publish'
+          m=dict(schema='ao.sacred-art.gallery-image-import.v1',batch='2026-11-15-batch05',policy='Only preselected metadata-only catalogue works; museum-record title and artist matching, explicit image Open Access rights, sha256-verified institutional source JPEG and uncropped 2000px WebP derivative. Some failures are skipped and not published. No implied prayer default or source-original preservation.',sources=imported,skipped=skipped)
+          Path('app-data/sacred-art/gallery-image-import-batch05.v1.json').write_text(json.dumps(m,indent=2,ensure_ascii=False)+'\n')
+          PY
+          git add site/gallery/images/*.webp app-data/sacred-art/gallery-image-import-batch05.v1.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --cached --quiet; then
+            git commit -m "Acquire source-verified museum gallery works for batch 05"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
