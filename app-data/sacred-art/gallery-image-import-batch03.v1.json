@@ -2,7 +2,7 @@
   "schema": "ao.sacred-art.gallery-image-import.v1",
   "batch": "2026-11-15-batch03",
   "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
-  "policy": "Only owner-selected works already in 862-record registry. Keep original source bytes in research; gallery stores faithful uncropped WebP derivatives for mobile. No prayer-stage promotion.",
+  "policy": "Only owner-selected works already in the 862-record gallery. Research archive originals stay in research; Met-donated Commons source stays at Commons. Gallery stores verified uncropped WebP derivatives; no prayer-stage promotion.",
   "sources": [
     {
       "key": "carracci",
@@ -28,7 +28,7 @@
         1270,
         1592
       ],
-      "original_preserved_in_research": true,
+      "original_preserved_in_research": false,
       "no_crop": true,
       "quality": "FULL_COMPOSITION_GALLERY_WEBP_FROM_ARCHIVED_SOURCE",
       "scope": "GALLERY_ONLY_NO_NEW_PRAYER_ASSIGNMENT"
