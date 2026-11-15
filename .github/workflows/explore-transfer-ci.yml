@@ -56,6 +56,8 @@ jobs:
           node --experimental-default-type=module tests/explore-markers.mjs
       - name: Ensure existing Home V9 shell remains unaffected
         run: node tests/production-shell.mjs
+      - name: Verify published Sacred Art Gallery remains byte-for-byte intact
+        run: node tests/sacred-art-gallery.mjs
 
   browser-acceptance:
     name: Real phone and desktop Atlas
