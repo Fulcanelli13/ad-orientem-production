@@ -61,6 +61,19 @@ assert.equal(index.source_catalogue_count,860);
 assert.equal(index.total_works,862);
 assert.equal(index.artworks.length,862);
 assert.equal(index.coverage.with_recorded_card_links,249);
+assert.equal(index.coverage.with_owner_approved_exact_card_links,114);
+assert.equal(index.coverage.with_owner_approved_parent_prayer_links,15);
+assert(index.artworks.every(a => !Object.hasOwn(a,'approved_prayer_card_ids')),
+  'Raw candidates must not be described as approved cards');
+for (const record of index.artworks) {
+ const actual = previousLinks.filter(x => x.artwork_id === record.artwork_id);
+ assert.deepEqual(new Set(record.candidate_prayer_card_ids),
+   new Set(actual.map(x => x.card_id)));
+ assert.deepEqual(new Set(record.owner_approved_exact_card_ids),
+   new Set(actual.filter(x => x.exact_card_approved).map(x => x.card_id)));
+ assert.deepEqual(new Set(record.owner_approved_parent_prayer_ids),
+   new Set(actual.filter(x => x.parent_category_approved).map(x => x.card_id)));
+}
 assert.equal(index.coverage.with_angelus_review_part_links,36);
 assert.equal(index.coverage.unassigned_to_any_category,611);
 assert.equal(previousLinks.length,index.source_card_artwork_associations);
