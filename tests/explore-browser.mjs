@@ -144,6 +144,31 @@ try{
   assert.equal(await page.locator("#atlas-count").textContent(),"18 / 18");
   assert.equal(await page.locator("#atlas-map .atlas-place-marker[data-visible='true']").count()>0,true,
     "At least one selected source marker must be visible in the current lens");
+  const hitTargets=await page.locator(
+    "#atlas-map .atlas-place-marker[data-visible='true']").evaluateAll(nodes=>
+    nodes.map(el=>{
+      const r=el.getBoundingClientRect();
+      return {id:el.dataset.atlasMarkerId,mode:el.dataset.mode,
+        visual:parseFloat(el.style.getPropertyValue("--ao-marker-size")),
+        hit:parseFloat(el.style.getPropertyValue("--ao-marker-hit-size")),
+        rect:{left:r.left,top:r.top,right:r.right,bottom:r.bottom,
+          width:r.width,height:r.height}};
+    }));
+  assert.ok(hitTargets.length>0,"Sacred Atlas must retain visible markers");
+  for(const [i,hit] of hitTargets.entries()){
+    const expectedVisual=hit.mode==="dot"?7:hit.mode==="sm"?22:52;
+    assert.equal(hit.visual,expectedVisual,
+      "Do not alter Claude's original visible marker diameter: "+JSON.stringify(hit));
+    assert.ok(hit.hit>=44&&Math.abs(hit.rect.width-hit.hit)<1&&
+      Math.abs(hit.rect.height-hit.hit)<1,
+      "Visible and CSS hit footprints disagree: "+JSON.stringify(hit));
+    for(const other of hitTargets.slice(i+1)){
+      const overlaps=hit.rect.left<other.rect.right&&hit.rect.right>other.rect.left&&
+        hit.rect.top<other.rect.bottom&&hit.rect.bottom>other.rect.top;
+      assert.equal(overlaps,false,
+        "Overlapping invisible Sacred tap regions: "+hit.id+" / "+other.id);
+    }
+  }
   assert.equal((await mapSnapshot()).tlmTapDiameter,40,
     "Source-neutral TLM dots retain a 40px invisible pointer target");
   assert.equal(await page.locator("#atlas-results .atlas-result--photo").count(),6,

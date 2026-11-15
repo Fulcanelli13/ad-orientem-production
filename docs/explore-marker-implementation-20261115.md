@@ -57,3 +57,27 @@ Relevant original program: `GL`, `gly()`, `.med`, `.med.dot`,
 - No additional source data imported; no change to original research repo;
   no merge, no production deployment, no Vercel. Main-only GitHub Pages policy
   remains intact.
+
+## Mobile marker interaction hardening (15 November, follow-up)
+
+Review of the current draft found a concrete mismatch: Sacred marker DOM buttons
+were uniformly **52px wide**, despite showing 7px/22px/52px symbols, while
+collision checks used **only the symbol diameters** (7/22/52px). At clustered
+sites this permitted invisible click targets to overlap even when their
+visible glyphs did not. Choosing a point could therefore select another site.
+
+**Bounded correction:** keep the exact owner-approved glyph diameters and
+visual transitions, but use a `--ao-marker-hit-size` matched to
+`visibleMarkerGeometry()`. All Sacred targets are **at least 44px**;
+normal 52px photo medallions retain 52px targets; selected photos scaled to
+130% have a 68px target. Collision calculations now use those full target
+footprints (plus a 2px buffer), prioritizing the selected place.
+Overlapping lower-priority markers are suppressed on the map but remain
+accessible via the complete source-backed card/list rail.
+MapLibre centre anchoring, canonical coordinates, 18/10 lens separation,
+source photos, folio structure and zoom-dependent visual appearance do not change.
+
+New CI assertions check **computed DOM hit dimensions**, absence of overlapping
+visible hit rectangles, and an actual **Chromium mobile touch** on the selected
+Sacred marker at 320/390/430px, verifying it opens its own canonical folio.
+These are touch-emulation checks; physical-device acceptance remains open.

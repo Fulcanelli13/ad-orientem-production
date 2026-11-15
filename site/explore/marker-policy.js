@@ -31,5 +31,10 @@ export function markerLabelVisible(zoom,selected,mode){
 }
 export function visibleMarkerGeometry(zoom,selected,mode){
  const diameter=CLAUDE_MARKER_SIZES[mode];
- return {diameter,collisionRadius:diameter/2+2,priority:selected?100:0};
+ // Separate Claude's visible 7/22/52px artwork from its mobile hit area.
+ // A selected photo visually scales to 130%; its hit area must follow.
+ // Collisions use the actual clickable footprint, never the smaller glyph.
+ const hitDiameter=Math.max(44,Math.ceil(diameter*(selected?1.3:1)));
+ return {diameter,hitDiameter,collisionRadius:hitDiameter/2+2,
+  priority:selected?100:0};
 }

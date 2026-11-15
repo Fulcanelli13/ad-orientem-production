@@ -111,6 +111,8 @@ try{
    animations:"disabled",fullPage:false
   });
   const visibleCard=page.locator("#atlas-results .atlas-result-button").nth(1);
+  const chosenId=await visibleCard.getAttribute("data-atlas-id");
+  const chosenTitle=await visibleCard.locator(".atlas-result-name").innerText();
   await visibleCard.scrollIntoViewIfNeeded();
   await visibleCard.tap();
   await page.locator("#atlas-card").waitFor({state:"visible"});
@@ -120,6 +122,23 @@ try{
    path:join("artifacts/production-explore-touch",width+"-touch-sacred-folio.png"),
    animations:"disabled",fullPage:false
   });
+  await page.locator("#atlas-card .atlas-folio-back").tap();
+  // The camera has positioned the last selected location above Claude's
+  // sheet. Tap that exact source marker as a real Chromium touch gesture.
+  const target=page.locator(
+    '#atlas-map .atlas-place-marker[data-atlas-marker-id="'+chosenId+'"]');
+  await page.waitForFunction(id=>{
+    const marker=[...document.querySelectorAll("#atlas-map .atlas-place-marker")]
+      .find(el=>el.dataset.atlasMarkerId===id);
+    return marker?.dataset.visible==="true"&&
+      marker.getBoundingClientRect().width>=44;
+  },chosenId,{timeout:10000});
+  const hitBox=await target.boundingBox();
+  assert.ok(hitBox?.width>=44&&hitBox.height>=44,
+    width+"px selected place marker fails the minimum touch geometry");
+  await target.tap();
+  assert.equal(await page.locator("#atlas-card .atlas-folio-ttl h1").innerText(),
+    chosenTitle,width+"px touch must open the correct source-backed place");
   await page.locator("#atlas-card .atlas-folio-back").tap();
   await page.locator('.tabbar [data-route="home"]').tap();
   await page.locator("#home-view").waitFor({state:"visible"});

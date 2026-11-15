@@ -2,9 +2,22 @@
 import assert from "node:assert/strict";
 import {readFileSync} from "node:fs";
 import {CLAUDE_SACRED_GLYPHS,CLAUDE_MARKER_SIZES,
- sacredMarkerMode,verifiedMarkerGlyph,markerLabelVisible} from "../site/explore/marker-policy.js";
+ sacredMarkerMode,verifiedMarkerGlyph,markerLabelVisible,
+ visibleMarkerGeometry} from "../site/explore/marker-policy.js";
 const manifest=JSON.parse(readFileSync("site/explore/selected-sites.v1.json","utf8"));
 assert.deepEqual(CLAUDE_MARKER_SIZES,{dot:7,sm:22,ph:52});
+// The glyph diameters are unchanged, but hit/collision geometry must be
+// mutually consistent at all levels; selected photos are scaled in CSS.
+for(const [mode,selected,visual,hit] of [
+ ["dot",false,7,44],["sm",false,22,44],["ph",false,52,52],
+ ["dot",true,7,44],["sm",true,22,44],["ph",true,52,68]
+]){
+ const actual=visibleMarkerGeometry(9,selected,mode);
+ assert.equal(actual.diameter,visual,"Claude visual size drift: "+mode);
+ assert.equal(actual.hitDiameter,hit,"Incorrect touch target: "+mode);
+ assert.equal(actual.collisionRadius,hit/2+2,
+  "Collision geometry must cover the entire touch target: "+mode);
+}
 assert.deepEqual(Object.keys(CLAUDE_SACRED_GLYPHS).sort(),
  ["christ","church","marian","saint"]);
 const titles=manifest.sacred.map(x=>x.id);

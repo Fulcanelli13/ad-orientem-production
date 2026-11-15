@@ -448,7 +448,8 @@ function updateSacredMarkers(){
   const selected=record.id===state.selectedId;
   const p=state.map.project([Number(record.geo.lng),Number(record.geo.lat)]);
   const mode=sacredMarkerMode(record,zoom,selected);
-  const {diameter,collisionRadius}=visibleMarkerGeometry(zoom,selected,mode);
+  const {diameter,hitDiameter,collisionRadius}=
+   visibleMarkerGeometry(zoom,selected,mode);
   const hit=[p.x-collisionRadius,p.y-collisionRadius,
              p.x+collisionRadius,p.y+collisionRadius];
   const inView=p.x>=0&&p.y>=0&&p.x<=width&&p.y<=height;
@@ -463,6 +464,7 @@ function updateSacredMarkers(){
   root.dataset.mode=mode;
   root.dataset.selected=String(selected);
   root.style.setProperty("--ao-marker-size",diameter+"px");
+  root.style.setProperty("--ao-marker-hit-size",hitDiameter+"px");
   med.className="atlas-map-med atlas-map-med--"+mode;
   const hasPhoto=mode==="ph";
   med.style.backgroundImage=hasPhoto?'url("'+record.media.src+'")':"";
