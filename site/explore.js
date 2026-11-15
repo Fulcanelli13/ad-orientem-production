@@ -180,7 +180,18 @@ const snapHeight=stateName=>{
  const available=el.clientHeight;
  const bottom=document.querySelector(".tabbar")?.getBoundingClientRect().height||79;
  const contentHeight=Math.max(200,available-bottom);
- return stateName==="min"?150:stateName==="expanded"?Math.round(contentHeight*.62):376;
+ if(stateName==="min")return 150;
+ if(stateName==="expanded")return Math.round(contentHeight*.62);
+ // On a short notched handset the default 376px card sheet could cover
+ // Claude's zoom buttons. Reserve their 205px top offset, ~70px stacked
+ // controls and a clear gap, plus the actual top safe-area padding.
+ // Full-height phones retain Claude's exact original 376px peek.
+ const header=document.querySelector("#atlas-view .atlas-top");
+ const paddingTop=Number.parseFloat(getComputedStyle(header).paddingTop)||14;
+ const safeTop=Math.max(0,paddingTop-14);
+ const reserved=300+safeTop;
+ const mobile=window.matchMedia("(max-width: 799px)").matches;
+ return mobile?Math.min(376,Math.max(150,available-bottom-reserved)):376;
 };
 function setSheetState(next){
  const stateName=["min","peek","expanded"].includes(next)?next:"peek";

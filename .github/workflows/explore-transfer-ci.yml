@@ -75,6 +75,8 @@ jobs:
         run: node --experimental-default-type=module tests/explore-browser.mjs
       - name: Run real Chromium touch-emulation acceptance
         run: node --experimental-default-type=module tests/explore-touch.mjs
+      - name: Check notched and compact mobile safe-area geometry
+        run: node --experimental-default-type=module tests/explore-safe-area.mjs
       - name: Exercise full local place directory under external map outages
         run: node --experimental-default-type=module tests/explore-outage.mjs
       - name: Preserve EN/FR 320-1440 screenshots
@@ -85,5 +87,6 @@ jobs:
           path: |
             artifacts/production-explore
             artifacts/production-explore-touch
+            artifacts/production-explore-safe-area
             artifacts/production-explore-outage
           if-no-files-found: warn
