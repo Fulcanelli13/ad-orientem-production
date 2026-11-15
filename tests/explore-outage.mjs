@@ -147,13 +147,19 @@ try{
     const sheet=document.getElementById("atlas-sheet");
     const a=status.getBoundingClientRect(),b=heading.getBoundingClientRect(),
       c=sheet.getBoundingClientRect();
+    const zoom=document.querySelector("#atlas-map .maplibregl-ctrl-zoom-in")
+      ?.getBoundingClientRect();
+    const zoomOverlap=!!zoom && !(a.right<=zoom.left||a.left>=zoom.right||
+      a.bottom<=zoom.top||a.top>=zoom.bottom);
     return {noticeText:status.textContent,
       aboveSheet:a.bottom<c.top-8,belowControls:a.top>b.bottom+5,
-      rect:{top:a.top,bottom:a.bottom},sheetTop:c.top,controlsBottom:b.bottom};
+      zoomOverlap,
+      rect:{top:a.top,bottom:a.bottom,left:a.left,right:a.right},
+      sheetTop:c.top,controlsBottom:b.bottom};
   });
   assert.match(fallback.noticeText,/Interactive tiles unavailable/);
-  assert.ok(fallback.aboveSheet && fallback.belowControls,
-    "Unavailable notice must be visible between Claude controls and sheet: "+
+  assert.ok(fallback.aboveSheet && fallback.belowControls && !fallback.zoomOverlap,
+    "Unavailable notice must remain above sheet and clear of zoom controls: "+
     JSON.stringify(fallback));
   assert.equal(await page.locator(".tabbar button").count(),4);
   assert.equal(await page.locator("#atlas-results > li").count(),10);

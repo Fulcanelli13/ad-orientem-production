@@ -822,6 +822,6 @@ body:has(.atlas-view:not([hidden])) .tabbar{z-index:50}
    its warning visible above Claude's fixed sheet. No normal map CSS. */
 #atlas-view .atlas-map-state.error:not([hidden]){
  bottom:calc(var(--ao-tabbar,79px) + var(--atlas-sheet-height,376px) + 16px)!important;
- left:14px!important;right:14px!important;
+ left:14px!important;right:64px!important;
  z-index:12!important;
 }
