@@ -29,6 +29,10 @@ directory and navigation under the software keyboard.
   Resize the **existing** MapLibre instance and update marker placements:
   no remounting, selected-site coordinate shift, camera reset, lens
   switch, new folio, or text changes.
+  On route re-entry, clear any stale keyboard class/height after the
+  visual keyboard has closed while Explore was hidden; preserve it
+  only if the search field remains focused *and* the visual viewport
+  is still materially contracted.
 - With a visibly shrunken `visualViewport` **while the Explore search
   input has focus only**, use the measured keyboard-visible height for
   `#atlas-view`. The Home tabbar is temporarily hidden; the existing

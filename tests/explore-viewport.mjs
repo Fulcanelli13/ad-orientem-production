@@ -119,11 +119,17 @@ try{
  checks.push({scenario:"visualViewport-only-keyboard",...visualKeyboard});
  await page.screenshot({path:join("artifacts/production-explore-viewport",
   "visual-viewport-keyboard.png"),animations:"disabled"});
+ // Leave the route while the OSK is still present. A hidden Atlas skips
+ // resize events; its transient keyboard state must not survive a return.
+ await page.evaluate(()=>{window.location.hash="#home";});
+ await page.locator("#home-view").waitFor({state:"visible"});
  await page.evaluate(()=>{
   Object.defineProperty(window.visualViewport,"height",
    {configurable:true,get:()=>window.innerHeight});
   window.visualViewport.dispatchEvent(new Event("resize"));
  });
+ await page.evaluate(()=>{window.location.hash="#atlas";});
+ await page.locator("#atlas-view").waitFor({state:"visible"});
  await page.waitForFunction(()=>!document.querySelector("#atlas-view")?
   .classList.contains("atlas-keyboard-visible"));
  const restored=await geometry();

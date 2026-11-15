@@ -770,6 +770,16 @@ function attachControls(){
 }
 export async function mountExplore(){
  if(state.initialized){
+  const vv=window.visualViewport;
+  const visibleBottom=vv?Math.min(window.innerHeight,vv.height+vv.offsetTop):window.innerHeight;
+  const keyboardStillVisible=document.activeElement===$("atlas-search")&&
+   window.innerHeight-visibleBottom>140;
+  if(!keyboardStillVisible){
+   // Hidden routes intentionally skip viewport updates. Restore navigation
+   // even when a previously focused search field has retained focus.
+   $("atlas-view").classList.remove("atlas-keyboard-visible");
+   $("atlas-view").style.removeProperty("--ao-visual-height");
+  }
   if(state.map)requestAnimationFrame(()=>{
    state.map.resize();
    // Resuming an already-mounted Atlas after a route change must use
