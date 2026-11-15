@@ -1,0 +1,31 @@
+name: One-time SMK metadata inspection for gallery batch 07
+on:
+  push:
+    branches: [feature/gallery-image-batch07-20261115]
+    paths: [.github/workflows/gallery-batch07-smk-inspect-once.yml]
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Inspect exact public-domain SMK objects without downloading paintings
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json,urllib.request,urllib.parse
+          nums=['KMSsp13','KMSsp186','KMSsp48','KMSsp365','KMS1168']
+          for n in nums:
+            u='https://api.smk.dk/api/v1/art/search/?'+urllib.parse.urlencode({'keys':n,'rows':15})
+            try:
+              req=urllib.request.Request(u,headers={'User-Agent':'AdOrientemArtResearch/1.0'})
+              with urllib.request.urlopen(req,timeout=15) as res: data=json.load(res)
+              print('OBJECT',n,'ROOT',list(data)[:12],flush=True)
+              a=data.get('items',[]) or data.get('data',[]) or data.get('results',[])
+              print('CANDIDATES',len(a),flush=True)
+              for x in a[:8]:
+                print('ITEM',n,json.dumps({k:x.get(k) for k in ('object_number','public_domain','title','artist','artist_name','artists','image_native','image_iiif','image_thumbnail','has_image')},ensure_ascii=False)[:1800],flush=True)
+            except Exception as e:
+              print('ERROR',n,str(e),flush=True)
+          PY
