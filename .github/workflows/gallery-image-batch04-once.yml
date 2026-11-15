@@ -1,0 +1,118 @@
+name: One-time source-checked gallery acquisition batch 04
+on:
+  push:
+    branches: [feature/gallery-image-batch04-20261115]
+    paths: [.github/workflows/gallery-image-batch04-once.yml]
+permissions:
+  contents: write
+jobs:
+  transfer-gallery:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Recover exact museum images and generate uncropped gallery files
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet Pillow
+          python3 - <<'PY'
+          import hashlib, io, json, time, urllib.request, urllib.parse
+          from pathlib import Path
+          from PIL import Image, ImageOps
+
+          specs=[
+            {'key':'dolci-shepherds','artwork_id':'CANONICAL::cma-143784','museum':'CMA','accession':'1968.22','title':'Adoration of the Shepherds','artist_token':'dolci','filename':'dolci-adoration-shepherds-cma-1968-22-2000.webp'},
+            {'key':'van-balen-trinity','artwork_id':'CANONICAL::cma-159488','museum':'CMA','accession':'1996.26','title':'The Trinity','artist_token':'van balen','filename':'van-balen-trinity-cma-1996-26-2000.webp'},
+            {'key':'murillo-immaculate','artwork_id':'CANONICAL::cma-135659','museum':'CMA','accession':'1959.189','title':'The Immaculate Conception','artist_token':'murillo','filename':'murillo-immaculate-cma-1959-189-2000.webp'},
+            {'key':'danube-visitation','artwork_id':'NEW::cma-1950.91','museum':'CMA','accession':'1950.91','title':'The Visitation','artist_token':None,'filename':'danube-visitation-cma-1950-91-2000.webp'},
+            {'key':'veronese-annunciation','artwork_id':'CANONICAL::cma-127572','museum':'CMA','accession':'1950.251','title':'The Annunciation','artist_token':'veronese','filename':'veronese-annunciation-cma-1950-251-2000.webp'},
+            {'key':'giordano-annunciation','artwork_id':'CANONICAL::met-436502','museum':'MET','object_id':436502,'title':'The Annunciation','artist_token':'giordano','filename':'giordano-annunciation-met-436502-2000.webp'},
+          ]
+          catalog=json.loads(Path('site/gallery/catalogue.v1.json').read_text())
+          records={r['id']:r for r in catalog['records']}
+          for spec in specs:
+            r=records.get(spec['artwork_id'])
+            assert r and r['owner_selected_artwork'] and r['image'] is None, f"Not an owner-selected image-pending painting: {spec['artwork_id']}"
+            assert r['title'].casefold()==spec['title'].casefold(), f"Title mismatch: {spec}"
+            if spec['artist_token']:
+              assert spec['artist_token'] in r['artist'].casefold()
+          def fetch(url):
+            assert url.startswith('https://')
+            exc=None
+            for attempt in range(4):
+              try:
+                req=urllib.request.Request(url,headers={'User-Agent':'AdOrientemSourceArchive/1.0 (artworks sourced from institutional open access)'})
+                with urllib.request.urlopen(req,timeout=90) as resp:
+                  return resp.read()
+              except Exception as e:
+                exc=e
+                if attempt<3: time.sleep(2+attempt*3)
+            raise RuntimeError(f"Source download failed {url}: {exc}")
+          out=Path('site/gallery/images')
+          out.mkdir(parents=True,exist_ok=True)
+          entries=[]
+          for spec in specs:
+            if spec['museum']=='CMA':
+              api='https://openaccess-api.clevelandart.org/api/artworks/'+spec['accession']
+              rec=json.loads(fetch(api))['data']
+              if isinstance(rec,list):
+                assert len(rec)==1
+                rec=rec[0]
+              assert rec['accession_number']==spec['accession'], 'CMA accession mismatch'
+              assert rec['title'].casefold()==spec['title'].casefold(), 'CMA title mismatch'
+              assert rec['share_license_status']=='CC0', 'Image rights not explicitly CC0'
+              combined=json.dumps(rec.get('creators',[]),ensure_ascii=False).casefold()
+              if spec['artist_token']:
+                assert spec['artist_token'] in combined, 'CMA artist mismatch: '+spec['key']
+              photo=rec['images']['print']
+              photo_url=photo['url']
+              assert urllib.parse.urlparse(photo_url).hostname.endswith('clevelandart.org'), 'Unexpected CMA image host'
+              page='https://www.clevelandart.org/art/'+spec['accession']
+              rights='Cleveland Museum of Art CC0 Open Access'
+              museum_record_id=str(rec['id'])
+              license_status=rec['share_license_status']
+              raw=fetch(photo_url)
+            else:
+              api='https://collectionapi.metmuseum.org/public/collection/v1/objects/'+str(spec['object_id'])
+              rec=json.loads(fetch(api))
+              assert rec['objectID']==spec['object_id'], 'Met object mismatch'
+              assert rec['objectName'] or rec['title']
+              assert rec['title'].casefold()==spec['title'].casefold(), 'Met title mismatch'
+              assert spec['artist_token'] in rec['artistDisplayName'].casefold(), 'Met artist mismatch'
+              assert rec['isPublicDomain'] is True, 'Met object not open access'
+              photo_url=rec['primaryImage']
+              assert urllib.parse.urlparse(photo_url).hostname=='images.metmuseum.org', 'Unexpected Met image host'
+              page='https://www.metmuseum.org/art/collection/search/'+str(spec['object_id'])
+              rights='The Metropolitan Museum of Art Open Access / public-domain image'
+              museum_record_id=str(rec['objectID'])
+              license_status='PUBLIC_DOMAIN'
+              raw=fetch(photo_url)
+            assert raw[:2]==b'\xff\xd8', 'Expected JPEG source image'
+            with Image.open(io.BytesIO(raw)) as img:
+              img.load()
+              img=ImageOps.exif_transpose(img)
+              origin=list(img.size)
+              assert max(origin)>=1800, f"Image source insufficient for {spec['key']}: {origin}"
+              old_aspect=img.width/img.height
+              if img.mode!='RGB': img=img.convert('RGB')
+              if max(img.size)>2000: img.thumbnail((2000,2000),Image.Resampling.LANCZOS)
+              new=list(img.size)
+              assert abs(img.width/img.height-old_aspect)<0.002
+              image_path=out/spec['filename']
+              img.save(image_path,format='WEBP',quality=88,method=6)
+            b=image_path.read_bytes()
+            assert b[:4]==b'RIFF' and b[8:12]==b'WEBP'
+            entry={k:v for k,v in spec.items() if k not in ('artist_token',)}
+            entry.update(museum_api_url=api,museum_record_id=museum_record_id,museum_page=page,source_url=photo_url,rights=rights,image_license_status=license_status,source_sha256=hashlib.sha256(raw).hexdigest(),source_git_blob_sha=hashlib.sha1(b'blob '+str(len(raw)).encode()+b'\0'+raw).hexdigest(),source_bytes=len(raw),source_dimensions_px=origin,local_path='site/gallery/images/'+spec['filename'],local_sha256=hashlib.sha256(b).hexdigest(),local_git_blob_sha=hashlib.sha1(b'blob '+str(len(b)).encode()+b'\0'+b).hexdigest(),local_bytes=len(b),local_dimensions_px=new,uncropped=True,source_original_persisted_in_production=False,scope='GALLERY_ONLY_NO_PRAYER_ACTIVATION')
+            entries.append(entry)
+            print('ACQUIRED',spec['key'],origin,'=>',new,len(b),'bytes',flush=True)
+          manifest={'schema':'ao.sacred-art.gallery-image-import.v1','batch':'2026-11-15-batch04','source_policy':'Direct institutional metadata API and original or print image; explicit CC0 or public-domain status validated; JPEG SHA-256 and uncropped WebP derivative SHA-256 recorded. No claim source originals locally persisted. Image availability is not prayer primary approval.','sources':entries}
+          Path('app-data/sacred-art/gallery-image-import-batch04.v1.json').write_text(json.dumps(manifest,indent=2,ensure_ascii=False)+'\n')
+          PY
+          git add site/gallery/images/{dolci-adoration-shepherds-cma-1968-22-2000,van-balen-trinity-cma-1996-26-2000,murillo-immaculate-cma-1959-189-2000,danube-visitation-cma-1950-91-2000,veronese-annunciation-cma-1950-251-2000,giordano-annunciation-met-436502-2000}.webp app-data/sacred-art/gallery-image-import-batch04.v1.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --cached --quiet; then
+            git commit -m "Import six museum-verified owner-selected gallery paintings"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
