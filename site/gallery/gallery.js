@@ -239,13 +239,13 @@
           }
           ids.add(art.id);
         }
-        // Historical 873-row source catalogue remains untouched. V13/V14
+        // V19 release-gated: only seven vetted gallery images (six additional records, one existing-record patch).\n        // Other selected photos remain research-only. Historical 873-row source catalogue remains untouched. V13/V14
         // augment only the gallery, never the prayer-card activation registry.
         const legacyRecordCount = data.records.length;
         let addedRecords = 0, addedImages = 0;
         for (const [filename, schema, requiredRecords, expectedPatches] of [
           ["selected31-reviewed-images.v13.json", "ao.sacred-art.selected31-gallery-overlay.v13", 5, 0],
-          ["selected31-reviewed-images.v14.json", "ao.sacred-art.selected31-gallery-overlay.v14", 4, 1]
+          ["selected31-reviewed-images.v14.json", "ao.sacred-art.selected31-gallery-overlay.v14", 1, 1]
         ]) {
           const response = await fetch("./gallery/" + filename, {cache:"no-cache"});
           if (!response.ok) throw new Error("Review gallery data unavailable: " + filename);
@@ -282,7 +282,7 @@
             addedImages++;
           }
         }
-        if (legacyRecordCount !== 873 || addedRecords !== 9 || addedImages !== 10) {
+        if (legacyRecordCount !== 873 || addedRecords !== 6 || addedImages !== 7) {
           throw new Error("Unexpected historical gallery reconciliation counts");
         }
         data.counts.total_records += addedRecords;
