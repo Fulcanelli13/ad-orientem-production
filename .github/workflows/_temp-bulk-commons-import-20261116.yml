@@ -37,8 +37,10 @@ jobs:
           node tests/production-shell.mjs
           node --check site/gallery/gallery.js
           git rm .github/workflows/_temp-bulk-commons-probe-20261116.yml .github/workflows/_temp-bulk-commons-import-20261116.yml
-          git add .github/workflows/pages.yml app-data/sacred-art site/gallery tests
+          git add app-data/sacred-art site/gallery tests
           git -c user.name='Ad Orientem Sacred Art Bulk Import' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Bulk release verified already-selected Commons paintings into permanent gallery'
           git push origin HEAD:feature/bulk-sacred-art-20261116
 
 # Rerun after preservation assertion was corrected to distinguish original rights-note variants.
+
+# The Pages workflow gate is updated separately through the connected GitHub app, after this exact-source bulk transfer.
