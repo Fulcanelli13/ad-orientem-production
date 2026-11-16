@@ -13,7 +13,8 @@
     "devotional_recovery": "app-data/sacred-art/devotional-asset-recovery-20261116.v1.json",
     "class_i_gallery_link": "app-data/sacred-art/class-i-gallery-link-20261116.v1.json",
     "bulk_approved_commons": "app-data/sacred-art/bulk-commons-photo-import-20261116.v1.json",
-    "bulk_approved_commons_batch02": "app-data/sacred-art/bulk-commons-photo-import-batch02-20261116.v1.json"
+    "bulk_approved_commons_batch02": "app-data/sacred-art/bulk-commons-photo-import-batch02-20261116.v1.json",
+    "commons_rate_limit_retry": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json"
   },
   "policy": {
     "all_records_included": true,
@@ -29,11 +30,11 @@
   "counts": {
     "total_records": 873,
     "selected_artwork_records": 740,
-    "image_available_records": 346,
-    "distinct_locally_hosted_paintings": 343,
+    "image_available_records": 395,
+    "distinct_locally_hosted_paintings": 392,
     "angelus_review_records": 36,
     "unassigned": 611,
-    "verified_image_files": 343,
+    "verified_image_files": 392,
     "full_resolution_image_count_unknown": true
   },
   "records": [
@@ -10516,7 +10517,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:De_visitatie_-_Erasmus_Quellinus_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-109.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:De_visitatie_-_Erasmus_Quellinus_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1495,
+          2000
+        ],
+        "pixel_width": 1196,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/De_visitatie_-_Erasmus_Quellinus_-_Musea_Brugge_-_1.jpg/960px-De_visitatie_-_Erasmus_Quellinus_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -10535,7 +10550,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Doornenkroning_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-110.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Doornenkroning_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1440,
+          2000
+        ],
+        "pixel_width": 1152,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e7/Doornenkroning_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg/960px-Doornenkroning_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -10587,7 +10616,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Antonius_wekt_een_dode_terug_tot_leven_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-114.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Heilige_Antonius_wekt_een_dode_terug_tot_leven_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1075,
+          2000
+        ],
+        "pixel_width": 860,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0f/Heilige_Antonius_wekt_een_dode_terug_tot_leven_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg/960px-Heilige_Antonius_wekt_een_dode_terug_tot_leven_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -10837,7 +10880,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Drievuldigheid_-_Artus_Wolffort_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-123.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Heilige_Drievuldigheid_-_Artus_Wolffort_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1406,
+          2000
+        ],
+        "pixel_width": 1125,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/Heilige_Drievuldigheid_-_Artus_Wolffort_-_Musea_Brugge_-_1.jpg/960px-Heilige_Drievuldigheid_-_Artus_Wolffort_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -10856,7 +10913,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Antonius_-_B._Clerebau_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-124.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Heilige_Antonius_-_B._Clerebau_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1386,
+          2000
+        ],
+        "pixel_width": 1109,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Heilige_Antonius_-_B._Clerebau_-_Musea_Brugge_-_1.jpg/960px-Heilige_Antonius_-_B._Clerebau_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -10875,7 +10946,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Bruno_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-125.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Heilige_Bruno_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1489,
+          2000
+        ],
+        "pixel_width": 1191,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/Heilige_Bruno_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg/960px-Heilige_Bruno_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -10894,7 +10979,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Catharina_van_Siena_in_extase_-_Joseph_van_den_Kerckhove_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-126.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Heilige_Catharina_van_Siena_in_extase_-_Joseph_van_den_Kerckhove_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1369,
+          2000
+        ],
+        "pixel_width": 1095,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Heilige_Catharina_van_Siena_in_extase_-_Joseph_van_den_Kerckhove_-_Musea_Brugge_-_1.jpg/960px-Heilige_Catharina_van_Siena_in_extase_-_Joseph_van_den_Kerckhove_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -10979,7 +11078,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Hieronymus_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-129.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Heilige_Hieronymus_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1635,
+          2000
+        ],
+        "pixel_width": 1308,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7b/Heilige_Hieronymus_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg/960px-Heilige_Hieronymus_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -10998,7 +11111,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Het_kind_Jezus,_de_heerlijkheid_van_God_-_Jacob_de_Oude_Van_Oost_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-130.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Het_kind_Jezus,_de_heerlijkheid_van_God_-_Jacob_de_Oude_Van_Oost_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1409,
+          2000
+        ],
+        "pixel_width": 1127,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Het_kind_Jezus%2C_de_heerlijkheid_van_God_-_Jacob_de_Oude_Van_Oost_-_Musea_Brugge_-_1.jpg/960px-Het_kind_Jezus%2C_de_heerlijkheid_van_God_-_Jacob_de_Oude_Van_Oost_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -11083,7 +11210,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_martelares_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-133.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Heilige_martelares_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1513,
+          2000
+        ],
+        "pixel_width": 1210,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Heilige_martelares_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg/960px-Heilige_martelares_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -11102,7 +11243,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Maria_van_de_Zeven_Smarten_-_Adriaen_Isenbrant_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-134.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Maria_van_de_Zeven_Smarten_-_Adriaen_Isenbrant_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1767,
+          2000
+        ],
+        "pixel_width": 1414,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Maria_van_de_Zeven_Smarten_-_Adriaen_Isenbrant_-_Musea_Brugge_-_1.jpg/960px-Maria_van_de_Zeven_Smarten_-_Adriaen_Isenbrant_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -11154,7 +11309,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Onze_Lieve_Vrouw_drieluik_-_Antoon_Claeissens_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-136.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Onze_Lieve_Vrouw_drieluik_-_Antoon_Claeissens_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1250,
+          2000
+        ],
+        "pixel_width": 1000,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Onze_Lieve_Vrouw_drieluik_-_Antoon_Claeissens_-_Musea_Brugge_-_1.jpg/960px-Onze_Lieve_Vrouw_drieluik_-_Antoon_Claeissens_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -11206,7 +11375,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Sint-Martinus_-_anoniem_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-138.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Sint-Martinus_-_anoniem_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1649,
+          2000
+        ],
+        "pixel_width": 1319,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/18/Sint-Martinus_-_anoniem_-_Musea_Brugge_-_1.jpg/960px-Sint-Martinus_-_anoniem_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -11258,7 +11441,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Tussenkomst_van_Onze_Lieve_Vrouw_voor_het_mensdom_-_Philyps_Bernaert_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-140.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Tussenkomst_van_Onze_Lieve_Vrouw_voor_het_mensdom_-_Philyps_Bernaert_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1360,
+          2000
+        ],
+        "pixel_width": 1088,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Tussenkomst_van_Onze_Lieve_Vrouw_voor_het_mensdom_-_Philyps_Bernaert_-_Musea_Brugge_-_1.jpg/960px-Tussenkomst_van_Onze_Lieve_Vrouw_voor_het_mensdom_-_Philyps_Bernaert_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -11343,7 +11540,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Visioen_van_de_heilige_Antonius_van_Padua_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-143.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Visioen_van_de_heilige_Antonius_van_Padua_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1197,
+          2000
+        ],
+        "pixel_width": 958,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Visioen_van_de_heilige_Antonius_van_Padua_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg/960px-Visioen_van_de_heilige_Antonius_van_Padua_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -12076,7 +12287,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Master_of_the_Legend_of_Saint_Augustine_-_Episcopal_Saint_Enthroned,_Friedl%C3%A4nder,_ENP,_vol._6,_nr._245.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-179.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Master_of_the_Legend_of_Saint_Augustine_-_Episcopal_Saint_Enthroned,_Friedländer,_ENP,_vol._6,_nr._245.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1099,
+          1411
+        ],
+        "pixel_width": 1099,
+        "pixel_height": 1411
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Master_of_the_Legend_of_Saint_Augustine_-_Episcopal_Saint_Enthroned%2C_Friedl%C3%A4nder%2C_ENP%2C_vol._6%2C_nr._245.jpg/960px-Master_of_the_Legend_of_Saint_Augustine_-_Episcopal_Saint_Enthroned%2C_Friedl%C3%A4nder%2C_ENP%2C_vol._6%2C_nr._245.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -12114,7 +12339,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:William-Adolphe_Bouguereau_The_Virgin_With_Angels.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-181.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:William-Adolphe_Bouguereau_The_Virgin_With_Angels.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1627,
+          2572
+        ],
+        "pixel_width": 1012,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5c/William-Adolphe_Bouguereau_The_Virgin_With_Angels.jpg/960px-William-Adolphe_Bouguereau_The_Virgin_With_Angels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -12218,7 +12457,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_L%27Ascension.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-185.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Gustave_Doré_-_L'Ascension.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1702,
+          2813
+        ],
+        "pixel_width": 968,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Gustave_Dor%C3%A9_-_L%27Ascension.jpg/960px-Gustave_Dor%C3%A9_-_L%27Ascension.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16891,7 +17144,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Veronese-Bethsab%C3%A9e_au_bain-Lyon.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-371.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Veronese-Bethsabée_au_bain-Lyon.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1500,
+          1287
+        ],
+        "pixel_width": 1500,
+        "pixel_height": 1287
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bc/Veronese-Bethsab%C3%A9e_au_bain-Lyon.jpg/960px-Veronese-Bethsab%C3%A9e_au_bain-Lyon.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17208,7 +17475,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Fontana_Vierge.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-388.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Fontana_Vierge.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1652,
+          2515
+        ],
+        "pixel_width": 1051,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Fontana_Vierge.jpg/960px-Fontana_Vierge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17407,7 +17688,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Theodoor_Boeyermans_(1620-1678)_De_extase_van_de_heilige_Rosalia_van_Palermo_-_Palais_des_Beaux_Arts_de_Lille_25-11-2010_14-15-22.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-397.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Theodoor_Boeyermans_(1620-1678)_De_extase_van_de_heilige_Rosalia_van_Palermo_-_Palais_des_Beaux_Arts_de_Lille_25-11-2010_14-15-22.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1828,
+          2526
+        ],
+        "pixel_width": 1158,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Theodoor_Boeyermans_%281620-1678%29_De_extase_van_de_heilige_Rosalia_van_Palermo_-_Palais_des_Beaux_Arts_de_Lille_25-11-2010_14-15-22.jpg/960px-Theodoor_Boeyermans_%281620-1678%29_De_extase_van_de_heilige_Rosalia_van_Palermo_-_Palais_des_Beaux_Arts_de_Lille_25-11-2010_14-15-22.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17497,7 +17792,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Brueghel_jeune_St_paul_conduit_a_damas.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-401.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Brueghel_jeune_St_paul_conduit_a_damas.JPG",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1800,
+          1257
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1117
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Lille_PdBA_Brueghel_jeune_St_paul_conduit_a_damas.JPG/960px-Lille_PdBA_Brueghel_jeune_St_paul_conduit_a_damas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17516,7 +17825,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_ter_brugghen_derision_christ.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-402.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_ter_brugghen_derision_christ.JPG",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1095,
+          1400
+        ],
+        "pixel_width": 1095,
+        "pixel_height": 1400
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/Lille_PdBA_ter_brugghen_derision_christ.JPG/960px-Lille_PdBA_ter_brugghen_derision_christ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17535,7 +17858,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_cranach_derision_du_christ.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-403.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_cranach_derision_du_christ.JPG",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1800,
+          2607
+        ],
+        "pixel_width": 1105,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Lille_PdBA_cranach_derision_du_christ.JPG/960px-Lille_PdBA_cranach_derision_du_christ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17819,7 +18156,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Finsonius_christ_colonne.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-415.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Finsonius_christ_colonne.JPG",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1302,
+          2000
+        ],
+        "pixel_width": 1042,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/Lille_PdBA_Finsonius_christ_colonne.JPG/960px-Lille_PdBA_Finsonius_christ_colonne.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17838,7 +18189,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Flemalle_st_lambert.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-416.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Flemalle_st_lambert.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1673,
+          2486
+        ],
+        "pixel_width": 1077,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Lille_PdBA_Flemalle_st_lambert.jpg/960px-Lille_PdBA_Flemalle_st_lambert.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17857,7 +18222,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_pays_bas_sud_deploration_du_christ.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-417.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_pays_bas_sud_deploration_du_christ.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1200,
+          1517
+        ],
+        "pixel_width": 1200,
+        "pixel_height": 1517
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c7/Lille_PdBA_pays_bas_sud_deploration_du_christ.jpg/960px-Lille_PdBA_pays_bas_sud_deploration_du_christ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18099,7 +18478,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Jeanne_d%27Arc_-_%C3%89douard_Paupion_-_MBA_Dijon_2144.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-431.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Jeanne_d'Arc_-_Édouard_Paupion_-_MBA_Dijon_2144.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1684,
+          1080
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1026
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Jeanne_d%27Arc_-_%C3%89douard_Paupion_-_MBA_Dijon_2144.jpg/960px-Jeanne_d%27Arc_-_%C3%89douard_Paupion_-_MBA_Dijon_2144.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18137,7 +18530,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_de_crayer_christ.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-434.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_de_crayer_christ.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1292,
+          2000
+        ],
+        "pixel_width": 1034,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Lille_PdBA_de_crayer_christ.jpg/960px-Lille_PdBA_de_crayer_christ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18156,7 +18563,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_jacomart_trinite.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-435.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_jacomart_trinite.JPG",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1730,
+          2400
+        ],
+        "pixel_width": 1153,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f6/Lille_PdBA_jacomart_trinite.JPG/960px-Lille_PdBA_jacomart_trinite.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18175,7 +18596,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_van_Dick_christ_croix.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-436.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_van_Dick_christ_croix.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1067,
+          1790
+        ],
+        "pixel_width": 954,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Lille_PdBA_van_Dick_christ_croix.jpg/960px-Lille_PdBA_van_Dick_christ_croix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -19502,7 +19937,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Mathieu_Le_Nain_Le_Christ_chez_Marthe_et_Marie.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-498.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Mathieu_Le_Nain_Le_Christ_chez_Marthe_et_Marie.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1633,
+          2142
+        ],
+        "pixel_width": 1220,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Mathieu_Le_Nain_Le_Christ_chez_Marthe_et_Marie.jpg/960px-Mathieu_Le_Nain_Le_Christ_chez_Marthe_et_Marie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -19606,7 +20055,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:David_Teniers_-_Christ_mort_soutenu_par_un_ange.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-503.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:David_Teniers_-_Christ_mort_soutenu_par_un_ange.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1136,
+          1537
+        ],
+        "pixel_width": 1136,
+        "pixel_height": 1537
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2b/David_Teniers_-_Christ_mort_soutenu_par_un_ange.jpg/960px-David_Teniers_-_Christ_mort_soutenu_par_un_ange.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -19625,7 +20088,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Ecole_fran%C3%A7aise_-_Saint_Louis.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-504.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Ecole_française_-_Saint_Louis.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1690,
+          2178
+        ],
+        "pixel_width": 1242,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Ecole_fran%C3%A7aise_-_Saint_Louis.jpg/960px-Ecole_fran%C3%A7aise_-_Saint_Louis.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -19715,7 +20192,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Martyrdom_of_Saint_Catherine_by_Gaspar_de_Crayer,_1622.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-508.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Martyrdom_of_Saint_Catherine_by_Gaspar_de_Crayer,_1622.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1152,
+          1509
+        ],
+        "pixel_width": 1152,
+        "pixel_height": 1509
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Martyrdom_of_Saint_Catherine_by_Gaspar_de_Crayer%2C_1622.jpg/960px-Martyrdom_of_Saint_Catherine_by_Gaspar_de_Crayer%2C_1622.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -19734,7 +20225,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Eustache_Le_Sueur_-_Apparition_du_Christ_%C3%A0_Madeleine.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-509.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Eustache_Le_Sueur_-_Apparition_du_Christ_à_Madeleine.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1513,
+          1700
+        ],
+        "pixel_width": 1424,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/Eustache_Le_Sueur_-_Apparition_du_Christ_%C3%A0_Madeleine.jpg/960px-Eustache_Le_Sueur_-_Apparition_du_Christ_%C3%A0_Madeleine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -19791,7 +20296,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Charles_de_La_Fosse_-_Christ_au_d%C3%A9sert.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-512.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Charles_de_La_Fosse_-_Christ_au_désert.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1810,
+          2505
+        ],
+        "pixel_width": 1156,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Charles_de_La_Fosse_-_Christ_au_d%C3%A9sert.jpg/960px-Charles_de_La_Fosse_-_Christ_au_d%C3%A9sert.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -19810,7 +20329,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_-_Adoration_des_mages_1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-514.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_-_Adoration_des_mages_1.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1702,
+          2648
+        ],
+        "pixel_width": 1028,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6e/Abraham_Bloemaert_-_Adoration_des_mages_1.jpg/960px-Abraham_Bloemaert_-_Adoration_des_mages_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -19952,7 +20485,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Bertholet_Fl%C3%A9mal_-_D%C3%A9ploration_de_Christ_mort_(huile_sur_toile,_1647-1650,_152_x_140_cm,_Mus%C3%A9e_des_beaux-arts_d%27Orl%C3%A9ans).jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-522.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Bertholet_Flémal_-_Déploration_de_Christ_mort_(huile_sur_toile,_1647-1650,_152_x_140_cm,_Musée_des_beaux-arts_d'Orléans).jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1831,
+          2000
+        ],
+        "pixel_width": 1465,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/Bertholet_Fl%C3%A9mal_-_D%C3%A9ploration_de_Christ_mort_%28huile_sur_toile%2C_1647-1650%2C_152_x_140_cm%2C_Mus%C3%A9e_des_beaux-arts_d%27Orl%C3%A9ans%29.jpg/960px-Bertholet_Fl%C3%A9mal_-_D%C3%A9ploration_de_Christ_mort_%28huile_sur_toile%2C_1647-1650%2C_152_x_140_cm%2C_Mus%C3%A9e_des_beaux-arts_d%27Orl%C3%A9ans%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -20170,7 +20717,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_L%27Ange_de_Tobie.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-534.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Gustave_Doré_-_L'Ange_de_Tobie.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1108,
+          1411
+        ],
+        "pixel_width": 1108,
+        "pixel_height": 1411
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/22/Gustave_Dor%C3%A9_-_L%27Ange_de_Tobie.jpg/960px-Gustave_Dor%C3%A9_-_L%27Ange_de_Tobie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -20293,7 +20854,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File%3AJoseph_et_la_femme_de_Putiphar_-_S%C3%A9bastien_Leclerc_le_jeune_-_MM_1938F603.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-541.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Joseph_et_la_femme_de_Putiphar_-_Sébastien_Leclerc_le_jeune_-_MM_1938F603.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1246,
+          1552
+        ],
+        "pixel_width": 1246,
+        "pixel_height": 1552
+      },
       "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Joseph_et_la_femme_de_Putiphar_-_S%C3%A9bastien_Leclerc_le_jeune_-_MM_1938F603.jpg/640px-Joseph_et_la_femme_de_Putiphar_-_S%C3%A9bastien_Leclerc_le_jeune_-_MM_1938F603.jpg",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -20407,7 +20982,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File%3ALe_Festin_de_Balthazar_-_Ercole_Graziani_-_MM_1938E531.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-547.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Le_Festin_de_Balthazar_-_Ercole_Graziani_-_MM_1938E531.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1288,
+          1722
+        ],
+        "pixel_width": 1197,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Le_Festin_de_Balthazar_-_Ercole_Graziani_-_MM_1938E531.jpg/640px-Le_Festin_de_Balthazar_-_Ercole_Graziani_-_MM_1938E531.jpg",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -20464,7 +21053,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Le_Retour_de_l%27Enfant_prodigue_-_Attribu%C3%A9_%C3%A0_Jean_Jacques_Forty_-_MM_1938F214.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-550.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Le_Retour_de_l'Enfant_prodigue_-_Attribué_à_Jean_Jacques_Forty_-_MM_1938F214.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1218,
+          1563
+        ],
+        "pixel_width": 1218,
+        "pixel_height": 1563
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Le_Retour_de_l%27Enfant_prodigue_-_Attribu%C3%A9_%C3%A0_Jean_Jacques_Forty_-_MM_1938F214.jpg/960px-Le_Retour_de_l%27Enfant_prodigue_-_Attribu%C3%A9_%C3%A0_Jean_Jacques_Forty_-_MM_1938F214.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -20483,7 +21086,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Le_Retour_du_jeune_Tobie_-_Mathieu_Elias_-_MM_1938F46.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-551.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Le_Retour_du_jeune_Tobie_-_Mathieu_Elias_-_MM_1938F46.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1246,
+          1500
+        ],
+        "pixel_width": 1246,
+        "pixel_height": 1500
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ad/Le_Retour_du_jeune_Tobie_-_Mathieu_Elias_-_MM_1938F46.jpg/960px-Le_Retour_du_jeune_Tobie_-_Mathieu_Elias_-_MM_1938F46.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -20554,7 +21171,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File%3ALe_sermon_sur_la_montagne_-_Jean-Baptiste_de_Champaigne_-_MM_1938E146.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-554.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Le_sermon_sur_la_montagne_-_Jean-Baptiste_de_Champaigne_-_MM_1938E146.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1552,
+          1128
+        ],
+        "pixel_width": 1552,
+        "pixel_height": 1128
+      },
       "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Le_sermon_sur_la_montagne_-_Jean-Baptiste_de_Champaigne_-_MM_1938E146.jpg/640px-Le_sermon_sur_la_montagne_-_Jean-Baptiste_de_Champaigne_-_MM_1938E146.jpg",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -20649,7 +21280,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Pierre_gu%C3%A9rissant_le_paralytique_-_Girolamo_Marchesi_-_MM_1938E520.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-560.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Saint_Pierre_guérissant_le_paralytique_-_Girolamo_Marchesi_-_MM_1938E520.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1490,
+          1147
+        ],
+        "pixel_width": 1490,
+        "pixel_height": 1147
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Saint_Pierre_gu%C3%A9rissant_le_paralytique_-_Girolamo_Marchesi_-_MM_1938E520.jpg/960px-Saint_Pierre_gu%C3%A9rissant_le_paralytique_-_Girolamo_Marchesi_-_MM_1938E520.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -20815,7 +21460,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File%3AAlessandro_Rosi_St_S%C3%A9bastien_soign%C3%A9_par_Ste_Ir%C3%A8ne.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-568.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Alessandro_Rosi_St_Sébastien_soigné_par_Ste_Irène.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1559,
+          1221
+        ],
+        "pixel_width": 1559,
+        "pixel_height": 1221
+      },
       "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Alessandro_Rosi_St_S%C3%A9bastien_soign%C3%A9_par_Ste_Ir%C3%A8ne.jpg/640px-Alessandro_Rosi_St_S%C3%A9bastien_soign%C3%A9_par_Ste_Ir%C3%A8ne.jpg",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -20853,7 +21512,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:GIORDANO_Luca_1692-95_Saint_Luc_peignant_la_Vierge.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-570.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:GIORDANO_Luca_1692-95_Saint_Luc_peignant_la_Vierge.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1470,
+          1130
+        ],
+        "pixel_width": 1470,
+        "pixel_height": 1130
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9c/GIORDANO_Luca_1692-95_Saint_Luc_peignant_la_Vierge.jpg/960px-GIORDANO_Luca_1692-95_Saint_Luc_peignant_la_Vierge.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -20891,7 +21564,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Pierre-Luca_Giordano_1685c_L%27%C3%A9l%C3%A9vation_de_la_croix.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-572.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED_AFTER_RATE_LIMIT_RETRY",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Owner-selected exact Commons source file; previously rate-limited at image download; read with sequential request pacing and complete original frame. 1600px derivative. Original source JPEG not archived.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Pierre-Luca_Giordano_1685c_L'élévation_de_la_croix.jpg",
+        "source_note": "Commons exact-file public-domain/CC0 claim only; not independent international photographic rights certification.",
+        "source_dimensions": [
+          1413,
+          1193
+        ],
+        "pixel_width": 1413,
+        "pixel_height": 1193
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/Pierre-Luca_Giordano_1685c_L%27%C3%A9l%C3%A9vation_de_la_croix.jpg/960px-Pierre-Luca_Giordano_1685c_L%27%C3%A9l%C3%A9vation_de_la_croix.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
