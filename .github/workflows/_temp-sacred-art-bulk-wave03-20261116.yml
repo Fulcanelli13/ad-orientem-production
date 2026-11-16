@@ -25,6 +25,12 @@ jobs:
           python3 -u tools/audit-bulk-gallery-museum-masters-20261116.py
           python3 -u tools/retry-commons-429-wave03-20261116.py
           python3 tools/finalize-sacred-art-wave03-20261116.py
+          # Stage verified image bytes and provenance BEFORE cross-generation legacy tests;
+          # branch remains unmerged if any validation fails. This avoids re-downloading
+          # 49 legitimate, slow-resolved Commons sources for an assertion-only fix.
+          git add app-data/sacred-art site/gallery tests
+          git -c user.name='Ad Orientem Sacred Art Bulk Recovery' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Stage byte-verified Commons wave03 gallery assets for independent validation'
+          git push origin HEAD:feature/sacred-art-bulk-recovery-wave03-20261116
           node tests/sacred-art-commons-wave03.mjs
           node tests/sacred-art-bulk-commons-batch02.mjs
           node tests/sacred-art-bulk-commons.mjs
@@ -39,8 +45,7 @@ jobs:
           node tests/production-shell.mjs
           node --check site/gallery/gallery.js
           git rm .github/workflows/_temp-sacred-art-bulk-wave03-20261116.yml
-          git add app-data/sacred-art site/gallery tests
-          git -c user.name='Ad Orientem Sacred Art Bulk Recovery' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Respect Commons throttling and reconcile all missing museum artworks'
+          git -c user.name='Ad Orientem Sacred Art Bulk Recovery' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Complete verified Commons retry and remove temporary runner'
           git push origin HEAD:feature/sacred-art-bulk-recovery-wave03-20261116
 
 # Rerun with corrected 305-vs-221 historical catalogue assertion.
