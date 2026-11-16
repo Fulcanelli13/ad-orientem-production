@@ -1,0 +1,33 @@
+name: Temporary devotional-art archive verification
+on:
+  push:
+    branches:
+      - feature/devotional-released-asset-recovery-20261116
+    paths:
+      - .github/workflows/_temp-devotional-art-check-20261116.yml
+permissions:
+  contents: write
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Verify exact source, photography hold and gallery/prayer integrity
+        shell: bash
+        run: |
+          set -euo pipefail
+          node tests/sacred-art-devotional-recovery.mjs
+          node tests/sacred-art-san-polo.mjs
+          node tests/sacred-art-gallery.mjs
+          node tests/sacred-art-class-i-sources.mjs
+          node tools/validate-prayer-artwork-assets.mjs
+          node tests/prayer-artwork-activation.mjs
+          node tests/angelus-a1-donor-crosswalk.mjs
+          node tests/angelus-part-artwork-coverage.mjs
+          node tests/production-shell.mjs
+          node --check site/gallery/gallery.js
+          git rm .github/workflows/_temp-devotional-art-check-20261116.yml
+          git -c user.name='Ad Orientem CI' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Remove completed devotional-art verification workflow'
+          git push origin HEAD:feature/devotional-released-asset-recovery-20261116
