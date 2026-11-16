@@ -39,3 +39,7 @@ Run `node tools/validate-prayer-artwork-assets.mjs` after checkout. It validates
 ### Editorial approval scope (v2 index correction)
 
 `candidate_prayer_card_ids` includes all historically eligible/crosswalk/prototype card links, not necessarily explicit owner-approved matches. `owner_approved_exact_card_ids` and `owner_approved_parent_prayer_ids` are **separate, narrower subsets** derived from the original link-level approval flags. No historical candidate is silently relabelled approved. The precise current coverage is 249 works with at least one candidate link, 114 with an exact approved card link, and 15 with a parent prayer approval. Counts are per unique artwork record, not per association.
+
+## Permanent original/source photograph bank · 16 November 2026
+
+The permanent `source-masters/` directory now contains **54 deduplicated exact-source JPEGs**: 11 previously released originals from PR #20, 40 exact museum/research recoveries from PR #22, and three already released Class I Calendar photographs documented in `class-i-source-recovery-20261116.v1.json`. Three further exact originals already reside in their existing `site/gallery/images/` paths. Preserve original byte hashes, institutional identity, original photograph and source-specific rights qualifications. The source bank is archival: it is outside GitHub Pages and does not itself approve gallery publication or prayer-card primaries. The current public gallery remains at 54 displayed paintings and 862 catalogue records.
