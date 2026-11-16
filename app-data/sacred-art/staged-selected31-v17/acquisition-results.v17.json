@@ -1,0 +1,129 @@
+{
+  "schema": "ao.sacred-art.selected31-source-acquisition-v17",
+  "intent": "Research source bank only, no gallery placement, no prayer-card authorization",
+  "acquired_count": 4,
+  "held_count": 0,
+  "records": [
+    {
+      "review_artwork_id": "bap-haarlem",
+      "title": "The Baptism of Christ",
+      "artist": "Cornelis van Haarlem",
+      "original_selection_source": "https://commons.wikimedia.org/?curid=75930307",
+      "verified_museum_identity": "Musée du Louvre, RF 1983-25",
+      "photographer": "Shonagon",
+      "license": "PD-Art / Public Domain Mark (Commons faithful reproduction)",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Le_Bapt%C3%AAme_du_Christ_-_Cornelis_Cornelisz_van_Haarlem_-_Mus%C3%A9e_du_Louvre_-_Peintures_RF_1983-25.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Le_Bapt%C3%AAme_du_Christ_-_Cornelis_Cornelisz_van_Haarlem_-_Mus%C3%A9e_du_Louvre_-_Peintures_RF_1983-25.jpg",
+      "source_sha1": "d855179239ecc39f9e8684213673393aa28c2921",
+      "source_sha256": "5b68c66c317669cd67ec0e6cf6f25b3bbbe108ae4c2277bc9852426923db5a72",
+      "source_bytes": 1225119,
+      "source_dimensions": [
+        2494,
+        2060
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v17/bap-haarlem-source.jpg",
+      "derivative_sha256": "a7101dbd4ff6899ac48b594485dc2ebf0dbae95c20adf56a029a5e4ae1589d5b",
+      "derivative_bytes": 431048,
+      "derivative_dimensions": [
+        2000,
+        1652
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v17/bap-haarlem-2000.webp",
+      "rights_gate": "SOURCE_ONLY__LOUVRE_REUSE_AND_ORIGINAL_SELECTION_IDENTITY_REVIEW",
+      "full_original_composition": true,
+      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
+    },
+    {
+      "review_artwork_id": "trans-raphael",
+      "title": "The Transfiguration",
+      "artist": "Raphael",
+      "original_selection_source": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/la-pinacoteca/sala-viii---secolo-xvi/raffaello-sanzio--trasfigurazione.html",
+      "verified_museum_identity": "Vatican Museums, Pinacoteca, Raphael Transfiguration",
+      "photographer": "Richard Mortel",
+      "license": "CC BY 2.0 (Flickr licence reviewed on Commons)",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Raphael%2C_Transfiguration%2C_1518-20%3B_Vatican_Museums_%282%29_%2848758898761%29.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Raphael%2C_Transfiguration%2C_1518-20%3B_Vatican_Museums_%282%29_%2848758898761%29.jpg",
+      "source_sha1": "ab2de7a03397cdf96466788835b71bebadb1cf28",
+      "source_sha256": "afe110a29670786ee0bac9acb885bdc69adf07d1bfd0f1a2a6f93c2dda6bbde6",
+      "source_bytes": 8252241,
+      "source_dimensions": [
+        2927,
+        4187
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v17/trans-raphael-source.jpg",
+      "derivative_sha256": "333ed85e461d84c032accd0ef6604b28f44c200dfb3a2ecaf23e088b6fad1774",
+      "derivative_bytes": 359564,
+      "derivative_dimensions": [
+        1398,
+        2000
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v17/trans-raphael-2000.webp",
+      "rights_gate": "SOURCE_ONLY__VATICAN_PHOTOGRAPH_PUBLISHING_REVIEW",
+      "full_original_composition": true,
+      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
+    },
+    {
+      "review_artwork_id": "euch-bassano",
+      "title": "The Last Supper",
+      "artist": "Jacopo Bassano",
+      "original_selection_source": "https://www.collezionegalleriaborghese.it/en/opere/last-supper",
+      "verified_museum_identity": "Galleria Borghese, inventory 144",
+      "photographer": "Sailko",
+      "license": "CC BY 3.0 (Sailko); separate Italian heritage-reuse warning",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Jacopo_bassano%2C_ultima_cena%2C_1546-48_circa%2C_04.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Jacopo_bassano%2C_ultima_cena%2C_1546-48_circa%2C_04.jpg",
+      "source_sha1": "98d3b4ef68f804b7b15dcc92b1264501f1de7afa",
+      "source_sha256": "5c763df8b3fae7eed27da78a79057185e4d89119a064ef7d14393677beb29fd7",
+      "source_bytes": 12741996,
+      "source_dimensions": [
+        5472,
+        3504
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v17/euch-bassano-source.jpg",
+      "derivative_sha256": "eee3cf907ec99ef6e94e81b5678d25f634cf37d6a1280369961e2c7f7096ae6f",
+      "derivative_bytes": 544180,
+      "derivative_dimensions": [
+        2000,
+        1281
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v17/euch-bassano-2000.webp",
+      "rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
+      "full_original_composition": true,
+      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
+    },
+    {
+      "review_artwork_id": "euch-rubens",
+      "title": "The Last Supper",
+      "artist": "Peter Paul Rubens",
+      "original_selection_source": "https://pinacotecabrera.org/en/collezioni/collezione-on-line/last-supper/",
+      "verified_museum_identity": "Pinacoteca di Brera, inventory 97",
+      "photographer": "Francesco Bini / Sailko",
+      "license": "CC BY-SA 4.0; separate Italian heritage-reuse warning",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Rubens%2C_ultima_cena%2C_1631-32%2C_01.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Rubens%2C_ultima_cena%2C_1631-32%2C_01.jpg",
+      "source_sha1": "db35a7900d12cd630ebf73249b732e8a3b493ba4",
+      "source_sha256": "1d6ae4ae8102ad5514641f157c2a07673cd820189fa982acae243f07beb9e76e",
+      "source_bytes": 4307465,
+      "source_dimensions": [
+        2232,
+        2716
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v17/euch-rubens-source.jpg",
+      "derivative_sha256": "71d26a8445f3ac312e7ac0690304b301bf7b2ffda4df1a3f251277534b7505a0",
+      "derivative_bytes": 458878,
+      "derivative_dimensions": [
+        1644,
+        2000
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v17/euch-rubens-2000.webp",
+      "rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
+      "full_original_composition": true,
+      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
+    }
+  ],
+  "holds": []
+}
