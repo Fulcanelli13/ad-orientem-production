@@ -1,0 +1,1643 @@
+{
+  "schema": "ao.sacred-art.resolution-held-exact-source-bulk-recovery.v1",
+  "date": "2026-11-16",
+  "scope": "All 182 still-image-missing owner-selected resolution/photo-quality holds after waves 1-5; no new artworks or prayer/card/date placements.",
+  "quality_floor": "No upscaling: actual downloaded image >=750 pixels shortest edge, displayed cropped? never; max 1600px long edge; min final >=700px. Source original should be 1050px shortest and 1400px longest. Old >85MP processing cap is not a quality fault.",
+  "institutional_source_policy": "Exact museum inventory+artist match, labelled Public Domain and nonconflicting IIIF rights required; MSK reuse policy allows offered online collection resolutions, commercial/full-resolution reuse may impose extra conditions. This source evidence must not be generalized to unrelated photos.",
+  "source_photo_rights_caveat": "Gallery WebP derivatives, not full original masters. Do not claim universal jurisdiction clearance.",
+  "museum_object_probes": [
+    {
+      "artwork_id": "RECENT575::054",
+      "accession": "S-49",
+      "object_url": "https://www.mskgent.be/en/collection/s-49",
+      "original_commons_page": "https://commons.wikimedia.org/wiki/File:Anselmus_van_Hulle_-_Pieta_-_S-49_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "decision": "HOLD",
+      "reason": "MUSEUM_EXACT_OBJECT_PHOTO_NOT_RELEASED",
+      "detail": "ORIGINAL_SELECTED_ARTIST_NOT_CONFIRMED_BY_MUSEUM_OBJECT"
+    },
+    {
+      "artwork_id": "RECENT575::072",
+      "accession": "S-91",
+      "object_url": "https://www.mskgent.be/en/collection/s-91",
+      "original_commons_page": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_The_Annunciation_-_WGA11940.jpg",
+      "decision": "QUALIFIED_EXACT_MUSEUM_PHOTO",
+      "rights_uri": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "manifest_url": "https://imagehub.mskgent.be/iiif/3/6868/manifest.json",
+      "image_base": "https://imagehub.mskgent.be/iiif/2/public%2F6868.tif",
+      "source_pixels": [
+        5237,
+        6132
+      ],
+      "download": "https://imagehub.mskgent.be/iiif/2/public%2F6868.tif/full/1600,/0/default.jpg"
+    }
+  ],
+  "artworks": [
+    {
+      "artwork_id": "RECENT575::001",
+      "title": "The Temptation of Saint Anthony the Greatlabel QS:Len,\"The Temptation of Saint Anthony the Great\"",
+      "artist": "Maerten de Vos",
+      "old_held_source_url": "https://commons.wikimedia.org/wiki/File:Maerten_de_Vos_-_The_Temptation_of_Saint_Anthony_the_Great.jpg",
+      "new_photo_page": "https://commons.wikimedia.org/wiki/File:Maerten_de_Vos_-_The_Temptation_of_Saint_Anthony_the_Great.jpg",
+      "exact_photo_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Maerten_de_Vos_-_The_Temptation_of_Saint_Anthony_the_Great.jpg/1920px-Maerten_de_Vos_-_The_Temptation_of_Saint_Anthony_the_Great.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "ORIGINAL_OWNER_APPROVED_FILE_RESIZED_FROM_ULTRAHIGHRES",
+      "original_dimensions": [
+        12625,
+        16671
+      ],
+      "source_download_bytes": 1485565,
+      "source_download_sha256": "a14d64b2116b8256e8caed63ae704122904700868ecbada2b5d8679490837609",
+      "derivative_path": "site/gallery/images/owner-selected-quality-upgrade-001.webp",
+      "derivative_bytes": 493458,
+      "derivative_sha256": "605ef33aeca61c8513019129c198c50723e7de3b919968a0def72fd3b0c06d93",
+      "derivative_git_blob_sha": "ed3764b282c5d22091d3c94af734bd90910a729c",
+      "derivative_dimensions": [
+        1212,
+        1600
+      ],
+      "source_rights": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://kmska.be/en/masterpiece/the-temptation-of-saint-anthony-the-great-0",
+        "artist_metadata": "Maerten de Vos"
+      },
+      "owner_record_status": "APPROVED_BY_USER_2026_11_03",
+      "original_historical_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_full_resolution_jpeg_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::055",
+      "title": "Saint Catherine of Siena Kissing the Wounds of Christ",
+      "artist": "Antoon van den Heuvel",
+      "old_held_source_url": "https://commons.wikimedia.org/wiki/File:Antoon_van_den_Heuvel_-_Saint_Catherine_of_Siena_Kissing_the_Wounds_of_Christ_-_1929-AX_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "new_photo_page": "https://commons.wikimedia.org/wiki/File:Antoon_van_den_Heuvel_-_Saint_Catherine_of_Siena_Kissing_the_Wounds_of_Christ_-_1929-AX_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "exact_photo_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Antoon_van_den_Heuvel_-_Saint_Catherine_of_Siena_Kissing_the_Wounds_of_Christ_-_1929-AX_-_Museum_of_Fine_Arts_Ghent_%28MSK%29.jpg/1920px-Antoon_van_den_Heuvel_-_Saint_Catherine_of_Siena_Kissing_the_Wounds_of_Christ_-_1929-AX_-_Museum_of_Fine_Arts_Ghent_%28MSK%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "ORIGINAL_OWNER_APPROVED_FILE_RESIZED_FROM_ULTRAHIGHRES",
+      "original_dimensions": [
+        7394,
+        12330
+      ],
+      "source_download_bytes": 969319,
+      "source_download_sha256": "be73be78217e7f0327eacb3912941548b4a65639905e1077cf6b5c09fb233279",
+      "derivative_path": "site/gallery/images/owner-selected-quality-upgrade-055.webp",
+      "derivative_bytes": 103256,
+      "derivative_sha256": "2c22b957a7e2ffb5a9cf663f4910bdc954182c7c895a8e0d657e482151b11ccb",
+      "derivative_git_blob_sha": "7f9a58a78194f25bdcb01aa5ab21d4c4f31798ad",
+      "derivative_dimensions": [
+        959,
+        1600
+      ],
+      "source_rights": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Museum of Fine Arts Ghent (MSK)",
+        "artist_metadata": "Antoon van den Heuvel"
+      },
+      "owner_record_status": "APPROVED_BY_USER_2026_11_03",
+      "original_historical_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_full_resolution_jpeg_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::080",
+      "title": "Saint Sebastian Released by the Roman Widow Irene and her Servant",
+      "artist": "Melchior de la Mars",
+      "old_held_source_url": "https://commons.wikimedia.org/wiki/File:Melchior_de_la_Mars_-_Saint_Sebastian_Released_by_the_Roman_Widow_Irene_and_her_Servant_-_2022-H_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "new_photo_page": "https://commons.wikimedia.org/wiki/File:Melchior_de_la_Mars_-_Saint_Sebastian_Released_by_the_Roman_Widow_Irene_and_her_Servant_-_2022-H_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "exact_photo_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Melchior_de_la_Mars_-_Saint_Sebastian_Released_by_the_Roman_Widow_Irene_and_her_Servant_-_2022-H_-_Museum_of_Fine_Arts_Ghent_%28MSK%29.jpg/1920px-Melchior_de_la_Mars_-_Saint_Sebastian_Released_by_the_Roman_Widow_Irene_and_her_Servant_-_2022-H_-_Museum_of_Fine_Arts_Ghent_%28MSK%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "ORIGINAL_OWNER_APPROVED_FILE_RESIZED_FROM_ULTRAHIGHRES",
+      "original_dimensions": [
+        10311,
+        13454
+      ],
+      "source_download_bytes": 1355376,
+      "source_download_sha256": "366141f28195e4848546b813aa735242c56aee2abe6aabdd2d0fe34311629aa9",
+      "derivative_path": "site/gallery/images/owner-selected-quality-upgrade-080.webp",
+      "derivative_bytes": 391554,
+      "derivative_sha256": "51401743a981f53162338158fd0081a911641adc3235ef8e1059e15b92e0da4b",
+      "derivative_git_blob_sha": "bc8f7aa723de2cc663532d83f135f144086f72ac",
+      "derivative_dimensions": [
+        1226,
+        1600
+      ],
+      "source_rights": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Museum of Fine Arts Ghent (MSK)",
+        "artist_metadata": "Melchior de la Mars"
+      },
+      "owner_record_status": "APPROVED_BY_USER_2026_11_03",
+      "original_historical_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_full_resolution_jpeg_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::266",
+      "title": "Twee meisjes als de heiligen Agnes en Dorothea",
+      "artist": "Michaelina Wautier",
+      "old_held_source_url": "https://commons.wikimedia.org/wiki/File:Michaelina_Wautier_-_Twee_meisjes_als_de_heiligen_Agnes_en_Dorothea_-_599_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff",
+      "new_photo_page": "https://commons.wikimedia.org/wiki/File:Michaelina_Wautier_-_Twee_meisjes_als_de_heiligen_Agnes_en_Dorothea_-_599_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff",
+      "exact_photo_download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Michaelina_Wautier_-_Twee_meisjes_als_de_heiligen_Agnes_en_Dorothea_-_599_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff/lossy-page1-1920px-Michaelina_Wautier_-_Twee_meisjes_als_de_heiligen_Agnes_en_Dorothea_-_599_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "method": "ORIGINAL_OWNER_APPROVED_FILE_RESIZED_FROM_ULTRAHIGHRES",
+      "original_dimensions": [
+        11569,
+        8789
+      ],
+      "source_download_bytes": 418195,
+      "source_download_sha256": "4cfc546bf2dacaa9c0977198789c27a4f019f7880af14e900a5af6bbb4a25739",
+      "derivative_path": "site/gallery/images/owner-selected-quality-upgrade-266.webp",
+      "derivative_bytes": 154730,
+      "derivative_sha256": "841cde3ff0f9e270fba13536b917314f8cc07b27d4065d08393d6b191d283d98",
+      "derivative_git_blob_sha": "6b08ce039e429f8efbf0ad82feadfefe2a08e4ba",
+      "derivative_dimensions": [
+        1600,
+        1216
+      ],
+      "source_rights": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Royal Museum of Fine Arts Antwerp",
+        "artist_metadata": "Michaelina Wautier"
+      },
+      "owner_record_status": "APPROVED_BY_USER_2026_11_03",
+      "original_historical_rights_note": "NOT_PRODUCTION_CLEARED",
+      "original_full_resolution_jpeg_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::072",
+      "title": "Annunciation",
+      "artist": "Jan Janssens",
+      "old_held_source_url": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_The_Annunciation_-_WGA11940.jpg",
+      "new_photo_page": "https://www.mskgent.be/en/collection/s-91",
+      "exact_photo_download_url": "https://imagehub.mskgent.be/iiif/2/public%2F6868.tif/full/1600,/0/default.jpg",
+      "method": "MUSEUM_MSK_GENT_EXACT_OBJECT_IIIF",
+      "original_dimensions": [
+        5237,
+        6132
+      ],
+      "source_download_bytes": 321030,
+      "source_download_sha256": "4075e56b66a2a36afd6d233c8507a9883a4cea8fb155a1e8bf7c5b98165a9035",
+      "derivative_path": "site/gallery/images/owner-selected-quality-upgrade-072.webp",
+      "derivative_bytes": 164912,
+      "derivative_sha256": "b07aa2f8719b2074e7be71b5f06724157b90a8d90d9a105ec06375da144e17e2",
+      "derivative_git_blob_sha": "be3db866998b5e3a9b785a7e6ac1e17f60e7d6df",
+      "derivative_dimensions": [
+        1367,
+        1600
+      ],
+      "source_rights": {
+        "license_short": "MSK Ghent Public Domain on exact catalogue object and IIIF manifest",
+        "copyrighted_flag": "false",
+        "museum_policy": "https://www.mskgent.be/en/collection/image-rights",
+        "rights_uri": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "inventory": "S-91"
+      },
+      "owner_record_status": "APPROVED_BY_USER_2026_11_03",
+      "original_historical_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_full_resolution_jpeg_archived": false
+    }
+  ],
+  "held": [
+    {
+      "artwork_id": "CANONICAL::C34:franciscodezurbaransaintlukeasapainterbeforechristonthecross",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbar%C3%A1n_-_Saint_Luke_as_a_Painter_before_Christ_on_the_Cross_-_WGA26077.jpg",
+      "title": "Francisco de Zurbarán - Saint Luke as a Painter before Christ on the Cross - WGA26077.jpg",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "NEW::carmignano-pontormo-visitation",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pontormo-visitation-after-restorationRGB.jpg",
+      "title": "The Visitation (Carmignano)",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "NEW::vatican-oddi-raphael",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pala_degli_Oddi_(Raphael)_September_2015-1a.jpg",
+      "title": "Coronation of the Virgin (Oddi Altarpiece)",
+      "decision": "HOLD",
+      "reason": "COMMONS_EXPLICIT_COPYRIGHT_FLAG_MISSING",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::vatican-reni-pentecost-1608",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Guido_Reni,_Pentecoste,_circa_1609_-FG_02.jpg",
+      "title": "Pentecost (fresco)",
+      "decision": "HOLD",
+      "reason": "COMMONS_EXPLICIT_COPYRIGHT_FLAG_MISSING",
+      "detail": ""
+    },
+    {
+      "artwork_id": "RECENT575::002",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_Ecstasy_of_Saint_Teresa.jpg",
+      "title": "Ecstasy of Saint Teresa",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::004",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Michiel_Coxie_-_Triumphant_Christ.jpg",
+      "title": "Triumphant Christ",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::005",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Herreyns_I_-_Scenes_from_the_Life_of_Christ_-_Marriage_at_Cana.jpg",
+      "title": "Scenes from the Life of Christ - Marriage at Cana",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::014",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Champaigne_Christ_ressuscit%C3%A9_Toulouse.jpg",
+      "title": "Champaigne Christ ressuscité Toulouse",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::018",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ambrosius_Francken_(I)_-_The_Last_Supper.jpg",
+      "title": "The Last Supper",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::020",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Michiel_Coxie_-_The_martyrdom_of_St._Sebastian.jpg",
+      "title": "The martyrdom of St. Sebastian",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::021",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Balthasar_van_Cortbemde_-_The_Good_Samaritan.jpg",
+      "title": "The Good Samaritan",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::025",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Cornelis_Schut_-_The_cleansing_of_Maria_in_the_temple.jpg",
+      "title": "The cleansing of Maria in the temple",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::026",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hendrick_de_Clerck_-_The_baptism_of_Christ.jpg",
+      "title": "The baptism of Christ",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::029",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Herreyns_I_-_God_the_Father.jpg",
+      "title": "God the Father",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::031",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Herreyns_I_-_Scenes_from_the_Life_of_Christ_-_Christ_Handing_the_Keys_to_St_Peter.jpg",
+      "title": "Scenes from the life of Christ - Christ Handing the Keys to Saint Peter",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::032",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Herreyns_I_-_Scenes_from_the_Life_of_Christ_-_Baptism_of_Christ.jpg",
+      "title": "Scenes from the Life of Christ - Baptism of Christ",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::033",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Herreyns_I_-_Scenes_from_the_Life_of_Christ_-_Mary_Magdalene_washing_the_feet_of_Jesus.jpg",
+      "title": "Scenes from the Life of Christ - Mary Magdalene washing the feet of Jesus",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::034",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Herreyns_I_-_Scenes_from_the_Life_of_Christ_-_The_raising_of_Lazarus.jpg",
+      "title": "Scenes from the Life of Christ - The raising of Lazarus",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::035",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Herreyns_I_-_Scenes_from_the_Life_of_Christ_-_Return_of_the_Prodigal_Son.jpg",
+      "title": "Scenes from the Life of Christ - Return of the Prodigal Son",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::036",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Juliaan_de_Vriendt_-_Suffer_the_Little_Children_come_to_Me.jpg",
+      "title": "Suffer the Little Children come to Me",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::037",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Maerten_de_Vos_-_St._Didacus_in_prayer.jpg",
+      "title": "St. Didacus in prayer",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::039",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Maerten_de_Vos_-_The_incredulity_of_Thomas.jpg",
+      "title": "The incredulity of Thomas",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::044",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Maerten_de_Vos_-_Triptych_of_the_Guild_of_the_Old_Crossbow_-_Christ_Triomfator.jpg",
+      "title": "Triptych of the Guild of the Old Crossbow",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::075",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fran%C3%A7ois-Joseph_Navez_(1787-1869)_-_De_heilige_Veronica_van_Binaco_-_(1816)_-_MSK_Gent_17-03-2009_11-42-18.JPG",
+      "title": "De heilige Veronica van Binaco",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::076",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_The_Flagellation_of_Christ_-_WGA20432.jpg",
+      "title": "The Flagellation of Christ",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::077",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_The_crowning_with_thorns.jpg",
+      "title": "The crowning with thorns",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::082",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alexandre_Antigna_la_f%C3%AAte_Dieu_1855_b.jpg",
+      "title": "Alexandre Antigna la fête Dieu 1855 b",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::089",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Charles_wautier-vocaci%C3%B3n_de_san_mateo-augustins.jpg",
+      "title": "Charles wautier-vocación de san mateo-augustins",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::092",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Francken_Noces_(RO_862).jpg",
+      "title": "Les Noces de Cana",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::096",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ricchi_Sainte_C%C3%A9cile_(2004_1_296).jpg",
+      "title": "Sainte Cécile",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::097",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pierre_Subleyras,_%22Saint_Joseph_tenant_l%27Enfant_J%C3%A9sus%22,_Mus%C3%A9e_des_Augustins_(2004_1_282).jpg",
+      "title": "Saint Joseph tenant L'Enfant Jésus",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::098",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tournier_Saint_Pierre_Mus%C3%A9e_des_Augustins_2015_2_1.jpg",
+      "title": "French: Saint PierreSaint Petertitle QS:P1476,fr:\"Saint Pierre\"label QS:Lfr,\"Saint Pierre\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::147",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Doornenkroning,_1661,_Groeningemuseum,_0040103000.jpg",
+      "title": "Doornenkroning",
+      "decision": "HOLD",
+      "reason": "COMMONS_EXPLICIT_COPYRIGHT_FLAG_MISSING",
+      "detail": ""
+    },
+    {
+      "artwork_id": "RECENT575::148",
+      "source_url": "https://commons.wikimedia.org/wiki/File:De_heks_van_Endor_roept_Samu%C3%ABls_geest_op_voor_Saul,_circa_1619,_Groeningemuseum,_0040712000.jpg",
+      "title": "De heks van Endor roept Samuëls geest op voor Saul",
+      "decision": "HOLD",
+      "reason": "COMMONS_EXPLICIT_COPYRIGHT_FLAG_MISSING",
+      "detail": ""
+    },
+    {
+      "artwork_id": "RECENT575::150",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_van_Oost_(I)_-_Female_Martyr_-_WGA16650.jpg",
+      "title": "Dutch: Een vrouwelijke heilige Female Martyrlabel QS:Len,\"Female Martyr\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::151",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Provoost_-_Crucifixion_-_WGA18446.jpg",
+      "title": "Crucifixion",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::152",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_van_Oost_I_-_Christ_Crowned_with_Thorns.jpg",
+      "title": "Christ Crowned with Thorns",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::153",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Laatste_Avondmaal,_1548,_Groeningemuseum,_0040033000.jpg",
+      "title": "Laatste Avondmaal",
+      "decision": "HOLD",
+      "reason": "COMMONS_EXPLICIT_COPYRIGHT_FLAG_MISSING",
+      "detail": ""
+    },
+    {
+      "artwork_id": "RECENT575::154",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Hi%C3%ABronymus,_circa_1817_-_circa_1892,_Groeningemuseum,_0041048000.jpg",
+      "title": "Heilige Hiëronymus",
+      "decision": "HOLD",
+      "reason": "COMMONS_EXPLICIT_COPYRIGHT_FLAG_MISSING",
+      "detail": ""
+    },
+    {
+      "artwork_id": "RECENT575::155",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kroning_van_Maria,_circa_1607_-_circa_1650,_Groeningemuseum,_0041199000.jpg",
+      "title": "Kroning van Maria",
+      "decision": "HOLD",
+      "reason": "COMMONS_EXPLICIT_COPYRIGHT_FLAG_MISSING",
+      "detail": ""
+    },
+    {
+      "artwork_id": "RECENT575::156",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Antonius_wekt_een_dode_terug_tot_leven,_circa_1640_-_circa_1650,_Groeningemuseum,_0040431001.jpg",
+      "title": "Heilige Antonius wekt een dode terug tot leven",
+      "decision": "HOLD",
+      "reason": "COMMONS_EXPLICIT_COPYRIGHT_FLAG_MISSING",
+      "detail": ""
+    },
+    {
+      "artwork_id": "RECENT575::173",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Josse_Lieferinxe_%E2%80%94_St._Michael_Killing_the_Dragon_%E2%80%94_1493-1505.jpg",
+      "title": "Josse Lieferinxe — St. Michael Killing the Dragon — 1493-1505",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::180",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Master_of_the_Legend_of_St_Lucy_Saint_Nicholas_Groeningemuseum_01052015_1_(cropped2).jpg",
+      "title": "Retable of St. Nicholas",
+      "decision": "HOLD",
+      "reason": "COMMONS_EXPLICIT_COPYRIGHT_FLAG_MISSING",
+      "detail": ""
+    },
+    {
+      "artwork_id": "RECENT575::184",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_mort_de_la_Vierge,_Lazerges.jpg",
+      "title": "French: mort de la Vierge.title QS:P1476,fr:\"mort de la Vierge.\"label QS:Lfr,\"mort de la Vierge.\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::218",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Neri_di_Bicci_-_The_Coronation_of_the_Virgin_-_WGA02164.jpg",
+      "title": "The Coronation of the Virgin",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::220",
+      "source_url": "https://commons.wikimedia.org/wiki/File:S%C3%A9bastien_Bourdon_-_Le_Martyre_de_Saint_Andr%C3%A9_-_Mus%C3%A9e_des_Augustins_-_2004_1_52.jpg",
+      "title": "Le Martyre de Saint André",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::221",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Francesco_Cairo_-_Le_Mariage_mystique_de_sainte_Catherine_-_Mus%C3%A9e_des_Augustins_-_2004_1_73.jpg",
+      "title": "Le Mariage mystique de sainte Catherine",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::222",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacques_Stella_-_Le_Mariage_de_la_Vierge_-_Mus%C3%A9e_des_Augustins_-_2004_1_75.jpg",
+      "title": "Le Mariage de la Vierge",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::223",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gabriel_Blanchard_-_La_Purification_de_la_Vierge_-_Mus%C3%A9e_des_Augustins_-_2004_1_213.jpg",
+      "title": "La Purification de la Vierge",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::229",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Tournier_-_Entombment_-_WGA23040.jpg",
+      "title": "Entombment",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::231",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Coebergher_Ecce_Homo_(2004_1_64).jpg",
+      "title": "Ecce Homo",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::233",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anonyme_fran%C3%A7ais_-_Saint_Dominique_-_Mus%C3%A9e_des_Augustins_-_D_1952_3.jpg",
+      "title": "French: Saint DominiqueSaint Dominictitle QS:P1476,fr:\"Saint Dominique\"label QS:Lfr,\"Saint Dominique\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::236",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bartolom%C3%A9_Esteban_Murillo_-_San_Diego_de_Alcala_de_Henares_en_extase_devant_la_croix_-_Mus%C3%A9e_des_Augustins_-_D_1846_1.jpg",
+      "title": "San Diego de Alcala de Henares en extase devant la croix",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::238",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jordaens_Assumption_of_the_Virgin.jpg",
+      "title": "Jordaens Assumption of the Virgin",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::240",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Maarten_van_Heemskerck_-_The_Crucifixion_-_WGA11312.jpg",
+      "title": "The Crucifixion",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::242",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Last_Judgment_Raphael_Coxie.jpg",
+      "title": "Last Judgment Raphael Coxie",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::249",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Verhaghen,_Pieter_Jozef_-_Hagar_and_Ishmael_Banished_by_Abraham_-_1781.jpg",
+      "title": "Hagar and Ishmael Banished by Abraham",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::251",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Massijs_-_The_healing_of_Tobit.jpg",
+      "title": "The healing of Tobit",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::255",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Artus_Wolffort_-_Aanbidding_der_Koningen_-_439_-_Royal_Museum_of_Fine_Arts_Antwerp.jpg",
+      "title": "Aanbidding der Koningen",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::265",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Meester_van_Hoogstraeten_-_Mater_Dolorosa,_1510-1520,_388.tif",
+      "title": "Meester van Hoogstraeten - Mater Dolorosa, 1510-1520, 388",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::267",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_van_Eyck_The_Madonna_with_Canon_van_der_Paele.jpg",
+      "title": "Jan van Eyck The Madonna with Canon van der Paele",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::271",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Provoost_-_Last_Judgement_-_WGA18449.jpg",
+      "title": "Last Judgement",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::272",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pieter_Pourbus_-_Last_Judgement_-_WGA18254.jpg",
+      "title": "Last Judgement",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::279",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Return_of_the_Prodigal_Son_James_Tissot.jpeg",
+      "title": "The Return of the Prodigal Son James Tissot",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::282",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Attributed_to_Marten_Pepijn_or_Ambrosius_Francken_(I)_-_Saint_Luke_preaches_to_the_crowd.jpg",
+      "title": "Saint Luke preaching label QS:Len,\"Saint Luke preaches to the crowd'\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::293",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_van_der_Venne_-_The_raising_of_Lazarus.jpg",
+      "title": "The Raising of Lazarus label QS:Len,\"The raising of Lazarus\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::295",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Metsu,_Lazare_et_le_mauvais_riche.jpg",
+      "title": "Lazare et le mauvais riche",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::300",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Roch-Giovanni_Battista_Cima_mg_9976.jpg",
+      "title": "Saint Roch",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::311",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Crucifixion_-_Simon_Vouet_(A_139).jpg",
+      "title": "Crucifixionlabel QS:Len,\"Crucifixion\"label QS:Lfr,\"La Crucifixion\"label QS:Lpt,\"Crucificação\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::312",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Mise_au_tombeau_-_Eug%C3%A8ne_Delacroix_(B_286).jpg",
+      "title": "La Mise au tombeau",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::313",
+      "source_url": "https://commons.wikimedia.org/wiki/File:L%27Enfant_J%C3%A9sus_retrouv%C3%A9_au_Temple_par_ses_parents_-_Jacques_Stella_(1979-169).jpg",
+      "title": "L'Enfant Jésus retrouvé au Temple par ses parents - Jacques Stella (1979-169)",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::314",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Le_Couronnement_de_la_Vierge_-_Ma%C3%AEtre_de_Santa_Clara_de_Palencia_(A_2938).jpg",
+      "title": "Le Couronnement de la Vierge",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::315",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Le_Repentir_de_saint_Pierre_-_Jusepe_de_Ribera_(X_807-b).jpg",
+      "title": "Le Repentir de saint Pierre",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::317",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-_Adoration_of_the_Shepherds_(Lyon).jpg",
+      "title": "The Adoration of the Shepherdslabel QS:Len,\"The Adoration of the Shepherds\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::324",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Adoration_of_the_Magi_-_WGA20231.jpg",
+      "title": "Adoration of the Magi",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::329",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Brueghel_noli_me_tangere.jpg",
+      "title": "Noli me tangerelabel QS:Len,\"Noli me tangere\"label QS:Les,\"Noli me tangere\"label QS:Lfr,\"Noli me tangere\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::330",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Noli_me_tangere_c._1630_Jan_Brueghel_the_Younger.jpg",
+      "title": "Noli me tangere",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::332",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Sanders_van_Hemessen_-_Christ_driving_the_money_changers_from_the_temple.JPG",
+      "title": "Christ driving the money changers from the temple",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::333",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Wenzel_Coebergher_-_Preparations_for_the_martyrdom_of_St_Sebastian.jpg",
+      "title": "Preparations for the martyrdom of St Sebastian",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::336",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Adam_and_Eve_Chased_out_of_the_Terrestrial_Paradise_(Jean-Achille_Benouville).jpg",
+      "title": "Adam and Eve Chased from the Terrestrial Paradise",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::341",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Fuite_en_%C3%89gypte,_par_Francisco_de_Zurbar%C3%A1n.jpg",
+      "title": "La Fuite en Égypte, par Francisco de Zurbarán",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::346",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Sebastiano_by_Marco_Antonio_Bassetti.jpg",
+      "title": "Saint Sebastiano by Marco Antonio Bassetti",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::357",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Matthias_Gr%C3%BCnewald_-_The_Crucifixion_-_WGA10710.jpg",
+      "title": "The Crucifixion",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::358",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Steen_-_Child_Jesus_in_the_Temple.jpg",
+      "title": "Child Jesus in the Temple",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::359",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Champaigne_Visitation_Gen%C3%A8ve.jpg",
+      "title": "Champaigne Visitation Genève",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::362",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Levieux_Repos_pendant_la_Fuite_en_%C3%89gypte.jpg",
+      "title": "Le Repos pendant la Fuite en Égypte.",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::363",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Reynaud_Levieux,_Le_repos_pendant_la_fuite_en_%C3%89gypte.jpg",
+      "title": "Reynaud Levieux, Le repos pendant la fuite en Égypte",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::364",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Donation_Ballabio_Sassoferrato.jpg",
+      "title": "Madonna in prayer",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::369",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Andrea_Vaccaro,_T%C3%AAte_de_Saint-Jean_Baptiste.jpg",
+      "title": "The Head of Saint John the Baptist on a Platter",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::372",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pietro_Perugino_-_The_Ascension_of_Christ_-_WGA17257.jpg",
+      "title": "The Ascension of Christ",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::380",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saint_S%C3%A9bastien_soign%C3%A9_par_Ir%C3%A8ne_Mus%C3%A9e_des_Beaux-Arts-mairie_de_Bordeaux.jpg",
+      "title": "Saint Sébastien soigné par Irène Musée des Beaux-Arts-mairie de Bordeaux",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::381",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Het_Mirakel_van_Sanctus_JUSTUS-Sir_Peter_Paul_Rubens.jpg",
+      "title": "Het Mirakel van Sanctus JUSTUS-Sir Peter Paul Rubens",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::382",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vouet_-_Anges_portant_la_colonne_de_la_flagellation,_M0332048069.jpg",
+      "title": "Vouet - Anges portant la colonne de la flagellation, M0332048069",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::383",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Angelo_Bronzino_-_Deposition_of_Christ_-_WGA03282.jpg",
+      "title": "Deposition of Christ",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::384",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Fuite_en_%C3%89gypte_Rembrandt_Tours.jpg",
+      "title": "La Fuite en Égypte Rembrandt Tours",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::386",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacques-Louis_David_-_St_Roch_Asking_the_Virgin_Mary_to_Heal_Victims_of_the_Plague_-_WGA06045.jpg",
+      "title": "St Roch Asking the Virgin Mary to Heal Victims of the Plague",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::387",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Mignard_-_Virgin_and_Child_-_WGA15653.jpg",
+      "title": "Madonna and Child",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::389",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hans_Holbein_d._J._-_The_Last_Supper_-_WGA11504.jpg",
+      "title": "The Last Supper",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::390",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Konrad_Witz_-_Saint_Christopher_-_WGA25848.jpg",
+      "title": "Saint Christopher",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::392",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-_Saint_Matthew_and_two_apostles.jpg",
+      "title": "Saint Matthew and two apostles",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::394",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-_Christ_and_the_Pharisees.jpg",
+      "title": "Christ among the Pharisees",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::398",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dieric_Bouts_-_Paradise_-_WGA02965.jpg",
+      "title": "Paradise",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::399",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dieric_Bouts_-_Hell_-_WGA02967.jpg",
+      "title": "Dutch: De val van de zondaren Helllabel QS:Len,\"Hell\"label QS:Lde,\"Hölle\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::404",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gaspar_de_Crayer_-_The_miraculous_draught_of_fish.jpg",
+      "title": "The miraculous draught of fish",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::407",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Erasmus_Quellinus_II_and_Jan_Fyt_-_Jesus_in_the_House_of_Martha_and_Mary.jpg",
+      "title": "Jesus in the House of Martha and Mary",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::409",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Cossiers_-_St_Nicolas_rescuing_captives_or_St_Nicolas_halting_the_arms_of_an_executioner_about_to_behead_a_captive.jpg",
+      "title": "St Nicolas rescuing captives or St Nicolas halting the arms of an executioner about to behead a captive",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::410",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Erasmus_Quellinus_-_Solomon_and_the_Queen_of_Sheba.jpg",
+      "title": "Solomon and the Queen of Sheba",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::414",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_de_vos_martyre_st_philippe.JPG",
+      "title": "Lille PdBA de vos martyre st philippe",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::418",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Louis_Finson_or_Abraham_Vinck,_after_Caravaggio_-_The_martyrdom_of_St_Andrew.jpg",
+      "title": "The martyrdom of St Andrew.label QS:Len,\"The martyrdom of St Andrew.\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::420",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anonyme_-_Le_Martyre_de_saint_Barth%C3%A9lemy_(copie_d%27apr%C3%A8s_Ribera),_CA_46.jpg",
+      "title": "Le Martyre de saint Barthélemy (copie d'après Ribera), CA 46",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::421",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Arrestation_du_Christ_(ma%C3%AEtre_de_l%27autel_de_Beyghem,_mus%C3%A9e_de_Dijon).JPG",
+      "title": "Arrestation du Christ (maître de l'autel de Beyghem, musée de Dijon)",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::422",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Charles_Le_Brun_-_The_Fall_of_the_Rebel_Angels_-_WGA12546.jpg",
+      "title": "The Fall of the Rebel Angels",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::423",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Champaigne_Pr%C3%A9sentation_au_temple_Dijon.jpg",
+      "title": "La Présentation au Temple",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::425",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Corneille_Pr%C3%A9sentation_de_la_Vierge_au_Temple_Dijon.jpg",
+      "title": "Corneille Présentation de la Vierge au Temple Dijon",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::430",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacopo_Bassano_-_The_Martyrdom_of_St_Sebastian.jpg",
+      "title": "The Martyrdom of St Sebastian",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::433",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lethi%C3%A8re_-_D%C3%A9position_de_croix,_1791.jpg",
+      "title": "French: Déposition de croixlabel QS:Lfr,\"Déposition de croix\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::439",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pieter_van_Mol_-_The_dead_Christ_supported_by_an_angel.jpg",
+      "title": "The dead Christ supported by an angel",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::440",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_D%C3%A9position_de_Croix.png",
+      "title": "La Déposition de Croix",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::446",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Adam_Elsheimer_-_Der_Heilige_Laurentius.jpg",
+      "title": "Der Heilige Laurentius",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::447",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alexandre_Cabanel_-_The_Glorification_of_St._Louis.jpg",
+      "title": "The Glorification of St. Louis",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::450",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anonyme_-_Martyre_de_sainte_C%C3%A9cile,_94-055490.jpg",
+      "title": "Le Martyre de sainte Cécile",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::452",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Santa_Agueda_-_Zurbar%C3%A1n_(detalle).png",
+      "title": "Saint Agathelabel QS:Lfr,\"Sainte Agathe\"label QS:Lde,\"Hl. Agathe\"label QS:Len,\"Saint Agathe\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::467",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Van-Loo-Carle-Vierge-Enfant-Rouen.jpg",
+      "title": "French: La Vierge et l'enfant bénissantlabel QS:Lfr,\"La Vierge et l'enfant bénissant\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::475",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Claude-Guy_Hall%C3%A9_-_Le_souper_d%27Emma%C3%BCs_-_628_-_Nantes_Museum_of_Arts.jpg",
+      "title": "Le souper d'Emmaüs",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::477",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dieric_Bouts_-_The_Ascension_of_the_Elect,_also_known_as_Paradise.jpg",
+      "title": "The Ascension of the Elect, also known as Paradise",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::479",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Le_retour_de_Tobie_-_William-Adolphe_Bouguereau_-_MBA_Dijon_CA_232.jpg",
+      "title": "Le retour de Tobie - William-Adolphe Bouguereau - MBA Dijon CA 232",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::481",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lubin_Baugin_Pr%C3%A9sentation_de_la_Vierge_au_Temple_mus%C3%A9e_Granet.jpg",
+      "title": "Lubin Baugin Présentation de la Vierge au Temple musée Granet",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::482",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ecce_Homo_-_M._Preti.png",
+      "title": "Ecce Homo",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::484",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rosa_-_Le_portement_de_croix,_PE_87.jpg",
+      "title": "Le portement de croix",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::486",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nativit%C3%A9_-_Jacques_Dumont_-_Mus%C3%A9e_Cond%C3%A9.jpg",
+      "title": "Nativité",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::487",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Annonciation_-_Mus%C3%A9e_Cond%C3%A9_Chantilly_PE303.jpg",
+      "title": "L'Annonciation",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::489",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Le_Sueur_L%27Ange_quittant_Tobie_Grenoble.jpg",
+      "title": "Le Sueur L'Ange quittant Tobie Grenoble",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::490",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-_Adoration_of_the_Shepherds_(Grenoble).jpg",
+      "title": "Adoration of the Shepherds (Grenoble)",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::491",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Caravaggio_flagellation.jpg",
+      "title": "Flagellazione di Cristo",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::499",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gerrit_van_Honthorst_-_De_Verloochening_van_Sint_Petrus.jpg",
+      "title": "De Verloochening van Sint Petrus",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::501",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Melchior_Broederlam_-_The_Presentation_of_Christ_-_WGA03230.jpg",
+      "title": "The Presentation of Christ",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::505",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Champaigne_Christ_en_croix_Grenoble.jpg",
+      "title": "Champaigne Christ en croix Grenoble",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::506",
+      "source_url": "https://commons.wikimedia.org/wiki/File:J%C3%A9sus_parmi_les_docteurs,_1623,_Grenoble,_mus%C3%A9e_des_Beaux-Arts.jpg",
+      "title": "Jésus parmi les docteurs, 1623, Grenoble, musée des Beaux-Arts",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::510",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Hyre_Noli_me_tangere_mus%C3%A9e_de_Grenoble.jpg",
+      "title": "Noli me tangere (« Ne me touche pas »)",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::511",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Laurent_de_La_Hyre_-_L%27Apparition_du_Christ_aux_p%C3%A8lerins_d%27Emma%C3%BCs,_1656.jpg",
+      "title": "L'Apparition du Christ aux pèlerins d'Emmaüs, 1656",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::516",
+      "source_url": "https://commons.wikimedia.org/wiki/File:L%27Adoration_des_mages,_par_Francisco_de_Zurbar%C3%A1n.jpg",
+      "title": "L'Adoration des mages, par Francisco de Zurbarán",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::517",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbar%C3%A1n_-_The_Adoration_of_the_Shepherds_-_WGA26058.jpg",
+      "title": "The Adoration of the Shepherds",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::518",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Le_Christ_%C3%A0_Emma%C3%BCs_by_Strozzi_-_small.jpg",
+      "title": "Le Christ à Emmaüs ; Les disciples d'Emmaüs et la fraction du pain",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::520",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bernhard_Strigel,_Le_Martyre_de_Sainte_Ursule.jpg",
+      "title": "Bernhard Strigel, Le Martyre de Sainte Ursule",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::524",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3ACorneille_l'Ancien-%C3%89sa%C3%BC_et_Jacob-Orl%C3%A9ans.jpg",
+      "title": "Esau and Jacob",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::526",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3AJacques_Blanchard_Nicolas_V_au_caveau_de_saint_Fran%C3%A7ois.jpg",
+      "title": "Pope Nicholas V at the Tomb of Saint Francis",
+      "decision": "HOLD",
+      "reason": "COMMONS_EXPLICIT_COPYRIGHT_FLAG_MISSING",
+      "detail": ""
+    },
+    {
+      "artwork_id": "RECENT575::527",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Philippe,_par_Jos%C3%A9_de_Ribera.jpg",
+      "title": "Saint Philippe, par José de Ribera",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::528",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Santo_Tom%C3%A1s,_by_Diego_Vel%C3%A1zquez.jpg",
+      "title": "Santo Tomás",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::537",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Alessandro_Allori_-_Susanna_and_The_Elders_-_WGA00186.jpg",
+      "title": "Susanna and The Elders",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::539",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3ADavid_-_Saint_Roch_implorant_la_Vierge_pour_les_pestif%C3%A9r%C3%A9s_(esquisse)%2C_1780.jpg",
+      "title": "David - Saint Roch implorant la Vierge pour les pestiférés (esquisse), 1780",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::542",
+      "source_url": "https://commons.wikimedia.org/wiki/File:J%C3%A9sus_pr%C3%AAchant_sur_le_lac_de_Tib%C3%A9riade_-_Jacob_Willemszoon_de_Wet_-_MM_1938E294.jpg",
+      "title": "Jésus prêchant sur le lac de Tibériade - Jacob Willemszoon de Wet - MM 1938E294",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::543",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3AL'Ange_gardien_prot%C3%A9geant_un_enfant_du_d%C3%A9mon_-_Bartolomeo_Gennari_-_MM_1938E342.jpg",
+      "title": "L'Ange gardien protégeant un enfant du démon - Bartolomeo Gennari",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::544",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Conversion_de_saint_Paul_-_Ferra%C3%B9_Fenzoni_-_MM_1938E401.jpg",
+      "title": "La Conversion de saint Paul - Ferraù Fenzoni - MM 1938E401",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::545",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3ALa_Hyre_Pr%C3%A9sentation_de_la_Vierge_au_Temple_Dijon_mus%C3%A9e_Magnin.jpg",
+      "title": "La Hyre Présentation de la Vierge au Temple Dijon musée Magnin",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::546",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Le_Christ_soutenu_par_la_Vierge_-_Sebastiano_Conca_-_MM_1938E895.jpg",
+      "title": "Le Christ soutenu par la Vierge - Sebastiano Conca - MM 1938E895",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::548",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3ALe_partage_de_la_Terre_promise_-_Licherie_ou_Bonnet_-_MM_1938F905.jpg",
+      "title": "Le partage de la Terre promise - Licherie ou Bonnet",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::549",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3ALe_repas_chez_Simon_le_Pharisien_-_d'apr%C3%A8s_Jean-Baptiste_Jouvenet_-_MM_1938F552.jpg",
+      "title": "Le repas chez Simon le Pharisien - d'après Jean-Baptiste Jouvenet",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::552",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3ALe_Sacrifice_de_la_fille_de_Jepht%C3%A9_-_Giambattista_Crosato_-_MM_1938E396.jpg",
+      "title": "Le Sacrifice de la fille de Jephté - Giambattista Crosato",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::555",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Miracle_de_saint_Martin_-_S%C3%A9bastien_Bourdon_-_MM_1938F97.jpg",
+      "title": "Miracle de saint Martin - Sébastien Bourdon - MM 1938F97",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::556",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mo%C3%AFse_et_les_filles_de_Jethro_-_Giovanni_Francesco_Romanelli_-_MM_1938E466.jpg",
+      "title": "Moïse et les filles de Jethro - Giovanni Francesco Romanelli - MM 1938E466",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::557",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Piet%C3%A0_-_Giovanni_Stefano_Danedi_-_MM_1938E523.jpg",
+      "title": "Pietà - Giovanni Stefano Danedi - MM 1938E523",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::558",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3ASaint_Dominique_et_saint_Fran%C3%A7ois_-_%C3%89tienne_Parrocel_-_MM_1938E499.jpg",
+      "title": "Saint Dominique et saint François - Étienne Parrocel",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::559",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Paul_renvers%C3%A9_et_lapid%C3%A9_-_Jean-Baptiste_de_Champaigne_-_MM_1938F142.jpg",
+      "title": "Saint Paul renversé et lapidé - Jean-Baptiste de Champaigne - MM 1938F142",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::561",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saint_%C3%89lisabeth_de_Hongrie_-_Jean-Baptiste_Marie_Pierre_-_MM_1938F651.jpg",
+      "title": "Saint Élisabeth de Hongrie - Jean-Baptiste Marie Pierre - MM 1938F651",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::562",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saint_%C3%89tienne_et_saint_Paul_-_Giovanni_Baglione_-_MM_1938E340.jpg",
+      "title": "Saint Étienne et saint Paul - Giovanni Baglione - MM 1938E340",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::563",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sainte_Madeleine_au_d%C3%A9sert_-_attribu%C3%A9_%C3%A0_Sisto_Badalocchio_-_MM_1938E393.jpg",
+      "title": "Sainte Madeleine au désert - attribué à Sisto Badalocchio - MM 1938E393",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::565",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3AThamar_et_Juda_-_Horace_Vernet_(or_made_after)_-_MM_1938F943.jpg",
+      "title": "Thamar et Juda - Horace Vernet (or made after)",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::566",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Trinit%C3%A9_(Mus%C3%A9e_Magnin).jpg",
+      "title": "Trinité (Musée Magnin)",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::569",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3ACoypel_Athalie_interroge_Joas.jpg",
+      "title": "Coypel Athalie interroge Joas",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::571",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3AGiovan_Gioseffo_dal_Sole_Le_Christ_et_la_Samaritaine.jpg",
+      "title": "Giovan Gioseffo dal Sole Le Christ et la Samaritaine",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::573",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Van_LOO_Carle_1751_L%27adoration_des_anges.jpg",
+      "title": "Adoration of the Angelslabel QS:Lfr,\"L'adoration des anges\"label QS:Len,\"Adoration of the Angels\"",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::574",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Van_LOO_Carle_1753_Sainte_Clotilde_en_pri%C3%A8re_au_pied_du_tombeau_de_St_Mar.jpg",
+      "title": "Van LOO Carle 1753 Sainte Clotilde en prière au pied du tombeau de St Mar",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "REVIEW::commons:158771859",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Apparition_de_J%C3%A9sus_aux_trois_Marie_-_Laurent_de_La_Hyre_-_Mus%C3%A9e_du_Louvre_Peintures_INV_5356_%3B_MR_1849.jpg",
+      "title": "Christ Appears to the Three Marys",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "REVIEW::commons:15973724",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Charles_de_La_Fosse_-_L%27Assomption_vers_1680.jpg",
+      "title": "Assumption of Mary",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "V6::commons:34066810",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_van_Oost_I_-_Christ_Crowned_with_Thorns.jpg",
+      "title": "Christ Crowned with Thorns",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:dolci-1640",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Carlo_Dolci_-_The_Trinity_in_Glory_-_59.009_-_Rhode_Island_School_of_Design_Museum.jpg",
+      "title": "The Trinity in Glory",
+      "decision": "HOLD",
+      "reason": "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT",
+      "detail": "Exact original inadequate; record ready for institutional rights/identity research"
+    },
+    {
+      "artwork_id": "RECENT575::054",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anselmus_van_Hulle_-_Pieta_-_S-49_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "title": "Pieta title QS:P1476,en:\"Pieta \"label QS:Len,\"Pieta \"label QS:Lfr,\"Pietà\"label QS:Lnl,\"Piëta\"",
+      "decision": "HOLD",
+      "reason": "MUSEUM_EXACT_OBJECT_PHOTO_NOT_RELEASED",
+      "detail": "ORIGINAL_SELECTED_ARTIST_NOT_CONFIRMED_BY_MUSEUM_OBJECT"
+    }
+  ],
+  "summary": {
+    "candidate_quality_hold_records": 182,
+    "commons_metadata_pages_checked": 182,
+    "commons_pages_resolved": 181,
+    "ultrahighres_originals_qualified": 4,
+    "exact_museum_accession_candidates": 2,
+    "museum_exact_photo_qualified": 1,
+    "source_images_download_attempted": 5,
+    "new_gallery_paintings": 5,
+    "new_image_bytes": 1307910,
+    "held_for_better_photo": 177,
+    "hold_reasons": {
+      "LOW_RESOLUTION_ORIGINAL_WITH_NO_VERIFIED_INSTITUTIONAL_EQUIVALENT": 166,
+      "COMMONS_EXPLICIT_COPYRIGHT_FLAG_MISSING": 10,
+      "MUSEUM_EXACT_OBJECT_PHOTO_NOT_RELEASED": 1
+    },
+    "gallery_total_images": 472,
+    "image_bearing_records": 475,
+    "catalogue_records_unchanged": 873,
+    "historical_rejected_originals_protected": 103,
+    "new_prayer_card_assignments": 0,
+    "new_calendar_placements": 0,
+    "original_jpeg_source_bank_unchanged": 54
+  }
+}

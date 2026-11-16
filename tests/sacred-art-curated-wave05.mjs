@@ -26,18 +26,21 @@ assert.equal(m.summary.image_hash_mismatches,0);
 assert.equal(m.source_originals_retained,false);
 assert.equal(m.max_batch_images,84);
 const n=m.summary.new_gallery_images;
+const quality06=read('app-data/sacred-art/quality-recovery-wave06-20261116.v1.json');
+const n06=quality06.summary.new_gallery_paintings;
+const quality06IDs=new Set(quality06.artworks.map(a=>a.artwork_id));
 assert(n>=12&&n<=84);
 assert.equal(m.assets.length,n);
 assert.equal(m.held.length,84-n);
 assert.equal(m.summary.held_or_deferred_rows,84-n);
 assert.equal(g.records.length,873);
 assert.equal(g.counts.total_records,873);
-assert.equal(g.counts.distinct_locally_hosted_paintings,429+n);
-assert.equal(g.counts.image_available_records,432+n);
-assert.equal(g.counts.verified_image_files,429+n);
-assert.equal(p.sources.length,429+n);
-assert.equal(p.local_image_count,429+n);
-assert.equal(p.catalogue_record_images_count,432+n);
+assert.equal(g.counts.distinct_locally_hosted_paintings,429+n+n06);
+assert.equal(g.counts.image_available_records,432+n+n06);
+assert.equal(g.counts.verified_image_files,429+n+n06);
+assert.equal(p.sources.length,429+n+n06);
+assert.equal(p.local_image_count,429+n+n06);
+assert.equal(p.catalogue_record_images_count,432+n+n06);
 assert.equal(old1.assets.length,161);
 assert.equal(old2.assets.length,109);
 assert.equal(old3.assets.length,49);
@@ -109,7 +112,10 @@ assert.equal(total,m.summary.new_bytes);
 for(const h of m.held){
  assert(ids.has(h.artwork_id));
  const row=g.records.find(x=>x.id===h.artwork_id);
- assert(row && row.image===null,'A held source must remain unpublished');
+  if(quality06IDs.has(h.artwork_id)){
+   assert(['BELOW_FULL_COMPOSITION_QUALITY_FLOOR','EXTREME_ASPECT_RATIO_OR_DIMENSIONS','IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED'].includes(h.reason));
+   assert(row && row.image && row.image.src.includes('owner-selected-quality-upgrade-'));
+  }else assert(row && row.image===null,'An unresolved held source must remain unpublished');
 }
 for(const old of canonical.artworks){
  const row=g.records.find(x=>x.id===old.artwork_id);

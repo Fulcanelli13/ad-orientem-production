@@ -16,6 +16,9 @@ assert.equal(report.summary.reviewed_owner_selected_records,90);
 const n=report.summary.new_gallery_paintings;
 const wave05=read('app-data/sacred-art/curated-cohort-image-wave05-20261116.v1.json');
 const n05=wave05.summary.new_gallery_images;
+const quality06=read('app-data/sacred-art/quality-recovery-wave06-20261116.v1.json');
+const n06=quality06.summary.new_gallery_paintings;
+const quality06IDs=new Set(quality06.artworks.map(a=>a.artwork_id));
 assert(n>=4 && n<=90);
 assert.equal(report.artworks.length,n);
 assert(!report.artworks.some(a=>/prado/i.test(a.artwork_id+' '+a.title+' '+a.artwork_source_url)),'Prado-linked image must stay unpublished');
@@ -31,12 +34,12 @@ assert.equal(report.summary.original_source_master_jpeg_bank_unchanged,54);
 assert.equal(report.summary.fingerprint_mismatches,0);
 assert.equal(gallery.records.length,873);
 assert.equal(gallery.counts.total_records,873);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings,392+n+n05);
-assert.equal(gallery.counts.image_available_records,395+n+n05);
-assert.equal(gallery.counts.verified_image_files,392+n+n05);
-assert.equal(prov.sources.length,392+n+n05);
-assert.equal(prov.local_image_count,392+n+n05);
-assert.equal(prov.catalogue_record_images_count,395+n+n05);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings,392+n+n05+n06);
+assert.equal(gallery.counts.image_available_records,395+n+n05+n06);
+assert.equal(gallery.counts.verified_image_files,392+n+n05+n06);
+assert.equal(prov.sources.length,392+n+n05+n06);
+assert.equal(prov.local_image_count,392+n+n05+n06);
+assert.equal(prov.catalogue_record_images_count,395+n+n05+n06);
 assert.equal(first.assets.length,161);
 assert.equal(second.assets.length,109);
 assert.equal(third.assets.length,49);
@@ -93,7 +96,10 @@ assert.equal(total,report.summary.new_derivative_bytes);
 for(const h of report.held){
  assert(oldIDs.has(h.artwork_id));
  const row=gallery.records.find(r=>r.id===h.artwork_id);
- assert(row && row.image===null,'Every rights, photograph and quality hold must remain unpictured');
+  if(quality06IDs.has(h.artwork_id)){
+   assert(['PREVIOUS_LOW_QUALITY_HOLD','COMMONS_INADEQUATE_SOURCE_GEOMETRY'].includes(h.reason));
+   assert(row && row.image && row.image.src.includes('owner-selected-quality-upgrade-'));
+  }else assert(row && row.image===null,'Rights/photo and unresolved quality holds remain unpictured');
 }
 for(const old of canon.artworks){
  const row=gallery.records.find(r=>r.id===old.artwork_id);
