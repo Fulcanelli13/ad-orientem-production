@@ -16,6 +16,7 @@ const batch05 = json('app-data/sacred-art/gallery-image-import-batch05.v1.json')
 const batch06 = json('app-data/sacred-art/gallery-image-import-batch06.v1.json');
 const batch07 = json('app-data/sacred-art/gallery-image-import-batch07.v1.json');
 const masters = json('app-data/sacred-art/source-master-migration-20261116.v1.json');
+const recoveredSources = json('app-data/sacred-art/source-photo-recovery-20261116.v1.json');
 const staged = json('app-data/sacred-art/staged-image-provenance.v1.json');
 const angelus = json('site/prayers/angelus-part-paintings.v1.json');
 const html = read('site/index.html');
@@ -390,6 +391,69 @@ for (const id of verifiedArchiveOriginalIds) {
   assert(!work.image.quality.startsWith('LOW_RES_PREVIEW'));
 }
 
+// Restore earlier full museum source files from exact photographic provenance;
+// this is *not* the authorization to create more artworks or prayer defaults.
+assert.equal(recoveredSources.schema,'ao.sacred-art.exact-source-photograph-recovery.v1');
+assert.equal(recoveredSources.sources.length,40);
+assert.equal(recoveredSources.expected_summary.source_entries,40);
+assert.equal(recoveredSources.result_summary.source_entries,40);
+assert.equal(recoveredSources.result_summary.success_count,40);
+assert.equal(recoveredSources.result_summary.held_count,0);
+assert.equal(recoveredSources.result_summary.recovered_original_bytes,200662829);
+assert.equal(recoveredSources.result_summary.previous_museum_source_originals,38);
+assert.equal(recoveredSources.result_summary.recovered_legacy_originals,2);
+assert.equal(recoveredSources.result_summary.display_images_changed,0);
+assert.equal(recoveredSources.result_summary.artwork_records_changed,0);
+assert.equal(recoveredSources.result_summary.prayer_assignments_changed,0);
+assert.equal(new Set(recoveredSources.sources.map(x=>x.source_git_blob_sha)).size,40);
+const previousBatches=new Map(
+  [batch04,batch05,batch06,batch07].flatMap(x=>x.sources)
+    .map(x=>[x.artwork_id,x])
+);
+const sourceBankPaths=new Set();
+for(const source of recoveredSources.sources){
+  assert.equal(source.status,'RECOVERED_EXACT_BYTES__PERMANENT_SOURCE_MASTER_NOT_PAGES');
+  assert(source.source_master_path.startsWith('app-data/sacred-art/source-masters/'));
+  assert(!source.source_master_path.startsWith('site/'));
+  assert.equal(source.source_master_path,
+    'app-data/sacred-art/source-masters/'+source.source_git_blob_sha+'.jpg');
+  assert(!sourceBankPaths.has(source.source_master_path));
+  sourceBankPaths.add(source.source_master_path);
+  const file=readFileSync(resolve(base,source.source_master_path));
+  assert.equal(file.length,source.source_bytes);
+  assert.equal(file.length,source.recovered_bytes);
+  assert.equal(createHash('sha256').update(file).digest('hex'),source.recovered_source_sha256);
+  assert.equal(createHash('sha1').update('blob '+file.length+'\0').update(file).digest('hex'),source.source_git_blob_sha);
+  assert.equal(source.recovered_source_git_blob_sha,source.source_git_blob_sha);
+  assert.deepEqual(source.recovered_pixel_dimensions,source.source_pixels??source.recovered_pixel_dimensions);
+  if(source.source_sha256)assert.equal(source.source_sha256,source.recovered_source_sha256);
+  const proof=images.sources.find(x=>x.path===source.display_image_path);
+  assert.equal(proof?.artwork_id,source.artwork_id);
+  assert.equal(proof?.source_master_path,source.source_master_path);
+  assert.equal(proof?.source_master_sha256,source.recovered_source_sha256);
+  assert.equal(proof?.source_master_bytes,source.recovered_bytes);
+  assert.equal(proof?.source_master_git_blob_sha,source.source_git_blob_sha);
+  assert.equal(proof?.source_master_kind,source.source_kind);
+  assert.equal(proof?.source_recovery_manifest,
+    'app-data/sacred-art/source-photo-recovery-20261116.v1.json');
+  const artwork=gallery.records.find(x=>x.id===source.artwork_id);
+  assert(artwork?.owner_selected_artwork);
+  assert.equal(artwork.image?.src,'./'+source.display_image_path.slice('site/'.length));
+  const indexed=index.artworks.find(x=>x.artwork_id===source.artwork_id);
+  assert.deepEqual(artwork.exact_prayer_cards,indexed.owner_approved_exact_card_ids);
+  if(source.origin==='PRIOR_MUSEUM_SOURCE_IMPORT'){
+    const original=previousBatches.get(source.artwork_id);
+    assert(original);
+    assert.equal(source.source_sha256,original.source_sha256);
+    assert.equal(source.source_git_blob_sha,original.source_git_blob_sha);
+    assert.equal(source.source_url,original.source_image_url||original.source_url);
+    assert.equal(source.source_bytes,original.source_bytes);
+  }else{
+    assert.equal(source.origin,'LEGACY_RESEARCH_MAIN_RELEASE_ORIGINAL');
+    assert(source.source_url.includes('/14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a/'));
+  }
+}
+assert.equal(sourceBankPaths.size,40);
 // UI is scoped and nav contains no extra bottom tab. No remote image is loaded by runtime.
 assert(html.includes('id="gallery-view"'));
 assert(html.includes('id="home-sacred-art"'));
@@ -408,4 +472,4 @@ assert(js.includes('catalogue.records'));
 assert(css.includes('.ao-gallery'));
 assert(css.includes('.home-pad.integrated-home-order>.sacred-art-entry'));
 assert(!html.includes('https://fonts.googleapis.com'),'No remote font dependencies');
-console.log('Sacred Art gallery validated: 862 records, 54 displayed paintings / 57 image-bearing rows; 11 byte-exact previously released original JPEGs migrated, five gallery WebPs added, rights/rejected photos excluded; prayer relationships unchanged.');
+console.log('Sacred Art gallery validated: 862 registry records, 54 paintings on display, 57 image-bearing rows; 40 further historical museum/legacy source images (200.7 MB) preserved byte-for-byte and hash-verified, without new prayer assignments.');
