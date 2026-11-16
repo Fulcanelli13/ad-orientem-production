@@ -17,10 +17,10 @@ assert.equal(transfer.summary.sha256_failures,0);
 assert.equal(transfer.summary.blob_sha_failures,0);
 assert.equal(gallery.records.length,873);
 assert.equal(gallery.counts.total_records,873);
-assert.equal(gallery.counts.image_available_records,395);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings,392);
-assert.equal(gallery.counts.verified_image_files,392);
-assert.equal(provenance.sources.length,392);
+assert.equal(gallery.counts.image_available_records,432);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings,429);
+assert.equal(gallery.counts.verified_image_files,429);
+assert.equal(provenance.sources.length,429);
 assert.equal(historical.artworks.length,862);
 for(const old of historical.artworks){
   const work=gallery.records.find(x=>x.id===old.artwork_id);

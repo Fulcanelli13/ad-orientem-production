@@ -61,3 +61,7 @@ Second batch recovered 109 further locally cached, full-composition gallery WebP
 ### Post-bulk preservation and museum source inventory, wave 03
 
 Revalidated 49 prior rate-limited source-file candidates with conservative sequential Commons access, preserving exactly 49 additional full-frame WebPs. Current live gallery should contain 392 painting photos across 395 catalogue entries. A complete separate evidence-only inventory of 90 owner-selected non-November Commons records is stored in bulk-museum-image-queue-20261116.v1.json; do not equate curation approval with photography reuse clearance or count it as a gallery image import. Original JPEG bank remains at 54 and all prayer relationships remain unchanged.
+
+### Additional owner-selected museum original source gallery batch wave04
+
+Exact owner-selected source-file and institutional collection verification produced 37 more local WebP display paintings out of a 90-object candidate registry. Now 429 painting images over 432 catalogue rows; 873 historic records remain unchanged. 53 existing owner-selected records carry explicit hold reasons. Original source-master JPEG count remains 54; this is a display-derivative migration, not source-JPEG preservation. See selected-museum-image-wave04-20261116.v1.json.
