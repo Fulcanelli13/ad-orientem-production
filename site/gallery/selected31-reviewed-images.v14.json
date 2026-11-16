@@ -1,0 +1,260 @@
+{
+  "schema": "ao.sacred-art.selected31-gallery-overlay.v14",
+  "canonical_master_unchanged": true,
+  "baseline_registry_count": 862,
+  "new_review_records": 4,
+  "existing_record_image_patches": 1,
+  "records": [
+    {
+      "id": "REVIEW31::bap-murillo",
+      "title": "The Baptism of Christ",
+      "artist": "Bartolomé Esteban Murillo",
+      "institution": "Staatliche Museen zu Berlin",
+      "source_url": "https://search.smb.museum/object/obj-868725",
+      "record_status": "OWNER_SELECTED_EDITORIAL_V14__NOT_PRAYER_CARD_PRIMARY",
+      "owner_selected_artwork": true,
+      "rights_note": "SMB object 868725: Public Domain Mark 1.0; Commons museum file is a faithful reproduction",
+      "review_context": "Luminous I · Baptism in the Jordan",
+      "image": {
+        "src": "./gallery/images/selected31-v14-bap-murillo-2000.webp",
+        "provenance": "https://commons.wikimedia.org/wiki/File%3ABartolom%C3%A9_Esteban_Murillo_%281617_-_1682%29_-_The_Baptism_of_Christ_-_68.2_-_Gem%C3%A4ldegalerie.jpg · SMB object 868725: Public Domain Mark 1.0; Commons museum file is a faithful reproduction",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__SOURCE_VERIFIED",
+        "pixel_width": 1350,
+        "pixel_height": 2000
+      },
+      "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Bartolom%C3%A9_Esteban_Murillo_%281617_-_1682%29_-_The_Baptism_of_Christ_-_68.2_-_Gem%C3%A4ldegalerie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "scene_ids": [
+        "Luminous I · Baptism in the Jordan"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous I · Baptism in the Jordan"
+      ],
+      "attribution_status": "EXACT_OBJECT_AND_IMAGE_ID_VERIFIED"
+    },
+    {
+      "id": "REVIEW31::bap-verrocchio",
+      "title": "The Baptism of Christ",
+      "artist": "Andrea del Verrocchio and Leonardo da Vinci",
+      "institution": "Uffizi Galleries, Florence",
+      "source_url": "https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ",
+      "record_status": "OWNER_SELECTED_EDITORIAL_V14__NOT_PRAYER_CARD_PRIMARY",
+      "owner_selected_artwork": true,
+      "rights_note": "Uffizi object 8358; Commons selected exact derived Google Art Project file marked Public Domain",
+      "review_context": "Luminous I · Baptism in the Jordan",
+      "image": {
+        "src": "./gallery/images/selected31-v14-bap-verrocchio-2000.webp",
+        "provenance": "https://commons.wikimedia.org/wiki/File%3AVerrocchio%2C_Leonardo_da_Vinci_-_Battesimo_di_Cristo.jpg · Uffizi object 8358; Commons selected exact derived Google Art Project file marked Public Domain",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__SOURCE_VERIFIED",
+        "pixel_width": 1702,
+        "pixel_height": 2000
+      },
+      "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/2/29/Verrocchio%2C_Leonardo_da_Vinci_-_Battesimo_di_Cristo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "scene_ids": [
+        "Luminous I · Baptism in the Jordan"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous I · Baptism in the Jordan"
+      ],
+      "attribution_status": "EXACT_OBJECT_AND_IMAGE_ID_VERIFIED"
+    },
+    {
+      "id": "REVIEW31::cana-francken",
+      "title": "The Wedding at Cana",
+      "artist": "Frans Francken the Younger",
+      "institution": "Nationalmuseum, Stockholm",
+      "source_url": "https://collection.nationalmuseum.se/en/collection/item/231135/",
+      "record_status": "OWNER_SELECTED_EDITORIAL_V14__NOT_PRAYER_CARD_PRIMARY",
+      "owner_selected_artwork": true,
+      "rights_note": "Nationalmuseum NM 7504, publicly released photograph marked Public Domain on Commons",
+      "review_context": "Luminous II · Marriage at Cana",
+      "image": {
+        "src": "./gallery/images/selected31-v14-cana-francken-2000.webp",
+        "provenance": "https://commons.wikimedia.org/wiki/File%3AFrans_Francken_d.y._-_The_Wedding_at_Cana_-_NM_7504_-_Nationalmuseum.jpg · Nationalmuseum NM 7504, publicly released photograph marked Public Domain on Commons",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "LOW_RES_PREVIEW_ONLY__SOURCE_VERIFIED",
+        "pixel_width": 1000,
+        "pixel_height": 558
+      },
+      "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Frans_Francken_d.y._-_The_Wedding_at_Cana_-_NM_7504_-_Nationalmuseum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "scene_ids": [
+        "Luminous II · Marriage at Cana"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous II · Marriage at Cana"
+      ],
+      "attribution_status": "EXACT_OBJECT_AND_IMAGE_ID_VERIFIED"
+    },
+    {
+      "id": "REVIEW31::cana-vermeyen",
+      "title": "The Marriage at Cana",
+      "artist": "Jan Cornelisz Vermeyen",
+      "institution": "Rijksmuseum, Amsterdam",
+      "source_url": "https://www.rijksmuseum.nl/en/collection/object/The-Marriage-at-Cana--a9c70d5ad88d3ab49630a44168906608",
+      "record_status": "OWNER_SELECTED_EDITORIAL_V14__NOT_PRAYER_CARD_PRIMARY",
+      "owner_selected_artwork": true,
+      "rights_note": "Rijksmuseum SK-A-4820 public domain painting; exact WGA Commons image marked PD-Art",
+      "review_context": "Luminous II · Marriage at Cana",
+      "image": {
+        "src": "./gallery/images/selected31-v14-cana-vermeyen-2000.webp",
+        "provenance": "https://commons.wikimedia.org/wiki/File%3AJan_Cornelisz._Vermeyen_006.jpg · Rijksmuseum SK-A-4820 public domain painting; exact WGA Commons image marked PD-Art",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "LOW_RES_PREVIEW_ONLY__SOURCE_VERIFIED",
+        "pixel_width": 1166,
+        "pixel_height": 925
+      },
+      "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Jan_Cornelisz._Vermeyen_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "scene_ids": [
+        "Luminous II · Marriage at Cana"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous II · Marriage at Cana"
+      ],
+      "attribution_status": "EXACT_OBJECT_AND_IMAGE_ID_VERIFIED"
+    }
+  ],
+  "image_patches": [
+    {
+      "id": "plate-bloch-sermon",
+      "expected_source_url": "https://commons.wikimedia.org/wiki/File:Carl_Bloch_-_The_Sermon_on_the_Mount.jpg",
+      "image": {
+        "src": "./gallery/images/selected31-v14-king-bloch-2000.webp",
+        "provenance": "https://commons.wikimedia.org/wiki/File%3ACarl_Bloch_-_The_Sermon_on_the_Mount.jpg · Museum of National History at Frederiksborg; Commons new 2026 museum-photo-service source marked Public Domain",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__SOURCE_VERIFIED",
+        "pixel_width": 1833,
+        "pixel_height": 2000
+      },
+      "review_context": "Luminous III · Proclamation of the Kingdom"
+    }
+  ],
+  "provenance": [
+    {
+      "review_artwork_id": "bap-murillo",
+      "catalogue_record_id": "REVIEW31::bap-murillo",
+      "gallery_file": "site/gallery/images/selected31-v14-bap-murillo-2000.webp",
+      "derivative_sha256": "abd3569cb9b0e69e36910f989c91690b010a168f7aa5f3dee297a2791fbab866",
+      "derivative_bytes": 337448,
+      "source_archive": "app-data/sacred-art/staged-selected31-v14/bap-murillo-source.jpg",
+      "original_sha1": "7d5e22bdbec34c7148dba0d7b371d432a09e6727",
+      "source_sha256": "7dfdcfc6066d8f0c729cac1f951abcb7b8f2a72bed438dd6cba20af5c0384853",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3ABartolom%C3%A9_Esteban_Murillo_%281617_-_1682%29_-_The_Baptism_of_Christ_-_68.2_-_Gem%C3%A4ldegalerie.jpg",
+      "museum_page": "https://search.smb.museum/object/obj-868725",
+      "source_dimensions": [
+        1900,
+        2814
+      ],
+      "gallery_dimensions": [
+        1350,
+        2000
+      ],
+      "quality_gate": "GALLERY_READY__PRAYER_QA_PENDING",
+      "publication_scope": "DRAFT_GALLERY_ONLY__NO_PRAYER_ASSIGNMENT"
+    },
+    {
+      "review_artwork_id": "bap-verrocchio",
+      "catalogue_record_id": "REVIEW31::bap-verrocchio",
+      "gallery_file": "site/gallery/images/selected31-v14-bap-verrocchio-2000.webp",
+      "derivative_sha256": "29beda69bf66c1a6ba06af62e6f5572070653a97b503755fefab6aca903c768a",
+      "derivative_bytes": 784620,
+      "source_archive": "app-data/sacred-art/staged-selected31-v14/bap-verrocchio-source.jpg",
+      "original_sha1": "b4fcd110c144c76939f0fdb82c7104f78d2c5ad9",
+      "source_sha256": "0c65b6c864b47ba9386583cae4ede447cfdf7f2c785fdef1cb19af37542c1067",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3AVerrocchio%2C_Leonardo_da_Vinci_-_Battesimo_di_Cristo.jpg",
+      "museum_page": "https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ",
+      "source_dimensions": [
+        2528,
+        2970
+      ],
+      "gallery_dimensions": [
+        1702,
+        2000
+      ],
+      "quality_gate": "GALLERY_READY__PRAYER_QA_PENDING",
+      "publication_scope": "DRAFT_GALLERY_ONLY__NO_PRAYER_ASSIGNMENT"
+    },
+    {
+      "review_artwork_id": "cana-francken",
+      "catalogue_record_id": "REVIEW31::cana-francken",
+      "gallery_file": "site/gallery/images/selected31-v14-cana-francken-2000.webp",
+      "derivative_sha256": "f0c9d9e34d8b1d49b8b5d262f7e1c0958a4867d2e0672e8c71fc4012a1c3b2f2",
+      "derivative_bytes": 92612,
+      "source_archive": "app-data/sacred-art/staged-selected31-v14/cana-francken-source.jpg",
+      "original_sha1": "336d7b37feec76e171c2b5d0810588db31f68e92",
+      "source_sha256": "1bc8396716326399a48680c910c256bade2f6fa7040fe2da460453f60a5e4a06",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3AFrans_Francken_d.y._-_The_Wedding_at_Cana_-_NM_7504_-_Nationalmuseum.jpg",
+      "museum_page": "https://collection.nationalmuseum.se/en/collection/item/231135/",
+      "source_dimensions": [
+        1000,
+        558
+      ],
+      "gallery_dimensions": [
+        1000,
+        558
+      ],
+      "quality_gate": "PREVIEW_ONLY",
+      "publication_scope": "DRAFT_GALLERY_ONLY__NO_PRAYER_ASSIGNMENT"
+    },
+    {
+      "review_artwork_id": "cana-vermeyen",
+      "catalogue_record_id": "REVIEW31::cana-vermeyen",
+      "gallery_file": "site/gallery/images/selected31-v14-cana-vermeyen-2000.webp",
+      "derivative_sha256": "9c74b50a81501ea68e633e96b4cec877e4d24c92f645d246c6edc2a902679d36",
+      "derivative_bytes": 152176,
+      "source_archive": "app-data/sacred-art/staged-selected31-v14/cana-vermeyen-source.jpg",
+      "original_sha1": "757469034bc7d06d0d7a8d7e022ea02c0f2c244a",
+      "source_sha256": "5980120a5461ed1341fc3544fce85169f7c6289cf937174fd8b521734d6d6bad",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3AJan_Cornelisz._Vermeyen_006.jpg",
+      "museum_page": "https://www.rijksmuseum.nl/en/collection/object/The-Marriage-at-Cana--a9c70d5ad88d3ab49630a44168906608",
+      "source_dimensions": [
+        1166,
+        925
+      ],
+      "gallery_dimensions": [
+        1166,
+        925
+      ],
+      "quality_gate": "PREVIEW_ONLY",
+      "publication_scope": "DRAFT_GALLERY_ONLY__NO_PRAYER_ASSIGNMENT"
+    },
+    {
+      "review_artwork_id": "king-bloch",
+      "catalogue_record_id": "plate-bloch-sermon",
+      "gallery_file": "site/gallery/images/selected31-v14-king-bloch-2000.webp",
+      "derivative_sha256": "606dfcd8778a903de45a74454ca3b49b3d506c644bebe23bc8ffa8774828f740",
+      "derivative_bytes": 509600,
+      "source_archive": "app-data/sacred-art/staged-selected31-v14/king-bloch-source.jpg",
+      "original_sha1": "23d4272cc197200ffd9d1cd196645b52268e25a6",
+      "source_sha256": "fbc8a694df913090e161e2211a638d890059cf722709c111fc34198665da9b66",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3ACarl_Bloch_-_The_Sermon_on_the_Mount.jpg",
+      "museum_page": "https://commons.wikimedia.org/wiki/File:Bloch-SermonOnTheMount.jpg",
+      "source_dimensions": [
+        6599,
+        7200
+      ],
+      "gallery_dimensions": [
+        1833,
+        2000
+      ],
+      "quality_gate": "GALLERY_READY__PRAYER_QA_PENDING",
+      "publication_scope": "DRAFT_GALLERY_ONLY__NO_PRAYER_ASSIGNMENT"
+    }
+  ]
+}

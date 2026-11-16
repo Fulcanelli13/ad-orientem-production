@@ -233,6 +233,29 @@
         }
         data.counts.total_records += supplement.records.length;
         data.counts.distinct_locally_hosted_paintings += supplement.records.length;
+        // V14 keeps existing exact artwork IDs intact; no duplicate Bloch record.
+        const nextResponse = await fetch("./gallery/selected31-reviewed-images.v14.json",{cache:"no-cache"});
+        if (!nextResponse.ok) throw new Error("V14 painting review supplement unavailable");
+        const next = await nextResponse.json();
+        if (next.schema !== "ao.sacred-art.selected31-gallery-overlay.v14" ||
+            next.baseline_registry_count !== 862 || next.records?.length !== 4 ||
+            next.image_patches?.length !== 1) throw new Error("Invalid V14 supplement");
+        for (const art of next.records) {
+          if (!art.id?.startsWith("REVIEW31::") || ids.has(art.id) ||
+              !art.image?.src?.startsWith("./gallery/images/selected31-v14-") ||
+              art.exact_prayer_cards?.length) throw new Error("Invalid V14 image scope");
+          ids.add(art.id);
+          data.records.push(art);
+        }
+        for (const patch of next.image_patches) {
+          const item = data.records.find(x => x.id === patch.id);
+          if (!item || item.image || item.source_url !== patch.expected_source_url ||
+              !patch.image?.src?.startsWith("./gallery/images/selected31-v14-"))
+            throw new Error("Invalid canonical image patch");
+          item.image = patch.image;
+        }
+        data.counts.total_records += next.records.length;
+        data.counts.distinct_locally_hosted_paintings += next.records.length + next.image_patches.length;
         catalogue = data;
         byId("gallery-total-count").textContent = data.counts.total_records.toLocaleString();
         byId("gallery-photo-count").textContent = data.counts.distinct_locally_hosted_paintings.toLocaleString();

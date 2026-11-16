@@ -225,3 +225,18 @@ Their source JPEGs and SHA-256 evidence are preserved under
 \`app-data/sacred-art/staged-selected31-v13/\`. These are gallery assets only;
 no prayer runtime card, cinematic transition or new stage primary is authorized.
 The V13 promotion is on draft PR #21 and is not deployed to main.
+
+## Luminous art V14 draft — five verified photographs
+
+The additive V14 image supplement adds four previously selected works to the
+review collection and patches the **existing** \`plate-bloch-sermon\` record,
+without duplicating Bloch or changing \`catalogue.v1.json\` (862 historical rows).
+The V13+V14 draft therefore proposes **871 searchable gallery rows and 64
+local paintings**. Source photographs and SHA-256/SHA-1 evidence are archived
+outside \`site/\` in \`app-data/sacred-art/staged-selected31-v14/\`.
+
+Murillo, Verrocchio/Leonardo and Bloch have 2,000px full-composition WebPs.
+Francken and Vermeyen have exact but smaller 1,000/1,166px source images:
+these are labelled **preview only**, not final cinematic backgrounds. No image
+addition confers a Rosary card primary or publication permission. The gallery
+images are in a draft PR, not merged to live GitHub Pages.
