@@ -42,3 +42,5 @@ jobs:
           git add app-data/sacred-art site/gallery tests
           git -c user.name='Ad Orientem Sacred Art Bulk Recovery' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Respect Commons throttling and reconcile all missing museum artworks'
           git push origin HEAD:feature/sacred-art-bulk-recovery-wave03-20261116
+
+# Rerun with corrected 305-vs-221 historical catalogue assertion.
