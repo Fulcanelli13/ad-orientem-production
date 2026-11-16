@@ -40,9 +40,12 @@ for r in queue:
         if (str(entry["depictstmsobjectid"])!=str(spec["object"]) or
             str(entry["openaccess"])!="1" or str(entry["viewtype"]).lower()!="primary"):
             raise ValueError("NGA identity/openaccess mismatch: "+rid)
-        if uid not in (entry.get("iiifURL") or "").lower():
-            raise ValueError("NGA published image URL mismatch: "+rid+"; official IIIF base="+str(entry.get("iiifURL")))
-        url=f"https://api.nga.gov/iiif/{uid}/full/!3500,3500/0/default.jpg"
+        # The live NGA CSV uses the lowercase field "iiifurl" (not "iiifURL").
+        base=next((v for k,v in entry.items() if k.strip().lower()=="iiifurl"),"")
+        if not (base.startswith("https://api.nga.gov/iiif/") and uid in base.lower()):
+            raise ValueError("NGA published image URL mismatch: "+rid+"; official IIIF base="+str(base))
+        prefix=base.split("/full/")[0].rstrip("/")
+        url=prefix+"/full/!3500,3500/0/default.jpg"
         rights="NGA published_images.csv openaccess=1"
         evidence={"objectID":str(spec["object"]),"uuid":uid,"viewtype":"primary"}
     elif provider=="CMA":
