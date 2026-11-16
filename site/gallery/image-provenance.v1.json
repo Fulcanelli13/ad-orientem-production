@@ -1,9 +1,9 @@
 {
   "schema": "ao.sacred-art.gallery-image-provenance.v1",
   "import_date": "2026-11-15",
-  "source_contract": "Prior 70 photos/870 records unchanged. Three already selected and old-released Class I Calendar photos (Raphael, Tanner, Lanfranco) copied without modifications from preexisting 54-JPEG production source bank, maintaining old photo-rights caveats and date locks. No new prayer defaults. Plus 161 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation. Plus 109 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation. A polite sequential retry recovered 49 of 49 previously rate-limited exact Commons photo previews without touching other original artwork/canonical assignments. If Wikimedia returned 429, download paused rather than bypassing rate limits. Wave04: 37 additional owner-selected original artwork images, exact source-file page identity, per-file PD/CC0 evidence, high quality full composition; historically rejected and conflicting rights images remain held. No new prayer or Calendar decisions. Plus 38 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation.",
-  "local_image_count": 467,
-  "catalogue_record_images_count": 470,
+  "source_contract": "Prior 70 photos/870 records unchanged. Three already selected and old-released Class I Calendar photos (Raphael, Tanner, Lanfranco) copied without modifications from preexisting 54-JPEG production source bank, maintaining old photo-rights caveats and date locks. No new prayer defaults. Plus 161 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation. Plus 109 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation. A polite sequential retry recovered 49 of 49 previously rate-limited exact Commons photo previews without touching other original artwork/canonical assignments. If Wikimedia returned 429, download paused rather than bypassing rate limits. Wave04: 37 additional owner-selected original artwork images, exact source-file page identity, per-file PD/CC0 evidence, high quality full composition; historically rejected and conflicting rights images remain held. No new prayer or Calendar decisions. Plus 38 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation. Wave06: exact-owner-photo large originals or exactly matched open museum object, 5 more full-frame gallery derivatives; rights/rejected-source and photo quality holds untouched.",
+  "local_image_count": 472,
+  "catalogue_record_images_count": 475,
   "duplicate_same_original": [
     {
       "physical_artwork": "Met object 438724",
@@ -16618,6 +16618,171 @@
       "source_image_original_bytes_retained": false,
       "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
       "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::001",
+      "title": "The Temptation of Saint Anthony the Greatlabel QS:Len,\"The Temptation of Saint Anthony the Great\"",
+      "artist": "Maerten de Vos",
+      "path": "site/gallery/images/owner-selected-quality-upgrade-001.webp",
+      "image_bytes": 493458,
+      "sha256": "605ef33aeca61c8513019129c198c50723e7de3b919968a0def72fd3b0c06d93",
+      "git_blob_sha": "ed3764b282c5d22091d3c94af734bd90910a729c",
+      "source_record": "app-data/sacred-art/quality-recovery-wave06-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Maerten_de_Vos_-_The_Temptation_of_Saint_Anthony_the_Great.jpg",
+      "photo_source_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Maerten_de_Vos_-_The_Temptation_of_Saint_Anthony_the_Great.jpg/1920px-Maerten_de_Vos_-_The_Temptation_of_Saint_Anthony_the_Great.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "photo_object_page": "https://commons.wikimedia.org/wiki/File:Maerten_de_Vos_-_The_Temptation_of_Saint_Anthony_the_Great.jpg",
+      "photo_access_method": "ORIGINAL_OWNER_APPROVED_FILE_RESIZED_FROM_ULTRAHIGHRES",
+      "photo_rights_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://kmska.be/en/masterpiece/the-temptation-of-saint-anthony-the-great-0",
+        "artist_metadata": "Maerten de Vos"
+      },
+      "source_original_pixels": [
+        12625,
+        16671
+      ],
+      "source_download_sha256": "a14d64b2116b8256e8caed63ae704122904700868ecbada2b5d8679490837609",
+      "source_download_bytes": 1485565,
+      "derived_pixels": [
+        1212,
+        1600
+      ],
+      "full_size_original_not_archived": true,
+      "release_scope": "GALLERY_ONLY__NO_NEW_READER_DEFAULT"
+    },
+    {
+      "artwork_id": "RECENT575::055",
+      "title": "Saint Catherine of Siena Kissing the Wounds of Christ",
+      "artist": "Antoon van den Heuvel",
+      "path": "site/gallery/images/owner-selected-quality-upgrade-055.webp",
+      "image_bytes": 103256,
+      "sha256": "2c22b957a7e2ffb5a9cf663f4910bdc954182c7c895a8e0d657e482151b11ccb",
+      "git_blob_sha": "7f9a58a78194f25bdcb01aa5ab21d4c4f31798ad",
+      "source_record": "app-data/sacred-art/quality-recovery-wave06-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Antoon_van_den_Heuvel_-_Saint_Catherine_of_Siena_Kissing_the_Wounds_of_Christ_-_1929-AX_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "photo_source_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Antoon_van_den_Heuvel_-_Saint_Catherine_of_Siena_Kissing_the_Wounds_of_Christ_-_1929-AX_-_Museum_of_Fine_Arts_Ghent_%28MSK%29.jpg/1920px-Antoon_van_den_Heuvel_-_Saint_Catherine_of_Siena_Kissing_the_Wounds_of_Christ_-_1929-AX_-_Museum_of_Fine_Arts_Ghent_%28MSK%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "photo_object_page": "https://commons.wikimedia.org/wiki/File:Antoon_van_den_Heuvel_-_Saint_Catherine_of_Siena_Kissing_the_Wounds_of_Christ_-_1929-AX_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "photo_access_method": "ORIGINAL_OWNER_APPROVED_FILE_RESIZED_FROM_ULTRAHIGHRES",
+      "photo_rights_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Museum of Fine Arts Ghent (MSK)",
+        "artist_metadata": "Antoon van den Heuvel"
+      },
+      "source_original_pixels": [
+        7394,
+        12330
+      ],
+      "source_download_sha256": "be73be78217e7f0327eacb3912941548b4a65639905e1077cf6b5c09fb233279",
+      "source_download_bytes": 969319,
+      "derived_pixels": [
+        959,
+        1600
+      ],
+      "full_size_original_not_archived": true,
+      "release_scope": "GALLERY_ONLY__NO_NEW_READER_DEFAULT"
+    },
+    {
+      "artwork_id": "RECENT575::080",
+      "title": "Saint Sebastian Released by the Roman Widow Irene and her Servant",
+      "artist": "Melchior de la Mars",
+      "path": "site/gallery/images/owner-selected-quality-upgrade-080.webp",
+      "image_bytes": 391554,
+      "sha256": "51401743a981f53162338158fd0081a911641adc3235ef8e1059e15b92e0da4b",
+      "git_blob_sha": "bc8f7aa723de2cc663532d83f135f144086f72ac",
+      "source_record": "app-data/sacred-art/quality-recovery-wave06-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Melchior_de_la_Mars_-_Saint_Sebastian_Released_by_the_Roman_Widow_Irene_and_her_Servant_-_2022-H_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "photo_source_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Melchior_de_la_Mars_-_Saint_Sebastian_Released_by_the_Roman_Widow_Irene_and_her_Servant_-_2022-H_-_Museum_of_Fine_Arts_Ghent_%28MSK%29.jpg/1920px-Melchior_de_la_Mars_-_Saint_Sebastian_Released_by_the_Roman_Widow_Irene_and_her_Servant_-_2022-H_-_Museum_of_Fine_Arts_Ghent_%28MSK%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "photo_object_page": "https://commons.wikimedia.org/wiki/File:Melchior_de_la_Mars_-_Saint_Sebastian_Released_by_the_Roman_Widow_Irene_and_her_Servant_-_2022-H_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "photo_access_method": "ORIGINAL_OWNER_APPROVED_FILE_RESIZED_FROM_ULTRAHIGHRES",
+      "photo_rights_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Museum of Fine Arts Ghent (MSK)",
+        "artist_metadata": "Melchior de la Mars"
+      },
+      "source_original_pixels": [
+        10311,
+        13454
+      ],
+      "source_download_sha256": "366141f28195e4848546b813aa735242c56aee2abe6aabdd2d0fe34311629aa9",
+      "source_download_bytes": 1355376,
+      "derived_pixels": [
+        1226,
+        1600
+      ],
+      "full_size_original_not_archived": true,
+      "release_scope": "GALLERY_ONLY__NO_NEW_READER_DEFAULT"
+    },
+    {
+      "artwork_id": "RECENT575::266",
+      "title": "Twee meisjes als de heiligen Agnes en Dorothea",
+      "artist": "Michaelina Wautier",
+      "path": "site/gallery/images/owner-selected-quality-upgrade-266.webp",
+      "image_bytes": 154730,
+      "sha256": "841cde3ff0f9e270fba13536b917314f8cc07b27d4065d08393d6b191d283d98",
+      "git_blob_sha": "6b08ce039e429f8efbf0ad82feadfefe2a08e4ba",
+      "source_record": "app-data/sacred-art/quality-recovery-wave06-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Michaelina_Wautier_-_Twee_meisjes_als_de_heiligen_Agnes_en_Dorothea_-_599_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff",
+      "photo_source_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Michaelina_Wautier_-_Twee_meisjes_als_de_heiligen_Agnes_en_Dorothea_-_599_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff/lossy-page1-1920px-Michaelina_Wautier_-_Twee_meisjes_als_de_heiligen_Agnes_en_Dorothea_-_599_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "photo_object_page": "https://commons.wikimedia.org/wiki/File:Michaelina_Wautier_-_Twee_meisjes_als_de_heiligen_Agnes_en_Dorothea_-_599_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff",
+      "photo_access_method": "ORIGINAL_OWNER_APPROVED_FILE_RESIZED_FROM_ULTRAHIGHRES",
+      "photo_rights_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Royal Museum of Fine Arts Antwerp",
+        "artist_metadata": "Michaelina Wautier"
+      },
+      "source_original_pixels": [
+        11569,
+        8789
+      ],
+      "source_download_sha256": "4cfc546bf2dacaa9c0977198789c27a4f019f7880af14e900a5af6bbb4a25739",
+      "source_download_bytes": 418195,
+      "derived_pixels": [
+        1600,
+        1216
+      ],
+      "full_size_original_not_archived": true,
+      "release_scope": "GALLERY_ONLY__NO_NEW_READER_DEFAULT"
+    },
+    {
+      "artwork_id": "RECENT575::072",
+      "title": "Annunciation",
+      "artist": "Jan Janssens",
+      "path": "site/gallery/images/owner-selected-quality-upgrade-072.webp",
+      "image_bytes": 164912,
+      "sha256": "b07aa2f8719b2074e7be71b5f06724157b90a8d90d9a105ec06375da144e17e2",
+      "git_blob_sha": "be3db866998b5e3a9b785a7e6ac1e17f60e7d6df",
+      "source_record": "app-data/sacred-art/quality-recovery-wave06-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_The_Annunciation_-_WGA11940.jpg",
+      "photo_source_url": "https://imagehub.mskgent.be/iiif/2/public%2F6868.tif/full/1600,/0/default.jpg",
+      "photo_object_page": "https://www.mskgent.be/en/collection/s-91",
+      "photo_access_method": "MUSEUM_MSK_GENT_EXACT_OBJECT_IIIF",
+      "photo_rights_evidence": {
+        "license_short": "MSK Ghent Public Domain on exact catalogue object and IIIF manifest",
+        "copyrighted_flag": "false",
+        "museum_policy": "https://www.mskgent.be/en/collection/image-rights",
+        "rights_uri": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "inventory": "S-91"
+      },
+      "source_original_pixels": [
+        5237,
+        6132
+      ],
+      "source_download_sha256": "4075e56b66a2a36afd6d233c8507a9883a4cea8fb155a1e8bf7c5b98165a9035",
+      "source_download_bytes": 321030,
+      "derived_pixels": [
+        1367,
+        1600
+      ],
+      "full_size_original_not_archived": true,
+      "release_scope": "GALLERY_ONLY__NO_NEW_READER_DEFAULT"
     }
   ]
 }

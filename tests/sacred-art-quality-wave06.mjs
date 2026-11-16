@@ -1,0 +1,100 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const read=path=>JSON.parse(fs.readFileSync(path,'utf8'));
+const m=read('app-data/sacred-art/quality-recovery-wave06-20261116.v1.json');
+const g=read('site/gallery/catalogue.v1.json');
+const p=read('site/gallery/image-provenance.v1.json');
+const source=read('app-data/sacred-art/artwork-assignment-index.v2.json');
+const rejected=read('app-data/sacred-art/legacy-artwork-rejections-20261116.v1.json');
+const b02=read('app-data/sacred-art/bulk-commons-photo-import-batch02-20261116.v1.json');
+const b03=read('app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json');
+const b04=read('app-data/sacred-art/selected-museum-image-wave04-20261116.v1.json');
+const b05=read('app-data/sacred-art/curated-cohort-image-wave05-20261116.v1.json');
+assert.equal(m.schema,'ao.sacred-art.resolution-held-exact-source-bulk-recovery.v1');
+assert.equal(m.summary.candidate_quality_hold_records,182);
+assert.equal(m.summary.catalogue_records_unchanged,873);
+assert.equal(m.summary.historical_rejected_originals_protected,103);
+assert.equal(m.summary.new_prayer_card_assignments,0);
+assert.equal(m.summary.new_calendar_placements,0);
+assert.equal(m.summary.original_jpeg_source_bank_unchanged,54);
+const n=m.summary.new_gallery_paintings;
+assert(n>=0&&n<=182);
+assert.equal(m.artworks.length,n);
+assert.equal(m.held.length,182-n);
+assert.equal(m.summary.held_for_better_photo,182-n);
+assert.equal(g.records.length,873);
+assert.equal(g.counts.total_records,873);
+assert.equal(g.counts.distinct_locally_hosted_paintings,467+n);
+assert.equal(g.counts.image_available_records,470+n);
+assert.equal(g.counts.verified_image_files,467+n);
+assert.equal(p.sources.length,467+n);
+assert.equal(p.local_image_count,467+n);
+assert.equal(p.catalogue_record_images_count,470+n);
+assert.equal(source.artworks.length,862);
+assert.equal(rejected.rejected_originals.length,103);
+const priorHoldIds=new Set([...b02.held,...b03.held,...b04.held,...b05.held].map(a=>a.artwork_id));
+const forbiddenUrls=new Set(rejected.rejected_originals.map(a=>decodeURIComponent(a.source_url||'').replace(/_/g,' ').toLowerCase()));
+const ids=new Set(),checksum=new Set();
+let totalBytes=0;
+for(const a of m.artworks){
+ assert(!ids.has(a.artwork_id));ids.add(a.artwork_id);
+ assert(priorHoldIds.has(a.artwork_id),'Must repair a prior photo-quality hold, not select a new artwork');
+ assert(!forbiddenUrls.has(decodeURIComponent(a.old_held_source_url).replace(/_/g,' ').toLowerCase()));
+ assert(!/prado/i.test(a.old_held_source_url+' '+a.title),'Do not release a Prado-associated photograph');
+ assert(a.derivative_path.startsWith('site/gallery/images/owner-selected-quality-upgrade-'));
+ const b=fs.readFileSync(a.derivative_path);
+ assert.equal(b.subarray(0,4).toString(),'RIFF');
+ assert.equal(b.subarray(8,12).toString(),'WEBP');
+ assert.equal(b.length,a.derivative_bytes);
+ assert.equal(crypto.createHash('sha256').update(b).digest('hex'),a.derivative_sha256);
+ assert.equal(crypto.createHash('sha1').update(Buffer.from('blob '+b.length+'\0')).update(b).digest('hex'),a.derivative_git_blob_sha);
+ assert(!checksum.has(a.derivative_git_blob_sha),'Same bytes must not inflate gallery photo count');
+ checksum.add(a.derivative_git_blob_sha);
+ assert(a.derivative_dimensions.every(v=>v>=700));
+ assert(a.original_dimensions.every(v=>v>=1050));
+ assert(a.original_full_resolution_jpeg_archived===false);
+ assert(a.source_rights.license_short);
+ assert.equal(a.source_rights.copyrighted_flag,'false');
+ if(a.method==='ORIGINAL_OWNER_APPROVED_FILE_RESIZED_FROM_ULTRAHIGHRES'){
+  assert(a.new_photo_page.startsWith('https://commons.wikimedia.org/wiki/File:'));
+  assert(/public domain|cc0/i.test(a.source_rights.license_short));
+ }else{
+  assert.equal(a.method,'MUSEUM_MSK_GENT_EXACT_OBJECT_IIIF');
+  assert(a.new_photo_page.startsWith('https://www.mskgent.be/en/collection/'));
+  assert(a.source_rights.inventory);
+  assert(/public domain/i.test(a.source_rights.license_short));
+  assert(/creativecommons.org\/publicdomain|creativecommons.org\/zero|cc0|publicdomain/i.test(a.source_rights.rights_uri));
+ }
+ const row=g.records.find(r=>r.id===a.artwork_id);
+ assert(row&&row.owner_selected_artwork===true);
+ assert.equal(row.title,a.title);
+ assert.equal(row.artist,a.artist);
+ assert.equal(row.rights_note,a.original_historical_rights_note);
+ assert.equal(row.record_status,a.owner_record_status);
+ assert.equal(row.image.src,'./'+a.derivative_path.slice('site/'.length));
+ assert.equal(row.image.usage,'GALLERY_ONLY__OWNER_SELECTED__NO_NEW_PRAYER_OR_CALENDAR');
+ const pv=p.sources.find(x=>x.artwork_id===a.artwork_id && x.path===a.derivative_path);
+ assert(pv&&pv.sha256===a.derivative_sha256);
+ assert.equal(pv.git_blob_sha,a.derivative_git_blob_sha);
+ assert.equal(pv.full_size_original_not_archived,true);
+ totalBytes+=b.length;
+}
+assert.equal(totalBytes,m.summary.new_image_bytes);
+const rejectedArtworkIDs=new Set(rejected.rejected_originals.map(x=>x.id));
+for(const hold of m.held){
+ assert(priorHoldIds.has(hold.artwork_id));
+ assert(!ids.has(hold.artwork_id));
+ const rec=g.records.find(r=>r.id===hold.artwork_id);
+ assert(rec&&rec.image===null,'Every unsupported replacement remains unpublished');
+}
+for(const old of source.artworks){
+ const row=g.records.find(r=>r.id===old.artwork_id);
+ assert(row);
+ assert.deepEqual(row.exact_prayer_cards,old.owner_approved_exact_card_ids);
+ assert.equal(row.eligible_card_count,old.candidate_prayer_card_ids.length);
+ assert.equal(row.attribution_status,old.attribution_status);
+}
+assert.equal(g.source_references.quality_recovery_wave06,'app-data/sacred-art/quality-recovery-wave06-20261116.v1.json');
+assert(fs.readFileSync('site/gallery/gallery.js','utf8').includes('data.records?.length !== 873'));
+console.log('PASS quality wave06: all 182 prior source photo holds reconciled, '+n+' exact photo upgrades ('+totalBytes+' bytes), '+(182-n)+' independent holds; 873 historical artwork and canonical prayer-card identities unchanged.');

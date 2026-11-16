@@ -16,7 +16,8 @@
     "bulk_approved_commons_batch02": "app-data/sacred-art/bulk-commons-photo-import-batch02-20261116.v1.json",
     "commons_rate_limit_retry": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
     "selected_museum_wave04": "app-data/sacred-art/selected-museum-image-wave04-20261116.v1.json",
-    "curated_cohort_wave05": "app-data/sacred-art/curated-cohort-image-wave05-20261116.v1.json"
+    "curated_cohort_wave05": "app-data/sacred-art/curated-cohort-image-wave05-20261116.v1.json",
+    "quality_recovery_wave06": "app-data/sacred-art/quality-recovery-wave06-20261116.v1.json"
   },
   "policy": {
     "all_records_included": true,
@@ -32,11 +33,11 @@
   "counts": {
     "total_records": 873,
     "selected_artwork_records": 740,
-    "image_available_records": 470,
-    "distinct_locally_hosted_paintings": 467,
+    "image_available_records": 475,
+    "distinct_locally_hosted_paintings": 472,
     "angelus_review_records": 36,
     "unassigned": 611,
-    "verified_image_files": 467,
+    "verified_image_files": 472,
     "full_resolution_image_count_unknown": true
   },
   "records": [
@@ -8813,7 +8814,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Maerten_de_Vos_-_The_Temptation_of_Saint_Anthony_the_Great.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-selected-quality-upgrade-001.webp",
+        "quality": "EXACT_SOURCE_HIGH_RESOLUTION_FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__OWNER_SELECTED__NO_NEW_PRAYER_OR_CALENDAR",
+        "provenance": "Recovered from already owner-approved artwork after earlier quality hold; exact original Commons or matching museum accession/institutional catalogue full-image source. Not a new artwork choice.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Maerten_de_Vos_-_The_Temptation_of_Saint_Anthony_the_Great.jpg",
+        "source_note": "Exact owner-approved Commons File page PD/CC0 with explicit copyright=false; original over old megapixel processing cap, not low quality",
+        "source_dimensions": [
+          12625,
+          16671
+        ],
+        "pixel_width": 1212,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Maerten_de_Vos_-_The_Temptation_of_Saint_Anthony_the_Great.jpg/960px-Maerten_de_Vos_-_The_Temptation_of_Saint_Anthony_the_Great.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -10131,7 +10146,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Antoon_van_den_Heuvel_-_Saint_Catherine_of_Siena_Kissing_the_Wounds_of_Christ_-_1929-AX_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-selected-quality-upgrade-055.webp",
+        "quality": "EXACT_SOURCE_HIGH_RESOLUTION_FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__OWNER_SELECTED__NO_NEW_PRAYER_OR_CALENDAR",
+        "provenance": "Recovered from already owner-approved artwork after earlier quality hold; exact original Commons or matching museum accession/institutional catalogue full-image source. Not a new artwork choice.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Antoon_van_den_Heuvel_-_Saint_Catherine_of_Siena_Kissing_the_Wounds_of_Christ_-_1929-AX_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+        "source_note": "Exact owner-approved Commons File page PD/CC0 with explicit copyright=false; original over old megapixel processing cap, not low quality",
+        "source_dimensions": [
+          7394,
+          12330
+        ],
+        "pixel_width": 959,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Antoon_van_den_Heuvel_-_Saint_Catherine_of_Siena_Kissing_the_Wounds_of_Christ_-_1929-AX_-_Museum_of_Fine_Arts_Ghent_%28MSK%29.jpg/960px-Antoon_van_den_Heuvel_-_Saint_Catherine_of_Siena_Kissing_the_Wounds_of_Christ_-_1929-AX_-_Museum_of_Fine_Arts_Ghent_%28MSK%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -10612,7 +10641,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_The_Annunciation_-_WGA11940.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-selected-quality-upgrade-072.webp",
+        "quality": "EXACT_SOURCE_HIGH_RESOLUTION_FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__OWNER_SELECTED__NO_NEW_PRAYER_OR_CALENDAR",
+        "provenance": "Recovered from already owner-approved artwork after earlier quality hold; exact original Commons or matching museum accession/institutional catalogue full-image source. Not a new artwork choice.",
+        "license": "MSK Ghent Public Domain on exact catalogue object and IIIF manifest",
+        "license_url": "https://www.mskgent.be/en/collection/s-91",
+        "source_note": "Exact MSK Gent catalogue page inventory number and artist match, Public Domain label, high-resolution IIIF manifest rights check",
+        "source_dimensions": [
+          5237,
+          6132
+        ],
+        "pixel_width": 1367,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Jan_Janssens_-_The_Annunciation_-_WGA11940.jpg/960px-Jan_Janssens_-_The_Annunciation_-_WGA11940.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -10716,7 +10759,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Melchior_de_la_Mars_-_Saint_Sebastian_Released_by_the_Roman_Widow_Irene_and_her_Servant_-_2022-H_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-selected-quality-upgrade-080.webp",
+        "quality": "EXACT_SOURCE_HIGH_RESOLUTION_FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__OWNER_SELECTED__NO_NEW_PRAYER_OR_CALENDAR",
+        "provenance": "Recovered from already owner-approved artwork after earlier quality hold; exact original Commons or matching museum accession/institutional catalogue full-image source. Not a new artwork choice.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Melchior_de_la_Mars_-_Saint_Sebastian_Released_by_the_Roman_Widow_Irene_and_her_Servant_-_2022-H_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+        "source_note": "Exact owner-approved Commons File page PD/CC0 with explicit copyright=false; original over old megapixel processing cap, not low quality",
+        "source_dimensions": [
+          10311,
+          13454
+        ],
+        "pixel_width": 1226,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Melchior_de_la_Mars_-_Saint_Sebastian_Released_by_the_Roman_Widow_Irene_and_her_Servant_-_2022-H_-_Museum_of_Fine_Arts_Ghent_%28MSK%29.jpg/960px-Melchior_de_la_Mars_-_Saint_Sebastian_Released_by_the_Roman_Widow_Irene_and_her_Servant_-_2022-H_-_Museum_of_Fine_Arts_Ghent_%28MSK%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15530,7 +15587,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Michaelina_Wautier_-_Twee_meisjes_als_de_heiligen_Agnes_en_Dorothea_-_599_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-selected-quality-upgrade-266.webp",
+        "quality": "EXACT_SOURCE_HIGH_RESOLUTION_FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__OWNER_SELECTED__NO_NEW_PRAYER_OR_CALENDAR",
+        "provenance": "Recovered from already owner-approved artwork after earlier quality hold; exact original Commons or matching museum accession/institutional catalogue full-image source. Not a new artwork choice.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Michaelina_Wautier_-_Twee_meisjes_als_de_heiligen_Agnes_en_Dorothea_-_599_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff",
+        "source_note": "Exact owner-approved Commons File page PD/CC0 with explicit copyright=false; original over old megapixel processing cap, not low quality",
+        "source_dimensions": [
+          11569,
+          8789
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1216
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/Michaelina_Wautier_-_Twee_meisjes_als_de_heiligen_Agnes_en_Dorothea_-_599_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff/lossy-page1-960px-Michaelina_Wautier_-_Twee_meisjes_als_de_heiligen_Agnes_en_Dorothea_-_599_-_Royal_Museum_of_Fine_Arts_Antwerp.tiff.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_PRODUCTION_CLEARED",
       "scene_ids": [],

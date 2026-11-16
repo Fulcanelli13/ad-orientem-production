@@ -54,6 +54,7 @@ jobs:
           node tests/sacred-art-commons-wave03.mjs
           node tests/sacred-art-selected-museum-wave04.mjs
           node tests/sacred-art-curated-wave05.mjs
+          node tests/sacred-art-quality-wave06.mjs
           if grep -Rni 'vercel' site/; then
             echo 'Vercel references are not allowed in the production site.' >&2
             exit 1
