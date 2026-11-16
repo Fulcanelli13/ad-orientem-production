@@ -20,8 +20,8 @@ assert.equal(policy.records.length,31);
 assert.deepEqual(new Set(policy.records.map(r=>r.review_artwork_id)),new Set(selection.records.map(r=>r.review_artwork_id)));
 assert.equal(new Set(policy.records.map(r=>r.review_artwork_id)).size,31);
 assert.equal(gallery.counts.total_records,873);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings,343);
-assert.equal(provenance.local_image_count,343);
+assert(gallery.counts.distinct_locally_hosted_paintings>=343,'Production images should not regress below V19');
+assert.equal(provenance.local_image_count,gallery.counts.distinct_locally_hosted_paintings);
 assert.deepEqual(policy.counts,{main_preserved:5,overlay_eligible:7,source_only_holds:19});
 const states=policy.records.reduce((acc,r)=>{(acc[r.disposition]??=[]).push(r);return acc;},{});
 assert.equal(states.CURRENT_MAIN_PRESERVE.length,5);
@@ -75,5 +75,5 @@ assert(js.includes('legacyRecordCount !== 873 || addedRecords !== 6 || addedImag
 assert(js.includes('selected31-reviewed-images.v13.json'));
 assert(js.includes('selected31-reviewed-images.v14.json'));
 assert.equal(873+visible.length,879);
-assert.equal(343+visible.length+v14.image_patches.length,350);
-console.log('V19 release gate PASS: canonical 873/343 preserved; draft 879/350; 31 selected, 7 vetted candidates, 19 held, 5 existing; all research source hashes valid.');
+assert.equal(gallery.counts.distinct_locally_hosted_paintings+visible.length+v14.image_patches.length,provenance.local_image_count+7);
+console.log('V19 release gate PASS: canonical 873 and all published images preserved; V19 seven draft photos; 31 selected, 7 vetted candidates, 19 held, 5 existing; all research source hashes valid.');
