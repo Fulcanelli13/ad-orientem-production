@@ -186,42 +186,6 @@
       "full_original_photograph_archived": false
     },
     {
-      "artwork_id": "CANONICAL::ART-iandomenico-iepolo-escent-from-the-ross-rado-assion-series",
-      "title": "Descent from the Cross — Prado Passion series",
-      "artist": "Giandomenico Tiepolo",
-      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg",
-      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg/1920px-Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "source_file_page": "https://commons.wikimedia.org/wiki/File:Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg",
-      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
-      "commons_pageid": 19225975,
-      "commons_sha1": "6305d728e1f804b831ef784f6b9363f0e3fde678",
-      "original_source_pixels": [
-        2705,
-        2362
-      ],
-      "downloaded_bytes": 1180842,
-      "downloaded_source_sha256": "085513c4f7eb0f91057350c95539a54663cdfc42929903a6c7fdd9714dd0a729",
-      "derivative_path": "site/gallery/images/selected-museum-wave04-38878d1131ad5f014488.webp",
-      "derivative_bytes": 756272,
-      "derivative_sha256": "d3fbe73a947a2ce60fdf514abe9cfde578bec0ca544974bc3196dcfd7bbcb66a",
-      "derivative_git_blob": "1a9cbca84569045bcddde33c7fe559f04601d1a1",
-      "derivative_pixels": [
-        1600,
-        1398
-      ],
-      "photo_license_evidence": {
-        "license_short": "public domain",
-        "license_code": "pd",
-        "copyrighted_flag": "false",
-        "artist_meta": "giovanni domenico tiepolo",
-        "credit_meta": "museo nacional del prado, madrid",
-        "usage_terms": "public domain"
-      },
-      "historical_curation": "OWNER_APPROVED_EXISTING",
-      "historical_rights_note": "NOT_CERTIFIED",
-      "full_original_photograph_archived": false
-    },
-    {
       "artwork_id": "REVIEW::commons:4965555",
       "title": "French: La crucifixion",
       "artist": "Philippe de Champaigne",
@@ -1766,6 +1730,14 @@
       "decision": "HOLD",
       "reason": "INSTITUTIONAL_OBJECT_IMAGE_ACCESS_REQUIRES_SEPARATE_EXACT_SOURCE_VERIFICATION",
       "detail": "artmuseum.princeton.edu"
+    },
+    {
+      "artwork_id": "CANONICAL::ART-iandomenico-iepolo-escent-from-the-ross-rado-assion-series",
+      "title": "Descent from the Cross — Prado Passion series",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg",
+      "decision": "HOLD",
+      "reason": "USER_PRADO_SOURCE_EXCLUSION",
+      "detail": "Explicit museum-source exclusion; artwork selection retained but photo withdrawn"
     }
   ],
   "decisions": [
@@ -2224,8 +2196,10 @@
       "artwork_id": "CANONICAL::ART-iandomenico-iepolo-escent-from-the-ross-rado-assion-series",
       "title": "Descent from the Cross — Prado Passion series",
       "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg",
-      "decision": "DISPLAY_IMAGE_ADDED",
-      "path": "site/gallery/images/selected-museum-wave04-38878d1131ad5f014488.webp"
+      "decision": "HOLD",
+      "path": "site/gallery/images/selected-museum-wave04-38878d1131ad5f014488.webp",
+      "reason": "USER_PRADO_SOURCE_EXCLUSION",
+      "detail": "Explicit museum-source exclusion; artwork selection retained but photo withdrawn"
     },
     {
       "artwork_id": "REVIEW::commons:4965555",
@@ -2458,9 +2432,9 @@
     "museum_candidates_checked": 14,
     "file_metadata_found": 36,
     "eligible_for_download": 38,
-    "new_gallery_paintings": 38,
-    "new_derivative_bytes": 12880102,
-    "held_count": 52,
+    "new_gallery_paintings": 37,
+    "new_derivative_bytes": 12123830,
+    "held_count": 53,
     "hold_reasons": {
       "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT": 9,
       "PREVIOUS_NONCOMMERCIAL_TERMS": 2,
@@ -2474,10 +2448,11 @@
       "COMMONS_NO_EXPLICIT_COPYRIGHT_FALSE": 1,
       "MSK_OBJECT_IMAGE_SERVICE_NOT_FOUND": 4,
       "INSTITUTIONAL_OBJECT_IMAGE_ACCESS_REQUIRES_SEPARATE_EXACT_SOURCE_VERIFICATION": 2,
-      "KMSKA_MANIFEST_RIGHTS_CONFLICT_WITH_PRIOR_CC0": 2
+      "KMSKA_MANIFEST_RIGHTS_CONFLICT_WITH_PRIOR_CC0": 2,
+      "USER_PRADO_SOURCE_EXCLUSION": 1
     },
-    "gallery_total_images": 430,
-    "gallery_image_bearing_records": 433,
+    "gallery_total_images": 429,
+    "gallery_image_bearing_records": 432,
     "original_catalogue_records_preserved": 873,
     "historical_rejected_originals_preserved": 103,
     "new_prayer_card_assignments": 0,

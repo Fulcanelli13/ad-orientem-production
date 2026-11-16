@@ -13,10 +13,10 @@ assert.deepEqual(proof.summary,{originals:3,bytes:11438704,prior_records_preserv
   new_released_work_records:3,source_masters_reused:3,external_acquisitions:0,
   new_prayer_defaults:0,hash_mismatches:0});
 assert.equal(catalogue.counts.total_records,873);
-assert.equal(catalogue.counts.distinct_locally_hosted_paintings,430);
-assert.equal(catalogue.counts.image_available_records,433);
-assert.equal(catalogue.counts.verified_image_files,430);
-assert.equal(images.sources.length,430);
+assert.equal(catalogue.counts.distinct_locally_hosted_paintings,429);
+assert.equal(catalogue.counts.image_available_records,432);
+assert.equal(catalogue.counts.verified_image_files,429);
+assert.equal(images.sources.length,429);
 assert.equal(originalIndex.artworks.length,862);
 assert.equal(catalogue.records.length,873);
 assert.equal(new Set(catalogue.records.map(r=>r.id)).size,873);
@@ -88,4 +88,4 @@ const ui=fs.readFileSync('site/gallery/gallery.js','utf8');
 assert(ui.includes('item.calendar_placements'));
 assert(ui.includes('item.image.source_note'));
 assert(ui.includes('data.records?.length !== 873'));
-console.log('PASS: 3 old released Class I photos copied exactly, 11,438,704 bytes, 873 catalogued works, 430 images, preserved date locks and rights caveats.');
+console.log('PASS: 3 old released Class I photos copied exactly, 11,438,704 bytes, 873 catalogued works, 429 images, preserved date locks and rights caveats.');

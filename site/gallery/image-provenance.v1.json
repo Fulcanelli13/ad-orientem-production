@@ -1,9 +1,9 @@
 {
   "schema": "ao.sacred-art.gallery-image-provenance.v1",
   "import_date": "2026-11-15",
-  "source_contract": "Prior 70 photos/870 records unchanged. Three already selected and old-released Class I Calendar photos (Raphael, Tanner, Lanfranco) copied without modifications from preexisting 54-JPEG production source bank, maintaining old photo-rights caveats and date locks. No new prayer defaults. Plus 161 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation. Plus 109 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation. A polite sequential retry recovered 49 of 49 previously rate-limited exact Commons photo previews without touching other original artwork/canonical assignments. If Wikimedia returned 429, download paused rather than bypassing rate limits. Wave04: 38 additional owner-selected original artwork images, exact source-file page identity, per-file PD/CC0 evidence, high quality full composition; historically rejected and conflicting rights images remain held. No new prayer or Calendar decisions.",
-  "local_image_count": 430,
-  "catalogue_record_images_count": 433,
+  "source_contract": "Prior 70 photos/870 records unchanged. Three already selected and old-released Class I Calendar photos (Raphael, Tanner, Lanfranco) copied without modifications from preexisting 54-JPEG production source bank, maintaining old photo-rights caveats and date locks. No new prayer defaults. Plus 161 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation. Plus 109 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation. A polite sequential retry recovered 49 of 49 previously rate-limited exact Commons photo previews without touching other original artwork/canonical assignments. If Wikimedia returned 429, download paused rather than bypassing rate limits. Wave04: 37 additional owner-selected original artwork images, exact source-file page identity, per-file PD/CC0 evidence, high quality full composition; historically rejected and conflicting rights images remain held. No new prayer or Calendar decisions.",
+  "local_image_count": 429,
+  "catalogue_record_images_count": 432,
   "duplicate_same_original": [
     {
       "physical_artwork": "Met object 438724",
@@ -14119,42 +14119,6 @@
       "derivative_pixels": [
         1600,
         1241
-      ],
-      "original_full_resolution_bytes_archived": false,
-      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_OR_CALENDAR"
-    },
-    {
-      "artwork_id": "CANONICAL::ART-iandomenico-iepolo-escent-from-the-ross-rado-assion-series",
-      "title": "Descent from the Cross — Prado Passion series",
-      "artist": "Giandomenico Tiepolo",
-      "path": "site/gallery/images/selected-museum-wave04-38878d1131ad5f014488.webp",
-      "image_bytes": 756272,
-      "sha256": "d3fbe73a947a2ce60fdf514abe9cfde578bec0ca544974bc3196dcfd7bbcb66a",
-      "git_blob_sha": "1a9cbca84569045bcddde33c7fe559f04601d1a1",
-      "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg",
-      "source_image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg/1920px-Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
-      "source_record": "app-data/sacred-art/selected-museum-image-wave04-20261116.v1.json",
-      "source_access_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
-      "source_file_page": "https://commons.wikimedia.org/wiki/File:Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg",
-      "source_commons_image_sha1": "6305d728e1f804b831ef784f6b9363f0e3fde678",
-      "source_commons_pageid": 19225975,
-      "original_source_pixels": [
-        2705,
-        2362
-      ],
-      "downloaded_original_or_thumbnail_sha256": "085513c4f7eb0f91057350c95539a54663cdfc42929903a6c7fdd9714dd0a729",
-      "downloaded_source_bytes": 1180842,
-      "photo_license_evidence": {
-        "license_short": "public domain",
-        "license_code": "pd",
-        "copyrighted_flag": "false",
-        "artist_meta": "giovanni domenico tiepolo",
-        "credit_meta": "museo nacional del prado, madrid",
-        "usage_terms": "public domain"
-      },
-      "derivative_pixels": [
-        1600,
-        1398
       ],
       "original_full_resolution_bytes_archived": false,
       "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_OR_CALENDAR"

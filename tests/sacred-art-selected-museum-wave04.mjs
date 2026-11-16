@@ -16,6 +16,7 @@ assert.equal(report.summary.reviewed_owner_selected_records,90);
 const n=report.summary.new_gallery_paintings;
 assert(n>=4 && n<=90);
 assert.equal(report.artworks.length,n);
+assert(!report.artworks.some(a=>/prado/i.test(a.artwork_id+' '+a.title+' '+a.artwork_source_url)),'Prado-linked image must stay unpublished');
 assert.equal(report.held.length,90-n);
 assert.equal(report.decisions.length,90);
 assert.equal(new Set(report.decisions.map(x=>x.artwork_id)).size,90);

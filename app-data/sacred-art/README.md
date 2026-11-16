@@ -64,4 +64,4 @@ Revalidated 49 prior rate-limited source-file candidates with conservative seque
 
 ### Additional owner-selected museum original source gallery batch wave04
 
-Exact owner-selected source-file and institutional collection verification produced 38 more local WebP display paintings out of a 90-object candidate registry. Now 430 painting images over 433 catalogue rows; 873 historic records remain unchanged. 52 existing owner-selected records carry explicit hold reasons. Original source-master JPEG count remains 54; this is a display-derivative migration, not source-JPEG preservation. See selected-museum-image-wave04-20261116.v1.json.
+Exact owner-selected source-file and institutional collection verification produced 37 more local WebP display paintings out of a 90-object candidate registry. Now 429 painting images over 432 catalogue rows; 873 historic records remain unchanged. 53 existing owner-selected records carry explicit hold reasons. Original source-master JPEG count remains 54; this is a display-derivative migration, not source-JPEG preservation. See selected-museum-image-wave04-20261116.v1.json.
