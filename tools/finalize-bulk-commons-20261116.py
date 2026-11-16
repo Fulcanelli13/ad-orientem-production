@@ -28,11 +28,7 @@ for path in ["tests/sacred-art-gallery.mjs","tests/sacred-art-san-polo.mjs",
  ]
  for a,b in replacements:text=text.replace(a,b)
  p.write_text(text)
-pages=P(".github/workflows/pages.yml")
-s=pages.read_text()
-anchor="          node tests/sacred-art-class-i-gallery.mjs\n"
-assert anchor in s
-pages.write_text(s.replace(anchor,anchor+"          node tests/sacred-art-bulk-commons.mjs\n"))
+# GitHub Actions token cannot edit the protected Pages workflow; update that via the GitHub connector after the asset commit.
 with P("site/gallery/README.md").open("a",encoding="utf8") as f:
  f.write("\n### Full bulk source-check of owner-approved Commons paintings - 16 November 2026\n\n")
  f.write(f"Automatically evaluated {m['summary']['owner_selected_candidate_records']} previously selected yet unpublished artwork records against their **exact preselected Wikimedia Commons File page**, protected the 103 historic globally rejected originals, and locally published **{n} full-composition WebP images** (max 1600px). ")
