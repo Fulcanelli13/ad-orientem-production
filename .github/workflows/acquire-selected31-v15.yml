@@ -1,0 +1,57 @@
+name: Sacred Art V15 selected painting source archive (draft only)
+on:
+  push:
+    branches: [curation/selected31-gallery-reconciliation-v12]
+    paths:
+      - .github/workflows/acquire-selected31-v15.yml
+      - tools/acquire-selected31-sources-v15.py
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: sacred-art-selected31-v15
+  cancel-in-progress: false
+jobs:
+  archive:
+    if: github.ref == 'refs/heads/curation/selected31-gallery-reconciliation-v12'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'Pillow>=10,<13'
+      - name: Acquire exact photographic sources and document failed cases
+        run: python tools/acquire-selected31-sources-v15.py
+      - name: Check source bytes/hashes and no gallery modifications
+        run: |
+          python - <<'PY'
+          import json,pathlib,hashlib
+          root=pathlib.Path('.')
+          r=json.loads((root/'app-data/sacred-art/staged-selected31-v15/acquisition-results.v15.json').read_text())
+          assert r['acquired_count']>=1 and r['acquired_count']+r['held_count']==4
+          for x in r['records']:
+              for v in ['source','derivative']:
+                  p=root/x[v+'_path']
+                  assert p.is_file() and p.stat().st_size==x[v+'_bytes']
+                  assert hashlib.sha256(p.read_bytes()).hexdigest()==x[v+'_sha256']
+              assert x['status']=='ARCHIVED_SOURCE_ONLY__VISUAL_REVIEW_PENDING__NO_PUBLICATION'
+          assert json.loads((root/'site/gallery/catalogue.v1.json').read_text())['counts']['total_records']==862
+          print('V15 source-only contract:',r['acquired_count'],'acquired,',r['held_count'],'held')
+          PY
+          node tests/sacred-art-gallery.mjs
+      - name: Commit ONLY staging directory to draft branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add app-data/sacred-art/staged-selected31-v15/
+          git diff --cached --quiet || git commit -m 'Sacred Art V15: archive selected exact-object image sources (not live)'
+          git push origin HEAD:curation/selected31-gallery-reconciliation-v12
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sacred-art-v15-source-report
+          path: app-data/sacred-art/staged-selected31-v15/acquisition-results.v15.json
+          retention-days: 14
