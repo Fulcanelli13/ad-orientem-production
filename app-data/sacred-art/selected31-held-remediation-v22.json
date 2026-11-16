@@ -5,12 +5,11 @@
   "source_of_truth": "app-data/sacred-art/selected31-clearance-v22.json",
   "policy": "An artwork may be in public domain while the exact photograph, institutional heritage reuse, attribution or user-selected object identity remains uncleared. Prefer independent properly licensed files where allowed; do not treat file acquisition as approval.",
   "counts": {
-    "held": 14,
+    "held": 13,
     "by_lane": {
       "FR_LOUVRE_INDEPENDENT_PHOTOGRAPH": 2,
       "IT_PUBLIC_HERITAGE": 7,
       "IT_VENICE_CHURCH_HERITAGE": 1,
-      "DK_SMK_OBJECT_IDENTITY": 1,
       "FR_LOUVRE_INDEPENDENT_PHOTOGRAPH__IMAGE_GEOMETRY": 1,
       "UK_NGS_UNAVAILABLE_IMAGE": 1,
       "US_RISD_PREVIEW_QUALITY": 1
@@ -106,28 +105,6 @@
       "next_action": "Louvre INV 2806 exact artwork; separate its independent Commons photographer licence from the Louvre-collection site's restrictive image terms.",
       "evidence_urls": [
         "https://collections.louvre.fr/en/page/cgu"
-      ],
-      "no_owner_permission_or_fee_requested": true
-    },
-    {
-      "review_artwork_id": "king-jordaens",
-      "artist": "Jacob Jordaens",
-      "title": "Christ Blessing the Children",
-      "source_dimensions": [
-        6437,
-        5891
-      ],
-      "source_sha256": "3c4ae6b35298884b1f7c416efb0f900156bdfc7fc09f2353b19bd68c5a25ef7c",
-      "source_path": "app-data/sacred-art/staged-selected31-v18/king-jordaens-source.jpg",
-      "source_page": "https://commons.wikimedia.org/wiki/Paintings_by_Jacob_Jordaens",
-      "rights_or_identity_lane": "DK_SMK_OBJECT_IDENTITY",
-      "exact_photo_license_claim": "CC0 1.0, SMK reproduction",
-      "hold_status": "SOURCE_ONLY__NOT_PUBLICATION_AUTHORIZED",
-      "independent_quality_status": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
-      "reason": "SMK KMSsp234 image itself publicly CC0; painting attribution is only 'attributed to Jacob Jordaens'. Confirm original owner-selected object/image rather than replacing unknown selection by title similarity.",
-      "next_action": "SMK KMSsp234 image itself publicly CC0; painting attribution is only 'attributed to Jacob Jordaens'. Confirm original owner-selected object/image rather than replacing unknown selection by title similarity.",
-      "evidence_urls": [
-        "https://open.smk.dk/artwork/image/KMSsp234"
       ],
       "no_owner_permission_or_fee_requested": true
     },
@@ -342,6 +319,7 @@
   "v22_changes": [
     "Tiepolo Louvre RF 176 removed from holds: independent Sailko CC BY 3 photo now draft gallery-only",
     "Champaigne Louvre INV1125 is photograph-licensed, but framed/incomplete composition requires replacement",
-    "Haarlem Louvre RF1983-25 museum identity verified, exact originally-selected Commons page still not independently resolved"
+    "Haarlem Louvre RF1983-25 museum identity verified, exact originally-selected Commons page still not independently resolved",
+    "Original owner's V12 selection explicitly specified Jordaens KMSsp234, matching exact CC0 museum image; removed from object-identity hold but still needs visual image QA"
   ]
 }
