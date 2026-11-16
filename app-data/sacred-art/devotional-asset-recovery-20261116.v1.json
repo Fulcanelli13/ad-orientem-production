@@ -1,0 +1,91 @@
+{
+  "schema": "ao.sacred-art.exact-devotional-asset-recovery.v1",
+  "date": "2026-11-16",
+  "source_commit": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+  "scope": "No new art selection or prayer-card default; preserve historical image identities and exact source bytes.",
+  "source_registry": "assets/prayer/user-approved/source-provenance.v1.json",
+  "assets": [
+    {
+      "key": "mystic_lamb",
+      "image_type": "painting_webp",
+      "source_path": "assets/prayer/user-approved/benediction-mystic-lamb.webp",
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "gallery_path": "site/gallery/images/van-eyck-mystic-lamb-exact-released.webp",
+      "catalogue_id": "PRAYER::saints--vaneyck",
+      "sha256": "16b5803b9bd1945c065a848a345ef84c6771c88b57e1cb664af267dc2226fe8a",
+      "git_blob_sha": "043354b2103b144522a096eeda46bf0fe83c30cd",
+      "bytes": 1536710,
+      "old_approval": "APPROVED_THEMATIC_SCENE",
+      "rights": "Wikimedia Commons PD-Art, old-100, Public Domain Mark (NOT a CC0 licence)",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ghent_Altarpiece_-_Adoration_of_the_Mystic_Lamb.jpg",
+      "gallery_published": true,
+      "source_original_jpeg_preserved": false
+    },
+    {
+      "key": "st_therese",
+      "image_type": "historical_portrait_webp",
+      "source_path": "assets/prayer/user-approved/st-therese-lisieux-historical-portrait.webp",
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "gallery_path": null,
+      "archive_path": "app-data/sacred-art/devotional-portraits/st-therese-lisieux-historical-portrait.webp",
+      "catalogue_id": null,
+      "sha256": "705cfd23686a8721faaf62ecaa50ccae1be7c227ceccffdde9f1ca09d73e909d",
+      "git_blob_sha": "138e198234ec931ecf8fb1602a919b9249ac47f7",
+      "bytes": 48294,
+      "old_approval": "FINAL_PHOTOGRAPH_APPROVED",
+      "rights": "Wikimedia Commons Public Domain in France and United States (NOT modern Céline Martin painting)",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Therese_lisieux_portrait.jpg",
+      "source_image_dimensions": [
+        362,
+        498
+      ],
+      "gallery_published": false,
+      "source_original_jpeg_preserved": false
+    },
+    {
+      "key": "murillo_confession",
+      "image_type": "painting_jpeg",
+      "source_path": "assets/prayer/released/confession-murillo-nga-original.jpg",
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "gallery_path": "site/gallery/images/murillo-return-prodigal-son-nga-34956-original.jpg",
+      "existing_master": "app-data/sacred-art/source-masters/c0904b5d2a6a4bd99b224194217ce45c6a9fe676.jpg",
+      "catalogue_id": "CANONICAL::nga-34956",
+      "sha256": "b1e3d47e65f4367fd11fc23d9a63fb25ff3d8c934c3147606f1a3eba703beaa7",
+      "git_blob_sha": "c0904b5d2a6a4bd99b224194217ce45c6a9fe676",
+      "bytes": 3022309,
+      "old_approval": "RELEASED_CONFESSION_PHOTO_PR_2293",
+      "rights": "National Gallery of Art Open Access · public domain (CC0)",
+      "source_page": "https://www.nga.gov/artworks/34956-return-prodigal-son",
+      "gallery_published": true,
+      "source_original_jpeg_preserved": true
+    }
+  ],
+  "held_photographs": [
+    {
+      "artwork_id": "HERO::mnac:008327-000",
+      "title": "Virgin of the Seven Sorrows",
+      "old_archival_file": "assets/staged/module-hero-masters/sorrows.jpg",
+      "old_git_blob_sha": "f57231e8a7539a70bcb19a33765348f86572a511",
+      "old_sha256": "c9c338596bc2a1f069535facfab1fe11cee1aaad7d67e5440c2114cfe9f09f2a",
+      "other_staged_file": "assets/staged/prayer-selected-cover-qa/seven-sorrows-mnac-pd-art.jpg",
+      "other_staged_blob_sha": "c26e1aa255b0328ec49dc8856565575be594fb1d",
+      "status": "APPROVED_PAINTING__ARCHIVAL_PHOTO_NOT_CLEARED_FOR_PUBLICATION",
+      "reason": "Previous draft PR #1866 requires source rights and final image QA; no certified release of this reproduction.",
+      "copied": false,
+      "gallery_published": false
+    }
+  ],
+  "summary": {
+    "exact_assets": 3,
+    "actual_copied_bytes": 4607313,
+    "newly_copied_from_old_repo": 2,
+    "reused_existing_permanent_source_master": 1,
+    "new_gallery_paintings": 2,
+    "nonpainting_archival_portraits": 1,
+    "held_approved_painting_photos": 1,
+    "new_catalogue_records": 0,
+    "historical_records_preserved": 870,
+    "new_prayer_defaults": 0,
+    "hash_mismatches": 0
+  }
+}

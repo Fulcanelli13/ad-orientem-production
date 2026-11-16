@@ -6,14 +6,14 @@ This is a **new, deliberately scoped** Sacred Art destination inside the existin
 
 ## What is real today
 
-- `catalogue.v1.json`: **all 862 currently tracked artwork records** (860 historical master records plus two preserved Angelus contextual records), searchable by artwork, artist, collection, scene category and reviewed prayer part.
-- **Fifty-four distinct locally hosted artwork images** (fifty-seven historical catalogue records have images; Champaigne, Girardin, and Honthorst each have two records representing a single image).
+- `catalogue.v1.json`: **all 870 currently tracked artwork records** (862 original records, including two Angelus contextual records, plus eight previously selected San Polo cycle identities), searchable by artwork, artist, collection, scene category and reviewed prayer part.
+- **Seventy distinct locally hosted painting images** across 73 catalogue records (historical duplicate identities are preserved).
 - `gallery.js`: searchable/scrollable gallery, curated-vs-research filter, On display, Angelus review, prayer-matched and image-pending views, and a full-composition painting/detail dialog.
 - `gallery.css`: source-derived Cinzel/Cormorant/EB typography and existing Home colours; scoped selectors only.
-- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for all fifty-four on-display reproductions; the 16 November migration additionally preserves eleven previously released full-resolution original JPEGs byte-for-byte in the permanent production source archive, and introduces five carefully matched gallery derivatives.
+- `image-provenance.v1.json`: identity, source-rights records, exact Git blob and image-byte traces for all seventy display reproductions. The source-first bank now preserves **54 historic original/source JPEGs** outside the public website (11 earlier released files + 40 exact recovered institutional/legacy sources + 3 previously released Class I originals), while three further exact originals were already present in the gallery.
 - No external remote URLs are used for gallery image rendering. Museum URLs are links to source records, not image substitutions.
 
-**Important:** **862 artwork records does not mean 862 locally acquired paintings.** Fifty-four distinct artworks are now displayed with local files. The 16 November transfer restores already-acquired original files from the research repository, without another round of museum searches, and attaches derivatives only to existing owner-selected gallery records; one historical Sodoma attribution conflict remains held for review. The gallery WebPs retain full artwork composition, downsampled at most to 2,000 pixels on their longest edge. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
+**Important:** **870 artwork records does not mean 870 locally acquired paintings.** Seventy distinct artworks are now displayed with local files. The 16 November transfer restores already-acquired original files from the research repository, without another round of museum searches, and attaches derivatives only to existing owner-selected gallery records; one historical Sodoma attribution conflict remains held for review. The original institutional gallery WebPs retain full composition and are generally resized to a 2,000-pixel longest edge; the later exact recovered San Polo images retain their historical 1,920–2,400-pixel dimensions without alteration. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
 
 Artwork inclusion in this registry does not itself mean the owner approved it for prayer placement. The separate `owner_selected_artwork`, `prayer_parts`, `exact_prayer_cards`, `eligible_card_count` and image rights fields remain independent.
 
@@ -213,30 +213,69 @@ The other six newly transferred masters remain **master-bank assets** without fo
 
 **Current production coverage: 862 original artwork catalogue records; 54 distinct locally displayed images; 57 image-bearing historical records; 805 metadata-only records.** All prior original IDs, 729 selected metadata records, Angelus associations, 267-position research crosswalk, prayer-card approvals and Claude-designed UI remain independent and unchanged. The only deployment mechanism is still GitHub Actions → GitHub Pages. The permanent original-master library can be expanded through **the same deduplicated bulk-transfer ledger**, not repeated museum-by-museum curation batches.
 
-## Selected Luminous review photographs (V13 draft)
+### Previous source photographs recovered · 16 November 2026
 
-Five separately source-verified, owner-selected Luminous paintings are available in
-\`selected31-reviewed-images.v13.json\` with five locally hosted full-composition
-WebPs. The historical 862-entry catalogue remains **unchanged**. The gallery
-loader adds these five editorial records on top of the canonical source master,
-so the combined view has 867 searchable records and 59 distinct display images.
+**No new artwork curation, museum research or selection was performed.** The source-original recovery ledger `app-data/sacred-art/source-photo-recovery-20261116.v1.json` consolidates **40 source JPEGs already fetched during earlier work**: 38 photographic sources recorded in the gallery's Batch 04–07 manifests and two older original JPEGs already present in the research repository (Carlo Saraceni's *Paradise* and Anthony van Dyck's *Lance Thrust*).
 
-Their source JPEGs and SHA-256 evidence are preserved under
-\`app-data/sacred-art/staged-selected31-v13/\`. These are gallery assets only;
-no prayer runtime card, cinematic transition or new stage primary is authorized.
-The V13 promotion is on draft PR #21 and is not deployed to main.
+**All 40 were recovered byte-for-byte, totaling 200,662,829 bytes (about 200.7 MB), with zero failures.** Their original source SHA-256 (when historically recorded), exact Git blob SHA, byte size and image dimensions were checked. Every image is stored at the immutable content-addressed path `app-data/sacred-art/source-masters/<git-blob-sha>.jpg`. The original 54-image gallery remains entirely unchanged: no new paintings, updated art choices, prayer-card placements or display derivatives in this pass.
 
-## Luminous art V14 draft — five verified photographs
+The cumulative bank therefore contains:
+- **51 source JPEGs in the private-to-deployment repository directory** `app-data/sacred-art/source-masters/`: 11 historical released originals from PR #20, plus 40 restored exact historical source images from this recovery
+- **Three source-original JPEGs already byte-for-byte in `site/gallery/images/`**, which were detected during the earlier release-ledger deduplication and not duplicated
+- **54 distinct on-display gallery images**, under the same 57 existing historical catalogue records
 
-The additive V14 image supplement adds four previously selected works to the
-review collection and patches the **existing** \`plate-bloch-sermon\` record,
-without duplicating Bloch or changing \`catalogue.v1.json\` (862 historical rows).
-The V13+V14 draft therefore proposes **871 searchable gallery rows and 64
-local paintings**. Source photographs and SHA-256/SHA-1 evidence are archived
-outside \`site/\` in \`app-data/sacred-art/staged-selected31-v14/\`.
+Technical precision: "recovered source JPEG" means **the exact image bytes previously downloaded**, not necessarily the full native museum master. The seven NGA sources are the 2,000px IIIF renditions downloaded before, and the five SMK sources include the institution-served file or thumbnail originally acquired (Dolci's 1,600px version remains labelled). Cleveland and Met entries are the precise Open Access print/primary JPEGs from the earlier imports. No source image was upscaled, altered, substituted or newly selected.
 
-Murillo, Verrocchio/Leonardo and Bloch have 2,000px full-composition WebPs.
-Francken and Vermeyen have exact but smaller 1,000/1,166px source images:
-these are labelled **preview only**, not final cinematic backgrounds. No image
-addition confers a Rosary card primary or publication permission. The gallery
-images are in a draft PR, not merged to live GitHub Pages.
+All immutable originals are kept outside the `site/` deployment directory; only the three preexisting source originals already referenced by the public gallery remain in `site/`. Cryptographic provenance links are now attached to the corresponding entries in `site/gallery/image-provenance.v1.json`, so future gallery/prayer modules can resolve original sources without fetching museums again.
+
+**Remaining research-only holds are unchanged:** previously blocked or rights-restricted photographs, rejected sources and unrecovered archival sources were not copied. The source ledger is a permanent recovery register, not a grant of new photo or placement approvals. The active production stack remains GitHub Actions → GitHub Pages only.
+
+### Class I legacy photograph transfer · 16 November 2026
+
+Three further exact JPEGs from previously merged and rights-documented Home Calendar releases were copied into the permanent non-Pages `app-data/sacred-art/source-masters/` source bank: Raphael's *Transfiguration* (5,205,139 bytes), Tanner's *Nicodemus* (5,285,928 bytes), and Lanfranco's *Miracle of Loaves and Fishes* (947,637 bytes). All three are byte-for-byte identical to the originals in the research repository at pinned commit `14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a`; both SHA-256 and Git blob SHA are verified. The complete manifest and image-specific photographic rights caveats are in `app-data/sacred-art/class-i-source-recovery-20261116.v1.json`.
+
+The dedicated master bank now holds **54 exact JPEGs**, plus three already-preserved originals in existing gallery image paths. The gallery continues to display **54 distinct paintings** across the existing **862 historic catalogue records**; these three source-only transfers do **not** create new gallery rows or authorize new prayer image placements. The files are not published by GitHub Pages. Image activation and existing date/canonical identity reconciliation remain separate.
+
+### Released San Polo cycle — exact fourteen-image transfer · 16 November 2026
+
+The complete set of **14 paintings by Giandomenico Tiepolo** from San Polo, Venice, previously **released as an optional Stations reader in the original repo's merged PR #2699**, now appears in the permanent Sacred Art Gallery. All fourteen WebPs were recovered **byte-for-byte** from pinned original repo commit \`14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a\`: fourteen source SHA-256 values and Git object hashes match. **15,141,828 bytes** of unchanged images; these are 1920–2400px previously adapted image derivatives, **not** independently preserved Commons JPEG originals.
+
+Exact photographic terms: **Didier Descouens / Archaeodontosaurus**, CC BY-SA 4.0, with individual original Commons links, licence link, and conversion/resizing statement visible in the gallery. The full existing attribution and source-file page register is preserved in \`site/gallery/SAN-POLO-LICENSE-ATTRIBUTION.md\`. The owner's licence exception applies **only** to these fourteen photos, not to the gallery generally. No Rauth or Stracke restricted photographs have been imported.
+
+Six exact physical works were present in the existing 862-row registry (II, IV, V, VII, XI, XII) and now receive local images. **Eight newly indexed historical released-cycle paintings** (I, III, VI, VIII, IX, X, XIII, XIV) are appended with new stable release IDs, not fabricated prayer approvals. The original 862 registry records, candidate/approval edges and display identities remain present and unchanged. No prototype record was misrepresented as a unique new original. Gallery totals: **870 indexed records, 68 distinct paintings, 71 image-bearing records**. Station images are **gallery-only** in the new production app; current new-app prayer reader defaults and Claude interface remain untouched.
+
+### Existing devotional art source recovery - 16 November 2026
+
+Transferred the previously selected Van Eyck Mystic Lamb exact WebP (1,536,710 bytes), displayed in the gallery as heavenly adoration, not liturgical Benediction; historical Commons PD-Art / PDM is not CC0. The original source JPEG was never saved. Restored the NGA CC0 Murillo Return of the Prodigal Son original JPEG (3,022,309 bytes) already permanently held in source-masters, without new downloads or new approval flags. Saved the preselected 48,294-byte historical St Therese portrait WebP in the non-Pages devotional-portraits bank, not as a painting. The MNAC Seven Sorrows painting remains selected, its uncertified archival photograph held and uncopied. See app-data/sacred-art/devotional-asset-recovery-20261116.v1.json for exact old Git blob hashes, SHA256, image rights and holds.
+
+Current gallery: 870 records, 70 locally displayed paintings, 73 image-bearing rows. All original catalogue IDs and prayer relationships unchanged.
+
+### Three old-released Class I Calendar originals - 16 Nov 2026
+
+Displayed the already acquired and previously released old Home Calendar image originals for 2026: Raphael Transfiguration (Lent II, 1 March), Lanfranco Miracle of the Loaves and Fishes (Laetare, 15 March), and Tanner Nicodemus (Pentecost Monday, 25 May). Three exact JPEGs (11,438,704 bytes) were copied only from the existing production source-master bank, with original SHA256 and Git blob verified. Raphael is a historical art-book scan, Lanfranco a low-resolution non-museum original, and Tanner's source carries PAFA Barbara Katus institutional photographic-rights caveats. Dates are historical 2026 selections only; no new Calendar assignments or prayer defaults. Gallery now has 873 records and 73 distinct paintings. See app-data/sacred-art/class-i-gallery-link-20261116.v1.json for source evidence.
+
+
+## Selected Luminous painting review overlay (draft PR #21, 16 November 2026)
+
+This is an **additive gallery-only integration**, reconciled against the newer
+production baseline of **873 canonical records and 73 displayed images**.
+The 862 historical source-master records and 11 newer releases remain unchanged.
+
+- V13: five owner-selected review photographs and their five review records.
+- V14: five further photographs. Four new review records are added; Carl Bloch's
+  *Sermon on the Mount* image is attached to the existing \`plate-bloch-sermon\`
+  record (no duplicate).
+- V15: four additional verified image sources are retained in
+  \`app-data/sacred-art/staged-selected31-v15/\` only. Their final gallery
+  image/crop/rights QA is **still pending**.
+- Two V14 reproductions (Francken, Vermeyen) remain marked **preview-only**.
+- The draft integrated gallery has **882 searchable records and 83 locally
+  displayed paintings** (873+9 records; 73+10 images), subject to final owner
+  review; \`site/gallery/catalogue.v1.json\` and the canonical provenance
+  index remain byte-identical to the production baseline.
+- Image rights and exact reproduction SHA values remain in the V13/V14
+  acquisition and supplemental provenance manifests. These images are **not
+  authorized prayer-card primaries** and require separate cinematic QA.
+
+The draft does not add a deployment workflow, alter prayers or modify the
+independent research repository.

@@ -1,9 +1,9 @@
 {
   "schema": "ao.sacred-art.gallery-image-provenance.v1",
   "import_date": "2026-11-15",
-  "source_contract": "54 distinct locally displayed artwork images / 57 image-bearing historical gallery records. The migration of previously released original paintings preserved 11 additional byte-exact source JPEGs outside the Pages bundle; three originals already existed byte-for-byte. Five locally generated uncropped gallery derivatives cover six existing owner-selected entries. A total 23 unique source blobs were reconciled; 8 archival references, 1 reproduction-rights hold, 2 rejected photos and 2 missing sources are not newly published.",
-  "local_image_count": 54,
-  "catalogue_record_images_count": 57,
+  "source_contract": "Prior 70 photos/870 records unchanged. Three already selected and old-released Class I Calendar photos (Raphael, Tanner, Lanfranco) copied without modifications from preexisting 54-JPEG production source bank, maintaining old photo-rights caveats and date locks. No new prayer defaults.",
+  "local_image_count": 73,
+  "catalogue_record_images_count": 76,
   "duplicate_same_original": [
     {
       "physical_artwork": "Met object 438724",
@@ -24,7 +24,7 @@
       "note": "Two historical catalogue records refer to one physical Girardin painting and share one local image; prayer associations remain unchanged."
     }
   ],
-  "pending": "805 catalogue records still metadata-only. Source originals transferred from the legacy release register are preserved under app-data/sacred-art/source-masters/; only locally optimized gallery derivatives are published on GitHub Pages. The eight archival-only sources and restricted/rejected ones are deliberately not copied into the publicly accessible production repository. Prayer-screen publication remains independent.",
+  "pending": "Other records and photo-rights holds remain. These three old-released photo sources have Commons PD-Art position but jurisdictional caveats (including PAFA copyright EXIF); not globally certified CC0.",
   "sources": [
     {
       "artwork_id": "PRAYER::saints--saraceni",
@@ -53,7 +53,18 @@
       "source_image_page": "https://www.metmuseum.org/art/collection/search/437607",
       "source_rights": "Metropolitan Museum of Art Open Access / CC0",
       "quality_gate": "VERIFIED_SOURCE__UNCROPPED_MOBILE_DERIVATIVE",
-      "source_identity_checked": "Exact archived research file Git blob SHA or Met-donated Commons SHA-1 validated before derivative; full composition kept, no crop"
+      "source_identity_checked": "Exact archived research file Git blob SHA or Met-donated Commons SHA-1 validated before derivative; full composition kept, no crop",
+      "source_master_path": "app-data/sacred-art/source-masters/dcff19a6efaf2e7a6c71bca7f362119ac6af342b.jpg",
+      "source_master_sha256": "0d2f44968a83af250b13382b29585e18fcde78c5b36261e348f3498cefacd40c",
+      "source_master_git_blob_sha": "dcff19a6efaf2e7a6c71bca7f362119ac6af342b",
+      "source_master_bytes": 2879956,
+      "source_master_pixel_dimensions": [
+        3273,
+        3695
+      ],
+      "source_master_kind": "LEGACY_RELEASED_UNMODIFIED_JPEG",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::ART-hilippe-de-hampaigne-he-nnunciation",
@@ -101,7 +112,18 @@
       "source_record": "app-data/sacred-art/staged-images/van-dyck-kmska297-lance-thrust-2400.webp",
       "recorded_reproduction_rights": "Flemish Art Collection labels the reproduction CC0; inherited from recovery manifest; final QA still pending",
       "release_scope": "GALLERY_PUBLIC_THUMBNAIL_ONLY__PRAYER_CINEMATIC_QA_PENDING",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/3bc6822ec44f6f249d9ca0cf3a385959c8a18ba6.jpg",
+      "source_master_sha256": "0dea697a2137bfc3c2145389d495e43921e61335f457b75450eaf5e4e6f4034e",
+      "source_master_git_blob_sha": "3bc6822ec44f6f249d9ca0cf3a385959c8a18ba6",
+      "source_master_bytes": 26555298,
+      "source_master_pixel_dimensions": [
+        4498,
+        6095
+      ],
+      "source_master_kind": "LEGACY_RELEASED_UNMODIFIED_JPEG",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "owner-selected:holy-trinity:rubens-1620",
@@ -291,7 +313,18 @@
       "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/2f81fbd78dc6f1180dbd193a3d59f3e2ee7e598e.jpg",
+      "source_master_sha256": "5de97b5cb76dbbaaf40dad652b5788667fa1e41a65327db10363e7d675eef2cc",
+      "source_master_git_blob_sha": "2f81fbd78dc6f1180dbd193a3d59f3e2ee7e598e",
+      "source_master_bytes": 3056285,
+      "source_master_pixel_dimensions": [
+        2715,
+        3400
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::cma-159488",
@@ -319,7 +352,18 @@
       "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/70c717d2ae72ae67a4eb79a369cb18c9b371a44f.jpg",
+      "source_master_sha256": "1880866ce9b1cfc27c59a177fbe16689d6d2a595aa69b3cf2fbf9a62c59f49a7",
+      "source_master_git_blob_sha": "70c717d2ae72ae67a4eb79a369cb18c9b371a44f",
+      "source_master_bytes": 4353315,
+      "source_master_pixel_dimensions": [
+        2720,
+        3400
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::cma-135659",
@@ -347,7 +391,18 @@
       "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/675a56204831273925136b5c754be70b58d4357c.jpg",
+      "source_master_sha256": "9630b345caf4062287f16d9d8e0b728b87938f4a3b22eb1ae43d888c518f9d6a",
+      "source_master_git_blob_sha": "675a56204831273925136b5c754be70b58d4357c",
+      "source_master_bytes": 4691706,
+      "source_master_pixel_dimensions": [
+        1951,
+        3400
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "NEW::cma-1950.91",
@@ -375,7 +430,18 @@
       "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/29c1b54035aefbda4515af9b00e880798cca5899.jpg",
+      "source_master_sha256": "8aa5c6f68dac839907b00f72a5ac44903c47c41b59b990384b306977dd468415",
+      "source_master_git_blob_sha": "29c1b54035aefbda4515af9b00e880798cca5899",
+      "source_master_bytes": 5780065,
+      "source_master_pixel_dimensions": [
+        2517,
+        3400
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::cma-127572",
@@ -403,7 +469,18 @@
       "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/07ecf277f72978d2e089158c40efab37995e7300.jpg",
+      "source_master_sha256": "07bceb9a3161ea2cbf10bbe19c26a3e37b95696df261804565cb7a325f64f9ab",
+      "source_master_git_blob_sha": "07ecf277f72978d2e089158c40efab37995e7300",
+      "source_master_bytes": 2943344,
+      "source_master_pixel_dimensions": [
+        3061,
+        3400
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::met-436502",
@@ -431,7 +508,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Open Access / public-domain image",
       "quality_gate": "INSTITUTIONAL_OBJECT_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/9d6aefe629cc6fa9221944fc00bfda474c1fd453.jpg",
+      "source_master_sha256": "a76e00046346849d284e777072cff343a60faefa218178663071a08a10dc74b8",
+      "source_master_git_blob_sha": "9d6aefe629cc6fa9221944fc00bfda474c1fd453",
+      "source_master_bytes": 2720236,
+      "source_master_pixel_dimensions": [
+        2926,
+        4000
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "NEW::met-816514",
@@ -460,7 +548,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/0d42bea18e055082faa78d81f2a9cc8d2638e46b.jpg",
+      "source_master_sha256": "cb59c2a44dcb96190f48b134ab5cefa682cadc0c9337c330104b01d467ef7131",
+      "source_master_git_blob_sha": "0d42bea18e055082faa78d81f2a9cc8d2638e46b",
+      "source_master_bytes": 5679424,
+      "source_master_pixel_dimensions": [
+        3856,
+        4000
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "NEW::cma-1916.812",
@@ -489,7 +588,18 @@
       "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/732d1f1b844fbb74db4fb522a9bd49e58a314b44.jpg",
+      "source_master_sha256": "e7941ab1c97482a939f3a9bdb2b0704e86d086a81a3d585cecafa4e0b76c72a2",
+      "source_master_git_blob_sha": "732d1f1b844fbb74db4fb522a9bd49e58a314b44",
+      "source_master_bytes": 7339254,
+      "source_master_pixel_dimensions": [
+        2540,
+        3400
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::met:436781",
@@ -518,7 +628,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/8bf058f96b25ad3c1cdfa0dde076bce23230e122.jpg",
+      "source_master_sha256": "c68cefb090b0f7b0009b1ee6d97a41304e9ffa5d7e1dd500e8ef3f39d2a15bd2",
+      "source_master_git_blob_sha": "8bf058f96b25ad3c1cdfa0dde076bce23230e122",
+      "source_master_bytes": 3233524,
+      "source_master_pixel_dimensions": [
+        2586,
+        3722
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::met:436966",
@@ -547,7 +668,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/59689206570b9ee69792326f484cdc95fb75cc43.jpg",
+      "source_master_sha256": "03dc8f5602352e7b175d0cc4b61d881f2a85785958018c52d4b389bf5a28ac2b",
+      "source_master_git_blob_sha": "59689206570b9ee69792326f484cdc95fb75cc43",
+      "source_master_bytes": 2994396,
+      "source_master_pixel_dimensions": [
+        3911,
+        2879
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::met:435853",
@@ -576,7 +708,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/067edbee903d79163b52fa67ca74dda8281894ec.jpg",
+      "source_master_sha256": "b003bebfb3c751013faa5f878e68dadd595c7573aad1e2587cb32cc176a3c264",
+      "source_master_git_blob_sha": "067edbee903d79163b52fa67ca74dda8281894ec",
+      "source_master_bytes": 4043603,
+      "source_master_pixel_dimensions": [
+        4000,
+        3421
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::cma-78982",
@@ -605,7 +748,18 @@
       "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/6756e75efa96dfae17763d2d7dfbed706807a1d5.jpg",
+      "source_master_sha256": "f213c24c55e83432752c310ab3e6bf7c533c4627f22ceefc4481b7eee17af6e5",
+      "source_master_git_blob_sha": "6756e75efa96dfae17763d2d7dfbed706807a1d5",
+      "source_master_bytes": 1932047,
+      "source_master_pixel_dimensions": [
+        2561,
+        3400
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::met-436791",
@@ -634,7 +788,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/72186b8682a96e5248a0111b3257dd341f9d514b.jpg",
+      "source_master_sha256": "f294a91e54d1e073bbabf9c5d5ce4d8576febe145dff2ce5d278fc47dfb43d15",
+      "source_master_git_blob_sha": "72186b8682a96e5248a0111b3257dd341f9d514b",
+      "source_master_bytes": 6327199,
+      "source_master_pixel_dimensions": [
+        3729,
+        4000
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::met-436835",
@@ -663,7 +828,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/33940fbb2be23a2a0858fca2566394c2acd1f6a1.jpg",
+      "source_master_sha256": "889c57548f01237cb9031d81650832e74ac9f89112131a5bf32ded0317353a90",
+      "source_master_git_blob_sha": "33940fbb2be23a2a0858fca2566394c2acd1f6a1",
+      "source_master_bytes": 4162432,
+      "source_master_pixel_dimensions": [
+        2528,
+        4000
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "NEW::met-437524",
@@ -692,7 +868,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/989073e8ae07a3eb907372c282ab315cfd46fa1f.jpg",
+      "source_master_sha256": "9416f3a1f193c5fb5cf9e65bc329feb73fbc07187d0a11b09e5087579d0c9ab6",
+      "source_master_git_blob_sha": "989073e8ae07a3eb907372c282ab315cfd46fa1f",
+      "source_master_bytes": 2891571,
+      "source_master_pixel_dimensions": [
+        3036,
+        3716
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::met-436794",
@@ -721,7 +908,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/7540098dd8dede79f1a4ff4254143feb732f205c.jpg",
+      "source_master_sha256": "a96c2979bbce3032a6fa7c0a1213833c645ec3586e612ae814080808838bedeb",
+      "source_master_git_blob_sha": "7540098dd8dede79f1a4ff4254143feb732f205c",
+      "source_master_bytes": 3459692,
+      "source_master_pixel_dimensions": [
+        3095,
+        4000
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::cma-148758",
@@ -750,7 +948,18 @@
       "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
       "quality_gate": "INSTITUTIONAL_OBJECT_AND_LICENSE_VERIFIED__UNCROPPED_LOCAL_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/3961f15f8cb40d7da2f01ea94aa9c517965ba46d.jpg",
+      "source_master_sha256": "ee2b7edf0e0d1b731e6f57e8a8434a079bcd51717da1bd1af8c2c018bcda4833",
+      "source_master_git_blob_sha": "3961f15f8cb40d7da2f01ea94aa9c517965ba46d",
+      "source_master_bytes": 2841935,
+      "source_master_pixel_dimensions": [
+        2563,
+        3400
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::cma:146167",
@@ -780,7 +989,18 @@
       "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
       "quality_gate": "EXACT_INSTITUTIONAL_OBJECT_TITLE_CREATOR_AND_RIGHTS__UNCROPPED_2000PX_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/63feb5da38fafbb7e5929242282193bef897a53a.jpg",
+      "source_master_sha256": "fc56709dc44acc72b086626c759e90d32d6ec311f5be7ff76696861d78812389",
+      "source_master_git_blob_sha": "63feb5da38fafbb7e5929242282193bef897a53a",
+      "source_master_bytes": 5431957,
+      "source_master_pixel_dimensions": [
+        2611,
+        3400
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::cma:145148",
@@ -810,7 +1030,18 @@
       "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
       "quality_gate": "EXACT_INSTITUTIONAL_OBJECT_TITLE_CREATOR_AND_RIGHTS__UNCROPPED_2000PX_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/6d20e051d05c70b6db58e8f94079176520da5dac.jpg",
+      "source_master_sha256": "2e0924ecef399614734de679bd99068b02fed825d7afdf95c773e11befc21517",
+      "source_master_git_blob_sha": "6d20e051d05c70b6db58e8f94079176520da5dac",
+      "source_master_bytes": 5890395,
+      "source_master_pixel_dimensions": [
+        3400,
+        3076
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::cma:153773",
@@ -840,7 +1071,18 @@
       "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
       "quality_gate": "EXACT_INSTITUTIONAL_OBJECT_TITLE_CREATOR_AND_RIGHTS__UNCROPPED_2000PX_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/1eff7a0cbf53ae776de9cd551901ab57cf91e1c8.jpg",
+      "source_master_sha256": "36e01402871abcabc221acdb99f318b5b3f3fc563d4f9d06c7a57b7e69f6a14f",
+      "source_master_git_blob_sha": "1eff7a0cbf53ae776de9cd551901ab57cf91e1c8",
+      "source_master_bytes": 5844050,
+      "source_master_pixel_dimensions": [
+        2262,
+        3400
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::cma-97181",
@@ -870,7 +1112,18 @@
       "recorded_reproduction_rights": "Cleveland Museum of Art CC0 Open Access",
       "quality_gate": "EXACT_INSTITUTIONAL_OBJECT_TITLE_CREATOR_AND_RIGHTS__UNCROPPED_2000PX_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/a5a5c7d47fdb83c947b9b5770b591989b403c38d.jpg",
+      "source_master_sha256": "944ba04f66faaf903df9b945dc32952b8bf0b0f5e606eb45f7073c0739c7cc74",
+      "source_master_git_blob_sha": "a5a5c7d47fdb83c947b9b5770b591989b403c38d",
+      "source_master_bytes": 7553922,
+      "source_master_pixel_dimensions": [
+        2837,
+        3400
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::met:437978",
@@ -900,7 +1153,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / Open Access",
       "quality_gate": "EXACT_INSTITUTIONAL_OBJECT_TITLE_CREATOR_AND_RIGHTS__UNCROPPED_2000PX_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/bea73b0e4bac79a7976225e3a055bf034b9e293f.jpg",
+      "source_master_sha256": "cfe165e22f7b9fe81b1952fc1f81c909a1de49ccbcf50d764b09f77d76aae7d6",
+      "source_master_git_blob_sha": "bea73b0e4bac79a7976225e3a055bf034b9e293f",
+      "source_master_bytes": 3579324,
+      "source_master_pixel_dimensions": [
+        3611,
+        3662
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::met-442488",
@@ -930,7 +1194,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / Open Access",
       "quality_gate": "EXACT_INSTITUTIONAL_OBJECT_TITLE_CREATOR_AND_RIGHTS__UNCROPPED_2000PX_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/45dfa2fe882dffac5528259a26eddb59d0096b46.jpg",
+      "source_master_sha256": "acc13b2f34ed893edb300bbebd0dea66ddd95d824b8bd9fb94bc1e2a9d17abaf",
+      "source_master_git_blob_sha": "45dfa2fe882dffac5528259a26eddb59d0096b46",
+      "source_master_bytes": 3749251,
+      "source_master_pixel_dimensions": [
+        3153,
+        4000
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::met:437172",
@@ -960,7 +1235,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / Open Access",
       "quality_gate": "EXACT_INSTITUTIONAL_OBJECT_TITLE_CREATOR_AND_RIGHTS__UNCROPPED_2000PX_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/5bad08ead182fa3da1a4d3c3961d54a6c990242d.jpg",
+      "source_master_sha256": "6f9a798dd2c845f617a1f3e76c7f1e7da78bc1ff63bb95e4264c4ecc1305d589",
+      "source_master_git_blob_sha": "5bad08ead182fa3da1a4d3c3961d54a6c990242d",
+      "source_master_bytes": 2650081,
+      "source_master_pixel_dimensions": [
+        2422,
+        3722
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::met-437542",
@@ -990,7 +1276,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / Open Access",
       "quality_gate": "EXACT_INSTITUTIONAL_OBJECT_TITLE_CREATOR_AND_RIGHTS__UNCROPPED_2000PX_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/6dc7c445ae1db271ddbc1e6fe0e0a750f43419e1.jpg",
+      "source_master_sha256": "8d1914deed2b46063f9c4ae89a8471b1ada97fc09f0604b62443280070c4cf0e",
+      "source_master_git_blob_sha": "6dc7c445ae1db271ddbc1e6fe0e0a750f43419e1",
+      "source_master_bytes": 4103505,
+      "source_master_pixel_dimensions": [
+        3094,
+        4000
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "NEW::met-917618",
@@ -1020,7 +1317,18 @@
       "recorded_reproduction_rights": "The Metropolitan Museum of Art Public Domain / Open Access",
       "quality_gate": "EXACT_INSTITUTIONAL_OBJECT_TITLE_CREATOR_AND_RIGHTS__UNCROPPED_2000PX_WEBP",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/99ed180bbc8de03daac0720113904a0d3144f350.jpg",
+      "source_master_sha256": "8578e12ebb3c067c567b882fb48e9ca1d008c71ab6e53f3590269892711065bb",
+      "source_master_git_blob_sha": "99ed180bbc8de03daac0720113904a0d3144f350",
+      "source_master_bytes": 3692616,
+      "source_master_pixel_dimensions": [
+        2700,
+        4000
+      ],
+      "source_master_kind": "MUSEUM_SOURCE_JPEG_PRINT_OR_PRIMARY",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::nga-46",
@@ -1054,7 +1362,18 @@
       "recorded_reproduction_rights": "National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)",
       "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/7b506a7591b5d1238718ef9e682f2fe36aa45112.jpg",
+      "source_master_sha256": "0b53927c95328d7ed5d33d64b14a32bb2cd5be5ce2494dd36ff920b7670ad086",
+      "source_master_git_blob_sha": "7b506a7591b5d1238718ef9e682f2fe36aa45112",
+      "source_master_bytes": 523702,
+      "source_master_pixel_dimensions": [
+        758,
+        2000
+      ],
+      "source_master_kind": "NGA_2000PX_INSTITUTION_IIIF_RENDITION",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "NEW::nga-41656",
@@ -1088,7 +1407,18 @@
       "recorded_reproduction_rights": "National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)",
       "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/4f07a32c44a3637204d72d01f2d57f073b6c04e7.jpg",
+      "source_master_sha256": "4acf9953ee728489400d6c743ed1ba42c5bd9880d8506ded2a511276c79d2a20",
+      "source_master_git_blob_sha": "4f07a32c44a3637204d72d01f2d57f073b6c04e7",
+      "source_master_bytes": 724853,
+      "source_master_pixel_dimensions": [
+        1202,
+        2000
+      ],
+      "source_master_kind": "NGA_2000PX_INSTITUTION_IIIF_RENDITION",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::nga-41696",
@@ -1122,7 +1452,18 @@
       "recorded_reproduction_rights": "National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)",
       "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/b7969433b144bd7baf521d57ad4307d3ab4c126b.jpg",
+      "source_master_sha256": "f725ff659e94506d7780320e9b27565d6a78354069b9a783aaebc0cd66ef846e",
+      "source_master_git_blob_sha": "b7969433b144bd7baf521d57ad4307d3ab4c126b",
+      "source_master_bytes": 886130,
+      "source_master_pixel_dimensions": [
+        1682,
+        2000
+      ],
+      "source_master_kind": "NGA_2000PX_INSTITUTION_IIIF_RENDITION",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::nga:431",
@@ -1156,7 +1497,18 @@
       "recorded_reproduction_rights": "National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)",
       "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/0b59290585984376e25c95f139e0b4ca9e0e7408.jpg",
+      "source_master_sha256": "e1d46cadb08593d2d5cf4ab9eeae0dd1dd37475bbe7fa11cc4e19f9b9b9a73c1",
+      "source_master_git_blob_sha": "0b59290585984376e25c95f139e0b4ca9e0e7408",
+      "source_master_bytes": 713026,
+      "source_master_pixel_dimensions": [
+        1527,
+        2000
+      ],
+      "source_master_kind": "NGA_2000PX_INSTITUTION_IIIF_RENDITION",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "NEW::nga-46127",
@@ -1191,7 +1543,18 @@
       "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
       "attribution_or_image_scope_note": "NGA attributes this work specifically to Master of the Prado 'Adoration of the Magi'; the inherited broader Netherlandish master label remains.",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/a5be9f93d5b5bc849ab030cfab9734480acc7f45.jpg",
+      "source_master_sha256": "bf3f8c6130b0733fafe3456cea9c521ff0dfb3079ee08dbf428a98f4d57f9b28",
+      "source_master_git_blob_sha": "a5be9f93d5b5bc849ab030cfab9734480acc7f45",
+      "source_master_bytes": 916251,
+      "source_master_pixel_dimensions": [
+        1656,
+        2000
+      ],
+      "source_master_kind": "NGA_2000PX_INSTITUTION_IIIF_RENDITION",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::nga-46185",
@@ -1225,7 +1588,18 @@
       "recorded_reproduction_rights": "National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)",
       "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/7a6b744257cab358bc6a73f1a4c8e679edebd64a.jpg",
+      "source_master_sha256": "9e5446cac48b049ce92758b30befd7748a0be427bd7a48cdb3e34dd22b57d09e",
+      "source_master_git_blob_sha": "7a6b744257cab358bc6a73f1a4c8e679edebd64a",
+      "source_master_bytes": 576200,
+      "source_master_pixel_dimensions": [
+        2000,
+        1388
+      ],
+      "source_master_kind": "NGA_2000PX_INSTITUTION_IIIF_RENDITION",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::nga:52",
@@ -1259,7 +1633,18 @@
       "recorded_reproduction_rights": "National Gallery of Art Open Access image explicitly flagged openaccess=1 (CC0 policy)",
       "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/ab46aeb93e5f4132e12c698eeb3b9faa173e112d.jpg",
+      "source_master_sha256": "a6e1c857f7b1cdcca9c4d0ffe2a2b1d7daf762403a83e70c2b38c91f301d1204",
+      "source_master_git_blob_sha": "ab46aeb93e5f4132e12c698eeb3b9faa173e112d",
+      "source_master_bytes": 658918,
+      "source_master_pixel_dimensions": [
+        1142,
+        2000
+      ],
+      "source_master_kind": "NGA_2000PX_INSTITUTION_IIIF_RENDITION",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::smk:KMSSP13",
@@ -1290,7 +1675,18 @@
       "recorded_reproduction_rights": "SMK public-domain artwork; institutional API public_domain=true",
       "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/fab0d5bf77cdd4726b0d81816396c2dbe1ae3c73.jpg",
+      "source_master_sha256": "1477e2fe3b97347d01a74baa3e09eac7164b7e6a8e424d2700c48bc90472184f",
+      "source_master_git_blob_sha": "fab0d5bf77cdd4726b0d81816396c2dbe1ae3c73",
+      "source_master_bytes": 12878803,
+      "source_master_pixel_dimensions": [
+        4150,
+        5334
+      ],
+      "source_master_kind": "SMK_PREVIOUSLY_SERVED_IMAGE_OR_THUMBNAIL",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::smk:KMSSP186",
@@ -1322,7 +1718,18 @@
       "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
       "attribution_or_image_scope_note": "SMK lists Peter Paul Rubens but qualifies workshop attribution in its production notes. Owner-selected inherited artist field kept, not promoted to certain autograph.",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/a2fe2dd65da6611a024c329ab06e77a22478bbc7.jpg",
+      "source_master_sha256": "8c532aa75c7d76a63eeb0b8bfe0ed8d9a3e4d0a2938ca66f446d0f73412f1ebe",
+      "source_master_git_blob_sha": "a2fe2dd65da6611a024c329ab06e77a22478bbc7",
+      "source_master_bytes": 15952981,
+      "source_master_pixel_dimensions": [
+        4645,
+        6520
+      ],
+      "source_master_kind": "SMK_PREVIOUSLY_SERVED_IMAGE_OR_THUMBNAIL",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::smk:KMSSP48",
@@ -1354,7 +1761,18 @@
       "quality_gate": "MUSEUM_PUBLIC_DOMAIN_SOURCE_1600PX__UNCROPPED_AS_SERVED",
       "attribution_or_image_scope_note": "The available SMK source is a 1600px institution-served thumbnail; no false high-resolution claim.",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/a39af9c8ebc8041a6e8278e4ce02dae4da5a0043.jpg",
+      "source_master_sha256": "9d7ba6c7d9b34a2de877574f3724c9f12f34de8a18cba27beae8132d547f2aa0",
+      "source_master_git_blob_sha": "a39af9c8ebc8041a6e8278e4ce02dae4da5a0043",
+      "source_master_bytes": 114767,
+      "source_master_pixel_dimensions": [
+        1294,
+        1600
+      ],
+      "source_master_kind": "SMK_PREVIOUSLY_SERVED_IMAGE_OR_THUMBNAIL",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::smk:KMSSP365",
@@ -1385,7 +1803,18 @@
       "recorded_reproduction_rights": "SMK public-domain artwork; institutional API public_domain=true",
       "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/d5799c3b96cbfa129652679311f9d75951e9f59b.jpg",
+      "source_master_sha256": "42b03795f044029b7620e1c45ef74d44db10955e2c4bef14001904f948e7b338",
+      "source_master_git_blob_sha": "d5799c3b96cbfa129652679311f9d75951e9f59b",
+      "source_master_bytes": 20422970,
+      "source_master_pixel_dimensions": [
+        5817,
+        4997
+      ],
+      "source_master_kind": "SMK_PREVIOUSLY_SERVED_IMAGE_OR_THUMBNAIL",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "REVIEW::smk:KMS1168",
@@ -1416,7 +1845,18 @@
       "recorded_reproduction_rights": "SMK public-domain artwork; institutional API public_domain=true",
       "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
-      "exact_original_image_for_prayer": false
+      "exact_original_image_for_prayer": false,
+      "source_master_path": "app-data/sacred-art/source-masters/814d74b7cf78875f86a07be305fae03c8752fc7d.jpg",
+      "source_master_sha256": "1f9678e090f165799b526aea466171148d43551d00ccfe46519d3bf88192f3c9",
+      "source_master_git_blob_sha": "814d74b7cf78875f86a07be305fae03c8752fc7d",
+      "source_master_bytes": 5913845,
+      "source_master_pixel_dimensions": [
+        3714,
+        2162
+      ],
+      "source_master_kind": "SMK_PREVIOUSLY_SERVED_IMAGE_OR_THUMBNAIL",
+      "exact_source_bytes_preserved_since": "2026-11-16",
+      "source_recovery_manifest": "app-data/sacred-art/source-photo-recovery-20261116.v1.json"
     },
     {
       "artwork_id": "CANONICAL::ART-hilippe-de-hampaigne-he-ream-of-aint-oseph",
@@ -1583,6 +2023,490 @@
       ],
       "earlier_archive_holds": [],
       "legacy_module": "visit"
+    },
+    {
+      "artwork_id": "RELEASED::san-polo-oils:station-01",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-01.webp",
+      "title": "San Polo Via Crucis — Station 01: Jesus condemned to death",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 1177010,
+      "git_blob_sha": "b44f4919bd04d2a947249489f7b8d891fd11e1fc",
+      "sha256": "c9247def62a2054596556e23aaa405bbfeb1d90a72017c66087bbabeb40231d4",
+      "pixel_dimensions": [
+        1920,
+        2142
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_I_-_Jesus_is_sentenced_to_death_by_Giandomenico_Tiepolo.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-01.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-02-esus-akes-p-the-ross",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-02.webp",
+      "title": "San Polo Via Crucis — Station 02: Jesus takes up the Cross",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 1346834,
+      "git_blob_sha": "42bc1a72830d49c168f14495d5775c53bbc92e60",
+      "sha256": "e89a6ad53838243972f50548912a638c78dbf0bad2e52f02252944ec391ec3a0",
+      "pixel_dimensions": [
+        1920,
+        2133
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_II_-_Jesus_carries_his_cross_by_Giandomenico_Tiepolo.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-02.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RELEASED::san-polo-oils:station-03",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-03.webp",
+      "title": "San Polo Via Crucis — Station 03: Jesus falls for the first time",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 1183824,
+      "git_blob_sha": "d91a8600aa1084c0e99d9e4218b66813bd0135cf",
+      "sha256": "e6ee33a5cebbe00ca628c0b8fd724e2c182366a96ad0e433b6fdb752d7de85df",
+      "pixel_dimensions": [
+        1920,
+        2074
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_III_-_Jesus_falls_the_first_time_by_Giandomenico_Tiepolo.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-03.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-04-esus-eets-is-other",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-04.webp",
+      "title": "San Polo Via Crucis — Station 04: Jesus meets his Mother",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 1233046,
+      "git_blob_sha": "18ccda04549f0b7c32f622e4457d8f1120e8a3c0",
+      "sha256": "36d980b8cef65109597647d3089db68ecec43aed86bafd7bf09c7a987a393edd",
+      "pixel_dimensions": [
+        1920,
+        2056
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_IV_-_Jesus_meets_his_mother_by_Giandomenico_Tiepolo.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-04.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-05-imon-of-yrene-elps",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-05.webp",
+      "title": "San Polo Via Crucis — Station 05: Simon of Cyrene helps Jesus",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 1296444,
+      "git_blob_sha": "f752bcb0c0d2f877a7fb9634215c185bc7f67f80",
+      "sha256": "31553680f8c65aeb61bab8d7accd128a1984827402f8d6c375b33ef3bbdfc4eb",
+      "pixel_dimensions": [
+        1920,
+        2101
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_V_-_Simon_of_Cyrene_helps_Jesus_carry_the_cross_by_Giandomenico_Tiepolo.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-05.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RELEASED::san-polo-oils:station-06",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-06.webp",
+      "title": "San Polo Via Crucis — Station 06: Veronica wipes the face of Jesus",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 1155586,
+      "git_blob_sha": "a5b266ef80256aafa8d9daf3cdf106021b80e222",
+      "sha256": "f545573d3e3d7c2a9db9631fe7d6d85dbf592ad08012e6a97011bc7cb5e292bd",
+      "pixel_dimensions": [
+        1920,
+        2084
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_VI_-_Veronica_wipes_the_face_of_Jesus_by_Giandomenico_Tiepolo.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-06.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-07-econd-all",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-07.webp",
+      "title": "San Polo Via Crucis — Station 07: Jesus falls for the second time",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 1174980,
+      "git_blob_sha": "04bd5c2600b1a4d9264ed190ab56a723ea35b9a4",
+      "sha256": "14619fcc4a6be151127fa9ae7e1d29b5d3d2a9c993dba0967f7038dfab40f095",
+      "pixel_dimensions": [
+        1920,
+        2070
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_VII_-_Jesus_falls_the_second_time_by_Giandomenico_Tiepolo.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-07.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RELEASED::san-polo-oils:station-08",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-08.webp",
+      "title": "San Polo Via Crucis — Station 08: Jesus consoles the women of Jerusalem",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 790572,
+      "git_blob_sha": "4dd9b66c05ad938ed64979ff7566b28cba9fcc11",
+      "sha256": "a68faf8045006620956a37a27b17ef875c8c53261f819defd2e1f8b1f7b371a6",
+      "pixel_dimensions": [
+        1866,
+        2400
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_VIII_-_Jesus_meets_the_women_of_Jerusalem_who_weep_by_Giandomenico_Tiepolo.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-08.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RELEASED::san-polo-oils:station-09",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-09.webp",
+      "title": "San Polo Via Crucis — Station 09: Jesus falls for the third time",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 675056,
+      "git_blob_sha": "75c0c994a1cce72eece78322e0550fc0b4253c23",
+      "sha256": "32846a979e64a18ef745b2ef8c71fea3854a6d429165a79c3d6897a81f158993",
+      "pixel_dimensions": [
+        1906,
+        2400
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_IX_-_Jesus_falls_the_third_time.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-09.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RELEASED::san-polo-oils:station-10",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-10.webp",
+      "title": "San Polo Via Crucis — Station 10: Jesus is stripped of his garments",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 814654,
+      "git_blob_sha": "7bb173467241e9723edb046dec353a1d1bfd226b",
+      "sha256": "88ba18e522f9978755282d58df5b9d1377a0bb9d22b0eae9c5b806e55534f896",
+      "pixel_dimensions": [
+        1889,
+        2400
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_X_-_Jesus_is_stripped_of_his_garments.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-10.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-11-ailing-to-the-ross",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-11.webp",
+      "title": "San Polo Via Crucis — Station 11: Jesus is nailed to the Cross",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 929536,
+      "git_blob_sha": "aff831a636dadbbdff126ee1ea36c905ffac293c",
+      "sha256": "6ff0dc8d347d2c7df3ad65e6db9372c9960545852a588f7659b4f4a63850517b",
+      "pixel_dimensions": [
+        1910,
+        2400
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_XI_-_Jesus_is_nailed_to_the_cross.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-11.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-12-eath-on-the-ross",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-12.webp",
+      "title": "San Polo Via Crucis — Station 12: Jesus dies on the Cross",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 1410666,
+      "git_blob_sha": "09947e09d48a837adfdc2508c02fc5856ddf6499",
+      "sha256": "a9c3e1338a52110989339f5af98c0055a6f1ad25c5b4cc61b961461282a65eba",
+      "pixel_dimensions": [
+        1822,
+        2400
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_XII_-_Jesus_dies_on_the_cross.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-12.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RELEASED::san-polo-oils:station-13",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-13.webp",
+      "title": "San Polo Via Crucis — Station 13: Jesus is taken down from the Cross",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 818664,
+      "git_blob_sha": "2f7b01404d4b75d71c4c0d085e46c3607ac93038",
+      "sha256": "213b617d1a39ae4a07d5d0558f51fb66900cae17d61aa9753988717a170bd3c7",
+      "pixel_dimensions": [
+        1853,
+        2400
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_XIII_-_Jesus_down_from_the_cross_and_his_body_is_returned_to_his_mother.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-13.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RELEASED::san-polo-oils:station-14",
+      "additional_catalogue_ids": [],
+      "path": "site/gallery/images/san-polo-station-14.webp",
+      "title": "San Polo Via Crucis — Station 14: Jesus is laid in the tomb",
+      "artist": "Giandomenico Tiepolo",
+      "image_bytes": 1134956,
+      "git_blob_sha": "c1288aefec1e44f3df6873f3b1de4e8b51a39b8b",
+      "sha256": "74ccdf8a9fc9406b980b4a553cbfea64d0379ac9d5ce400add0e1f41bb9f6da5",
+      "pixel_dimensions": [
+        1920,
+        2146
+      ],
+      "source_record": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_XIV_-_Entombment_of_Christ_by_Giandomenico_Tiepolo.jpg",
+      "source_git_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_original_path": "assets/stations/san-polo/station-14.webp",
+      "source_photograph_license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "modifications": "Converted from Commons JPEG to resized/recompressed WebP by original research project",
+      "release_authority": "Old repository merged PR #2699 (2026-11-09); user-scoped 14 Stations licence exception #2144",
+      "recorded_reproduction_rights": "CC BY-SA 4.0 (not CC0 or PD); attribution and share-alike required",
+      "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
+      "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "PRAYER::saints--vaneyck",
+      "title": "Adoration of the Mystic Lamb",
+      "artist": "Hubert and Jan van Eyck",
+      "path": "site/gallery/images/van-eyck-mystic-lamb-exact-released.webp",
+      "image_bytes": 1536710,
+      "sha256": "16b5803b9bd1945c065a848a345ef84c6771c88b57e1cb664af267dc2226fe8a",
+      "git_blob_sha": "043354b2103b144522a096eeda46bf0fe83c30cd",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ghent_Altarpiece_-_Adoration_of_the_Mystic_Lamb.jpg",
+      "source_old_path": "assets/prayer/user-approved/benediction-mystic-lamb.webp",
+      "source_old_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_record": "app-data/sacred-art/devotional-asset-recovery-20261116.v1.json",
+      "photo_rights": "Wikimedia Commons PD-Art, old-100, Public Domain Mark (NOT a CC0 licence)",
+      "photo_original_jpeg_preserved": false,
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "artwork_id": "CANONICAL::nga-34956",
+      "title": "The Return of the Prodigal Son",
+      "artist": "Bartolomé Esteban Murillo",
+      "path": "site/gallery/images/murillo-return-prodigal-son-nga-34956-original.jpg",
+      "image_bytes": 3022309,
+      "sha256": "b1e3d47e65f4367fd11fc23d9a63fb25ff3d8c934c3147606f1a3eba703beaa7",
+      "git_blob_sha": "c0904b5d2a6a4bd99b224194217ce45c6a9fe676",
+      "source_url": "https://www.nga.gov/artworks/34956-return-prodigal-son",
+      "source_old_path": "assets/prayer/released/confession-murillo-nga-original.jpg",
+      "source_old_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_master_path": "app-data/sacred-art/source-masters/c0904b5d2a6a4bd99b224194217ce45c6a9fe676.jpg",
+      "source_master_sha256": "b1e3d47e65f4367fd11fc23d9a63fb25ff3d8c934c3147606f1a3eba703beaa7",
+      "release_authority": "Old research merged PR #2293",
+      "source_record": "app-data/sacred-art/devotional-asset-recovery-20261116.v1.json",
+      "photo_rights": "National Gallery of Art Open Access · public domain (CC0)",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "artwork_id": "RELEASED::class-i-2026:ngi-72",
+      "path": "site/gallery/images/lanfranco-ngi72-class-i-original.jpg",
+      "title": "The Miracle of the Loaves and Fishes",
+      "artist": "Giovanni Lanfranco",
+      "image_bytes": 947637,
+      "sha256": "f9a4b9f5f180138b438c61da836ac176a21b9162e736da7372c07e5ea6f74ffa",
+      "git_blob_sha": "26aaf88956e0624881aaa611295c6c9334753b37",
+      "pixel_dimensions": [
+        1285,
+        683
+      ],
+      "source_master_path": "app-data/sacred-art/source-masters/26aaf88956e0624881aaa611295c6c9334753b37.jpg",
+      "source_master_sha256": "f9a4b9f5f180138b438c61da836ac176a21b9162e736da7372c07e5ea6f74ffa",
+      "source_master_git_blob_sha": "26aaf88956e0624881aaa611295c6c9334753b37",
+      "source_record": "app-data/sacred-art/class-i-gallery-link-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Lanfranco_-_Miracle_of_the_Bread_and_Fish_-_WGA12454.jpg",
+      "museum_url": "https://onlinecollection.nationalgallery.ie/objects/10345/the-miracle-of-the-loaves-and-fishes",
+      "source_rights_note": "Commons PD-Art faithful reproduction; jurisdictional photo-rights caveat. Low-resolution historical Web Gallery of Art image, not NGI museum original.",
+      "prior_date": "2026-03-15",
+      "old_release_pr": 2861,
+      "release_scope": "GALLERY_ONLY__EXISTING_CALENDAR_SELECTION__NO_PRAYER_DEFAULT",
+      "source_original_preserved": true
+    },
+    {
+      "artwork_id": "RELEASED::class-i-2026:vatican-mv-40333",
+      "path": "site/gallery/images/raphael-transfiguration-class-i-original.jpg",
+      "title": "The Transfiguration",
+      "artist": "Raphael",
+      "image_bytes": 5205139,
+      "sha256": "1f61791a23d3ba16f25e953f7d17c0a7e1c2fdf967b26f041bee546ebf22601a",
+      "git_blob_sha": "a5b060eda8b9a6eba6c8e2f1a5c92d2bdd341785",
+      "pixel_dimensions": [
+        3737,
+        5691
+      ],
+      "source_master_path": "app-data/sacred-art/source-masters/a5b060eda8b9a6eba6c8e2f1a5c92d2bdd341785.jpg",
+      "source_master_sha256": "1f61791a23d3ba16f25e953f7d17c0a7e1c2fdf967b26f041bee546ebf22601a",
+      "source_master_git_blob_sha": "a5b060eda8b9a6eba6c8e2f1a5c92d2bdd341785",
+      "source_record": "app-data/sacred-art/class-i-gallery-link-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Raffael-verkl%C3%A4rung-christi.jpg",
+      "museum_url": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/la-pinacoteca/sala-viii---secolo-xvi/raffaello-sanzio--trasfigurazione.html",
+      "source_rights_note": "Commons PD-Art faithful 2D reproduction of historical art-book scan, not Vatican photographic master. Jurisdictional photo-rights caveat.",
+      "prior_date": "2026-03-01",
+      "old_release_pr": 2857,
+      "release_scope": "GALLERY_ONLY__EXISTING_CALENDAR_SELECTION__NO_PRAYER_DEFAULT",
+      "source_original_preserved": true
+    },
+    {
+      "artwork_id": "RELEASED::class-i-2026:pafa-1900-1",
+      "path": "site/gallery/images/tanner-nicodemus-class-i-original.jpg",
+      "title": "Nicodemus Visiting Jesus",
+      "artist": "Henry Ossawa Tanner",
+      "image_bytes": 5285928,
+      "sha256": "ae83598cb8b73115cd5e42f477c342eb22fc181368f51f78e00de0cfee6c0e72",
+      "git_blob_sha": "0b18c483a56493d0d1218e26abd558ef74575ddf",
+      "pixel_dimensions": [
+        2400,
+        2100
+      ],
+      "source_master_path": "app-data/sacred-art/source-masters/0b18c483a56493d0d1218e26abd558ef74575ddf.jpg",
+      "source_master_sha256": "ae83598cb8b73115cd5e42f477c342eb22fc181368f51f78e00de0cfee6c0e72",
+      "source_master_git_blob_sha": "0b18c483a56493d0d1218e26abd558ef74575ddf",
+      "source_record": "app-data/sacred-art/class-i-gallery-link-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nicodemus_Visiting_Jesus,_by_Henry_Ossawa_Tanner.jpg",
+      "museum_url": "https://www.pafa.org/museum/collection/item/nicodemus",
+      "source_rights_note": "Commons PD-Art/PDM faithful reproduction; artwork no known copyright restrictions, but PAFA photographer Barbara Katus/EXIF asserts institutional photo copyright. Territorial photographic-rights caveat retained.",
+      "prior_date": "2026-05-25",
+      "old_release_pr": 2852,
+      "release_scope": "GALLERY_ONLY__EXISTING_CALENDAR_SELECTION__NO_PRAYER_DEFAULT",
+      "source_original_preserved": true
     }
   ]
 }

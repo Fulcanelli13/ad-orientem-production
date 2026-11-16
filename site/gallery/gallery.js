@@ -91,6 +91,7 @@
     }
     const caption = textEl("span","gallery-caption");
     caption.append(textEl("strong","",item.title),textEl("span","gallery-artist",item.artist));
+    if (hasImage && item.image?.photographer) caption.append(textEl("span","gallery-photo-credit","Photo: " + item.image.photographer + " · " + item.image.license));
     if (hasImage) {
       caption.append(textEl("span","gallery-type",
         item.image?.quality?.startsWith("LOW_RES_PREVIEW") ? "CURATED · PREVIEW IMAGE" :
@@ -161,11 +162,23 @@
       item.owner_selected_artwork ? "Owner-selected artwork (not a prayer-card primary)" :
         "Historical or research catalogue record; approval scope preserved"));
     if (item.image?.provenance) inside.append(detailMeta("Image provenance:",item.image.provenance));
+    if (item.image?.scene_use_note) inside.append(detailMeta("Scene context:",item.image.scene_use_note));
+    if (item.image?.source_note) inside.append(detailMeta("Photo reuse caveat:",item.image.source_note));
+    if (item.calendar_placements?.length) inside.append(detailMeta("Approved 2026 Calendar date:",item.calendar_placements.map(x=>x.date+" · "+x.occasion).join("; ")));
+    if (item.image?.photographer) inside.append(detailMeta("Photograph:",item.image.photographer));
+    if (item.image?.adaptation) inside.append(detailMeta("Adaptation:",item.image.adaptation));
+    if (item.image?.license_url) {
+      const licence = textEl("a","gallery-detail-source","Image licence: " + item.image.license);
+      licence.href = item.image.license_url;
+      licence.target = "_blank";
+      licence.rel = "noopener noreferrer";
+      inside.append(licence);
+    }
     if (item.image?.quality?.startsWith("LOW_RES_PREVIEW"))
       inside.append(detailMeta("Image quality:","Low-resolution preview only. Do not upscale or use for prayer cinematic backgrounds."));
     if (item.image?.usage?.includes("PRAYER_QA_PENDING"))
       inside.append(detailMeta("Prayer use:","Cinematic photograph and individual prayer-card approval remain pending"));
-    if (item.rights_note) inside.append(detailMeta("Recorded rights note:",item.rights_note));
+    if (item.rights_note) inside.append(detailMeta("Historical catalogue rights note:",item.rights_note));
     const parts = (item.prayer_parts || []);
     if (parts.length) {
       inside.append(textEl("p","gallery-detail-meta","Existing prayer-part associations:"));
@@ -207,7 +220,7 @@
         const data = await response.json();
         if (data.schema !== "ao.sacred-art.gallery.v1" ||
             data.records?.length !== data.counts?.total_records ||
-            data.records?.length !== 862) throw new Error("Invalid artwork catalogue");
+            data.records?.length !== 873) throw new Error("Invalid artwork catalogue");
         const ids = new Set();
         for (const art of data.records) {
           if (!art.id || ids.has(art.id) ||
@@ -216,46 +229,57 @@
           }
           ids.add(art.id);
         }
-        // Add the separately approved editorial painting review without
-        // rewriting the 862-entry canonical source master or its approvals.
-        const supplementResponse = await fetch("./gallery/selected31-reviewed-images.v13.json",{cache:"no-cache"});
-        if (!supplementResponse.ok) throw new Error("Review painting supplement unavailable");
-        const supplement = await supplementResponse.json();
-        if (supplement.schema !== "ao.sacred-art.selected31-gallery-overlay.v13" ||
-            supplement.baseline_registry_count !== data.records.length ||
-            supplement.records?.length !== 5) throw new Error("Invalid reviewed gallery supplement");
-        for (const art of supplement.records) {
-          if (!art.id?.startsWith("REVIEW31::") || ids.has(art.id) ||
-              !art.image?.src?.startsWith("./gallery/images/selected31-") ||
-              art.exact_prayer_cards?.length) throw new Error("Invalid review image scope");
-          ids.add(art.id);
-          data.records.push(art);
+        // Historical 873-row source catalogue remains untouched. V13/V14
+        // augment only the gallery, never the prayer-card activation registry.
+        const legacyRecordCount = data.records.length;
+        let addedRecords = 0, addedImages = 0;
+        for (const [filename, schema, requiredRecords, expectedPatches] of [
+          ["selected31-reviewed-images.v13.json", "ao.sacred-art.selected31-gallery-overlay.v13", 5, 0],
+          ["selected31-reviewed-images.v14.json", "ao.sacred-art.selected31-gallery-overlay.v14", 4, 1]
+        ]) {
+          const response = await fetch("./gallery/" + filename, {cache:"no-cache"});
+          if (!response.ok) throw new Error("Review gallery data unavailable: " + filename);
+          const supplement = await response.json();
+          if (supplement.schema !== schema ||
+              supplement.baseline_registry_count !== 862 ||
+              supplement.canonical_master_unchanged !== true ||
+              supplement.records?.length !== requiredRecords ||
+              (supplement.image_patches || []).length !== expectedPatches) {
+            throw new Error("Invalid supplementary gallery data: " + filename);
+          }
+          for (const art of supplement.records) {
+            if (!art.id?.startsWith("REVIEW31::") || ids.has(art.id) ||
+                !/^\.\/gallery\/images\/selected31-(?:v14-)?[a-zA-Z0-9_.-]+$/.test(art.image?.src || "") ||
+                art.owner_selected_artwork !== true ||
+                art.exact_prayer_cards?.length || art.prayer_parts?.length ||
+                art.parent_prayer_candidates?.length || art.eligible_card_count) {
+              throw new Error("Supplemental artwork violates editorial boundary");
+            }
+            ids.add(art.id);
+            data.records.push(art);
+            addedRecords++;
+            addedImages++;
+          }
+          for (const patch of supplement.image_patches || []) {
+            const original = data.records.find(art => art.id === patch.id);
+            if (!original || original.image ||
+                original.source_url !== patch.expected_source_url ||
+                !/^\.\/gallery\/images\/selected31-v14-[a-zA-Z0-9_.-]+$/.test(patch.image?.src || "") ||
+                !original.owner_selected_artwork) {
+              throw new Error("Supplemental image patch fails canonical identity check");
+            }
+            original.image = patch.image;
+            addedImages++;
+          }
         }
-        data.counts.total_records += supplement.records.length;
-        data.counts.distinct_locally_hosted_paintings += supplement.records.length;
-        // V14 keeps existing exact artwork IDs intact; no duplicate Bloch record.
-        const nextResponse = await fetch("./gallery/selected31-reviewed-images.v14.json",{cache:"no-cache"});
-        if (!nextResponse.ok) throw new Error("V14 painting review supplement unavailable");
-        const next = await nextResponse.json();
-        if (next.schema !== "ao.sacred-art.selected31-gallery-overlay.v14" ||
-            next.baseline_registry_count !== 862 || next.records?.length !== 4 ||
-            next.image_patches?.length !== 1) throw new Error("Invalid V14 supplement");
-        for (const art of next.records) {
-          if (!art.id?.startsWith("REVIEW31::") || ids.has(art.id) ||
-              !art.image?.src?.startsWith("./gallery/images/selected31-v14-") ||
-              art.exact_prayer_cards?.length) throw new Error("Invalid V14 image scope");
-          ids.add(art.id);
-          data.records.push(art);
+        if (legacyRecordCount !== 873 || addedRecords !== 9 || addedImages !== 10) {
+          throw new Error("Unexpected historical gallery reconciliation counts");
         }
-        for (const patch of next.image_patches) {
-          const item = data.records.find(x => x.id === patch.id);
-          if (!item || item.image || item.source_url !== patch.expected_source_url ||
-              !patch.image?.src?.startsWith("./gallery/images/selected31-v14-"))
-            throw new Error("Invalid canonical image patch");
-          item.image = patch.image;
-        }
-        data.counts.total_records += next.records.length;
-        data.counts.distinct_locally_hosted_paintings += next.records.length + next.image_patches.length;
+        data.counts.total_records += addedRecords;
+        data.counts.selected_artwork_records += addedRecords;
+        data.counts.image_available_records += addedImages;
+        data.counts.distinct_locally_hosted_paintings += addedImages;
+        data.counts.verified_image_files += addedImages;
         catalogue = data;
         byId("gallery-total-count").textContent = data.counts.total_records.toLocaleString();
         byId("gallery-photo-count").textContent = data.counts.distinct_locally_hosted_paintings.toLocaleString();

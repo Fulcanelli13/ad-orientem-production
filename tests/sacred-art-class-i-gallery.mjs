@@ -1,0 +1,91 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import crypto from 'node:crypto';
+const load=path=>JSON.parse(fs.readFileSync(path,'utf8'));
+const proof=load('app-data/sacred-art/class-i-gallery-link-20261116.v1.json');
+const source=load('app-data/sacred-art/class-i-source-recovery-20261116.v1.json');
+const catalogue=load('site/gallery/catalogue.v1.json');
+const images=load('site/gallery/image-provenance.v1.json');
+const originalIndex=load('app-data/sacred-art/artwork-assignment-index.v2.json');
+assert.equal(proof.schema,'ao.sacred-art.class-i-exact-gallery-link.v1');
+assert.equal(proof.sources.length,3);
+assert.deepEqual(proof.summary,{originals:3,bytes:11438704,prior_records_preserved:870,
+  new_released_work_records:3,source_masters_reused:3,external_acquisitions:0,
+  new_prayer_defaults:0,hash_mismatches:0});
+assert.equal(catalogue.counts.total_records,873);
+assert.equal(catalogue.counts.distinct_locally_hosted_paintings,73);
+assert.equal(catalogue.counts.image_available_records,76);
+assert.equal(catalogue.counts.verified_image_files,73);
+assert.equal(images.sources.length,73);
+assert.equal(originalIndex.artworks.length,862);
+assert.equal(catalogue.records.length,873);
+assert.equal(new Set(catalogue.records.map(r=>r.id)).size,873);
+for(const old of originalIndex.artworks){
+ const current=catalogue.records.find(x=>x.id===old.artwork_id);
+ assert(current,'Original artwork ID must remain present: '+old.artwork_id);
+ assert.deepEqual(current.exact_prayer_cards,old.owner_approved_exact_card_ids);
+ assert.equal(current.eligible_card_count,old.candidate_prayer_card_ids.length);
+ assert.equal(current.attribution_status,old.attribution_status);
+}
+const keys=new Set(),dates=new Set();
+let total=0;
+for (const src of proof.sources){
+ const old=source.sources.find(o=>o.source_git_sha===src.git_blob_sha);
+ assert(old,'Only already recovered Class I originals eligible');
+ assert.equal(old.source_sha256,src.sha256);
+ assert.equal(src.source_master_path,old.source_master_path);
+ assert.equal(src.source_git_blob_sha,undefined);
+ assert.equal(old.historical_release_pr,src.old_release_pr);
+ assert([2852,2857,2861].includes(src.old_release_pr));
+ assert(src.artwork_id.startsWith('RELEASED::class-i-2026:'));
+ assert(!keys.has(src.artwork_id));keys.add(src.artwork_id);
+ assert(!dates.has(src.calendar_date));dates.add(src.calendar_date);
+ const bytes=fs.readFileSync(src.gallery_path);
+ const master=fs.readFileSync(src.source_master_path);
+ assert.deepEqual(bytes,master,'Display JPEG must exactly match previously recovered permanent master');
+ assert.equal(bytes.length,src.bytes);
+ assert.equal(bytes[0],255);
+ assert.equal(bytes[1],216);
+ assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),src.sha256);
+ assert.equal(crypto.createHash('sha1').update(Buffer.from('blob '+bytes.length+'\0')).update(bytes).digest('hex'),src.git_blob_sha);
+ total+=src.bytes;
+ const row=catalogue.records.find(x=>x.id===src.artwork_id);
+ assert(row && row.owner_selected_artwork);
+ assert.equal(row.record_status,'OWNER_SELECTED_ALREADY_RELEASED_CLASS_I_2026');
+ assert.equal(row.image.src,'./'+src.gallery_path.slice('site/'.length));
+ assert.equal(row.image.usage,'GALLERY_ONLY__EXISTING_CALENDAR_SELECTION__NO_NEW_PRAYER_DEFAULT');
+ assert.deepEqual(row.exact_prayer_cards,[]);
+ assert.deepEqual(row.prayer_parts,[]);
+ assert.equal(row.calendar_placements.length,1);
+ assert.equal(row.calendar_placements[0].date,src.calendar_date);
+ assert.equal(row.calendar_placements[0].calendar_principal,src.calendar_principal);
+ assert.equal(row.calendar_placements[0].calendar_proper,src.calendar_proper);
+ assert.equal(row.image.pixel_width,src.pixels[0]);
+ assert.equal(row.image.pixel_height,src.pixels[1]);
+ assert.equal(row.rights_note,old.rights);
+ const lineage=images.sources.find(x=>x.path===src.gallery_path);
+ assert(lineage && lineage.source_master_sha256===src.sha256);
+ assert.equal(lineage.source_rights_note,old.rights);
+ assert.equal(lineage.old_release_pr,src.old_release_pr);
+ assert(row.image.license_url.startsWith('https://commons.wikimedia.org/wiki/File:'));
+}
+assert.equal(total,11438704);
+assert.deepEqual([...dates].sort(),['2026-03-01','2026-03-15','2026-05-25']);
+const lanfranco=proof.sources.find(x=>x.calendar_date==='2026-03-15');
+assert.equal(lanfranco.calendar_principal,'tempora:Quad4-0:1:pv','Old frozen 1962 principal must not be guessed');
+assert.equal(lanfranco.file_source,
+ 'https://commons.wikimedia.org/wiki/File:Giovanni_Lanfranco_-_Miracle_of_the_Bread_and_Fish_-_WGA12454.jpg',
+ 'Actual old frozen Commons source, not a generated title guess');
+assert.equal(lanfranco.pixels[0],1285);
+assert.equal(lanfranco.pixels[1],683);
+const raphael=proof.sources.find(x=>x.calendar_date==='2026-03-01');
+assert(raphael.rights_caveat.includes('art-book scan'));
+assert.equal(raphael.calendar_principal,'tempora:Quad2-0:1:v');
+const tanner=proof.sources.find(x=>x.calendar_date==='2026-05-25');
+assert(tanner.rights_caveat.includes('Barbara Katus'));
+assert.equal(tanner.calendar_principal,'tempora:Pasc7-1:1:r');
+const ui=fs.readFileSync('site/gallery/gallery.js','utf8');
+assert(ui.includes('item.calendar_placements'));
+assert(ui.includes('item.image.source_note'));
+assert(ui.includes('data.records?.length !== 873'));
+console.log('PASS: 3 old released Class I photos copied exactly, 11,438,704 bytes, 873 catalogued works, 73 images, preserved date locks and rights caveats.');
