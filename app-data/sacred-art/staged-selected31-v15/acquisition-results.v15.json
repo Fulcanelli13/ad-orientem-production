@@ -1,0 +1,133 @@
+{
+  "schema": "ao.sacred-art.selected31-v15-source-acquisition.v1",
+  "scope": "Archived sources only, no app image binding, no prayer-card placement",
+  "acquired_count": 4,
+  "held_count": 0,
+  "records": [
+    {
+      "review_artwork_id": "tri-dolci",
+      "title": "The Trinity in Glory",
+      "artist": "Carlo Dolci",
+      "museum_page": "https://risdmuseum.org/art-design/collection/trinity-glory-59009",
+      "museum_object": "RISD Museum 59.009",
+      "source_file": "https://commons.wikimedia.org/wiki/File:Carlo_Dolci_-_The_Trinity_in_Glory_-_59.009_-_Rhode_Island_School_of_Design_Museum.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Carlo_Dolci_-_The_Trinity_in_Glory_-_59.009_-_Rhode_Island_School_of_Design_Museum.jpg",
+      "photographer": "Erik Gould / RISD Museum",
+      "source_file_sha1": "ca0bdea1c3dec88a1aae1b7174ee638eed336a2b",
+      "source_sha256": "bf2e2ddf7920d04ceb9ea92eeb15bccb39dbe38e2264451bf94ae8a21ce234fc",
+      "source_bytes": 707216,
+      "source_dimensions": [
+        877,
+        1024
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v15/tri_dolci-source.jpg",
+      "derivative_sha256": "fa1392f604321bcd922060fd63616c7edbddf0c157f109a544b5aa6c2740ffb4",
+      "derivative_bytes": 96944,
+      "derivative_dimensions": [
+        877,
+        1024
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v15/tri_dolci-2000.webp",
+      "licence_evidence": "CC0 1.0, source reproductions attributed to RISD Museum / Erik Gould",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "rights_gate": "CC0_RECORD_CONFIRMED",
+      "quality_gate": "PREVIEW_ONLY__SMALL_SOURCE",
+      "composition_full_frame": true,
+      "status": "ARCHIVED_SOURCE_ONLY__VISUAL_REVIEW_PENDING__NO_PUBLICATION"
+    },
+    {
+      "review_artwork_id": "trans-bellini",
+      "title": "The Transfiguration of Christ",
+      "artist": "Giovanni Bellini",
+      "museum_page": "https://capodimonte.cultura.gov.it/restaurata-la-trasfigurazione-di-bellini-capolavoro-del-maestro-veneziano/",
+      "museum_object": "Museo di Capodimonte Q 56",
+      "source_file": "https://commons.wikimedia.org/wiki/File:Giovanni_bellini%2C_trasfigurazione%2C_1478-79%2C_Q56%2C_01.JPG",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/3/38/Giovanni_bellini%2C_trasfigurazione%2C_1478-79%2C_Q56%2C_01.JPG",
+      "photographer": "Sailko",
+      "source_file_sha1": "3717a9c27ac12f16848a3044122041089e6380db",
+      "source_sha256": "116f66a0584d0ad72ad01cd935a24142c4d2aa19ac12b2d5c62fe9386461706e",
+      "source_bytes": 4312000,
+      "source_dimensions": [
+        3404,
+        2728
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v15/trans_bellini-source.jpg",
+      "derivative_sha256": "822bdc601ae846b92e40ba95b2ca913f53762bacb07c13355c6da0af2630726b",
+      "derivative_bytes": 532058,
+      "derivative_dimensions": [
+        2000,
+        1603
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v15/trans_bellini-2000.webp",
+      "licence_evidence": "CC BY 3.0 photographer Sailko; heritage-institution reuse policy to be reviewed",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+      "rights_gate": "PHOTOGRAPH_LICENSE_CONFIRMED__HERITAGE_POLICY_REVIEW",
+      "quality_gate": "COMPOSITION_VERIFICATION_PENDING",
+      "composition_full_frame": true,
+      "status": "ARCHIVED_SOURCE_ONLY__VISUAL_REVIEW_PENDING__NO_PUBLICATION"
+    },
+    {
+      "review_artwork_id": "euch-champaigne",
+      "title": "The Last Supper",
+      "artist": "Philippe de Champaigne",
+      "museum_page": "https://collections.louvre.fr/ark:/53355/cl010062076",
+      "museum_object": "Musée du Louvre INV 1125",
+      "source_file": "https://commons.wikimedia.org/wiki/File:Philippe_de_Champaigne_-_La_Petite_C%C3%A8ne_%28Louvre%2C_INV_1125%29.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Philippe_de_Champaigne_-_La_Petite_C%C3%A8ne_%28Louvre%2C_INV_1125%29.jpg",
+      "photographer": "Tangopaso",
+      "source_file_sha1": "4be63c4f5bf1a3a3bb349f22e52bc1c764b82cf8",
+      "source_sha256": "3fce64afc767c16b803fd250e685f3a64caedb7e474380d3afeca68d84331942",
+      "source_bytes": 2136108,
+      "source_dimensions": [
+        2816,
+        2112
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v15/euch_champaigne-source.jpg",
+      "derivative_sha256": "e57c4669f2bfecf7ba68ab2761d94a0923fcccb34606861cb14707e33a15dff6",
+      "derivative_bytes": 435026,
+      "derivative_dimensions": [
+        2000,
+        1500
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v15/euch_champaigne-2000.webp",
+      "licence_evidence": "Independent photograph by Tangopaso dedicated to public domain",
+      "licence_url": "https://commons.wikimedia.org/wiki/File:Philippe_de_Champaigne_-_La_Petite_C%C3%A8ne_(Louvre,_INV_1125).jpg",
+      "rights_gate": "PHOTOGRAPHER_PUBLIC_DOMAIN_DECLARATION",
+      "quality_gate": "COMPOSITION_VERIFICATION_PENDING",
+      "composition_full_frame": true,
+      "status": "ARCHIVED_SOURCE_ONLY__VISUAL_REVIEW_PENDING__NO_PUBLICATION"
+    },
+    {
+      "review_artwork_id": "euch-tiepolo",
+      "title": "The Last Supper",
+      "artist": "Giovanni Battista Tiepolo",
+      "museum_page": "https://collections.louvre.fr/en/ark:/53355/cl010065259",
+      "museum_object": "Musée du Louvre RF 176",
+      "source_file": "https://commons.wikimedia.org/wiki/File:Giovan_battista_tiepolo%2C_la_cena%2C_1745-47_ca..JPG",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Giovan_battista_tiepolo%2C_la_cena%2C_1745-47_ca..JPG",
+      "photographer": "Sailko",
+      "source_file_sha1": "c7a4db5c12dd85983c3a00d7ef6fa2c2b0cfb80e",
+      "source_sha256": "ff5e54587f764d96f2bc219afc244d1e99a7a3898813c6daeb1432e358b9cbbd",
+      "source_bytes": 4867409,
+      "source_dimensions": [
+        2676,
+        2304
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v15/euch_tiepolo-source.jpg",
+      "derivative_sha256": "60cc2b9e071c7ddc943983aaa1c9afa000f251a97ba93af6774190ad7769a85e",
+      "derivative_bytes": 758030,
+      "derivative_dimensions": [
+        2000,
+        1722
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v15/euch_tiepolo-2000.webp",
+      "licence_evidence": "CC BY 3.0 photographer Sailko",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+      "rights_gate": "CC_BY_3_WITH_CREDIT_REQUIRED",
+      "quality_gate": "COMPOSITION_VERIFICATION_PENDING",
+      "composition_full_frame": true,
+      "status": "ARCHIVED_SOURCE_ONLY__VISUAL_REVIEW_PENDING__NO_PUBLICATION"
+    }
+  ],
+  "holds": []
+}
