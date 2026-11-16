@@ -162,6 +162,7 @@
       item.owner_selected_artwork ? "Owner-selected artwork (not a prayer-card primary)" :
         "Historical or research catalogue record; approval scope preserved"));
     if (item.image?.provenance) inside.append(detailMeta("Image provenance:",item.image.provenance));
+    if (item.image?.scene_use_note) inside.append(detailMeta("Scene context:",item.image.scene_use_note));
     if (item.image?.photographer) inside.append(detailMeta("Photograph:",item.image.photographer));
     if (item.image?.adaptation) inside.append(detailMeta("Adaptation:",item.image.adaptation));
     if (item.image?.license_url) {
@@ -175,7 +176,7 @@
       inside.append(detailMeta("Image quality:","Low-resolution preview only. Do not upscale or use for prayer cinematic backgrounds."));
     if (item.image?.usage?.includes("PRAYER_QA_PENDING"))
       inside.append(detailMeta("Prayer use:","Cinematic photograph and individual prayer-card approval remain pending"));
-    if (item.rights_note) inside.append(detailMeta("Recorded rights note:",item.rights_note));
+    if (item.rights_note) inside.append(detailMeta("Historical catalogue rights note:",item.rights_note));
     const parts = (item.prayer_parts || []);
     if (parts.length) {
       inside.append(textEl("p","gallery-detail-meta","Existing prayer-part associations:"));

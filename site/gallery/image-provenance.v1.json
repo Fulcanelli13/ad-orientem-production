@@ -1,9 +1,9 @@
 {
   "schema": "ao.sacred-art.gallery-image-provenance.v1",
   "import_date": "2026-11-15",
-  "source_contract": "54 earlier gallery photographs remain intact, supplemented with 14 exact previously released optional San Polo Stations WebP derivatives (photo CC BY-SA 4.0; photographer credit, licence and changes preserved). The separate source bank holds 54 legacy original JPEGs; these 14 files are faithful byte-for-byte recoveries of the old gallery-ready WebPs, NOT museum source JPEG masters. Historical 862 records are preserved and eight extra released-cycle identities are appended. No new prayer-card defaults.",
-  "local_image_count": 68,
-  "catalogue_record_images_count": 71,
+  "source_contract": "68 previous paintings remain intact, plus exact already selected Mystic Lamb and released Murillo Confession photographs. Separately one St Therese historical portrait WebP is archived outside Pages, not counted as a painting. The original source JPEG for the Mystic Lamb and St Therese is NOT preserved, only the exact previously released WebP. Seven Sorrows photograph remains held.",
+  "local_image_count": 70,
+  "catalogue_record_images_count": 73,
   "duplicate_same_original": [
     {
       "physical_artwork": "Met object 438724",
@@ -24,7 +24,7 @@
       "note": "Two historical catalogue records refer to one physical Girardin painting and share one local image; prayer associations remain unchanged."
     }
   ],
-  "pending": "Other records still await images; old source-master migration rights holds and photographic exclusions remain unchanged. San Polo CC BY-SA scope applies only to the exact 14 old released photographs; their publication in the image gallery does not authorize a new default Stations or Rosary prayer-card placement.",
+  "pending": "Other image-pending records, restricted and rejected photographs remain unresolved. MNAC Seven Sorrows is an approved painting but old PR #1866 is a draft-only image release; do not copy or publish its restricted/uncertified source file.",
   "sources": [
     {
       "artwork_id": "PRAYER::saints--saraceni",
@@ -2401,6 +2401,40 @@
       "quality_gate": "PREVIOUSLY_RELEASED_OPTIONAL_14_STATIONS_READER__EXACT_WEBP_HASH",
       "release_scope": "GALLERY_ONLY__PRAYER_DEFAULTS_UNCHANGED",
       "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "PRAYER::saints--vaneyck",
+      "title": "Adoration of the Mystic Lamb",
+      "artist": "Hubert and Jan van Eyck",
+      "path": "site/gallery/images/van-eyck-mystic-lamb-exact-released.webp",
+      "image_bytes": 1536710,
+      "sha256": "16b5803b9bd1945c065a848a345ef84c6771c88b57e1cb664af267dc2226fe8a",
+      "git_blob_sha": "043354b2103b144522a096eeda46bf0fe83c30cd",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ghent_Altarpiece_-_Adoration_of_the_Mystic_Lamb.jpg",
+      "source_old_path": "assets/prayer/user-approved/benediction-mystic-lamb.webp",
+      "source_old_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_record": "app-data/sacred-art/devotional-asset-recovery-20261116.v1.json",
+      "photo_rights": "Wikimedia Commons PD-Art, old-100, Public Domain Mark (NOT a CC0 licence)",
+      "photo_original_jpeg_preserved": false,
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "artwork_id": "CANONICAL::nga-34956",
+      "title": "The Return of the Prodigal Son",
+      "artist": "Bartolomé Esteban Murillo",
+      "path": "site/gallery/images/murillo-return-prodigal-son-nga-34956-original.jpg",
+      "image_bytes": 3022309,
+      "sha256": "b1e3d47e65f4367fd11fc23d9a63fb25ff3d8c934c3147606f1a3eba703beaa7",
+      "git_blob_sha": "c0904b5d2a6a4bd99b224194217ce45c6a9fe676",
+      "source_url": "https://www.nga.gov/artworks/34956-return-prodigal-son",
+      "source_old_path": "assets/prayer/released/confession-murillo-nga-original.jpg",
+      "source_old_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_master_path": "app-data/sacred-art/source-masters/c0904b5d2a6a4bd99b224194217ce45c6a9fe676.jpg",
+      "source_master_sha256": "b1e3d47e65f4367fd11fc23d9a63fb25ff3d8c934c3147606f1a3eba703beaa7",
+      "release_authority": "Old research merged PR #2293",
+      "source_record": "app-data/sacred-art/devotional-asset-recovery-20261116.v1.json",
+      "photo_rights": "National Gallery of Art Open Access · public domain (CC0)",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
     }
   ]
 }
