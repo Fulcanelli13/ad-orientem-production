@@ -1,9 +1,9 @@
 {
   "schema": "ao.sacred-art.gallery-image-provenance.v1",
   "import_date": "2026-11-15",
-  "source_contract": "49 distinct local gallery painting images / 51 image-bearing historical records. Batch 07 adds 12 owner-selected works: 7 NGA images explicitly openaccess=1 and 5 SMK object-number/artist matched, public_domain=true. Source byte/hash, exact museum record and uncropped app derivatives are documented. SMK Rubens workshop notes and 1600px Dolci source limitations are explicit, without implying new prayer placement approval.",
-  "local_image_count": 49,
-  "catalogue_record_images_count": 51,
+  "source_contract": "54 distinct locally displayed artwork images / 57 image-bearing historical gallery records. The migration of previously released original paintings preserved 11 additional byte-exact source JPEGs outside the Pages bundle; three originals already existed byte-for-byte. Five locally generated uncropped gallery derivatives cover six existing owner-selected entries. A total 23 unique source blobs were reconciled; 8 archival references, 1 reproduction-rights hold, 2 rejected photos and 2 missing sources are not newly published.",
+  "local_image_count": 54,
+  "catalogue_record_images_count": 57,
   "duplicate_same_original": [
     {
       "physical_artwork": "Met object 438724",
@@ -24,7 +24,7 @@
       "note": "Two historical catalogue records refer to one physical Girardin painting and share one local image; prayer associations remain unchanged."
     }
   ],
-  "pending": "811 catalogue entries remain metadata-only. Source files for Batch 07 remain at museum services, with app-local WebP derivatives and cryptographic provenance; do not claim full museum master downloaded for NGA 2000px IIIF requests or SMK thumbnail. Gallery approval does not imply primary prayer cinematic approval.",
+  "pending": "805 catalogue records still metadata-only. Source originals transferred from the legacy release register are preserved under app-data/sacred-art/source-masters/; only locally optimized gallery derivatives are published on GitHub Pages. The eight archival-only sources and restricted/rejected ones are deliberately not copied into the publicly accessible production repository. Prayer-screen publication remains independent.",
   "sources": [
     {
       "artwork_id": "PRAYER::saints--saraceni",
@@ -1417,6 +1417,172 @@
       "quality_gate": "INSTITUTIONAL_OPEN_ACCESS_LICENSE_AND_OBJECT_ID__UNCROPPED_DERIVATIVE",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
       "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "CANONICAL::ART-hilippe-de-hampaigne-he-ream-of-aint-oseph",
+      "path": "site/gallery/images/legacy-joseph-6a3760cd01-2000.webp",
+      "title": "The Dream of Saint Joseph",
+      "artist": "Philippe de Champaigne",
+      "image_bytes": 252424,
+      "git_blob_sha": "b9242886ec49caa00ed86f82db13b9f658feebd9",
+      "sha256": "fb7ddce9097002ef18548d2e616f22fac08b49626407f58cb055fba55141f508",
+      "pixel_dimensions": [
+        1474,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/source-master-migration-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Philippe_de_Champaigne_(1602-1674)_-_The_Dream_of_Saint_Joseph_-_NG6276_-_National_Gallery.jpg",
+      "master_image_path": "app-data/sacred-art/source-masters/6a3760cd019ad1993d78450e2f539bd2c9037c50.jpg",
+      "source_git_blob_sha": "6a3760cd019ad1993d78450e2f539bd2c9037c50",
+      "source_sha256": "d632ea2012825ecdccc760f50b7cc9107a30bf4a2349541742ef6f66a4987f9b",
+      "source_bytes": 19749000,
+      "source_dimensions_px": [
+        4421,
+        6000
+      ],
+      "release_authority": "Legacy released-module-paintings.v1.js · PR #2296",
+      "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:Philippe_de_Champaigne_(1602-1674)_-_The_Dream_of_Saint_Joseph_-_NG6276_-_National_Gallery.jpg",
+      "recorded_reproduction_rights": "Wikimedia Commons PD-Art · faithful public-domain reproduction; local jurisdiction may vary",
+      "quality_gate": "BYTE_EXACT_MASTER_PRESERVED__SHA256_AND_GIT_BLOB_VERIFIED__UNCROPPED_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false,
+      "duplicate_catalogue_artwork_ids": [],
+      "earlier_archive_holds": [],
+      "legacy_module": "joseph"
+    },
+    {
+      "artwork_id": "CANONICAL::commons-morlete-sacred-heart-1759",
+      "path": "site/gallery/images/legacy-heart-jesus-53e7d0a5d1-2000.webp",
+      "title": "The Heart of Jesus",
+      "artist": "Juan Patricio Morlete Ruiz",
+      "image_bytes": 512224,
+      "git_blob_sha": "888348dd155b4c6325322a6ebbd1e776b4c61d55",
+      "sha256": "d7d75afa7328971ca6389af69c07ff39ccf1eb0cf00aff1972f8bd44e84b6f7b",
+      "pixel_dimensions": [
+        1540,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/source-master-migration-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Juan_Patricio_Morlete_Ruiz_-_The_Heart_of_Jesus_-_Google_Art_Project.jpg",
+      "master_image_path": "app-data/sacred-art/source-masters/53e7d0a5d1e01f7dc25855504ffd31f123551492.jpg",
+      "source_git_blob_sha": "53e7d0a5d1e01f7dc25855504ffd31f123551492",
+      "source_sha256": "06f940863256dfc4877814b33a54340fb8ec9c07f04097f8b3f73985a3583249",
+      "source_bytes": 2012474,
+      "source_dimensions_px": [
+        2345,
+        3045
+      ],
+      "release_authority": "Legacy released-module-paintings.v1.js · PR #2302",
+      "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:Juan_Patricio_Morlete_Ruiz_-_The_Heart_of_Jesus_-_Google_Art_Project.jpg",
+      "recorded_reproduction_rights": "Wikimedia Commons PD-Art · faithful public-domain reproduction; local jurisdiction may vary",
+      "quality_gate": "BYTE_EXACT_MASTER_PRESERVED__SHA256_AND_GIT_BLOB_VERIFIED__UNCROPPED_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false,
+      "duplicate_catalogue_artwork_ids": [],
+      "earlier_archive_holds": [
+        "RIGHTS_OR_ATTRIBUTION_REVIEW"
+      ],
+      "legacy_module": "heart-jesus"
+    },
+    {
+      "artwork_id": "CANONICAL::B02-HEART-MARY-MORLETE",
+      "path": "site/gallery/images/legacy-heart-mary-ded0b99ff4-2000.webp",
+      "title": "The Heart of Mary",
+      "artist": "Juan Patricio Morlete Ruiz",
+      "image_bytes": 489268,
+      "git_blob_sha": "1c95b4b461d3ce7a88e0c6a36fc428ee7aef0bc9",
+      "sha256": "ed7b08eb1f5de927bc2281ce3c8051da20cc41560e616faa4f423b3cd1c6145f",
+      "pixel_dimensions": [
+        1539,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/source-master-migration-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Juan_Patricio_Morlete_Ruiz_-_The_Heart_of_Mary_-_Google_Art_Project.jpg",
+      "master_image_path": "app-data/sacred-art/source-masters/ded0b99ff45c8bfd29468bc85812adbc8e17f037.jpg",
+      "source_git_blob_sha": "ded0b99ff45c8bfd29468bc85812adbc8e17f037",
+      "source_sha256": "82e465f5600d0df4b2af32d22b8642a832bfc4cdd5d19d1f1c2b0baeec49649d",
+      "source_bytes": 1951966,
+      "source_dimensions_px": [
+        2277,
+        2960
+      ],
+      "release_authority": "Legacy released-module-paintings.v1.js · PR #2302",
+      "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:Juan_Patricio_Morlete_Ruiz_-_The_Heart_of_Mary_-_Google_Art_Project.jpg",
+      "recorded_reproduction_rights": "Wikimedia Commons PD-Art · faithful public-domain reproduction; local jurisdiction may vary",
+      "quality_gate": "BYTE_EXACT_MASTER_PRESERVED__SHA256_AND_GIT_BLOB_VERIFIED__UNCROPPED_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false,
+      "duplicate_catalogue_artwork_ids": [],
+      "earlier_archive_holds": [
+        "RIGHTS_OR_ATTRIBUTION_REVIEW"
+      ],
+      "legacy_module": "heart-mary"
+    },
+    {
+      "artwork_id": "CANONICAL::ART-eter-aul-ubens-esurrection-of-hrist",
+      "path": "site/gallery/images/legacy-regina-25bd905c58-2000.webp",
+      "title": "Resurrection of Christ (central panel)",
+      "artist": "Peter Paul Rubens",
+      "image_bytes": 479118,
+      "git_blob_sha": "3f1e1cbee2b49949bc1a03d9235f4af7f22177e1",
+      "sha256": "e38aff7aec95d0bada4daa07e0a0f39717dbd9e3196a9ec6623fab6d7437f56e",
+      "pixel_dimensions": [
+        1429,
+        2000
+      ],
+      "source_record": "app-data/sacred-art/source-master-migration-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Resurrection_of_Christ_triptych_(central_panel).jpg",
+      "master_image_path": "app-data/sacred-art/source-masters/25bd905c5825381f17fe11e90ee8e5c5218ac16d.jpg",
+      "source_git_blob_sha": "25bd905c5825381f17fe11e90ee8e5c5218ac16d",
+      "source_sha256": "ab93fd9a928693d2797a0eadd69dc630e4cf2da59233c3f512b9921dfcfeb178",
+      "source_bytes": 4593377,
+      "source_dimensions_px": [
+        2144,
+        3000
+      ],
+      "release_authority": "Legacy released-module-paintings.v1.js · PR #2296",
+      "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Resurrection_of_Christ_triptych_(central_panel).jpg",
+      "recorded_reproduction_rights": "Wikimedia Commons PD-Art · faithful public-domain reproduction; local jurisdiction may vary",
+      "quality_gate": "BYTE_EXACT_MASTER_PRESERVED__SHA256_AND_GIT_BLOB_VERIFIED__UNCROPPED_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false,
+      "duplicate_catalogue_artwork_ids": [],
+      "earlier_archive_holds": [],
+      "legacy_module": "regina"
+    },
+    {
+      "artwork_id": "HERO::wallraf:honthorst-adoration-shepherds-1622",
+      "path": "site/gallery/images/legacy-visit-d21c497238-2000.webp",
+      "title": "The Adoration of the Shepherds",
+      "artist": "Gerrit van Honthorst",
+      "image_bytes": 448734,
+      "git_blob_sha": "1c9cf655d07cbd7dbdc9eae15b0049b7426a5c48",
+      "sha256": "b0d19d82207cf5611cb1d03027f29925982760331d425a674dc0dbe307396493",
+      "pixel_dimensions": [
+        2000,
+        1686
+      ],
+      "source_record": "app-data/sacred-art/source-master-migration-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Adoration_of_the_shepherds,_by_Gerard_van_Honthorst.jpg",
+      "master_image_path": "app-data/sacred-art/source-masters/d21c497238aaa7c25fdd39e47cee07a0cd672702.jpg",
+      "source_git_blob_sha": "d21c497238aaa7c25fdd39e47cee07a0cd672702",
+      "source_sha256": "347cf5d74cc575bcb082250a90dc64c54dc673e94fbc4e48efcd27fa2a3b09c1",
+      "source_bytes": 9588163,
+      "source_dimensions_px": [
+        3948,
+        3328
+      ],
+      "release_authority": "Legacy released-module-paintings.v1.js · PR #2296",
+      "rights_evidence_url": "https://commons.wikimedia.org/wiki/File:Adoration_of_the_shepherds,_by_Gerard_van_Honthorst.jpg",
+      "recorded_reproduction_rights": "Wikimedia Commons PD-Art · faithful public-domain reproduction; local jurisdiction may vary",
+      "quality_gate": "BYTE_EXACT_MASTER_PRESERVED__SHA256_AND_GIT_BLOB_VERIFIED__UNCROPPED_WEBP",
+      "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false,
+      "duplicate_catalogue_artwork_ids": [
+        "released-photo:visit"
+      ],
+      "earlier_archive_holds": [],
+      "legacy_module": "visit"
     }
   ]
 }
