@@ -254,28 +254,8 @@ Current gallery: 870 records, 70 locally displayed paintings, 73 image-bearing r
 
 Displayed the already acquired and previously released old Home Calendar image originals for 2026: Raphael Transfiguration (Lent II, 1 March), Lanfranco Miracle of the Loaves and Fishes (Laetare, 15 March), and Tanner Nicodemus (Pentecost Monday, 25 May). Three exact JPEGs (11,438,704 bytes) were copied only from the existing production source-master bank, with original SHA256 and Git blob verified. Raphael is a historical art-book scan, Lanfranco a low-resolution non-museum original, and Tanner's source carries PAFA Barbara Katus institutional photographic-rights caveats. Dates are historical 2026 selections only; no new Calendar assignments or prayer defaults. Gallery now has 873 records and 73 distinct paintings. See app-data/sacred-art/class-i-gallery-link-20261116.v1.json for source evidence.
 
+### Full bulk source-check of owner-approved Commons paintings - 16 November 2026
 
-## Selected Luminous painting review overlay (draft PR #21, 16 November 2026)
+Automatically evaluated 491 previously selected yet unpublished artwork records against their **exact preselected Wikimedia Commons File page**, protected the 103 historic globally rejected originals, and locally published **161 full-composition WebP images** (max 1600px). Gallery now contains **234 distinct locally hosted paintings** and **237 image-bearing catalogue records** among 873 immutable artwork records. Only source pages explicitly owner-selected in the 3 November artwork decisions were considered. Wikimedia file-specific rights metadata had to declare copyright false and a public-domain/CC0 status. Other licences, insufficient dimensions, image-fetch failures, missing exact source pages and questionable photographic credits were held with explicit reasons; the remaining candidate queue remains available rather than thrown away. All JPEG masters previously recovered remain in the separate source bank. These new Commons-based gallery derivatives are permanently saved in the GitHub gallery as WebP, **not** as full-resolution original JPEGs; source-page rights, original dimensions/sha1, downloaded thumbnail SHA256 and derivative hash are recorded in the machine-readable manifest. Preserved artworks and prayer-card decisions stay unchanged. Source-specific Commons file claims should not be construed as blanket museum rights or universal jurisdiction clearance.
 
-This is an **additive gallery-only integration**, reconciled against the newer
-production baseline of **873 canonical records and 73 displayed images**.
-The 862 historical source-master records and 11 newer releases remain unchanged.
-
-- V13: five owner-selected review photographs and their five review records.
-- V14: five further photographs. Four new review records are added; Carl Bloch's
-  *Sermon on the Mount* image is attached to the existing \`plate-bloch-sermon\`
-  record (no duplicate).
-- V15: four additional verified image sources are retained in
-  \`app-data/sacred-art/staged-selected31-v15/\` only. Their final gallery
-  image/crop/rights QA is **still pending**.
-- Two V14 reproductions (Francken, Vermeyen) remain marked **preview-only**.
-- The draft integrated gallery has **882 searchable records and 83 locally
-  displayed paintings** (873+9 records; 73+10 images), subject to final owner
-  review; \`site/gallery/catalogue.v1.json\` and the canonical provenance
-  index remain byte-identical to the production baseline.
-- Image rights and exact reproduction SHA values remain in the V13/V14
-  acquisition and supplemental provenance manifests. These images are **not
-  authorized prayer-card primaries** and require separate cinematic QA.
-
-The draft does not add a deployment workflow, alter prayers or modify the
-independent research repository.
+See app-data/sacred-art/bulk-commons-photo-import-20261116.v1.json and legacy-artwork-rejections-20261116.v1.json.
