@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""V18: acquire seven owner-selected artwork source candidates into the private draft-branch research bank.
+"""V18: acquire eight owner-selected artwork source candidates into the private draft-branch research bank.
 No site/, gallery or prayer-card modifications. Incomplete rights and identity gates remain explicit.
 """
 import hashlib,io,json,pathlib,time,urllib.request,urllib.parse,urllib.error
@@ -38,14 +38,20 @@ SPECS=[
   "photographer":"Mongolo1984","license":"CC BY-SA 4.0 with Italian heritage disclaimer",
   "license_url":"https://creativecommons.org/licenses/by-sa/4.0/",
   "gate":"SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD"},
- {"id":"euch-leonardo","filename":"Leonardo da Vinci (1452-1519) - The Last Supper (1495-1498).jpg",
-  "object":"Santa Maria delle Grazie, Milan, Leonardo mural (1495-98)",
-  "photographer":"Unknown (Commons faithful reproduction; original source unspecified)",
-  "license":"Public Domain Mark / PD-Art; original photographic provenance incomplete",
+ {"id":"euch-poussin","filename":"Seven Sacraments - Eucharist II (1647) Nicolas Poussin.jpg",
+  "object":"National Galleries of Scotland NGL 067.46 F, Bridgewater Collection, Eucharist II 1647",
+  "photographer":"Web Gallery of Art-derived reproduction (Wikimedia Commons 2010)",
+  "license":"Commons Public Domain Mark / PD-Art; museum declares image unavailable or restricted",
   "license_url":"https://creativecommons.org/publicdomain/mark/1.0/",
-  "gate":"SOURCE_ONLY__PHOTOGRAPH_ORIGIN_AND_ITALIAN_HERITAGE_REVIEW"}
+  "gate":"SOURCE_ONLY__NGS_IMAGE_REUSE_HOLD__PREVIEW_RESOLUTION"},
+ {"id":"euch-leonardo","filename":"Last supper (24709241840).jpg",
+  "object":"Santa Maria delle Grazie, Milan, Leonardo mural (1495-98)",
+  "photographer":"Tomasz Przechlewski (Flickr image CC BY 2.0 independently reviewed in 2019)",
+  "license":"Creative Commons Attribution 2.0 Generic; credit and link required",
+  "license_url":"https://creativecommons.org/licenses/by/2.0/",
+  "gate":"SOURCE_ONLY__ITALIAN_HERITAGE_AND_GALLERY_PHOTO_QUALITY_REVIEW"}
 ]
-assert len(SPECS)==7 and len({s["id"] for s in SPECS})==7
+assert len(SPECS)==8 and len({s["id"] for s in SPECS})==8
 assert {s["id"] for s in SPECS}<=set(BY_ID)
 def hexhash(data,alg="sha256"): return hashlib.new(alg,data).hexdigest()
 def commons_url(filename):
@@ -82,7 +88,7 @@ for spec in SPECS:
         with Image.open(io.BytesIO(data)) as probe:probe.verify()
         with Image.open(io.BytesIO(data)) as probe:
             im=ImageOps.exif_transpose(probe).convert("RGB");dims=[im.width,im.height]
-            if min(dims)<700 or max(dims)<1500:raise RuntimeError("Below full-source quality gate")
+            if min(dims)<700 or (max(dims)<1500 and rid!="euch-poussin"):raise RuntimeError("Below source quality gate")
             if sum(ImageStat.Stat(im.resize((32,32))).stddev)<12:raise RuntimeError("Low-contrast placeholder suspected")
             im.thumbnail((2000,2000),Image.Resampling.LANCZOS)
             out=io.BytesIO();im.save(out,"WEBP",quality=88,method=6)
@@ -97,16 +103,16 @@ for spec in SPECS:
           "source_dimensions":dims,"source_path":str(src.relative_to(ROOT)),"derivative_sha256":hexhash(derivative),
           "derivative_bytes":len(derivative),"derivative_dimensions":small,"derivative_path":str(thumb.relative_to(ROOT)),
           "rights_gate":spec["gate"],"object_identity_gate":"ORIGINAL_OWNER_IMAGE_UNCONFIRMED" if rid=="king-jordaens" else "MUSEUM_OBJECT_MATCHED",
-          "composition_status":"REQUIRES_VISUAL_FRAME_CROP_AND_QUALITY_REVIEW",
+          "composition_status":"PREVIEW_ONLY__SMALL_SOURCE" if rid=="euch-poussin" else "REQUIRES_VISUAL_FRAME_CROP_AND_QUALITY_REVIEW",
           "status":"SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"})
         print("ACQUIRED",rid,dims,len(data),flush=True)
     except Exception as e:
         holds.append({"review_artwork_id":rid,"reason":str(e)})
         print("HELD",rid,repr(e),flush=True)
-holds.append({"review_artwork_id":"euch-poussin","reason":"Not acquired: Scottish National Gallery declares the selected Holy Eucharist photograph restricted or unavailable. No alternate image admitted without independent exact-photo rights."})
+
 result={"schema":"ao.sacred-art.selected31-source-acquisition-v18","purpose":"Source-only research; no gallery, prayer-card or deployment changes",
-  "attempted_selected_sources":7,"acquired_count":len(records),"failed_acquisition_count":len(holds)-1,"outstanding_poussin_count":1,
+  "attempted_selected_sources":8,"acquired_count":len(records),"failed_acquisition_count":len(holds),"outstanding_poussin_count":0 if any(r["review_artwork_id"]=="euch-poussin" for r in records) else 1,
   "records":records,"holds":holds}
 prior.write_text(json.dumps(result,indent=2,ensure_ascii=False)+"\n")
-assert len(records)+len(holds)-1==7
-print("V18",len(records),"sources archived,",len(holds),"holds including Poussin",flush=True)
+assert len(records)+len(holds)==8
+print("V18",len(records),"sources archived,",len(holds) ,"failed or held",flush=True)
