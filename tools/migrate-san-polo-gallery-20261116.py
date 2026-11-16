@@ -176,9 +176,7 @@ gallery["counts"].update(
   distinct_locally_hosted_paintings=68,
   verified_image_files=68
 )
-gallery["source_references"].append(
-  "Original Ad Orientem merged PR #2699: fourteen Giandomenico Tiepolo San Polo Stations image derivatives; exact repo ref and CC BY-SA source evidence in app-data/sacred-art/san-polo-released-cycle-migration.v1.json"
-)
+gallery["source_references"]["san_polo_released_cycle"]="app-data/sacred-art/san-polo-released-cycle-migration.v1.json"
 provenance["local_image_count"]=68
 provenance["catalogue_record_images_count"]=71
 provenance["source_contract"]="54 earlier gallery photographs remain intact, supplemented with 14 exact previously released optional San Polo Stations WebP derivatives (photo CC BY-SA 4.0; photographer credit, licence and changes preserved). The separate source bank holds 54 legacy original JPEGs; these 14 files are faithful byte-for-byte recoveries of the old gallery-ready WebPs, NOT museum source JPEG masters. Historical 862 records are preserved and eight extra released-cycle identities are appended. No new prayer-card defaults."
