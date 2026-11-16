@@ -53,3 +53,7 @@ Three previously released 2026 Class I original JPEGs already preserved in sourc
 ### Bulk exact Commons source decisions (Nov 16)
 
 A single batch reconciled 491 previously owner-selected 3 November Commons artwork candidates with 103 global historical rejects, image-specific Commons rights metadata and source-quality checks. Exactly 161 local full-image derivatives were admitted to the gallery, 330 were held or deferred with reasons. Production has 234 displayed paintings, 237 image-bearing records; the original 54 source JPEGs remain intact. This batch did not acquire or retain full source JPEG originals; the resulting WebP derivatives are permanent with source and fingerprint trails. No unrelated prayer placements or calendar selections were modified.
+
+### Owner-approved Commons bulk image batch 02 (16 Nov 2026)
+
+Second batch recovered 109 further locally cached, full-composition gallery WebPs for owner-approved original File pages, for 343 total displayed paintings and 346 image-bearing catalogue records. Every previous image, 873 historical artwork records, 103 globally rejected original identifiers, prayer-card links and permanent 54-source-JPEG bank remain intact. The original Commons JPEG bytes are not archived in these batches; the durable original-source metadata and reproduction-specific licence position are in bulk-commons-photo-import-batch02-20261116.v1.json. 221 records remain held for documented reasons; these are not automatically approved by the second pass.
