@@ -41,3 +41,5 @@ jobs:
           git add app-data/sacred-art site/gallery tests
           git -c user.name='Ad Orientem Art Image Verification' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Bulk preserve previously approved institutional and Commons painting photos with exact source rights'
           git push origin HEAD:feature/sacred-art-bulk-institutional-wave04-20261116
+
+# Retry after correcting pathlib instance usage for permanent gallery image paths.
