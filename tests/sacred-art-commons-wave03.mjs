@@ -79,7 +79,7 @@ assert.equal(audit.schema,'ao.sacred-art.bulk-gallery-museum-candidate-inventory
 assert.equal(audit.counts.catalogue_records,873);
 assert.equal(audit.counts.gallery_paintings,343,'Museum audit captures unmodified pre-retry state');
 assert.equal(audit.counts.image_bearing_records,346);
-assert.equal(audit.counts.image_missing_november3_commons,221);
+assert.equal(audit.counts.image_missing_november3_commons,305,'Broader RECENT575 source group includes 84 other historical image-missing rows beyond the 221 batch-02 holds');
 assert.equal(audit.counts.image_missing_all,527);
 assert.equal(audit.counts.image_missing_other_selected,audit.museum_and_other_selected_queue.length);
 assert.equal(audit.counts.archival_original_master_matches,audit.existing_master_matches.length);
