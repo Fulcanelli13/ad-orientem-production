@@ -1,9 +1,9 @@
 {
   "schema": "ao.sacred-art.gallery-image-provenance.v1",
   "import_date": "2026-11-15",
-  "source_contract": "Prior 70 photos/870 records unchanged. Three already selected and old-released Class I Calendar photos (Raphael, Tanner, Lanfranco) copied without modifications from preexisting 54-JPEG production source bank, maintaining old photo-rights caveats and date locks. No new prayer defaults. Plus 161 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation. Plus 109 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation.",
-  "local_image_count": 343,
-  "catalogue_record_images_count": 346,
+  "source_contract": "Prior 70 photos/870 records unchanged. Three already selected and old-released Class I Calendar photos (Raphael, Tanner, Lanfranco) copied without modifications from preexisting 54-JPEG production source bank, maintaining old photo-rights caveats and date locks. No new prayer defaults. Plus 161 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation. Plus 109 previously owner-selected 2026-11-03 Commons files after source-specific Wikimedia imageinfo checks; full frame 1600px WebP derivatives stored locally; originals remain linked by metadata and are NOT in the source-master bank. Historic catalogue status untouched, no prayer activation. A polite sequential retry recovered 49 of 49 previously rate-limited exact Commons photo previews without touching other original artwork/canonical assignments. If Wikimedia returned 429, download paused rather than bypassing rate limits.",
+  "local_image_count": 392,
+  "catalogue_record_images_count": 395,
   "duplicate_same_original": [
     {
       "physical_artwork": "Met object 438724",
@@ -12223,6 +12223,1721 @@
         "credit": "Self-photographed , Photograph taken at: Corps et Ombres : Le Caravagisme européen , Category:Musée des Augustins de Toulouse , 23 July 2012 – 14 October 2012 , User:BastienM",
         "image_author": "Attributed to Matthias Stom",
         "usage_terms": "public domain"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::109",
+      "title": "Dutch: De visitatielabel QS:Lnl,\"De visitatie\"",
+      "artist": "Erasmus Quellinus II",
+      "path": "site/gallery/images/owner-approved-20261103-109.webp",
+      "image_bytes": 116206,
+      "sha256": "b128ab56989e74a5fa3a82d7da075b3cf589b5b8dfda83722ea14ebe8015ec64",
+      "git_blob_sha": "fed389dbe08c890a95bd3241c8d4d737eaa39dfe",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:De_visitatie_-_Erasmus_Quellinus_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:De_visitatie_-_Erasmus_Quellinus_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 189964794,
+      "commons_file_sha1": "e6a77ac49a8fdedda842e5fa2974626f811d48e5",
+      "commons_source_original_pixels": [
+        1495,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 278106,
+      "source_downloaded_thumbnail_sha256": "97c02b532413245f2346cacb3b131f19a1bd83fb41329cdcc8126737c718b2de",
+      "display_dimensions": [
+        1196,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0040857000",
+        "artist": "erasmus quellinus ii"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::110",
+      "title": "Doornenkroning",
+      "artist": "Jacob van Oost",
+      "path": "site/gallery/images/owner-approved-20261103-110.webp",
+      "image_bytes": 122194,
+      "sha256": "c1c50d2712fac94f708f0f51c716fee622c5967a1d0528b1e47e19e96d19ad62",
+      "git_blob_sha": "5b990cf4527431377eba9bcc617451ce910d82f5",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Doornenkroning_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Doornenkroning_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 189972449,
+      "commons_file_sha1": "2e975bb7acbf1c711f419535126dc7d9abdfaa88",
+      "commons_source_original_pixels": [
+        1440,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 265170,
+      "source_downloaded_thumbnail_sha256": "f9c502b532502fbebccb6ef4fc12134673231188665f1f401177b735e5abb284",
+      "display_dimensions": [
+        1152,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0040103000",
+        "artist": "jacob van oost"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::114",
+      "title": "Heilige Antonius wekt een dode terug tot leven",
+      "artist": "Jacob van Oost",
+      "path": "site/gallery/images/owner-approved-20261103-114.webp",
+      "image_bytes": 139362,
+      "sha256": "fb9c6264e58b521d54e293589a1a8c44be9819fb3c4d94234a2f618aa22375fd",
+      "git_blob_sha": "fd03060f211c7c8f19965011739bde3055897085",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Antonius_wekt_een_dode_terug_tot_leven_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Heilige_Antonius_wekt_een_dode_terug_tot_leven_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 189972459,
+      "commons_file_sha1": "26e72316e47b69e8e3d695869c3f33543ec0a737",
+      "commons_source_original_pixels": [
+        1075,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 263553,
+      "source_downloaded_thumbnail_sha256": "830747a5ffcfaa2e5bb30f5ef9af531369d1988e515952e364b0d074b7ed6dc3",
+      "display_dimensions": [
+        860,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0040431001",
+        "artist": "jacob van oost"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::123",
+      "title": "Heilige Drievuldigheid",
+      "artist": "Artus Wolffort",
+      "path": "site/gallery/images/owner-approved-20261103-123.webp",
+      "image_bytes": 150910,
+      "sha256": "4a198c4831152846341d1c0861b8f95900e620df0c93c908787fb5c4d7caefa1",
+      "git_blob_sha": "b64fe4c9d34a0e3c8635e7652f8b269647de3d5f",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Drievuldigheid_-_Artus_Wolffort_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Heilige_Drievuldigheid_-_Artus_Wolffort_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 188661092,
+      "commons_file_sha1": "7f74969d00c5aa81fc922c292cc4ffa2e1b219dc",
+      "commons_source_original_pixels": [
+        1406,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 296162,
+      "source_downloaded_thumbnail_sha256": "4167f214db9db7fdd9fa1a429815cddae0fb746e5fd8abc72fdd892d17fa7f72",
+      "display_dimensions": [
+        1125,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0040177000",
+        "artist": "artus wolffort"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::124",
+      "title": "Dutch: Heilige Antoniuslabel QS:Lnl,\"Heilige Antonius\"",
+      "artist": "B. Clerebau",
+      "path": "site/gallery/images/owner-approved-20261103-124.webp",
+      "image_bytes": 334538,
+      "sha256": "c4140f736c53bbfffb1dde0f6ced49a88bbed6d94bb8a75f8b7116f262a6016f",
+      "git_blob_sha": "03e937cda0142ed52536240d239e291b7836dd14",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Antonius_-_B._Clerebau_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Heilige_Antonius_-_B._Clerebau_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 189962098,
+      "commons_file_sha1": "c4e2422a1bc121df5c3bfa795de8eb220af0c4f0",
+      "commons_source_original_pixels": [
+        1386,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 491762,
+      "source_downloaded_thumbnail_sha256": "64850142df8e0ea16f8b88d3da5e4ebc3acfc49eeecdcf857c8054da5c6adffb",
+      "display_dimensions": [
+        1109,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0044080000",
+        "artist": "b. clerebau"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::125",
+      "title": "Dutch: Heilige Brunolabel QS:Lnl,\"Heilige Bruno\"",
+      "artist": "Bruno Van Hollebeke",
+      "path": "site/gallery/images/owner-approved-20261103-125.webp",
+      "image_bytes": 168586,
+      "sha256": "63a151999c4719cc89921604eef5efd5b702f3a5e6d1543598984996098b57a7",
+      "git_blob_sha": "5406841e6ad25da793a42ff49742dfb6ed5b3caa",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Bruno_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Heilige_Bruno_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 189962271,
+      "commons_file_sha1": "988a564167c7840a25d6346998ee7c1566474069",
+      "commons_source_original_pixels": [
+        1489,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 313623,
+      "source_downloaded_thumbnail_sha256": "5e1f69ea932fc37941f986f34022866033e1a8b0c55fbe1b0e8dd0486a486e20",
+      "display_dimensions": [
+        1191,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0041049001",
+        "artist": "bruno van hollebeke"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::126",
+      "title": "Heilige Catharina van Siena in extase",
+      "artist": "Jozef van den Kerckhove",
+      "path": "site/gallery/images/owner-approved-20261103-126.webp",
+      "image_bytes": 101856,
+      "sha256": "a780d54d6972f9aa14fae9fdafd1d15cb34bc843205e5808c53ac2b17ed4ec1f",
+      "git_blob_sha": "70363639bfb1c3ad893adfab4017d51e41deab6b",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Catharina_van_Siena_in_extase_-_Joseph_van_den_Kerckhove_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Heilige_Catharina_van_Siena_in_extase_-_Joseph_van_den_Kerckhove_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 189979501,
+      "commons_file_sha1": "eb5068cb53d463daadc5cd57c86257d285490ebf",
+      "commons_source_original_pixels": [
+        1369,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 230978,
+      "source_downloaded_thumbnail_sha256": "40df4d9708825fe1e551df0628e70d67353c875b30cb417ad765a297eb8a5133",
+      "display_dimensions": [
+        1095,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0043645000",
+        "artist": "jozef van den kerckhove"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::129",
+      "title": "Dutch: Heilige Hiëronymuslabel QS:Lnl,\"Heilige Hiëronymus\"",
+      "artist": "Bruno Van Hollebeke",
+      "path": "site/gallery/images/owner-approved-20261103-129.webp",
+      "image_bytes": 264298,
+      "sha256": "5a950bfc1dafb4a87096b6e236d7510cce967b47ff1f97b3461b6d15f58e4957",
+      "git_blob_sha": "ac7f6a3ec84353f9170df6560ace934eab3a48a7",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_Hieronymus_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Heilige_Hieronymus_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 189962283,
+      "commons_file_sha1": "1920031f90efd3d77ffe8981fc299af14d17fb12",
+      "commons_source_original_pixels": [
+        1635,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 459460,
+      "source_downloaded_thumbnail_sha256": "ada2f4ede191faad96ee662e0fa1d9e86971b859cdfdc6dd4aec45757f5fd2e9",
+      "display_dimensions": [
+        1308,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0041048000",
+        "artist": "bruno van hollebeke"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::130",
+      "title": "Dutch: Het kind Jezus, de heerlijkheid van Godlabel QS:Lnl,\"Het kind Jezus, de heerlijkheid van God\"",
+      "artist": "Jacob van Oost",
+      "path": "site/gallery/images/owner-approved-20261103-130.webp",
+      "image_bytes": 198892,
+      "sha256": "ff1fa4848ade58dd20150a3a3b25b1911c5227f999074e4928e5b0991996f2a9",
+      "git_blob_sha": "564f21c6100153a819074d0a1bbf819c2a25cc0c",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Het_kind_Jezus,_de_heerlijkheid_van_God_-_Jacob_de_Oude_Van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Het_kind_Jezus,_de_heerlijkheid_van_God_-_Jacob_de_Oude_Van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 186993925,
+      "commons_file_sha1": "2e8cc153d44d259a307d8c34cc9aeff6507cca8c",
+      "commons_source_original_pixels": [
+        1409,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 359862,
+      "source_downloaded_thumbnail_sha256": "e61de1cc741f7f40b71f57f136d0bc416854d92f33b643e69b75e9bcdc9863f3",
+      "display_dimensions": [
+        1127,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0240008000",
+        "artist": "jacob van oost"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::133",
+      "title": "Heilige martelares",
+      "artist": "Jacob van Oost",
+      "path": "site/gallery/images/owner-approved-20261103-133.webp",
+      "image_bytes": 157940,
+      "sha256": "460b3058dd4d48f087aeb9ddbf88b2ac685d0bbceb223a9ef213a77bb9ba3cce",
+      "git_blob_sha": "9ceb8be0cd8680f230d0145ad92a540a29d4cbf5",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Heilige_martelares_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Heilige_martelares_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 189972471,
+      "commons_file_sha1": "bfb4a24ec78c49457d0bdf6d3fcca446218b4e75",
+      "commons_source_original_pixels": [
+        1513,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 324731,
+      "source_downloaded_thumbnail_sha256": "4cb138257ed28d1e0d66d4e875cafc448e9ddf982449ef36591e8d398a64793f",
+      "display_dimensions": [
+        1210,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/1048150000",
+        "artist": "jacob van oost"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::134",
+      "title": "Maria van de Zeven Smarten",
+      "artist": "Adriaen Isenbrandt",
+      "path": "site/gallery/images/owner-approved-20261103-134.webp",
+      "image_bytes": 308750,
+      "sha256": "ae2c990398f398525e278821ee9991e335bda3574ed9aad1d227d982d4482a0b",
+      "git_blob_sha": "b59d28734d2a20b3b6ef41a77cb0f598dc9bc07f",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Maria_van_de_Zeven_Smarten_-_Adriaen_Isenbrant_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Maria_van_de_Zeven_Smarten_-_Adriaen_Isenbrant_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 187546291,
+      "commons_file_sha1": "44acfc5b5f67b7a271b1b7ea26d2503f90585901",
+      "commons_source_original_pixels": [
+        1767,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 522417,
+      "source_downloaded_thumbnail_sha256": "dd203c01cc8272faf3f665983e5f80b5968eb473d97ec7ae44b096a25069bdcb",
+      "display_dimensions": [
+        1414,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0240002000",
+        "artist": "adriaen isenbrandt"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::136",
+      "title": "Dutch: Onze Lieve Vrouw drieluiklabel QS:Lnl,\"Onze Lieve Vrouw drieluik\"",
+      "artist": "Antoon Claeissens",
+      "path": "site/gallery/images/owner-approved-20261103-136.webp",
+      "image_bytes": 220388,
+      "sha256": "3918df29653a2430cf4a86b993aef0d4374cc2766a9582498475a79d33d5ec5b",
+      "git_blob_sha": "4fb8f12b8c0c61ca9c26f4c8765392919abef1f1",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Onze_Lieve_Vrouw_drieluik_-_Antoon_Claeissens_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Onze_Lieve_Vrouw_drieluik_-_Antoon_Claeissens_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 189961653,
+      "commons_file_sha1": "1ed24d98ad19c2ca865a8ed9b5b953aa0ccb66ca",
+      "commons_source_original_pixels": [
+        1250,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 367760,
+      "source_downloaded_thumbnail_sha256": "555bf98830716917c0747ef497ab4941984d65045d598df5cffc14da758c9838",
+      "display_dimensions": [
+        1000,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0240026000",
+        "artist": "antoon claeissens"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::138",
+      "title": "Dutch: Sint-Martinuslabel QS:Lnl,\"Sint-Martinus\"",
+      "artist": "anonymous",
+      "path": "site/gallery/images/owner-approved-20261103-138.webp",
+      "image_bytes": 386404,
+      "sha256": "0a371c151c009465666d4deac8533c8a4022921e3f60ab7dcf3666b46e4d7244",
+      "git_blob_sha": "d3beb152f485405771b3bfca50212039cdc83315",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Sint-Martinus_-_anoniem_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Sint-Martinus_-_anoniem_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 188660563,
+      "commons_file_sha1": "0462528460ceae8fce87d0965ee082abefdc03fa",
+      "commons_source_original_pixels": [
+        1649,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 580173,
+      "source_downloaded_thumbnail_sha256": "8dc527c7c4137af5483898bfd681229032693664d26fb73ec1eca321af6fe9d8",
+      "display_dimensions": [
+        1319,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0041073000",
+        "artist": "anonymous"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::140",
+      "title": "Tussenkomst van Onze Lieve Vrouw voor het mensdom",
+      "artist": "Philips Bernaerts",
+      "path": "site/gallery/images/owner-approved-20261103-140.webp",
+      "image_bytes": 171434,
+      "sha256": "803865216c5a63afda9c36067cc72a5979edbecda9cf85684937c994b4ecd25f",
+      "git_blob_sha": "3d94a6ed8d96b24470f52fccfef2299120aac43d",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Tussenkomst_van_Onze_Lieve_Vrouw_voor_het_mensdom_-_Philyps_Bernaert_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Tussenkomst_van_Onze_Lieve_Vrouw_voor_het_mensdom_-_Philyps_Bernaert_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 188669073,
+      "commons_file_sha1": "e1121ca9d59469ab752d1e7e47ea466c22a488b6",
+      "commons_source_original_pixels": [
+        1360,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 319156,
+      "source_downloaded_thumbnail_sha256": "bc9edde72ab23a61a7f1ebd59e92c475c93f08d612ea267e870c32e7c4b6230b",
+      "display_dimensions": [
+        1088,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0240030000",
+        "artist": "philips bernaerts"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::143",
+      "title": "Visioen van de heilige Antonius van Padua",
+      "artist": "Jacob van Oost",
+      "path": "site/gallery/images/owner-approved-20261103-143.webp",
+      "image_bytes": 112812,
+      "sha256": "e511fbcf3828671d84603d1ab72f19715968be3ef5084f054f64fd97321ff33c",
+      "git_blob_sha": "3d36ba374517daa46a5fca08c3bc92410cc070e5",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Visioen_van_de_heilige_Antonius_van_Padua_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Visioen_van_de_heilige_Antonius_van_Padua_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_page_id": 189972633,
+      "commons_file_sha1": "e29d50f9c74efda0472c405f3f7b65f25ec6a793",
+      "commons_source_original_pixels": [
+        1197,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 252348,
+      "source_downloaded_thumbnail_sha256": "40764331ee3dcbfe3e96d46a6cbde0a17d19b7ed8efa4ec9d45d3bb8d2f7d8ca",
+      "display_dimensions": [
+        958,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0040430000",
+        "artist": "jacob van oost"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::179",
+      "title": "Master of the Legend of Saint Augustine - Episcopal Saint Enthroned, Friedländer, ENP, vol. 6, nr. 245",
+      "artist": "Master of the Legend of St. Augustine",
+      "path": "site/gallery/images/owner-approved-20261103-179.webp",
+      "image_bytes": 390766,
+      "sha256": "2ef3586034818fc7bbc7d9bc79282b77ef8040fe532ed018597b1baec44abca0",
+      "git_blob_sha": "e86abbbe9e98ddbf0c6c61bf480a1e77925b1601",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Master_of_the_Legend_of_Saint_Augustine_-_Episcopal_Saint_Enthroned,_Friedl%C3%A4nder,_ENP,_vol._6,_nr._245.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Master_of_the_Legend_of_Saint_Augustine_-_Episcopal_Saint_Enthroned,_Friedländer,_ENP,_vol._6,_nr._245.jpg",
+      "commons_page_id": 128541129,
+      "commons_file_sha1": "8458a7620450bbb127d2bfadc2c5c51fc517a476",
+      "commons_source_original_pixels": [
+        1099,
+        1411
+      ],
+      "source_downloaded_thumbnail_bytes": 625346,
+      "source_downloaded_thumbnail_sha256": "d7276c5836ff074e24fb4eaef1f1cb748b361c5660b682fd2ee7701936fd6df8",
+      "display_dimensions": [
+        1099,
+        1411
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://www.kikirpa.be/nl/friedlaender/1403",
+        "artist": "master of the legend of st. augustine"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::181",
+      "title": "The Queen of the Angels or The Virgin with Angels",
+      "artist": "William-Adolphe Bouguereau",
+      "path": "site/gallery/images/owner-approved-20261103-181.webp",
+      "image_bytes": 193570,
+      "sha256": "dc62a538c927addeabfa021291a3010e487715fe69b4b052f2365339f8341152",
+      "git_blob_sha": "c6688e2a165e86617c537eb89d04b076bf36f501",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:William-Adolphe_Bouguereau_The_Virgin_With_Angels.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:William-Adolphe_Bouguereau_The_Virgin_With_Angels.jpg",
+      "commons_page_id": 18364,
+      "commons_file_sha1": "7ace0c7297ee43ba92cc0478dc95807b41e3ea04",
+      "commons_source_original_pixels": [
+        1627,
+        2572
+      ],
+      "source_downloaded_thumbnail_bytes": 564872,
+      "source_downloaded_thumbnail_sha256": "0eef6f4131419632dd843239ad25f36a761649a4670e91dae0950e52ac322c57",
+      "display_dimensions": [
+        1012,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "art renewal center  copied from the english wikipedia to commons.",
+        "artist": "william-adolphe bouguereau"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::185",
+      "title": "L'Ascension",
+      "artist": "Gustave Doré",
+      "path": "site/gallery/images/owner-approved-20261103-185.webp",
+      "image_bytes": 299630,
+      "sha256": "87387f449dff062abf2b948a89939d2051c6231c691f7fbd7e918d550076e293",
+      "git_blob_sha": "245c2ecdee11916d538df6ed460fd0fd865313de",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_L%27Ascension.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Gustave_Doré_-_L'Ascension.jpg",
+      "commons_page_id": 45290553,
+      "commons_file_sha1": "3094ad9bba0576072684d4d91b314274a64ed68e",
+      "commons_source_original_pixels": [
+        1702,
+        2813
+      ],
+      "source_downloaded_thumbnail_bytes": 821996,
+      "source_downloaded_thumbnail_sha256": "7406ef1f326d21de9079dec8626754d60a93e6df24fb75e1c721156633dcb31d",
+      "display_dimensions": [
+        968,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "http://www.petitpalais.paris.fr/en/taxonomy/term/63/0?page=1 – image",
+        "artist": "gustave doré"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::371",
+      "title": "Veronese-Bethsabée au bain-Lyon",
+      "artist": "Paolo Veronese",
+      "path": "site/gallery/images/owner-approved-20261103-371.webp",
+      "image_bytes": 804904,
+      "sha256": "3a1834db1c0d182eec1c783a7ac42e6816a3385e7aa49f9646d24589ac0da3a1",
+      "git_blob_sha": "4c57b21307938784980fa01871dae5882787802d",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Veronese-Bethsab%C3%A9e_au_bain-Lyon.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Veronese-Bethsabée_au_bain-Lyon.jpg",
+      "commons_page_id": 15668985,
+      "commons_file_sha1": "f90d480ac88f39fdf0edb83820bab6a43dc72013",
+      "commons_source_original_pixels": [
+        1500,
+        1287
+      ],
+      "source_downloaded_thumbnail_bytes": 1585536,
+      "source_downloaded_thumbnail_sha256": "f68a932a406c9b67214a4e76b05ac03bca1366226ea1daa3973c94c428615bac",
+      "display_dimensions": [
+        1500,
+        1287
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée des beaux-arts de lyon",
+        "artist": "paolo veronese"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::388",
+      "title": "Fontana Vierge",
+      "artist": "Lavinia Fontana",
+      "path": "site/gallery/images/owner-approved-20261103-388.webp",
+      "image_bytes": 267700,
+      "sha256": "4e5a890dbe44b2e6f3499970b32e6233487287d213ec60d8f5be174cf3f671f8",
+      "git_blob_sha": "ca6757fd440680fc780153f3a964528bc494caf6",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fontana_Vierge.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Fontana_Vierge.jpg",
+      "commons_page_id": 31418072,
+      "commons_file_sha1": "af0c2f90baaf43bcb7138536fa37c8241c84e3eb",
+      "commons_source_original_pixels": [
+        1652,
+        2515
+      ],
+      "source_downloaded_thumbnail_bytes": 383926,
+      "source_downloaded_thumbnail_sha256": "e1bbd4b2f9f2408bc21a2e6a44b19c9000a4924b03a8a5d00ff129c15184d33a",
+      "display_dimensions": [
+        1051,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "lavinia fontana"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::397",
+      "title": "Palais des Beaux Arts de Lille 25-11-2010 14-15-22",
+      "artist": "Paul Hermans",
+      "path": "site/gallery/images/owner-approved-20261103-397.webp",
+      "image_bytes": 468258,
+      "sha256": "512b1893a63541136d17b866183af8d973c80f93879addf6f0d44746ab451924",
+      "git_blob_sha": "ff1d757ec36912e5b83d18381fcdc35ccb724b07",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Theodoor_Boeyermans_(1620-1678)_De_extase_van_de_heilige_Rosalia_van_Palermo_-_Palais_des_Beaux_Arts_de_Lille_25-11-2010_14-15-22.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Theodoor_Boeyermans_(1620-1678)_De_extase_van_de_heilige_Rosalia_van_Palermo_-_Palais_des_Beaux_Arts_de_Lille_25-11-2010_14-15-22.jpg",
+      "commons_page_id": 12241941,
+      "commons_file_sha1": "ed89b4187009178e85535bca18f3dc1dcf639bcb",
+      "commons_source_original_pixels": [
+        1828,
+        2526
+      ],
+      "source_downloaded_thumbnail_bytes": 6955503,
+      "source_downloaded_thumbnail_sha256": "145c6ec8082817af8551ae6a3cf45a704dd74fd6b13b34c7e069127e27cd4930",
+      "display_dimensions": [
+        1158,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "self-photographed",
+        "artist": "paul hermans"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::401",
+      "title": "Lille PdBA Brueghel jeune St paul conduit a damas",
+      "artist": "Pieter Brueghel the Younger",
+      "path": "site/gallery/images/owner-approved-20261103-401.webp",
+      "image_bytes": 300600,
+      "sha256": "31f391eebf52823e2daaeb6e2302b8c07368820b14dbd6d5c4c3cad160bd4273",
+      "git_blob_sha": "75d24b6aabf877f467b9c7c373310b9519c16ccb",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Brueghel_jeune_St_paul_conduit_a_damas.JPG",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Brueghel_jeune_St_paul_conduit_a_damas.JPG",
+      "commons_page_id": 14529400,
+      "commons_file_sha1": "c8849e8fa141705d09dcdbffa484d8c70ebc8779",
+      "commons_source_original_pixels": [
+        1800,
+        1257
+      ],
+      "source_downloaded_thumbnail_bytes": 2167930,
+      "source_downloaded_thumbnail_sha256": "244a433d58868a9923a553515f0c19b9375eefe369810573105a716d210806fa",
+      "display_dimensions": [
+        1600,
+        1117
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "pieter brueghel the younger"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::402",
+      "title": "Lille PdBA ter brugghen derision christ",
+      "artist": "Artist to verify",
+      "path": "site/gallery/images/owner-approved-20261103-402.webp",
+      "image_bytes": 155578,
+      "sha256": "1814b45b5e251d152ef52f9fa38780aa2373641331b92542ef1629c7eedd9447",
+      "git_blob_sha": "6ebde005fa36c1d0e1412fed8198edf583f38f59",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_ter_brugghen_derision_christ.JPG",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_ter_brugghen_derision_christ.JPG",
+      "commons_page_id": 46769412,
+      "commons_file_sha1": "e6cd52b5d0242815d67a96f9957e154b6fe0ee65",
+      "commons_source_original_pixels": [
+        1095,
+        1400
+      ],
+      "source_downloaded_thumbnail_bytes": 1374861,
+      "source_downloaded_thumbnail_sha256": "b48ac853d4d1f7db38edc7f1a266477058269f55dd0ee749d5a83d08f646fc57",
+      "display_dimensions": [
+        1095,
+        1400
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": ""
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::403",
+      "title": "Lille PdBA cranach derision du christ",
+      "artist": "Lucas Cranach the Elder",
+      "path": "site/gallery/images/owner-approved-20261103-403.webp",
+      "image_bytes": 428736,
+      "sha256": "fbedb489ac66b6b5020dd9e568a77fa8cf0c02aa3f24365f20b86b97aa2bc47b",
+      "git_blob_sha": "f7a03862d7a2a8b6239ab79a6c7aa3db02e903f8",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_cranach_derision_du_christ.JPG",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_cranach_derision_du_christ.JPG",
+      "commons_page_id": 28963461,
+      "commons_file_sha1": "2fa02107035f53e22570e9a4f9ee0514acc6b89d",
+      "commons_source_original_pixels": [
+        1800,
+        2607
+      ],
+      "source_downloaded_thumbnail_bytes": 3779387,
+      "source_downloaded_thumbnail_sha256": "bad3e6fe1d4ddcd3fdc8c5a13c3724bebfffc0000bca8bf405cb82c7758d4603",
+      "display_dimensions": [
+        1105,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "lucas cranach the elder"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::415",
+      "title": "Lille PdBA Finsonius christ colonne",
+      "artist": "Attributed to Louis Finson",
+      "path": "site/gallery/images/owner-approved-20261103-415.webp",
+      "image_bytes": 138434,
+      "sha256": "268e861db2e0c9a9083daa552e0c156d8143f807dbc1f371469396a5cdb18a66",
+      "git_blob_sha": "e063a2c75862e9e12c07fe41cfbc258a746bce86",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Finsonius_christ_colonne.JPG",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Finsonius_christ_colonne.JPG",
+      "commons_page_id": 46456078,
+      "commons_file_sha1": "c3998f49818782bfcd0b342ecced3c7c7c18eb32",
+      "commons_source_original_pixels": [
+        1302,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 1373315,
+      "source_downloaded_thumbnail_sha256": "d0b6fc8f8b4b737789b5f52bf338e7ccb4f7ac93177abbe2fb8563bc7628a859",
+      "display_dimensions": [
+        1042,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "attributed to louis finson"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::416",
+      "title": "Lille PdBA Flemalle st lambert",
+      "artist": "Bertholet Flémal",
+      "path": "site/gallery/images/owner-approved-20261103-416.webp",
+      "image_bytes": 263356,
+      "sha256": "3c714bf0907057ee6f8e195a8f0d1e1ed6684613b3eed1289e1cba7748b55931",
+      "git_blob_sha": "047718a19afb50dd7b1773237818cad1d05a3b84",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Flemalle_st_lambert.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Flemalle_st_lambert.jpg",
+      "commons_page_id": 52641054,
+      "commons_file_sha1": "2f15ac5913503a4eb629b8b7948e9fa2c51ca128",
+      "commons_source_original_pixels": [
+        1673,
+        2486
+      ],
+      "source_downloaded_thumbnail_bytes": 3587860,
+      "source_downloaded_thumbnail_sha256": "c3f1c75f43450d389c0d60e16b9bf91694193705c5cdf44e973cd4229240d712",
+      "display_dimensions": [
+        1077,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "bertholet flémal"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::417",
+      "title": "Lille PdBA pays bas sud deploration du christ",
+      "artist": "Anonyme (Anciens Pays-Bas du Sud)",
+      "path": "site/gallery/images/owner-approved-20261103-417.webp",
+      "image_bytes": 156726,
+      "sha256": "f8172cb7d57d059fbb44ad983c450e94cb3e0c08b0ffae90e909fe3ee62dd630",
+      "git_blob_sha": "ef6a81b7bb775cd5df0e9392d1dac5c1e834e657",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_pays_bas_sud_deploration_du_christ.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_pays_bas_sud_deploration_du_christ.jpg",
+      "commons_page_id": 57793335,
+      "commons_file_sha1": "c1ce8055df8750cdec4230356666d541e633c1fa",
+      "commons_source_original_pixels": [
+        1200,
+        1517
+      ],
+      "source_downloaded_thumbnail_bytes": 1358345,
+      "source_downloaded_thumbnail_sha256": "f93bcd53cd95868dfe46622559b8bc7bdac223b1b5fd5210171f4f8d2ac930b1",
+      "display_dimensions": [
+        1200,
+        1517
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "anonyme (anciens pays-bas du sud)"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::431",
+      "title": "Jeanne d'Arc - Édouard Paupion - MBA Dijon 2144",
+      "artist": "Édouard Paupion",
+      "path": "site/gallery/images/owner-approved-20261103-431.webp",
+      "image_bytes": 117930,
+      "sha256": "04554261a497b449a781a4ce681f453bf52c82409c4a9f41e036f763a76c3845",
+      "git_blob_sha": "bdc35eb56912124597bc1b41012cab1988192a91",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jeanne_d%27Arc_-_%C3%89douard_Paupion_-_MBA_Dijon_2144.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Jeanne_d'Arc_-_Édouard_Paupion_-_MBA_Dijon_2144.jpg",
+      "commons_page_id": 147778713,
+      "commons_file_sha1": "49101c86afd3b4c8fe760752a6c9101de753a66c",
+      "commons_source_original_pixels": [
+        1684,
+        1080
+      ],
+      "source_downloaded_thumbnail_bytes": 608901,
+      "source_downloaded_thumbnail_sha256": "718fe7e5343353ef344bf1951e9b76a942767235b175c3bfcd09f4132aa7cdaa",
+      "display_dimensions": [
+        1600,
+        1026
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée des beaux-arts de dijon",
+        "artist": "édouard paupion"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::434",
+      "title": "Lille PdBA de crayer christ",
+      "artist": "Gaspar de Crayer",
+      "path": "site/gallery/images/owner-approved-20261103-434.webp",
+      "image_bytes": 217258,
+      "sha256": "15d25a4a8ebe348f44a8e3836627f012540618107a0f014fa5a6d3ba486ef54e",
+      "git_blob_sha": "b0277099cd8dfc2a5b9d4c6f4d2814693da7bc79",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_de_crayer_christ.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_de_crayer_christ.jpg",
+      "commons_page_id": 30943620,
+      "commons_file_sha1": "70fd5f720ac4cde0d07d3c71b8d253d485bb98ec",
+      "commons_source_original_pixels": [
+        1292,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 2103175,
+      "source_downloaded_thumbnail_sha256": "9590f15ff05542cb7289930a44cde5e532fee8741447566c05b5582d96f69718",
+      "display_dimensions": [
+        1034,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "gaspar de crayer"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::435",
+      "title": "Dutch: La Trinité title QS:P1476,nl:\"La Trinité \"label QS:Lnl,\"La Trinité \"label QS:Lfr,\"La Sainte Trinité\"",
+      "artist": "Attributed to Jacomart",
+      "path": "site/gallery/images/owner-approved-20261103-435.webp",
+      "image_bytes": 585866,
+      "sha256": "5a83cf2e3b246637b23535ed554b7dcd532d8c64065afc1db35765ecc2e0e61f",
+      "git_blob_sha": "f44cb00dfea7bdbe023d472d89d2f1a9890144e1",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_jacomart_trinite.JPG",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_jacomart_trinite.JPG",
+      "commons_page_id": 28963259,
+      "commons_file_sha1": "d69ecb0ba9966a42c00c7e19ece90ce7ccd6fdfa",
+      "commons_source_original_pixels": [
+        1730,
+        2400
+      ],
+      "source_downloaded_thumbnail_bytes": 3782578,
+      "source_downloaded_thumbnail_sha256": "626382dfcf45b5611ea8cfabd1280362a5401b92e0b25a2d8260ae67013f0ebd",
+      "display_dimensions": [
+        1153,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "attributed to jacomart"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::436",
+      "title": "Lille PdBA van Dick christ croix",
+      "artist": "Anthony van Dyck",
+      "path": "site/gallery/images/owner-approved-20261103-436.webp",
+      "image_bytes": 212104,
+      "sha256": "614c6e5981dd31c1fa17cd234631c8a9906d361a3085cc4088bd6a5a664ce073",
+      "git_blob_sha": "5d1777e1b4f92566bd0483aad8a6800c2680efcd",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_van_Dick_christ_croix.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_van_Dick_christ_croix.jpg",
+      "commons_page_id": 30161871,
+      "commons_file_sha1": "3f1daa4f370b6ac2228ac25957768aef45806331",
+      "commons_source_original_pixels": [
+        1067,
+        1790
+      ],
+      "source_downloaded_thumbnail_bytes": 1654437,
+      "source_downloaded_thumbnail_sha256": "efd7d40c39c5fde592ae782f144d348221614506427235a205979780f1ca711f",
+      "display_dimensions": [
+        954,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "anthony van dyck"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::498",
+      "title": "Mathieu Le Nain Le Christ chez Marthe et Marie",
+      "artist": "Mathieu Le Nain",
+      "path": "site/gallery/images/owner-approved-20261103-498.webp",
+      "image_bytes": 497818,
+      "sha256": "d501834be580b60f9f8f74ae1de86a67f736996224968eaa337feef1db4a5a92",
+      "git_blob_sha": "7b2c648eb33f80cad0d28c29d2f701889efe0375",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mathieu_Le_Nain_Le_Christ_chez_Marthe_et_Marie.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Mathieu_Le_Nain_Le_Christ_chez_Marthe_et_Marie.jpg",
+      "commons_page_id": 56867229,
+      "commons_file_sha1": "f977cc51ac76f96bc6346b693d947125c27083cb",
+      "commons_source_original_pixels": [
+        1633,
+        2142
+      ],
+      "source_downloaded_thumbnail_bytes": 1552438,
+      "source_downloaded_thumbnail_sha256": "277b4b3b15b9844c618888ca24541c35fd5669b636878aaec374a1654e65da21",
+      "display_dimensions": [
+        1220,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "musée des beaux-arts de rennes",
+        "artist": "mathieu le nain"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::503",
+      "title": "Christ mort soutenu par un ange",
+      "artist": "David Teniers the Younger / After Palma il Giovane",
+      "path": "site/gallery/images/owner-approved-20261103-503.webp",
+      "image_bytes": 143458,
+      "sha256": "8ae2f88daf431134acde3d1e9638a2cdb774effdc26e4e089515e2e403066f55",
+      "git_blob_sha": "54a8f6c989afb75dd9098547a8d7c2742de83ca5",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:David_Teniers_-_Christ_mort_soutenu_par_un_ange.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:David_Teniers_-_Christ_mort_soutenu_par_un_ange.jpg",
+      "commons_page_id": 71481580,
+      "commons_file_sha1": "12aba0fe016e0cd3fb242ba619e8970536d64367",
+      "commons_source_original_pixels": [
+        1136,
+        1537
+      ],
+      "source_downloaded_thumbnail_bytes": 812077,
+      "source_downloaded_thumbnail_sha256": "a4ba4adf99ab7b460dd2f2b96fbc78b75a293905bf3a596497dc0efc06189244",
+      "display_dimensions": [
+        1136,
+        1537
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work, tylwyth eldar, 2018-08-04 11:26:14",
+        "artist": "david teniers the younger / after palma il giovane"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::504",
+      "title": "Saint Louis",
+      "artist": "Unknown authorUnknown author",
+      "path": "site/gallery/images/owner-approved-20261103-504.webp",
+      "image_bytes": 240600,
+      "sha256": "a1ebe73af98efff80aa0cbcde753e3409b565859e9ea6d4b352ad760dab7dad1",
+      "git_blob_sha": "9a68697b9bde9c9327a683b73daa11d653e39581",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ecole_fran%C3%A7aise_-_Saint_Louis.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Ecole_française_-_Saint_Louis.jpg",
+      "commons_page_id": 73499500,
+      "commons_file_sha1": "9a705f783261dca7cbcb08d0cd786158129d6c2d",
+      "commons_source_original_pixels": [
+        1690,
+        2178
+      ],
+      "source_downloaded_thumbnail_bytes": 1892653,
+      "source_downloaded_thumbnail_sha256": "f908a99f4c41a777dee73498e9f90f21eb919426c583c68d0c233d7928a23d5d",
+      "display_dimensions": [
+        1242,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work, tylwyth eldar, 2018-08-04 11:41:37",
+        "artist": "unknown authorunknown author"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::508",
+      "title": "Martyrdom of Saint Catherine by Gaspar de Crayer, 1622",
+      "artist": "Gaspar de Crayer",
+      "path": "site/gallery/images/owner-approved-20261103-508.webp",
+      "image_bytes": 179164,
+      "sha256": "28fcc24873117e940923f72a7dc46586a727092b6835b07c37c0774d0611749d",
+      "git_blob_sha": "744835613d0acd5d9de823e14fa81fc3b09a31c9",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Martyrdom_of_Saint_Catherine_by_Gaspar_de_Crayer,_1622.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Martyrdom_of_Saint_Catherine_by_Gaspar_de_Crayer,_1622.jpg",
+      "commons_page_id": 73909173,
+      "commons_file_sha1": "e1348fe45014d8a63dc4b50753f6fb642a6462aa",
+      "commons_source_original_pixels": [
+        1152,
+        1509
+      ],
+      "source_downloaded_thumbnail_bytes": 329589,
+      "source_downloaded_thumbnail_sha256": "55c9184b127ac32abb5cb753d64ca11b07b30a5b68177a67cc157274f0cbd93d",
+      "display_dimensions": [
+        1152,
+        1509
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "http://www.standaard.be/cnt/dmf20180810_03658557",
+        "artist": "gaspar de crayer"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::509",
+      "title": "Apparition du Christ à Madeleine",
+      "artist": "Eustache Le Sueur",
+      "path": "site/gallery/images/owner-approved-20261103-509.webp",
+      "image_bytes": 155370,
+      "sha256": "870cd3d0e934278e5592f4d65ef7e9b926a759406332787b7e77c4a555556d42",
+      "git_blob_sha": "b7455e7981f2b10740dece61b27731ea17c97dc3",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Eustache_Le_Sueur_-_Apparition_du_Christ_%C3%A0_Madeleine.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Eustache_Le_Sueur_-_Apparition_du_Christ_à_Madeleine.jpg",
+      "commons_page_id": 73939236,
+      "commons_file_sha1": "fc78d43c70e229dac89fb22d694210ee0b70a5f7",
+      "commons_source_original_pixels": [
+        1513,
+        1700
+      ],
+      "source_downloaded_thumbnail_bytes": 1037497,
+      "source_downloaded_thumbnail_sha256": "eb13393ee0e01a1919d90cd6750ee1ec1b0c347ea3c9f7f7d181e43989306a1f",
+      "display_dimensions": [
+        1424,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work, tylwyth eldar, 2018-08-04 11:35:45",
+        "artist": "eustache le sueur"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::512",
+      "title": "French: Le Christ au désert servi par les anges label QS:Lfr,\"Le Christ au désert servi par les anges\"",
+      "artist": "Charles de La Fosse",
+      "path": "site/gallery/images/owner-approved-20261103-512.webp",
+      "image_bytes": 242078,
+      "sha256": "ec8ce2585ba21819262c8c9a2532f3929979a966b85fef2bac11054698963221",
+      "git_blob_sha": "8d93e8c15558f0559e1ac5e2597d6e2f659c764b",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Charles_de_La_Fosse_-_Christ_au_d%C3%A9sert.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Charles_de_La_Fosse_-_Christ_au_désert.jpg",
+      "commons_page_id": 73513075,
+      "commons_file_sha1": "14b1ee3dd8210690aedf6949f8eadce7523c8ee0",
+      "commons_source_original_pixels": [
+        1810,
+        2505
+      ],
+      "source_downloaded_thumbnail_bytes": 2360853,
+      "source_downloaded_thumbnail_sha256": "30b2a2c2c37b1bf4bcbc4a0b3ab77a3cb958c15c2a3f5949b4a27fb1a135dc08",
+      "display_dimensions": [
+        1156,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work, tylwyth eldar, 2018-08-04 11:42:33",
+        "artist": "charles de la fosse"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::514",
+      "title": "Adoration des mages 1",
+      "artist": "Abraham Bloemaert",
+      "path": "site/gallery/images/owner-approved-20261103-514.webp",
+      "image_bytes": 182638,
+      "sha256": "c758202e41dd64539a113ebc4fc10a598c1393884a212a4726f8b449ec6c18bd",
+      "git_blob_sha": "101a08432c98daf4f4d732eb1162af1d7895369e",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_-_Adoration_des_mages_1.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_-_Adoration_des_mages_1.jpg",
+      "commons_page_id": 71397726,
+      "commons_file_sha1": "ad8e5cdde4323f7a77fb4d2e35111a2cf41b916f",
+      "commons_source_original_pixels": [
+        1702,
+        2648
+      ],
+      "source_downloaded_thumbnail_bytes": 1919517,
+      "source_downloaded_thumbnail_sha256": "a48cfdd769dc47feead340531c9700db598d11429f2afd7182fb57a570d6c1bd",
+      "display_dimensions": [
+        1028,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work, tylwyth eldar, 2018-08-04 11:07:58",
+        "artist": "abraham bloemaert"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::522",
+      "title": "Déploration de Christ mort (huile sur toile, 1647-1650, 152 x 140 cm, Musée des beaux-arts d'Orléans)",
+      "artist": "Bertholet Flémal",
+      "path": "site/gallery/images/owner-approved-20261103-522.webp",
+      "image_bytes": 279738,
+      "sha256": "88fdb1e663b9eafef68af39fa258aec4e476176b8339b9d0be087ca19e44f96a",
+      "git_blob_sha": "d951728851a834dfe80294b5bf4b2365d778666b",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bertholet_Fl%C3%A9mal_-_D%C3%A9ploration_de_Christ_mort_(huile_sur_toile,_1647-1650,_152_x_140_cm,_Mus%C3%A9e_des_beaux-arts_d%27Orl%C3%A9ans).jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Bertholet_Flémal_-_Déploration_de_Christ_mort_(huile_sur_toile,_1647-1650,_152_x_140_cm,_Musée_des_beaux-arts_d'Orléans).jpg",
+      "commons_page_id": 186114680,
+      "commons_file_sha1": "614b22b4f8d1adc0213effa9e6e910e779e2218c",
+      "commons_source_original_pixels": [
+        1831,
+        2000
+      ],
+      "source_downloaded_thumbnail_bytes": 456444,
+      "source_downloaded_thumbnail_sha256": "2ce233fea46ad8cb187ee4d2f6d9cce26f5ad1937fbd8edb101bd73a3ba63c50",
+      "display_dimensions": [
+        1465,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://museesorleans.fr/oeuvres/musee:mus_bien:1354/",
+        "artist": "bertholet flémal"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::534",
+      "title": "L'Ange de Tobie",
+      "artist": "Gustave Doré",
+      "path": "site/gallery/images/owner-approved-20261103-534.webp",
+      "image_bytes": 199998,
+      "sha256": "76c12071a2b0e5b6f18c6dbf5a0885f06db84e8f63b50cec32fa4e91412c3c0d",
+      "git_blob_sha": "abfcf455819fd1089060894a3c89fed9ed61b1e3",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_L%27Ange_de_Tobie.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Gustave_Doré_-_L'Ange_de_Tobie.jpg",
+      "commons_page_id": 98264999,
+      "commons_file_sha1": "935e6edd1787516309690d15ee6df596e358cf10",
+      "commons_source_original_pixels": [
+        1108,
+        1411
+      ],
+      "source_downloaded_thumbnail_bytes": 930378,
+      "source_downloaded_thumbnail_sha256": "913fd211e3fda832255175650ccdc443436099145ca3c0396ff62a77c4b245ed",
+      "display_dimensions": [
+        1108,
+        1411
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://www.flickr.com/photos/dystopos/48129903627",
+        "artist": "gustave doré"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::541",
+      "title": "Joseph et la femme de Putiphar - Sébastien Leclerc le jeune",
+      "artist": "Attribution to confirm from source metadata",
+      "path": "site/gallery/images/owner-approved-20261103-541.webp",
+      "image_bytes": 197152,
+      "sha256": "caa8797c0fbce8743b5090056013854ea69b027c89de6e7b273df91e4061af66",
+      "git_blob_sha": "156df79748076ca8f642c54ea86145973c9033d2",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3AJoseph_et_la_femme_de_Putiphar_-_S%C3%A9bastien_Leclerc_le_jeune_-_MM_1938F603.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Joseph_et_la_femme_de_Putiphar_-_Sébastien_Leclerc_le_jeune_-_MM_1938F603.jpg",
+      "commons_page_id": 149096492,
+      "commons_file_sha1": "fd9952a8877493b9acf08d46142215e2f77ca3c0",
+      "commons_source_original_pixels": [
+        1246,
+        1552
+      ],
+      "source_downloaded_thumbnail_bytes": 776413,
+      "source_downloaded_thumbnail_sha256": "bc9b8bdfcc546f7b04803bfd947b0d65ae61ffcffdf583e6779a2d4672b2a912",
+      "display_dimensions": [
+        1246,
+        1552
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée magnin",
+        "artist": "sébastien leclerc le jeune"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::547",
+      "title": "Le Festin de Balthazar - Ercole Graziani",
+      "artist": "Attribution to confirm from source metadata",
+      "path": "site/gallery/images/owner-approved-20261103-547.webp",
+      "image_bytes": 146730,
+      "sha256": "60696580238b238942b558fbc3ad1bc00462cf61a16a92f7646d023773475115",
+      "git_blob_sha": "06df44fae115720f6d77952b1afc4dd5254d56cf",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3ALe_Festin_de_Balthazar_-_Ercole_Graziani_-_MM_1938E531.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Le_Festin_de_Balthazar_-_Ercole_Graziani_-_MM_1938E531.jpg",
+      "commons_page_id": 170250260,
+      "commons_file_sha1": "0bbb0b4e05125c587cd1356304e768dbb82b3a32",
+      "commons_source_original_pixels": [
+        1288,
+        1722
+      ],
+      "source_downloaded_thumbnail_bytes": 720376,
+      "source_downloaded_thumbnail_sha256": "e62d8b30b91c84a050b9ca8ba64a0501b7114571a69e3bc0070c78952d5f8c72",
+      "display_dimensions": [
+        1197,
+        1600
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée magnin",
+        "artist": "ercole graziani"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::550",
+      "title": "Le Retour de l'Enfant prodigue - Attribué à Jean Jacques Forty - MM 1938F214",
+      "artist": "Attribué à Jean Jacques Forty",
+      "path": "site/gallery/images/owner-approved-20261103-550.webp",
+      "image_bytes": 136638,
+      "sha256": "c07277a2e743f8ef006117f95c1f5546c125cc02d6ba214582a1d3406d384ba7",
+      "git_blob_sha": "bb3bd513b5be099aca9db6cbde4e2f2d5e44d381",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Le_Retour_de_l%27Enfant_prodigue_-_Attribu%C3%A9_%C3%A0_Jean_Jacques_Forty_-_MM_1938F214.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Le_Retour_de_l'Enfant_prodigue_-_Attribué_à_Jean_Jacques_Forty_-_MM_1938F214.jpg",
+      "commons_page_id": 176335657,
+      "commons_file_sha1": "6c87bb36a7366aae3a953bdcf79577dfc1847d20",
+      "commons_source_original_pixels": [
+        1218,
+        1563
+      ],
+      "source_downloaded_thumbnail_bytes": 646446,
+      "source_downloaded_thumbnail_sha256": "ad1d7ed8e9dd09d2579d64464f341d1d1bd019f95b35daaa871779c5c4ad4d85",
+      "display_dimensions": [
+        1218,
+        1563
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée magnin",
+        "artist": "attribué à jean jacques forty"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::551",
+      "title": "Le Retour du jeune Tobie - Mathieu Elias - MM 1938F46",
+      "artist": "Mathieu Elias",
+      "path": "site/gallery/images/owner-approved-20261103-551.webp",
+      "image_bytes": 142892,
+      "sha256": "27619fd0a4addce5364832d649d817509b0cced8af34818fa3730277aea466bb",
+      "git_blob_sha": "a81abb3f2084886db89b94f8a3fed41bb6e0f1bb",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Le_Retour_du_jeune_Tobie_-_Mathieu_Elias_-_MM_1938F46.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Le_Retour_du_jeune_Tobie_-_Mathieu_Elias_-_MM_1938F46.jpg",
+      "commons_page_id": 170936845,
+      "commons_file_sha1": "f6bf18303d48101eb4a066411f0b1bfabb4933a8",
+      "commons_source_original_pixels": [
+        1246,
+        1500
+      ],
+      "source_downloaded_thumbnail_bytes": 652002,
+      "source_downloaded_thumbnail_sha256": "04c56d2a9d1f849bfcbc2515f9ed5bc4663809ae4721ca3385149940b16ff9fe",
+      "display_dimensions": [
+        1246,
+        1500
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée magnin",
+        "artist": "mathieu elias"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::554",
+      "title": "Le sermon sur la montagne - Jean-Baptiste de Champaigne",
+      "artist": "Attribution to confirm from source metadata",
+      "path": "site/gallery/images/owner-approved-20261103-554.webp",
+      "image_bytes": 189564,
+      "sha256": "6ab8292bd8471015368aa5534ee7eddec29c6c70b932159dd22754fa960a156d",
+      "git_blob_sha": "7754112015cbda9fadfb01f3bd0341a36d535959",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3ALe_sermon_sur_la_montagne_-_Jean-Baptiste_de_Champaigne_-_MM_1938E146.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Le_sermon_sur_la_montagne_-_Jean-Baptiste_de_Champaigne_-_MM_1938E146.jpg",
+      "commons_page_id": 149126073,
+      "commons_file_sha1": "508519a77efda340f84c00343aae3cfd1a0a2bd3",
+      "commons_source_original_pixels": [
+        1552,
+        1128
+      ],
+      "source_downloaded_thumbnail_bytes": 735162,
+      "source_downloaded_thumbnail_sha256": "2bd62ae5f9ebb90ed3ecf8e5f45f91ca9aeda30af1efe91a565d4b926ac5f734",
+      "display_dimensions": [
+        1552,
+        1128
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée magnin",
+        "artist": "jean baptiste de champaigne"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::560",
+      "title": "Saint Pierre guérissant le paralytique - Girolamo Marchesi - MM 1938E520",
+      "artist": "Girolamo Marchesi",
+      "path": "site/gallery/images/owner-approved-20261103-560.webp",
+      "image_bytes": 158936,
+      "sha256": "e4e947366959a922defc53cfd5a4cc5c3c1492352732e9bc9117dde539e366c6",
+      "git_blob_sha": "cf72fd660dac0dc5363086da2780fcf5d7958bdd",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Pierre_gu%C3%A9rissant_le_paralytique_-_Girolamo_Marchesi_-_MM_1938E520.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Saint_Pierre_guérissant_le_paralytique_-_Girolamo_Marchesi_-_MM_1938E520.jpg",
+      "commons_page_id": 169883717,
+      "commons_file_sha1": "363ecc3d4e9803c0310d12796ef3408db65b5011",
+      "commons_source_original_pixels": [
+        1490,
+        1147
+      ],
+      "source_downloaded_thumbnail_bytes": 663037,
+      "source_downloaded_thumbnail_sha256": "9db3334952d8d0f4813c92f2503a960f31f5f98ff8372937923bb9062de2d060",
+      "display_dimensions": [
+        1490,
+        1147
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée magnin",
+        "artist": "girolamo marchesi"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::568",
+      "title": "Alessandro Rosi St Sébastien soigné par Ste Irène",
+      "artist": "Attribution to confirm from source metadata",
+      "path": "site/gallery/images/owner-approved-20261103-568.webp",
+      "image_bytes": 245698,
+      "sha256": "e4aa36d1fcf63c7e558cdfc18ed0c8cf5469fdde45ded30ed56890768bfda1d6",
+      "git_blob_sha": "5059941694b2a81df2fdd2ae389e7f4d6c3adac7",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3AAlessandro_Rosi_St_S%C3%A9bastien_soign%C3%A9_par_Ste_Ir%C3%A8ne.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Alessandro_Rosi_St_Sébastien_soigné_par_Ste_Irène.jpg",
+      "commons_page_id": 79597513,
+      "commons_file_sha1": "2a4becc92e5ef5282c60415828231ffaac9cca6d",
+      "commons_source_original_pixels": [
+        1559,
+        1221
+      ],
+      "source_downloaded_thumbnail_bytes": 1467940,
+      "source_downloaded_thumbnail_sha256": "b6dd2210022c27dbc886477fc8417f7bdca2e97a022714df1545ee18acf7b206",
+      "display_dimensions": [
+        1559,
+        1221
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "cette œuvre fait partie de la collection du musée des beaux-arts de brest.",
+        "artist": "alessandro rosi"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::570",
+      "title": "French: Saint Luc peignant la Viergelabel QS:Lfr,\"Saint Luc peignant la Vierge\"",
+      "artist": "Luca Giordano",
+      "path": "site/gallery/images/owner-approved-20261103-570.webp",
+      "image_bytes": 322844,
+      "sha256": "200458ad6cc346fe19c1f8e16ed4079dd908c6ded91b9159fb199fe97a459d6c",
+      "git_blob_sha": "2a5959c0f15e089374e9bae2e918f5241006e3f6",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GIORDANO_Luca_1692-95_Saint_Luc_peignant_la_Vierge.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:GIORDANO_Luca_1692-95_Saint_Luc_peignant_la_Vierge.jpg",
+      "commons_page_id": 79542617,
+      "commons_file_sha1": "493131075b4ae1a3e70c006e1da3e8dee771b9dc",
+      "commons_source_original_pixels": [
+        1470,
+        1130
+      ],
+      "source_downloaded_thumbnail_bytes": 579508,
+      "source_downloaded_thumbnail_sha256": "28d11615a4e0240334171d589d926be27b62e3e82c059028d31263af92e794de",
+      "display_dimensions": [
+        1470,
+        1130
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "cette œuvre fait partie de la collection du musée des beaux-arts de brest.",
+        "artist": "luca giordano"
+      },
+      "source_image_original_bytes_retained": false,
+      "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",
+      "exact_original_image_for_prayer": false
+    },
+    {
+      "artwork_id": "RECENT575::572",
+      "title": "Pierre-Luca Giordano 1685c L'élévation de la croix",
+      "artist": "Luca Giordano",
+      "path": "site/gallery/images/owner-approved-20261103-572.webp",
+      "image_bytes": 354612,
+      "sha256": "b6e2c9d629bb2d3c4b683965af8ee1242dbe90d4b34d4ffa7cf99b26bf5fff30",
+      "git_blob_sha": "d49e42fbe36a40855fd8f9d7605a43f2348d73f2",
+      "source_record": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pierre-Luca_Giordano_1685c_L%27%C3%A9l%C3%A9vation_de_la_croix.jpg",
+      "commons_file_page": "https://commons.wikimedia.org/wiki/File:Pierre-Luca_Giordano_1685c_L'élévation_de_la_croix.jpg",
+      "commons_page_id": 79597371,
+      "commons_file_sha1": "50d60cca7a667ce8c98b3874e49b19cd8f66e273",
+      "commons_source_original_pixels": [
+        1413,
+        1193
+      ],
+      "source_downloaded_thumbnail_bytes": 1524630,
+      "source_downloaded_thumbnail_sha256": "b92814b4340eb1a25ddd5af20bec4436c7616cce7992ca8b3c0b358cb3074eb9",
+      "display_dimensions": [
+        1413,
+        1193
+      ],
+      "recorded_reproduction_rights": "public domain",
+      "file_license_claim": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "cette œuvre fait partie de la collection du musée des beaux-arts de brest.",
+        "artist": "luca giordano"
       },
       "source_image_original_bytes_retained": false,
       "release_scope": "GALLERY_ONLY__NO_NEW_PRAYER_DEFAULT",

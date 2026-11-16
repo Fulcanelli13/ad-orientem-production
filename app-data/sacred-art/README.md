@@ -57,3 +57,7 @@ A single batch reconciled 491 previously owner-selected 3 November Commons artwo
 ### Owner-approved Commons bulk image batch 02 (16 Nov 2026)
 
 Second batch recovered 109 further locally cached, full-composition gallery WebPs for owner-approved original File pages, for 343 total displayed paintings and 346 image-bearing catalogue records. Every previous image, 873 historical artwork records, 103 globally rejected original identifiers, prayer-card links and permanent 54-source-JPEG bank remain intact. The original Commons JPEG bytes are not archived in these batches; the durable original-source metadata and reproduction-specific licence position are in bulk-commons-photo-import-batch02-20261116.v1.json. 221 records remain held for documented reasons; these are not automatically approved by the second pass.
+
+### Post-bulk preservation and museum source inventory, wave 03
+
+Revalidated 49 prior rate-limited source-file candidates with conservative sequential Commons access, preserving exactly 49 additional full-frame WebPs. Current live gallery should contain 392 painting photos across 395 catalogue entries. A complete separate evidence-only inventory of 90 owner-selected non-November Commons records is stored in bulk-museum-image-queue-20261116.v1.json; do not equate curation approval with photography reuse clearance or count it as a gallery image import. Original JPEG bank remains at 54 and all prayer relationships remain unchanged.
