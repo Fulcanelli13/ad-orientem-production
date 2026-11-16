@@ -212,3 +212,16 @@ The other six newly transferred masters remain **master-bank assets** without fo
 **Precisely preserved exclusions:** eight distinct sources belong only to the archived research ledger and were not publicly released (some carry rights/quality holds); the *Souls in Purgatory* release has a conflicting non-commercial photographic-use caveat and is retained as a rights-held reference only. Two explicitly rejected reproductions, Restout's *Pentecost* source and Gérôme's *Age of Augustus* source, were not imported. Two approved works have no recoverable source file in that archive. None of these 13 records was misrepresented as a locally published image.
 
 **Current production coverage: 862 original artwork catalogue records; 54 distinct locally displayed images; 57 image-bearing historical records; 805 metadata-only records.** All prior original IDs, 729 selected metadata records, Angelus associations, 267-position research crosswalk, prayer-card approvals and Claude-designed UI remain independent and unchanged. The only deployment mechanism is still GitHub Actions → GitHub Pages. The permanent original-master library can be expanded through **the same deduplicated bulk-transfer ledger**, not repeated museum-by-museum curation batches.
+
+## Selected Luminous review photographs (V13 draft)
+
+Five separately source-verified, owner-selected Luminous paintings are available in
+\`selected31-reviewed-images.v13.json\` with five locally hosted full-composition
+WebPs. The historical 862-entry catalogue remains **unchanged**. The gallery
+loader adds these five editorial records on top of the canonical source master,
+so the combined view has 867 searchable records and 59 distinct display images.
+
+Their source JPEGs and SHA-256 evidence are preserved under
+\`app-data/sacred-art/staged-selected31-v13/\`. These are gallery assets only;
+no prayer runtime card, cinematic transition or new stage primary is authorized.
+The V13 promotion is on draft PR #21 and is not deployed to main.

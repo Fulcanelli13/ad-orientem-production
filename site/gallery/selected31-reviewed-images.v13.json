@@ -1,0 +1,286 @@
+{
+  "schema": "ao.sacred-art.selected31-gallery-overlay.v13",
+  "canonical_master_unchanged": true,
+  "baseline_registry_count": 862,
+  "scope": "Five previously selected Luminous paintings, not additional canonical prayer-card approvals",
+  "records": [
+    {
+      "id": "REVIEW31::bap-bordone",
+      "title": "The Baptism of Christ",
+      "artist": "Paris Bordone",
+      "institution": "National Gallery of Art, Washington",
+      "source_url": "https://www.nga.gov/artworks/1142-baptism-christ",
+      "record_status": "OWNER_SELECTED_EDITORIAL_V12__ADDITIVE_GALLERY_RECORD",
+      "owner_selected_artwork": true,
+      "rights_note": "NGA published_images.csv openaccess=1",
+      "review_context": "Luminous I · Baptism in Jordan",
+      "image": {
+        "src": "./gallery/images/selected31-bap-bordone-2000.webp",
+        "provenance": "https://www.nga.gov/artworks/1142-baptism-christ · NGA published_images.csv openaccess=1",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__INSTITUTIONAL_SOURCE_VERIFIED",
+        "pixel_width": 2000,
+        "pixel_height": 1973
+      },
+      "image_url_source_only": "https://api.nga.gov/iiif/438b0fa2-4c5b-4993-ba89-d91a9d37fc39/full/!3500,3500/0/default.jpg",
+      "scene_ids": [
+        "Luminous I · Baptism in Jordan"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous I · Baptism in Jordan"
+      ],
+      "attribution_status": "EXACT_MUSEUM_OBJECT_VERIFIED"
+    },
+    {
+      "id": "REVIEW31::bap-tintoretto",
+      "title": "Baptism of Christ",
+      "artist": "Workshop of Jacopo Tintoretto",
+      "institution": "Cleveland Museum of Art",
+      "source_url": "https://www.clevelandart.org/art/1950.400",
+      "record_status": "OWNER_SELECTED_EDITORIAL_V12__ADDITIVE_GALLERY_RECORD",
+      "owner_selected_artwork": true,
+      "rights_note": "CMA object page 1950.400: open-access, reusable without permission",
+      "review_context": "Luminous I · Baptism in Jordan",
+      "image": {
+        "src": "./gallery/images/selected31-bap-tintoretto-2000.webp",
+        "provenance": "https://www.clevelandart.org/art/1950.400 · CMA object page 1950.400: open-access, reusable without permission",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__INSTITUTIONAL_SOURCE_VERIFIED",
+        "pixel_width": 2000,
+        "pixel_height": 1325
+      },
+      "image_url_source_only": "https://openaccess-cdn.clevelandart.org/1950.400/1950.400_print.jpg",
+      "scene_ids": [
+        "Luminous I · Baptism in Jordan"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous I · Baptism in Jordan"
+      ],
+      "attribution_status": "EXACT_MUSEUM_OBJECT_VERIFIED"
+    },
+    {
+      "id": "REVIEW31::bap-bassano",
+      "title": "The Baptism of Christ",
+      "artist": "Jacopo Bassano",
+      "institution": "The Metropolitan Museum of Art",
+      "source_url": "https://www.metmuseum.org/art/collection/search/440393",
+      "record_status": "OWNER_SELECTED_EDITORIAL_V12__ADDITIVE_GALLERY_RECORD",
+      "owner_selected_artwork": true,
+      "rights_note": "Met isPublicDomain=true",
+      "review_context": "Luminous I · Baptism in Jordan",
+      "image": {
+        "src": "./gallery/images/selected31-bap-bassano-2000.webp",
+        "provenance": "https://www.metmuseum.org/art/collection/search/440393 · Met isPublicDomain=true",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__INSTITUTIONAL_SOURCE_VERIFIED",
+        "pixel_width": 1630,
+        "pixel_height": 2000
+      },
+      "image_url_source_only": "https://images.metmuseum.org/CRDImages/ep/original/DP276931.jpg",
+      "scene_ids": [
+        "Luminous I · Baptism in Jordan"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous I · Baptism in Jordan"
+      ],
+      "attribution_status": "EXACT_MUSEUM_OBJECT_VERIFIED"
+    },
+    {
+      "id": "REVIEW31::bap-poussin",
+      "title": "The Baptism of Christ",
+      "artist": "Nicolas Poussin",
+      "institution": "National Gallery of Art, Washington",
+      "source_url": "https://www.nga.gov/artworks/32692-baptism-christ",
+      "record_status": "OWNER_SELECTED_EDITORIAL_V12__ADDITIVE_GALLERY_RECORD",
+      "owner_selected_artwork": true,
+      "rights_note": "NGA published_images.csv openaccess=1",
+      "review_context": "Luminous I · Baptism in Jordan",
+      "image": {
+        "src": "./gallery/images/selected31-bap-poussin-2000.webp",
+        "provenance": "https://www.nga.gov/artworks/32692-baptism-christ · NGA published_images.csv openaccess=1",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__INSTITUTIONAL_SOURCE_VERIFIED",
+        "pixel_width": 2000,
+        "pixel_height": 1574
+      },
+      "image_url_source_only": "https://api.nga.gov/iiif/0ad4855e-760a-476f-bbbb-8164f430b4ec/full/!3500,3500/0/default.jpg",
+      "scene_ids": [
+        "Luminous I · Baptism in Jordan"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous I · Baptism in Jordan"
+      ],
+      "attribution_status": "EXACT_MUSEUM_OBJECT_VERIFIED"
+    },
+    {
+      "id": "REVIEW31::cana-master",
+      "title": "The Marriage at Cana",
+      "artist": "Master of the Catholic Kings",
+      "institution": "National Gallery of Art, Washington",
+      "source_url": "https://www.nga.gov/artworks/41655-marriage-cana",
+      "record_status": "OWNER_SELECTED_EDITORIAL_V12__ADDITIVE_GALLERY_RECORD",
+      "owner_selected_artwork": true,
+      "rights_note": "NGA published_images.csv openaccess=1",
+      "review_context": "Luminous II · Wedding at Cana",
+      "image": {
+        "src": "./gallery/images/selected31-cana-master-2000.webp",
+        "provenance": "https://www.nga.gov/artworks/41655-marriage-cana · NGA published_images.csv openaccess=1",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__INSTITUTIONAL_SOURCE_VERIFIED",
+        "pixel_width": 1180,
+        "pixel_height": 2000
+      },
+      "image_url_source_only": "https://api.nga.gov/iiif/25c98bc8-af28-4194-a056-daeae1f0a001/full/!3500,3500/0/default.jpg",
+      "scene_ids": [
+        "Luminous II · Wedding at Cana"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous II · Wedding at Cana"
+      ],
+      "attribution_status": "EXACT_MUSEUM_OBJECT_VERIFIED"
+    }
+  ],
+  "provenance": [
+    {
+      "review_artwork_id": "bap-bordone",
+      "gallery_file": "site/gallery/images/selected31-bap-bordone-2000.webp",
+      "derivative_bytes": 749518,
+      "derivative_sha256": "c71651ff325e4498ce29aac36e24eea2e165a1f0508a52ec25f413ef539a60d7",
+      "source_archive": "app-data/sacred-art/staged-selected31-v13/bap-bordone-museum-source.jpg",
+      "source_sha256": "638e7a3e44985d7f2462ec9bbf441629af3de86268e31c4ec6db113b65c26643",
+      "source_dimensions_px": [
+        3500,
+        3453
+      ],
+      "gallery_dimensions_px": [
+        2000,
+        1973
+      ],
+      "rights_evidence": "NGA published_images.csv openaccess=1",
+      "identity_evidence": {
+        "objectID": "1142",
+        "uuid": "438b0fa2-4c5b-4993-ba89-d91a9d37fc39",
+        "viewtype": "primary"
+      },
+      "museum_page": "https://www.nga.gov/artworks/1142-baptism-christ",
+      "publication_scope": "GALLERY_ONLY__NEVER_PRAYER_PRIMARY_AUTOMATICALLY"
+    },
+    {
+      "review_artwork_id": "bap-tintoretto",
+      "gallery_file": "site/gallery/images/selected31-bap-tintoretto-2000.webp",
+      "derivative_bytes": 600362,
+      "derivative_sha256": "136c2663a9f3de91e062c11b156383e2a98d269d49f5cda6344c6fbf7969c4e9",
+      "source_archive": "app-data/sacred-art/staged-selected31-v13/bap-tintoretto-museum-source.jpg",
+      "source_sha256": "3ec7f722c11141337c98a884cd34c87cf09ed4f22e648603136bca0239ba046e",
+      "source_dimensions_px": [
+        3400,
+        2253
+      ],
+      "gallery_dimensions_px": [
+        2000,
+        1325
+      ],
+      "rights_evidence": "CMA object page 1950.400: open-access, reusable without permission",
+      "identity_evidence": {
+        "accession": "1950.400",
+        "object_page": "https://www.clevelandart.org/art/1950.400",
+        "title": "Baptism of Christ",
+        "artist": "workshop of Jacopo Tintoretto"
+      },
+      "museum_page": "https://www.clevelandart.org/art/1950.400",
+      "publication_scope": "GALLERY_ONLY__NEVER_PRAYER_PRIMARY_AUTOMATICALLY"
+    },
+    {
+      "review_artwork_id": "bap-bassano",
+      "gallery_file": "site/gallery/images/selected31-bap-bassano-2000.webp",
+      "derivative_bytes": 278000,
+      "derivative_sha256": "13167014471e1b668853f0886066dd7ee4aa0ca58a5cf46d4027aced55122814",
+      "source_archive": "app-data/sacred-art/staged-selected31-v13/bap-bassano-museum-source.jpg",
+      "source_sha256": "240532f3efec68b9d606873fde65b0978b1f7333c8b5c5a1f460df3d208a6c64",
+      "source_dimensions_px": [
+        3143,
+        3857
+      ],
+      "gallery_dimensions_px": [
+        1630,
+        2000
+      ],
+      "rights_evidence": "Met isPublicDomain=true",
+      "identity_evidence": {
+        "objectID": 440393,
+        "title": "The Baptism of Christ",
+        "artist": "Jacopo Bassano (Jacopo da Ponte)"
+      },
+      "museum_page": "https://www.metmuseum.org/art/collection/search/440393",
+      "publication_scope": "GALLERY_ONLY__NEVER_PRAYER_PRIMARY_AUTOMATICALLY"
+    },
+    {
+      "review_artwork_id": "bap-poussin",
+      "gallery_file": "site/gallery/images/selected31-bap-poussin-2000.webp",
+      "derivative_bytes": 339350,
+      "derivative_sha256": "4692b76ac9ef3e41fa7c2a0406e4c0c25ea3c3ddbeeee2cd9655f0f84678030b",
+      "source_archive": "app-data/sacred-art/staged-selected31-v13/bap-poussin-museum-source.jpg",
+      "source_sha256": "52c81e96e01cf1d606a152527f8096861b0a50b4834ade36f62143812802b2ba",
+      "source_dimensions_px": [
+        3500,
+        2754
+      ],
+      "gallery_dimensions_px": [
+        2000,
+        1574
+      ],
+      "rights_evidence": "NGA published_images.csv openaccess=1",
+      "identity_evidence": {
+        "objectID": "32692",
+        "uuid": "0ad4855e-760a-476f-bbbb-8164f430b4ec",
+        "viewtype": "primary"
+      },
+      "museum_page": "https://www.nga.gov/artworks/32692-baptism-christ",
+      "publication_scope": "GALLERY_ONLY__NEVER_PRAYER_PRIMARY_AUTOMATICALLY"
+    },
+    {
+      "review_artwork_id": "cana-master",
+      "gallery_file": "site/gallery/images/selected31-cana-master-2000.webp",
+      "derivative_bytes": 575334,
+      "derivative_sha256": "819fd6c07422f3546762c9a2fedfadffae1bd769c3708b511cc9477b88cf3ffc",
+      "source_archive": "app-data/sacred-art/staged-selected31-v13/cana-master-museum-source.jpg",
+      "source_sha256": "2fd477c9d6968d782f2f38c58744534dc5b69d15eaace77ba9e245ed2f47becb",
+      "source_dimensions_px": [
+        2065,
+        3500
+      ],
+      "gallery_dimensions_px": [
+        1180,
+        2000
+      ],
+      "rights_evidence": "NGA published_images.csv openaccess=1",
+      "identity_evidence": {
+        "objectID": "41655",
+        "uuid": "25c98bc8-af28-4194-a056-daeae1f0a001",
+        "viewtype": "primary"
+      },
+      "museum_page": "https://www.nga.gov/artworks/41655-marriage-cana",
+      "publication_scope": "GALLERY_ONLY__NEVER_PRAYER_PRIMARY_AUTOMATICALLY"
+    }
+  ]
+}

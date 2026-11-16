@@ -216,6 +216,23 @@
           }
           ids.add(art.id);
         }
+        // Add the separately approved editorial painting review without
+        // rewriting the 862-entry canonical source master or its approvals.
+        const supplementResponse = await fetch("./gallery/selected31-reviewed-images.v13.json",{cache:"no-cache"});
+        if (!supplementResponse.ok) throw new Error("Review painting supplement unavailable");
+        const supplement = await supplementResponse.json();
+        if (supplement.schema !== "ao.sacred-art.selected31-gallery-overlay.v13" ||
+            supplement.baseline_registry_count !== data.records.length ||
+            supplement.records?.length !== 5) throw new Error("Invalid reviewed gallery supplement");
+        for (const art of supplement.records) {
+          if (!art.id?.startsWith("REVIEW31::") || ids.has(art.id) ||
+              !art.image?.src?.startsWith("./gallery/images/selected31-") ||
+              art.exact_prayer_cards?.length) throw new Error("Invalid review image scope");
+          ids.add(art.id);
+          data.records.push(art);
+        }
+        data.counts.total_records += supplement.records.length;
+        data.counts.distinct_locally_hosted_paintings += supplement.records.length;
         catalogue = data;
         byId("gallery-total-count").textContent = data.counts.total_records.toLocaleString();
         byId("gallery-photo-count").textContent = data.counts.distinct_locally_hosted_paintings.toLocaleString();
