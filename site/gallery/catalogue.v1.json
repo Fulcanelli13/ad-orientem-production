@@ -12,7 +12,8 @@
     "san_polo_released_cycle": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
     "devotional_recovery": "app-data/sacred-art/devotional-asset-recovery-20261116.v1.json",
     "class_i_gallery_link": "app-data/sacred-art/class-i-gallery-link-20261116.v1.json",
-    "bulk_approved_commons": "app-data/sacred-art/bulk-commons-photo-import-20261116.v1.json"
+    "bulk_approved_commons": "app-data/sacred-art/bulk-commons-photo-import-20261116.v1.json",
+    "bulk_approved_commons_batch02": "app-data/sacred-art/bulk-commons-photo-import-batch02-20261116.v1.json"
   },
   "policy": {
     "all_records_included": true,
@@ -28,11 +29,11 @@
   "counts": {
     "total_records": 873,
     "selected_artwork_records": 740,
-    "image_available_records": 237,
-    "distinct_locally_hosted_paintings": 234,
+    "image_available_records": 346,
+    "distinct_locally_hosted_paintings": 343,
     "angelus_review_records": 36,
     "unassigned": 611,
-    "verified_image_files": 234,
+    "verified_image_files": 343,
     "full_resolution_image_count_unknown": true
   },
   "records": [
@@ -14780,7 +14781,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Christ_and_the_adulterous_woman_mg_0002.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-284.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Christ_and_the_adulterous_woman_mg_0002.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3105,
+          2218
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1143
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Christ_and_the_adulterous_woman_mg_0002.jpg/960px-Christ_and_the_adulterous_woman_mg_0002.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -14799,7 +14814,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Bernardino_Fungai-Saint_Cl%C3%A9ment_retrouvant_sa_famille.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-285.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Bernardino_Fungai-Saint_Clément_retrouvant_sa_famille.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2775,
+          1786
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1030
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Bernardino_Fungai-Saint_Cl%C3%A9ment_retrouvant_sa_famille.jpg/960px-Bernardino_Fungai-Saint_Cl%C3%A9ment_retrouvant_sa_famille.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -14818,7 +14847,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:61_Nicolas_Bertin,_Daniel_dans_la_fosse_aux_lions,_vers_1710-20.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-286.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:61_Nicolas_Bertin,_Daniel_dans_la_fosse_aux_lions,_vers_1710-20.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4315,
+          3409
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1264
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/61_Nicolas_Bertin%2C_Daniel_dans_la_fosse_aux_lions%2C_vers_1710-20.jpg/960px-61_Nicolas_Bertin%2C_Daniel_dans_la_fosse_aux_lions%2C_vers_1710-20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -14837,7 +14880,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:63a_Michel_Martin_Drolling,_Le_retour_du_fils_prodigue,_1806.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-287.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:63a_Michel_Martin_Drolling,_Le_retour_du_fils_prodigue,_1806.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4547,
+          3472
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1222
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/63a_Michel_Martin_Drolling%2C_Le_retour_du_fils_prodigue%2C_1806.jpg/960px-63a_Michel_Martin_Drolling%2C_Le_retour_du_fils_prodigue%2C_1806.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -14856,7 +14913,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:81_Andrea_Vaccaro,_T%C3%AAte_de_saint_Jean-Baptiste.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-289.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:81_Andrea_Vaccaro,_Tête_de_saint_Jean-Baptiste.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4346,
+          3149
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1159
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/81_Andrea_Vaccaro%2C_T%C3%AAte_de_saint_Jean-Baptiste.jpg/960px-81_Andrea_Vaccaro%2C_T%C3%AAte_de_saint_Jean-Baptiste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -14875,7 +14946,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:84a_Sassoferrato,_Vierge_en_oraison,_vers_1640.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-290.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:84a_Sassoferrato,_Vierge_en_oraison,_vers_1640.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3360,
+          4204
+        ],
+        "pixel_width": 1279,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/84a_Sassoferrato%2C_Vierge_en_oraison%2C_vers_1640.jpg/960px-84a_Sassoferrato%2C_Vierge_en_oraison%2C_vers_1640.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -14894,7 +14979,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Carlo_Sellitto,_Saint_Bruno.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-291.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Carlo_Sellitto,_Saint_Bruno.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1837,
+          2217
+        ],
+        "pixel_width": 1326,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/36/Carlo_Sellitto%2C_Saint_Bruno.jpg/960px-Carlo_Sellitto%2C_Saint_Bruno.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -14913,7 +15012,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:A_miracle_by_Saint_Benedict_mg_0167.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-292.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:A_miracle_by_Saint_Benedict_mg_0167.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2454,
+          3093
+        ],
+        "pixel_width": 1269,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/A_miracle_by_Saint_Benedict_mg_0167.jpg/960px-A_miracle_by_Saint_Benedict_mg_0167.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -14951,7 +15064,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Jean_Baptiste_Deshays,_Le_Supplice_de_saint_Andr%C3%A9.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-294.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Jean_Baptiste_Deshays,_Le_Supplice_de_saint_André.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2130,
+          4096
+        ],
+        "pixel_width": 832,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Jean_Baptiste_Deshays%2C_Le_Supplice_de_saint_Andr%C3%A9.jpg/960px-Jean_Baptiste_Deshays%2C_Le_Supplice_de_saint_Andr%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -14989,7 +15116,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Restout,_Les_P%C3%A8lerins_d%E2%80%99Emma%C3%BCs.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-296.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Restout,_Les_Pèlerins_d’Emmaüs.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3210,
+          2476
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1234
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/45/Restout%2C_Les_P%C3%A8lerins_d%E2%80%99Emma%C3%BCs.jpg/960px-Restout%2C_Les_P%C3%A8lerins_d%E2%80%99Emma%C3%BCs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15008,7 +15149,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Susanna_and_the_Elders_mg_0022.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-297.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Susanna_and_the_Elders_mg_0022.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3185,
+          2387
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1199
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b6/Susanna_and_the_Elders_mg_0022.jpg/960px-Susanna_and_the_Elders_mg_0022.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15027,7 +15182,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Ursula_mg_0030.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-298.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Saint_Ursula_mg_0030.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2131,
+          3555
+        ],
+        "pixel_width": 959,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Saint_Ursula_mg_0030.jpg/960px-Saint_Ursula_mg_0030.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15046,7 +15215,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Engracia_mg_0032.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-299.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Saint_Engracia_mg_0032.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1981,
+          3385
+        ],
+        "pixel_width": 936,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Saint_Engracia_mg_0032.jpg/960px-Saint_Engracia_mg_0032.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15160,7 +15343,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:83_L%27Orbetto,_Saint_Pierre,_conduit_par_un_ange,_visite_sainte_Agathe_dans_a_prison.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-305.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:83_L'Orbetto,_Saint_Pierre,_conduit_par_un_ange,_visite_sainte_Agathe_dans_a_prison.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3747,
+          2676
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1143
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cd/83_L%27Orbetto%2C_Saint_Pierre%2C_conduit_par_un_ange%2C_visite_sainte_Agathe_dans_a_prison.jpg/960px-83_L%27Orbetto%2C_Saint_Pierre%2C_conduit_par_un_ange%2C_visite_sainte_Agathe_dans_a_prison.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15179,7 +15376,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Baptism_of_Christ-Francesco_Albani-MBA_Lyon_A170-IMG_0339.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-307.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Baptism_of_Christ-Francesco_Albani-MBA_Lyon_A170-IMG_0339.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3894,
+          3021
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1242
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Baptism_of_Christ-Francesco_Albani-MBA_Lyon_A170-IMG_0339.jpg/960px-Baptism_of_Christ-Francesco_Albani-MBA_Lyon_A170-IMG_0339.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15198,7 +15409,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Batpism_of_Christ-Emilio_Savonanzi-MBA_Lyon_A68-IMG_0331.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-308.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Batpism_of_Christ-Emilio_Savonanzi-MBA_Lyon_A68-IMG_0331.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4791,
+          3165
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1057
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Batpism_of_Christ-Emilio_Savonanzi-MBA_Lyon_A68-IMG_0331.jpg/960px-Batpism_of_Christ-Emilio_Savonanzi-MBA_Lyon_A68-IMG_0331.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15217,7 +15442,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:David_thanking_God_after_the_death_of_Goliath-Italian_anon-MBA_Lyon_A89-IMG_0327.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-309.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:David_thanking_God_after_the_death_of_Goliath-Italian_anon-MBA_Lyon_A89-IMG_0327.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4874,
+          3479
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1142
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/David_thanking_God_after_the_death_of_Goliath-Italian_anon-MBA_Lyon_A89-IMG_0327.jpg/960px-David_thanking_God_after_the_death_of_Goliath-Italian_anon-MBA_Lyon_A89-IMG_0327.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15236,7 +15475,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Last_supper-Philippe_de_Champaigne-MBA_Lyon_A40-IMG_0397.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-310.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Last_supper-Philippe_de_Champaigne-MBA_Lyon_A40-IMG_0397.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4775,
+          3258
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1092
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/Last_supper-Philippe_de_Champaigne-MBA_Lyon_A40-IMG_0397.jpg/960px-Last_supper-Philippe_de_Champaigne-MBA_Lyon_A40-IMG_0397.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15293,7 +15546,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:F%C3%AAte_du_Rosaire_(copie_d%C3%A9pos%C3%A9e_au_MBA_Lyon).jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-316.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Fête_du_Rosaire_(copie_déposée_au_MBA_Lyon).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1500,
+          1777
+        ],
+        "pixel_width": 1351,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/F%C3%AAte_du_Rosaire_%28copie_d%C3%A9pos%C3%A9e_au_MBA_Lyon%29.jpg/960px-F%C3%AAte_du_Rosaire_%28copie_d%C3%A9pos%C3%A9e_au_MBA_Lyon%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15312,7 +15579,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Rubens-adoration_des_mages.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-318.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Rubens-adoration_des_mages.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4397,
+          3351
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1219
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Rubens-adoration_des_mages.jpg/960px-Rubens-adoration_des_mages.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15331,7 +15612,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Adoration_of_the_Child-Jacquelin_de_Montlucon-MBA_Lyon_1996-120-IMG_0251.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-319.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Adoration_of_the_Child-Jacquelin_de_Montlucon-MBA_Lyon_1996-120-IMG_0251.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3097,
+          3076
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1589
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Adoration_of_the_Child-Jacquelin_de_Montlucon-MBA_Lyon_1996-120-IMG_0251.jpg/960px-Adoration_of_the_Child-Jacquelin_de_Montlucon-MBA_Lyon_1996-120-IMG_0251.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15350,7 +15645,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Resurrection_of_Lazarrus-Jacquelin_de_Montlucon-MBA_Lyon_B805-IMG_0253.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-320.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Resurrection_of_Lazarrus-Jacquelin_de_Montlucon-MBA_Lyon_B805-IMG_0253.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3101,
+          3094
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1597
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Resurrection_of_Lazarrus-Jacquelin_de_Montlucon-MBA_Lyon_B805-IMG_0253.jpg/960px-Resurrection_of_Lazarrus-Jacquelin_de_Montlucon-MBA_Lyon_B805-IMG_0253.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15369,7 +15678,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Asumption_of_the_Virgin-Guido_Reni-MBA_Lyon_A123-IMG_0329.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-321.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Asumption_of_the_Virgin-Guido_Reni-MBA_Lyon_A123-IMG_0329.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3087,
+          4762
+        ],
+        "pixel_width": 1037,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b8/Asumption_of_the_Virgin-Guido_Reni-MBA_Lyon_A123-IMG_0329.jpg/960px-Asumption_of_the_Virgin-Guido_Reni-MBA_Lyon_A123-IMG_0329.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15388,7 +15711,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Cecile-Guillaume_Perrier-MBA_Lyon_1999-3-IMG_0388.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-322.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Saint_Cecile-Guillaume_Perrier-MBA_Lyon_1999-3-IMG_0388.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3121,
+          4491
+        ],
+        "pixel_width": 1112,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0b/Saint_Cecile-Guillaume_Perrier-MBA_Lyon_1999-3-IMG_0388.jpg/960px-Saint_Cecile-Guillaume_Perrier-MBA_Lyon_1999-3-IMG_0388.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15407,7 +15744,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Conrad_Confalonieri-Giovanni_Lanfranco-MBA_Lyon_A124-IMG_0341.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-323.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Saint_Conrad_Confalonieri-Giovanni_Lanfranco-MBA_Lyon_A124-IMG_0341.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3073,
+          5235
+        ],
+        "pixel_width": 939,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/72/Saint_Conrad_Confalonieri-Giovanni_Lanfranco-MBA_Lyon_A124-IMG_0341.jpg/960px-Saint_Conrad_Confalonieri-Giovanni_Lanfranco-MBA_Lyon_A124-IMG_0341.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15445,7 +15796,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Rubens-adoration_des_magesFXD.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-325.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Rubens-adoration_des_magesFXD.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4397,
+          3351
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1219
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Rubens-adoration_des_magesFXD.jpg/960px-Rubens-adoration_des_magesFXD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15464,7 +15829,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Virgin_with_Child_with_Saint_Catherine_Augustin_Marc_and_John_the_Baptist-Tintoretto-MBA_Lyon_A122-IMG_0309.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-326.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Virgin_with_Child_with_Saint_Catherine_Augustin_Marc_and_John_the_Baptist-Tintoretto-MBA_Lyon_A122-IMG_0309.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4779,
+          2905
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 973
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/87/Virgin_with_Child_with_Saint_Catherine_Augustin_Marc_and_John_the_Baptist-Tintoretto-MBA_Lyon_A122-IMG_0309.jpg/960px-Virgin_with_Child_with_Saint_Catherine_Augustin_Marc_and_John_the_Baptist-Tintoretto-MBA_Lyon_A122-IMG_0309.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15483,7 +15862,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Sebastian_healed_by_Saint_Irene-Antonio_De_Bellis-MBA_Lyon_X807c-IMG_0359.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-327.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Saint_Sebastian_healed_by_Saint_Irene-Antonio_De_Bellis-MBA_Lyon_X807c-IMG_0359.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3184,
+          3948
+        ],
+        "pixel_width": 1290,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Saint_Sebastian_healed_by_Saint_Irene-Antonio_De_Bellis-MBA_Lyon_X807c-IMG_0359.jpg/960px-Saint_Sebastian_healed_by_Saint_Irene-Antonio_De_Bellis-MBA_Lyon_X807c-IMG_0359.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15502,7 +15895,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Jean-Baptiste.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-328.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Saint_Jean-Baptiste.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3624,
+          3152
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1392
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/Saint_Jean-Baptiste.jpg/960px-Saint_Jean-Baptiste.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15559,7 +15966,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Jos%C3%A9_de_Ribera_-_Le_Bapt%C3%AAme_du_Christ.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-331.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:José_de_Ribera_-_Le_Baptême_du_Christ.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2007,
+          2965
+        ],
+        "pixel_width": 1083,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/75/Jos%C3%A9_de_Ribera_-_Le_Bapt%C3%AAme_du_Christ.JPG/960px-Jos%C3%A9_de_Ribera_-_Le_Bapt%C3%AAme_du_Christ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15616,7 +16037,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:D%C3%A9ploration_du_Christ,_par_Le_Tintoret.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-334.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Déploration_du_Christ,_par_Le_Tintoret.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2600,
+          1935
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1191
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a3/D%C3%A9ploration_du_Christ%2C_par_Le_Tintoret.jpg/960px-D%C3%A9ploration_du_Christ%2C_par_Le_Tintoret.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15635,7 +16070,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Jacques_Blanchard_-_Tobias_Healing_the_Blindness_of_His_Father_-_WGA02236.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-335.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Jacques_Blanchard_-_Tobias_Healing_the_Blindness_of_His_Father_-_WGA02236.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1454,
+          1100
+        ],
+        "pixel_width": 1454,
+        "pixel_height": 1100
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e8/Jacques_Blanchard_-_Tobias_Healing_the_Blindness_of_His_Father_-_WGA02236.jpg/960px-Jacques_Blanchard_-_Tobias_Healing_the_Blindness_of_His_Father_-_WGA02236.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15673,7 +16122,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Le_Repentir_de_saint_Pierre.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-337.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Le_Repentir_de_saint_Pierre.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3815,
+          2755
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1156
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Le_Repentir_de_saint_Pierre.JPG/960px-Le_Repentir_de_saint_Pierre.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15692,7 +16155,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:La_pr%C3%A9sentation_de_la_Vierge_au_Temple_-_Placido_Constanzi_-_MBAB_D.2017.1.1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-338.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:La_présentation_de_la_Vierge_au_Temple_-_Placido_Constanzi_-_MBAB_D.2017.1.1.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1257,
+          1929
+        ],
+        "pixel_width": 1043,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/La_pr%C3%A9sentation_de_la_Vierge_au_Temple_-_Placido_Constanzi_-_MBAB_D.2017.1.1.jpg/960px-La_pr%C3%A9sentation_de_la_Vierge_au_Temple_-_Placido_Constanzi_-_MBAB_D.2017.1.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15711,7 +16188,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Le_Christ_parmi_les_docteurs_-_Placido_Constanzi_-_MBAB_2012.0.1211.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-340.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Le_Christ_parmi_les_docteurs_-_Placido_Constanzi_-_MBAB_2012.0.1211.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1330,
+          1964
+        ],
+        "pixel_width": 1084,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/93/Le_Christ_parmi_les_docteurs_-_Placido_Constanzi_-_MBAB_2012.0.1211.jpg/960px-Le_Christ_parmi_les_docteurs_-_Placido_Constanzi_-_MBAB_2012.0.1211.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15730,7 +16221,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Le_Bon_Samaritain_-_Guillaume_Courtois_-_MBAB_D.970.2.1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-342.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Le_Bon_Samaritain_-_Guillaume_Courtois_-_MBAB_D.970.2.1.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1786,
+          1284
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1150
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Le_Bon_Samaritain_-_Guillaume_Courtois_-_MBAB_D.970.2.1.jpg/960px-Le_Bon_Samaritain_-_Guillaume_Courtois_-_MBAB_D.970.2.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15749,7 +16254,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Fran%C3%A7ois_d%27Assise_pr%C3%AAchant_aux_poissons_-_Edouard_Jerome_Paupion_-_MBAB_907.1.1.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-343.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Saint_François_d'Assise_prêchant_aux_poissons_-_Edouard_Jerome_Paupion_-_MBAB_907.1.1.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1792,
+          1254
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1120
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/55/Saint_Fran%C3%A7ois_d%27Assise_pr%C3%AAchant_aux_poissons_-_Edouard_Jerome_Paupion_-_MBAB_907.1.1.jpg/960px-Saint_Fran%C3%A7ois_d%27Assise_pr%C3%AAchant_aux_poissons_-_Edouard_Jerome_Paupion_-_MBAB_907.1.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15768,7 +16287,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Samson_et_Dalila_-_d%27apr%C3%A8s_Pieter_Paul_Rubens.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-344.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Samson_et_Dalila_-_d'après_Pieter_Paul_Rubens.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1576,
+          1231
+        ],
+        "pixel_width": 1576,
+        "pixel_height": 1231
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/43/Samson_et_Dalila_-_d%27apr%C3%A8s_Pieter_Paul_Rubens.jpg/960px-Samson_et_Dalila_-_d%27apr%C3%A8s_Pieter_Paul_Rubens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15787,7 +16320,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Mantegna,_Andrea_-_La_R%C3%A9surrection_-_1457-1459.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-345.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Mantegna,_Andrea_-_La_Résurrection_-_1457-1459.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1904,
+          1356
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1139
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Mantegna%2C_Andrea_-_La_R%C3%A9surrection_-_1457-1459.jpg/960px-Mantegna%2C_Andrea_-_La_R%C3%A9surrection_-_1457-1459.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15825,7 +16372,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Labb%C3%A9-La_Visitation.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-347.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Labbé-La_Visitation.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1486,
+          2435
+        ],
+        "pixel_width": 976,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a2/Nicolas_Labb%C3%A9-La_Visitation.jpg/960px-Nicolas_Labb%C3%A9-La_Visitation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15844,7 +16405,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Philippe_de_Champaigne-Le_ravissement_de_sainte_Madeleine.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-348.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Philippe_de_Champaigne-Le_ravissement_de_sainte_Madeleine.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2562,
+          1941
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1213
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Philippe_de_Champaigne-Le_ravissement_de_sainte_Madeleine.jpg/960px-Philippe_de_Champaigne-Le_ravissement_de_sainte_Madeleine.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15863,7 +16438,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Rubens_r%C3%A9surrection_du_Christ.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-349.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Rubens_résurrection_du_Christ.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2361,
+          1483
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1005
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/49/Rubens_r%C3%A9surrection_du_Christ.jpg/960px-Rubens_r%C3%A9surrection_du_Christ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15882,7 +16471,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Tiepolo_-_Le_Christ_et_la_femme_adult%C3%A8re.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-350.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Tiepolo_-_Le_Christ_et_la_femme_adultère.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2417,
+          1474
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 976
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/da/Tiepolo_-_Le_Christ_et_la_femme_adult%C3%A8re.jpg/960px-Tiepolo_-_Le_Christ_et_la_femme_adult%C3%A8re.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15901,7 +16504,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Vermiglio_Christ_mort.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-351.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Vermiglio_Christ_mort.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1998,
+          2519
+        ],
+        "pixel_width": 1269,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Vermiglio_Christ_mort.jpg/960px-Vermiglio_Christ_mort.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15920,7 +16537,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Novelli_Pietro_-_Saint_Jacques_le_Majeur.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-352.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Novelli_Pietro_-_Saint_Jacques_le_Majeur.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2630,
+          3233
+        ],
+        "pixel_width": 1302,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/Novelli_Pietro_-_Saint_Jacques_le_Majeur.jpg/960px-Novelli_Pietro_-_Saint_Jacques_le_Majeur.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15939,7 +16570,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Longchamp006_Dolci_J%C3%A9sus_%26_Joseph.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-353.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Longchamp006_Dolci_Jésus_&_Joseph.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2153,
+          2645
+        ],
+        "pixel_width": 1302,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Longchamp006_Dolci_J%C3%A9sus_%26_Joseph.jpg/960px-Longchamp006_Dolci_J%C3%A9sus_%26_Joseph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15958,7 +16603,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Longchamp014_Vermiglio_Christ_mort.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-354.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Longchamp014_Vermiglio_Christ_mort.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2456,
+          3130
+        ],
+        "pixel_width": 1255,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Longchamp014_Vermiglio_Christ_mort.jpg/960px-Longchamp014_Vermiglio_Christ_mort.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -15977,7 +16636,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Saint_S%C3%A9bastien,_par_Louis_Finson.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-356.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Saint_Sébastien,_par_Louis_Finson.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1222,
+          1612
+        ],
+        "pixel_width": 1213,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/51/Saint_S%C3%A9bastien%2C_par_Louis_Finson.jpg/960px-Saint_S%C3%A9bastien%2C_par_Louis_Finson.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16034,7 +16707,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Vierge_en_oraison_(Il_Sassoferrato).jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-365.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Vierge_en_oraison_(Il_Sassoferrato).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3456,
+          4608
+        ],
+        "pixel_width": 1200,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Vierge_en_oraison_%28Il_Sassoferrato%29.jpg/960px-Vierge_en_oraison_%28Il_Sassoferrato%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16053,7 +16740,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:54a_Pierre-Paul_Rubens,_Le_Christ_triomphant_de_la_Mort_et_du_P%C3%A9ch%C3%A9,_vers_1615-16.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-366.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:54a_Pierre-Paul_Rubens,_Le_Christ_triomphant_de_la_Mort_et_du_Péché,_vers_1615-16.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3343,
+          4340
+        ],
+        "pixel_width": 1232,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f2/54a_Pierre-Paul_Rubens%2C_Le_Christ_triomphant_de_la_Mort_et_du_P%C3%A9ch%C3%A9%2C_vers_1615-16.jpg/960px-54a_Pierre-Paul_Rubens%2C_Le_Christ_triomphant_de_la_Mort_et_du_P%C3%A9ch%C3%A9%2C_vers_1615-16.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16072,7 +16773,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:43_Jusepe_de_Ribera,_Saint_Pierre_et_saint_Paul,_1616-17.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-367.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:43_Jusepe_de_Ribera,_Saint_Pierre_et_saint_Paul,_1616-17.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3069,
+          3534
+        ],
+        "pixel_width": 1389,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8f/43_Jusepe_de_Ribera%2C_Saint_Pierre_et_saint_Paul%2C_1616-17.jpg/960px-43_Jusepe_de_Ribera%2C_Saint_Pierre_et_saint_Paul%2C_1616-17.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16091,7 +16806,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:78_Le_Guerchin,_Samson_et_Dalila.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-368.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:78_Le_Guerchin,_Samson_et_Dalila.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4224,
+          3559
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1348
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e3/78_Le_Guerchin%2C_Samson_et_Dalila.jpg/960px-78_Le_Guerchin%2C_Samson_et_Dalila.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16129,7 +16858,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Bouguereau_-_Virgin_of_Consolation.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-370.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Bouguereau_-_Virgin_of_Consolation.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1818,
+          2593
+        ],
+        "pixel_width": 1122,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Bouguereau_-_Virgin_of_Consolation.jpg/960px-Bouguereau_-_Virgin_of_Consolation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16224,7 +16967,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_The_Adoration_of_the_Magi_(Lyon).jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-376.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_The_Adoration_of_the_Magi_(Lyon).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4500,
+          3417
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1215
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Peter_Paul_Rubens_-_The_Adoration_of_the_Magi_%28Lyon%29.jpg/960px-Peter_Paul_Rubens_-_The_Adoration_of_the_Magi_%28Lyon%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16243,7 +17000,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Caravaggio_-_The_Annunciation.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-377.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Caravaggio_-_The_Annunciation.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1138,
+          1587
+        ],
+        "pixel_width": 1138,
+        "pixel_height": 1587
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6c/Caravaggio_-_The_Annunciation.JPG/960px-Caravaggio_-_The_Annunciation.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_PRODUCTION_CLEARED",
       "scene_ids": [],
@@ -16262,7 +17033,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Annonciation_Frans_Purbus_jeune.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-378.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Annonciation_Frans_Purbus_jeune.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2610,
+          3770
+        ],
+        "pixel_width": 1108,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Annonciation_Frans_Purbus_jeune.jpg/960px-Annonciation_Frans_Purbus_jeune.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16281,7 +17066,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Transfiguration-Rubens.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-379.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Transfiguration-Rubens.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3645,
+          2150
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 944
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/30/Transfiguration-Rubens.JPG/960px-Transfiguration-Rubens.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16338,7 +17137,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Castiglione_Giovanni_Benedetto_-_Arche_de_No%C3%A9.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-385.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Castiglione_Giovanni_Benedetto_-_Arche_de_Noé.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3616,
+          2458
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1088
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/Castiglione_Giovanni_Benedetto_-_Arche_de_No%C3%A9.jpg/960px-Castiglione_Giovanni_Benedetto_-_Arche_de_No%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16452,7 +17265,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:45_Claude_de_Jongh,_Saint_Laurent_couronn%C3%A9_par_l%27Enfant_J%C3%A9sus,_1634.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-391.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:45_Claude_de_Jongh,_Saint_Laurent_couronné_par_l'Enfant_Jésus,_1634.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3358,
+          3825
+        ],
+        "pixel_width": 1405,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/45_Claude_de_Jongh%2C_Saint_Laurent_couronn%C3%A9_par_l%27Enfant_J%C3%A9sus%2C_1634.jpg/960px-45_Claude_de_Jongh%2C_Saint_Laurent_couronn%C3%A9_par_l%27Enfant_J%C3%A9sus%2C_1634.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16547,7 +17374,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Boeckhorst_-_Le_martyre_de_saint_Maurice_et_de_ses_compagnons.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-396.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Boeckhorst_-_Le_martyre_de_saint_Maurice_et_de_ses_compagnons.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2030,
+          2930
+        ],
+        "pixel_width": 1109,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Boeckhorst_-_Le_martyre_de_saint_Maurice_et_de_ses_compagnons.jpg/960px-Boeckhorst_-_Le_martyre_de_saint_Maurice_et_de_ses_compagnons.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16623,7 +17464,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Bril_Jonas.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-400.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Bril_Jonas.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2400,
+          1752
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1168
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Lille_PdBA_Bril_Jonas.JPG/960px-Lille_PdBA_Bril_Jonas.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16737,7 +17592,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Emile_louis_salome,_il_figliol_prodigo_che_medita,_1863.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-406.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Emile_louis_salome,_il_figliol_prodigo_che_medita,_1863.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4398,
+          3066
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1115
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Emile_louis_salome%2C_il_figliol_prodigo_che_medita%2C_1863.jpg/960px-Emile_louis_salome%2C_il_figliol_prodigo_che_medita%2C_1863.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16775,7 +17644,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Frans_Francken_(II)_(1581-1642)_-_Christus_op_weg_naar_de_Kalvarieberg_ontmoet_Veronica_(1615-1620)_-_Palais_des_Beaux_Arts_de_Lille_25-11-2010_13-54-19.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-408.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Frans_Francken_(II)_(1581-1642)_-_Christus_op_weg_naar_de_Kalvarieberg_ontmoet_Veronica_(1615-1620)_-_Palais_des_Beaux_Arts_de_Lille_25-11-2010_13-54-19.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2419,
+          1564
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1034
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/03/Frans_Francken_%28II%29_%281581-1642%29_-_Christus_op_weg_naar_de_Kalvarieberg_ontmoet_Veronica_%281615-1620%29_-_Palais_des_Beaux_Arts_de_Lille_25-11-2010_13-54-19.jpg/960px-Frans_Francken_%28II%29_%281581-1642%29_-_Christus_op_weg_naar_de_Kalvarieberg_ontmoet_Veronica_%281615-1620%29_-_Palais_des_Beaux_Arts_de_Lille_25-11-2010_13-54-19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16832,7 +17715,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Joachim_wtewael,_resurrezione_di_lazzaro,_1600_ca._01.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-411.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Joachim_wtewael,_resurrezione_di_lazzaro,_1600_ca._01.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4212,
+          3282
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1247
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Joachim_wtewael%2C_resurrezione_di_lazzaro%2C_1600_ca._01.jpg/960px-Joachim_wtewael%2C_resurrezione_di_lazzaro%2C_1600_ca._01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -16870,7 +17767,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_bosschaert_couronnement_vierge.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-413.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_bosschaert_couronnement_vierge.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1303,
+          1793
+        ],
+        "pixel_width": 1163,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1f/Lille_PdBA_bosschaert_couronnement_vierge.JPG/960px-Lille_PdBA_bosschaert_couronnement_vierge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17136,7 +18047,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Entr%C3%A9e_de_Saint_Bernard_%C3%A0_C%C3%AEteaux_(Passeri).jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-429.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Entrée_de_Saint_Bernard_à_Cîteaux_(Passeri).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3456,
+          4608
+        ],
+        "pixel_width": 1200,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Entr%C3%A9e_de_Saint_Bernard_%C3%A0_C%C3%AEteaux_%28Passeri%29.jpg/960px-Entr%C3%A9e_de_Saint_Bernard_%C3%A0_C%C3%AEteaux_%28Passeri%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17269,7 +18194,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Wtewael_lazare.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-437.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Wtewael_lazare.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2178,
+          1600
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1175
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f5/Lille_PdBA_Wtewael_lazare.JPG/960px-Lille_PdBA_Wtewael_lazare.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17288,7 +18227,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_quellin_fyt_jesus_marthe_et_marie.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-438.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_quellin_fyt_jesus_marthe_et_marie.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2000,
+          1367
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1093
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Lille_PdBA_quellin_fyt_jesus_marthe_et_marie.JPG/960px-Lille_PdBA_quellin_fyt_jesus_marthe_et_marie.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17326,7 +18279,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:2016-10-24_10-30_Burgund_273_Dijon,_Mus%C3%A9e_des_Beaux-Arts_de_Dijon_-_Veronese_(Atelier),_La_Vierge_et_L%27Enfant_apparaissant_%C3%A0_Saint_Antoine,_Saint_Paul_Ermite,_Saint_Paul_et_Saint_Pierre_(30922060316).jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-442.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:2016-10-24_10-30_Burgund_273_Dijon,_Musée_des_Beaux-Arts_de_Dijon_-_Veronese_(Atelier),_La_Vierge_et_L'Enfant_apparaissant_à_Saint_Antoine,_Saint_Paul_Ermite,_Saint_Paul_et_Saint_Pierre_(30922060316).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3274,
+          5096
+        ],
+        "pixel_width": 1028,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/6f/2016-10-24_10-30_Burgund_273_Dijon%2C_Mus%C3%A9e_des_Beaux-Arts_de_Dijon_-_Veronese_%28Atelier%29%2C_La_Vierge_et_L%27Enfant_apparaissant_%C3%A0_Saint_Antoine%2C_Saint_Paul_Ermite%2C_Saint_Paul_et_Saint_Pierre_%2830922060316%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17345,7 +18312,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Baellieur-Cana.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-444.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Baellieur-Cana.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2556,
+          1605
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1005
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a4/Baellieur-Cana.JPG/960px-Baellieur-Cana.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17364,7 +18345,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Lehmann-Sainte_Catherine_d%27Alexandrie.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-445.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Lehmann-Sainte_Catherine_d'Alexandrie.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2868,
+          1664
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 928
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Lehmann-Sainte_Catherine_d%27Alexandrie.JPG/960px-Lehmann-Sainte_Catherine_d%27Alexandrie.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17421,7 +18416,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Restout_Bapt%C3%AAme_du_Christ.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-448.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Restout_Baptême_du_Christ.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          6510,
+          3781
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 929
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/eb/Restout_Bapt%C3%AAme_du_Christ.jpg/960px-Restout_Bapt%C3%AAme_du_Christ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17440,7 +18449,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Poussin_-_%C3%A9cole_de_-_Le_Bapt%C3%AAme_du_Christ,_Apr%C3%A8s_1630,_825.1.167.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-449.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Poussin_-_école_de_-_Le_Baptême_du_Christ,_Après_1630,_825.1.167.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2300,
+          1864
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1297
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/21/Poussin_-_%C3%A9cole_de_-_Le_Bapt%C3%AAme_du_Christ%2C_Apr%C3%A8s_1630%2C_825.1.167.jpg/960px-Poussin_-_%C3%A9cole_de_-_Le_Bapt%C3%AAme_du_Christ%2C_Apr%C3%A8s_1630%2C_825.1.167.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17478,7 +18501,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:ANONYME_-_Le_Martyre_de_sainte_C%C3%A9cile,_Vers_1620_-_1625,_825.1.166.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-451.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:ANONYME_-_Le_Martyre_de_sainte_Cécile,_Vers_1620_-_1625,_825.1.166.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2300,
+          1772
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1233
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/08/ANONYME_-_Le_Martyre_de_sainte_C%C3%A9cile%2C_Vers_1620_-_1625%2C_825.1.166.jpg/960px-ANONYME_-_Le_Martyre_de_sainte_C%C3%A9cile%2C_Vers_1620_-_1625%2C_825.1.166.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17516,7 +18553,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Suv%C3%A9e-Naissance_de_la_Vierge.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-453.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Suvée-Naissance_de_la_Vierge.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2420,
+          1717
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1135
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Suv%C3%A9e-Naissance_de_la_Vierge.JPG/960px-Suv%C3%A9e-Naissance_de_la_Vierge.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17535,7 +18586,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Spada-Christ.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-454.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Spada-Christ.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2310,
+          1778
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1232
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Spada-Christ.JPG/960px-Spada-Christ.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17554,7 +18619,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Andrea_de_Lione_-_Un_Ange_adorant_le_Christ_mort_02.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-455.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Andrea_de_Lione_-_Un_Ange_adorant_le_Christ_mort_02.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4865,
+          3432
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1128
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/Andrea_de_Lione_-_Un_Ange_adorant_le_Christ_mort_02.jpg/960px-Andrea_de_Lione_-_Un_Ange_adorant_le_Christ_mort_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17573,7 +18652,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Giuseppe_Bartolomeo_Chiari_-_L%27Adoration_des_Mages_02.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-456.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Giuseppe_Bartolomeo_Chiari_-_L'Adoration_des_Mages_02.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4871,
+          3688
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1212
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Giuseppe_Bartolomeo_Chiari_-_L%27Adoration_des_Mages_02.jpg/960px-Giuseppe_Bartolomeo_Chiari_-_L%27Adoration_des_Mages_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17592,7 +18685,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_J%C3%A9sus_chez_Marthe_et_Marie_01.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-457.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Musée_Granet_-_Jésus_chez_Marthe_et_Marie_01.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3757,
+          4671
+        ],
+        "pixel_width": 1287,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Mus%C3%A9e_Granet_-_J%C3%A9sus_chez_Marthe_et_Marie_01.jpg/960px-Mus%C3%A9e_Granet_-_J%C3%A9sus_chez_Marthe_et_Marie_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17611,7 +18718,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_J%C3%A9sus_chez_Marthe_et_Marie_02.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-458.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Musée_Granet_-_Jésus_chez_Marthe_et_Marie_02.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3705,
+          5039
+        ],
+        "pixel_width": 1177,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/db/Mus%C3%A9e_Granet_-_J%C3%A9sus_chez_Marthe_et_Marie_02.jpg/960px-Mus%C3%A9e_Granet_-_J%C3%A9sus_chez_Marthe_et_Marie_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17630,7 +18751,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Saint_Fran%C3%A7ois_Xavier_pr%C3%A9sidant_la_construction_d%27un_%C3%A9difice_02.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-460.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Musée_Granet_-_Saint_François_Xavier_présidant_la_construction_d'un_édifice_02.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4578,
+          3675
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1284
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c8/Mus%C3%A9e_Granet_-_Saint_Fran%C3%A7ois_Xavier_pr%C3%A9sidant_la_construction_d%27un_%C3%A9difice_02.jpg/960px-Mus%C3%A9e_Granet_-_Saint_Fran%C3%A7ois_Xavier_pr%C3%A9sidant_la_construction_d%27un_%C3%A9difice_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17649,7 +18784,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Pierre_Subleyras_-_L%27adoration_des_Mages_02.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-461.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Pierre_Subleyras_-_L'adoration_des_Mages_02.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3542,
+          4999
+        ],
+        "pixel_width": 1134,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Pierre_Subleyras_-_L%27adoration_des_Mages_02.jpg/960px-Pierre_Subleyras_-_L%27adoration_des_Mages_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17668,7 +18817,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Pietro_da_Cortona_-_Sainte_Martine_refusant_d%27adorer_les_idoles_02.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-462.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Pietro_da_Cortona_-_Sainte_Martine_refusant_d'adorer_les_idoles_02.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3401,
+          4970
+        ],
+        "pixel_width": 1095,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/de/Pietro_da_Cortona_-_Sainte_Martine_refusant_d%27adorer_les_idoles_02.jpg/960px-Pietro_da_Cortona_-_Sainte_Martine_refusant_d%27adorer_les_idoles_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17687,7 +18850,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Mus%C3%A9e_Granet_-_Tobie_ensevelissant_les_morts_02.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-463.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Musée_Granet_-_Tobie_ensevelissant_les_morts_02.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4423,
+          3550
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1284
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Mus%C3%A9e_Granet_-_Tobie_ensevelissant_les_morts_02.jpg/960px-Mus%C3%A9e_Granet_-_Tobie_ensevelissant_les_morts_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17706,7 +18883,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Perugino_-_Le_bapt%C3%AAme_du_Christ.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-464.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Perugino_-_Le_baptême_du_Christ.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2190,
+          1264
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 923
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Perugino_-_Le_bapt%C3%AAme_du_Christ.jpg/960px-Perugino_-_Le_bapt%C3%AAme_du_Christ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17725,7 +18916,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Francis_of_Assisi_Consoled_by_an_Angel_Musician.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-466.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Saint_Francis_of_Assisi_Consoled_by_an_Angel_Musician.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1322,
+          1926
+        ],
+        "pixel_width": 1098,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2d/Saint_Francis_of_Assisi_Consoled_by_an_Angel_Musician.jpg/960px-Saint_Francis_of_Assisi_Consoled_by_an_Angel_Musician.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17763,7 +18968,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:J%C3%A9sus_chassant_les_marchands_du_temple.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-468.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Jésus_chassant_les_marchands_du_temple.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3208,
+          2630
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1312
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/95/J%C3%A9sus_chassant_les_marchands_du_temple.JPG/960px-J%C3%A9sus_chassant_les_marchands_du_temple.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17782,7 +19001,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Le_Christ_et_L%27h%C3%A9morro%C3%AFsse.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-469.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Le_Christ_et_L'hémorroïsse.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2723,
+          4747
+        ],
+        "pixel_width": 918,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9a/Le_Christ_et_L%27h%C3%A9morro%C3%AFsse.jpg/960px-Le_Christ_et_L%27h%C3%A9morro%C3%AFsse.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17801,7 +19034,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Natoire_Saint_Etienne_parmi_les_docteurs.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-470.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Natoire_Saint_Etienne_parmi_les_docteurs.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2142,
+          2985
+        ],
+        "pixel_width": 1148,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Natoire_Saint_Etienne_parmi_les_docteurs.jpg/960px-Natoire_Saint_Etienne_parmi_les_docteurs.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17839,7 +19086,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Vocation_de_Saint_Pierre_et_de_Saint_Andr%C3%A9.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-472.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Vocation_de_Saint_Pierre_et_de_Saint_André.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2666,
+          3329
+        ],
+        "pixel_width": 1282,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d3/Vocation_de_Saint_Pierre_et_de_Saint_Andr%C3%A9.JPG/960px-Vocation_de_Saint_Pierre_et_de_Saint_Andr%C3%A9.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17858,7 +19119,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Gustave_dor%C3%A9,_cristo_lascia_il_pretorio,_1874-1800.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-473.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Gustave_doré,_cristo_lascia_il_pretorio,_1874-1800.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3004,
+          2020
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1076
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/74/Gustave_dor%C3%A9%2C_cristo_lascia_il_pretorio%2C_1874-1800.JPG/960px-Gustave_dor%C3%A9%2C_cristo_lascia_il_pretorio%2C_1874-1800.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17934,7 +19209,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Nicolas_R%C3%A9gnier_-_David_with_the_head_of_Goliath.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-478.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Régnier_-_David_with_the_head_of_Goliath.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2626,
+          3365
+        ],
+        "pixel_width": 1249,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Nicolas_R%C3%A9gnier_-_David_with_the_head_of_Goliath.jpg/960px-Nicolas_R%C3%A9gnier_-_David_with_the_head_of_Goliath.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -17972,7 +19261,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Alexandre_Cabanel_-_Death_of_Moses.jpeg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-480.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Alexandre_Cabanel_-_Death_of_Moses.jpeg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1949,
+          1326
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1088
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Alexandre_Cabanel_-_Death_of_Moses.jpeg/960px-Alexandre_Cabanel_-_Death_of_Moses.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18010,7 +19313,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Anthonis_Mor_-_The_resurrection_of_Christ_(c._1556)_-_Mus%C3%A9e_Cond%C3%A9.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-485.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Anthonis_Mor_-_The_resurrection_of_Christ_(c._1556)_-_Musée_Condé.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3969,
+          4239
+        ],
+        "pixel_width": 1498,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/86/Anthonis_Mor_-_The_resurrection_of_Christ_%28c._1556%29_-_Mus%C3%A9e_Cond%C3%A9.jpg/960px-Anthonis_Mor_-_The_resurrection_of_Christ_%28c._1556%29_-_Mus%C3%A9e_Cond%C3%A9.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18086,7 +19403,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Christ_at_the_Column-Caravaggio_(c._1607).jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-492.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Christ_at_the_Column-Caravaggio_(c._1607).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          9312,
+          7112
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1222
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9e/Christ_at_the_Column-Caravaggio_%28c._1607%29.jpg/960px-Christ_at_the_Column-Caravaggio_%28c._1607%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18105,7 +19436,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Mo%C3%AFse_sauv%C3%A9_des_eaux.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-493.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Moïse_sauvé_des_eaux.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2884,
+          2426
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1346
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Mo%C3%AFse_sauv%C3%A9_des_eaux.JPG/960px-Mo%C3%AFse_sauv%C3%A9_des_eaux.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18124,7 +19469,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Mo%C3%AFse_sauv%C3%A9_des_eaux_by_Adrian_van_der_Werff.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-494.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Moïse_sauvé_des_eaux_by_Adrian_van_der_Werff.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2507,
+          3044
+        ],
+        "pixel_width": 1318,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4d/Mo%C3%AFse_sauv%C3%A9_des_eaux_by_Adrian_van_der_Werff.JPG/960px-Mo%C3%AFse_sauv%C3%A9_des_eaux_by_Adrian_van_der_Werff.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18181,7 +19540,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Le_Reniement_de_saint_Pierre.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-500.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Le_Reniement_de_saint_Pierre.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4468,
+          3311
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1186
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Le_Reniement_de_saint_Pierre.jpg/960px-Le_Reniement_de_saint_Pierre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18200,7 +19573,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Jacques_Blanchard_-_Saint_J%C3%A9rome_en_m%C3%A9ditation.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-502.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Jacques_Blanchard_-_Saint_Jérome_en_méditation.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1986,
+          2869
+        ],
+        "pixel_width": 1107,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Jacques_Blanchard_-_Saint_J%C3%A9rome_en_m%C3%A9ditation.jpg/960px-Jacques_Blanchard_-_Saint_J%C3%A9rome_en_m%C3%A9ditation.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18295,7 +19682,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Jacques_Stella_-_Mort_de_Saint_Joseph.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-507.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Jacques_Stella_-_Mort_de_Saint_Joseph.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2213,
+          1768
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1278
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1d/Jacques_Stella_-_Mort_de_Saint_Joseph.jpg/960px-Jacques_Stella_-_Mort_de_Saint_Joseph.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18428,7 +19829,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_-_Adoration_des_mages_2.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-515.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_-_Adoration_des_mages_2.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3088,
+          2056
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1065
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e2/Abraham_Bloemaert_-_Adoration_des_mages_2.jpg/960px-Abraham_Bloemaert_-_Adoration_des_mages_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18485,7 +19900,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Paul_V%C3%A9ron%C3%A8se_-_Christ_rencontrant_la_femme_de_Z%C3%A9b%C3%A9d%C3%A9e.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-519.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Paul_Véronèse_-_Christ_rencontrant_la_femme_de_Zébédée.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2612,
+          1530
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 938
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/97/Paul_V%C3%A9ron%C3%A8se_-_Christ_rencontrant_la_femme_de_Z%C3%A9b%C3%A9d%C3%A9e.jpg/960px-Paul_V%C3%A9ron%C3%A8se_-_Christ_rencontrant_la_femme_de_Z%C3%A9b%C3%A9d%C3%A9e.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18561,7 +19990,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:David_tenant_la_t%C3%AAte_de_Goliath,_par_Guido_Reni.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-525.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:David_tenant_la_tête_de_Goliath,_par_Guido_Reni.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1986,
+          2783
+        ],
+        "pixel_width": 1142,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/David_tenant_la_t%C3%AAte_de_Goliath%2C_par_Guido_Reni.jpg/960px-David_tenant_la_t%C3%AAte_de_Goliath%2C_par_Guido_Reni.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18637,7 +20080,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File%3ABOUCHET_-_Joseph_reconnu_par_ses_freres%2C_1789.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-529.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:BOUCHET_-_Joseph_reconnu_par_ses_freres,_1789.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2000,
+          1515
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1212
+      },
       "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/BOUCHET_-_Joseph_reconnu_par_ses_freres,_1789.jpg/640px-BOUCHET_-_Joseph_reconnu_par_ses_freres,_1789.jpg",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -18732,7 +20189,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Grunewald_Resurrection_Isenheim.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-535.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Grunewald_Resurrection_Isenheim.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2024,
+          3336
+        ],
+        "pixel_width": 971,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Grunewald_Resurrection_Isenheim.jpg/960px-Grunewald_Resurrection_Isenheim.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_PRODUCTION_CLEARED",
       "scene_ids": [],
@@ -18751,7 +20222,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Matthias_Gr%C3%BCnewald_-_Resurrection.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-536.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Matthias_Grünewald_-_Resurrection.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2845,
+          4701
+        ],
+        "pixel_width": 968,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/40/Matthias_Gr%C3%BCnewald_-_Resurrection.jpg/960px-Matthias_Gr%C3%BCnewald_-_Resurrection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -19036,7 +20521,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Le_Sacr%C3%A9_C%C5%93ur_ador%C3%A9_-_Hippolyte-Dominique_Holfeld_-_MM_1938F515.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-553.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Le_Sacré_Cœur_adoré_-_Hippolyte-Dominique_Holfeld_-_MM_1938F515.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1444,
+          1498
+        ],
+        "pixel_width": 1444,
+        "pixel_height": 1498
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/58/Le_Sacr%C3%A9_C%C5%93ur_ador%C3%A9_-_Hippolyte-Dominique_Holfeld_-_MM_1938F515.jpg/960px-Le_Sacr%C3%A9_C%C5%93ur_ador%C3%A9_-_Hippolyte-Dominique_Holfeld_-_MM_1938F515.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -19283,7 +20782,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File%3AAjaccio_Baciccio_Joseph.JPG",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-567.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Ajaccio_Baciccio_Joseph.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1932,
+          1552
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1285
+      },
       "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Ajaccio_Baciccio_Joseph.JPG/640px-Ajaccio_Baciccio_Joseph.JPG",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -19435,7 +20948,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Matthias_Stom_-_Le_sacrifice_d%27Abraham.jpg",
       "record_status": "APPROVED_BY_USER_2026_11_03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-20261103-575.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Matthias_Stom_-_Le_sacrifice_d'Abraham.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2954,
+          2153
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1166
+      },
       "image_url_source_only": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Matthias_Stom_-_Le_sacrifice_d%27Abraham.jpg/960px-Matthias_Stom_-_Le_sacrifice_d%27Abraham.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
