@@ -127,6 +127,10 @@ def hold(row,code,detail=""):
 for obj in queue:
  row=lookup[obj["artwork_id"]]
  assert row["image"] is None and row["owner_selected_artwork"]
+ # Artworks attached to the Prado museum are excluded from this gallery even
+ # when a third-party Commons faithful-reproduction file claims public domain.
+ if "prado" in " ".join(str(row.get(k) or "") for k in ("id","title","institution","source_url","rights_note")).casefold():
+  hold(row,"USER_PRADO_SOURCE_EXCLUSION");continue
  if norm_url(row["source_url"]) in reject_urls or (norm_title(row["artist"]),norm_title(row["title"])) in reject_pair:
   hold(row,"LEGACY_REJECTION_MATCH");continue
  if norm_url(row["source_url"]) in prior_image_pages:
