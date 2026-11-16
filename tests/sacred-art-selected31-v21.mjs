@@ -1,0 +1,91 @@
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {readFileSync,existsSync} from 'node:fs';
+import {resolve,dirname} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const base=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const b=p=>readFileSync(resolve(base,p));
+const j=p=>JSON.parse(b(p).toString('utf8'));
+const sha=p=>createHash('sha256').update(b(p)).digest('hex');
+const v20=j('app-data/sacred-art/selected31-clearance-v20.json');
+const v21=j('app-data/sacred-art/selected31-clearance-v21.json');
+const acquire=j('app-data/sacred-art/staged-selected31-v21/acquisition-results.v21.json');
+const reg=j('app-data/sacred-art/selected31-gallery-reconciliation-v12.json');
+const gallery=j('site/gallery/catalogue.v1.json');
+const rights=j('site/gallery/image-provenance.v1.json');
+const ov13=j('site/gallery/selected31-reviewed-images.v13.json');
+const ov14=j('site/gallery/selected31-reviewed-images.v14.json');
+const ov20=j('site/gallery/selected31-reviewed-images.v20.json');
+const ov21=j('site/gallery/selected31-reviewed-images.v21.json');
+const src=b('site/gallery/gallery.js').toString('utf8');
+assert.equal(reg.records.length,31);
+assert.equal(v20.records.length,31);
+assert.equal(v21.records.length,31);
+assert.equal(v21.schema,'ao.sacred-art.selected31-clearance.v21');
+assert.deepEqual(v21.counts,{main_preserved:7,overlay_eligible:9,source_only_holds:15});
+assert.equal(gallery.counts.total_records,873);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings,429);
+assert.equal(rights.local_image_count,429);
+assert.equal(rights.sources.length,429);
+const changed=v21.records.filter(r=>v20.records.find(x=>x.review_artwork_id===r.review_artwork_id).disposition!==r.disposition).map(x=>x.review_artwork_id).sort();
+assert.deepEqual(changed,['cana-francken','trans-rubens']);
+const f=v21.records.find(x=>x.review_artwork_id==='cana-francken');
+assert.equal(f.disposition,'DRAFT_GALLERY_ELIGIBLE');
+assert.deepEqual(f.source_dimensions,[1920,919]);
+assert.equal(f.source_sha256,'4b2375fc8ec4408040aea66a17f766971b12ae62e771b5f06f49236e4dc64137');
+assert.equal(sha(f.source_archive_path),f.source_sha256);
+assert.equal(acquire.acquired_count,1);
+assert.equal(acquire.records.length,1);
+const acq=acquire.records[0];
+assert.equal(acq.review_artwork_id,'cana-francken');
+assert.equal(acq.accession,'NM 7504');
+assert.equal(acq.source_sha1,'e0e1011ae234d7dbfced32f6eacd544392a87541');
+assert.equal(acq.status,'SOURCE_ARCHIVE_ONLY__NO_APP_OR_PRAYER_BINDING');
+assert.equal(sha(acq.source_path),acq.source_sha256);
+assert.equal(sha(acq.derivative_path),acq.derivative_sha256);
+assert.deepEqual(acq.derivative_dimensions,[1920,919]);
+assert.equal(ov21.schema,'ao.sacred-art.selected31-gallery-overlay.v21');
+assert.equal(ov21.records.length,1);
+assert.equal(ov21.provenance.length,1);
+const art=ov21.records[0],proof=ov21.provenance[0];
+assert.equal(art.id,'REVIEW31::cana-francken');
+assert.equal(art.owner_selected_artwork,true);
+assert.equal(art.exact_prayer_cards.length,0);
+assert.equal(art.prayer_parts.length,0);
+assert.equal(art.eligible_card_count,0);
+assert.equal(art.image.src,'./gallery/images/selected31-v21-cana-francken-1920.webp');
+assert.equal(sha('site/'+art.image.src.slice(2)),acq.derivative_sha256);
+assert.equal(proof.derivative_sha256,acq.derivative_sha256);
+assert.equal(proof.source_sha256,acq.source_sha256);
+const ru=v21.records.find(x=>x.review_artwork_id==='trans-rubens');
+assert.equal(ru.disposition,'CURRENT_MAIN_PRESERVE');
+assert.equal(ru.gallery_record_id,'RECENT575::379');
+const original=j('app-data/sacred-art/staged-selected31-v18/acquisition-results.v18.json').records.find(x=>x.review_artwork_id==='trans-rubens');
+assert.equal(original.source_sha1,'b2a3f8b013ed7f24b64a0f7c81413bfe78e44964');
+const rp=rights.sources.find(x=>x.artwork_id==='RECENT575::379');
+assert(rp);
+assert.equal(rp.commons_file_sha1,original.source_sha1);
+assert.equal(ru.gallery_image_file,rp.path);
+assert(existsSync(resolve(base,rp.path)));
+const visible=[...ov13.records,...ov14.records,...ov20.records,...ov21.records];
+assert.equal(visible.length,8);
+assert.equal(new Set(visible.map(x=>x.id)).size,8);
+assert.equal(ov14.image_patches.length,1);
+assert.equal(v21.records.filter(x=>x.disposition==='DRAFT_GALLERY_ELIGIBLE').length,9);
+assert.equal(873+visible.length,881);
+assert.equal(429+visible.length+1,438);
+for(const x of v21.records){
+ assert.equal(x.automatic_prayer_card_assignment,false);
+ if(x.disposition==='HOLD_SOURCE_ONLY'){
+   assert(existsSync(resolve(base,x.source_archive_path)),x.review_artwork_id);
+   assert(!x.gallery_image_file,x.review_artwork_id);
+ }
+}
+assert(src.includes('selected31-reviewed-images.v21.json'));
+assert(src.includes('legacyRecordCount !== 873 || addedRecords !== 8 || addedImages !== 9'));
+for(const forbidden of [
+'site/gallery/images/selected31-v14-cana-francken-2000.webp',
+'site/gallery/images/selected31-v14-bap-verrocchio-2000.webp',
+'site/gallery/images/selected31-v14-cana-vermeyen-2000.webp'
+])assert(!existsSync(resolve(base,forbidden)),'Held old preview entered site');
+console.log('V21 PASSED: 31 selected, 7 existing (Rubens SHA matches), 9 draft eligible, 15 held, 881/438 proposal against 873/429 production; prayers unchanged');
