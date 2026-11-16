@@ -1,10 +1,10 @@
 {
   "schema": "ao.sacred-art.selected31-source-acquisition-v18",
   "purpose": "Source-only research; no gallery, prayer-card or deployment changes",
-  "attempted_selected_sources": 7,
-  "acquired_count": 6,
-  "failed_acquisition_count": 1,
-  "outstanding_poussin_count": 1,
+  "attempted_selected_sources": 8,
+  "acquired_count": 8,
+  "failed_acquisition_count": 0,
+  "outstanding_poussin_count": 0,
   "records": [
     {
       "review_artwork_id": "cana-tintoretto",
@@ -191,16 +191,69 @@
       "object_identity_gate": "MUSEUM_OBJECT_MATCHED",
       "composition_status": "REQUIRES_VISUAL_FRAME_CROP_AND_QUALITY_REVIEW",
       "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
-    }
-  ],
-  "holds": [
-    {
-      "review_artwork_id": "euch-leonardo",
-      "reason": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
     },
     {
       "review_artwork_id": "euch-poussin",
-      "reason": "Not acquired: Scottish National Gallery declares the selected Holy Eucharist photograph restricted or unavailable. No alternate image admitted without independent exact-photo rights."
+      "title": "The Sacrament of the Holy Eucharist",
+      "artist": "Nicolas Poussin",
+      "selection_object_page": "https://www.nationalgalleries.org/art-and-artists/8668",
+      "verified_or_proposed_object": "National Galleries of Scotland NGL 067.46 F, Bridgewater Collection, Eucharist II 1647",
+      "photographer": "Web Gallery of Art-derived reproduction (Wikimedia Commons 2010)",
+      "photograph_license": "Commons Public Domain Mark / PD-Art; museum declares image unavailable or restricted",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Seven_Sacraments_-_Eucharist_II_%281647%29_Nicolas_Poussin.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/20/Seven_Sacraments_-_Eucharist_II_%281647%29_Nicolas_Poussin.jpg",
+      "source_sha1": "7881b3698367aa8190a360f42228014a30c417fe",
+      "source_sha256": "dbf580773ca77a1e5b13241b6a9b2e24193bc1797fa12e98dcb9a92c3d85f296",
+      "source_bytes": 113428,
+      "source_dimensions": [
+        1359,
+        900
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v18/euch-poussin-source.jpg",
+      "derivative_sha256": "bd639f6f0e02ede6f935a03aa29d064907a51f1d934f52e21c64a350f75b1c5c",
+      "derivative_bytes": 124926,
+      "derivative_dimensions": [
+        1359,
+        900
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v18/euch-poussin-2000.webp",
+      "rights_gate": "SOURCE_ONLY__NGS_IMAGE_REUSE_HOLD__PREVIEW_RESOLUTION",
+      "object_identity_gate": "MUSEUM_OBJECT_MATCHED",
+      "composition_status": "PREVIEW_ONLY__SMALL_SOURCE",
+      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
+    },
+    {
+      "review_artwork_id": "euch-leonardo",
+      "title": "The Last Supper",
+      "artist": "Leonardo da Vinci",
+      "selection_object_page": "https://cenacolovinciano.org/",
+      "verified_or_proposed_object": "Santa Maria delle Grazie, Milan, Leonardo mural (1495-98)",
+      "photographer": "Tomasz Przechlewski (Flickr image CC BY 2.0 independently reviewed in 2019)",
+      "photograph_license": "Creative Commons Attribution 2.0 Generic; credit and link required",
+      "license_url": "https://creativecommons.org/licenses/by/2.0/",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Last_supper_%2824709241840%29.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Last_supper_%2824709241840%29.jpg",
+      "source_sha1": "70f8fbec732cefe42794017ba6adbd23a7a3abcb",
+      "source_sha256": "c8649322158f213e846ee3f6f246c44667ff1252b0e3c729cb6c96bc9ff56b3a",
+      "source_bytes": 3681769,
+      "source_dimensions": [
+        4032,
+        2272
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v18/euch-leonardo-source.jpg",
+      "derivative_sha256": "325645454b852d1fc7254d46a5b85ae245279b51edc40d8fc1692405fa137589",
+      "derivative_bytes": 158870,
+      "derivative_dimensions": [
+        2000,
+        1127
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v18/euch-leonardo-2000.webp",
+      "rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_AND_GALLERY_PHOTO_QUALITY_REVIEW",
+      "object_identity_gate": "MUSEUM_OBJECT_MATCHED",
+      "composition_status": "REQUIRES_VISUAL_FRAME_CROP_AND_QUALITY_REVIEW",
+      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
     }
-  ]
+  ],
+  "holds": []
 }
