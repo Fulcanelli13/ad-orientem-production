@@ -239,7 +239,7 @@
           }
           ids.add(art.id);
         }
-        // V21 release-gated: nine vetted draft gallery images (eight new records, one existing-record patch).\n        // Other selected photos remain research-only. Historical 873-row source catalogue remains untouched. V13/V14
+        // V22 release-gated: ten vetted draft gallery images (nine new records, one existing-record patch).\n        // Other selected photos remain research-only. Historical 873-row source catalogue remains untouched. V13/V14
         // augment only the gallery, never the prayer-card activation registry.
         const legacyRecordCount = data.records.length;
         let addedRecords = 0, addedImages = 0;
@@ -247,7 +247,8 @@
           ["selected31-reviewed-images.v13.json", "ao.sacred-art.selected31-gallery-overlay.v13", 5, 0],
           ["selected31-reviewed-images.v14.json", "ao.sacred-art.selected31-gallery-overlay.v14", 1, 1],
           ["selected31-reviewed-images.v20.json", "ao.sacred-art.selected31-gallery-overlay.v20", 1, 0],
-          ["selected31-reviewed-images.v21.json", "ao.sacred-art.selected31-gallery-overlay.v21", 1, 0]
+          ["selected31-reviewed-images.v21.json", "ao.sacred-art.selected31-gallery-overlay.v21", 1, 0],
+          ["selected31-reviewed-images.v22.json", "ao.sacred-art.selected31-gallery-overlay.v22", 1, 0]
         ]) {
           const response = await fetch("./gallery/" + filename, {cache:"no-cache"});
           if (!response.ok) throw new Error("Review gallery data unavailable: " + filename);
@@ -261,7 +262,7 @@
           }
           for (const art of supplement.records) {
             if (!art.id?.startsWith("REVIEW31::") || ids.has(art.id) ||
-                !/^\.\/gallery\/images\/selected31-(?:v14-|v20-|v21-)?[a-zA-Z0-9_.-]+$/.test(art.image?.src || "") ||
+                !/^\.\/gallery\/images\/selected31-(?:v14-|v20-|v21-|v22-)?[a-zA-Z0-9_.-]+$/.test(art.image?.src || "") ||
                 art.owner_selected_artwork !== true ||
                 art.exact_prayer_cards?.length || art.prayer_parts?.length ||
                 art.parent_prayer_candidates?.length || art.eligible_card_count) {
@@ -284,7 +285,7 @@
             addedImages++;
           }
         }
-        if (legacyRecordCount !== 873 || addedRecords !== 8 || addedImages !== 9) {
+        if (legacyRecordCount !== 873 || addedRecords !== 9 || addedImages !== 10) {
           throw new Error("Unexpected historical gallery reconciliation counts");
         }
         data.counts.total_records += addedRecords;
