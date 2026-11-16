@@ -24,9 +24,9 @@ assert.equal(v21.records.length,31);
 assert.equal(v21.schema,'ao.sacred-art.selected31-clearance.v21');
 assert.deepEqual(v21.counts,{main_preserved:7,overlay_eligible:9,source_only_holds:15});
 assert.equal(gallery.counts.total_records,873);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings,467);
-assert.equal(rights.local_image_count,467);
-assert.equal(rights.sources.length,467);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings,472);
+assert.equal(rights.local_image_count,472);
+assert.equal(rights.sources.length,472);
 const changed=v21.records.filter(r=>v20.records.find(x=>x.review_artwork_id===r.review_artwork_id).disposition!==r.disposition).map(x=>x.review_artwork_id).sort();
 assert.deepEqual(changed,['cana-francken','trans-rubens']);
 const f=v21.records.find(x=>x.review_artwork_id==='cana-francken');
@@ -73,7 +73,7 @@ assert.equal(new Set(visible.map(x=>x.id)).size,8);
 assert.equal(ov14.image_patches.length,1);
 assert.equal(v21.records.filter(x=>x.disposition==='DRAFT_GALLERY_ELIGIBLE').length,9);
 assert.equal(873+visible.length,881);
-assert.equal(467+visible.length+1,476);
+assert.equal(472+visible.length+1,481);
 for(const x of v21.records){
  assert.equal(x.automatic_prayer_card_assignment,false);
  if(x.disposition==='HOLD_SOURCE_ONLY'){
@@ -88,4 +88,4 @@ for(const forbidden of [
 'site/gallery/images/selected31-v14-bap-verrocchio-2000.webp',
 'site/gallery/images/selected31-v14-cana-vermeyen-2000.webp'
 ])assert(!existsSync(resolve(base,forbidden)),'Held old preview entered site');
-console.log('V21 PASSED: 31 selected, 7 existing (Rubens SHA matches), 9 draft eligible, 15 held, 881/476 proposal against 873/467 production; prayers unchanged');
+console.log('V21 PASSED: 31 selected, 7 existing (Rubens SHA matches), 9 draft eligible, 15 held, 881/481 proposal against 873/472 production; prayers unchanged');
