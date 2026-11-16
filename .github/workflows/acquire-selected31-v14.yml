@@ -24,8 +24,13 @@ jobs:
         with:
           python-version: '3.12'
       - run: python -m pip install 'Pillow>=10,<13'
-      - name: Download exact reviewed sources, fail closed on each mismatch
-        run: python tools/acquire-selected31-open-images-v14.py
+      - name: Use existing source archive or acquire missing sources
+        run: |
+          if [ -f app-data/sacred-art/staged-selected31-v14/acquisition-results.v14.json ]; then
+            echo 'Source archive is already hashed and available'
+          else
+            python tools/acquire-selected31-open-images-v14.py
+          fi
       - name: Verify hashes and unchanged canonical gallery
         run: |
           python - <<'PY'
@@ -46,11 +51,40 @@ jobs:
           print('Verified acquired',report['acquired_count'],'held',report['held_count'])
           PY
           node tests/sacred-art-gallery.mjs
+      - name: Add visually inspected images to review gallery overlay
+        run: python tools/stage-selected31-gallery-overlay-v14.py
+      - name: Validate review overlay, source hashes, existing catalogue and no prayer approvals
+        run: |
+          python - <<'PY'
+          import json,pathlib,hashlib
+          b=pathlib.Path('.')
+          cat=json.loads((b/'site/gallery/catalogue.v1.json').read_text())
+          v13=json.loads((b/'site/gallery/selected31-reviewed-images.v13.json').read_text())
+          v14=json.loads((b/'site/gallery/selected31-reviewed-images.v14.json').read_text())
+          assert cat['counts']['total_records']==862 and len(cat['records'])==862
+          assert len(v13['records'])==5
+          assert len(v14['records'])==4 and len(v14['image_patches'])==1
+          assert v14['image_patches'][0]['id']=='plate-bloch-sermon'
+          assert len(v14['provenance'])==5
+          for item in v14['records']:
+              assert item['owner_selected_artwork'] and item['exact_prayer_cards']==[]
+              assert item['prayer_parts']==[]
+              assert item['image']['usage']=='GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING'
+          for p in v14['provenance']:
+              f=b/p['gallery_file']
+              assert f.is_file() and f.stat().st_size==p['derivative_bytes']
+              assert hashlib.sha256(f.read_bytes()).hexdigest()==p['derivative_sha256']
+          for id in ('cana-francken','cana-vermeyen'):
+              assert next(p for p in v14['provenance'] if p['review_artwork_id']==id)['quality_gate']=='PREVIEW_ONLY'
+          assert 'selected31-reviewed-images.v14.json' in (b/'site/gallery/gallery.js').read_text()
+          print('V14: four new review records, one exact Bloch image patch; 862 original unchanged')
+          PY
+          node tests/sacred-art-gallery.mjs
       - name: Commit verified source archive ONLY to draft branch
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add app-data/sacred-art/staged-selected31-v14/
+          git add app-data/sacred-art/staged-selected31-v14/ site/gallery/selected31-reviewed-images.v14.json site/gallery/images/selected31-v14-*.webp site/gallery/gallery.js site/gallery/README.md
           git diff --cached --quiet || git commit -m 'Sacred Art V14: stage exact-source photographs with verified hashes'
           git push origin HEAD:curation/selected31-gallery-reconciliation-v12
       - uses: actions/upload-artifact@v4
