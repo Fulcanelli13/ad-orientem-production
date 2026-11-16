@@ -13,3 +13,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Inspect exact object pages and IIIF manifests
         run: python3 -u tools/probe-institutional-20261116.py
+
+# Source page regex probe corrected.
