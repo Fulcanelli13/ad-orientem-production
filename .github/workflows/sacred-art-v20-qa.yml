@@ -1,0 +1,42 @@
+name: Sacred Art V20 392-image reconciliation QA (temporary)
+on:
+  push:
+    branches: [curation/selected31-gallery-reconciliation-v12]
+    paths:
+      - .github/workflows/sacred-art-v20-qa.yml
+      - tests/sacred-art-selected31-v20.mjs
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    if: github.ref == 'refs/heads/curation/selected31-gallery-reconciliation-v12'
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify source hashes, application shell and selection boundaries
+        run: |
+          node --version
+          node --check site/gallery/gallery.js
+          node tests/sacred-art-selected31-v19.mjs
+          node tests/sacred-art-selected31-v20.mjs
+          node tests/sacred-art-gallery.mjs
+          node tests/prayer-artwork-activation.mjs
+          node tests/production-shell.mjs
+      - name: Verify held files are not published and 392 production sources remain unchanged
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),assert=require('assert');
+          const cat=JSON.parse(fs.readFileSync('site/gallery/catalogue.v1.json'));
+          const prov=JSON.parse(fs.readFileSync('site/gallery/image-provenance.v1.json'));
+          assert.equal(cat.counts.total_records,873);
+          assert.equal(cat.counts.distinct_locally_hosted_paintings,392);
+          assert.equal(prov.local_image_count,392);
+          for(const p of ['site/gallery/images/selected31-v14-cana-francken-2000.webp','site/gallery/images/selected31-v14-bap-verrocchio-2000.webp','site/gallery/images/selected31-v14-cana-vermeyen-2000.webp']){
+            assert(!fs.existsSync(p),p);
+          }
+          const s=JSON.parse(fs.readFileSync('app-data/sacred-art/selected31-clearance-v20.json'));
+          assert.deepEqual(s.counts,{main_preserved:5,overlay_eligible:8,source_only_holds:18});
+          console.log('V20 CI: all holds isolated; production 873/392 intact.');
+          NODE
