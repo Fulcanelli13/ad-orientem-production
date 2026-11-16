@@ -56,7 +56,7 @@
     rows.sort((a,b) =>
       Number(!!b.image?.src) - Number(!!a.image?.src) ||
       Number(b.owner_selected_artwork) - Number(a.owner_selected_artwork) ||
-      a.title.localeCompare(b.title) ||
+      displayTitle(a).localeCompare(displayTitle(b)) ||
       a.artist.localeCompare(b.artist)
     );
     return rows;
@@ -69,17 +69,27 @@
     return el;
   }
 
+  // Preserve the historic catalogue fields; only clean imported Wiki QS tags in presentation.
+  function displayTitle(item) {
+    const original = String(item.title || "Untitled");
+    const cleaned = original
+      .replace(/\s*(?:title|label)\s*QS\s*:[\s\S]*$/i,"")
+      .replace(/^(?:English|French|Dutch|German|Spanish)\s*:\s*/i,"")
+      .trim();
+    return cleaned || original;
+  }
+
   function card(item) {
     const hasImage = Boolean(item.image?.src);
     const el = textEl("button","gallery-piece " + (hasImage ? "has-image" : "catalogue-only"));
     el.type = "button";
     el.dataset.galleryId = item.id;
-    el.setAttribute("aria-label", "View artwork details: " + item.title + " by " + item.artist);
+    el.setAttribute("aria-label", "View artwork details: " + displayTitle(item) + " by " + item.artist);
     if (hasImage) {
       const frame = textEl("span","artwork-thumb");
       const img = document.createElement("img");
       img.src = item.image.src;
-      img.alt = item.title + ", " + item.artist;
+      img.alt = displayTitle(item) + ", " + item.artist;
       img.loading = "lazy";
       img.decoding = "async";
       img.addEventListener("error", () => {
@@ -90,7 +100,7 @@
       el.append(frame);
     }
     const caption = textEl("span","gallery-caption");
-    caption.append(textEl("strong","",item.title),textEl("span","gallery-artist",item.artist));
+    caption.append(textEl("strong","",displayTitle(item)),textEl("span","gallery-artist",item.artist));
     if (hasImage && item.image?.photographer) caption.append(textEl("span","gallery-photo-credit","Photo: " + item.image.photographer + " · " + item.image.license));
     if (hasImage) {
       caption.append(textEl("span","gallery-type",
@@ -144,13 +154,13 @@
     if (item.image?.src) {
       const img = document.createElement("img");
       img.className = "gallery-detail-image";
-      img.alt = item.title + ", " + item.artist;
+      img.alt = displayTitle(item) + ", " + item.artist;
       img.src = item.image.src;
       img.decoding = "async";
       body.append(img);
     }
     const inside = textEl("div","gallery-detail-content");
-    inside.append(textEl("h2","",item.title),
+    inside.append(textEl("h2","",displayTitle(item)),
       textEl("p","gallery-detail-artist",item.artist));
     if (item.institution) inside.append(detailMeta("Collection:",item.institution));
     inside.append(detailMeta("Gallery:",
