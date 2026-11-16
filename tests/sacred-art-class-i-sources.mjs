@@ -40,5 +40,6 @@ for (const item of manifest.sources) {
 assert.equal(seen.size, 3);
 assert.equal(total, manifest.summary.source_bytes);
 const catalogue = JSON.parse(fs.readFileSync('site/gallery/catalogue.v1.json', 'utf8'));
-assert.equal(catalogue.records.length, 862);
+assert.equal(catalogue.records.length, 870);
+assert.equal(catalogue.records.filter(x=>!x.id.startsWith('RELEASED::san-polo-oils:')).length, 862);
 console.log('PASS: three previously released Class I originals recovered exactly (11,438,704 bytes); gallery IDs untouched.');

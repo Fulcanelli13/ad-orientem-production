@@ -25,17 +25,17 @@ const js = read('site/gallery/gallery.js');
 const css = read('site/gallery/gallery.css');
 
 assert.equal(gallery.schema, 'ao.sacred-art.gallery.v1');
-assert.equal(gallery.records.length, 862);
-assert.equal(gallery.counts.total_records, 862);
+assert.equal(gallery.records.length, 870);
+assert.equal(gallery.counts.total_records, 870);
 assert.equal(gallery.counts.angelus_review_records, 36);
 assert.equal(gallery.counts.unassigned, 611);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings, 54);
-assert.equal(gallery.counts.image_available_records, 57);
-assert.equal(gallery.records.filter(x => x.image !== null).length, 57);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings, 68);
+assert.equal(gallery.counts.image_available_records, 71);
+assert.equal(gallery.records.filter(x => x.image !== null).length, 71);
 assert.equal(gallery.records.filter(x => x.prayer_parts.length).length, 36);
-assert.equal(new Set(gallery.records.map(x => x.id)).size, 862);
-assert.deepEqual(new Set(gallery.records.map(x => x.id)),
-  new Set(index.artworks.map(x => x.artwork_id)), 'Gallery must include every registry record');
+assert.equal(new Set(gallery.records.map(x => x.id)).size, 870);
+assert.deepEqual(new Set(gallery.records.filter(x=>!x.id.startsWith('RELEASED::san-polo-oils:')).map(x => x.id)),
+  new Set(index.artworks.map(x => x.artwork_id)), 'All 862 historical registry records must be preserved unchanged');
 
 for (const original of index.artworks) {
   const work = gallery.records.find(x => x.id === original.artwork_id);
@@ -54,8 +54,8 @@ for (const original of angelus.artworks) {
   assert.equal(record.prayer_parts.length,
     angelus.part_artwork_links.filter(x=>x.artwork_id===original.artwork_id).length);
 }
-assert.equal(images.sources.length,54);
-assert.equal(gallery.counts.verified_image_files,54);
+assert.equal(images.sources.length,68);
+assert.equal(gallery.counts.verified_image_files,68);
 const verifiedArchiveOriginalIds = new Set(['CANONICAL::ART-hilippe-de-hampaigne-he-nnunciation','CANONICAL::met-438434','CANONICAL::met-436672']);
 const srcFiles = new Set();
 for (const art of gallery.records) {
@@ -70,7 +70,7 @@ for (const art of gallery.records) {
     'Incorrect image format');
   srcFiles.add('site/'+art.image.src.slice(2));
 }
-assert.equal(srcFiles.size,54);
+assert.equal(srcFiles.size,68);
 for (const entry of images.sources) {
   assert(srcFiles.has(entry.path));
   assert.equal(statSync(resolve(base,entry.path)).size,entry.image_bytes);
@@ -472,4 +472,4 @@ assert(js.includes('catalogue.records'));
 assert(css.includes('.ao-gallery'));
 assert(css.includes('.home-pad.integrated-home-order>.sacred-art-entry'));
 assert(!html.includes('https://fonts.googleapis.com'),'No remote font dependencies');
-console.log('Sacred Art gallery validated: 862 registry records, 54 paintings on display, 57 image-bearing rows; 40 further historical museum/legacy source images (200.7 MB) preserved byte-for-byte and hash-verified, without new prayer assignments.');
+console.log('Sacred Art gallery validated: 862 historical records + 8 selected San Polo cycle works, 68 paintings on display and 71 image-bearing rows; no new prayer defaults.');
