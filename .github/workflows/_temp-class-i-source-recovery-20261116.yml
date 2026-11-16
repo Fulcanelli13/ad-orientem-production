@@ -1,0 +1,83 @@
+name: Temporary exact-source Sacred Art Class I recovery
+on:
+  push:
+    branches:
+      - feature/sacred-art-class-i-source-recovery-20261116
+    paths:
+      - .github/workflows/_temp-class-i-source-recovery-20261116.yml
+permissions:
+  contents: write
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Recover 3 exact previously released photos from pinned research commit
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, pathlib, time, urllib.request
+          old_ref="14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a"
+          items=[
+            dict(name="Giovanni Lanfranco — Miracle of Loaves and Fishes",date="2026-03-15",place="National Gallery of Ireland NGI.72",
+              source="lanfranco-ngi72-miracle-original.jpg",source_git_sha="26aaf88956e0624881aaa611295c6c9334753b37",
+              source_sha256="f9a4b9f5f180138b438c61da836ac176a21b9162e736da7372c07e5ea6f74ffa",
+              source_bytes=947637,pixels=[1285,683],historical_release_pr=2861,
+              rights="Commons PD-Art faithful reproduction; jurisdictional photo-rights caveat. Low-resolution historical Web Gallery of Art image, not NGI museum original."),
+            dict(name="Raphael — The Transfiguration",date="2026-03-01",place="Vatican Museums MV.40333",
+              source="raphael-transfiguration-vatican-original.jpg",source_git_sha="a5b060eda8b9a6eba6c8e2f1a5c92d2bdd341785",
+              source_sha256="1f61791a23d3ba16f25e953f7d17c0a7e1c2fdf967b26f041bee546ebf22601a",
+              source_bytes=5205139,pixels=[3737,5691],historical_release_pr=2857,
+              rights="Commons PD-Art faithful 2D reproduction of historical art-book scan, not Vatican photographic master. Jurisdictional photo-rights caveat."),
+            dict(name="Henry Ossawa Tanner — Nicodemus",date="2026-05-25",place="Pennsylvania Academy of the Fine Arts 1900.1",
+              source="tanner-nicodemus-1899-pafa-1900-1-original.jpg",source_git_sha="0b18c483a56493d0d1218e26abd558ef74575ddf",
+              source_sha256="ae83598cb8b73115cd5e42f477c342eb22fc181368f51f78e00de0cfee6c0e72",
+              source_bytes=5285928,pixels=[2400,2100],historical_release_pr=2852,
+              rights="Commons PD-Art/PDM faithful reproduction; artwork no known copyright restrictions, but PAFA photographer Barbara Katus/EXIF asserts institutional photo copyright. Territorial photographic-rights caveat retained.")
+          ]
+          target=pathlib.Path("app-data/sacred-art/source-masters")
+          target.mkdir(parents=True,exist_ok=True)
+          for r in items:
+            src=f"https://raw.githubusercontent.com/Fulcanelli13/ad-orientem/{old_ref}/assets/home/class-i-2026/{r['source']}"
+            raw=None
+            for attempt in range(3):
+              try:
+                req=urllib.request.Request(src,headers={"User-Agent":"AdOrientem-ExactSource-Recovery/1.0"})
+                with urllib.request.urlopen(req,timeout=120) as x:
+                  raw=x.read(12000000)
+                break
+              except Exception:
+                if attempt==2: raise
+                time.sleep(2*(attempt+1))
+            assert raw is not None and len(raw)==r["source_bytes"],r["name"]+" byte mismatch"
+            assert raw[:2]==b"\xff\xd8",r["name"]+" not JPEG"
+            sha=hashlib.sha256(raw).hexdigest()
+            blob=hashlib.sha1(f"blob {len(raw)}\0".encode()+raw).hexdigest()
+            assert sha==r["source_sha256"],r["name"]+" SHA256 mismatch"
+            assert blob==r["source_git_sha"],r["name"]+" original Git blob mismatch"
+            target.joinpath(blob+".jpg").write_bytes(raw)
+            r["source_ref"]=old_ref
+            r["source_path"]="assets/home/class-i-2026/"+r.pop("source")
+            r["source_master_path"]="app-data/sacred-art/source-masters/"+blob+".jpg"
+            r["status"]="EXACT_SOURCE_PRESERVED__NOT_PUBLISHED__NO_NEW_GALLERY_ASSIGNMENT"
+            r["gallery_activation"]=False
+          manifest={
+            "schema":"ao.sacred-art.class-i-legacy-exact-source-recovery.v1",
+            "date":"2026-11-16",
+            "scope":"Already owner-selected and released old Home Class I originals only; no new painting selections, no gallery or prayer-card activation.",
+            "photo_rights_policy":"Preserve exact old release caveats. No assertion that Commons PD-Art, old release, or this migration resolves all jurisdictional photographic rights.",
+            "sources":items,
+            "summary":{"distinct_jpegs":len(items),"source_bytes":sum(i["source_bytes"] for i in items),"sha256_failures":0,"git_blob_mismatches":0}
+          }
+          path=pathlib.Path("app-data/sacred-art/class-i-source-recovery-20261116.v1.json")
+          path.write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n")
+          print("Recovered",len(items),"exact JPEGs:",manifest["summary"]["source_bytes"],"bytes")
+          PY
+          node tests/sacred-art-gallery.mjs
+          git rm .github/workflows/_temp-class-i-source-recovery-20261116.yml
+          git add app-data/sacred-art/source-masters app-data/sacred-art/class-i-source-recovery-20261116.v1.json
+          git -c user.name='Ad Orientem Source Recovery' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Preserve three exact released Class I Sacred Art originals'
+          git push origin HEAD:feature/sacred-art-class-i-source-recovery-20261116
