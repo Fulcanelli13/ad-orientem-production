@@ -22,9 +22,9 @@ def fetch(url):
   else:
    s=body.decode("utf8","replace")
    for pattern,label in [
-    (r'<meta[^>]+property=["\\']og:image["\\'][^>]+content=["\\']([^"\\']+)',"og_image"),
-    (r'<meta[^>]+name=["\\']twitter:image["\\'][^>]+content=["\\']([^"\\']+)',"twitter_image"),
-    (r'https?://[^"\\'<>\s]{20,150}(?:iiif|image)[^"\\'<>\s]{0,100}',"image_link"),
+    (r"""<meta[^>]+property=["']og:image["'][^>]+content=["']([^"']+)""","og_image"),
+    (r"""<meta[^>]+name=["']twitter:image["'][^>]+content=["']([^"']+)""","twitter_image"),
+    (r"""https?://[^"'<>\s]{20,150}(?:iiif|image)[^"'<>\s]{0,100}""","image_link"),
     (r'"license"\s*:\s*"([^"]{4,200})"',"embedded_license")]:
     m=re.search(pattern,s,re.I)
     if m:out[label]=html.unescape(m.group(1))[:250]
