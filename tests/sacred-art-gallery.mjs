@@ -15,6 +15,7 @@ const batch04 = json('app-data/sacred-art/gallery-image-import-batch04.v1.json')
 const batch05 = json('app-data/sacred-art/gallery-image-import-batch05.v1.json');
 const batch06 = json('app-data/sacred-art/gallery-image-import-batch06.v1.json');
 const batch07 = json('app-data/sacred-art/gallery-image-import-batch07.v1.json');
+const masters = json('app-data/sacred-art/source-master-migration-20261116.v1.json');
 const staged = json('app-data/sacred-art/staged-image-provenance.v1.json');
 const angelus = json('site/prayers/angelus-part-paintings.v1.json');
 const html = read('site/index.html');
@@ -27,9 +28,9 @@ assert.equal(gallery.records.length, 862);
 assert.equal(gallery.counts.total_records, 862);
 assert.equal(gallery.counts.angelus_review_records, 36);
 assert.equal(gallery.counts.unassigned, 611);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings, 49);
-assert.equal(gallery.counts.image_available_records, 51);
-assert.equal(gallery.records.filter(x => x.image !== null).length, 51);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings, 54);
+assert.equal(gallery.counts.image_available_records, 57);
+assert.equal(gallery.records.filter(x => x.image !== null).length, 57);
 assert.equal(gallery.records.filter(x => x.prayer_parts.length).length, 36);
 assert.equal(new Set(gallery.records.map(x => x.id)).size, 862);
 assert.deepEqual(new Set(gallery.records.map(x => x.id)),
@@ -52,8 +53,8 @@ for (const original of angelus.artworks) {
   assert.equal(record.prayer_parts.length,
     angelus.part_artwork_links.filter(x=>x.artwork_id===original.artwork_id).length);
 }
-assert.equal(images.sources.length,49);
-assert.equal(gallery.counts.verified_image_files,49);
+assert.equal(images.sources.length,54);
+assert.equal(gallery.counts.verified_image_files,54);
 const verifiedArchiveOriginalIds = new Set(['CANONICAL::ART-hilippe-de-hampaigne-he-nnunciation','CANONICAL::met-438434','CANONICAL::met-436672']);
 const srcFiles = new Set();
 for (const art of gallery.records) {
@@ -68,7 +69,7 @@ for (const art of gallery.records) {
     'Incorrect image format');
   srcFiles.add('site/'+art.image.src.slice(2));
 }
-assert.equal(srcFiles.size,49);
+assert.equal(srcFiles.size,54);
 for (const entry of images.sources) {
   assert(srcFiles.has(entry.path));
   assert.equal(statSync(resolve(base,entry.path)).size,entry.image_bytes);
@@ -299,6 +300,82 @@ for(const src of batch07.sources){
 }
 assert.equal(batch07.sources.find(x=>x.artwork_id==='REVIEW::smk:KMSSP48').local_dimensions_px[1],1600);
 assert(gallery.records.find(x=>x.id==='REVIEW::smk:KMSSP186').image.provenance.includes('workshop'));
+// Transfer-first historical artwork migration: original files are retained
+// byte for byte outside the Pages bundle; only previously selected work IDs
+// receive gallery derivatives. Never treat research holds as permissions.
+assert.equal(masters.schema,'ao.sacred-art.source-master-migration.v1');
+assert.equal(masters.summary.unique_source_files,23);
+assert.equal(masters.summary.already_preserved,3);
+assert.equal(masters.summary.transferred,11);
+assert.equal(masters.summary.archival_reference_only,8);
+assert.equal(masters.summary.rights_held,1);
+assert.equal(masters.summary.rejected,2);
+assert.equal(masters.summary.missing,2);
+assert.equal(masters.summary.linked_gallery_derivatives_prepared,5);
+assert.equal(masters.summary.linked_gallery_records_prepared,6);
+assert.equal(masters.summary.transferred_original_bytes,71752776);
+const transferred=masters.inventory.filter(x=>x.transfer_status==='PERMANENT_MASTER_TRANSFERRED__PRAYER_PLACEMENT_UNCHANGED');
+const already=masters.inventory.filter(x=>x.transfer_status==='ALREADY_PRESERVED_EXACT_BLOB');
+const archiveHeld=masters.inventory.filter(x=>x.transfer_status==='ARCHIVE_REFERENCE_ONLY_RELEASE_NOT_CERTIFIED');
+const rightsHeld=masters.inventory.filter(x=>x.transfer_status==='HOLD_PHOTOGRAPHIC_RIGHTS_NO_COPY');
+assert.equal(transferred.length,11);
+assert.equal(already.length,3);
+assert.equal(archiveHeld.length,8);
+assert.equal(rightsHeld.length,1);
+assert.equal(new Set(transferred.map(x=>x.source_blob_sha)).size,11);
+for(const x of [...archiveHeld,...rightsHeld]){
+  assert.equal(x.master_path,null,'Rights/photographic holds must not be copied to public repository');
+  assert.equal(x.publish_gallery_derivative,false);
+}
+for(const x of masters.excluded_rejected){
+  assert.equal(x.status,'REJECTED_PHOTOGRAPH_NEVER_COPY');
+  assert(!masters.inventory.some(y=>y.source_blob_sha===x.source_blob_sha));
+}
+for(const x of transferred){
+  assert(x.source_release_pr>0);
+  assert(x.master_path.startsWith('app-data/sacred-art/source-masters/'));
+  assert(!x.master_path.startsWith('site/'));
+  const bin=readFileSync(resolve(base,x.master_path));
+  assert.equal(bin.length,x.transferred_bytes);
+  assert.equal(bin.length,x.expected_bytes);
+  assert.equal(createHash('sha256').update(bin).digest('hex'),x.transferred_source_sha256);
+  assert.equal(createHash('sha1').update('blob '+bin.length+'\0').update(bin).digest('hex'),x.source_blob_sha);
+  if(x.expected_sha256) assert.equal(x.transferred_source_sha256,x.expected_sha256);
+  assert(x.source_pixel_dimensions.every(n=>n>=1000));
+  if(!x.publish_gallery_derivative){
+    assert.deepEqual(x.gallery_artwork_ids,[]);
+    assert.equal(x.gallery_derivative_path,null);
+    continue;
+  }
+  assert(x.gallery_artwork_ids.length>=1&&x.gallery_artwork_ids.length<=2);
+  assert(x.gallery_derivative_path.startsWith('site/gallery/images/legacy-'));
+  const im=readFileSync(resolve(base,x.gallery_derivative_path));
+  assert.equal(im.length,x.derivative_bytes);
+  assert.equal(createHash('sha256').update(im).digest('hex'),x.derivative_sha256);
+  assert.equal(createHash('sha1').update('blob '+im.length+'\0').update(im).digest('hex'),x.derivative_git_blob_sha);
+  assert.equal(Math.max(...x.derivative_pixel_dimensions),2000);
+  const proof=images.sources.find(y=>y.path===x.gallery_derivative_path);
+  assert.equal(proof?.sha256,x.derivative_sha256);
+  assert.equal(proof?.master_image_path,x.master_path);
+  assert.equal(proof?.source_sha256,x.transferred_source_sha256);
+  assert.equal(proof?.release_scope,'GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT');
+  for(const id of x.gallery_artwork_ids){
+    const art=gallery.records.find(z=>z.id===id);
+    assert(art?.owner_selected_artwork);
+    assert.equal(art.image?.src,'./'+x.gallery_derivative_path.slice('site/'.length));
+    assert.equal(art.image?.usage,'GALLERY_IMAGE_ONLY__PRAYER_ASSIGNMENTS_UNCHANGED');
+    assert.equal(art.image?.quality,'UNCROPPED_2000PX_WEBP_FROM_PERMANENT_SOURCE_MASTER');
+    const original=index.artworks.find(z=>z.artwork_id===id);
+    assert.deepEqual(art.exact_prayer_cards,original.owner_approved_exact_card_ids);
+  }
+}
+assert.equal(transferred.filter(x=>x.publish_gallery_derivative).length,5);
+assert.equal(transferred.reduce((n,x)=>n+x.gallery_artwork_ids.length,0),6);
+for(const x of already){
+  assert(x.master_path.startsWith('site/gallery/images/'));
+  const bin=readFileSync(resolve(base,x.master_path));
+  assert.equal(createHash('sha1').update('blob '+bin.length+'\0').update(bin).digest('hex'),x.source_blob_sha);
+}
 assert.equal(images.duplicate_same_original.length,2);
 assert.equal(gallery.records.filter(x=>x.image?.src==='./gallery/images/girardin-trinity-cma-1960-79-2000.webp').length,2);
 assert.equal(images.duplicate_same_original[0].image,'site/gallery/images/champaigne-annunciation-met-438724-original.jpg');
@@ -331,4 +408,4 @@ assert(js.includes('catalogue.records'));
 assert(css.includes('.ao-gallery'));
 assert(css.includes('.home-pad.integrated-home-order>.sacred-art-entry'));
 assert(!html.includes('https://fonts.googleapis.com'),'No remote font dependencies');
-console.log('Sacred Art gallery validated: 862 records, 36 Angelus review paintings, 49 hosted paintings across 51 historical rows, 12 institutional-source Batch 07 files (7 NGA, 5 SMK), rights, hash and prayer-invariant checks passed.');
+console.log('Sacred Art gallery validated: 862 records, 54 displayed paintings / 57 image-bearing rows; 11 byte-exact previously released original JPEGs migrated, five gallery WebPs added, rights/rejected photos excluded; prayer relationships unchanged.');
