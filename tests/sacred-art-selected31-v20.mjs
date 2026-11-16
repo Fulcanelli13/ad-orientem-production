@@ -22,11 +22,14 @@ assert.equal(catalogue.counts.distinct_locally_hosted_paintings,provenance.local
 assert.equal(before.records.length,31);
 assert.equal(after.records.length,31);
 assert.equal(after.schema,'ao.sacred-art.selected31-clearance.v20');
-assert.deepEqual(after.counts,{main_preserved:5,overlay_eligible:8,source_only_holds:18});
+assert.deepEqual(after.counts,{main_preserved:6,overlay_eligible:8,source_only_holds:17});
 assert.deepEqual(new Set(after.records.map(r=>r.review_artwork_id)),new Set(before.records.map(r=>r.review_artwork_id)));
 const changed=after.records.filter(row=>row.disposition!==before.records.find(x=>x.review_artwork_id===row.review_artwork_id)?.disposition);
-assert.deepEqual(changed.map(x=>x.review_artwork_id),['cana-vermeyen']);
-assert.equal(changed[0].disposition,'DRAFT_GALLERY_ELIGIBLE');
+assert.deepEqual(changed.map(x=>x.review_artwork_id).sort(),['cana-vermeyen','trans-raphael']);
+assert.equal(changed.find(x=>x.review_artwork_id==='cana-vermeyen').disposition,'DRAFT_GALLERY_ELIGIBLE');
+assert.equal(changed.find(x=>x.review_artwork_id==='trans-raphael').disposition,'CURRENT_MAIN_PRESERVE');
+assert.equal(changed.find(x=>x.review_artwork_id==='trans-raphael').gallery_record_id,'RELEASED::class-i-2026:vatican-mv-40333');
+assert(existsSync(file(changed.find(x=>x.review_artwork_id==='trans-raphael').gallery_image_file)));
 assert.equal(acquisitions.acquired_count,1);
 assert.equal(acquisitions.held_count,2);
 assert.deepEqual(acquisitions.holds.map(x=>x.review_artwork_id).sort(),['cana-francken','tri-dolci']);
@@ -71,4 +74,4 @@ assert(!existsSync(file('site/gallery/images/selected31-v14-bap-verrocchio-2000.
 assert(!existsSync(file('site/gallery/images/selected31-v14-cana-vermeyen-2000.webp')));
 assert.equal(873+7,880);
 assert.equal(catalogue.counts.distinct_locally_hosted_paintings+8,provenance.local_image_count+8);
-console.log('V20 gallery QA passed: 31 selections, 8 draft gallery candidates, 18 held, 5 existing, one exact Rijksmuseum 4000px upgrade and no prayer changes');
+console.log('V20 gallery QA passed: 31 selections, 8 draft gallery candidates, 17 held, 6 existing, one exact Rijksmuseum 4000px upgrade and no prayer changes');
