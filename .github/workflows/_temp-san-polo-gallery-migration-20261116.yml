@@ -1,0 +1,33 @@
+name: Temporary San Polo released 14-photo gallery migration
+on:
+  push:
+    branches:
+      - feature/san-polo-14-gallery-migration-20261116
+    paths:
+      - .github/workflows/_temp-san-polo-gallery-migration-20261116.yml
+permissions:
+  contents: write
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Recover exact 14 already released photos and bind to Gallery
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/migrate-san-polo-gallery-20261116.py
+          node --check site/gallery/gallery.js
+          node tests/sacred-art-gallery.mjs
+          node tests/sacred-art-class-i-sources.mjs
+          node tests/production-shell.mjs
+          node tools/validate-prayer-artwork-assets.mjs
+          node tests/prayer-artwork-activation.mjs
+          node tests/angelus-part-artwork-coverage.mjs
+          test "$(find site/gallery/images -maxdepth 1 -name 'san-polo-station-*.webp' | wc -l)" -eq 14
+          git rm .github/workflows/_temp-san-polo-gallery-migration-20261116.yml
+          git add site/gallery app-data/sacred-art/san-polo-released-cycle-migration.v1.json tests/sacred-art-gallery.mjs tests/sacred-art-class-i-sources.mjs
+          git -c user.name='Ad Orientem Sacred Art Migration' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Migrate fourteen previously released Tiepolo San Polo paintings into permanent gallery'
+          git push origin HEAD:feature/san-polo-14-gallery-migration-20261116
