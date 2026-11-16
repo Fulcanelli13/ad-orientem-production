@@ -9,6 +9,9 @@ const wave04=json('app-data/sacred-art/selected-museum-image-wave04-20261116.v1.
 const n04=wave04.summary.new_gallery_paintings;
 const wave05=json('app-data/sacred-art/curated-cohort-image-wave05-20261116.v1.json');
 const n05=wave05.summary.new_gallery_images;
+const quality06=json('app-data/sacred-art/quality-recovery-wave06-20261116.v1.json');
+const n06=quality06.summary.new_gallery_paintings;
+const quality06IDs=new Set(quality06.artworks.map(a=>a.artwork_id));
 const first=json('app-data/sacred-art/bulk-commons-photo-import-20261116.v1.json');
 const gallery=json('site/gallery/catalogue.v1.json');
 const prov=json('site/gallery/image-provenance.v1.json');
@@ -30,12 +33,12 @@ const n=wave.assets.length;
 assert(n<=49);
 assert.equal(gallery.records.length,873);
 assert.equal(gallery.counts.total_records,873);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings,343+n+n04+n05);
-assert.equal(gallery.counts.image_available_records,346+n+n04+n05);
-assert.equal(gallery.counts.verified_image_files,343+n+n04+n05);
-assert.equal(prov.sources.length,343+n+n04+n05);
-assert.equal(prov.local_image_count,343+n+n04+n05);
-assert.equal(prov.catalogue_record_images_count,346+n+n04+n05);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings,343+n+n04+n05+n06);
+assert.equal(gallery.counts.image_available_records,346+n+n04+n05+n06);
+assert.equal(gallery.counts.verified_image_files,343+n+n04+n05+n06);
+assert.equal(prov.sources.length,343+n+n04+n05+n06);
+assert.equal(prov.local_image_count,343+n+n04+n05+n06);
+assert.equal(prov.catalogue_record_images_count,346+n+n04+n05+n06);
 assert.equal(first.assets.length,161);
 assert.equal(prior.assets.length,109);
 assert.equal(source.artworks.length,862);
@@ -77,7 +80,8 @@ for(const h of wave.held){
  assert(holds.has(h.artwork_id));
  assert(!ids.has(h.artwork_id));
  const rec=gallery.records.find(r=>r.id===h.artwork_id);
- assert(rec && rec.image===null);
+  if(quality06IDs.has(h.artwork_id))assert(rec && rec.image && rec.image.src.includes('owner-selected-quality-upgrade-'));
+  else assert(rec && rec.image===null);
 }
 assert.equal(audit.schema,'ao.sacred-art.bulk-gallery-museum-candidate-inventory.v1');
 assert.equal(audit.counts.catalogue_records,873);

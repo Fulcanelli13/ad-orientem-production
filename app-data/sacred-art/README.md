@@ -69,3 +69,7 @@ Exact owner-selected source-file and institutional collection verification produ
 ### Historical OWNER_APPROVED_CURATED acquisition, wave 05
 
 The 84 previously missed original owner-approved RECENT575 artworks had a different but valid historical curated status from the earlier 491 source batch. All 84 were processed in one exact-file Commons image qualification sweep, 38 permanent local WebPs were added, and 46 unsupported image-source cases were held with per-file reasons. Current gallery: 467 paintings, 470 image-bearing catalogue records, original 873 catalogue identities and 54 historical source-master JPEGs unchanged. New display WebPs are not original full-resolution photo masters. Details: curated-cohort-image-wave05-20261116.v1.json.
+
+### Full source-quality inventory and verified high-resolution recovery wave06
+
+**182** previously held, approved artworks were each re-evaluated from original source rights and quality evidence, not from title matching. Exactly 5 new locally hosted WebP images were admitted; 177 remain documented quality, museum image identity, license, or source access holds. Gallery total: 472 physical image files, 475 image-bearing record links, 873 unchanged artwork identities. Neither original source-master bank (54 JPEGs) nor prayer/Calendar assignments changed.

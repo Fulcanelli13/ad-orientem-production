@@ -28,6 +28,9 @@ const wave04=load('app-data/sacred-art/selected-museum-image-wave04-20261116.v1.
 const n04=wave04.summary.new_gallery_paintings;
 const wave05=load('app-data/sacred-art/curated-cohort-image-wave05-20261116.v1.json');
 const n05=wave05.summary.new_gallery_images;
+const quality06=load('app-data/sacred-art/quality-recovery-wave06-20261116.v1.json');
+const n06=quality06.summary.new_gallery_paintings;
+const quality06IDs=new Set(quality06.artworks.map(a=>a.artwork_id));
 assert(n>=40 && n<=180,'Second batch must transfer more than a handful of images');
 assert.equal(current.assets.length,n);
 assert.equal(current.held.length+n,330);
@@ -39,12 +42,12 @@ assert.equal(current.summary.original_curatorial_records_unchanged,873);
 assert.equal(current.summary.catalogue_total_records,873);
 assert.equal(gallery.records.length,873);
 assert.equal(gallery.counts.total_records,873);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings,234+n+n03+n04+n05);
-assert.equal(gallery.counts.image_available_records,237+n+n03+n04+n05);
-assert.equal(gallery.counts.verified_image_files,234+n+n03+n04+n05);
-assert.equal(prov.sources.length,234+n+n03+n04+n05);
-assert.equal(prov.local_image_count,234+n+n03+n04+n05);
-assert.equal(prov.catalogue_record_images_count,237+n+n03+n04+n05);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings,234+n+n03+n04+n05+n06);
+assert.equal(gallery.counts.image_available_records,237+n+n03+n04+n05+n06);
+assert.equal(gallery.counts.verified_image_files,234+n+n03+n04+n05+n06);
+assert.equal(prov.sources.length,234+n+n03+n04+n05+n06);
+assert.equal(prov.local_image_count,234+n+n03+n04+n05+n06);
+assert.equal(prov.catalogue_record_images_count,237+n+n03+n04+n05+n06);
 assert.equal(gallery.source_references.bulk_approved_commons,
   'app-data/sacred-art/bulk-commons-photo-import-20261116.v1.json');
 assert.equal(gallery.source_references.bulk_approved_commons_batch02,
@@ -126,8 +129,11 @@ for(const held of current.held){
   assert(held.detail.includes('HTTP Error 429'));
   assert(r && r.image && r.image.src.includes('owner-approved-20261103-'),
    'Previously held source may show only after independent wave03 exact-photo verification');
- }else{
-  assert(r && r.image===null,'Unresolved historical hold remains unpublished');
+  }else if(quality06IDs.has(held.artwork_id)){
+   assert(['BELOW_FULL_COMPOSITION_QUALITY_FLOOR','EXTREME_ASPECT_RATIO_OR_DIMENSIONS','IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED'].includes(held.reason));
+   assert(r && r.image && r.image.src.includes('owner-selected-quality-upgrade-'));
+  }else{
+   assert(r && r.image===null,'Unresolved historical hold remains unpublished');
  }
 }
 const restricted=rejected.rejected_originals.map(x=>
