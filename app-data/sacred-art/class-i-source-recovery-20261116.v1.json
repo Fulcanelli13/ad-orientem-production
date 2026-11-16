@@ -1,0 +1,71 @@
+{
+  "schema": "ao.sacred-art.class-i-legacy-exact-source-recovery.v1",
+  "date": "2026-11-16",
+  "scope": "Already owner-selected and released old Home Class I originals only; no new painting selections, no gallery or prayer-card activation.",
+  "photo_rights_policy": "Preserve exact old release caveats. No assertion that Commons PD-Art, old release, or this migration resolves all jurisdictional photographic rights.",
+  "sources": [
+    {
+      "name": "Giovanni Lanfranco — Miracle of Loaves and Fishes",
+      "date": "2026-03-15",
+      "place": "National Gallery of Ireland NGI.72",
+      "source_git_sha": "26aaf88956e0624881aaa611295c6c9334753b37",
+      "source_sha256": "f9a4b9f5f180138b438c61da836ac176a21b9162e736da7372c07e5ea6f74ffa",
+      "source_bytes": 947637,
+      "pixels": [
+        1285,
+        683
+      ],
+      "historical_release_pr": 2861,
+      "rights": "Commons PD-Art faithful reproduction; jurisdictional photo-rights caveat. Low-resolution historical Web Gallery of Art image, not NGI museum original.",
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/home/class-i-2026/lanfranco-ngi72-miracle-original.jpg",
+      "source_master_path": "app-data/sacred-art/source-masters/26aaf88956e0624881aaa611295c6c9334753b37.jpg",
+      "status": "EXACT_SOURCE_PRESERVED__NOT_PUBLISHED__NO_NEW_GALLERY_ASSIGNMENT",
+      "gallery_activation": false
+    },
+    {
+      "name": "Raphael — The Transfiguration",
+      "date": "2026-03-01",
+      "place": "Vatican Museums MV.40333",
+      "source_git_sha": "a5b060eda8b9a6eba6c8e2f1a5c92d2bdd341785",
+      "source_sha256": "1f61791a23d3ba16f25e953f7d17c0a7e1c2fdf967b26f041bee546ebf22601a",
+      "source_bytes": 5205139,
+      "pixels": [
+        3737,
+        5691
+      ],
+      "historical_release_pr": 2857,
+      "rights": "Commons PD-Art faithful 2D reproduction of historical art-book scan, not Vatican photographic master. Jurisdictional photo-rights caveat.",
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/home/class-i-2026/raphael-transfiguration-vatican-original.jpg",
+      "source_master_path": "app-data/sacred-art/source-masters/a5b060eda8b9a6eba6c8e2f1a5c92d2bdd341785.jpg",
+      "status": "EXACT_SOURCE_PRESERVED__NOT_PUBLISHED__NO_NEW_GALLERY_ASSIGNMENT",
+      "gallery_activation": false
+    },
+    {
+      "name": "Henry Ossawa Tanner — Nicodemus",
+      "date": "2026-05-25",
+      "place": "Pennsylvania Academy of the Fine Arts 1900.1",
+      "source_git_sha": "0b18c483a56493d0d1218e26abd558ef74575ddf",
+      "source_sha256": "ae83598cb8b73115cd5e42f477c342eb22fc181368f51f78e00de0cfee6c0e72",
+      "source_bytes": 5285928,
+      "pixels": [
+        2400,
+        2100
+      ],
+      "historical_release_pr": 2852,
+      "rights": "Commons PD-Art/PDM faithful reproduction; artwork no known copyright restrictions, but PAFA photographer Barbara Katus/EXIF asserts institutional photo copyright. Territorial photographic-rights caveat retained.",
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/home/class-i-2026/tanner-nicodemus-1899-pafa-1900-1-original.jpg",
+      "source_master_path": "app-data/sacred-art/source-masters/0b18c483a56493d0d1218e26abd558ef74575ddf.jpg",
+      "status": "EXACT_SOURCE_PRESERVED__NOT_PUBLISHED__NO_NEW_GALLERY_ASSIGNMENT",
+      "gallery_activation": false
+    }
+  ],
+  "summary": {
+    "distinct_jpegs": 3,
+    "source_bytes": 11438704,
+    "sha256_failures": 0,
+    "git_blob_mismatches": 0
+  }
+}
