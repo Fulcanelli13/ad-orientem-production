@@ -4,8 +4,8 @@
   "policy": "Do not infer gallery publication rights from mere acquisition, photo licensing or old-master public-domain status. Exact owner identity, museum reuse rules and composition must pass independently. No prayer-card approval.",
   "main_baseline": {
     "records": 873,
-    "distinct_images": 429,
-    "commit": "2dd82e687329a99c7d4d7410bc5956920bd8e3ec"
+    "distinct_images": 467,
+    "commit": "bcb6b128740b570580cb673c59bf6abc691551e3"
   },
   "counts": {
     "main_preserved": 7,
@@ -778,6 +778,8 @@
     "no_prayer_assignments": true,
     "remainder_under_rights_or_quality_hold": 15,
     "prior_429_gallery_source_count": 429,
-    "producer_credit": "Nationalmuseum Stockholm, NM 7504; photo as identified by exact Commons file"
+    "producer_credit": "Nationalmuseum Stockholm, NM 7504; photo as identified by exact Commons file",
+    "current_gallery_source_count": 467,
+    "new_wave05_source_screen": "Wave05 added 38 existing owner-selected photographs; no exact original-source match to the 15 remaining selected31 holds detected."
   }
 }
