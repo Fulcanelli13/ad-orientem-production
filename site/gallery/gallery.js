@@ -163,6 +163,8 @@
         "Historical or research catalogue record; approval scope preserved"));
     if (item.image?.provenance) inside.append(detailMeta("Image provenance:",item.image.provenance));
     if (item.image?.scene_use_note) inside.append(detailMeta("Scene context:",item.image.scene_use_note));
+    if (item.image?.source_note) inside.append(detailMeta("Photo reuse caveat:",item.image.source_note));
+    if (item.calendar_placements?.length) inside.append(detailMeta("Approved 2026 Calendar date:",item.calendar_placements.map(x=>x.date+" · "+x.occasion).join("; ")));
     if (item.image?.photographer) inside.append(detailMeta("Photograph:",item.image.photographer));
     if (item.image?.adaptation) inside.append(detailMeta("Adaptation:",item.image.adaptation));
     if (item.image?.license_url) {
@@ -218,7 +220,7 @@
         const data = await response.json();
         if (data.schema !== "ao.sacred-art.gallery.v1" ||
             data.records?.length !== data.counts?.total_records ||
-            data.records?.length !== 870) throw new Error("Invalid artwork catalogue");
+            data.records?.length !== 873) throw new Error("Invalid artwork catalogue");
         const ids = new Set();
         for (const art of data.records) {
           if (!art.id || ids.has(art.id) ||

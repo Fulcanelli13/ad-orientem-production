@@ -15,12 +15,12 @@ assert.equal(transfer.summary.new_records_for_previously_selected_works,8);
 assert.equal(transfer.summary.new_prayer_defaults,0);
 assert.equal(transfer.summary.sha256_failures,0);
 assert.equal(transfer.summary.blob_sha_failures,0);
-assert.equal(gallery.records.length,870);
-assert.equal(gallery.counts.total_records,870);
-assert.equal(gallery.counts.image_available_records,73);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings,70);
-assert.equal(gallery.counts.verified_image_files,70);
-assert.equal(provenance.sources.length,70);
+assert.equal(gallery.records.length,873);
+assert.equal(gallery.counts.total_records,873);
+assert.equal(gallery.counts.image_available_records,76);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings,73);
+assert.equal(gallery.counts.verified_image_files,73);
+assert.equal(provenance.sources.length,73);
 assert.equal(historical.artworks.length,862);
 for(const old of historical.artworks){
   const work=gallery.records.find(x=>x.id===old.artwork_id);
