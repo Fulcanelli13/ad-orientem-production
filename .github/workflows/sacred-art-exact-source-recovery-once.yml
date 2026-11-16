@@ -1,111 +1,24 @@
-name: One-time exact historic source-photo bulk recovery
+name: One-time exact source-photo recovery integrity verification
 on:
   push:
     branches: [feature/sacred-art-recover-40-source-photos-20261116]
     paths: [.github/workflows/sacred-art-exact-source-recovery-once.yml]
 permissions:
-  contents: write
+  contents: read
 jobs:
-  recover:
+  verify:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
-      - name: Recover exact earlier museum JPEG bytes and pinned legacy masters
+      - name: Check 40 source file hashes and existing art/prayer invariants
         shell: bash
         run: |
           set -euo pipefail
-          python3 -m pip install --quiet Pillow
-          python3 - <<'PY'
-          import concurrent.futures,hashlib,io,json,os,time,urllib.request,urllib.parse
-          from pathlib import Path
-          from PIL import Image,ImageOps
-          path=Path('app-data/sacred-art/source-photo-recovery-20261116.v1.json')
-          ledger=json.loads(path.read_text())
-          assert ledger['schema']=='ao.sacred-art.exact-source-photograph-recovery.v1'
-          entries=ledger['sources']
-          assert len(entries)==40
-          assert len({x['source_git_blob_sha'] for x in entries})==40
-          assert sum(x['source_bytes'] for x in entries)==200662829
-          old=Path('app-data/sacred-art/source-masters')
-          old.mkdir(parents=True,exist_ok=True)
-          def get_one(item):
-            url=item['source_url']
-            host=(urllib.parse.urlparse(url).hostname or '').lower()
-            if item['origin']=='PRIOR_MUSEUM_SOURCE_IMPORT':
-              allowed={'openaccess-cdn.clevelandart.org','images.metmuseum.org','api.nga.gov','api.smk.dk'}
-            else:
-              allowed={'raw.githubusercontent.com'}
-            assert host in allowed,'Unexpected historic source host '+host
-            assert item['source_master_path']==f"app-data/sacred-art/source-masters/{item['source_git_blob_sha']}.jpg"
-            assert item['status'].endswith('PENDING_BYTE_EXACT_RECOVERY') or item['status'].endswith('PENDING_BYTE_EXACT_TRANSFER')
-            last=None;data=None
-            for n in range(3):
-              try:
-                req=urllib.request.Request(url,headers={'User-Agent':'AdOrientemExistingSourceArchiveRecovery/1.0'})
-                with urllib.request.urlopen(req,timeout=120) as r:
-                  data=r.read()
-                break
-              except Exception as e:
-                last=e
-                time.sleep(n+1)
-            if data is None:raise RuntimeError('Unreachable historical source: '+str(last))
-            assert len(data)==item['source_bytes'],f"Source changed bytes: expected {item['source_bytes']}, got {len(data)}"
-            blob=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\x00'+data).hexdigest()
-            assert blob==item['source_git_blob_sha'],'Historical Git blob hash does not match exact bytes'
-            sha256=hashlib.sha256(data).hexdigest()
-            if item['source_sha256'] is not None:
-              assert sha256==item['source_sha256'],'Historical source SHA256 does not match downloaded bytes'
-            with Image.open(io.BytesIO(data)) as im:
-              im.load()
-              im=ImageOps.exif_transpose(im)
-              dims=list(im.size)
-              assert im.format in ('JPEG',None),'Expected JPEG image source, do not substitute another format'
-              assert min(dims)>=500,'Source image too small or corrupt'
-              if item['source_pixels'] is not None:
-                assert dims==item['source_pixels'],f'Unexpected source dimensions {dims} vs {item["source_pixels"]}'
-            target=Path(item['source_master_path'])
-            assert not target.exists(),'Do not overwrite any existing original'
-            temp=target.with_suffix('.pending')
-            temp.write_bytes(data)
-            os.replace(temp,target)
-            return {'source_sha256':sha256,'pixels':dims,'bytes':len(data),'git_blob_sha':blob}
-          def worker(idx):
-            x=entries[idx]
-            try: return idx,get_one(x),None
-            except Exception as e: return idx,None,str(e)
-          with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
-            jobs=list(pool.map(worker,range(len(entries))))
-          successes=0;failed=0;total=0
-          for idx,result,error in jobs:
-            item=entries[idx]
-            if result is None:
-              failed+=1
-              item['status']='BLOCKED_SOURCE_UNAVAILABLE_OR_CHANGED__NO_FILE_COMMITTED'
-              item['recovery_error']=error[:800]
-              print('HELD',item['artwork_id'],error,flush=True)
-            else:
-              successes+=1;total+=result['bytes']
-              item['status']='RECOVERED_EXACT_BYTES__PERMANENT_SOURCE_MASTER_NOT_PAGES'
-              item['recovered_source_sha256']=result['source_sha256']
-              item['recovered_source_git_blob_sha']=result['git_blob_sha']
-              item['recovered_bytes']=result['bytes']
-              item['recovered_pixel_dimensions']=result['pixels']
-              print('RECOVERED',item['artwork_id'],result['bytes'],'bytes',flush=True)
-          assert successes>=10,'Insufficient exact-source recoveries; do not publish incomplete bulk transfer'
-          ledger['result_summary']={
-            'source_entries':40,'success_count':successes,'held_count':failed,
-            'recovered_original_bytes':total,'previous_museum_source_originals':sum(x['origin']=='PRIOR_MUSEUM_SOURCE_IMPORT' and x['status'].startswith('RECOVERED_') for x in entries),
-            'recovered_legacy_originals':sum(x['origin']=='LEGACY_RESEARCH_MAIN_RELEASE_ORIGINAL' and x['status'].startswith('RECOVERED_') for x in entries),
-            'display_images_changed':0,'artwork_records_changed':0,'prayer_assignments_changed':0
-          }
-          path.write_text(json.dumps(ledger,indent=2,ensure_ascii=False)+'\n')
-          print('RECOVERY_SUMMARY',json.dumps(ledger['result_summary']),flush=True)
-          PY
-          git add app-data/sacred-art/source-masters/ app-data/sacred-art/source-photo-recovery-20261116.v1.json
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if ! git diff --cached --quiet; then
-            git commit -m "Recover existing museum source photographs by exact recorded hashes"
-            git push origin "HEAD:$GITHUB_REF_NAME"
-          fi
+          node --check site/gallery/gallery.js
+          node tests/sacred-art-gallery.mjs
+          node tests/production-shell.mjs
+          node tools/validate-prayer-artwork-assets.mjs
+          node tests/prayer-artwork-activation.mjs
+          node tests/angelus-a1-donor-crosswalk.mjs
+          node tests/angelus-part-artwork-coverage.mjs
