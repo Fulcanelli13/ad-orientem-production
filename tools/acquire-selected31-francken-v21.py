@@ -37,6 +37,7 @@ for lane,u in URLS:
         im.thumbnail((2000,2000),Image.Resampling.LANCZOS)
         buf=io.BytesIO();im.save(buf,"WEBP",quality=89,method=6)
         webp=buf.getvalue();outdims=[im.width,im.height]
+      if lane=="commons_original" and hashlib.sha1(b).hexdigest()!=EXPECTED_SHA1:raise RuntimeError("Commons expected SHA1 mismatch")
       source=OUT/"cana-francken-source.jpg";derived=OUT/"cana-francken-2000.webp"
       source.write_bytes(b);derived.write_bytes(webp)
       record={
@@ -57,7 +58,6 @@ for lane,u in URLS:
        "identity_gate":"NATIONALMUSEUM_NM7504_EXACT_OBJECT",
        "quality_gate":"FULL_FRAME_1920PX_OR_ABOVE__VISUAL_QA_PENDING",
        "status":"SOURCE_ARCHIVE_ONLY__NO_APP_OR_PRAYER_BINDING"}
-      if lane=="commons_original" and record["source_sha1"]!=EXPECTED_SHA1:raise RuntimeError("Commons expected SHA1 mismatch")
       print("ACQUIRED",lane,dims,outdims,record["source_sha256"],flush=True)
       break
     except Exception as e:
