@@ -1,0 +1,33 @@
+name: Temporary exact-source devotional art recovery
+on:
+  push:
+    branches:
+      - feature/devotional-released-asset-recovery-20261116
+    paths:
+      - .github/workflows/_temp-devotional-art-recovery-20261116.yml
+permissions:
+  contents: write
+jobs:
+  recover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Recover previously selected source files and validate existing gallery
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 tools/migrate-devotional-released-art-20261116.py
+          node --check site/gallery/gallery.js
+          node tests/sacred-art-gallery.mjs
+          node tests/sacred-art-san-polo.mjs
+          node tests/sacred-art-class-i-sources.mjs
+          node tools/validate-prayer-artwork-assets.mjs
+          node tests/prayer-artwork-activation.mjs
+          node tests/angelus-part-artwork-coverage.mjs
+          node tests/production-shell.mjs
+          git rm .github/workflows/_temp-devotional-art-recovery-20261116.yml
+          git add site/gallery app-data/sacred-art/devotional-asset-recovery-20261116.v1.json app-data/sacred-art/devotional-portraits tests/sacred-art-gallery.mjs tests/sacred-art-san-polo.mjs
+          git -c user.name='Ad Orientem Sacred Art Migration' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Preserve prior Mystic Lamb, Murillo and St Therese devotional photos'
+          git push origin HEAD:feature/devotional-released-asset-recovery-20261116
