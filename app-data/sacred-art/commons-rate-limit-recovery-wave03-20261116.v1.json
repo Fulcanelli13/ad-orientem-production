@@ -1,0 +1,1605 @@
+{
+  "schema": "ao.sacred-art.bulk-commons-rate-limit-recovery.v1",
+  "date": "2026-11-16",
+  "source_batch02": "app-data/sacred-art/bulk-commons-photo-import-batch02-20261116.v1.json",
+  "only_prior_429_items": 49,
+  "small_image_held": 2,
+  "rate_limit_policy": "Sequential, 2.3s between image fetches; if Wikimedia Commons returns HTTP 429, immediately stop further image downloads rather than bypass or rotate request identity.",
+  "assets": [
+    {
+      "artwork_id": "RECENT575::109",
+      "title": "Dutch: De visitatielabel QS:Lnl,\"De visitatie\"",
+      "artist": "Erasmus Quellinus II",
+      "source_page": "https://commons.wikimedia.org/wiki/File:De_visitatie_-_Erasmus_Quellinus_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:De visitatie - Erasmus Quellinus - Musea Brugge - 1.jpg",
+      "commons_pageid": 189964794,
+      "commons_sha1": "e6a77ac49a8fdedda842e5fa2974626f811d48e5",
+      "original_dimensions": [
+        1495,
+        2000
+      ],
+      "downloaded_bytes": 278106,
+      "downloaded_sha256": "97c02b532413245f2346cacb3b131f19a1bd83fb41329cdcc8126737c718b2de",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-109.webp",
+      "derivative_bytes": 116206,
+      "derivative_sha256": "b128ab56989e74a5fa3a82d7da075b3cf589b5b8dfda83722ea14ebe8015ec64",
+      "derivative_git_blob_sha": "fed389dbe08c890a95bd3241c8d4d737eaa39dfe",
+      "derivative_dimensions": [
+        1196,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0040857000",
+        "artist": "erasmus quellinus ii"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::110",
+      "title": "Doornenkroning",
+      "artist": "Jacob van Oost",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Doornenkroning_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Doornenkroning - Jacob van Oost - Musea Brugge - 1.jpg",
+      "commons_pageid": 189972449,
+      "commons_sha1": "2e975bb7acbf1c711f419535126dc7d9abdfaa88",
+      "original_dimensions": [
+        1440,
+        2000
+      ],
+      "downloaded_bytes": 265170,
+      "downloaded_sha256": "f9c502b532502fbebccb6ef4fc12134673231188665f1f401177b735e5abb284",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-110.webp",
+      "derivative_bytes": 122194,
+      "derivative_sha256": "c1c50d2712fac94f708f0f51c716fee622c5967a1d0528b1e47e19e96d19ad62",
+      "derivative_git_blob_sha": "5b990cf4527431377eba9bcc617451ce910d82f5",
+      "derivative_dimensions": [
+        1152,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0040103000",
+        "artist": "jacob van oost"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::114",
+      "title": "Heilige Antonius wekt een dode terug tot leven",
+      "artist": "Jacob van Oost",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Heilige_Antonius_wekt_een_dode_terug_tot_leven_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Heilige Antonius wekt een dode terug tot leven - Jacob van Oost - Musea Brugge - 1.jpg",
+      "commons_pageid": 189972459,
+      "commons_sha1": "26e72316e47b69e8e3d695869c3f33543ec0a737",
+      "original_dimensions": [
+        1075,
+        2000
+      ],
+      "downloaded_bytes": 263553,
+      "downloaded_sha256": "830747a5ffcfaa2e5bb30f5ef9af531369d1988e515952e364b0d074b7ed6dc3",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-114.webp",
+      "derivative_bytes": 139362,
+      "derivative_sha256": "fb9c6264e58b521d54e293589a1a8c44be9819fb3c4d94234a2f618aa22375fd",
+      "derivative_git_blob_sha": "fd03060f211c7c8f19965011739bde3055897085",
+      "derivative_dimensions": [
+        860,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0040431001",
+        "artist": "jacob van oost"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::123",
+      "title": "Heilige Drievuldigheid",
+      "artist": "Artus Wolffort",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Heilige_Drievuldigheid_-_Artus_Wolffort_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Heilige Drievuldigheid - Artus Wolffort - Musea Brugge - 1.jpg",
+      "commons_pageid": 188661092,
+      "commons_sha1": "7f74969d00c5aa81fc922c292cc4ffa2e1b219dc",
+      "original_dimensions": [
+        1406,
+        2000
+      ],
+      "downloaded_bytes": 296162,
+      "downloaded_sha256": "4167f214db9db7fdd9fa1a429815cddae0fb746e5fd8abc72fdd892d17fa7f72",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-123.webp",
+      "derivative_bytes": 150910,
+      "derivative_sha256": "4a198c4831152846341d1c0861b8f95900e620df0c93c908787fb5c4d7caefa1",
+      "derivative_git_blob_sha": "b64fe4c9d34a0e3c8635e7652f8b269647de3d5f",
+      "derivative_dimensions": [
+        1125,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0040177000",
+        "artist": "artus wolffort"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::124",
+      "title": "Dutch: Heilige Antoniuslabel QS:Lnl,\"Heilige Antonius\"",
+      "artist": "B. Clerebau",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Heilige_Antonius_-_B._Clerebau_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Heilige Antonius - B. Clerebau - Musea Brugge - 1.jpg",
+      "commons_pageid": 189962098,
+      "commons_sha1": "c4e2422a1bc121df5c3bfa795de8eb220af0c4f0",
+      "original_dimensions": [
+        1386,
+        2000
+      ],
+      "downloaded_bytes": 491762,
+      "downloaded_sha256": "64850142df8e0ea16f8b88d3da5e4ebc3acfc49eeecdcf857c8054da5c6adffb",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-124.webp",
+      "derivative_bytes": 334538,
+      "derivative_sha256": "c4140f736c53bbfffb1dde0f6ced49a88bbed6d94bb8a75f8b7116f262a6016f",
+      "derivative_git_blob_sha": "03e937cda0142ed52536240d239e291b7836dd14",
+      "derivative_dimensions": [
+        1109,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0044080000",
+        "artist": "b. clerebau"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::125",
+      "title": "Dutch: Heilige Brunolabel QS:Lnl,\"Heilige Bruno\"",
+      "artist": "Bruno Van Hollebeke",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Heilige_Bruno_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Heilige Bruno - Bruno Van Hollebeke - Musea Brugge - 1.jpg",
+      "commons_pageid": 189962271,
+      "commons_sha1": "988a564167c7840a25d6346998ee7c1566474069",
+      "original_dimensions": [
+        1489,
+        2000
+      ],
+      "downloaded_bytes": 313623,
+      "downloaded_sha256": "5e1f69ea932fc37941f986f34022866033e1a8b0c55fbe1b0e8dd0486a486e20",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-125.webp",
+      "derivative_bytes": 168586,
+      "derivative_sha256": "63a151999c4719cc89921604eef5efd5b702f3a5e6d1543598984996098b57a7",
+      "derivative_git_blob_sha": "5406841e6ad25da793a42ff49742dfb6ed5b3caa",
+      "derivative_dimensions": [
+        1191,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0041049001",
+        "artist": "bruno van hollebeke"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::126",
+      "title": "Heilige Catharina van Siena in extase",
+      "artist": "Jozef van den Kerckhove",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Heilige_Catharina_van_Siena_in_extase_-_Joseph_van_den_Kerckhove_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Heilige Catharina van Siena in extase - Joseph van den Kerckhove - Musea Brugge - 1.jpg",
+      "commons_pageid": 189979501,
+      "commons_sha1": "eb5068cb53d463daadc5cd57c86257d285490ebf",
+      "original_dimensions": [
+        1369,
+        2000
+      ],
+      "downloaded_bytes": 230978,
+      "downloaded_sha256": "40df4d9708825fe1e551df0628e70d67353c875b30cb417ad765a297eb8a5133",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-126.webp",
+      "derivative_bytes": 101856,
+      "derivative_sha256": "a780d54d6972f9aa14fae9fdafd1d15cb34bc843205e5808c53ac2b17ed4ec1f",
+      "derivative_git_blob_sha": "70363639bfb1c3ad893adfab4017d51e41deab6b",
+      "derivative_dimensions": [
+        1095,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0043645000",
+        "artist": "jozef van den kerckhove"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::129",
+      "title": "Dutch: Heilige Hiëronymuslabel QS:Lnl,\"Heilige Hiëronymus\"",
+      "artist": "Bruno Van Hollebeke",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Heilige_Hieronymus_-_Bruno_Van_Hollebeke_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Heilige Hieronymus - Bruno Van Hollebeke - Musea Brugge - 1.jpg",
+      "commons_pageid": 189962283,
+      "commons_sha1": "1920031f90efd3d77ffe8981fc299af14d17fb12",
+      "original_dimensions": [
+        1635,
+        2000
+      ],
+      "downloaded_bytes": 459460,
+      "downloaded_sha256": "ada2f4ede191faad96ee662e0fa1d9e86971b859cdfdc6dd4aec45757f5fd2e9",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-129.webp",
+      "derivative_bytes": 264298,
+      "derivative_sha256": "5a950bfc1dafb4a87096b6e236d7510cce967b47ff1f97b3461b6d15f58e4957",
+      "derivative_git_blob_sha": "ac7f6a3ec84353f9170df6560ace934eab3a48a7",
+      "derivative_dimensions": [
+        1308,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0041048000",
+        "artist": "bruno van hollebeke"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::130",
+      "title": "Dutch: Het kind Jezus, de heerlijkheid van Godlabel QS:Lnl,\"Het kind Jezus, de heerlijkheid van God\"",
+      "artist": "Jacob van Oost",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Het_kind_Jezus,_de_heerlijkheid_van_God_-_Jacob_de_Oude_Van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Het kind Jezus, de heerlijkheid van God - Jacob de Oude Van Oost - Musea Brugge - 1.jpg",
+      "commons_pageid": 186993925,
+      "commons_sha1": "2e8cc153d44d259a307d8c34cc9aeff6507cca8c",
+      "original_dimensions": [
+        1409,
+        2000
+      ],
+      "downloaded_bytes": 359862,
+      "downloaded_sha256": "e61de1cc741f7f40b71f57f136d0bc416854d92f33b643e69b75e9bcdc9863f3",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-130.webp",
+      "derivative_bytes": 198892,
+      "derivative_sha256": "ff1fa4848ade58dd20150a3a3b25b1911c5227f999074e4928e5b0991996f2a9",
+      "derivative_git_blob_sha": "564f21c6100153a819074d0a1bbf819c2a25cc0c",
+      "derivative_dimensions": [
+        1127,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0240008000",
+        "artist": "jacob van oost"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::133",
+      "title": "Heilige martelares",
+      "artist": "Jacob van Oost",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Heilige_martelares_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Heilige martelares - Jacob van Oost - Musea Brugge - 1.jpg",
+      "commons_pageid": 189972471,
+      "commons_sha1": "bfb4a24ec78c49457d0bdf6d3fcca446218b4e75",
+      "original_dimensions": [
+        1513,
+        2000
+      ],
+      "downloaded_bytes": 324731,
+      "downloaded_sha256": "4cb138257ed28d1e0d66d4e875cafc448e9ddf982449ef36591e8d398a64793f",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-133.webp",
+      "derivative_bytes": 157940,
+      "derivative_sha256": "460b3058dd4d48f087aeb9ddbf88b2ac685d0bbceb223a9ef213a77bb9ba3cce",
+      "derivative_git_blob_sha": "9ceb8be0cd8680f230d0145ad92a540a29d4cbf5",
+      "derivative_dimensions": [
+        1210,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/1048150000",
+        "artist": "jacob van oost"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::134",
+      "title": "Maria van de Zeven Smarten",
+      "artist": "Adriaen Isenbrandt",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Maria_van_de_Zeven_Smarten_-_Adriaen_Isenbrant_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Maria van de Zeven Smarten - Adriaen Isenbrant - Musea Brugge - 1.jpg",
+      "commons_pageid": 187546291,
+      "commons_sha1": "44acfc5b5f67b7a271b1b7ea26d2503f90585901",
+      "original_dimensions": [
+        1767,
+        2000
+      ],
+      "downloaded_bytes": 522417,
+      "downloaded_sha256": "dd203c01cc8272faf3f665983e5f80b5968eb473d97ec7ae44b096a25069bdcb",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-134.webp",
+      "derivative_bytes": 308750,
+      "derivative_sha256": "ae2c990398f398525e278821ee9991e335bda3574ed9aad1d227d982d4482a0b",
+      "derivative_git_blob_sha": "b59d28734d2a20b3b6ef41a77cb0f598dc9bc07f",
+      "derivative_dimensions": [
+        1414,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0240002000",
+        "artist": "adriaen isenbrandt"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::136",
+      "title": "Dutch: Onze Lieve Vrouw drieluiklabel QS:Lnl,\"Onze Lieve Vrouw drieluik\"",
+      "artist": "Antoon Claeissens",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Onze_Lieve_Vrouw_drieluik_-_Antoon_Claeissens_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Onze Lieve Vrouw drieluik - Antoon Claeissens - Musea Brugge - 1.jpg",
+      "commons_pageid": 189961653,
+      "commons_sha1": "1ed24d98ad19c2ca865a8ed9b5b953aa0ccb66ca",
+      "original_dimensions": [
+        1250,
+        2000
+      ],
+      "downloaded_bytes": 367760,
+      "downloaded_sha256": "555bf98830716917c0747ef497ab4941984d65045d598df5cffc14da758c9838",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-136.webp",
+      "derivative_bytes": 220388,
+      "derivative_sha256": "3918df29653a2430cf4a86b993aef0d4374cc2766a9582498475a79d33d5ec5b",
+      "derivative_git_blob_sha": "4fb8f12b8c0c61ca9c26f4c8765392919abef1f1",
+      "derivative_dimensions": [
+        1000,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0240026000",
+        "artist": "antoon claeissens"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::138",
+      "title": "Dutch: Sint-Martinuslabel QS:Lnl,\"Sint-Martinus\"",
+      "artist": "anonymous",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Sint-Martinus_-_anoniem_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Sint-Martinus - anoniem - Musea Brugge - 1.jpg",
+      "commons_pageid": 188660563,
+      "commons_sha1": "0462528460ceae8fce87d0965ee082abefdc03fa",
+      "original_dimensions": [
+        1649,
+        2000
+      ],
+      "downloaded_bytes": 580173,
+      "downloaded_sha256": "8dc527c7c4137af5483898bfd681229032693664d26fb73ec1eca321af6fe9d8",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-138.webp",
+      "derivative_bytes": 386404,
+      "derivative_sha256": "0a371c151c009465666d4deac8533c8a4022921e3f60ab7dcf3666b46e4d7244",
+      "derivative_git_blob_sha": "d3beb152f485405771b3bfca50212039cdc83315",
+      "derivative_dimensions": [
+        1319,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0041073000",
+        "artist": "anonymous"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::140",
+      "title": "Tussenkomst van Onze Lieve Vrouw voor het mensdom",
+      "artist": "Philips Bernaerts",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Tussenkomst_van_Onze_Lieve_Vrouw_voor_het_mensdom_-_Philyps_Bernaert_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Tussenkomst van Onze Lieve Vrouw voor het mensdom - Philyps Bernaert - Musea Brugge - 1.jpg",
+      "commons_pageid": 188669073,
+      "commons_sha1": "e1121ca9d59469ab752d1e7e47ea466c22a488b6",
+      "original_dimensions": [
+        1360,
+        2000
+      ],
+      "downloaded_bytes": 319156,
+      "downloaded_sha256": "bc9edde72ab23a61a7f1ebd59e92c475c93f08d612ea267e870c32e7c4b6230b",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-140.webp",
+      "derivative_bytes": 171434,
+      "derivative_sha256": "803865216c5a63afda9c36067cc72a5979edbecda9cf85684937c994b4ecd25f",
+      "derivative_git_blob_sha": "3d94a6ed8d96b24470f52fccfef2299120aac43d",
+      "derivative_dimensions": [
+        1088,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0240030000",
+        "artist": "philips bernaerts"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::143",
+      "title": "Visioen van de heilige Antonius van Padua",
+      "artist": "Jacob van Oost",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Visioen_van_de_heilige_Antonius_van_Padua_-_Jacob_van_Oost_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Visioen van de heilige Antonius van Padua - Jacob van Oost - Musea Brugge - 1.jpg",
+      "commons_pageid": 189972633,
+      "commons_sha1": "e29d50f9c74efda0472c405f3f7b65f25ec6a793",
+      "original_dimensions": [
+        1197,
+        2000
+      ],
+      "downloaded_bytes": 252348,
+      "downloaded_sha256": "40764331ee3dcbfe3e96d46a6cbde0a17d19b7ed8efa4ec9d45d3bb8d2f7d8ca",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-143.webp",
+      "derivative_bytes": 112812,
+      "derivative_sha256": "e511fbcf3828671d84603d1ab72f19715968be3ef5084f054f64fd97321ff33c",
+      "derivative_git_blob_sha": "3d36ba374517daa46a5fca08c3bc92410cc070e5",
+      "derivative_dimensions": [
+        958,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0040430000",
+        "artist": "jacob van oost"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::179",
+      "title": "Master of the Legend of Saint Augustine - Episcopal Saint Enthroned, Friedländer, ENP, vol. 6, nr. 245",
+      "artist": "Master of the Legend of St. Augustine",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Master_of_the_Legend_of_Saint_Augustine_-_Episcopal_Saint_Enthroned,_Friedl%C3%A4nder,_ENP,_vol._6,_nr._245.jpg",
+      "commons_file_title": "File:Master of the Legend of Saint Augustine - Episcopal Saint Enthroned, Friedländer, ENP, vol. 6, nr. 245.jpg",
+      "commons_pageid": 128541129,
+      "commons_sha1": "8458a7620450bbb127d2bfadc2c5c51fc517a476",
+      "original_dimensions": [
+        1099,
+        1411
+      ],
+      "downloaded_bytes": 625346,
+      "downloaded_sha256": "d7276c5836ff074e24fb4eaef1f1cb748b361c5660b682fd2ee7701936fd6df8",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-179.webp",
+      "derivative_bytes": 390766,
+      "derivative_sha256": "2ef3586034818fc7bbc7d9bc79282b77ef8040fe532ed018597b1baec44abca0",
+      "derivative_git_blob_sha": "e86abbbe9e98ddbf0c6c61bf480a1e77925b1601",
+      "derivative_dimensions": [
+        1099,
+        1411
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://www.kikirpa.be/nl/friedlaender/1403",
+        "artist": "master of the legend of st. augustine"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::181",
+      "title": "The Queen of the Angels or The Virgin with Angels",
+      "artist": "William-Adolphe Bouguereau",
+      "source_page": "https://commons.wikimedia.org/wiki/File:William-Adolphe_Bouguereau_The_Virgin_With_Angels.jpg",
+      "commons_file_title": "File:William-Adolphe Bouguereau The Virgin With Angels.jpg",
+      "commons_pageid": 18364,
+      "commons_sha1": "7ace0c7297ee43ba92cc0478dc95807b41e3ea04",
+      "original_dimensions": [
+        1627,
+        2572
+      ],
+      "downloaded_bytes": 564872,
+      "downloaded_sha256": "0eef6f4131419632dd843239ad25f36a761649a4670e91dae0950e52ac322c57",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-181.webp",
+      "derivative_bytes": 193570,
+      "derivative_sha256": "dc62a538c927addeabfa021291a3010e487715fe69b4b052f2365339f8341152",
+      "derivative_git_blob_sha": "c6688e2a165e86617c537eb89d04b076bf36f501",
+      "derivative_dimensions": [
+        1012,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "art renewal center  copied from the english wikipedia to commons.",
+        "artist": "william-adolphe bouguereau"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::185",
+      "title": "L'Ascension",
+      "artist": "Gustave Doré",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_L%27Ascension.jpg",
+      "commons_file_title": "File:Gustave Doré - L'Ascension.jpg",
+      "commons_pageid": 45290553,
+      "commons_sha1": "3094ad9bba0576072684d4d91b314274a64ed68e",
+      "original_dimensions": [
+        1702,
+        2813
+      ],
+      "downloaded_bytes": 821996,
+      "downloaded_sha256": "7406ef1f326d21de9079dec8626754d60a93e6df24fb75e1c721156633dcb31d",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-185.webp",
+      "derivative_bytes": 299630,
+      "derivative_sha256": "87387f449dff062abf2b948a89939d2051c6231c691f7fbd7e918d550076e293",
+      "derivative_git_blob_sha": "245c2ecdee11916d538df6ed460fd0fd865313de",
+      "derivative_dimensions": [
+        968,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "http://www.petitpalais.paris.fr/en/taxonomy/term/63/0?page=1 – image",
+        "artist": "gustave doré"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::371",
+      "title": "Veronese-Bethsabée au bain-Lyon",
+      "artist": "Paolo Veronese",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Veronese-Bethsab%C3%A9e_au_bain-Lyon.jpg",
+      "commons_file_title": "File:Veronese-Bethsabée au bain-Lyon.jpg",
+      "commons_pageid": 15668985,
+      "commons_sha1": "f90d480ac88f39fdf0edb83820bab6a43dc72013",
+      "original_dimensions": [
+        1500,
+        1287
+      ],
+      "downloaded_bytes": 1585536,
+      "downloaded_sha256": "f68a932a406c9b67214a4e76b05ac03bca1366226ea1daa3973c94c428615bac",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-371.webp",
+      "derivative_bytes": 804904,
+      "derivative_sha256": "3a1834db1c0d182eec1c783a7ac42e6816a3385e7aa49f9646d24589ac0da3a1",
+      "derivative_git_blob_sha": "4c57b21307938784980fa01871dae5882787802d",
+      "derivative_dimensions": [
+        1500,
+        1287
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée des beaux-arts de lyon",
+        "artist": "paolo veronese"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::388",
+      "title": "Fontana Vierge",
+      "artist": "Lavinia Fontana",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Fontana_Vierge.jpg",
+      "commons_file_title": "File:Fontana Vierge.jpg",
+      "commons_pageid": 31418072,
+      "commons_sha1": "af0c2f90baaf43bcb7138536fa37c8241c84e3eb",
+      "original_dimensions": [
+        1652,
+        2515
+      ],
+      "downloaded_bytes": 383926,
+      "downloaded_sha256": "e1bbd4b2f9f2408bc21a2e6a44b19c9000a4924b03a8a5d00ff129c15184d33a",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-388.webp",
+      "derivative_bytes": 267700,
+      "derivative_sha256": "4e5a890dbe44b2e6f3499970b32e6233487287d213ec60d8f5be174cf3f671f8",
+      "derivative_git_blob_sha": "ca6757fd440680fc780153f3a964528bc494caf6",
+      "derivative_dimensions": [
+        1051,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "lavinia fontana"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::397",
+      "title": "Palais des Beaux Arts de Lille 25-11-2010 14-15-22",
+      "artist": "Paul Hermans",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Theodoor_Boeyermans_(1620-1678)_De_extase_van_de_heilige_Rosalia_van_Palermo_-_Palais_des_Beaux_Arts_de_Lille_25-11-2010_14-15-22.jpg",
+      "commons_file_title": "File:Theodoor Boeyermans (1620-1678) De extase van de heilige Rosalia van Palermo - Palais des Beaux Arts de Lille 25-11-2010 14-15-22.jpg",
+      "commons_pageid": 12241941,
+      "commons_sha1": "ed89b4187009178e85535bca18f3dc1dcf639bcb",
+      "original_dimensions": [
+        1828,
+        2526
+      ],
+      "downloaded_bytes": 6955503,
+      "downloaded_sha256": "145c6ec8082817af8551ae6a3cf45a704dd74fd6b13b34c7e069127e27cd4930",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-397.webp",
+      "derivative_bytes": 468258,
+      "derivative_sha256": "512b1893a63541136d17b866183af8d973c80f93879addf6f0d44746ab451924",
+      "derivative_git_blob_sha": "ff1d757ec36912e5b83d18381fcdc35ccb724b07",
+      "derivative_dimensions": [
+        1158,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "self-photographed",
+        "artist": "paul hermans"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::401",
+      "title": "Lille PdBA Brueghel jeune St paul conduit a damas",
+      "artist": "Pieter Brueghel the Younger",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Brueghel_jeune_St_paul_conduit_a_damas.JPG",
+      "commons_file_title": "File:Lille PdBA Brueghel jeune St paul conduit a damas.JPG",
+      "commons_pageid": 14529400,
+      "commons_sha1": "c8849e8fa141705d09dcdbffa484d8c70ebc8779",
+      "original_dimensions": [
+        1800,
+        1257
+      ],
+      "downloaded_bytes": 2167930,
+      "downloaded_sha256": "244a433d58868a9923a553515f0c19b9375eefe369810573105a716d210806fa",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-401.webp",
+      "derivative_bytes": 300600,
+      "derivative_sha256": "31f391eebf52823e2daaeb6e2302b8c07368820b14dbd6d5c4c3cad160bd4273",
+      "derivative_git_blob_sha": "75d24b6aabf877f467b9c7c373310b9519c16ccb",
+      "derivative_dimensions": [
+        1600,
+        1117
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "pieter brueghel the younger"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::402",
+      "title": "Lille PdBA ter brugghen derision christ",
+      "artist": "Artist to verify",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_ter_brugghen_derision_christ.JPG",
+      "commons_file_title": "File:Lille PdBA ter brugghen derision christ.JPG",
+      "commons_pageid": 46769412,
+      "commons_sha1": "e6cd52b5d0242815d67a96f9957e154b6fe0ee65",
+      "original_dimensions": [
+        1095,
+        1400
+      ],
+      "downloaded_bytes": 1374861,
+      "downloaded_sha256": "b48ac853d4d1f7db38edc7f1a266477058269f55dd0ee749d5a83d08f646fc57",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-402.webp",
+      "derivative_bytes": 155578,
+      "derivative_sha256": "1814b45b5e251d152ef52f9fa38780aa2373641331b92542ef1629c7eedd9447",
+      "derivative_git_blob_sha": "6ebde005fa36c1d0e1412fed8198edf583f38f59",
+      "derivative_dimensions": [
+        1095,
+        1400
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": ""
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::403",
+      "title": "Lille PdBA cranach derision du christ",
+      "artist": "Lucas Cranach the Elder",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_cranach_derision_du_christ.JPG",
+      "commons_file_title": "File:Lille PdBA cranach derision du christ.JPG",
+      "commons_pageid": 28963461,
+      "commons_sha1": "2fa02107035f53e22570e9a4f9ee0514acc6b89d",
+      "original_dimensions": [
+        1800,
+        2607
+      ],
+      "downloaded_bytes": 3779387,
+      "downloaded_sha256": "bad3e6fe1d4ddcd3fdc8c5a13c3724bebfffc0000bca8bf405cb82c7758d4603",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-403.webp",
+      "derivative_bytes": 428736,
+      "derivative_sha256": "fbedb489ac66b6b5020dd9e568a77fa8cf0c02aa3f24365f20b86b97aa2bc47b",
+      "derivative_git_blob_sha": "f7a03862d7a2a8b6239ab79a6c7aa3db02e903f8",
+      "derivative_dimensions": [
+        1105,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "lucas cranach the elder"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::415",
+      "title": "Lille PdBA Finsonius christ colonne",
+      "artist": "Attributed to Louis Finson",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Finsonius_christ_colonne.JPG",
+      "commons_file_title": "File:Lille PdBA Finsonius christ colonne.JPG",
+      "commons_pageid": 46456078,
+      "commons_sha1": "c3998f49818782bfcd0b342ecced3c7c7c18eb32",
+      "original_dimensions": [
+        1302,
+        2000
+      ],
+      "downloaded_bytes": 1373315,
+      "downloaded_sha256": "d0b6fc8f8b4b737789b5f52bf338e7ccb4f7ac93177abbe2fb8563bc7628a859",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-415.webp",
+      "derivative_bytes": 138434,
+      "derivative_sha256": "268e861db2e0c9a9083daa552e0c156d8143f807dbc1f371469396a5cdb18a66",
+      "derivative_git_blob_sha": "e063a2c75862e9e12c07fe41cfbc258a746bce86",
+      "derivative_dimensions": [
+        1042,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "attributed to louis finson"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::416",
+      "title": "Lille PdBA Flemalle st lambert",
+      "artist": "Bertholet Flémal",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_Flemalle_st_lambert.jpg",
+      "commons_file_title": "File:Lille PdBA Flemalle st lambert.jpg",
+      "commons_pageid": 52641054,
+      "commons_sha1": "2f15ac5913503a4eb629b8b7948e9fa2c51ca128",
+      "original_dimensions": [
+        1673,
+        2486
+      ],
+      "downloaded_bytes": 3587860,
+      "downloaded_sha256": "c3f1c75f43450d389c0d60e16b9bf91694193705c5cdf44e973cd4229240d712",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-416.webp",
+      "derivative_bytes": 263356,
+      "derivative_sha256": "3c714bf0907057ee6f8e195a8f0d1e1ed6684613b3eed1289e1cba7748b55931",
+      "derivative_git_blob_sha": "047718a19afb50dd7b1773237818cad1d05a3b84",
+      "derivative_dimensions": [
+        1077,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "bertholet flémal"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::417",
+      "title": "Lille PdBA pays bas sud deploration du christ",
+      "artist": "Anonyme (Anciens Pays-Bas du Sud)",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_pays_bas_sud_deploration_du_christ.jpg",
+      "commons_file_title": "File:Lille PdBA pays bas sud deploration du christ.jpg",
+      "commons_pageid": 57793335,
+      "commons_sha1": "c1ce8055df8750cdec4230356666d541e633c1fa",
+      "original_dimensions": [
+        1200,
+        1517
+      ],
+      "downloaded_bytes": 1358345,
+      "downloaded_sha256": "f93bcd53cd95868dfe46622559b8bc7bdac223b1b5fd5210171f4f8d2ac930b1",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-417.webp",
+      "derivative_bytes": 156726,
+      "derivative_sha256": "f8172cb7d57d059fbb44ad983c450e94cb3e0c08b0ffae90e909fe3ee62dd630",
+      "derivative_git_blob_sha": "ef6a81b7bb775cd5df0e9392d1dac5c1e834e657",
+      "derivative_dimensions": [
+        1200,
+        1517
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "anonyme (anciens pays-bas du sud)"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::431",
+      "title": "Jeanne d'Arc - Édouard Paupion - MBA Dijon 2144",
+      "artist": "Édouard Paupion",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jeanne_d%27Arc_-_%C3%89douard_Paupion_-_MBA_Dijon_2144.jpg",
+      "commons_file_title": "File:Jeanne d'Arc - Édouard Paupion - MBA Dijon 2144.jpg",
+      "commons_pageid": 147778713,
+      "commons_sha1": "49101c86afd3b4c8fe760752a6c9101de753a66c",
+      "original_dimensions": [
+        1684,
+        1080
+      ],
+      "downloaded_bytes": 608901,
+      "downloaded_sha256": "718fe7e5343353ef344bf1951e9b76a942767235b175c3bfcd09f4132aa7cdaa",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-431.webp",
+      "derivative_bytes": 117930,
+      "derivative_sha256": "04554261a497b449a781a4ce681f453bf52c82409c4a9f41e036f763a76c3845",
+      "derivative_git_blob_sha": "bdc35eb56912124597bc1b41012cab1988192a91",
+      "derivative_dimensions": [
+        1600,
+        1026
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée des beaux-arts de dijon",
+        "artist": "édouard paupion"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::434",
+      "title": "Lille PdBA de crayer christ",
+      "artist": "Gaspar de Crayer",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_de_crayer_christ.jpg",
+      "commons_file_title": "File:Lille PdBA de crayer christ.jpg",
+      "commons_pageid": 30943620,
+      "commons_sha1": "70fd5f720ac4cde0d07d3c71b8d253d485bb98ec",
+      "original_dimensions": [
+        1292,
+        2000
+      ],
+      "downloaded_bytes": 2103175,
+      "downloaded_sha256": "9590f15ff05542cb7289930a44cde5e532fee8741447566c05b5582d96f69718",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-434.webp",
+      "derivative_bytes": 217258,
+      "derivative_sha256": "15d25a4a8ebe348f44a8e3836627f012540618107a0f014fa5a6d3ba486ef54e",
+      "derivative_git_blob_sha": "b0277099cd8dfc2a5b9d4c6f4d2814693da7bc79",
+      "derivative_dimensions": [
+        1034,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "gaspar de crayer"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::435",
+      "title": "Dutch: La Trinité title QS:P1476,nl:\"La Trinité \"label QS:Lnl,\"La Trinité \"label QS:Lfr,\"La Sainte Trinité\"",
+      "artist": "Attributed to Jacomart",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_jacomart_trinite.JPG",
+      "commons_file_title": "File:Lille PdBA jacomart trinite.JPG",
+      "commons_pageid": 28963259,
+      "commons_sha1": "d69ecb0ba9966a42c00c7e19ece90ce7ccd6fdfa",
+      "original_dimensions": [
+        1730,
+        2400
+      ],
+      "downloaded_bytes": 3782578,
+      "downloaded_sha256": "626382dfcf45b5611ea8cfabd1280362a5401b92e0b25a2d8260ae67013f0ebd",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-435.webp",
+      "derivative_bytes": 585866,
+      "derivative_sha256": "5a83cf2e3b246637b23535ed554b7dcd532d8c64065afc1db35765ecc2e0e61f",
+      "derivative_git_blob_sha": "f44cb00dfea7bdbe023d472d89d2f1a9890144e1",
+      "derivative_dimensions": [
+        1153,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "attributed to jacomart"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::436",
+      "title": "Lille PdBA van Dick christ croix",
+      "artist": "Anthony van Dyck",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Lille_PdBA_van_Dick_christ_croix.jpg",
+      "commons_file_title": "File:Lille PdBA van Dick christ croix.jpg",
+      "commons_pageid": 30161871,
+      "commons_sha1": "3f1daa4f370b6ac2228ac25957768aef45806331",
+      "original_dimensions": [
+        1067,
+        1790
+      ],
+      "downloaded_bytes": 1654437,
+      "downloaded_sha256": "efd7d40c39c5fde592ae782f144d348221614506427235a205979780f1ca711f",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-436.webp",
+      "derivative_bytes": 212104,
+      "derivative_sha256": "614c6e5981dd31c1fa17cd234631c8a9906d361a3085cc4088bd6a5a664ce073",
+      "derivative_git_blob_sha": "5d1777e1b4f92566bd0483aad8a6800c2680efcd",
+      "derivative_dimensions": [
+        954,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work",
+        "artist": "anthony van dyck"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::498",
+      "title": "Mathieu Le Nain Le Christ chez Marthe et Marie",
+      "artist": "Mathieu Le Nain",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Mathieu_Le_Nain_Le_Christ_chez_Marthe_et_Marie.jpg",
+      "commons_file_title": "File:Mathieu Le Nain Le Christ chez Marthe et Marie.jpg",
+      "commons_pageid": 56867229,
+      "commons_sha1": "f977cc51ac76f96bc6346b693d947125c27083cb",
+      "original_dimensions": [
+        1633,
+        2142
+      ],
+      "downloaded_bytes": 1552438,
+      "downloaded_sha256": "277b4b3b15b9844c618888ca24541c35fd5669b636878aaec374a1654e65da21",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-498.webp",
+      "derivative_bytes": 497818,
+      "derivative_sha256": "d501834be580b60f9f8f74ae1de86a67f736996224968eaa337feef1db4a5a92",
+      "derivative_git_blob_sha": "7b2c648eb33f80cad0d28c29d2f701889efe0375",
+      "derivative_dimensions": [
+        1220,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "musée des beaux-arts de rennes",
+        "artist": "mathieu le nain"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::503",
+      "title": "Christ mort soutenu par un ange",
+      "artist": "David Teniers the Younger / After Palma il Giovane",
+      "source_page": "https://commons.wikimedia.org/wiki/File:David_Teniers_-_Christ_mort_soutenu_par_un_ange.jpg",
+      "commons_file_title": "File:David Teniers - Christ mort soutenu par un ange.jpg",
+      "commons_pageid": 71481580,
+      "commons_sha1": "12aba0fe016e0cd3fb242ba619e8970536d64367",
+      "original_dimensions": [
+        1136,
+        1537
+      ],
+      "downloaded_bytes": 812077,
+      "downloaded_sha256": "a4ba4adf99ab7b460dd2f2b96fbc78b75a293905bf3a596497dc0efc06189244",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-503.webp",
+      "derivative_bytes": 143458,
+      "derivative_sha256": "8ae2f88daf431134acde3d1e9638a2cdb774effdc26e4e089515e2e403066f55",
+      "derivative_git_blob_sha": "54a8f6c989afb75dd9098547a8d7c2742de83ca5",
+      "derivative_dimensions": [
+        1136,
+        1537
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work, tylwyth eldar, 2018-08-04 11:26:14",
+        "artist": "david teniers the younger / after palma il giovane"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::504",
+      "title": "Saint Louis",
+      "artist": "Unknown authorUnknown author",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ecole_fran%C3%A7aise_-_Saint_Louis.jpg",
+      "commons_file_title": "File:Ecole française - Saint Louis.jpg",
+      "commons_pageid": 73499500,
+      "commons_sha1": "9a705f783261dca7cbcb08d0cd786158129d6c2d",
+      "original_dimensions": [
+        1690,
+        2178
+      ],
+      "downloaded_bytes": 1892653,
+      "downloaded_sha256": "f908a99f4c41a777dee73498e9f90f21eb919426c583c68d0c233d7928a23d5d",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-504.webp",
+      "derivative_bytes": 240600,
+      "derivative_sha256": "a1ebe73af98efff80aa0cbcde753e3409b565859e9ea6d4b352ad760dab7dad1",
+      "derivative_git_blob_sha": "9a68697b9bde9c9327a683b73daa11d653e39581",
+      "derivative_dimensions": [
+        1242,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work, tylwyth eldar, 2018-08-04 11:41:37",
+        "artist": "unknown authorunknown author"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::508",
+      "title": "Martyrdom of Saint Catherine by Gaspar de Crayer, 1622",
+      "artist": "Gaspar de Crayer",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Martyrdom_of_Saint_Catherine_by_Gaspar_de_Crayer,_1622.jpg",
+      "commons_file_title": "File:Martyrdom of Saint Catherine by Gaspar de Crayer, 1622.jpg",
+      "commons_pageid": 73909173,
+      "commons_sha1": "e1348fe45014d8a63dc4b50753f6fb642a6462aa",
+      "original_dimensions": [
+        1152,
+        1509
+      ],
+      "downloaded_bytes": 329589,
+      "downloaded_sha256": "55c9184b127ac32abb5cb753d64ca11b07b30a5b68177a67cc157274f0cbd93d",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-508.webp",
+      "derivative_bytes": 179164,
+      "derivative_sha256": "28fcc24873117e940923f72a7dc46586a727092b6835b07c37c0774d0611749d",
+      "derivative_git_blob_sha": "744835613d0acd5d9de823e14fa81fc3b09a31c9",
+      "derivative_dimensions": [
+        1152,
+        1509
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "http://www.standaard.be/cnt/dmf20180810_03658557",
+        "artist": "gaspar de crayer"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::509",
+      "title": "Apparition du Christ à Madeleine",
+      "artist": "Eustache Le Sueur",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Eustache_Le_Sueur_-_Apparition_du_Christ_%C3%A0_Madeleine.jpg",
+      "commons_file_title": "File:Eustache Le Sueur - Apparition du Christ à Madeleine.jpg",
+      "commons_pageid": 73939236,
+      "commons_sha1": "fc78d43c70e229dac89fb22d694210ee0b70a5f7",
+      "original_dimensions": [
+        1513,
+        1700
+      ],
+      "downloaded_bytes": 1037497,
+      "downloaded_sha256": "eb13393ee0e01a1919d90cd6750ee1ec1b0c347ea3c9f7f7d181e43989306a1f",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-509.webp",
+      "derivative_bytes": 155370,
+      "derivative_sha256": "870cd3d0e934278e5592f4d65ef7e9b926a759406332787b7e77c4a555556d42",
+      "derivative_git_blob_sha": "b7455e7981f2b10740dece61b27731ea17c97dc3",
+      "derivative_dimensions": [
+        1424,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work, tylwyth eldar, 2018-08-04 11:35:45",
+        "artist": "eustache le sueur"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::512",
+      "title": "French: Le Christ au désert servi par les anges label QS:Lfr,\"Le Christ au désert servi par les anges\"",
+      "artist": "Charles de La Fosse",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Charles_de_La_Fosse_-_Christ_au_d%C3%A9sert.jpg",
+      "commons_file_title": "File:Charles de La Fosse - Christ au désert.jpg",
+      "commons_pageid": 73513075,
+      "commons_sha1": "14b1ee3dd8210690aedf6949f8eadce7523c8ee0",
+      "original_dimensions": [
+        1810,
+        2505
+      ],
+      "downloaded_bytes": 2360853,
+      "downloaded_sha256": "30b2a2c2c37b1bf4bcbc4a0b3ab77a3cb958c15c2a3f5949b4a27fb1a135dc08",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-512.webp",
+      "derivative_bytes": 242078,
+      "derivative_sha256": "ec8ce2585ba21819262c8c9a2532f3929979a966b85fef2bac11054698963221",
+      "derivative_git_blob_sha": "8d93e8c15558f0559e1ac5e2597d6e2f659c764b",
+      "derivative_dimensions": [
+        1156,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work, tylwyth eldar, 2018-08-04 11:42:33",
+        "artist": "charles de la fosse"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::514",
+      "title": "Adoration des mages 1",
+      "artist": "Abraham Bloemaert",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Abraham_Bloemaert_-_Adoration_des_mages_1.jpg",
+      "commons_file_title": "File:Abraham Bloemaert - Adoration des mages 1.jpg",
+      "commons_pageid": 71397726,
+      "commons_sha1": "ad8e5cdde4323f7a77fb4d2e35111a2cf41b916f",
+      "original_dimensions": [
+        1702,
+        2648
+      ],
+      "downloaded_bytes": 1919517,
+      "downloaded_sha256": "a48cfdd769dc47feead340531c9700db598d11429f2afd7182fb57a570d6c1bd",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-514.webp",
+      "derivative_bytes": 182638,
+      "derivative_sha256": "c758202e41dd64539a113ebc4fc10a598c1393884a212a4726f8b449ec6c18bd",
+      "derivative_git_blob_sha": "101a08432c98daf4f4d732eb1162af1d7895369e",
+      "derivative_dimensions": [
+        1028,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "own work, tylwyth eldar, 2018-08-04 11:07:58",
+        "artist": "abraham bloemaert"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::522",
+      "title": "Déploration de Christ mort (huile sur toile, 1647-1650, 152 x 140 cm, Musée des beaux-arts d'Orléans)",
+      "artist": "Bertholet Flémal",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bertholet_Fl%C3%A9mal_-_D%C3%A9ploration_de_Christ_mort_(huile_sur_toile,_1647-1650,_152_x_140_cm,_Mus%C3%A9e_des_beaux-arts_d%27Orl%C3%A9ans).jpg",
+      "commons_file_title": "File:Bertholet Flémal - Déploration de Christ mort (huile sur toile, 1647-1650, 152 x 140 cm, Musée des beaux-arts d'Orléans).jpg",
+      "commons_pageid": 186114680,
+      "commons_sha1": "614b22b4f8d1adc0213effa9e6e910e779e2218c",
+      "original_dimensions": [
+        1831,
+        2000
+      ],
+      "downloaded_bytes": 456444,
+      "downloaded_sha256": "2ce233fea46ad8cb187ee4d2f6d9cce26f5ad1937fbd8edb101bd73a3ba63c50",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-522.webp",
+      "derivative_bytes": 279738,
+      "derivative_sha256": "88fdb1e663b9eafef68af39fa258aec4e476176b8339b9d0be087ca19e44f96a",
+      "derivative_git_blob_sha": "d951728851a834dfe80294b5bf4b2365d778666b",
+      "derivative_dimensions": [
+        1465,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://museesorleans.fr/oeuvres/musee:mus_bien:1354/",
+        "artist": "bertholet flémal"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::534",
+      "title": "L'Ange de Tobie",
+      "artist": "Gustave Doré",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gustave_Dor%C3%A9_-_L%27Ange_de_Tobie.jpg",
+      "commons_file_title": "File:Gustave Doré - L'Ange de Tobie.jpg",
+      "commons_pageid": 98264999,
+      "commons_sha1": "935e6edd1787516309690d15ee6df596e358cf10",
+      "original_dimensions": [
+        1108,
+        1411
+      ],
+      "downloaded_bytes": 930378,
+      "downloaded_sha256": "913fd211e3fda832255175650ccdc443436099145ca3c0396ff62a77c4b245ed",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-534.webp",
+      "derivative_bytes": 199998,
+      "derivative_sha256": "76c12071a2b0e5b6f18c6dbf5a0885f06db84e8f63b50cec32fa4e91412c3c0d",
+      "derivative_git_blob_sha": "abfcf455819fd1089060894a3c89fed9ed61b1e3",
+      "derivative_dimensions": [
+        1108,
+        1411
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://www.flickr.com/photos/dystopos/48129903627",
+        "artist": "gustave doré"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::541",
+      "title": "Joseph et la femme de Putiphar - Sébastien Leclerc le jeune",
+      "artist": "Attribution to confirm from source metadata",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3AJoseph_et_la_femme_de_Putiphar_-_S%C3%A9bastien_Leclerc_le_jeune_-_MM_1938F603.jpg",
+      "commons_file_title": "File:Joseph et la femme de Putiphar - Sébastien Leclerc le jeune - MM 1938F603.jpg",
+      "commons_pageid": 149096492,
+      "commons_sha1": "fd9952a8877493b9acf08d46142215e2f77ca3c0",
+      "original_dimensions": [
+        1246,
+        1552
+      ],
+      "downloaded_bytes": 776413,
+      "downloaded_sha256": "bc9b8bdfcc546f7b04803bfd947b0d65ae61ffcffdf583e6779a2d4672b2a912",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-541.webp",
+      "derivative_bytes": 197152,
+      "derivative_sha256": "caa8797c0fbce8743b5090056013854ea69b027c89de6e7b273df91e4061af66",
+      "derivative_git_blob_sha": "156df79748076ca8f642c54ea86145973c9033d2",
+      "derivative_dimensions": [
+        1246,
+        1552
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée magnin",
+        "artist": "sébastien leclerc le jeune"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::547",
+      "title": "Le Festin de Balthazar - Ercole Graziani",
+      "artist": "Attribution to confirm from source metadata",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3ALe_Festin_de_Balthazar_-_Ercole_Graziani_-_MM_1938E531.jpg",
+      "commons_file_title": "File:Le Festin de Balthazar - Ercole Graziani - MM 1938E531.jpg",
+      "commons_pageid": 170250260,
+      "commons_sha1": "0bbb0b4e05125c587cd1356304e768dbb82b3a32",
+      "original_dimensions": [
+        1288,
+        1722
+      ],
+      "downloaded_bytes": 720376,
+      "downloaded_sha256": "e62d8b30b91c84a050b9ca8ba64a0501b7114571a69e3bc0070c78952d5f8c72",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-547.webp",
+      "derivative_bytes": 146730,
+      "derivative_sha256": "60696580238b238942b558fbc3ad1bc00462cf61a16a92f7646d023773475115",
+      "derivative_git_blob_sha": "06df44fae115720f6d77952b1afc4dd5254d56cf",
+      "derivative_dimensions": [
+        1197,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée magnin",
+        "artist": "ercole graziani"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::550",
+      "title": "Le Retour de l'Enfant prodigue - Attribué à Jean Jacques Forty - MM 1938F214",
+      "artist": "Attribué à Jean Jacques Forty",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Le_Retour_de_l%27Enfant_prodigue_-_Attribu%C3%A9_%C3%A0_Jean_Jacques_Forty_-_MM_1938F214.jpg",
+      "commons_file_title": "File:Le Retour de l'Enfant prodigue - Attribué à Jean Jacques Forty - MM 1938F214.jpg",
+      "commons_pageid": 176335657,
+      "commons_sha1": "6c87bb36a7366aae3a953bdcf79577dfc1847d20",
+      "original_dimensions": [
+        1218,
+        1563
+      ],
+      "downloaded_bytes": 646446,
+      "downloaded_sha256": "ad1d7ed8e9dd09d2579d64464f341d1d1bd019f95b35daaa871779c5c4ad4d85",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-550.webp",
+      "derivative_bytes": 136638,
+      "derivative_sha256": "c07277a2e743f8ef006117f95c1f5546c125cc02d6ba214582a1d3406d384ba7",
+      "derivative_git_blob_sha": "bb3bd513b5be099aca9db6cbde4e2f2d5e44d381",
+      "derivative_dimensions": [
+        1218,
+        1563
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée magnin",
+        "artist": "attribué à jean jacques forty"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::551",
+      "title": "Le Retour du jeune Tobie - Mathieu Elias - MM 1938F46",
+      "artist": "Mathieu Elias",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Le_Retour_du_jeune_Tobie_-_Mathieu_Elias_-_MM_1938F46.jpg",
+      "commons_file_title": "File:Le Retour du jeune Tobie - Mathieu Elias - MM 1938F46.jpg",
+      "commons_pageid": 170936845,
+      "commons_sha1": "f6bf18303d48101eb4a066411f0b1bfabb4933a8",
+      "original_dimensions": [
+        1246,
+        1500
+      ],
+      "downloaded_bytes": 652002,
+      "downloaded_sha256": "04c56d2a9d1f849bfcbc2515f9ed5bc4663809ae4721ca3385149940b16ff9fe",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-551.webp",
+      "derivative_bytes": 142892,
+      "derivative_sha256": "27619fd0a4addce5364832d649d817509b0cced8af34818fa3730277aea466bb",
+      "derivative_git_blob_sha": "a81abb3f2084886db89b94f8a3fed41bb6e0f1bb",
+      "derivative_dimensions": [
+        1246,
+        1500
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée magnin",
+        "artist": "mathieu elias"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::554",
+      "title": "Le sermon sur la montagne - Jean-Baptiste de Champaigne",
+      "artist": "Attribution to confirm from source metadata",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3ALe_sermon_sur_la_montagne_-_Jean-Baptiste_de_Champaigne_-_MM_1938E146.jpg",
+      "commons_file_title": "File:Le sermon sur la montagne - Jean-Baptiste de Champaigne - MM 1938E146.jpg",
+      "commons_pageid": 149126073,
+      "commons_sha1": "508519a77efda340f84c00343aae3cfd1a0a2bd3",
+      "original_dimensions": [
+        1552,
+        1128
+      ],
+      "downloaded_bytes": 735162,
+      "downloaded_sha256": "2bd62ae5f9ebb90ed3ecf8e5f45f91ca9aeda30af1efe91a565d4b926ac5f734",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-554.webp",
+      "derivative_bytes": 189564,
+      "derivative_sha256": "6ab8292bd8471015368aa5534ee7eddec29c6c70b932159dd22754fa960a156d",
+      "derivative_git_blob_sha": "7754112015cbda9fadfb01f3bd0341a36d535959",
+      "derivative_dimensions": [
+        1552,
+        1128
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée magnin",
+        "artist": "jean baptiste de champaigne"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::560",
+      "title": "Saint Pierre guérissant le paralytique - Girolamo Marchesi - MM 1938E520",
+      "artist": "Girolamo Marchesi",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Saint_Pierre_gu%C3%A9rissant_le_paralytique_-_Girolamo_Marchesi_-_MM_1938E520.jpg",
+      "commons_file_title": "File:Saint Pierre guérissant le paralytique - Girolamo Marchesi - MM 1938E520.jpg",
+      "commons_pageid": 169883717,
+      "commons_sha1": "363ecc3d4e9803c0310d12796ef3408db65b5011",
+      "original_dimensions": [
+        1490,
+        1147
+      ],
+      "downloaded_bytes": 663037,
+      "downloaded_sha256": "9db3334952d8d0f4813c92f2503a960f31f5f98ff8372937923bb9062de2d060",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-560.webp",
+      "derivative_bytes": 158936,
+      "derivative_sha256": "e4e947366959a922defc53cfd5a4cc5c3c1492352732e9bc9117dde539e366c6",
+      "derivative_git_blob_sha": "cf72fd660dac0dc5363086da2780fcf5d7958bdd",
+      "derivative_dimensions": [
+        1490,
+        1147
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "œuvre appartenant au musée magnin",
+        "artist": "girolamo marchesi"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::568",
+      "title": "Alessandro Rosi St Sébastien soigné par Ste Irène",
+      "artist": "Attribution to confirm from source metadata",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3AAlessandro_Rosi_St_S%C3%A9bastien_soign%C3%A9_par_Ste_Ir%C3%A8ne.jpg",
+      "commons_file_title": "File:Alessandro Rosi St Sébastien soigné par Ste Irène.jpg",
+      "commons_pageid": 79597513,
+      "commons_sha1": "2a4becc92e5ef5282c60415828231ffaac9cca6d",
+      "original_dimensions": [
+        1559,
+        1221
+      ],
+      "downloaded_bytes": 1467940,
+      "downloaded_sha256": "b6dd2210022c27dbc886477fc8417f7bdca2e97a022714df1545ee18acf7b206",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-568.webp",
+      "derivative_bytes": 245698,
+      "derivative_sha256": "e4aa36d1fcf63c7e558cdfc18ed0c8cf5469fdde45ded30ed56890768bfda1d6",
+      "derivative_git_blob_sha": "5059941694b2a81df2fdd2ae389e7f4d6c3adac7",
+      "derivative_dimensions": [
+        1559,
+        1221
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "cette œuvre fait partie de la collection du musée des beaux-arts de brest.",
+        "artist": "alessandro rosi"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::570",
+      "title": "French: Saint Luc peignant la Viergelabel QS:Lfr,\"Saint Luc peignant la Vierge\"",
+      "artist": "Luca Giordano",
+      "source_page": "https://commons.wikimedia.org/wiki/File:GIORDANO_Luca_1692-95_Saint_Luc_peignant_la_Vierge.jpg",
+      "commons_file_title": "File:GIORDANO Luca 1692-95 Saint Luc peignant la Vierge.jpg",
+      "commons_pageid": 79542617,
+      "commons_sha1": "493131075b4ae1a3e70c006e1da3e8dee771b9dc",
+      "original_dimensions": [
+        1470,
+        1130
+      ],
+      "downloaded_bytes": 579508,
+      "downloaded_sha256": "28d11615a4e0240334171d589d926be27b62e3e82c059028d31263af92e794de",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-570.webp",
+      "derivative_bytes": 322844,
+      "derivative_sha256": "200458ad6cc346fe19c1f8e16ed4079dd908c6ded91b9159fb199fe97a459d6c",
+      "derivative_git_blob_sha": "2a5959c0f15e089374e9bae2e918f5241006e3f6",
+      "derivative_dimensions": [
+        1470,
+        1130
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "cette œuvre fait partie de la collection du musée des beaux-arts de brest.",
+        "artist": "luca giordano"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::572",
+      "title": "Pierre-Luca Giordano 1685c L'élévation de la croix",
+      "artist": "Luca Giordano",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Pierre-Luca_Giordano_1685c_L%27%C3%A9l%C3%A9vation_de_la_croix.jpg",
+      "commons_file_title": "File:Pierre-Luca Giordano 1685c L'élévation de la croix.jpg",
+      "commons_pageid": 79597371,
+      "commons_sha1": "50d60cca7a667ce8c98b3874e49b19cd8f66e273",
+      "original_dimensions": [
+        1413,
+        1193
+      ],
+      "downloaded_bytes": 1524630,
+      "downloaded_sha256": "b92814b4340eb1a25ddd5af20bec4436c7616cce7992ca8b3c0b358cb3074eb9",
+      "derivative_path": "site/gallery/images/owner-approved-20261103-572.webp",
+      "derivative_bytes": 354612,
+      "derivative_sha256": "b6e2c9d629bb2d3c4b683965af8ee1242dbe90d4b34d4ffa7cf99b26bf5fff30",
+      "derivative_git_blob_sha": "d49e42fbe36a40855fd8f9d7605a43f2348d73f2",
+      "derivative_dimensions": [
+        1413,
+        1193
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "cette œuvre fait partie de la collection du musée des beaux-arts de brest.",
+        "artist": "luca giordano"
+      },
+      "previous_status": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "original_bytes_archived": false
+    }
+  ],
+  "held": [
+    {
+      "artwork_id": "RECENT575::282",
+      "reason": "SOURCE_THUMBNAIL_TOO_SMALL_HISTORICAL_HOLD",
+      "previous_error": "FINAL_PIXELS_TOO_SMALL"
+    },
+    {
+      "artwork_id": "RECENT575::300",
+      "reason": "SOURCE_THUMBNAIL_TOO_SMALL_HISTORICAL_HOLD",
+      "previous_error": "FINAL_PIXELS_TOO_SMALL"
+    }
+  ],
+  "summary": {
+    "retry_queue": 51,
+    "previous_rate_limited": 49,
+    "recovered_images": 49,
+    "added_webp_bytes": 11971914,
+    "held_after_retry": 2,
+    "paused_for_rate_limit": false,
+    "total_gallery_paintings": 392,
+    "image_bearing_records": 395,
+    "source_master_jpegs_unchanged": 54,
+    "historical_catalogue_records_unchanged": 873,
+    "new_prayer_assignments": 0,
+    "new_calendar_assignments": 0,
+    "rejected_source_items_protected": 103
+  }
+}

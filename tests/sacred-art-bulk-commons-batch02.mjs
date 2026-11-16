@@ -22,6 +22,8 @@ assert.equal(current.summary.prior_qualified_deferred,109);
 assert.equal(current.summary.prior_unexamined_deferred,71);
 assert.equal(current.summary.prior_failed_downloads_retried,19);
 const n=current.summary.new_gallery_images;
+const wave03=load('app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json');
+const n03=wave03.summary.recovered_images;
 assert(n>=40 && n<=180,'Second batch must transfer more than a handful of images');
 assert.equal(current.assets.length,n);
 assert.equal(current.held.length+n,330);
@@ -33,12 +35,12 @@ assert.equal(current.summary.original_curatorial_records_unchanged,873);
 assert.equal(current.summary.catalogue_total_records,873);
 assert.equal(gallery.records.length,873);
 assert.equal(gallery.counts.total_records,873);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings,234+n);
-assert.equal(gallery.counts.image_available_records,237+n);
-assert.equal(gallery.counts.verified_image_files,234+n);
-assert.equal(prov.sources.length,234+n);
-assert.equal(prov.local_image_count,234+n);
-assert.equal(prov.catalogue_record_images_count,237+n);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings,234+n+n03);
+assert.equal(gallery.counts.image_available_records,237+n+n03);
+assert.equal(gallery.counts.verified_image_files,234+n+n03);
+assert.equal(prov.sources.length,234+n+n03);
+assert.equal(prov.local_image_count,234+n+n03);
+assert.equal(prov.catalogue_record_images_count,237+n+n03);
 assert.equal(gallery.source_references.bulk_approved_commons,
   'app-data/sacred-art/bulk-commons-photo-import-20261116.v1.json');
 assert.equal(gallery.source_references.bulk_approved_commons_batch02,
@@ -109,11 +111,20 @@ for(const old of master.artworks){
  assert.equal(r.eligible_card_count,old.candidate_prayer_card_ids.length);
  assert.equal(r.attribution_status,old.attribution_status);
 }
+const verifiedWave03=new Set(wave03.assets.map(a=>a.artwork_id));
 for(const held of current.held){
  assert(priorHeld.has(held.artwork_id));
  assert(!newIDs.has(held.artwork_id));
  const r=gallery.records.find(x=>x.id===held.artwork_id);
- assert(r && r.image===null,'Held item should not appear on gallery');
+ if(verifiedWave03.has(held.artwork_id)){
+  assert.equal(held.reason,'IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED',
+   'Only prior rate-limited, source-cleared photo failures may be released in wave03');
+  assert(held.detail.includes('HTTP Error 429'));
+  assert(r && r.image && r.image.src.includes('owner-approved-20261103-'),
+   'Previously held source may show only after independent wave03 exact-photo verification');
+ }else{
+  assert(r && r.image===null,'Unresolved historical hold remains unpublished');
+ }
 }
 const restricted=rejected.rejected_originals.map(x=>
  decodeURIComponent(x.source_url||'').replace(/_/g,' ').toLowerCase());
