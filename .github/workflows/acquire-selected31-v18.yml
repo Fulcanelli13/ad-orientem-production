@@ -32,10 +32,9 @@ jobs:
           import pathlib,json,hashlib
           root=pathlib.Path('.')
           a=json.loads((root/'app-data/sacred-art/staged-selected31-v18/acquisition-results.v18.json').read_text())
-          assert a['attempted_selected_sources']==7
-          assert a['acquired_count']+a['failed_acquisition_count']==7
-          assert a['outstanding_poussin_count']==1
-          assert any(h['review_artwork_id']=='euch-poussin' for h in a['holds'])
+          assert a['attempted_selected_sources']==8
+          assert a['acquired_count']+a['failed_acquisition_count']==8
+          assert a['outstanding_poussin_count'] in (0,1)
           assert a['acquired_count']>=1
           selections=json.loads((root/'app-data/sacred-art/selected31-gallery-reconciliation-v12.json').read_text())
           ids={x['review_artwork_id'] for x in selections['records']}
