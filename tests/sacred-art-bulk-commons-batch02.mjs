@@ -109,11 +109,20 @@ for(const old of master.artworks){
  assert.equal(r.eligible_card_count,old.candidate_prayer_card_ids.length);
  assert.equal(r.attribution_status,old.attribution_status);
 }
+const verifiedWave03=new Set(wave03.assets.map(a=>a.artwork_id));
 for(const held of current.held){
  assert(priorHeld.has(held.artwork_id));
  assert(!newIDs.has(held.artwork_id));
  const r=gallery.records.find(x=>x.id===held.artwork_id);
- assert(r && r.image===null,'Held item should not appear on gallery');
+ if(verifiedWave03.has(held.artwork_id)){
+  assert.equal(held.reason,'IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED',
+   'Only prior rate-limited, source-cleared photo failures may be released in wave03');
+  assert(held.detail.includes('HTTP Error 429'));
+  assert(r && r.image && r.image.src.includes('owner-approved-20261103-'),
+   'Previously held source may show only after independent wave03 exact-photo verification');
+ }else{
+  assert(r && r.image===null,'Unresolved historical hold remains unpublished');
+ }
 }
 const restricted=rejected.rejected_originals.map(x=>
  decodeURIComponent(x.source_url||'').replace(/_/g,' ').toLowerCase());
