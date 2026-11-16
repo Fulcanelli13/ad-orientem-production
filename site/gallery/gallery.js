@@ -91,6 +91,7 @@
     }
     const caption = textEl("span","gallery-caption");
     caption.append(textEl("strong","",item.title),textEl("span","gallery-artist",item.artist));
+    if (hasImage && item.image?.photographer) caption.append(textEl("span","gallery-photo-credit","Photo: " + item.image.photographer + " · " + item.image.license));
     if (hasImage) {
       caption.append(textEl("span","gallery-type",
         item.image?.quality?.startsWith("LOW_RES_PREVIEW") ? "CURATED · PREVIEW IMAGE" :
@@ -161,6 +162,15 @@
       item.owner_selected_artwork ? "Owner-selected artwork (not a prayer-card primary)" :
         "Historical or research catalogue record; approval scope preserved"));
     if (item.image?.provenance) inside.append(detailMeta("Image provenance:",item.image.provenance));
+    if (item.image?.photographer) inside.append(detailMeta("Photograph:",item.image.photographer));
+    if (item.image?.adaptation) inside.append(detailMeta("Adaptation:",item.image.adaptation));
+    if (item.image?.license_url) {
+      const licence = textEl("a","gallery-detail-source","Image licence: " + item.image.license);
+      licence.href = item.image.license_url;
+      licence.target = "_blank";
+      licence.rel = "noopener noreferrer";
+      inside.append(licence);
+    }
     if (item.image?.quality?.startsWith("LOW_RES_PREVIEW"))
       inside.append(detailMeta("Image quality:","Low-resolution preview only. Do not upscale or use for prayer cinematic backgrounds."));
     if (item.image?.usage?.includes("PRAYER_QA_PENDING"))
@@ -207,7 +217,7 @@
         const data = await response.json();
         if (data.schema !== "ao.sacred-art.gallery.v1" ||
             data.records?.length !== data.counts?.total_records ||
-            data.records?.length !== 862) throw new Error("Invalid artwork catalogue");
+            data.records?.length !== 870) throw new Error("Invalid artwork catalogue");
         const ids = new Set();
         for (const art of data.records) {
           if (!art.id || ids.has(art.id) ||

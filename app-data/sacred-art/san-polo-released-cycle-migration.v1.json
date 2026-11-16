@@ -1,0 +1,413 @@
+{
+  "schema": "ao.sacred-art.san-polo-released-14-exact-transfer.v1",
+  "date": "2026-11-16",
+  "old_repo": "Fulcanelli13/ad-orientem",
+  "old_commit": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+  "release": "Merged original repository PR #2699 (9 November 2026)",
+  "photo_exception": "Fourteen pre-selected Tiepolo San Polo oils only, CC BY-SA 4.0; old PR #2144",
+  "scope": "Previously released optional reader photos added to new gallery. No new art choices, no prayer-card primary/default activation.",
+  "originals_note": "Transferred exact previously released 1920–2400px WebP derivatives, NOT original Commons JPEG masters.",
+  "files": [
+    {
+      "station": 1,
+      "roman": "I",
+      "subject": "Jesus condemned to death",
+      "existing_or_added_gallery_ids": [
+        "RELEASED::san-polo-oils:station-01"
+      ],
+      "new_registry_record": true,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-01.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_I_-_Jesus_is_sentenced_to_death_by_Giandomenico_Tiepolo.jpg",
+      "local_path": "site/gallery/images/san-polo-station-01.webp",
+      "source_sha256": "c9247def62a2054596556e23aaa405bbfeb1d90a72017c66087bbabeb40231d4",
+      "source_git_blob_sha": "b44f4919bd04d2a947249489f7b8d891fd11e1fc",
+      "bytes": 1177010,
+      "pixels": [
+        1920,
+        2142
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "station": 2,
+      "roman": "II",
+      "subject": "Jesus takes up the Cross",
+      "existing_or_added_gallery_ids": [
+        "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-02-esus-akes-p-the-ross"
+      ],
+      "new_registry_record": false,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-02.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_II_-_Jesus_carries_his_cross_by_Giandomenico_Tiepolo.jpg",
+      "local_path": "site/gallery/images/san-polo-station-02.webp",
+      "source_sha256": "e89a6ad53838243972f50548912a638c78dbf0bad2e52f02252944ec391ec3a0",
+      "source_git_blob_sha": "42bc1a72830d49c168f14495d5775c53bbc92e60",
+      "bytes": 1346834,
+      "pixels": [
+        1920,
+        2133
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "station": 3,
+      "roman": "III",
+      "subject": "Jesus falls for the first time",
+      "existing_or_added_gallery_ids": [
+        "RELEASED::san-polo-oils:station-03"
+      ],
+      "new_registry_record": true,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-03.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_III_-_Jesus_falls_the_first_time_by_Giandomenico_Tiepolo.jpg",
+      "local_path": "site/gallery/images/san-polo-station-03.webp",
+      "source_sha256": "e6ee33a5cebbe00ca628c0b8fd724e2c182366a96ad0e433b6fdb752d7de85df",
+      "source_git_blob_sha": "d91a8600aa1084c0e99d9e4218b66813bd0135cf",
+      "bytes": 1183824,
+      "pixels": [
+        1920,
+        2074
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "station": 4,
+      "roman": "IV",
+      "subject": "Jesus meets his Mother",
+      "existing_or_added_gallery_ids": [
+        "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-04-esus-eets-is-other"
+      ],
+      "new_registry_record": false,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-04.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_IV_-_Jesus_meets_his_mother_by_Giandomenico_Tiepolo.jpg",
+      "local_path": "site/gallery/images/san-polo-station-04.webp",
+      "source_sha256": "36d980b8cef65109597647d3089db68ecec43aed86bafd7bf09c7a987a393edd",
+      "source_git_blob_sha": "18ccda04549f0b7c32f622e4457d8f1120e8a3c0",
+      "bytes": 1233046,
+      "pixels": [
+        1920,
+        2056
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "station": 5,
+      "roman": "V",
+      "subject": "Simon of Cyrene helps Jesus",
+      "existing_or_added_gallery_ids": [
+        "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-05-imon-of-yrene-elps"
+      ],
+      "new_registry_record": false,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-05.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_V_-_Simon_of_Cyrene_helps_Jesus_carry_the_cross_by_Giandomenico_Tiepolo.jpg",
+      "local_path": "site/gallery/images/san-polo-station-05.webp",
+      "source_sha256": "31553680f8c65aeb61bab8d7accd128a1984827402f8d6c375b33ef3bbdfc4eb",
+      "source_git_blob_sha": "f752bcb0c0d2f877a7fb9634215c185bc7f67f80",
+      "bytes": 1296444,
+      "pixels": [
+        1920,
+        2101
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "station": 6,
+      "roman": "VI",
+      "subject": "Veronica wipes the face of Jesus",
+      "existing_or_added_gallery_ids": [
+        "RELEASED::san-polo-oils:station-06"
+      ],
+      "new_registry_record": true,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-06.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_VI_-_Veronica_wipes_the_face_of_Jesus_by_Giandomenico_Tiepolo.jpg",
+      "local_path": "site/gallery/images/san-polo-station-06.webp",
+      "source_sha256": "f545573d3e3d7c2a9db9631fe7d6d85dbf592ad08012e6a97011bc7cb5e292bd",
+      "source_git_blob_sha": "a5b266ef80256aafa8d9daf3cdf106021b80e222",
+      "bytes": 1155586,
+      "pixels": [
+        1920,
+        2084
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "station": 7,
+      "roman": "VII",
+      "subject": "Jesus falls for the second time",
+      "existing_or_added_gallery_ids": [
+        "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-07-econd-all"
+      ],
+      "new_registry_record": false,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-07.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_VII_-_Jesus_falls_the_second_time_by_Giandomenico_Tiepolo.jpg",
+      "local_path": "site/gallery/images/san-polo-station-07.webp",
+      "source_sha256": "14619fcc4a6be151127fa9ae7e1d29b5d3d2a9c993dba0967f7038dfab40f095",
+      "source_git_blob_sha": "04bd5c2600b1a4d9264ed190ab56a723ea35b9a4",
+      "bytes": 1174980,
+      "pixels": [
+        1920,
+        2070
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "station": 8,
+      "roman": "VIII",
+      "subject": "Jesus consoles the women of Jerusalem",
+      "existing_or_added_gallery_ids": [
+        "RELEASED::san-polo-oils:station-08"
+      ],
+      "new_registry_record": true,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-08.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_VIII_-_Jesus_meets_the_women_of_Jerusalem_who_weep_by_Giandomenico_Tiepolo.jpg",
+      "local_path": "site/gallery/images/san-polo-station-08.webp",
+      "source_sha256": "a68faf8045006620956a37a27b17ef875c8c53261f819defd2e1f8b1f7b371a6",
+      "source_git_blob_sha": "4dd9b66c05ad938ed64979ff7566b28cba9fcc11",
+      "bytes": 790572,
+      "pixels": [
+        1866,
+        2400
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "station": 9,
+      "roman": "IX",
+      "subject": "Jesus falls for the third time",
+      "existing_or_added_gallery_ids": [
+        "RELEASED::san-polo-oils:station-09"
+      ],
+      "new_registry_record": true,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-09.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_IX_-_Jesus_falls_the_third_time.jpg",
+      "local_path": "site/gallery/images/san-polo-station-09.webp",
+      "source_sha256": "32846a979e64a18ef745b2ef8c71fea3854a6d429165a79c3d6897a81f158993",
+      "source_git_blob_sha": "75c0c994a1cce72eece78322e0550fc0b4253c23",
+      "bytes": 675056,
+      "pixels": [
+        1906,
+        2400
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "station": 10,
+      "roman": "X",
+      "subject": "Jesus is stripped of his garments",
+      "existing_or_added_gallery_ids": [
+        "RELEASED::san-polo-oils:station-10"
+      ],
+      "new_registry_record": true,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-10.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_X_-_Jesus_is_stripped_of_his_garments.jpg",
+      "local_path": "site/gallery/images/san-polo-station-10.webp",
+      "source_sha256": "88ba18e522f9978755282d58df5b9d1377a0bb9d22b0eae9c5b806e55534f896",
+      "source_git_blob_sha": "7bb173467241e9723edb046dec353a1d1bfd226b",
+      "bytes": 814654,
+      "pixels": [
+        1889,
+        2400
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "station": 11,
+      "roman": "XI",
+      "subject": "Jesus is nailed to the Cross",
+      "existing_or_added_gallery_ids": [
+        "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-11-ailing-to-the-ross"
+      ],
+      "new_registry_record": false,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-11.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_XI_-_Jesus_is_nailed_to_the_cross.jpg",
+      "local_path": "site/gallery/images/san-polo-station-11.webp",
+      "source_sha256": "6ff0dc8d347d2c7df3ad65e6db9372c9960545852a588f7659b4f4a63850517b",
+      "source_git_blob_sha": "aff831a636dadbbdff126ee1ea36c905ffac293c",
+      "bytes": 929536,
+      "pixels": [
+        1910,
+        2400
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "station": 12,
+      "roman": "XII",
+      "subject": "Jesus dies on the Cross",
+      "existing_or_added_gallery_ids": [
+        "CANONICAL::ART-iandomenico-iepolo-an-olo-ia-rucis-tation-12-eath-on-the-ross"
+      ],
+      "new_registry_record": false,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-12.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_XII_-_Jesus_dies_on_the_cross.jpg",
+      "local_path": "site/gallery/images/san-polo-station-12.webp",
+      "source_sha256": "a9c3e1338a52110989339f5af98c0055a6f1ad25c5b4cc61b961461282a65eba",
+      "source_git_blob_sha": "09947e09d48a837adfdc2508c02fc5856ddf6499",
+      "bytes": 1410666,
+      "pixels": [
+        1822,
+        2400
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "station": 13,
+      "roman": "XIII",
+      "subject": "Jesus is taken down from the Cross",
+      "existing_or_added_gallery_ids": [
+        "RELEASED::san-polo-oils:station-13"
+      ],
+      "new_registry_record": true,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-13.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_XIII_-_Jesus_down_from_the_cross_and_his_body_is_returned_to_his_mother.jpg",
+      "local_path": "site/gallery/images/san-polo-station-13.webp",
+      "source_sha256": "213b617d1a39ae4a07d5d0558f51fb66900cae17d61aa9753988717a170bd3c7",
+      "source_git_blob_sha": "2f7b01404d4b75d71c4c0d085e46c3607ac93038",
+      "bytes": 818664,
+      "pixels": [
+        1853,
+        2400
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "station": 14,
+      "roman": "XIV",
+      "subject": "Jesus is laid in the tomb",
+      "existing_or_added_gallery_ids": [
+        "RELEASED::san-polo-oils:station-14"
+      ],
+      "new_registry_record": true,
+      "source_ref": "14cd9d3ac11a6f27856f4740ae7c81e1b073bf1a",
+      "source_path": "assets/stations/san-polo/station-14.webp",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Chiesa_di_San_Polo_(Venice)_-_VIA_CRUCIS_XIV_-_Entombment_of_Christ_by_Giandomenico_Tiepolo.jpg",
+      "local_path": "site/gallery/images/san-polo-station-14.webp",
+      "source_sha256": "74ccdf8a9fc9406b980b4a553cbfea64d0379ac9d5ce400add0e1f41bb9f6da5",
+      "source_git_blob_sha": "c1288aefec1e44f3df6873f3b1de4e8b51a39b8b",
+      "bytes": 1134956,
+      "pixels": [
+        1920,
+        2146
+      ],
+      "artist": "Giandomenico Tiepolo",
+      "photographer": "Didier Descouens / Archaeodontosaurus",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "adapted_from_original_jpeg": true,
+      "original_jpeg_preserved_in_production": false,
+      "prior_release_pr": 2699,
+      "usage": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    }
+  ],
+  "summary": {
+    "files": 14,
+    "bytes": 15141828,
+    "existing_gallery_records_linked": 6,
+    "new_records_for_previously_selected_works": 8,
+    "new_prayer_defaults": 0,
+    "sha256_failures": 0,
+    "blob_sha_failures": 0
+  }
+}
