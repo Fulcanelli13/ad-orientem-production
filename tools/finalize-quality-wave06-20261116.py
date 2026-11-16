@@ -52,16 +52,16 @@ for filename in ("tests/sacred-art-bulk-commons.mjs","tests/sacred-art-bulk-comm
 # retroactive rewriting of the original source report.
 old_tests={
  "tests/sacred-art-bulk-commons-batch02.mjs":(
-  "  }else{\n   assert(r && r.image===null,'Unresolved historical hold remains unpublished');",
+  " }else{\n  assert(r && r.image===null,'Unresolved historical hold remains unpublished');",
   "  }else if(quality06IDs.has(held.artwork_id)){\n   assert(['BELOW_FULL_COMPOSITION_QUALITY_FLOOR','EXTREME_ASPECT_RATIO_OR_DIMENSIONS','IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED'].includes(held.reason));\n   assert(r && r.image && r.image.src.includes('owner-selected-quality-upgrade-'));\n  }else{\n   assert(r && r.image===null,'Unresolved historical hold remains unpublished');"),
  "tests/sacred-art-commons-wave03.mjs":(
-  "  assert(rec && rec.image===null);",
+  " assert(rec && rec.image===null);",
   "  if(quality06IDs.has(h.artwork_id))assert(rec && rec.image && rec.image.src.includes('owner-selected-quality-upgrade-'));\n  else assert(rec && rec.image===null);"),
  "tests/sacred-art-selected-museum-wave04.mjs":(
-  "  assert(row && row.image===null,'Every rights, photograph and quality hold must remain unpictured');",
+  " assert(row && row.image===null,'Every rights, photograph and quality hold must remain unpictured');",
   "  if(quality06IDs.has(h.artwork_id)){\n   assert(['PREVIOUS_LOW_QUALITY_HOLD','COMMONS_INADEQUATE_SOURCE_GEOMETRY'].includes(h.reason));\n   assert(row && row.image && row.image.src.includes('owner-selected-quality-upgrade-'));\n  }else assert(row && row.image===null,'Rights/photo and unresolved quality holds remain unpictured');"),
  "tests/sacred-art-curated-wave05.mjs":(
-  "  assert(row && row.image===null,'A held source must remain unpublished');",
+  " assert(row && row.image===null,'A held source must remain unpublished');",
   "  if(quality06IDs.has(h.artwork_id)){\n   assert(['BELOW_FULL_COMPOSITION_QUALITY_FLOOR','EXTREME_ASPECT_RATIO_OR_DIMENSIONS','IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED'].includes(h.reason));\n   assert(row && row.image && row.image.src.includes('owner-selected-quality-upgrade-'));\n  }else assert(row && row.image===null,'An unresolved held source must remain unpublished');")
 }
 for filename,(before,after) in old_tests.items():
