@@ -1,19 +1,19 @@
 # Sacred Art Gallery — first permanent app module
 
-**15 November 2026 — incremental production transfer.**
+**16 November 2026 — source-first, permanent archive migration.**
 
 This is a **new, deliberately scoped** Sacred Art destination inside the existing Ad Orientem mobile app. It is accessible from the permanent Home gallery entrance and by `#gallery`. It does not replace the Claude Home/Mass/Pray/Calendar/Atlas UI, add a bottom tab, or implement a prayer screen.
 
 ## What is real today
 
 - `catalogue.v1.json`: **all 862 currently tracked artwork records** (860 historical master records plus two preserved Angelus contextual records), searchable by artwork, artist, collection, scene category and reviewed prayer part.
-- **Forty-nine distinct locally hosted artwork images** (fifty-one catalogue records have images; Champaigne and Girardin each have two historical records for one physical artwork).
+- **Fifty-four distinct locally hosted artwork images** (fifty-seven historical catalogue records have images; Champaigne, Girardin, and Honthorst each have two records representing a single image).
 - `gallery.js`: searchable/scrollable gallery, curated-vs-research filter, On display, Angelus review, prayer-matched and image-pending views, and a full-composition painting/detail dialog.
 - `gallery.css`: source-derived Cinzel/Cormorant/EB typography and existing Home colours; scoped selectors only.
-- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for all forty-nine on-display reproductions, including twelve source-verified NGA / SMK museum artworks added in Batch 07.
+- `image-provenance.v1.json`: identity, source-rights record, exact Git blob and image-byte trace for all fifty-four on-display reproductions; the 16 November migration additionally preserves eleven previously released full-resolution original JPEGs byte-for-byte in the permanent production source archive, and introduces five carefully matched gallery derivatives.
 - No external remote URLs are used for gallery image rendering. Museum URLs are links to source records, not image substitutions.
 
-**Important:** **862 artwork records does not mean 862 locally acquired paintings.** Forty-nine distinct museum-source artworks are now displayed with local files. Batches 04–07 added previously selected works after object, title/creator, photographic reuse and image quality checks; one historical Sodoma attribution conflict remains held for review. The gallery WebPs retain full artwork composition, downsampled at most to 2,000 pixels on their longest edge. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
+**Important:** **862 artwork records does not mean 862 locally acquired paintings.** Fifty-four distinct artworks are now displayed with local files. The 16 November transfer restores already-acquired original files from the research repository, without another round of museum searches, and attaches derivatives only to existing owner-selected gallery records; one historical Sodoma attribution conflict remains held for review. The gallery WebPs retain full artwork composition, downsampled at most to 2,000 pixels on their longest edge. The remaining records appear in the accessible **All records** catalogue as searchable text entries until the exact photo is recovered and verified. Missing photos are not filled with AI art, invented images, arbitrary Commons downloads or expired external previews.
 
 Artwork inclusion in this registry does not itself mean the owner approved it for prayer placement. The separate `owner_selected_artwork`, `prayer_parts`, `exact_prayer_cards`, `eligible_card_count` and image rights fields remain independent.
 
@@ -87,7 +87,7 @@ Future Claude prayer prototypes will reference this canonical artwork catalogue 
 
 ## Checks and rollback
 
-The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, forty-nine distinct image identities (including twelve source-verified NGA/SMK Batch 07 derivatives; the separate Sodoma attribution hold remains unpublished), no remote gallery image loading, and preservation of the four-tab navigation.
+The existing `tests/production-shell.mjs`, `tests/prayer-artwork-activation.mjs` and Angelus source tests continue unchanged. The new `tests/sacred-art-gallery.mjs` verifies all 862 records, exact metadata relations, source image files, fifty-four distinct display image identities and eleven additional full-resolution, immutable master originals transferred from previously released research assets, no remote gallery image loading, and preservation of the four-tab navigation.
 
 The production branch's premerge commit is the rollback reference. Only the `site/` directory publishes.
 
@@ -179,4 +179,36 @@ For every imported image, `app-data/sacred-art/gallery-image-import-batch07.v1.j
 
 **Curation distinctions:** SMK's Rubens *Christ on the Cross* record includes a workshop attribution qualification in its production notes; this is recorded in provenance without claiming autograph certainty. Its Carlo Dolci *Agony in the Garden* was served at 1,294×1,600, so its gallery image is clearly marked as a source-limited reproduction, not a 2,000px original or an upscaled picture. NGA's *Presentation in the Temple* has a more specific Master of the Prado “Adoration of the Magi” attribution; the existing broader historical catalogue label remains intact.
 
-**Current coverage: 862 catalogue records, 49 distinct locally hosted artworks across 51 historical image-bearing records, 811 catalogue records awaiting local images.** The 36 Angelus review records, all prayer and Rosary associations, owner's existing selections, Claude layout, Home, and the GitHub-only publication workflow are unchanged. This is gallery acquisition, not prayer-screen activation.
+**Batch 07 closeout: 862 catalogue records, 49 distinct locally hosted artworks across 51 historical image-bearing records, 811 catalogue records awaiting local images at that point.** The 36 Angelus review records, all prayer and Rosary associations, owner's existing selections, Claude layout, Home, and the GitHub-only publication workflow are unchanged. This is gallery acquisition, not prayer-screen activation.
+
+### Original-master migration · 16 November 2026
+
+**This is a file transfer, not new artwork research.** Earlier Sacred Art work selected and matched paintings, acquired source photos and registered previous releases in `Fulcanelli13/ad-orientem`. The migration now maintains a permanently versioned source inventory in `app-data/sacred-art/source-master-migration-20261116.v1.json`.
+
+The **legacy released-module-paintings registry** and the **22-work research source archive** were reconciled by exact Git blob SHA. They represent **23 different source originals** after deduplication. Three identical original JPEGs (Champaigne's Annunciation, Ingres's Virgin Adoring the Host and Hondius's Christ among the Doctors) already exist in production and were not copied again. Eleven further publicly released source originals have now been transferred **byte-for-byte**, verified against pinned Git source blobs, original SHA-256s (when available), original dimensions and byte counts. They are stored in `app-data/sacred-art/source-masters/`, **outside the `site/` GitHub Pages bundle**.
+
+| Legacy approved module | Exact recovered painting | Original size | Release in this transfer |
+|---|---|---:|---|
+| joseph | The Dream of Saint Joseph | 18.83 MiB | Gallery (existing selected IDs) |
+| heart-jesus | The Heart of Jesus | 1.92 MiB | Gallery (existing selected IDs) |
+| heart-mary | The Heart of Mary | 1.86 MiB | Gallery (existing selected IDs) |
+| regina | Resurrection of Christ (central panel) | 4.38 MiB | Gallery (existing selected IDs) |
+| king | Salvator Mundi | 7.41 MiB | Master archive only |
+| visit | The Adoration of the Shepherds | 9.14 MiB | Gallery (existing selected IDs) |
+| confession | The Return of the Prodigal Son | 2.88 MiB | Master archive only |
+| cavallino | Adoration of the Shepherds | 6.15 MiB | Master archive only |
+| girardin | The Trinity | 8.11 MiB | Master archive only |
+| latour | The Penitent Magdalen | 3.10 MiB | Master archive only |
+| giordano-flight | The Flight into Egypt | 4.63 MiB | Master archive only |
+
+The five display-ready, uncropped gallery WebPs prepared from these masters belong to:
+- Philippe de Champaigne — *The Dream of Saint Joseph*
+- Peter Paul Rubens — *Resurrection of Christ* (Regina Cæli module)
+- Juan Patricio Morlete Ruiz — *The Heart of Jesus* and *The Heart of Mary*
+- Gerrit van Honthorst — *The Adoration of the Shepherds* (one image serving two existing catalogue records)
+
+The other six newly transferred masters remain **master-bank assets** without forcing new artwork IDs or owner selections. The original files stay immutable and can be reused for previously approved screens after independent photographic and crop checks.
+
+**Precisely preserved exclusions:** eight distinct sources belong only to the archived research ledger and were not publicly released (some carry rights/quality holds); the *Souls in Purgatory* release has a conflicting non-commercial photographic-use caveat and is retained as a rights-held reference only. Two explicitly rejected reproductions, Restout's *Pentecost* source and Gérôme's *Age of Augustus* source, were not imported. Two approved works have no recoverable source file in that archive. None of these 13 records was misrepresented as a locally published image.
+
+**Current production coverage: 862 original artwork catalogue records; 54 distinct locally displayed images; 57 image-bearing historical records; 805 metadata-only records.** All prior original IDs, 729 selected metadata records, Angelus associations, 267-position research crosswalk, prayer-card approvals and Claude-designed UI remain independent and unchanged. The only deployment mechanism is still GitHub Actions → GitHub Pages. The permanent original-master library can be expanded through **the same deduplicated bulk-transfer ledger**, not repeated museum-by-museum curation batches.
