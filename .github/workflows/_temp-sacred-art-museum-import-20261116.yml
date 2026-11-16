@@ -1,0 +1,43 @@
+name: Temporary Sacred Art selected museum & Commons wave 04
+on:
+  push:
+    branches:
+      - feature/sacred-art-bulk-institutional-wave04-20261116
+    paths:
+      - .github/workflows/_temp-sacred-art-museum-import-20261116.yml
+permissions:
+  contents: write
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install photo validation and uncropped WebP conversion
+        run: python3 -m pip install --quiet Pillow==12.0.0
+      - name: Verify all 90 original owner selections against exact image rights and source quality
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -u tools/import-selected-museum-wave04-20261116.py
+          python3 tools/finalize-selected-museum-wave04-20261116.py
+          node tests/sacred-art-selected-museum-wave04.mjs
+          node tests/sacred-art-commons-wave03.mjs
+          node tests/sacred-art-bulk-commons-batch02.mjs
+          node tests/sacred-art-bulk-commons.mjs
+          node tests/sacred-art-gallery.mjs
+          node tests/sacred-art-san-polo.mjs
+          node tests/sacred-art-devotional-recovery.mjs
+          node tests/sacred-art-class-i-sources.mjs
+          node tests/sacred-art-class-i-gallery.mjs
+          node tools/validate-prayer-artwork-assets.mjs
+          node tests/prayer-artwork-activation.mjs
+          node tests/angelus-part-artwork-coverage.mjs
+          node tests/production-shell.mjs
+          node --check site/gallery/gallery.js
+          git rm .github/workflows/_temp-sacred-art-museum-probe-20261116.yml .github/workflows/_temp-sacred-art-museum-import-20261116.yml
+          git add app-data/sacred-art site/gallery tests
+          git -c user.name='Ad Orientem Art Image Verification' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Bulk preserve previously approved institutional and Commons painting photos with exact source rights'
+          git push origin HEAD:feature/sacred-art-bulk-institutional-wave04-20261116
