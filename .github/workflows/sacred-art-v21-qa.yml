@@ -1,0 +1,48 @@
+name: Sacred Art V21 429-image main + 31-source review QA (temporary)
+on:
+  push:
+    branches: [curation/selected31-gallery-reconciliation-v12]
+    paths:
+      - .github/workflows/sacred-art-v21-qa.yml
+      - tests/sacred-art-selected31-v21.mjs
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  validate:
+    if: github.ref == 'refs/heads/curation/selected31-gallery-reconciliation-v12'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate selected-photo archive, release gating and production tests
+        run: |
+          node --version
+          node --check site/gallery/gallery.js
+          node tests/sacred-art-selected31-v19.mjs
+          node tests/sacred-art-selected31-v20.mjs
+          node tests/sacred-art-selected31-v21.mjs
+          node tests/sacred-art-gallery.mjs
+          node tests/sacred-art-selected-museum-wave04.mjs
+          node tests/prayer-artwork-activation.mjs
+          node tests/production-shell.mjs
+      - name: Confirm all 15 held records and publication isolation
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),assert=require('assert');
+          const c=JSON.parse(fs.readFileSync('app-data/sacred-art/selected31-clearance-v21.json'));
+          const m=JSON.parse(fs.readFileSync('app-data/sacred-art/selected31-held-remediation-v21.json'));
+          const p=JSON.parse(fs.readFileSync('site/gallery/image-provenance.v1.json'));
+          assert.deepEqual(c.counts,{main_preserved:7,overlay_eligible:9,source_only_holds:15});
+          assert.equal(m.counts.held,15);
+          assert.equal(m.records.length,15);
+          assert.deepEqual(new Set(m.records.map(x=>x.review_artwork_id)),new Set(c.records.filter(x=>x.disposition==='HOLD_SOURCE_ONLY').map(x=>x.review_artwork_id)));
+          assert.equal(p.local_image_count,429);
+          for(const x of m.records){
+            assert(x.hold_status==='SOURCE_ONLY__NOT_PUBLICATION_AUTHORIZED');
+            assert(fs.existsSync(x.source_path));
+            assert(x.evidence_urls.length);
+            assert(x.no_owner_permission_or_fee_requested===true);
+          }
+          console.log('V21 15 held items all have exact rights/identity/quality remediation, without publication.');
+          NODE
