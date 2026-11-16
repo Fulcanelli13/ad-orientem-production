@@ -1,0 +1,60 @@
+name: Sacred Art V17 selected source acquisition (draft only)
+on:
+  push:
+    branches: [curation/selected31-gallery-reconciliation-v12]
+    paths:
+      - .github/workflows/acquire-selected31-v17.yml
+      - tools/acquire-selected31-sources-v17.py
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: sacred-art-v17-source-archive
+  cancel-in-progress: false
+jobs:
+  acquire:
+    if: github.ref == 'refs/heads/curation/selected31-gallery-reconciliation-v12'
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install 'Pillow>=10,<13'
+      - name: Acquire only exact selected photo sources
+        run: python tools/acquire-selected31-sources-v17.py
+      - name: Validate source/derivative integrity and canonical nonmutation
+        run: |
+          python - <<'PY'
+          import json,hashlib,pathlib
+          b=pathlib.Path('.')
+          p=b/'app-data/sacred-art/staged-selected31-v17/acquisition-results.v17.json'
+          r=json.loads(p.read_text())
+          assert r['acquired_count']>=1 and r['acquired_count']+r['held_count']==4
+          for x in r['records']:
+            for k in ['source','derivative']:
+              f=b/x[k+'_path']
+              assert f.is_file() and f.stat().st_size==x[k+'_bytes']
+              assert hashlib.sha256(f.read_bytes()).hexdigest()==x[k+'_sha256']
+            assert x['status']=='SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING'
+            assert x['rights_gate'].startswith('SOURCE_ONLY__')
+          cat=json.loads((b/'site/gallery/catalogue.v1.json').read_text())
+          assert cat['counts']['total_records']==873
+          print('V17',r['acquired_count'],'verified sources;',r['held_count'],'held, no gallery mutations')
+          PY
+          node tests/sacred-art-gallery.mjs
+      - name: Commit research sources only to current draft branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add app-data/sacred-art/staged-selected31-v17/
+          git diff --cached --quiet || git commit -m 'Sacred Art: archive V17 four reviewed photographs without publication'
+          git push origin HEAD:curation/selected31-gallery-reconciliation-v12
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sacred-art-v17-source-results
+          path: app-data/sacred-art/staged-selected31-v17/acquisition-results.v17.json
+          retention-days: 14
