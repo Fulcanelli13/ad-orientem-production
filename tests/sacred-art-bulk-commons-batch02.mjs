@@ -24,6 +24,8 @@ assert.equal(current.summary.prior_failed_downloads_retried,19);
 const n=current.summary.new_gallery_images;
 const wave03=load('app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json');
 const n03=wave03.summary.recovered_images;
+const wave04=load('app-data/sacred-art/selected-museum-image-wave04-20261116.v1.json');
+const n04=wave04.summary.new_gallery_paintings;
 assert(n>=40 && n<=180,'Second batch must transfer more than a handful of images');
 assert.equal(current.assets.length,n);
 assert.equal(current.held.length+n,330);
@@ -35,12 +37,12 @@ assert.equal(current.summary.original_curatorial_records_unchanged,873);
 assert.equal(current.summary.catalogue_total_records,873);
 assert.equal(gallery.records.length,873);
 assert.equal(gallery.counts.total_records,873);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings,234+n+n03);
-assert.equal(gallery.counts.image_available_records,237+n+n03);
-assert.equal(gallery.counts.verified_image_files,234+n+n03);
-assert.equal(prov.sources.length,234+n+n03);
-assert.equal(prov.local_image_count,234+n+n03);
-assert.equal(prov.catalogue_record_images_count,237+n+n03);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings,234+n+n03+n04);
+assert.equal(gallery.counts.image_available_records,237+n+n03+n04);
+assert.equal(gallery.counts.verified_image_files,234+n+n03+n04);
+assert.equal(prov.sources.length,234+n+n03+n04);
+assert.equal(prov.local_image_count,234+n+n03+n04);
+assert.equal(prov.catalogue_record_images_count,237+n+n03+n04);
 assert.equal(gallery.source_references.bulk_approved_commons,
   'app-data/sacred-art/bulk-commons-photo-import-20261116.v1.json');
 assert.equal(gallery.source_references.bulk_approved_commons_batch02,

@@ -9,6 +9,8 @@ const batch02=read('app-data/sacred-art/bulk-commons-photo-import-batch02-202611
 const n02=batch02.summary.new_gallery_images;
 const wave03=read('app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json');
 const n03=wave03.summary.recovered_images;
+const wave04=read('app-data/sacred-art/selected-museum-image-wave04-20261116.v1.json');
+const n04=wave04.summary.new_gallery_paintings;
 const rejected=read('app-data/sacred-art/legacy-artwork-rejections-20261116.v1.json');
 const originals=read('app-data/sacred-art/artwork-assignment-index.v2.json');
 assert.equal(manifest.schema,'ao.sacred-art.bulk-approved-commons-source-import.v1');
@@ -21,12 +23,12 @@ assert.equal(manifest.assets.length,n);
 assert.equal(gallery.records.length,873);
 assert.equal(gallery.counts.total_records,873);
 assert.equal(gallery.counts.selected_artwork_records,740);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings,73+n+n02+n03);
-assert.equal(gallery.counts.image_available_records,76+n+n02+n03);
-assert.equal(gallery.counts.verified_image_files,73+n+n02+n03);
-assert.equal(prov.sources.length,73+n+n02+n03);
-assert.equal(prov.local_image_count,73+n+n02+n03);
-assert.equal(prov.catalogue_record_images_count,76+n+n02+n03);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings,73+n+n02+n03+n04);
+assert.equal(gallery.counts.image_available_records,76+n+n02+n03+n04);
+assert.equal(gallery.counts.verified_image_files,73+n+n02+n03+n04);
+assert.equal(prov.sources.length,73+n+n02+n03+n04);
+assert.equal(prov.local_image_count,73+n+n02+n03+n04);
+assert.equal(prov.catalogue_record_images_count,76+n+n02+n03+n04);
 assert.equal(originals.artworks.length,862);
 for(const old of originals.artworks){
  const r=gallery.records.find(x=>x.id===old.artwork_id);
