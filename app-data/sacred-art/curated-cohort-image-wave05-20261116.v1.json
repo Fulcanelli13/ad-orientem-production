@@ -1,0 +1,1695 @@
+{
+  "schema": "ao.sacred-art.exact-owner-curated-commons-wave05.v1",
+  "date": "2026-11-16",
+  "scope": "Other 84 owner-selected 2026-11-03 RECENT575 curated works excluded from earlier status-specific imports; exact Commons File/source-specific image gate, no prayer/calendar assignments.",
+  "source_pr_head_pin": "99fc0f3227504f68f78868fdb92a3c0aff2827da",
+  "rejection_registry": "app-data/sacred-art/legacy-artwork-rejections-20261116.v1.json",
+  "photo_policy": "Only Commons file pages already handpicked by owner; the API must explicitly say Copyrighted=false, license Public domain/CC0, adequate original dimensions, and no photo-rights red flags. No attribution-based automatic decisions on other Commons sources.",
+  "prior_gallery_images": 429,
+  "prior_gallery_image_bearing_records": 432,
+  "owner_curated_status": "OWNER_APPROVED_CURATED",
+  "max_batch_images": 84,
+  "source_originals_retained": false,
+  "webp_transform": "Full composition; no crop, Photoshop, repaint, AI or upscale; max edge 1600px",
+  "assets": [
+    {
+      "artwork_id": "RECENT575::007",
+      "title": "The Dream of Saint Joseph",
+      "artist": "Gerard Seghers",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_The_dream_of_Saint_Joseph.jpg",
+      "commons_file_title": "File:Gerard Seghers - The dream of Saint Joseph.jpg",
+      "commons_pageid": 99030594,
+      "commons_sha1": "faa80297071fd45faf95f0b390028a9868dc6fc2",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3007,
+        4229
+      ],
+      "thumb_bytes": 870468,
+      "thumb_sha256": "9c73bd4e91643e8d89f267ffaa0344d5b20b3dabd6463896b18609b8850219ac",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-007.webp",
+      "derivative_bytes": 246146,
+      "derivative_sha256": "38f7a66c6729535332c021fa124b6a5bb91e21b8918d1bbe8c19bc424d66ea47",
+      "derivative_git_blob_sha": "f9a4154af50d621319ca87c82430d209b03769f3",
+      "derivative_dimensions": [
+        1138,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "http://balat.kikirpa.be/object/9046",
+        "image_author": "Gerard Seghers",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::015",
+      "title": "Augustins - Le Christ porté au tombeau - Nicolas Tournier - 2004 1 286",
+      "artist": "Nicolas Tournier",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Augustins_-_Le_Christ_port%C3%A9_au_tombeau_-_Nicolas_Tournier_-_2004_1_286.jpg",
+      "commons_file_title": "File:Augustins - Le Christ porté au tombeau - Nicolas Tournier - 2004 1 286.jpg",
+      "commons_pageid": 65058507,
+      "commons_sha1": "71a35f87c841ff47b4bfc81fc8acf384f712f582",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        2589,
+        4878
+      ],
+      "thumb_bytes": 1040117,
+      "thumb_sha256": "3c8239ba1bc034ce4f75815c5a2450aeb7215400a93e2cbe0add00da2766d1cf",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-015.webp",
+      "derivative_bytes": 166756,
+      "derivative_sha256": "abd6c5e83b651eaef1d85b3d419f60ccc2964b1b2ae045e30878c079fa8987f8",
+      "derivative_git_blob_sha": "61aadbf262c016654a13b96de86d14fe3585c449",
+      "derivative_dimensions": [
+        849,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Own work",
+        "image_author": "Didier Descouens",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::047",
+      "title": "Christ on the Cross (after Peter Paul Rubens)",
+      "artist": "After Peter Paul Rubens",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Anonieme_meester_-_Christ_on_the_Cross_(after_Peter_Paul_Rubens)_-_1935-BO_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "commons_file_title": "File:Anonieme meester - Christ on the Cross (after Peter Paul Rubens) - 1935-BO - Museum of Fine Arts Ghent (MSK).jpg",
+      "commons_pageid": 140216202,
+      "commons_sha1": "0d1167619f1db959365e5fdbd27217e715cf3d02",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3301,
+        5536
+      ],
+      "thumb_bytes": 2012881,
+      "thumb_sha256": "1516bb5fb65db6c1c6e3bb5d8240b4033df38d3b0c54f50a3fa4815fc7229452",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-047.webp",
+      "derivative_bytes": 271316,
+      "derivative_sha256": "96d61bc9f400fd07a2d9bd8acf67a2d4762e48b560b9adcc77b7a044325096a0",
+      "derivative_git_blob_sha": "a1c0d13da413e280ca06326d4214b3e3aec2b784",
+      "derivative_dimensions": [
+        954,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Museum of Fine Arts Ghent (MSK)",
+        "image_author": "After Peter Paul Rubens",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::051",
+      "title": "Pieta title QS:P1476,en:\"Pieta \"label QS:Len,\"Pieta \"label QS:Lfr,\"Pietà\"label QS:Lnl,\"Pieta\"",
+      "artist": "anonymous",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Anonieme_meester_-_Pieta_-_1937-M_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "commons_file_title": "File:Anonieme meester - Pieta - 1937-M - Museum of Fine Arts Ghent (MSK).jpg",
+      "commons_pageid": 140238305,
+      "commons_sha1": "beff643fc0190ed23cc2338c43f552b6e8321fec",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        1600,
+        1072
+      ],
+      "thumb_bytes": 125492,
+      "thumb_sha256": "8968b2e4c02d2a361dc16c9a04999dab57ba2b69a68c25e2ba6348b3b3f1fecb",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-051.webp",
+      "derivative_bytes": 91432,
+      "derivative_sha256": "174fa1739329f12f553b95d83cd51f1c3a173ab364f8fc09740ccf156fee9f38",
+      "derivative_git_blob_sha": "41d42170faab9dd805123b2eabd97db07cc09b5c",
+      "derivative_dimensions": [
+        1600,
+        1072
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Museum of Fine Arts Ghent (MSK)",
+        "image_author": "anonymous",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::056",
+      "title": "The Holy Trinity",
+      "artist": "Workshop of Artus Wolffort",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Anonieme_meester_-_The_Holy_Trinity_-_S-65_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "commons_file_title": "File:Anonieme meester - The Holy Trinity - S-65 - Museum of Fine Arts Ghent (MSK).jpg",
+      "commons_pageid": 140226146,
+      "commons_sha1": "0f770d21e0f8fe6f854b5160033b18b6bbbf8d6c",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3574,
+        4596
+      ],
+      "thumb_bytes": 1703958,
+      "thumb_sha256": "ea194479f24a92750ef70106bdef133643ad2177879201c30488897a8f7f417b",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-056.webp",
+      "derivative_bytes": 599356,
+      "derivative_sha256": "ffde5f9635f12d96285cc00ba6ab5aa6f7a35cd5297550f54c789a2df43e4301",
+      "derivative_git_blob_sha": "8aabe4afcc85ffb69bf557df004f71c3a67f335c",
+      "derivative_dimensions": [
+        1244,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Museum of Fine Arts Ghent (MSK)",
+        "image_author": "Workshop of Artus Wolffort",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::061",
+      "title": "The Adoration of the Shepherds",
+      "artist": "Antoon van den Heuvel",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Antoon_van_den_Heuvel_-_The_Adoration_of_the_Shepherds_-_S-89_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "commons_file_title": "File:Antoon van den Heuvel - The Adoration of the Shepherds - S-89 - Museum of Fine Arts Ghent (MSK).jpg",
+      "commons_pageid": 140182814,
+      "commons_sha1": "4cfe5ce9fcaedb124c7d773ba1332975fd469d94",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3824,
+        5271
+      ],
+      "thumb_bytes": 1033062,
+      "thumb_sha256": "45a4a702091c9782fb986f5331ce5b35e9df000c5690f1f150f249ceb6e2097b",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-061.webp",
+      "derivative_bytes": 256752,
+      "derivative_sha256": "be6cbe6046b442784cd3b62b6f29bfe3868782dde6a13be2cf377076a9ce8ade",
+      "derivative_git_blob_sha": "d2a73146a8ad8df1341d56568dd116f221a72e8f",
+      "derivative_dimensions": [
+        1161,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Museum of Fine Arts Ghent (MSK)",
+        "image_author": "Antoon van den Heuvel",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::073",
+      "title": "Christ Crowned with Thorns",
+      "artist": "Jan Janssens",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_Christ_Crowned_with_Thorns_-_1929-BA_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "commons_file_title": "File:Jan Janssens - Christ Crowned with Thorns - 1929-BA - Museum of Fine Arts Ghent (MSK).jpg",
+      "commons_pageid": 140216741,
+      "commons_sha1": "9b96eea622bd50b83029b5d7ff984d0b0040ed36",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        2809,
+        3537
+      ],
+      "thumb_bytes": 1062188,
+      "thumb_sha256": "c3b6a8e874db8d7121fd2ac864a6e6008e4192d65d57a7ba146c59daab361831",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-073.webp",
+      "derivative_bytes": 330758,
+      "derivative_sha256": "b832b4cfb969c0d54e9099bc919849e691ae33c9b761b3c673285aeef505f77d",
+      "derivative_git_blob_sha": "f7026e06b635d6d224725ccbf1a0551a576136ea",
+      "derivative_dimensions": [
+        1270,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Museum of Fine Arts Ghent (MSK)",
+        "image_author": "Jan Janssens",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::074",
+      "title": "Christ Crowned with Thorns",
+      "artist": "Jan Janssens",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_Christ_Crowned_with_Thorns_-_1929-BB_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "commons_file_title": "File:Jan Janssens - Christ Crowned with Thorns - 1929-BB - Museum of Fine Arts Ghent (MSK).jpg",
+      "commons_pageid": 140224816,
+      "commons_sha1": "1dd6a4d7f4dc5ae24b969549abf8396d65c70d70",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3820,
+        4713
+      ],
+      "thumb_bytes": 824460,
+      "thumb_sha256": "0b6def18a208c95ddee149db09a17424f73ccc54351c9c3702e7eb133991b49e",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-074.webp",
+      "derivative_bytes": 267380,
+      "derivative_sha256": "1fba24f1a02e07ac0c1e59028a2766b99fea4ec141be6b65285411c6f4dbfb99",
+      "derivative_git_blob_sha": "f54ff04084ec34e36d810ad9e61eb1a1a4ddf1c5",
+      "derivative_dimensions": [
+        1297,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Museum of Fine Arts Ghent (MSK)",
+        "image_author": "Jan Janssens",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::081",
+      "title": "The Dream of Saint Joseph",
+      "artist": "Gerard Seghers",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_The_Dream_of_Saint_Joseph_-_S-73_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "commons_file_title": "File:Gerard Seghers - The Dream of Saint Joseph - S-73 - Museum of Fine Arts Ghent (MSK).jpg",
+      "commons_pageid": 140220500,
+      "commons_sha1": "4cf402afca5900854fe9cdec355ab214e981f6ce",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        4960,
+        6886
+      ],
+      "thumb_bytes": 1087000,
+      "thumb_sha256": "88e0db268826944a02eec6859b7cb933eae391e73d8e47069d3f4a478e7d6367",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-081.webp",
+      "derivative_bytes": 248782,
+      "derivative_sha256": "fcba5d305e05b1da1148ad6f1a22bf631b440e3e881819861d79a82a0c02d906",
+      "derivative_git_blob_sha": "50bc67b0b568bf43a0050e394d839acf247f3ee9",
+      "derivative_dimensions": [
+        1152,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Museum of Fine Arts Ghent (MSK)",
+        "image_author": "Gerard Seghers",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::084",
+      "title": "(Toulouse) Pietà (1901) Rudolf Weisse - Musée des Augustins",
+      "artist": "(Toulouse) Pietà (1901) Rudolf Weisse",
+      "source_page": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Piet%C3%A0_(1901)_Rudolf_Weisse_-_Mus%C3%A9e_des_Augustins.jpg",
+      "commons_file_title": "File:(Toulouse) Pietà (1901) Rudolf Weisse - Musée des Augustins.jpg",
+      "commons_pageid": 115263475,
+      "commons_sha1": "f0d66c27c81e5dd87559f22d512b66c3086f61ac",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        5111,
+        4437
+      ],
+      "thumb_bytes": 497296,
+      "thumb_sha256": "bc5964cab17813dac7ca48a565dc0cce0127261d5b1a1525cc272ba7e4ce881f",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-084.webp",
+      "derivative_bytes": 200842,
+      "derivative_sha256": "8ac5e8dcace807e8cc797a02ad01f548eaa8409768dbc7c3ba9a59da98817ab8",
+      "derivative_git_blob_sha": "37136515a7c186d5b6af87e3ab8d6e0bb2c8ddde",
+      "derivative_dimensions": [
+        1600,
+        1389
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Own work",
+        "image_author": "Didier Descouens",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::111",
+      "title": "Dutch: Ecce Homo Ecce Homotitle QS:P1476,nl:\"Ecce Homo \"label QS:Lnl,\"Ecce Homo \"label QS:Len,\"Ecce Homo\"",
+      "artist": "Gertrude de Pelichy",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ecce_Homo_-_Gertrude_de_Pelichy_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Ecce Homo - Gertrude de Pelichy - Musea Brugge - 1.jpg",
+      "commons_pageid": 185409323,
+      "commons_sha1": "b29407492a20a8d34e00cbcd9f269a5194c6116e",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        1529,
+        2000
+      ],
+      "thumb_bytes": 241495,
+      "thumb_sha256": "c97093eb65a5f1cafdd52d59b6c22bfccb9c7e7157c1ad0140c1c6811ab95f4d",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-111.webp",
+      "derivative_bytes": 120058,
+      "derivative_sha256": "9ef265cd8708716478b20b0e43111d8a142e2144a51206fb97bfb2170e06d98b",
+      "derivative_git_blob_sha": "d27a20f0916242c08faaeb077aeec117e5942156",
+      "derivative_dimensions": [
+        1223,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0041142001",
+        "image_author": "Gertrude de Pelichy",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::112",
+      "title": "Angel pietalabel QS:Len,\"Angel pieta\"label QS:Lnl,\"Engelpiëta\"",
+      "artist": "Lodewijk de Deyster",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Engelpieta_-_Lodewijk_de_Deyster_-_Musea_Brugge_-_1.jpg",
+      "commons_file_title": "File:Engelpieta - Lodewijk de Deyster - Musea Brugge - 1.jpg",
+      "commons_pageid": 189982137,
+      "commons_sha1": "579ccb5238338e0754dd5924f1897afad1be06e3",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        1563,
+        2000
+      ],
+      "thumb_bytes": 529605,
+      "thumb_sha256": "42eeffe77e7928ab5b401aa28b594d3dc4266726169b79399cbd8739691071f9",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-112.webp",
+      "derivative_bytes": 317056,
+      "derivative_sha256": "bd7ceec7e4476e7ff2274169a661d0f292948b005cd68705a781992a2f6488ec",
+      "derivative_git_blob_sha": "17324a8ac24c4b4302644be8ee594753fad77f47",
+      "derivative_dimensions": [
+        1250,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://artinflanders.be/en/artwork/0041196000",
+        "image_author": "Lodewijk de Deyster",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::115",
+      "title": "Le Repos de la Sainte Famille pendant la fuite en Égypte",
+      "artist": "anonymous",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Anonyme_-_Le_Repos_de_la_Sainte_Famille_pendant_la_fuite_en_%C3%89gypte_-_PPP2501_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+      "commons_file_title": "File:Anonyme - Le Repos de la Sainte Famille pendant la fuite en Égypte - PPP2501 - Musée des Beaux-Arts de la ville de Paris.jpg",
+      "commons_pageid": 98908353,
+      "commons_sha1": "989cd6c75dbb8a8061995c8f1a891eaf0fc5bf07",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        4500,
+        3543
+      ],
+      "thumb_bytes": 984939,
+      "thumb_sha256": "0b4097517111539fcf240ffd4bc8245d6b8d2d749dca9e89ca991faf230b7756",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-115.webp",
+      "derivative_bytes": 626986,
+      "derivative_sha256": "f36ddaa83619865a112d8d6c9fb41e71843d6da212a4b207dfbfa34353ce92f6",
+      "derivative_git_blob_sha": "d7638f8e94336d4749ea8d85055719e994552432",
+      "derivative_dimensions": [
+        1600,
+        1260
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Paris Musées",
+        "image_author": "anonymous",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::145",
+      "title": "The Holy Trinity",
+      "artist": "Artus Wolffort",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Artus_Wolffort_-_The_Holy_Trinity.jpg",
+      "commons_file_title": "File:Artus Wolffort - The Holy Trinity.jpg",
+      "commons_pageid": 44508528,
+      "commons_sha1": "047c3f40ecebecfe78b9ec1568b0c850c5e92987",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        4980,
+        6489
+      ],
+      "thumb_bytes": 957773,
+      "thumb_sha256": "c2b1657806bbba4bc248fad0ce4aee6737e8d73476fb46b006fd1cfd3a9bebe1",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-145.webp",
+      "derivative_bytes": 245452,
+      "derivative_sha256": "e80ba1f898afc558e5de58a92a1abee87e21edae33f787c79020686f75319f8f",
+      "derivative_git_blob_sha": "039ca22052cfa27ab5c874134db831e8c0f2b3ad",
+      "derivative_dimensions": [
+        1228,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "http://www.lukasweb.be/en/photo/the-holy-trinity",
+        "image_author": "Artus Wolffort",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::161",
+      "title": "Esquisse pour l'église de la Trinité , La Sainte Famille",
+      "artist": "Eugène Romain Thirion",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Romain_Thirion_-_Esquisse_pour_l%27%C3%A9glise_de_la_Trinit%C3%A9_,_La_Sainte_Famille_-_PPP4798_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+      "commons_file_title": "File:Eugène Romain Thirion - Esquisse pour l'église de la Trinité , La Sainte Famille - PPP4798 - Musée des Beaux-Arts de la ville de Paris.jpg",
+      "commons_pageid": 98109171,
+      "commons_sha1": "bf237b6a31ea57639412cc1df95d9a071a23bf39",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3986,
+        5461
+      ],
+      "thumb_bytes": 1383460,
+      "thumb_sha256": "c000c1a022ad99ff2267e96977026d683c6e09f373c0e0e44a998cc98e865f29",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-161.webp",
+      "derivative_bytes": 420928,
+      "derivative_sha256": "fb488998e9c9b10fcfbc58004adcc5205ee67dcda92379319b73af4c6b9090a4",
+      "derivative_git_blob_sha": "06af08e4ce91d07f55a077c8172a27bc2d930e5f",
+      "derivative_dimensions": [
+        1168,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Paris Musées",
+        "image_author": "Eugène Romain Thirion",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::164",
+      "title": "Esquisse pour l'église de la Trinité , Le songe de Saint-Joseph",
+      "artist": "Eugène Romain Thirion",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Romain_Thirion_-_Esquisse_pour_l%27%C3%A9glise_de_la_Trinit%C3%A9_,_Le_songe_de_Saint-Joseph_-_PPP4797_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+      "commons_file_title": "File:Eugène Romain Thirion - Esquisse pour l'église de la Trinité , Le songe de Saint-Joseph - PPP4797 - Musée des Beaux-Arts de la ville de Paris.jpg",
+      "commons_pageid": 98262056,
+      "commons_sha1": "21bb74cd9657f2119934da8efb4138b63cc7ce9e",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3401,
+        5136
+      ],
+      "thumb_bytes": 1496560,
+      "thumb_sha256": "ddb4b2af126c62d96ae9f8d17834cab80332d39af87be1b95769bf28effdbba3",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-164.webp",
+      "derivative_bytes": 410926,
+      "derivative_sha256": "bc625e5860189d68581dedbc60598a0bc74d8799d7895e33411d0f1d60c6dda6",
+      "derivative_git_blob_sha": "84b6ffb15fc8689a83a97f7cf80def078b932276",
+      "derivative_dimensions": [
+        1060,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Paris Musées",
+        "image_author": "Eugène Romain Thirion",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::172",
+      "title": "French: Ecce Homo title QS:P1476,fr:\"Ecce Homo \"label QS:Lfr,\"Ecce Homo \"",
+      "artist": "Luca Giordano",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Luca_(dit_Fa_Presto)_Giordano_-_Ecce_Homo_-_PPP2534_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+      "commons_file_title": "File:Luca (dit Fa Presto) Giordano - Ecce Homo - PPP2534 - Musée des Beaux-Arts de la ville de Paris.jpg",
+      "commons_pageid": 98150068,
+      "commons_sha1": "83d4e7a9f9c53aaa7d90841d7305d7c0e073ec32",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3632,
+        4760
+      ],
+      "thumb_bytes": 1050615,
+      "thumb_sha256": "7b1d2e00a89cdd7573083c24e6aa2c9165594a0780d38b457128ee059f1e833b",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-172.webp",
+      "derivative_bytes": 340896,
+      "derivative_sha256": "b5b068189714b23e194603258d20cfc517c1a936fec9623f71df29c1843decce",
+      "derivative_git_blob_sha": "02c1b10ae74ce54f94713f56c202458aebf400f6",
+      "derivative_dimensions": [
+        1221,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Paris Musées",
+        "image_author": "Luca Giordano",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::195",
+      "title": "French: La Nativité title QS:P1476,fr:\"La Nativité \"label QS:Lfr,\"La Nativité \"",
+      "artist": "anonymous",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Ecole_cr%C3%A9to-v%C3%A9nitienne_-_La_Nativit%C3%A9_-_PDUT1975_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+      "commons_file_title": "File:Ecole créto-vénitienne - La Nativité - PDUT1975 - Musée des Beaux-Arts de la ville de Paris.jpg",
+      "commons_pageid": 98345798,
+      "commons_sha1": "189b8a10b83262c43d2e7c099d3df65e4bdef86b",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        6682,
+        5218
+      ],
+      "thumb_bytes": 883407,
+      "thumb_sha256": "db0cd46d1c9d6f65b79ebd1df698f4be91d0ba02e7c8bd727d2802c5132bb4d0",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-195.webp",
+      "derivative_bytes": 539006,
+      "derivative_sha256": "35ecea487421ad989f292ad4b0e2da718430c9d841b8a5fb287c319e2d82fe70",
+      "derivative_git_blob_sha": "ada6deff4d3da07e02df6c2bad5d514a3d1df0b6",
+      "derivative_dimensions": [
+        1600,
+        1249
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Paris Musées",
+        "image_author": "anonymous",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::211",
+      "title": "Présentation du Christ au Temple",
+      "artist": "anonymous",
+      "source_page": "https://commons.wikimedia.org/wiki/File:%C3%89cole_de_(%C3%89cole_de_Palekh)_Palekh_-_Pr%C3%A9sentation_du_Christ_au_Temple_-_PPP4925_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+      "commons_file_title": "File:École de (École de Palekh) Palekh - Présentation du Christ au Temple - PPP4925 - Musée des Beaux-Arts de la ville de Paris.jpg",
+      "commons_pageid": 98367097,
+      "commons_sha1": "66fa7ab3620ab1d7c6f00fae32400bf730dfc420",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        4211,
+        5238
+      ],
+      "thumb_bytes": 1192054,
+      "thumb_sha256": "9216e117c6a47f779e12d60dfed3008d697eac10f6dac358247ad9d4262366a7",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-211.webp",
+      "derivative_bytes": 495444,
+      "derivative_sha256": "e47bdab55af8bb390a55a92ed189e194fdb141bafd767c1af72a90bcb83b2126",
+      "derivative_git_blob_sha": "4453c8581236a4f460b76c53a86d9e68820def94",
+      "derivative_dimensions": [
+        1286,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Paris Musées",
+        "image_author": "anonymous",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::237",
+      "title": "The Rest on the Flight into Egypt",
+      "artist": "Jacob Jordaens",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-_The_Rest_on_the_Flight_into_Egypt_-_1914-CQ_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "commons_file_title": "File:Jacob Jordaens - The Rest on the Flight into Egypt - 1914-CQ - Museum of Fine Arts Ghent (MSK).jpg",
+      "commons_pageid": 140221012,
+      "commons_sha1": "26647a79b79d930e642a0fa783c2df65615fdc29",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3009,
+        3681
+      ],
+      "thumb_bytes": 1439275,
+      "thumb_sha256": "5627c0c5acb128fdeebad212ee408b53cb4299f18349010cf3ca5629b3897022",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-237.webp",
+      "derivative_bytes": 547646,
+      "derivative_sha256": "2e73836e910d5cefbb104fd4193a13bee9390dd7d225eb9fc90ff05a81354aad",
+      "derivative_git_blob_sha": "8f8b6b2bf4876645ee6d284d04c69a953e6cc913",
+      "derivative_dimensions": [
+        1308,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Museum of Fine Arts Ghent (MSK)",
+        "image_author": "Jacob Jordaens",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::263",
+      "title": "Christ on the cross between the two criminals",
+      "artist": "Anthony van Dyck",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Anthony_van_Dyck_-_Christ_on_the_cross_between_the_two_criminals.jpg",
+      "commons_file_title": "File:Anthony van Dyck - Christ on the cross between the two criminals.jpg",
+      "commons_pageid": 181663227,
+      "commons_sha1": "2d7bdd1c7dc4583634f1c00dc99d5d38088be3fc",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        4498,
+        6095
+      ],
+      "thumb_bytes": 1015902,
+      "thumb_sha256": "51dcb02dea3c14aee1e4ef9883ec28761386fd936fd65b6e2416ee1cd9939a76",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-263.webp",
+      "derivative_bytes": 258324,
+      "derivative_sha256": "4ddb28fb5dc57474f8e898ed257fd01dc3e0342e4740334641eaca5d02e2c72e",
+      "derivative_git_blob_sha": "1d2830801cab168a916acc86cce26d6c3afcd471",
+      "derivative_dimensions": [
+        1181,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://kmska.be/nl/meesterwerk/christus-aan-het-kruis-de-lanssteek-0",
+        "image_author": "Anthony van Dyck",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::270",
+      "title": "Crucifixion",
+      "artist": "Jan Provoost",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jan_Provoost_-_Crucifixion_-_WGA18445.jpg",
+      "commons_file_title": "File:Jan Provoost - Crucifixion - WGA18445.jpg",
+      "commons_pageid": 15885300,
+      "commons_sha1": "e80b60de22a340478f11603598ece0c094f58d52",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        6776,
+        4583
+      ],
+      "thumb_bytes": 910232,
+      "thumb_sha256": "90a4dc3dc305a77d8adb844ec18cc61f747c2fbefcd06bef7e64c98f9d78f529",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-270.webp",
+      "derivative_bytes": 559138,
+      "derivative_sha256": "b3d044983d25564d9b707de51ae3c5d634e4a9e1640a2b7e3bd88f612a99c009",
+      "derivative_git_blob_sha": "d5ab71d79a1e034772270b4e1153264173079185",
+      "derivative_dimensions": [
+        1600,
+        1083
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "1. Web Gallery of Art : Image Info about artwork wga QS:P11807,\"p/provost/crucifi1\" 2. Lukas - Art in Flanders VZW",
+        "image_author": "Jan Provoost",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::274",
+      "title": "Christ on the Cross",
+      "artist": "Léon Bonnat",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Leon_Bonnat_-_The_Crucifixion.jpg",
+      "commons_file_title": "File:Leon Bonnat - The Crucifixion.jpg",
+      "commons_pageid": 31000735,
+      "commons_sha1": "f24e7dc10c267cb87acbd4a8253be4c82ae3999c",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3255,
+        4639
+      ],
+      "thumb_bytes": 1109504,
+      "thumb_sha256": "623ca76fa6b80b1ee0a36d735b92bc3edc386b247324894e11bb7fad9febae79",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-274.webp",
+      "derivative_bytes": 296426,
+      "derivative_sha256": "282b611811f79660255d1cec43c2bc6a3dd3a5ffe22b2d33960649d4812be758",
+      "derivative_git_blob_sha": "f79519e90f629a14d08882f00755404786617b34",
+      "derivative_dimensions": [
+        1123,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Musée du Petit Palais",
+        "image_author": "Léon Bonnat",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::288",
+      "title": "79 Il Prete Genovese, Saint Antoine de Padoue tenant l'enfant Jésus",
+      "artist": "DCHNwam",
+      "source_page": "https://commons.wikimedia.org/wiki/File:79_Il_Prete_Genovese,_Saint_Antoine_de_Padoue_tenant_l%27enfant_J%C3%A9sus.jpg",
+      "commons_file_title": "File:79 Il Prete Genovese, Saint Antoine de Padoue tenant l'enfant Jésus.jpg",
+      "commons_pageid": 163857127,
+      "commons_sha1": "d217710c3e0da7df2b8673e46e0cbdb4d0690dde",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3336,
+        3936
+      ],
+      "thumb_bytes": 1336316,
+      "thumb_sha256": "ee7a03f7deaed4ba188292ab21e940c46e86e1215003ef208b962b5434c1e3be",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-288.webp",
+      "derivative_bytes": 573072,
+      "derivative_sha256": "484a13422efc0de647ad193b03bb9bcd0c4dc1705b28da18c4022e60d19dfa82",
+      "derivative_git_blob_sha": "08258b0d4f0029351bc8127281c96186bbac3890",
+      "derivative_dimensions": [
+        1356,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "https://www.flickr.com/photos/57179180@N07/54458372995/",
+        "image_author": "DCHNwam",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::306",
+      "title": "Adoration of the Shepherds-Philippe de Champaigne-MBA Lyon A52-IMG 0394",
+      "artist": "Philippe de Champaigne",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Adoration_of_the_Shepherds-Philippe_de_Champaigne-MBA_Lyon_A52-IMG_0394.jpg",
+      "commons_file_title": "File:Adoration of the Shepherds-Philippe de Champaigne-MBA Lyon A52-IMG 0394.jpg",
+      "commons_pageid": 15177097,
+      "commons_sha1": "90b6e115cb399b149329a05705af8d30506049eb",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        2862,
+        4788
+      ],
+      "thumb_bytes": 1041475,
+      "thumb_sha256": "3eb46b6cd3f30c1d7bb0224e86c045e2ab229ca68a54a8bad318d4e2290479cf",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-306.webp",
+      "derivative_bytes": 206252,
+      "derivative_sha256": "d17311bc75c77eb8b5119e457727ac1e38dc41a017642b686ee705668eb83684",
+      "derivative_git_blob_sha": "4f15f6e9775d47d1164995f4755b336bda3deb7e",
+      "derivative_dimensions": [
+        956,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Own work , Rama",
+        "image_author": "Philippe de Champaigne",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::339",
+      "title": "Le repos pendant la fuite en Égypte - Placido Constanzi - MBAB 2012.0.1210",
+      "artist": "Placido Costanzi",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Le_repos_pendant_la_fuite_en_%C3%89gypte_-_Placido_Constanzi_-_MBAB_2012.0.1210.jpg",
+      "commons_file_title": "File:Le repos pendant la fuite en Égypte - Placido Constanzi - MBAB 2012.0.1210.jpg",
+      "commons_pageid": 153493242,
+      "commons_sha1": "ac8fa4ce5cc0f6c969778b3b08242876300d46d1",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        1314,
+        1830
+      ],
+      "thumb_bytes": 878542,
+      "thumb_sha256": "50f3b0533af6148ef0b55b3855a73aced234ce927425c7b373690a489589c970",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-339.webp",
+      "derivative_bytes": 155928,
+      "derivative_sha256": "c3600d43fdb4801bbf113b6233f45f0c34e71e703e174344b7213697299099de",
+      "derivative_git_blob_sha": "550189fe773e2a5d8f48a81c7457e1ac67d3d36c",
+      "derivative_dimensions": [
+        1149,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Œuvre appartenant au Musée des Beaux Arts de Besançon",
+        "image_author": "Placido Costanzi",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::355",
+      "title": "Le Songe de saint Joseph",
+      "artist": "Nicolas Labbé",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Nicolas_Labb%C3%A9_-_Le_Songe_de_saint_Joseph.jpg",
+      "commons_file_title": "File:Nicolas Labbé - Le Songe de saint Joseph.jpg",
+      "commons_pageid": 92968179,
+      "commons_sha1": "1da3c404b343d868dbf25482951c58a579ade2c2",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        2142,
+        3739
+      ],
+      "thumb_bytes": 1259600,
+      "thumb_sha256": "05f824117adb85184718513d5a568f13db104a8cc3a43e5c6d211248ce15c44e",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-355.webp",
+      "derivative_bytes": 283128,
+      "derivative_sha256": "1c811a26068577191954a5b572ae65d3ca1710d7aa5ee0962ffbb7a86f3e632c",
+      "derivative_git_blob_sha": "d586775742980355d2772f9fa54849853b9f50a2",
+      "derivative_dimensions": [
+        917,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Own work , Rvalette",
+        "image_author": "Nicolas Labbé",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::360",
+      "title": "Crucifixion (1660-1665) - Karel Dujardin (MAH, Geneva)",
+      "artist": "Paradise Chronicle",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Crucifixion_(1660-1665)_-_Karel_Dujardin_(MAH,_Geneva).jpg",
+      "commons_file_title": "File:Crucifixion (1660-1665) - Karel Dujardin (MAH, Geneva).jpg",
+      "commons_pageid": 148684320,
+      "commons_sha1": "665510cfacd9b8768973e1f7cd8e3c298b7a7f67",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        1520,
+        2488
+      ],
+      "thumb_bytes": 502493,
+      "thumb_sha256": "b013a2f81f0fff5728b2dd1f5ac33538a555d5239aa9d8e2edc4adc5c513e6be",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-360.webp",
+      "derivative_bytes": 70258,
+      "derivative_sha256": "f9231af54f91891e6f032ab8e60cf01901e70432b10d36fd6a11df48c41561bc",
+      "derivative_git_blob_sha": "5a32c8483f67ff090a147b5983b1a8b225d96a7b",
+      "derivative_dimensions": [
+        977,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Own work",
+        "image_author": "Paradise Chronicle",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::373",
+      "title": "Poussin-Fuite en Egypte-MBA-Lyon",
+      "artist": "Nicolas Poussin",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Poussin-Fuite_en_Egypte-MBA-Lyon.jpg",
+      "commons_file_title": "File:Poussin-Fuite en Egypte-MBA-Lyon.jpg",
+      "commons_pageid": 15702558,
+      "commons_sha1": "6ebf1e12c45a9179843e41327bc964ddc9824083",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        1492,
+        1088
+      ],
+      "thumb_bytes": 284850,
+      "thumb_sha256": "7562ee96014e1a5f186524bb48589ef013c083ddca88b57aee55938259188e94",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-373.webp",
+      "derivative_bytes": 257838,
+      "derivative_sha256": "a0cebb6283fd37dab2ed4207bbbfd791890bcfaf2b0c4897b8d1a9814cb3028a",
+      "derivative_git_blob_sha": "a61cf89355deb0af7263b0da17308148570bf40e",
+      "derivative_dimensions": [
+        1492,
+        1088
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Œuvre appartenant au musée des Beaux-Arts de Lyon",
+        "image_author": "Nicolas Poussin",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::443",
+      "title": "Descente de croix.",
+      "artist": "Sébastien Bourdon",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Bourdon-descente_de_croix.JPG",
+      "commons_file_title": "File:Bourdon-descente de croix.JPG",
+      "commons_pageid": 27143231,
+      "commons_sha1": "6ba18f05bd1d4b801161b5a14cf605df955dbda1",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        1789,
+        1612
+      ],
+      "thumb_bytes": 206337,
+      "thumb_sha256": "def43508ff4be0bb7917ee89de584a9c9e897c132415872b71d7abd722b2cf88",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-443.webp",
+      "derivative_bytes": 214844,
+      "derivative_sha256": "7183bfe223d5bb5d9a36a63ee7ff9da6ce3f407e346c0aa9db78a33e18b1e928",
+      "derivative_git_blob_sha": "7fe9ba4bcaf50169608853a59f228241eb825c6b",
+      "derivative_dimensions": [
+        1600,
+        1442
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Own work",
+        "image_author": "Sébastien Bourdon",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::459",
+      "title": "French: Adoration des bergers title QS:P1476,fr:\"Adoration des bergers \"label QS:Lfr,\"Adoration des bergers \"",
+      "artist": "Louis Cretey",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Louis_Cretey_-_Adoration_des_bergers_02.jpg",
+      "commons_file_title": "File:Louis Cretey - Adoration des bergers 02.jpg",
+      "commons_pageid": 146723674,
+      "commons_sha1": "eab30d097db03751435b510f0e2d9218af28c9f8",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3500,
+        4337
+      ],
+      "thumb_bytes": 919011,
+      "thumb_sha256": "5911f92584172af3fc152d3525810787ca1cd8365ae8cf2189f96c5708812868",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-459.webp",
+      "derivative_bytes": 304686,
+      "derivative_sha256": "65a95e095d09c5172181fd684bd8f07c6756023a974e703ad816ad42db0aa889",
+      "derivative_git_blob_sha": "c72067aebcde4d75c3889ab295f68e23649bc6e0",
+      "derivative_dimensions": [
+        1291,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Own work , Tylwyth Eldar , 2024-03-09 13:26:25",
+        "image_author": "Louis Cretey",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::483",
+      "title": "La Pietà",
+      "artist": "Guercino",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Guercino_Piet%C3%A0_2.jpg",
+      "commons_file_title": "File:Guercino Pietà 2.jpg",
+      "commons_pageid": 3110508,
+      "commons_sha1": "1e554f6697dcf0277ffe20d41dd5021f0e906e9f",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        2719,
+        4113
+      ],
+      "thumb_bytes": 1355397,
+      "thumb_sha256": "15c464341e6336b049b1b4b156f6299fe3f6eaa1f578605540efdc25f0794a0b",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-483.webp",
+      "derivative_bytes": 369922,
+      "derivative_sha256": "9a452d39da71c32be26abc1ec725bb0bc79f18a533c7b544f2c9e5edab9e30af",
+      "derivative_git_blob_sha": "1226039c9a8253da85482e73ea1dbe8e7c9fbe20",
+      "derivative_dimensions": [
+        1058,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Base Joconde",
+        "image_author": "Guercino",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::495",
+      "title": "La Vierge, l'Enfant Jésus et Sainte Martine",
+      "artist": "Pietro da Cortona",
+      "source_page": "https://commons.wikimedia.org/wiki/File:La_Vierge,_l%27Enfant_J%C3%A9sus_et_Sainte_Martine.JPG",
+      "commons_file_title": "File:La Vierge, l'Enfant Jésus et Sainte Martine.JPG",
+      "commons_pageid": 19137985,
+      "commons_sha1": "85af486a76b525226e6bac1bdc1e944700956265",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3278,
+        2496
+      ],
+      "thumb_bytes": 568126,
+      "thumb_sha256": "1b4730b22d79b6d0621db16269787d204375656a18e0e260147d0fc4557fcc4c",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-495.webp",
+      "derivative_bytes": 286076,
+      "derivative_sha256": "91b6cbc4101036c245d2188d1c1f16a98e6b639c069dfb71715c96620ceb39e0",
+      "derivative_git_blob_sha": "8223ad00d7c12cdf548a97e10cbe148584141b22",
+      "derivative_dimensions": [
+        1600,
+        1218
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Self-photographed , Caroline Léna Becker , 10 April 2012",
+        "image_author": "Pietro da Cortona",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::496",
+      "title": "Giordano, Luca—Presentazione di Gesù al tempio—1670s—Musée des Beaux-Arts de Rennes—D.1955.3.1",
+      "artist": "Luca Giordano",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Giordano,_Luca%E2%80%94Presentazione_di_Ges%C3%B9_al_tempio%E2%80%941670s%E2%80%94Mus%C3%A9e_des_Beaux-Arts_de_Rennes%E2%80%94D.1955.3.1.jpg",
+      "commons_file_title": "File:Giordano, Luca—Presentazione di Gesù al tempio—1670s—Musée des Beaux-Arts de Rennes—D.1955.3.1.jpg",
+      "commons_pageid": 19138678,
+      "commons_sha1": "a4cd3442ac6d8f1449eb408cbfe1c447113088f2",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3780,
+        2757
+      ],
+      "thumb_bytes": 649025,
+      "thumb_sha256": "25c0a8b6635c0447cd1ea632dadcf2946b07a6646d52b59a690bb14a9752bc7b",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-496.webp",
+      "derivative_bytes": 369642,
+      "derivative_sha256": "cb95923f26807afff3c66a2b741b014c1ea5d191a335fe0af569b517ed1cfab1",
+      "derivative_git_blob_sha": "dffc7e2fdc1af6c001374a5dae23cea32bd55db5",
+      "derivative_dimensions": [
+        1600,
+        1167
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Self-photographed , Caroline Léna Becker , 10 April 2012",
+        "image_author": "Luca Giordano",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::497",
+      "title": "La Fuite en Egypte",
+      "artist": "Jean Tassel",
+      "source_page": "https://commons.wikimedia.org/wiki/File:La_Fuite_en_Egypte.JPG",
+      "commons_file_title": "File:La Fuite en Egypte.JPG",
+      "commons_pageid": 19284859,
+      "commons_sha1": "6aa4bcabcdc44eadd138b13558f8caaa930cb49d",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        3910,
+        2901
+      ],
+      "thumb_bytes": 552337,
+      "thumb_sha256": "e1d3612132ab7b122ba15e62bc96bd0913ba925b1f4deef44ae9dac4a3ce8cf3",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-497.webp",
+      "derivative_bytes": 291174,
+      "derivative_sha256": "f25bd75156aaedc84e48d92afae3dd9ee34c8cafb430fc187bb2cd4313205fb3",
+      "derivative_git_blob_sha": "c46d051789c4e22790c235c8bb35fa1f281964f1",
+      "derivative_dimensions": [
+        1600,
+        1188
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Self-photographed , Caroline Léna Becker , 1 May 2012",
+        "image_author": "Jean Tassel",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::513",
+      "title": "French: La Crucifixion de Saint-André The Crucifixion of Saint Andrewlabel QS:Lfr,\"Le Martyre de Saint André\"",
+      "artist": "Jean Restout",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Jean_Restout_-_Martyre_de_Saint_Andr%C3%A9.jpg",
+      "commons_file_title": "File:Jean Restout - Martyre de Saint André.jpg",
+      "commons_pageid": 73517617,
+      "commons_sha1": "bde4985f5c15e474040ad67696052ade974e730e",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        1777,
+        2510
+      ],
+      "thumb_bytes": 2205754,
+      "thumb_sha256": "786308b1413ea7e23d9b9db8d2f98f9f55ccd378d044f37b16076222901f6d13",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-513.webp",
+      "derivative_bytes": 196494,
+      "derivative_sha256": "ecbd9a5a54105a0bd94f8a999ebd0fdc58d508fe8992147deca0059abd50d6aa",
+      "derivative_git_blob_sha": "7e48308388c674cd6e602b97bf4e58412ec0ec8d",
+      "derivative_dimensions": [
+        1133,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Own work , Tylwyth Eldar , 2018-08-04 11:49:31",
+        "image_author": "Jean Restout",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::521",
+      "title": "Adoration of the Shepherds",
+      "artist": "Annibale Carracci",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3AAnnibale_Carracci_Adorazione_dei_Pastori_Orleans.png",
+      "commons_file_title": "File:Annibale Carracci Adorazione dei Pastori Orleans.png",
+      "commons_pageid": 33813769,
+      "commons_sha1": "8c41d28d070ac0edd5e9d94e2f9e0a93549d5390",
+      "commons_mime": "image/png",
+      "original_dimensions": [
+        1280,
+        1624
+      ],
+      "thumb_bytes": 5409325,
+      "thumb_sha256": "7836af494a2002d29497b02b19aedf9ea215c2ebd2a3d6f6f44a79fc7a250a9b",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-521.webp",
+      "derivative_bytes": 255752,
+      "derivative_sha256": "0a206053117607ae919eba23ecdcf84ae833d853b4736f8ec109b67c059820d5",
+      "derivative_git_blob_sha": "a46dd1d2b17e3568f362840261791c6fc1e4a39a",
+      "derivative_dimensions": [
+        1261,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "[2]",
+        "image_author": "Annibale Carracci",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    },
+    {
+      "artwork_id": "RECENT575::523",
+      "title": "Collection Motais de Narbonne - Le repos pendant la fuite en Egypte (c.1675) - Gregorio de Ferrari",
+      "artist": "Collection Motais de Narbonne",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Collection_Motais_de_Narbonne_-_Le_repos_pendant_la_fuite_en_Egypte_(c.1675)_-_Gregorio_de_Ferrari.jpg",
+      "commons_file_title": "File:Collection Motais de Narbonne - Le repos pendant la fuite en Egypte (c.1675) - Gregorio de Ferrari.jpg",
+      "commons_pageid": 88753647,
+      "commons_sha1": "32b868964a9797080d4e17ff731a1fbc54a3b202",
+      "commons_mime": "image/jpeg",
+      "original_dimensions": [
+        4051,
+        5200
+      ],
+      "thumb_bytes": 1293256,
+      "thumb_sha256": "32d15251f559a2c7365bf3017ed939b13435aa8245bf04a6a46553b764a7d889",
+      "derivative_path": "site/gallery/images/owner-approved-curated-wave05-523.webp",
+      "derivative_bytes": 457724,
+      "derivative_sha256": "877445d116f25ff9a46aaee47b22234d13948dcd4f894e756d693b640ff117b6",
+      "derivative_git_blob_sha": "ea6d859515b100643b851813a5d6db56d79bf3b3",
+      "derivative_dimensions": [
+        1246,
+        1600
+      ],
+      "license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "credit": "Own work",
+        "image_author": "Didier Descouens",
+        "usage_terms": "public domain"
+      },
+      "old_curation": "OWNER_APPROVED_CURATED",
+      "previous_photo_rights_note": "NOT_INDEPENDENTLY_CLEARED",
+      "original_bytes_archived": false
+    }
+  ],
+  "held": [
+    {
+      "artwork_id": "RECENT575::086",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Augustins_-Ecce_homo_-_Wenzel_Coebergher.jpg",
+      "decision": "HOLD",
+      "reason": "OWNER_SELECTED_BUT_ATTRIBUTION_UNRESOLVED",
+      "detail": "Source title identifies likely work, but catalogue artist is still marked to verify; no premature release."
+    },
+    {
+      "artwork_id": "RECENT575::262",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Christ_on_the_Cross_between_the_Two_Thieves_-_WGA20235.jpg",
+      "decision": "HOLD",
+      "reason": "SOURCE_FILE_ARTIST_CONTRADICTS_CURATED_AUTHOR",
+      "detail": "Exact Commons filename names a different artist; retain selected artwork record pending identity verification."
+    },
+    {
+      "artwork_id": "RECENT575::361",
+      "source_url": "https://commons.wikimedia.org/wiki/File:William-Adolphe_Bouguereau_(1825-1905)_-_The_Flagellation_of_Our_Lord_Jesus_Christ_(1880).jpg",
+      "decision": "HOLD",
+      "reason": "PHOTO_ALREADY_PRESENT_IN_GALLERY_UNDER_OTHER_ID"
+    },
+    {
+      "artwork_id": "RECENT575::424",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Circumcision_of_Jesus_Christ_(Detail)_Philippe_Quantin.jpg",
+      "decision": "HOLD",
+      "reason": "SOURCE_PHOTO_IS_CROPPED_DETAIL",
+      "detail": "Full painting composition not documented."
+    },
+    {
+      "artwork_id": "RECENT575::476",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gerard_van_Honthorst_%E2%80%94_Adoration_of_the_Shepherds.jpg",
+      "decision": "HOLD",
+      "reason": "SOURCE_FILE_ARTIST_CONTRADICTS_CURATED_AUTHOR",
+      "detail": "Exact Commons filename names a different artist; retain selected artwork record pending identity verification."
+    },
+    {
+      "artwork_id": "RECENT575::538",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3ABaugin_Sainte_Famille_avec_saint_Jean_Baptiste_et_deux_anges_mus%C3%A9e_Magnin.jpg",
+      "decision": "HOLD",
+      "reason": "OWNER_SELECTED_BUT_ATTRIBUTION_UNRESOLVED",
+      "detail": "Source title identifies likely work, but catalogue artist is still marked to verify; no premature release."
+    },
+    {
+      "artwork_id": "RECENT575::540",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3AJean_Boucher_La_Pr%C3%A9sentation_au_Temple_mus%C3%A9e_Magnin.jpg",
+      "decision": "HOLD",
+      "reason": "OWNER_SELECTED_BUT_ATTRIBUTION_UNRESOLVED",
+      "detail": "Source title identifies likely work, but catalogue artist is still marked to verify; no premature release."
+    },
+    {
+      "artwork_id": "RECENT575::039",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Maerten_de_Vos_-_The_incredulity_of_Thomas.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(1007, 1123)"
+    },
+    {
+      "artwork_id": "RECENT575::054",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Anselmus_van_Hulle_-_Pieta_-_S-49_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(800, 621)"
+    },
+    {
+      "artwork_id": "RECENT575::076",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_The_Flagellation_of_Christ_-_WGA20432.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(784, 900)"
+    },
+    {
+      "artwork_id": "RECENT575::077",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_The_crowning_with_thorns.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(673, 842)"
+    },
+    {
+      "artwork_id": "RECENT575::097",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pierre_Subleyras,_%22Saint_Joseph_tenant_l%27Enfant_J%C3%A9sus%22,_Mus%C3%A9e_des_Augustins_(2004_1_282).jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(945, 1200)"
+    },
+    {
+      "artwork_id": "RECENT575::151",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Provoost_-_Crucifixion_-_WGA18446.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(695, 1300)"
+    },
+    {
+      "artwork_id": "RECENT575::152",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_van_Oost_I_-_Christ_Crowned_with_Thorns.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(900, 1139)"
+    },
+    {
+      "artwork_id": "RECENT575::176",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lodewijk_de_Deyster_-_Angel_pieta.jpg",
+      "decision": "HOLD",
+      "reason": "COPYRIGHTED_FLAG_NOT_EXPLICITLY_FALSE",
+      "detail": "{'copyrighted': 'true', 'license': 'cc0'}"
+    },
+    {
+      "artwork_id": "RECENT575::192",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ecce_Homo,_PDUT1439.jpg",
+      "decision": "HOLD",
+      "reason": "COPYRIGHTED_FLAG_NOT_EXPLICITLY_FALSE",
+      "detail": "{'copyrighted': 'true', 'license': 'cc0'}"
+    },
+    {
+      "artwork_id": "RECENT575::229",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Tournier_-_Entombment_-_WGA23040.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(712, 922)"
+    },
+    {
+      "artwork_id": "RECENT575::231",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Coebergher_Ecce_Homo_(2004_1_64).jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(800, 627)"
+    },
+    {
+      "artwork_id": "RECENT575::240",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Maarten_van_Heemskerck_-_The_Crucifixion_-_WGA11312.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(878, 1022)"
+    },
+    {
+      "artwork_id": "RECENT575::311",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Crucifixion_-_Simon_Vouet_(A_139).jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(774, 1200)"
+    },
+    {
+      "artwork_id": "RECENT575::312",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Mise_au_tombeau_-_Eug%C3%A8ne_Delacroix_(B_286).jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(1200, 836)"
+    },
+    {
+      "artwork_id": "RECENT575::313",
+      "source_url": "https://commons.wikimedia.org/wiki/File:L%27Enfant_J%C3%A9sus_retrouv%C3%A9_au_Temple_par_ses_parents_-_Jacques_Stella_(1979-169).jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(979, 1200)"
+    },
+    {
+      "artwork_id": "RECENT575::317",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-_Adoration_of_the_Shepherds_(Lyon).jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(805, 976)"
+    },
+    {
+      "artwork_id": "RECENT575::341",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Fuite_en_%C3%89gypte,_par_Francisco_de_Zurbar%C3%A1n.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(868, 1024)"
+    },
+    {
+      "artwork_id": "RECENT575::357",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Matthias_Gr%C3%BCnewald_-_The_Crucifixion_-_WGA10710.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(801, 1082)"
+    },
+    {
+      "artwork_id": "RECENT575::358",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Steen_-_Child_Jesus_in_the_Temple.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(800, 653)"
+    },
+    {
+      "artwork_id": "RECENT575::362",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Levieux_Repos_pendant_la_Fuite_en_%C3%89gypte.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(955, 702)"
+    },
+    {
+      "artwork_id": "RECENT575::363",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Reynaud_Levieux,_Le_repos_pendant_la_fuite_en_%C3%89gypte.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(962, 703)"
+    },
+    {
+      "artwork_id": "RECENT575::382",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Vouet_-_Anges_portant_la_colonne_de_la_flagellation,_M0332048069.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(714, 1200)"
+    },
+    {
+      "artwork_id": "RECENT575::383",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Angelo_Bronzino_-_Deposition_of_Christ_-_WGA03282.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(800, 1234)"
+    },
+    {
+      "artwork_id": "RECENT575::384",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Fuite_en_%C3%89gypte_Rembrandt_Tours.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(954, 1080)"
+    },
+    {
+      "artwork_id": "RECENT575::423",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Champaigne_Pr%C3%A9sentation_au_temple_Dijon.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(661, 800)"
+    },
+    {
+      "artwork_id": "RECENT575::433",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lethi%C3%A8re_-_D%C3%A9position_de_croix,_1791.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(555, 800)"
+    },
+    {
+      "artwork_id": "RECENT575::439",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pieter_van_Mol_-_The_dead_Christ_supported_by_an_angel.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(845, 1003)"
+    },
+    {
+      "artwork_id": "RECENT575::440",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_D%C3%A9position_de_Croix.png",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(691, 955)"
+    },
+    {
+      "artwork_id": "RECENT575::465",
+      "source_url": "https://commons.wikimedia.org/wiki/File:%22L%27Adoration_des_bergers%22,_anonyme,_vers_1635-1640._Rouen,_mus%C3%A9e_des_beaux-arts._(36311888415).jpg",
+      "decision": "HOLD",
+      "reason": "COPYRIGHTED_FLAG_NOT_EXPLICITLY_FALSE",
+      "detail": "{'copyrighted': 'true', 'license': 'cc0'}"
+    },
+    {
+      "artwork_id": "RECENT575::482",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ecce_Homo_-_M._Preti.png",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(889, 695)"
+    },
+    {
+      "artwork_id": "RECENT575::484",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rosa_-_Le_portement_de_croix,_PE_87.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(712, 512)"
+    },
+    {
+      "artwork_id": "RECENT575::486",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nativit%C3%A9_-_Jacques_Dumont_-_Mus%C3%A9e_Cond%C3%A9.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(758, 573)"
+    },
+    {
+      "artwork_id": "RECENT575::490",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-_Adoration_of_the_Shepherds_(Grenoble).jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(677, 1000)"
+    },
+    {
+      "artwork_id": "RECENT575::491",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Caravaggio_flagellation.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(1030, 791)"
+    },
+    {
+      "artwork_id": "RECENT575::501",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Melchior_Broederlam_-_The_Presentation_of_Christ_-_WGA03230.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(728, 1006)"
+    },
+    {
+      "artwork_id": "RECENT575::517",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbar%C3%A1n_-_The_Adoration_of_the_Shepherds_-_WGA26058.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(900, 1307)"
+    },
+    {
+      "artwork_id": "RECENT575::533",
+      "source_url": "https://commons.wikimedia.org/wiki/File%3ALa_mont%C3%A9e_au_calvaire_1304174_P_van_Lint.jpg",
+      "decision": "HOLD",
+      "reason": "COPYRIGHTED_FLAG_NOT_EXPLICITLY_FALSE",
+      "detail": "{'copyrighted': 'true', 'license': 'cc by-sa 4.0'}"
+    },
+    {
+      "artwork_id": "RECENT575::557",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Piet%C3%A0_-_Giovanni_Stefano_Danedi_-_MM_1938E523.jpg",
+      "decision": "HOLD",
+      "reason": "BELOW_FULL_COMPOSITION_QUALITY_FLOOR",
+      "detail": "(1261, 846)"
+    },
+    {
+      "artwork_id": "RECENT575::265",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Meester_van_Hoogstraeten_-_Mater_Dolorosa,_1510-1520,_388.tif",
+      "decision": "HOLD",
+      "reason": "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED",
+      "detail": "FINAL_PIXELS_TOO_SMALL"
+    }
+  ],
+  "metadata_request_errors": [],
+  "summary": {
+    "owner_selected_candidate_records": 84,
+    "metadata_eligible_exact_pages": 77,
+    "queried_files": 77,
+    "original_rejections_protected": 103,
+    "source_photo_license_and_size_qualified": 39,
+    "attempted_downloads": 39,
+    "new_gallery_images": 38,
+    "new_bytes": 12150596,
+    "held_or_deferred_rows": 46,
+    "hold_reasons": {
+      "OWNER_SELECTED_BUT_ATTRIBUTION_UNRESOLVED": 3,
+      "SOURCE_FILE_ARTIST_CONTRADICTS_CURATED_AUTHOR": 2,
+      "PHOTO_ALREADY_PRESENT_IN_GALLERY_UNDER_OTHER_ID": 1,
+      "SOURCE_PHOTO_IS_CROPPED_DETAIL": 1,
+      "BELOW_FULL_COMPOSITION_QUALITY_FLOOR": 34,
+      "COPYRIGHTED_FLAG_NOT_EXPLICITLY_FALSE": 4,
+      "IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED": 1
+    },
+    "catalogue_total_records": 873,
+    "original_curatorial_records_unchanged": 873,
+    "new_prayer_card_assignments": 0,
+    "new_calendar_selections": 0,
+    "image_hash_mismatches": 0
+  }
+}

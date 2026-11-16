@@ -15,7 +15,8 @@
     "bulk_approved_commons": "app-data/sacred-art/bulk-commons-photo-import-20261116.v1.json",
     "bulk_approved_commons_batch02": "app-data/sacred-art/bulk-commons-photo-import-batch02-20261116.v1.json",
     "commons_rate_limit_retry": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
-    "selected_museum_wave04": "app-data/sacred-art/selected-museum-image-wave04-20261116.v1.json"
+    "selected_museum_wave04": "app-data/sacred-art/selected-museum-image-wave04-20261116.v1.json",
+    "curated_cohort_wave05": "app-data/sacred-art/curated-cohort-image-wave05-20261116.v1.json"
   },
   "policy": {
     "all_records_included": true,
@@ -31,11 +32,11 @@
   "counts": {
     "total_records": 873,
     "selected_artwork_records": 740,
-    "image_available_records": 432,
-    "distinct_locally_hosted_paintings": 429,
+    "image_available_records": 470,
+    "distinct_locally_hosted_paintings": 467,
     "angelus_review_records": 36,
     "unassigned": 611,
-    "verified_image_files": 429,
+    "verified_image_files": 467,
     "full_resolution_image_count_unknown": true
   },
   "records": [
@@ -358,7 +359,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Piet%C3%A0_(1901)_Rudolf_Weisse_-_Mus%C3%A9e_des_Augustins.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-084.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:(Toulouse)_Pietà_(1901)_Rudolf_Weisse_-_Musée_des_Augustins.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          5111,
+          4437
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1389
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/(Toulouse)_Piet%C3%A0_(1901)_Rudolf_Weisse_-_Mus%C3%A9e_des_Augustins.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -377,7 +392,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:79_Il_Prete_Genovese,_Saint_Antoine_de_Padoue_tenant_l%27enfant_J%C3%A9sus.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-288.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:79_Il_Prete_Genovese,_Saint_Antoine_de_Padoue_tenant_l'enfant_Jésus.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3336,
+          3936
+        ],
+        "pixel_width": 1356,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/79_Il_Prete_Genovese,_Saint_Antoine_de_Padoue_tenant_l'enfant_J%C3%A9sus.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -481,7 +510,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File%3AAnnibale_Carracci_Adorazione_dei_Pastori_Orleans.png",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-521.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_Adorazione_dei_Pastori_Orleans.png",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1280,
+          1624
+        ],
+        "pixel_width": 1261,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/File%3AAnnibale_Carracci_Adorazione_dei_Pastori_Orleans.png",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -521,7 +564,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Adoration_of_the_Shepherds-Philippe_de_Champaigne-MBA_Lyon_A52-IMG_0394.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-306.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Adoration_of_the_Shepherds-Philippe_de_Champaigne-MBA_Lyon_A52-IMG_0394.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2862,
+          4788
+        ],
+        "pixel_width": 956,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Adoration_of_the_Shepherds-Philippe_de_Champaigne-MBA_Lyon_A52-IMG_0394.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -592,7 +649,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Engelpieta_-_Lodewijk_de_Deyster_-_Musea_Brugge_-_1.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-112.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Engelpieta_-_Lodewijk_de_Deyster_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1563,
+          2000
+        ],
+        "pixel_width": 1250,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Engelpieta_-_Lodewijk_de_Deyster_-_Musea_Brugge_-_1.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -630,7 +701,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Augustins_-_Le_Christ_port%C3%A9_au_tombeau_-_Nicolas_Tournier_-_2004_1_286.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-015.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Augustins_-_Le_Christ_porté_au_tombeau_-_Nicolas_Tournier_-_2004_1_286.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2589,
+          4878
+        ],
+        "pixel_width": 849,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Augustins_-_Le_Christ_port%C3%A9_au_tombeau_-_Nicolas_Tournier_-_2004_1_286.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -851,7 +936,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_Christ_Crowned_with_Thorns_-_1929-BA_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-073.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_Christ_Crowned_with_Thorns_-_1929-BA_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2809,
+          3537
+        ],
+        "pixel_width": 1270,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan_Janssens_-_Christ_Crowned_with_Thorns_-_1929-BA_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -870,7 +969,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_Christ_Crowned_with_Thorns_-_1929-BB_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-074.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_Christ_Crowned_with_Thorns_-_1929-BB_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3820,
+          4713
+        ],
+        "pixel_width": 1297,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan_Janssens_-_Christ_Crowned_with_Thorns_-_1929-BB_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -1009,7 +1122,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Leon_Bonnat_-_The_Crucifixion.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-274.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Leon_Bonnat_-_The_Crucifixion.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3255,
+          4639
+        ],
+        "pixel_width": 1123,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Leon_Bonnat_-_The_Crucifixion.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -1064,7 +1191,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Anonieme_meester_-_Christ_on_the_Cross_(after_Peter_Paul_Rubens)_-_1935-BO_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-047.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Anonieme_meester_-_Christ_on_the_Cross_(after_Peter_Paul_Rubens)_-_1935-BO_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3301,
+          5536
+        ],
+        "pixel_width": 954,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Anonieme_meester_-_Christ_on_the_Cross_(after_Peter_Paul_Rubens)_-_1935-BO_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -1089,7 +1230,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Anthony_van_Dyck_-_Christ_on_the_cross_between_the_two_criminals.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-263.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Anthony_van_Dyck_-_Christ_on_the_cross_between_the_two_criminals.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4498,
+          6095
+        ],
+        "pixel_width": 1181,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Anthony_van_Dyck_-_Christ_on_the_cross_between_the_two_criminals.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -1218,7 +1373,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Collection_Motais_de_Narbonne_-_Le_repos_pendant_la_fuite_en_Egypte_(c.1675)_-_Gregorio_de_Ferrari.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-523.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Collection_Motais_de_Narbonne_-_Le_repos_pendant_la_fuite_en_Egypte_(c.1675)_-_Gregorio_de_Ferrari.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4051,
+          5200
+        ],
+        "pixel_width": 1246,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Collection_Motais_de_Narbonne_-_Le_repos_pendant_la_fuite_en_Egypte_(c.1675)_-_Gregorio_de_Ferrari.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -1256,7 +1425,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Provoost_-_Crucifixion_-_WGA18445.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-270.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Jan_Provoost_-_Crucifixion_-_WGA18445.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          6776,
+          4583
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1083
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan_Provoost_-_Crucifixion_-_WGA18445.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -1341,7 +1524,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Crucifixion_(1660-1665)_-_Karel_Dujardin_(MAH,_Geneva).jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-360.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Crucifixion_(1660-1665)_-_Karel_Dujardin_(MAH,_Geneva).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1520,
+          2488
+        ],
+        "pixel_width": 977,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Crucifixion_(1660-1665)_-_Karel_Dujardin_(MAH,_Geneva).jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -1426,7 +1623,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Bourdon-descente_de_croix.JPG",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-443.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Bourdon-descente_de_croix.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1789,
+          1612
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1442
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Bourdon-descente_de_croix.JPG?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -1468,7 +1679,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Ecce_Homo_-_Gertrude_de_Pelichy_-_Musea_Brugge_-_1.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-111.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Ecce_Homo_-_Gertrude_de_Pelichy_-_Musea_Brugge_-_1.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1529,
+          2000
+        ],
+        "pixel_width": 1223,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Ecce_Homo_-_Gertrude_de_Pelichy_-_Musea_Brugge_-_1.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -1643,7 +1868,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Romain_Thirion_-_Esquisse_pour_l%27%C3%A9glise_de_la_Trinit%C3%A9_,_La_Sainte_Famille_-_PPP4798_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-161.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Eugène_Romain_Thirion_-_Esquisse_pour_l'église_de_la_Trinité_,_La_Sainte_Famille_-_PPP4798_-_Musée_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3986,
+          5461
+        ],
+        "pixel_width": 1168,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne_Romain_Thirion_-_Esquisse_pour_l'%C3%A9glise_de_la_Trinit%C3%A9_,_La_Sainte_Famille_-_PPP4798_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -1662,7 +1901,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Eug%C3%A8ne_Romain_Thirion_-_Esquisse_pour_l%27%C3%A9glise_de_la_Trinit%C3%A9_,_Le_songe_de_Saint-Joseph_-_PPP4797_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-164.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Eugène_Romain_Thirion_-_Esquisse_pour_l'église_de_la_Trinité_,_Le_songe_de_Saint-Joseph_-_PPP4797_-_Musée_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3401,
+          5136
+        ],
+        "pixel_width": 1060,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne_Romain_Thirion_-_Esquisse_pour_l'%C3%A9glise_de_la_Trinit%C3%A9_,_Le_songe_de_Saint-Joseph_-_PPP4797_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -1721,7 +1974,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Louis_Cretey_-_Adoration_des_bergers_02.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-459.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Louis_Cretey_-_Adoration_des_bergers_02.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3500,
+          4337
+        ],
+        "pixel_width": 1291,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Louis_Cretey_-_Adoration_des_bergers_02.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -1763,7 +2030,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Luca_(dit_Fa_Presto)_Giordano_-_Ecce_Homo_-_PPP2534_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-172.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Luca_(dit_Fa_Presto)_Giordano_-_Ecce_Homo_-_PPP2534_-_Musée_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3632,
+          4760
+        ],
+        "pixel_width": 1221,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Luca_(dit_Fa_Presto)_Giordano_-_Ecce_Homo_-_PPP2534_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -1821,7 +2102,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Jean_Restout_-_Martyre_de_Saint_Andr%C3%A9.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-513.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Jean_Restout_-_Martyre_de_Saint_André.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1777,
+          2510
+        ],
+        "pixel_width": 1133,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean_Restout_-_Martyre_de_Saint_Andr%C3%A9.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -1840,7 +2135,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Ecole_cr%C3%A9to-v%C3%A9nitienne_-_La_Nativit%C3%A9_-_PDUT1975_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-195.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Ecole_créto-vénitienne_-_La_Nativité_-_PDUT1975_-_Musée_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          6682,
+          5218
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1249
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Ecole_cr%C3%A9to-v%C3%A9nitienne_-_La_Nativit%C3%A9_-_PDUT1975_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -1999,7 +2308,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Giordano,_Luca%E2%80%94Presentazione_di_Ges%C3%B9_al_tempio%E2%80%941670s%E2%80%94Mus%C3%A9e_des_Beaux-Arts_de_Rennes%E2%80%94D.1955.3.1.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-496.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Giordano,_Luca—Presentazione_di_Gesù_al_tempio—1670s—Musée_des_Beaux-Arts_de_Rennes—D.1955.3.1.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3780,
+          2757
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1167
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Giordano,_Luca%E2%80%94Presentazione_di_Ges%C3%B9_al_tempio%E2%80%941670s%E2%80%94Mus%C3%A9e_des_Beaux-Arts_de_Rennes%E2%80%94D.1955.3.1.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -2124,7 +2447,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:La_Fuite_en_Egypte.JPG",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-497.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:La_Fuite_en_Egypte.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3910,
+          2901
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1188
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/La_Fuite_en_Egypte.JPG?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -2202,7 +2539,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Guercino_Piet%C3%A0_2.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-483.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Guercino_Pietà_2.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2719,
+          4113
+        ],
+        "pixel_width": 1058,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Guercino_Piet%C3%A0_2.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -2246,7 +2597,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:La_Vierge,_l%27Enfant_J%C3%A9sus_et_Sainte_Martine.JPG",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-495.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:La_Vierge,_l'Enfant_Jésus_et_Sainte_Martine.JPG",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3278,
+          2496
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1218
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/La_Vierge,_l'Enfant_J%C3%A9sus_et_Sainte_Martine.JPG?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -2284,7 +2649,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Anonyme_-_Le_Repos_de_la_Sainte_Famille_pendant_la_fuite_en_%C3%89gypte_-_PPP2501_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-115.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Anonyme_-_Le_Repos_de_la_Sainte_Famille_pendant_la_fuite_en_Égypte_-_PPP2501_-_Musée_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4500,
+          3543
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1260
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Anonyme_-_Le_Repos_de_la_Sainte_Famille_pendant_la_fuite_en_%C3%89gypte_-_PPP2501_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -2303,7 +2682,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Le_repos_pendant_la_fuite_en_%C3%89gypte_-_Placido_Constanzi_-_MBAB_2012.0.1210.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-339.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Le_repos_pendant_la_fuite_en_Égypte_-_Placido_Constanzi_-_MBAB_2012.0.1210.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1314,
+          1830
+        ],
+        "pixel_width": 1149,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_repos_pendant_la_fuite_en_%C3%89gypte_-_Placido_Constanzi_-_MBAB_2012.0.1210.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -2343,7 +2736,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Labb%C3%A9_-_Le_Songe_de_saint_Joseph.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-355.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Labbé_-_Le_Songe_de_saint_Joseph.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          2142,
+          3739
+        ],
+        "pixel_width": 917,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicolas_Labb%C3%A9_-_Le_Songe_de_saint_Joseph.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -2402,7 +2809,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Anonieme_meester_-_Pieta_-_1937-M_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-051.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Anonieme_meester_-_Pieta_-_1937-M_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1600,
+          1072
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1072
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Anonieme_meester_-_Pieta_-_1937-M_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -2463,7 +2884,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Poussin-Fuite_en_Egypte-MBA-Lyon.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-373.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Poussin-Fuite_en_Egypte-MBA-Lyon.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          1492,
+          1088
+        ],
+        "pixel_width": 1492,
+        "pixel_height": 1088
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Poussin-Fuite_en_Egypte-MBA-Lyon.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -2596,7 +3031,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:%C3%89cole_de_(%C3%89cole_de_Palekh)_Palekh_-_Pr%C3%A9sentation_du_Christ_au_Temple_-_PPP4925_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-211.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:École_de_(École_de_Palekh)_Palekh_-_Présentation_du_Christ_au_Temple_-_PPP4925_-_Musée_des_Beaux-Arts_de_la_ville_de_Paris.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4211,
+          5238
+        ],
+        "pixel_width": 1286,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89cole_de_(%C3%89cole_de_Palekh)_Palekh_-_Pr%C3%A9sentation_du_Christ_au_Temple_-_PPP4925_-_Mus%C3%A9e_des_Beaux-Arts_de_la_ville_de_Paris.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -2985,7 +3434,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Antoon_van_den_Heuvel_-_The_Adoration_of_the_Shepherds_-_S-89_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-061.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Antoon_van_den_Heuvel_-_The_Adoration_of_the_Shepherds_-_S-89_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3824,
+          5271
+        ],
+        "pixel_width": 1161,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Antoon_van_den_Heuvel_-_The_Adoration_of_the_Shepherds_-_S-89_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -3511,7 +3974,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_The_dream_of_Saint_Joseph.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-007.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_The_dream_of_Saint_Joseph.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3007,
+          4229
+        ],
+        "pixel_width": 1138,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerard_Seghers_-_The_dream_of_Saint_Joseph.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -3530,7 +4007,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_The_Dream_of_Saint_Joseph_-_S-73_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-081.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_The_Dream_of_Saint_Joseph_-_S-73_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4960,
+          6886
+        ],
+        "pixel_width": 1152,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerard_Seghers_-_The_Dream_of_Saint_Joseph_-_S-73_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -3657,7 +4148,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Anonieme_meester_-_The_Holy_Trinity_-_S-65_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-056.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Anonieme_meester_-_The_Holy_Trinity_-_S-65_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3574,
+          4596
+        ],
+        "pixel_width": 1244,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Anonieme_meester_-_The_Holy_Trinity_-_S-65_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
@@ -3676,7 +4181,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Artus_Wolffort_-_The_Holy_Trinity.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-145.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Artus_Wolffort_-_The_Holy_Trinity.jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          4980,
+          6489
+        ],
+        "pixel_width": 1228,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Artus_Wolffort_-_The_Holy_Trinity.jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [
@@ -4014,7 +4533,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-_The_Rest_on_the_Flight_into_Egypt_-_1914-CQ_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/owner-approved-curated-wave05-237.webp",
+        "quality": "FULL_COMPOSITION_1600PX_COMMONS_PD_SOURCE_VERIFIED",
+        "usage": "GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT",
+        "provenance": "Previously owner-approved Nov 3 painting, exact Commons file page resolved by MediaWiki imageinfo; full-image aspect-preserving 1600px derivative. Original source bytes not retained; API SHA1 and raw thumb SHA256 recorded. User source and photo-rights caveats remain independent.",
+        "license": "Public Domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-_The_Rest_on_the_Flight_into_Egypt_-_1914-CQ_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg",
+        "source_note": "Commons' explicit public-domain/CC0 file claim for this exact image, not a new museum-level or universal photographic-rights clearance.",
+        "source_dimensions": [
+          3009,
+          3681
+        ],
+        "pixel_width": 1308,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacob_Jordaens_-_The_Rest_on_the_Flight_into_Egypt_-_1914-CQ_-_Museum_of_Fine_Arts_Ghent_(MSK).jpg?width=520",
       "rights_note": "NOT_INDEPENDENTLY_CLEARED",
       "scene_ids": [],
