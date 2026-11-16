@@ -14,7 +14,8 @@
     "class_i_gallery_link": "app-data/sacred-art/class-i-gallery-link-20261116.v1.json",
     "bulk_approved_commons": "app-data/sacred-art/bulk-commons-photo-import-20261116.v1.json",
     "bulk_approved_commons_batch02": "app-data/sacred-art/bulk-commons-photo-import-batch02-20261116.v1.json",
-    "commons_rate_limit_retry": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json"
+    "commons_rate_limit_retry": "app-data/sacred-art/commons-rate-limit-recovery-wave03-20261116.v1.json",
+    "selected_museum_wave04": "app-data/sacred-art/selected-museum-image-wave04-20261116.v1.json"
   },
   "policy": {
     "all_records_included": true,
@@ -30,11 +31,11 @@
   "counts": {
     "total_records": 873,
     "selected_artwork_records": 740,
-    "image_available_records": 395,
-    "distinct_locally_hosted_paintings": 392,
+    "image_available_records": 433,
+    "distinct_locally_hosted_paintings": 430,
     "angelus_review_records": 36,
     "unassigned": 611,
-    "verified_image_files": 392,
+    "verified_image_files": 430,
     "full_resolution_image_count_unknown": true
   },
   "records": [
@@ -173,7 +174,21 @@
       "source_url": "https://www.rijksmuseum.nl/en/collection/object/De-doornenkroning-van-Jezus--9c89ad27853218f13af2effaf52cd6ea",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-d08e89eff141e81c816a.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OFFICIAL_RIJKS_IIIF_OBJECT; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "Rijksmuseum object source Public Domain / CC0",
+        "license_url": "https://www.rijksmuseum.nl/en/collection/object/De-doornenkroning-van-Jezus--9c89ad27853218f13af2effaf52cd6ea",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          1600,
+          1389
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1389
+      },
       "image_url_source_only": null,
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -245,7 +260,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:William-Adolphe_Bouguereau_(1825-1905)_-_The_Flagellation_of_Our_Lord_Jesus_Christ_(1880).jpg",
       "record_status": "OWNER APPROVED · 2026-11-03",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-0bfbc7789e1c46d55ed8.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:William-Adolphe_Bouguereau_(1825-1905)_-_The_Flagellation_of_Our_Lord_Jesus_Christ_(1880).jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          2136,
+          3056
+        ],
+        "pixel_width": 1118,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/William-Adolphe_Bouguereau_(1825-1905)_-_The_Flagellation_of_Our_Lord_Jesus_Christ_(1880).jpg?width=520",
       "rights_note": "EXACT PHOTOGRAPH NOT CERTIFIED",
       "scene_ids": [],
@@ -530,7 +559,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:David_Teniers_the_Elder_-_The_Agony_in_the_Garden.jpg",
       "record_status": "OWNER_APPROVED_CURATED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-609ee26b7806dffc5ee6.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:David_Teniers_the_Elder_-_The_Agony_in_the_Garden.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          1333,
+          1799
+        ],
+        "pixel_width": 1186,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/David_Teniers_the_Elder_-_The_Agony_in_the_Garden.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -752,7 +795,21 @@
       "source_url": "https://www.rijksmuseum.nl/en/collection/object/Christ-among-the-Doctors--772da83cfe721b5f90d374153664ddfb",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-52e40bbc7227bbd3a57d.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OFFICIAL_RIJKS_IIIF_OBJECT; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "Rijksmuseum object source Public Domain / CC0",
+        "license_url": "https://www.rijksmuseum.nl/en/collection/object/Christ-among-the-Doctors--772da83cfe721b5f90d374153664ddfb",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          1600,
+          1189
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1189
+      },
       "image_url_source_only": null,
       "rights_note": "Rijksmuseum: public domain",
       "scene_ids": [],
@@ -851,7 +908,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Le_Couronnement_d%27%C3%A9pines.JPG",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-3ce4760b0627a0b09908.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Le_Couronnement_d'épines.JPG",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          3953,
+          2937
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1189
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Le_Couronnement_d'%C3%A9pines.JPG?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [
@@ -899,7 +970,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:1753_Tiepolo_Christus_in_Gethsemane_anagoria.jpg",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-061d20e70102e520c04c.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:1753_Tiepolo_Christus_in_Gethsemane_anagoria.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          3802,
+          3168
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1333
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/1753_Tiepolo_Christus_in_Gethsemane_anagoria.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [
@@ -1216,7 +1301,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Hans_Jordaens_(III)_-_The_Crucifixion.jpg",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-b8f347c615eaf01cfa53.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Hans_Jordaens_(III)_-_The_Crucifixion.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          3713,
+          2880
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1241
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Hans_Jordaens_(III)_-_The_Crucifixion.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [
@@ -1306,7 +1405,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg",
       "record_status": "OWNER_APPROVED_EXISTING",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-38878d1131ad5f014488.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          2705,
+          2362
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1398
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [
@@ -1428,7 +1541,21 @@
       "source_url": "https://www.rijksmuseum.nl/en/collection/object/Ecce-Homo--f435a0bd43cfa3a361ebb60220e9b4d3",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-debd63932870991bd0ab.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OFFICIAL_RIJKS_IIIF_OBJECT; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "Rijksmuseum object source Public Domain / CC0",
+        "license_url": "https://www.rijksmuseum.nl/en/collection/object/Ecce-Homo--f435a0bd43cfa3a361ebb60220e9b4d3",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          1600,
+          1894
+        ],
+        "pixel_width": 1352,
+        "pixel_height": 1600
+      },
       "image_url_source_only": null,
       "rights_note": "Rijksmuseum: public domain",
       "scene_ids": [],
@@ -1451,7 +1578,21 @@
       "source_url": "https://art.thewalters.org/object/37.243/",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-fe92c073c3958f0ac99a.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OFFICIAL_WALTERS_CC0_OBJECT; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "Walters Museum exact-object CC0",
+        "license_url": "https://art.thewalters.org/object/37.243/",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          1799,
+          1171
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1041
+      },
       "image_url_source_only": null,
       "rights_note": "CC0 / public-domain institution download",
       "scene_ids": [],
@@ -1657,7 +1798,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Champaigne_La_Crucifixion.jpg",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-a27cae133328073ea6b5.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Champaigne_La_Crucifixion.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          2560,
+          1920
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1200
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Champaigne_La_Crucifixion.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -1718,7 +1873,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:La_Nativit%C3%A9_-_Mus%C3%A9e_du_Louvre_Peintures_RF_2502.jpg",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-f73bb133ad2a98a81df0.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:La_Nativité_-_Musée_du_Louvre_Peintures_RF_2502.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          10224,
+          7824
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1224
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/La_Nativit%C3%A9_-_Mus%C3%A9e_du_Louvre_Peintures_RF_2502.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -1741,7 +1910,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:CrucifixionVanDyckLouvre.jpg",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-b93630ea5d0ea58e1188.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:CrucifixionVanDyckLouvre.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          3993,
+          4704
+        ],
+        "pixel_width": 1358,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/CrucifixionVanDyckLouvre.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [
@@ -1790,7 +1973,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_Crocifissione_Berlino.jpg",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-a9200e1cbf00ef72a908.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_Crocifissione_Berlino.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          1666,
+          2419
+        ],
+        "pixel_width": 1102,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Annibale_Carracci_Crocifissione_Berlino.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [
@@ -1838,7 +2035,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Guercino_-_Christ_is_praying_in_the_Garden_of_Gethsemane_before_his_arrest._In_the_agony_of_doubt%2C_NMW_A_7.jpg",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-bb4bb14b5186c9446e9e.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Guercino_-_Christ_is_praying_in_the_Garden_of_Gethsemane_before_his_arrest._In_the_agony_of_doubt,_NMW_A_7.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          1920,
+          2770
+        ],
+        "pixel_width": 1109,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Guercino_-_Christ_is_praying_in_the_Garden_of_Gethsemane_before_his_arrest._In_the_agony_of_doubt,_NMW_A_7.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [
@@ -2319,7 +2530,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Philippe%20de%20Champaigne-Pr%C3%A9sentation%20au%20temple.jpg",
       "record_status": "OWNER_APPROVED_EXISTING",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-5f44f987d8184008f238.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Philippe_de_Champaigne-Présentation_au_temple.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          2994,
+          3906
+        ],
+        "pixel_width": 1226,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Philippe%20de%20Champaigne-Pr%C3%A9sentation%20au%20temple.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [
@@ -2345,7 +2570,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Labb%C3%A9-Pr%C3%A9sentation_au_temple.jpg",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-d5acacdaced62d93b4d0.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Labbé-Présentation_au_temple.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          2655,
+          4336
+        ],
+        "pixel_width": 980,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicolas_Labb%C3%A9-Pr%C3%A9sentation_au_temple.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [
@@ -2802,7 +3041,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Fabritius_Adoration_of_the_shepherds.JPG",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-e8a795448fae73f9c5b5.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Fabritius_Adoration_of_the_shepherds.JPG",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          2432,
+          1875
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1233
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Fabritius_Adoration_of_the_shepherds.JPG?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -2985,7 +3238,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:The_Crowning_with_Thorns-Caravaggio_(1602).jpg",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-cdbf8ff3b328d2c0b390.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:The_Crowning_with_Thorns-Caravaggio_(1602).jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          11037,
+          8443
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1224
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Crowning_with_Thorns-Caravaggio_(1602).jpg?width=520",
       "rights_note": "Commons Public Domain Mark / faithful self-scanned reproduction",
       "scene_ids": [
@@ -3159,7 +3426,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Crucifixion%20of%20Saint%20Peter-Caravaggio%20(c.1600)FXD.jpg",
       "record_status": "OWNER_APPROVED_EXISTING",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-f80ac578eb030d7a0e03.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Crucifixion_of_Saint_Peter-Caravaggio_(c.1600)FXD.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          8180,
+          10537
+        ],
+        "pixel_width": 1242,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Crucifixion%20of%20Saint%20Peter-Caravaggio%20(c.1600)FXD.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -3494,7 +3775,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:The%20Incredulity%20of%20Saint%20Thomas.jpg",
       "record_status": "OWNER_APPROVED_EXISTING",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-82287f1caea5a54d8129.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:The_Incredulity_of_Saint_Thomas.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          9754,
+          7210
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1183
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Incredulity%20of%20Saint%20Thomas.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [
@@ -3614,7 +3909,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_The_Nativity_or_the_Adoration_of_the_Angels.jpg",
       "record_status": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-56a3b2cbca2c90a99256.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_The_Nativity_or_the_Adoration_of_the_Angels.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          1774,
+          2311
+        ],
+        "pixel_width": 1228,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerard_Seghers_-_The_Nativity_or_the_Adoration_of_the_Angels.jpg?width=520",
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -6594,7 +6903,21 @@
       "source_url": "https://art.thewalters.org/object/37.1677/",
       "record_status": "OWNER_SELECTED_FOR_PRAYER",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-ff6050dc703973fe35de.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OFFICIAL_WALTERS_CC0_OBJECT; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "Walters Museum exact-object CC0",
+        "license_url": "https://art.thewalters.org/object/37.1677/",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          1386,
+          1800
+        ],
+        "pixel_width": 1232,
+        "pixel_height": 1600
+      },
       "image_url_source_only": null,
       "rights_note": "CC0 / public-domain institution download",
       "scene_ids": [],
@@ -6735,7 +7058,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Dyck,_Anthonis_van_-_Pouring_of_the_Holy_Ghost_-_Bildergalerie_Sanssouci.jpeg",
       "record_status": "OWNER_SELECTED_FOR_PRAYER",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-9584a74fe6b6fd9497f8.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Dyck,_Anthonis_van_-_Pouring_of_the_Holy_Ghost_-_Bildergalerie_Sanssouci.jpeg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          6064,
+          7368
+        ],
+        "pixel_width": 1317,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Dyck%2C_Anthonis_van_-_Pouring_of_the_Holy_Ghost_-_Bildergalerie_Sanssouci.jpeg?width=720",
       "rights_note": "Commons PD-Art / Google Arts & Culture source; reuse assessed open",
       "scene_ids": [],
@@ -6758,7 +7095,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Artus_Wolffort_-_Ascension_of_Jesus_Christ.jpg",
       "record_status": "OWNER_SELECTED_FOR_PRAYER",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-8f7f38f6a517be7abf2b.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Artus_Wolffort_-_Ascension_of_Jesus_Christ.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          3348,
+          4500
+        ],
+        "pixel_width": 1190,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Artus_Wolffort_-_Ascension_of_Jesus_Christ.jpg?width=720",
       "rights_note": "Commons PD-Art; credited original KIK-IRPA catalogue photo",
       "scene_ids": [],
@@ -6781,7 +7132,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:La_Visitation_avec_Marie-Jacobie_et_Marie-Salomé_-_Domenico_Ghirlandaio_-_Musée_du_Louvre_Peintures_INV_297_;_MR_240.jpg",
       "record_status": "OWNER_SELECTED_FOR_PRAYER",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-46a8fc1de9c3abdc3131.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:La_Visitation_avec_Marie-Jacobie_et_Marie-Salomé_-_Domenico_Ghirlandaio_-_Musée_du_Louvre_Peintures_INV_297_;_MR_240.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          7805,
+          8026
+        ],
+        "pixel_width": 1556,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/La_Visitation_avec_Marie-Jacobie_et_Marie-Salom%C3%A9_-_Domenico_Ghirlandaio_-_Mus%C3%A9e_du_Louvre_Peintures_INV_297_%3B_MR_240.jpg?width=720",
       "rights_note": "Commons public-domain faithful 2D reproduction (not Louvre's separately restricted asset)",
       "scene_ids": [],
@@ -6804,7 +7169,21 @@
       "source_url": "https://www.rijksmuseum.nl/en/collection/object/Assumption-of-the-Virgin--c9dd4a4bacd2d05276d325e01e6aa17c",
       "record_status": "OWNER_SELECTED_FOR_PRAYER",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-fe4e7d0f4fa28ef4fd3d.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OFFICIAL_RIJKS_IIIF_OBJECT; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "Rijksmuseum object source Public Domain / CC0",
+        "license_url": "https://www.rijksmuseum.nl/en/collection/object/Assumption-of-the-Virgin--c9dd4a4bacd2d05276d325e01e6aa17c",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          1600,
+          1944
+        ],
+        "pixel_width": 1317,
+        "pixel_height": 1600
+      },
       "image_url_source_only": null,
       "rights_note": "Rijksmuseum: public domain",
       "scene_ids": [],
@@ -6827,7 +7206,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Joakim_Skovgaard,_Kristus_i_de_d%C3%B8des_rige,_,_KMS3141,_Statens_Museum_for_Kunst.jpg",
       "record_status": "OWNER_SELECTED_FOR_PRAYER",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-c3a087eda27c6cdb8424.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Joakim_Skovgaard,_Kristus_i_de_dødes_rige,_,_KMS3141,_Statens_Museum_for_Kunst.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          6290,
+          4404
+        ],
+        "pixel_width": 1600,
+        "pixel_height": 1120
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Joakim_Skovgaard%2C_Kristus_i_de_d%C3%B8des_rige%2C_%2C_KMS3141%2C_Statens_Museum_for_Kunst.jpg?width=720",
       "rights_note": "SMK institutional CC0 representation",
       "scene_ids": [],
@@ -7028,7 +7421,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Francesco_Solimena,_Mari%C3%A6_Bebudelse,_,_KMS7976,_Statens_Museum_for_Kunst.jpg",
       "record_status": "OWNER_SELECTED_FOR_PRAYER",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-5d7b1e1115835572d755.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Francesco_Solimena,_Mariæ_Bebudelse,_,_KMS7976,_Statens_Museum_for_Kunst.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          3065,
+          5291
+        ],
+        "pixel_width": 927,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Francesco_Solimena%2C_Mari%C3%A6_Bebudelse%2C_%2C_KMS7976%2C_Statens_Museum_for_Kunst.jpg?width=720",
       "rights_note": "Museum-supplied CC0 (SMK KMS7976)",
       "scene_ids": [],
@@ -7368,7 +7775,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Coronation_of_the_Virgin.jpg",
       "record_status": "OWNER_SELECTED_FOR_PRAYER",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-922ed05ddaaec061fffd.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Coronation_of_the_Virgin.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          4416,
+          6906
+        ],
+        "pixel_width": 1023,
+        "pixel_height": 1600
+      },
       "image_url_source_only": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter_Paul_Rubens_-_Coronation_of_the_Virgin.jpg?width=720",
       "rights_note": "Commons PDM faithful reproduction; source photography not institutional release",
       "scene_ids": [],
@@ -21668,7 +22089,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:GuidoReni_MichaelDefeatsSatan.jpg",
       "record_status": "APPROVED_LOCKED; FINAL_MODULE_HERO_APPROVAL",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-a7c79c7863f3b3bb671b.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:GuidoReni_MichaelDefeatsSatan.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          1657,
+          2441
+        ],
+        "pixel_width": 1086,
+        "pixel_height": 1600
+      },
       "image_url_source_only": null,
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -21687,7 +22122,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Thomas_Aquinas_(Crivelli%2C_15th-century).jpg",
       "record_status": "APPROVED_LOCKED",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-bc7f3caede0225ff38b3.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Saint_Thomas_Aquinas_(Crivelli,_15th-century).jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          2813,
+          4226
+        ],
+        "pixel_width": 1065,
+        "pixel_height": 1600
+      },
       "image_url_source_only": null,
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -22086,7 +22535,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Our_Holy_Mother_Of_Perpetual_Succour.jpg",
       "record_status": "FINAL_MODULE_HERO_APPROVAL",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-e35d652bf9805c74c731.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Our_Holy_Mother_Of_Perpetual_Succour.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          3000,
+          3688
+        ],
+        "pixel_width": 1302,
+        "pixel_height": 1600
+      },
       "image_url_source_only": null,
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -22105,7 +22568,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_Resurrection.jpg",
       "record_status": "PLACEMENT_KEEP",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-882fab1660c4a43ec8c8.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_Resurrection.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          1529,
+          2000
+        ],
+        "pixel_width": 1223,
+        "pixel_height": 1600
+      },
       "image_url_source_only": null,
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -22124,7 +22601,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Madonna%20of%20the%20Rosary-Caravaggio%20%281607%29.jpg",
       "record_status": "PLACEMENT_KEEP",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-45b549ad50c825df78e7.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Madonna_of_the_Rosary-Caravaggio_(1607).jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          9803,
+          14480
+        ],
+        "pixel_width": 1083,
+        "pixel_height": 1600
+      },
       "image_url_source_only": null,
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -22170,7 +22661,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Franceschini,_Marcantonio_-_The_Guardian_Angel_-_Google_Art_Project.jpg",
       "record_status": "PLACEMENT_KEEP",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-be7443c0d8a4d11c4558.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Franceschini,_Marcantonio_-_The_Guardian_Angel_-_Google_Art_Project.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          2501,
+          3304
+        ],
+        "pixel_width": 1211,
+        "pixel_height": 1600
+      },
       "image_url_source_only": null,
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -22189,7 +22694,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Bernardo_Strozzi_-_The_Guardian_Angel_-_76.256_-_Museum_of_Fine_Arts.jpg",
       "record_status": "PLACEMENT_KEEP",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-ce0d4fdb85f63d27a8d6.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Bernardo_Strozzi_-_The_Guardian_Angel_-_76.256_-_Museum_of_Fine_Arts.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          1932,
+          3200
+        ],
+        "pixel_width": 966,
+        "pixel_height": 1600
+      },
       "image_url_source_only": null,
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -22208,7 +22727,21 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Andrea%20Previtali%20-%20Salvator%20Mundi%20-%20Google%20Art%20Project.jpg",
       "record_status": "PLACEMENT_KEEP",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/selected-museum-wave04-dd5e3d57ae5df3a1f4a4.webp",
+        "quality": "EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
+        "usage": "GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
+        "provenance": "Original artwork identity and source link selected in existing gallery. Exact image source checked via OWNER_SELECTED_COMMONS_EXACT_FILE; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
+        "license": "public domain",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Andrea_Previtali_-_Salvator_Mundi_-_Google_Art_Project.jpg",
+        "source_note": "Image-specific open-use position subject to the exact source metadata; does not create broader museum/photographer rights.",
+        "source_dimensions": [
+          2559,
+          3000
+        ],
+        "pixel_width": 1365,
+        "pixel_height": 1600
+      },
       "image_url_source_only": null,
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],

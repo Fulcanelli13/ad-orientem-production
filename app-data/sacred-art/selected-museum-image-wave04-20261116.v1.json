@@ -1,0 +1,2488 @@
+{
+  "schema": "ao.sacred-art.exact-selected-museum-source-acquisition-wave04.v1",
+  "date": "2026-11-16",
+  "scope": "90 previously owner-selected unpictured museum and original Commons records, no new art selection or prayer/card assignments.",
+  "prior_source_inventory": "app-data/sacred-art/bulk-museum-image-queue-20261116.v1.json",
+  "source_rights_policy": "Require explicit Commons per-file PD/CC0 and copyright false, or supported exact-object museum full image with on-object open-use evidence; historical quality and photo-rights holds are not overridden by title or generic institution policy.",
+  "artworks": [
+    {
+      "artwork_id": "V6::commons:118722",
+      "title": "The Flagellation of Our Lord Jesus Christ",
+      "artist": "William-Adolphe Bouguereau",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:William-Adolphe_Bouguereau_(1825-1905)_-_The_Flagellation_of_Our_Lord_Jesus_Christ_(1880).jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/56/William-Adolphe_Bouguereau_%281825-1905%29_-_The_Flagellation_of_Our_Lord_Jesus_Christ_%281880%29.jpg/1920px-William-Adolphe_Bouguereau_%281825-1905%29_-_The_Flagellation_of_Our_Lord_Jesus_Christ_%281880%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:William-Adolphe_Bouguereau_(1825-1905)_-_The_Flagellation_of_Our_Lord_Jesus_Christ_(1880).jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 118722,
+      "commons_sha1": "d87844ab023bd61adc8d2efa2f7e96cff0a475b0",
+      "original_source_pixels": [
+        2136,
+        3056
+      ],
+      "downloaded_bytes": 587176,
+      "downloaded_source_sha256": "7c49dec262e13293966899a497620114cb1115405365a1886fe17bbd6effbfa4",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-0bfbc7789e1c46d55ed8.webp",
+      "derivative_bytes": 128100,
+      "derivative_sha256": "cc8d05959ba6aa05f7b4617b772fe67afc57a04b6a065147031cbcb43c3aee99",
+      "derivative_git_blob": "915afe85597991aa85dd46f72d5396855a210f95",
+      "derivative_pixels": [
+        1118,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "william-adolphe bouguereau",
+        "credit_meta": "unknown source unknown source",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER APPROVED · 2026-11-03",
+      "historical_rights_note": "EXACT PHOTOGRAPH NOT CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "CANONICAL::ART-avid-eniers-the-lder-gony-in-the-arden-ntwerp-osary-cycle",
+      "title": "Agony in the Garden — Antwerp Rosary cycle",
+      "artist": "David Teniers the Elder",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:David_Teniers_the_Elder_-_The_Agony_in_the_Garden.jpg",
+      "source_photo_url": "https://upload.wikimedia.org/wikipedia/commons/f/fa/David_Teniers_the_Elder_-_The_Agony_in_the_Garden.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:David_Teniers_the_Elder_-_The_Agony_in_the_Garden.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 137772202,
+      "commons_sha1": "4cb63ff9ce98e1c337f849e16debd3ec5d22eef5",
+      "original_source_pixels": [
+        1333,
+        1799
+      ],
+      "downloaded_bytes": 1916709,
+      "downloaded_source_sha256": "6a697614cfe96b9f62921af0015eeca08fbc26ed0103dbefe9abe98c5342658e",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-609ee26b7806dffc5ee6.webp",
+      "derivative_bytes": 205112,
+      "derivative_sha256": "e17b4c9f0558d9773911a86e3bf757d388f4e951419ae241e332d6a9748a0f7d",
+      "derivative_git_blob": "1a634e0659d0ceb946c1a01ab4b69861f41270c6",
+      "derivative_pixels": [
+        1186,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "david teniers the elder",
+        "credit_meta": "https://www.sintpaulusantwerpen.be/kunst-geschiedenis/kunstcollectie/15-mysteries/",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_APPROVED_CURATED",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:20637285",
+      "title": "Christ Crowned with Thorns",
+      "artist": "Dirck van Baburen",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Le_Couronnement_d%27%C3%A9pines.JPG",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ec/Le_Couronnement_d%27%C3%A9pines.JPG/1920px-Le_Couronnement_d%27%C3%A9pines.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Le_Couronnement_d'épines.JPG",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 20637285,
+      "commons_sha1": "2f6312cfe6f24678b3fb4d990026d24c62c5fc1e",
+      "original_source_pixels": [
+        3953,
+        2937
+      ],
+      "downloaded_bytes": 417547,
+      "downloaded_source_sha256": "7e24c266064af0b16eea6f2b9bd0ecb8bd7f47a41868a608140b49abb44f70cd",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-3ce4760b0627a0b09908.webp",
+      "derivative_bytes": 168626,
+      "derivative_sha256": "68f57f8c03a983db31546bc966ae5c431a9e8743c36bc253ce1a2a718233aee7",
+      "derivative_git_blob": "3f9f8e4f1a658992814cf4535e177cda311581bf",
+      "derivative_pixels": [
+        1600,
+        1189
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "dirck van baburen",
+        "credit_meta": "self-photographed , photograph taken at: corps et ombres : le caravagisme européen , category:musée des augustins de toulouse , 23 july 2012 – 14 october 2012 , caroline léna becker",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:44750556",
+      "title": "Christ in the Garden of Gethsemane",
+      "artist": "Giovanni Battista Tiepolo",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:1753_Tiepolo_Christus_in_Gethsemane_anagoria.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/29/1753_Tiepolo_Christus_in_Gethsemane_anagoria.jpg/1920px-1753_Tiepolo_Christus_in_Gethsemane_anagoria.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:1753_Tiepolo_Christus_in_Gethsemane_anagoria.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 44750556,
+      "commons_sha1": "cc4d0cebdf6c4c6abbec1bb74fcb8e6cc1485282",
+      "original_source_pixels": [
+        3802,
+        3168
+      ],
+      "downloaded_bytes": 788094,
+      "downloaded_source_sha256": "456b7fbec1ce5b6909e3b0f9009c3213d33d5f7cbf85965fcbf83eaeb92c317f",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-061d20e70102e520c04c.webp",
+      "derivative_bytes": 458300,
+      "derivative_sha256": "de4005a993cb0969ce9902436d59589fd05cf20bac8ec204043fd5f4006cf872",
+      "derivative_git_blob": "a0eceb621edd04876c21853b6fee37370ae2ed1a",
+      "derivative_pixels": [
+        1600,
+        1333
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "giovanni battista tiepolo",
+        "credit_meta": "own work , anagoria",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:115166028",
+      "title": "Crucifixion",
+      "artist": "Hans Jordaens III",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Hans_Jordaens_(III)_-_The_Crucifixion.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a7/Hans_Jordaens_%28III%29_-_The_Crucifixion.jpg/1920px-Hans_Jordaens_%28III%29_-_The_Crucifixion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Hans_Jordaens_(III)_-_The_Crucifixion.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 115166028,
+      "commons_sha1": "1b9d184313db42ce5894e5207bea87ce18c38737",
+      "original_source_pixels": [
+        3713,
+        2880
+      ],
+      "downloaded_bytes": 838992,
+      "downloaded_source_sha256": "9d9a1feae8867110632cc615bd3cb34dd77b4b383c40ad521ceca8ac9b403185",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-b8f347c615eaf01cfa53.webp",
+      "derivative_bytes": 486852,
+      "derivative_sha256": "142381eaec7a745678266b22e5c276e884948695c2927c79124b2188e1751848",
+      "derivative_git_blob": "f37bf2cf467cb50ade5b0d8a31c30af9cd0c3f05",
+      "derivative_pixels": [
+        1600,
+        1241
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "hans jordaens iii",
+        "credit_meta": "https://www.bonhams.com/auctions/24056/lot/215/",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "CANONICAL::ART-iandomenico-iepolo-escent-from-the-ross-rado-assion-series",
+      "title": "Descent from the Cross — Prado Passion series",
+      "artist": "Giandomenico Tiepolo",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/42/Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg/1920px-Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 19225975,
+      "commons_sha1": "6305d728e1f804b831ef784f6b9363f0e3fde678",
+      "original_source_pixels": [
+        2705,
+        2362
+      ],
+      "downloaded_bytes": 1180842,
+      "downloaded_source_sha256": "085513c4f7eb0f91057350c95539a54663cdfc42929903a6c7fdd9714dd0a729",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-38878d1131ad5f014488.webp",
+      "derivative_bytes": 756272,
+      "derivative_sha256": "d3fbe73a947a2ce60fdf514abe9cfde578bec0ca544974bc3196dcfd7bbcb66a",
+      "derivative_git_blob": "1a9cbca84569045bcddde33c7fe559f04601d1a1",
+      "derivative_pixels": [
+        1600,
+        1398
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "giovanni domenico tiepolo",
+        "credit_meta": "museo nacional del prado, madrid",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_APPROVED_EXISTING",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:4965555",
+      "title": "French: La crucifixion",
+      "artist": "Philippe de Champaigne",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Champaigne_La_Crucifixion.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Champaigne_La_Crucifixion.jpg/1920px-Champaigne_La_Crucifixion.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Champaigne_La_Crucifixion.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 4965555,
+      "commons_sha1": "b21be647d5404cf9dceffcf95e949085f108528b",
+      "original_source_pixels": [
+        2560,
+        1920
+      ],
+      "downloaded_bytes": 481074,
+      "downloaded_source_sha256": "605c5d59fe0721288cc04dd6cb17510b5d9d8a42cb7a7adf4619ae8641a06d46",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-a27cae133328073ea6b5.webp",
+      "derivative_bytes": 217024,
+      "derivative_sha256": "fcc41ef4c20d39e1148a85702b0d90093afab13bd251a069441c7cf9e01ff35f",
+      "derivative_git_blob": "bb877923ef7e0745b0b0a3db44f4ef1f1170032f",
+      "derivative_pixels": [
+        1600,
+        1200
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "philippe de champaigne",
+        "credit_meta": "own work (own photo, taken july 9, 2008)",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:146550068",
+      "title": "French: La Nativité | Nativity \" \"",
+      "artist": "Aertgen van Leyden",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:La_Nativit%C3%A9_-_Mus%C3%A9e_du_Louvre_Peintures_RF_2502.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/La_Nativit%C3%A9_-_Mus%C3%A9e_du_Louvre_Peintures_RF_2502.jpg/1920px-La_Nativit%C3%A9_-_Mus%C3%A9e_du_Louvre_Peintures_RF_2502.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:La_Nativité_-_Musée_du_Louvre_Peintures_RF_2502.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 146550068,
+      "commons_sha1": "ad5adca9e9bedf4a146318c3251a34e719ff1e0e",
+      "original_source_pixels": [
+        10224,
+        7824
+      ],
+      "downloaded_bytes": 585227,
+      "downloaded_source_sha256": "9dfdb631e28953077ab949eccb03ae78d06e92823a400eddf3d7423a13df5ebb",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-f73bb133ad2a98a81df0.webp",
+      "derivative_bytes": 291748,
+      "derivative_sha256": "01e148d61357d1f63e679f23ae30683bbde64608324d07899aa07e3e6296c69d",
+      "derivative_git_blob": "45f0b8b078f28bbc3c224924d152b83aee16c343",
+      "derivative_pixels": [
+        1600,
+        1224
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "aertgen van leyden",
+        "credit_meta": "photo shonagon 2024-03-15",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:45227477",
+      "title": "French: Le Calvaire | Christ Crucified with the Virgin, Saint John and Mary Magdalene",
+      "artist": "Anthony van Dyck",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:CrucifixionVanDyckLouvre.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/CrucifixionVanDyckLouvre.jpg/1920px-CrucifixionVanDyckLouvre.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:CrucifixionVanDyckLouvre.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 45227477,
+      "commons_sha1": "a81c7b9fe9b330de08a044f53105d04915e5caf6",
+      "original_source_pixels": [
+        3993,
+        4704
+      ],
+      "downloaded_bytes": 1267413,
+      "downloaded_source_sha256": "fa395ef8635b4cf16d5e8c896850d5fa342788b5510acd1dfdfef53f8d4b22f9",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-b93630ea5d0ea58e1188.webp",
+      "derivative_bytes": 518034,
+      "derivative_sha256": "8a7f81b63ccea10454afec56f8344edd7edbba0d41d874311c72f507bdb2b6e2",
+      "derivative_git_blob": "94e61879c1ba19cc7d8a03cd9a2dba2423c6b8a8",
+      "derivative_pixels": [
+        1358,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "anthony van dyck",
+        "credit_meta": "gallerix",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:33831598",
+      "title": "German: Christus am Kreuz | Crucifixion of Christ \" \"",
+      "artist": "Annibale Carracci",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_Crocifissione_Berlino.jpg",
+      "source_photo_url": "https://upload.wikimedia.org/wikipedia/commons/9/91/Annibale_Carracci_Crocifissione_Berlino.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_Crocifissione_Berlino.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 33831598,
+      "commons_sha1": "719c8c01806163b0d956c79d85ae18f463bb0440",
+      "original_source_pixels": [
+        1666,
+        2419
+      ],
+      "downloaded_bytes": 1481694,
+      "downloaded_source_sha256": "5d92ee649158420f154340b22a117df571c6543a0ee015a59705e24cef5f6a9d",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-a9200e1cbf00ef72a908.webp",
+      "derivative_bytes": 260628,
+      "derivative_sha256": "2126593e5deb4c159e7b502cd22ef9b18be312dd2548e8c893eaea331000c28c",
+      "derivative_git_blob": "7f16066a18267f4a0a5c61420ab98e91f18ad81b",
+      "derivative_pixels": [
+        1102,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "annibale carracci",
+        "credit_meta": "http://web.fu-berlin.de/giove/pics/painting/carracc2.jpg",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:83091432",
+      "title": "Guercino - Christ is praying in the Garden of Gethsemane before his arrest. In the agony of doubt, NMW A 7",
+      "artist": "Guercino",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Guercino_-_Christ_is_praying_in_the_Garden_of_Gethsemane_before_his_arrest._In_the_agony_of_doubt%2C_NMW_A_7.jpg",
+      "source_photo_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Guercino_-_Christ_is_praying_in_the_Garden_of_Gethsemane_before_his_arrest._In_the_agony_of_doubt%2C_NMW_A_7.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Guercino_-_Christ_is_praying_in_the_Garden_of_Gethsemane_before_his_arrest._In_the_agony_of_doubt,_NMW_A_7.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 83091432,
+      "commons_sha1": "8b11c862c381a85239bab76dbe4265bb912e482a",
+      "original_source_pixels": [
+        1920,
+        2770
+      ],
+      "downloaded_bytes": 1081069,
+      "downloaded_source_sha256": "cdd36bea2479ad44fb185fe81b18127121f26d9f15ae4fe469c48abf779386a7",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-bb4bb14b5186c9446e9e.webp",
+      "derivative_bytes": 410670,
+      "derivative_sha256": "5a6537386404fe51d6b9368e82daf1a90b2790da8d15a116add46f18e2e991e5",
+      "derivative_git_blob": "ebca435e80f3073211ff118b7306a87d5cd6e55c",
+      "derivative_pixels": [
+        1109,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "guercino",
+        "credit_meta": "https://museum.wales/collections/online/object/a22f446c-b1ec-36ec-9cd3-114d00c517c6/christ-is-praying-in-the-garden-of-gethsemane-before-his-arrest-in-the-agony-of-doubt-/?field0=string&value0=guercino&field1=with_images&value1=on&index=0",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "CANONICAL::ART-hilippe-de-hampaigne-resentation-of-esus-at-the-emple",
+      "title": "Presentation of Jesus at the Temple",
+      "artist": "Philippe de Champaigne",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Philippe%20de%20Champaigne-Pr%C3%A9sentation%20au%20temple.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3b/Philippe_de_Champaigne-Pr%C3%A9sentation_au_temple.jpg/1920px-Philippe_de_Champaigne-Pr%C3%A9sentation_au_temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Philippe_de_Champaigne-Présentation_au_temple.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 34693361,
+      "commons_sha1": "953c7c5520e3b51f7005dde56a80cce3a2f92082",
+      "original_source_pixels": [
+        2994,
+        3906
+      ],
+      "downloaded_bytes": 996832,
+      "downloaded_source_sha256": "bad906cfee9367c6e77d41881dbc3b0d2cd4d19df9ec9dcc1b2a333d0a0e908b",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-5f44f987d8184008f238.webp",
+      "derivative_bytes": 304126,
+      "derivative_sha256": "036e518eff4bc8c371aef6c47cadbb1155d6f7722d0c2c9102b9ea189b56f9f8",
+      "derivative_git_blob": "698e8be1525d619e94687f34d838edc40918e562",
+      "derivative_pixels": [
+        1226,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "philippe de champaigne",
+        "credit_meta": "own work by user:rvalette",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_APPROVED_EXISTING",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:41334838",
+      "title": "Presentation of Jesus Christ at the Temple",
+      "artist": "Nicolas Labbé",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Labb%C3%A9-Pr%C3%A9sentation_au_temple.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/Nicolas_Labb%C3%A9-Pr%C3%A9sentation_au_temple.jpg/1920px-Nicolas_Labb%C3%A9-Pr%C3%A9sentation_au_temple.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Nicolas_Labbé-Présentation_au_temple.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 41334838,
+      "commons_sha1": "bf1551fcad3f1fd1f123e72b98946e6a5c9c39f4",
+      "original_source_pixels": [
+        2655,
+        4336
+      ],
+      "downloaded_bytes": 1242987,
+      "downloaded_source_sha256": "85d0a177745ea76a96c6070323264e0fdbbdadc4ec4ae54a0bc6b3b933b94d37",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-d5acacdaced62d93b4d0.webp",
+      "derivative_bytes": 239968,
+      "derivative_sha256": "6b472b06d039e955314beba0301863a9b560c351aa71f0f762957a9690e12fd5",
+      "derivative_git_blob": "746eb800e651b27e948aea776a5bcbdd2e1e3a5c",
+      "derivative_pixels": [
+        980,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "nicolas labbé",
+        "credit_meta": "own work , rvalette",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:23100292",
+      "title": "The Adoration of the Shepherds",
+      "artist": "Barent Fabritius",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Fabritius_Adoration_of_the_shepherds.JPG",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/Fabritius_Adoration_of_the_shepherds.JPG/1920px-Fabritius_Adoration_of_the_shepherds.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Fabritius_Adoration_of_the_shepherds.JPG",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 23100292,
+      "commons_sha1": "aff2f91a8d6789db8412c37910cbb87d66d9147d",
+      "original_source_pixels": [
+        2432,
+        1875
+      ],
+      "downloaded_bytes": 948541,
+      "downloaded_source_sha256": "c096f8eed212a1cd89ec538df8d56c0f59381361c0683f0a9e5bc0ac5a4d17ad",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-e8a795448fae73f9c5b5.webp",
+      "derivative_bytes": 605696,
+      "derivative_sha256": "0b8b01595f6101bb7e30515874278ca411a6d78ee3fde60e8192222010744649",
+      "derivative_git_blob": "db200dcb66df9510c259d1a78ca56a9994997d0d",
+      "derivative_pixels": [
+        1600,
+        1233
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "barent fabritius",
+        "credit_meta": "cyfrowe.mnw.art.pl",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "NEW::khm-caravaggio-crowning-thorns",
+      "title": "The Crowning with Thorns",
+      "artist": "Attributed to Caravaggio (attribution disputed)",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:The_Crowning_with_Thorns-Caravaggio_(1602).jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/The_Crowning_with_Thorns-Caravaggio_%281602%29.jpg/1920px-The_Crowning_with_Thorns-Caravaggio_%281602%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:The_Crowning_with_Thorns-Caravaggio_(1602).jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 15216175,
+      "commons_sha1": "15a72605dc60b4197ccacb43c7354f5b1849a12a",
+      "original_source_pixels": [
+        11037,
+        8443
+      ],
+      "downloaded_bytes": 616468,
+      "downloaded_source_sha256": "58486c9e6157d13a8ba86405c6013aa7d751ec5fd77904d57a0102f78227f162",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-cdbf8ff3b328d2c0b390.webp",
+      "derivative_bytes": 317636,
+      "derivative_sha256": "94c7a3dded8607871631ccf242f9fce6444f5e924746b2d2a035a095c73fdd1f",
+      "derivative_git_blob": "df7f06998eef3252206551caabc5c5972720465f",
+      "derivative_pixels": [
+        1600,
+        1224
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "caravaggio",
+        "credit_meta": "self-scanned",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "Commons Public Domain Mark / faithful self-scanned reproduction",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "CANONICAL::W05-027",
+      "title": "The Crucifixion of Saint Peter",
+      "artist": "Caravaggio",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Crucifixion%20of%20Saint%20Peter-Caravaggio%20(c.1600)FXD.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/16/Crucifixion_of_Saint_Peter-Caravaggio_%28c.1600%29FXD.jpg/1920px-Crucifixion_of_Saint_Peter-Caravaggio_%28c.1600%29FXD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Crucifixion_of_Saint_Peter-Caravaggio_(c.1600)FXD.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 89065490,
+      "commons_sha1": "4d156f93d611b0129974477134a1a4b7f19817e4",
+      "original_source_pixels": [
+        8180,
+        10537
+      ],
+      "downloaded_bytes": 1399319,
+      "downloaded_source_sha256": "15641243dc8134994730b6b7aa47ce7e7a2e5bbe519a76e2340afd24eb2c673d",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-f80ac578eb030d7a0e03.webp",
+      "derivative_bytes": 468510,
+      "derivative_sha256": "556f2f93ef9c6fe1042863c44b6fd1c49b6cfcf114a438326a3f5a5e4c8a7c34",
+      "derivative_git_blob": "6a4e8455ce6d032e88c0f2cc8f6e6aa620964c5e",
+      "derivative_pixels": [
+        1242,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "caravaggio",
+        "credit_meta": "this file was derived from: crucifixion of saint peter-caravaggio (c.1600).jpg :",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_APPROVED_EXISTING",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "CANONICAL::W07-014",
+      "title": "The Incredulity of Saint Thomas",
+      "artist": "Caravaggio",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:The%20Incredulity%20of%20Saint%20Thomas.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/The_Incredulity_of_Saint_Thomas.jpg/1920px-The_Incredulity_of_Saint_Thomas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:The_Incredulity_of_Saint_Thomas.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 124418425,
+      "commons_sha1": "71660a4f21b9aca21e6df60c2a0a2356e73f552a",
+      "original_source_pixels": [
+        9754,
+        7210
+      ],
+      "downloaded_bytes": 584690,
+      "downloaded_source_sha256": "9825603d170dead0fe91934ac41662fc76e1c5f3c595eb8aae4d79b064896f05",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-82287f1caea5a54d8129.webp",
+      "derivative_bytes": 297120,
+      "derivative_sha256": "397966f3d8950074137e9e046d9296063abb346af06b8259fabaf74309d78497",
+      "derivative_git_blob": "80a202365651cb0be2f95da374a65487bf30b088",
+      "derivative_pixels": [
+        1600,
+        1183
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "caravaggio",
+        "credit_meta": "personal image",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_APPROVED_EXISTING",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:93153411",
+      "title": "The Nativity or the Adoration of the Angels",
+      "artist": "Gerard Seghers",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_The_Nativity_or_the_Adoration_of_the_Angels.jpg",
+      "source_photo_url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Gerard_Seghers_-_The_Nativity_or_the_Adoration_of_the_Angels.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_The_Nativity_or_the_Adoration_of_the_Angels.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 93153411,
+      "commons_sha1": "2ecac8ea32145009217d901f8d9cb5b4d941d622",
+      "original_source_pixels": [
+        1774,
+        2311
+      ],
+      "downloaded_bytes": 2006711,
+      "downloaded_source_sha256": "025dbb3803660a497060f157199d4936cc4d375dde79349c54f0802dae6e883a",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-56a3b2cbca2c90a99256.webp",
+      "derivative_bytes": 98922,
+      "derivative_sha256": "0a46603aa217049c68759e017ece9f7713ec2f226c91da36f41e33f113ce719e",
+      "derivative_git_blob": "55384c53f57e617a78662a37c1a6757c5b394587",
+      "derivative_pixels": [
+        1228,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "gerard seghers",
+        "credit_meta": "http://musba-bordeaux.opacweb.fr/fr/search-notice/detail/ef4jsgle7ggiac44zxgb4fyfga21q9yrrxsvv2e33kapoovdee",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "NEW::vandyck-potsdam-pentecost",
+      "title": "Pentecost",
+      "artist": "Anthony van Dyck",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Dyck,_Anthonis_van_-_Pouring_of_the_Holy_Ghost_-_Bildergalerie_Sanssouci.jpeg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e4/Dyck%2C_Anthonis_van_-_Pouring_of_the_Holy_Ghost_-_Bildergalerie_Sanssouci.jpeg/1920px-Dyck%2C_Anthonis_van_-_Pouring_of_the_Holy_Ghost_-_Bildergalerie_Sanssouci.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Dyck,_Anthonis_van_-_Pouring_of_the_Holy_Ghost_-_Bildergalerie_Sanssouci.jpeg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 73525387,
+      "commons_sha1": "40c7f08af139c771b7a5e023cd6b9a1568ae0e94",
+      "original_source_pixels": [
+        6064,
+        7368
+      ],
+      "downloaded_bytes": 965979,
+      "downloaded_source_sha256": "cea0cd8ade570636d4862dc941705159d8021790dd5ba76448add5ab16726c59",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-9584a74fe6b6fd9497f8.webp",
+      "derivative_bytes": 359734,
+      "derivative_sha256": "85a05d10d88200c38ca0766894809baf96ec9b0faec4edddcec3d32bd9f648a2",
+      "derivative_git_blob": "8758103258f3a1202f17170f26eee9ebc8bf7469",
+      "derivative_pixels": [
+        1317,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "anthony van dyck",
+        "credit_meta": "google arts & culture — nqfzooblrbwk8q",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_PRAYER",
+      "historical_rights_note": "Commons PD-Art / Google Arts & Culture source; reuse assessed open",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "CANONICAL::ART-rtus-olffort-scension-ntwerp-osary-cycle",
+      "title": "The Ascension — Antwerp Rosary cycle",
+      "artist": "Attributed to Artus Wolffort",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Artus_Wolffort_-_Ascension_of_Jesus_Christ.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Artus_Wolffort_-_Ascension_of_Jesus_Christ.jpg/1920px-Artus_Wolffort_-_Ascension_of_Jesus_Christ.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Artus_Wolffort_-_Ascension_of_Jesus_Christ.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 137777109,
+      "commons_sha1": "1c1997782354e9d2548906eb3f64d76a10b43034",
+      "original_source_pixels": [
+        3348,
+        4500
+      ],
+      "downloaded_bytes": 1227229,
+      "downloaded_source_sha256": "44acb9899eec7eb960edcecfe706602d8bb7654815fb8d93b09d30160428275f",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-8f7f38f6a517be7abf2b.webp",
+      "derivative_bytes": 449586,
+      "derivative_sha256": "847f92bce172a758d06197058f5b2e2c1cc5e240dcf581dae513a335dec823b8",
+      "derivative_git_blob": "a299be310d22519fd82c8f4ea62a1c9a8c96f621",
+      "derivative_pixels": [
+        1190,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "artus wolffort / formerly attributed to arnout vinckenborch",
+        "credit_meta": "https://balat.kikirpa.be/photo.php?objnr=70951",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_PRAYER",
+      "historical_rights_note": "Commons PD-Art; credited original KIK-IRPA catalogue photo",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "NEW::louvre-inv297",
+      "title": "The Visitation",
+      "artist": "Domenico Ghirlandaio",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:La_Visitation_avec_Marie-Jacobie_et_Marie-Salomé_-_Domenico_Ghirlandaio_-_Musée_du_Louvre_Peintures_INV_297_;_MR_240.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dc/La_Visitation_avec_Marie-Jacobie_et_Marie-Salom%C3%A9_-_Domenico_Ghirlandaio_-_Mus%C3%A9e_du_Louvre_Peintures_INV_297_%3B_MR_240.jpg/1920px-La_Visitation_avec_Marie-Jacobie_et_Marie-Salom%C3%A9_-_Domenico_Ghirlandaio_-_Mus%C3%A9e_du_Louvre_Peintures_INV_297_%3B_MR_240.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:La_Visitation_avec_Marie-Jacobie_et_Marie-Salomé_-_Domenico_Ghirlandaio_-_Musée_du_Louvre_Peintures_INV_297_;_MR_240.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 145823995,
+      "commons_sha1": "8b484bba1b3a7abe70eb1290ab0543d63cc6b974",
+      "original_source_pixels": [
+        7805,
+        8026
+      ],
+      "downloaded_bytes": 971716,
+      "downloaded_source_sha256": "93a67a1fcaa1ec683a2ed1047a3a8dcb614acede2e11b634e5f5512451a05f3e",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-46a8fc1de9c3abdc3131.webp",
+      "derivative_bytes": 513892,
+      "derivative_sha256": "502b4a5396f16ff45681c92e8cb67c53c86a53b04c2c8355123ef047750d5ab1",
+      "derivative_git_blob": "7b5bc2bc22278976c2c5a1f8b7940a1fc5ed35d3",
+      "derivative_pixels": [
+        1556,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "domenico ghirlandaio",
+        "credit_meta": "photo shonagon 2024-02-22",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_PRAYER",
+      "historical_rights_note": "Commons public-domain faithful 2D reproduction (not Louvre's separately restricted asset)",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::smk:KMS3141",
+      "title": "Christ in the Realm of the Dead",
+      "artist": "Joakim Skovgaard",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Joakim_Skovgaard,_Kristus_i_de_d%C3%B8des_rige,_,_KMS3141,_Statens_Museum_for_Kunst.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Joakim_Skovgaard%2C_Kristus_i_de_d%C3%B8des_rige%2C_%2C_KMS3141%2C_Statens_Museum_for_Kunst.jpg/1920px-Joakim_Skovgaard%2C_Kristus_i_de_d%C3%B8des_rige%2C_%2C_KMS3141%2C_Statens_Museum_for_Kunst.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Joakim_Skovgaard,_Kristus_i_de_dødes_rige,_,_KMS3141,_Statens_Museum_for_Kunst.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 140448896,
+      "commons_sha1": "82a1416260343a269b3f8220debe645df1f8ecdb",
+      "original_source_pixels": [
+        6290,
+        4404
+      ],
+      "downloaded_bytes": 652624,
+      "downloaded_source_sha256": "0773c258667fb415c32516ea37ffa6d0f4d2eac9ee01bf4ad16a4b0a8b0d2f48",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-c3a087eda27c6cdb8424.webp",
+      "derivative_bytes": 374950,
+      "derivative_sha256": "874da377816dfa3dadf31c46770b92a24e14926873504ee638833e4cd6d40630",
+      "derivative_git_blob": "3727292b6d3160072a305b602a8a88f4a1b01bb2",
+      "derivative_pixels": [
+        1600,
+        1120
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "joakim skovgaard",
+        "credit_meta": "statens museum for kunst , smk api: entry kms3141 statens museum for kunst , smk open: entry kms3141 image",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_PRAYER",
+      "historical_rights_note": "SMK institutional CC0 representation",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:22145562",
+      "title": "The Annunciation",
+      "artist": "Francesco Solimena",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Francesco_Solimena,_Mari%C3%A6_Bebudelse,_,_KMS7976,_Statens_Museum_for_Kunst.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c2/Francesco_Solimena%2C_Mari%C3%A6_Bebudelse%2C_%2C_KMS7976%2C_Statens_Museum_for_Kunst.jpg/1920px-Francesco_Solimena%2C_Mari%C3%A6_Bebudelse%2C_%2C_KMS7976%2C_Statens_Museum_for_Kunst.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Francesco_Solimena,_Mariæ_Bebudelse,_,_KMS7976,_Statens_Museum_for_Kunst.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 143484393,
+      "commons_sha1": "2b7b25eadcccbb0f802ae55d2fd421a656bb40ae",
+      "original_source_pixels": [
+        3065,
+        5291
+      ],
+      "downloaded_bytes": 1163980,
+      "downloaded_source_sha256": "27897f47f7dcf03d7bbb4b506a7fdbd2b807987cd33621d320b038e9616ce524",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-5d7b1e1115835572d755.webp",
+      "derivative_bytes": 194228,
+      "derivative_sha256": "404d475c040196f02474057378df431a67a76a840bf4f70acdc6521a4d3095c4",
+      "derivative_git_blob": "fe482200422fea0e4e3a655ef898ce9dff2aa1e8",
+      "derivative_pixels": [
+        927,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "francesco solimena",
+        "credit_meta": "image",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_PRAYER",
+      "historical_rights_note": "Museum-supplied CC0 (SMK KMS7976)",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::commons:65493548",
+      "title": "Coronation of the Virgin",
+      "artist": "Peter Paul Rubens and workshop",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Coronation_of_the_Virgin.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fa/Peter_Paul_Rubens_-_Coronation_of_the_Virgin.jpg/1920px-Peter_Paul_Rubens_-_Coronation_of_the_Virgin.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Coronation_of_the_Virgin.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 185979098,
+      "commons_sha1": "6b5d1f101ee6451fc0cb76d4b3948e897f10d9f4",
+      "original_source_pixels": [
+        4416,
+        6906
+      ],
+      "downloaded_bytes": 678719,
+      "downloaded_source_sha256": "3acb409e52447a029d218e337ae84dd073a66f3abac5968bf84093a1a5f79e6b",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-922ed05ddaaec061fffd.webp",
+      "derivative_bytes": 130210,
+      "derivative_sha256": "3938de9d860ad5d52d58fd66621084e79fa900342654136792af510ac1ed5cde",
+      "derivative_git_blob": "7a002be2acf854ba4175fefbf9b84bb798cea52f",
+      "derivative_pixels": [
+        1023,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "peter paul rubens and workshop",
+        "credit_meta": "this illustration was made by antoine motte dit falisse alias m0tty but it is in the public domain because it is a faithful photographic reproduction of an original two-dimensional work of art and the work of art itself is in the public domain . engl",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_PRAYER",
+      "historical_rights_note": "Commons PDM faithful reproduction; source photography not institutional release",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "CANONICAL::ART-uido-eni-rchangel-ichael-efeating-atan",
+      "title": "Archangel Michael Defeating Satan",
+      "artist": "Guido Reni",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:GuidoReni_MichaelDefeatsSatan.jpg",
+      "source_photo_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/GuidoReni_MichaelDefeatsSatan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:GuidoReni_MichaelDefeatsSatan.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 9571452,
+      "commons_sha1": "dfcaee8ee34422c3863332a58154466d9ac7c54a",
+      "original_source_pixels": [
+        1657,
+        2441
+      ],
+      "downloaded_bytes": 513396,
+      "downloaded_source_sha256": "4f9eaee1c1abe0df9ae70e36bfcfd113c0e556a8022c4c98d7a72d2a392b71ad",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-a7c79c7863f3b3bb671b.webp",
+      "derivative_bytes": 125266,
+      "derivative_sha256": "eb30ac9345eb3dc875a30a88f8291b2c60f0fe7171da0d28f05abe311aac7664",
+      "derivative_git_blob": "72c39f410140b7ece2c290a429bc9f764f0f6e4f",
+      "derivative_pixels": [
+        1086,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "guido reni",
+        "credit_meta": "https://www.andrewgrahamdixon.com/article_images/st%20michael%20archangel,%20by%20guido%20reni.jpg",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "APPROVED_LOCKED; FINAL_MODULE_HERO_APPROVAL",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "CANONICAL::ART-arlo-rivelli-aint-homas-quinas",
+      "title": "Saint Thomas Aquinas",
+      "artist": "Carlo Crivelli",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Saint_Thomas_Aquinas_(Crivelli%2C_15th-century).jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Saint_Thomas_Aquinas_%28Crivelli%2C_15th-century%29.jpg/1920px-Saint_Thomas_Aquinas_%28Crivelli%2C_15th-century%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Saint_Thomas_Aquinas_(Crivelli,_15th-century).jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 89931623,
+      "commons_sha1": "f6ef1da2e2cb7308e4eb388e1a446e7253f2edce",
+      "original_source_pixels": [
+        2813,
+        4226
+      ],
+      "downloaded_bytes": 2446845,
+      "downloaded_source_sha256": "136452dab7626a614b3dc7ffccd6b951c4419173fdf58f958b557ee08584e493",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-bc7f3caede0225ff38b3.webp",
+      "derivative_bytes": 668732,
+      "derivative_sha256": "9a89c799003d68cdfa4c5c695d6c285826c0328a97c64e73a091043a309efb7d",
+      "derivative_git_blob": "eb78956a5d1970b326a345080df34bd674b08cdc",
+      "derivative_pixels": [
+        1065,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "carlo crivelli",
+        "credit_meta": "extracted from an old version of this image: file:st-thomas-aquinas.jpg see also: http://www.nationalgallery.org.uk/paintings/carlo-crivelli-saint-thomas-aquinas",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "APPROVED_LOCKED",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "HERO::commons:Our_Holy_Mother_Of_Perpetual_Succour.jpg",
+      "title": "Our Holy Mother of Perpetual Succour — clean full-length devotional reproduction",
+      "artist": "Traditional iconography of Our Lady of Perpetual Help; photograph of Redemptorist Baclaran poster",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Our_Holy_Mother_Of_Perpetual_Succour.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Our_Holy_Mother_Of_Perpetual_Succour.jpg/1920px-Our_Holy_Mother_Of_Perpetual_Succour.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Our_Holy_Mother_Of_Perpetual_Succour.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 25818525,
+      "commons_sha1": "ffe6514401c14f678284bfb9bc52415c22cb4ef6",
+      "original_source_pixels": [
+        3000,
+        3688
+      ],
+      "downloaded_bytes": 1556299,
+      "downloaded_source_sha256": "ac9a8c61aa8a562b90745961d088fb54e184e6cb523a300534fb53a59156e796",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-e35d652bf9805c74c731.webp",
+      "derivative_bytes": 814522,
+      "derivative_sha256": "d8b6b6499d595333f105550e538cb76b61cfff81c3aa54dc24e468204e832898",
+      "derivative_git_blob": "40129fa93989d027e5aef98ecbde095cb596f276",
+      "derivative_pixels": [
+        1302,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "limosacorel",
+        "credit_meta": "own work",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "FINAL_MODULE_HERO_APPROVAL",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "PRAYER::regina--jan-janssens",
+      "title": "The Resurrection",
+      "artist": "Jan Janssens",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_Resurrection.jpg",
+      "source_photo_url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Jan_Janssens_-_Resurrection.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_Resurrection.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 51510166,
+      "commons_sha1": "f56485a301aa20f04051c55d821e99ac80692439",
+      "original_source_pixels": [
+        1529,
+        2000
+      ],
+      "downloaded_bytes": 3340071,
+      "downloaded_source_sha256": "b44e3e0591a6c6f11a5b478f4e10c740b45377ad390f20d54bf97e36c9756e0e",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-882fab1660c4a43ec8c8.webp",
+      "derivative_bytes": 197844,
+      "derivative_sha256": "9970b27a9cd50efda4540844e9dd4e2576b3c7395c8f49d1d48f8f01457156cb",
+      "derivative_git_blob": "5fbd1746ef6aff515295a9580ffceddb5145d548",
+      "derivative_pixels": [
+        1223,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "jan janssens",
+        "credit_meta": "http://www.sothebys.com/de/auctions/ecatalogue/2016/master-paintings-sculpture-day-sale-n09461/lot.522.html",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "PLACEMENT_KEEP",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "PRAYER::rosary--caravaggio",
+      "title": "Madonna of the Rosary",
+      "artist": "Caravaggio",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Madonna%20of%20the%20Rosary-Caravaggio%20%281607%29.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f9/Madonna_of_the_Rosary-Caravaggio_%281607%29.jpg/1920px-Madonna_of_the_Rosary-Caravaggio_%281607%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Madonna_of_the_Rosary-Caravaggio_(1607).jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 15219546,
+      "commons_sha1": "289a9980d41f280da89bed2bed12dc3c59887d36",
+      "original_source_pixels": [
+        9803,
+        14480
+      ],
+      "downloaded_bytes": 1298527,
+      "downloaded_source_sha256": "89d303ea972f7409f2dfb575ea84d539b0b1bdadc6baafdec3e33ee2536f3bca",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-45b549ad50c825df78e7.webp",
+      "derivative_bytes": 270638,
+      "derivative_sha256": "5842ae81c4f342ff77c051c66affef0cf5f0bf5b2fc144d828e870211eee6de6",
+      "derivative_git_blob": "e0f18a2860ca3149257ac931aac04837bd3f7ce2",
+      "derivative_pixels": [
+        1083,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "caravaggio",
+        "credit_meta": "self-scanned",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "PLACEMENT_KEEP",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "PRAYER::angel--franceschini",
+      "title": "The Guardian Angel",
+      "artist": "Marcantonio Franceschini",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Franceschini,_Marcantonio_-_The_Guardian_Angel_-_Google_Art_Project.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/65/Franceschini%2C_Marcantonio_-_The_Guardian_Angel_-_Google_Art_Project.jpg/1920px-Franceschini%2C_Marcantonio_-_The_Guardian_Angel_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Franceschini,_Marcantonio_-_The_Guardian_Angel_-_Google_Art_Project.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 22000964,
+      "commons_sha1": "9e493cd7fbc8a01c368e7d5f1081d58a2573e16a",
+      "original_source_pixels": [
+        2501,
+        3304
+      ],
+      "downloaded_bytes": 1682632,
+      "downloaded_source_sha256": "2ece4dd1ec3077239b8abf394a86e62ee0e2f12abce7f2858715bb50b1b0c4ab",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-be7443c0d8a4d11c4558.webp",
+      "derivative_bytes": 591828,
+      "derivative_sha256": "6a1a391bd8c266c392e92c3c44c500c1e29229080483aa357142ebe7a91c3441",
+      "derivative_git_blob": "4b96b63dc0d59d40cbcd0cf924e9d96c02e81754",
+      "derivative_pixels": [
+        1211,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "franceschini, marcantonio (1648 - 1729) – artist details on google art project",
+        "credit_meta": "nagv1gy-uew91g at google cultural institute maximum zoom level",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "PLACEMENT_KEEP",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "PRAYER::angel--strozzi",
+      "title": "The Guardian Angel",
+      "artist": "Bernardo Strozzi",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Bernardo_Strozzi_-_The_Guardian_Angel_-_76.256_-_Museum_of_Fine_Arts.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7d/Bernardo_Strozzi_-_The_Guardian_Angel_-_76.256_-_Museum_of_Fine_Arts.jpg/1920px-Bernardo_Strozzi_-_The_Guardian_Angel_-_76.256_-_Museum_of_Fine_Arts.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Bernardo_Strozzi_-_The_Guardian_Angel_-_76.256_-_Museum_of_Fine_Arts.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 74413962,
+      "commons_sha1": "a20ce6c76d6f0954fcaa680ee39d98719848161a",
+      "original_source_pixels": [
+        1932,
+        3200
+      ],
+      "downloaded_bytes": 799750,
+      "downloaded_source_sha256": "df3a9b95bd91808a27aa4555fdfbb69a58acddd75c152407be00fda9800f56d6",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-ce0d4fdb85f63d27a8d6.webp",
+      "derivative_bytes": 151904,
+      "derivative_sha256": "d7b4892306ec700afbaf021473ecf365a68c15db9c95647a2d64faa88b62174b",
+      "derivative_git_blob": "6b4c78f58651040aac0ad16bbedfceefc82b0820",
+      "derivative_pixels": [
+        966,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "bernardo strozzi",
+        "credit_meta": "https://www.mfah.org/art/detail/3618",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "PLACEMENT_KEEP",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "PRAYER::king--previtali",
+      "title": "Salvator Mundi",
+      "artist": "Andrea Previtali",
+      "artwork_source_url": "https://commons.wikimedia.org/wiki/File:Andrea%20Previtali%20-%20Salvator%20Mundi%20-%20Google%20Art%20Project.jpg",
+      "source_photo_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Andrea_Previtali_-_Salvator_Mundi_-_Google_Art_Project.jpg/1920px-Andrea_Previtali_-_Salvator_Mundi_-_Google_Art_Project.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:Andrea_Previtali_-_Salvator_Mundi_-_Google_Art_Project.jpg",
+      "source_method": "OWNER_SELECTED_COMMONS_EXACT_FILE",
+      "commons_pageid": 13360728,
+      "commons_sha1": "ae0655c742b2f0a44d60588d30a1f1e312e85258",
+      "original_source_pixels": [
+        2559,
+        3000
+      ],
+      "downloaded_bytes": 1329262,
+      "downloaded_source_sha256": "c06785d6e3a34345a8802c4e15a77396545794332e5d40f70b143a00e739ac33",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-dd5e3d57ae5df3a1f4a4.webp",
+      "derivative_bytes": 566420,
+      "derivative_sha256": "f8caead51a13588c40aa6211d7e182fadfc6a0aa7d32639ec05dd8be68d3ae57",
+      "derivative_git_blob": "61b0627feae15acc72bda80b4e7d79e7c2c7ba77",
+      "derivative_pixels": [
+        1365,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "public domain",
+        "license_code": "pd",
+        "copyrighted_flag": "false",
+        "artist_meta": "andrea previtali",
+        "credit_meta": "google arts & culture — lqe-cpuudndaig",
+        "usage_terms": "public domain"
+      },
+      "historical_curation": "PLACEMENT_KEEP",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::rijks:20028095",
+      "title": "Christ Crowned with Thorns",
+      "artist": "Gerard van Honthorst",
+      "artwork_source_url": "https://www.rijksmuseum.nl/en/collection/object/De-doornenkroning-van-Jezus--9c89ad27853218f13af2effaf52cd6ea",
+      "source_photo_url": "https://iiif.micr.io/vfPtB/full/1600,/0/default.jpg",
+      "source_file_page": "https://www.rijksmuseum.nl/en/collection/object/De-doornenkroning-van-Jezus--9c89ad27853218f13af2effaf52cd6ea",
+      "source_method": "OFFICIAL_RIJKS_IIIF_OBJECT",
+      "commons_pageid": "https://www.rijksmuseum.nl/en/collection/object/De-doornenkroning-van-Jezus--9c89ad27853218f13af2effaf52cd6ea",
+      "commons_sha1": null,
+      "original_source_pixels": [
+        1600,
+        1389
+      ],
+      "downloaded_bytes": 331552,
+      "downloaded_source_sha256": "2c741ccc3fea769779beb4b7967f370a7b89a2f3815049843ea9e1b7cbba0baf",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-d08e89eff141e81c816a.webp",
+      "derivative_bytes": 219852,
+      "derivative_sha256": "1552f5cb8c128bb7b325375fc89a640fb68962f8e30220e2d877adac306c55da",
+      "derivative_git_blob": "e6b06133e106a3424d9ea235b64735ddeaa89d59",
+      "derivative_pixels": [
+        1600,
+        1389
+      ],
+      "photo_license_evidence": {
+        "license_short": "Rijksmuseum object source Public Domain / CC0",
+        "copyrighted_flag": "false"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "NOT_CERTIFIED",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::rijks:200546455",
+      "title": "Christ among the Doctors",
+      "artist": "Orazio Borgianni",
+      "artwork_source_url": "https://www.rijksmuseum.nl/en/collection/object/Christ-among-the-Doctors--772da83cfe721b5f90d374153664ddfb",
+      "source_photo_url": "https://iiif.micr.io/xWoGv/full/1600,/0/default.jpg",
+      "source_file_page": "https://www.rijksmuseum.nl/en/collection/object/Christ-among-the-Doctors--772da83cfe721b5f90d374153664ddfb",
+      "source_method": "OFFICIAL_RIJKS_IIIF_OBJECT",
+      "commons_pageid": "https://www.rijksmuseum.nl/en/collection/object/Christ-among-the-Doctors--772da83cfe721b5f90d374153664ddfb",
+      "commons_sha1": null,
+      "original_source_pixels": [
+        1600,
+        1189
+      ],
+      "downloaded_bytes": 326502,
+      "downloaded_source_sha256": "feb723af0863f041d36cf656bd9b5e44228dd0ef1452ffe933efa12bac35019e",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-52e40bbc7227bbd3a57d.webp",
+      "derivative_bytes": 239518,
+      "derivative_sha256": "34cd3f8388a034828ad04b04b2cd0b8700efc595bdb8620db50c98710bfba792",
+      "derivative_git_blob": "03e693543160d37194a332cf324c10121c93e188",
+      "derivative_pixels": [
+        1600,
+        1189
+      ],
+      "photo_license_evidence": {
+        "license_short": "Rijksmuseum object source Public Domain / CC0",
+        "copyrighted_flag": "false"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "Rijksmuseum: public domain",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::rijks:20026365",
+      "title": "Ecce Homo",
+      "artist": "Matthias Stom",
+      "artwork_source_url": "https://www.rijksmuseum.nl/en/collection/object/Ecce-Homo--f435a0bd43cfa3a361ebb60220e9b4d3",
+      "source_photo_url": "https://iiif.micr.io/LtvOG/full/1600,/0/default.jpg",
+      "source_file_page": "https://www.rijksmuseum.nl/en/collection/object/Ecce-Homo--f435a0bd43cfa3a361ebb60220e9b4d3",
+      "source_method": "OFFICIAL_RIJKS_IIIF_OBJECT",
+      "commons_pageid": "https://www.rijksmuseum.nl/en/collection/object/Ecce-Homo--f435a0bd43cfa3a361ebb60220e9b4d3",
+      "commons_sha1": null,
+      "original_source_pixels": [
+        1600,
+        1894
+      ],
+      "downloaded_bytes": 436268,
+      "downloaded_source_sha256": "3ec7677c38eb473ff9a37ba029765177d2a50196a3a71e1b4bf7d4c08bea91a0",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-debd63932870991bd0ab.webp",
+      "derivative_bytes": 182590,
+      "derivative_sha256": "276ce146a2f72475f032def504265cb4ad6d0fc32d86129b422b22de4e61dbf6",
+      "derivative_git_blob": "3c8d35ce5fe54dcdafd3af0e9a7513e944432d21",
+      "derivative_pixels": [
+        1352,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "Rijksmuseum object source Public Domain / CC0",
+        "copyrighted_flag": "false"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "Rijksmuseum: public domain",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::walters:9018",
+      "title": "Ecce Homo",
+      "artist": "Luca Giordano",
+      "artwork_source_url": "https://art.thewalters.org/object/37.243/",
+      "source_photo_url": "https://art.thewalters.org/images/art/PL1_37.243_Fnt_TR_T86III.jpg",
+      "source_file_page": "https://art.thewalters.org/object/37.243/",
+      "source_method": "OFFICIAL_WALTERS_CC0_OBJECT",
+      "commons_pageid": "https://art.thewalters.org/object/37.243/",
+      "commons_sha1": null,
+      "original_source_pixels": [
+        1799,
+        1171
+      ],
+      "downloaded_bytes": 301896,
+      "downloaded_source_sha256": "62ef3a723ab3311ee51abcd916503c8cd78ce6b380dd018a4801e9472b3fc0e9",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-fe92c073c3958f0ac99a.webp",
+      "derivative_bytes": 205688,
+      "derivative_sha256": "9d03dffc7cadb130b360793db2504ee10851778bd077df9cedeac097c9f1a507",
+      "derivative_git_blob": "6449cff428089718e583b4c6d17bb148cabb3782",
+      "derivative_pixels": [
+        1600,
+        1041
+      ],
+      "photo_license_evidence": {
+        "license_short": "Walters Museum exact-object CC0",
+        "copyrighted_flag": "false"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_OTHER_PLACEMENT",
+      "historical_rights_note": "CC0 / public-domain institution download",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::walters:4625",
+      "title": "The Annunciation",
+      "artist": "Santi di Tito",
+      "artwork_source_url": "https://art.thewalters.org/object/37.1677/",
+      "source_photo_url": "https://art.thewalters.org/images/art/PL9_37.1677_Fnt_SL.jpg",
+      "source_file_page": "https://art.thewalters.org/object/37.1677/",
+      "source_method": "OFFICIAL_WALTERS_CC0_OBJECT",
+      "commons_pageid": "https://art.thewalters.org/object/37.1677/",
+      "commons_sha1": null,
+      "original_source_pixels": [
+        1386,
+        1800
+      ],
+      "downloaded_bytes": 264759,
+      "downloaded_source_sha256": "e714971c7607e745423521a45e81323d1145960266cdb8d04d600fb445ecae4d",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-ff6050dc703973fe35de.webp",
+      "derivative_bytes": 158664,
+      "derivative_sha256": "76f77a7ffe8b0df591d13229328a759a492731c4c9dc7156c544dd28536aacae",
+      "derivative_git_blob": "933133effad46450c3c2facd0fbae1b970012fd9",
+      "derivative_pixels": [
+        1232,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "Walters Museum exact-object CC0",
+        "copyrighted_flag": "false"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_PRAYER",
+      "historical_rights_note": "CC0 / public-domain institution download",
+      "full_original_photograph_archived": false
+    },
+    {
+      "artwork_id": "REVIEW::rijks:200108871",
+      "title": "Assumption of the Virgin",
+      "artist": "Jacob de Wet I",
+      "artwork_source_url": "https://www.rijksmuseum.nl/en/collection/object/Assumption-of-the-Virgin--c9dd4a4bacd2d05276d325e01e6aa17c",
+      "source_photo_url": "https://iiif.micr.io/xWOUU/full/1600,/0/default.jpg",
+      "source_file_page": "https://www.rijksmuseum.nl/en/collection/object/Assumption-of-the-Virgin--c9dd4a4bacd2d05276d325e01e6aa17c",
+      "source_method": "OFFICIAL_RIJKS_IIIF_OBJECT",
+      "commons_pageid": "https://www.rijksmuseum.nl/en/collection/object/Assumption-of-the-Virgin--c9dd4a4bacd2d05276d325e01e6aa17c",
+      "commons_sha1": null,
+      "original_source_pixels": [
+        1600,
+        1944
+      ],
+      "downloaded_bytes": 491115,
+      "downloaded_source_sha256": "ef65cfdb6e51dd2d70e1001fa2808568930ce40d4e857497e68fe00331aabae4",
+      "derivative_path": "site/gallery/images/selected-museum-wave04-fe4e7d0f4fa28ef4fd3d.webp",
+      "derivative_bytes": 230692,
+      "derivative_sha256": "df693615555158dfe040f43c60b5566804678e67e86816fcba7f2ff1cc0f56d9",
+      "derivative_git_blob": "3d067a4a495ce3cec8d35e770bc6ece21987262c",
+      "derivative_pixels": [
+        1317,
+        1600
+      ],
+      "photo_license_evidence": {
+        "license_short": "Rijksmuseum object source Public Domain / CC0",
+        "copyrighted_flag": "false"
+      },
+      "historical_curation": "OWNER_SELECTED_FOR_PRAYER",
+      "historical_rights_note": "Rijksmuseum: public domain",
+      "full_original_photograph_archived": false
+    }
+  ],
+  "held": [
+    {
+      "artwork_id": "NEW::capodimonte-caravaggio-flagellation",
+      "title": "The Flagellation of Christ",
+      "source_url": "https://capodimonte.cultura.gov.it/",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "capodimonte.cultura.gov.it"
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:tiepolo-1735",
+      "title": "A Vision of the Trinity",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Tiepolo_094.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_NONCOMMERCIAL_TERMS",
+      "detail": ""
+    },
+    {
+      "artwork_id": "HERO::khm:GG-838",
+      "title": "Adoration of the Trinity (Landauer Altarpiece)",
+      "source_url": "https://artsandculture.google.com/asset/adoration-of-the-trinity-landauer-altar-albrecht-d%C3%BCrer/_wGp9zTkz0OVqQ?hl=en",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "artsandculture.google.com"
+    },
+    {
+      "artwork_id": "NEW::luma-1983-06",
+      "title": "Christ among the Doctors",
+      "source_url": "https://www.luc.edu/luma/collections/martindarcysjcollection/christamongthedoctors/",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "CANONICAL::ART-itian-hrist-arrying-the-ross",
+      "title": "Christ Carrying the Cross",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Titian%2C_Christ_Carrying_the_Cross._Oil_on_canvas%2C_67_x_77_cm%2C_c._1565._Madrid%2C_Museo_Nacional_del_Prado.jpg",
+      "decision": "HOLD",
+      "reason": "FORBIDDEN_PRADO_IMAGE",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::hermitage-4612",
+      "title": "Christ in the Garden of Gethsemane",
+      "source_url": "https://resources.metmuseum.org/resources/metpublications/pdf/Dutch_and_Flemish_Paintings_from_the_Hermitage.pdf",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "resources.metmuseum.org"
+    },
+    {
+      "artwork_id": "REVIEW::cma:127664",
+      "title": "Crucifixion",
+      "source_url": "https://clevelandart.org/art/1950.345",
+      "decision": "HOLD",
+      "reason": "LEGACY_REJECTION_MATCH",
+      "detail": ""
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:durer-1511",
+      "title": "The Adoration of the Holy Trinity",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_Adoration_of_the_Trinity_(Landauer_Altar)_-_Google_Art_Project.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "HERO::salvation::1",
+      "title": "The Age of Augustus: The Birth of Christ",
+      "source_url": "https://www.museedepicardie.fr/",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "www.museedepicardie.fr"
+    },
+    {
+      "artwork_id": "CANONICAL::2020.263.8",
+      "title": "The Flight into Egypt",
+      "source_url": null,
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "not-recorded"
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:reni-1625",
+      "title": "The Holy Trinity",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Trinit%C3%A0_-_Guido_Reni.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "HERO::mnac:008327-000",
+      "title": "Virgin of the Seven Sorrows (Mare de Déu dels Set Dolors)",
+      "source_url": "https://www.museunacional.cat/es/colleccio/virgen-de-los-siete-dolores/maestro-de-las-medias-figuras/008327-000",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "www.museunacional.cat"
+    },
+    {
+      "artwork_id": "released-photo:regina",
+      "title": "Resurrection of Christ (triptych centre)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Resurrection_of_Christ_triptych_%28central_panel%29.jpg",
+      "decision": "HOLD",
+      "reason": "EXACT_FILE_ALREADY_DISPLAYED_ANOTHER_ARTWORK_ID",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:15216589",
+      "title": "Christ at the Column (Rouen)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Christ_at_the_Column-Caravaggio_%28c._1607%29.jpg",
+      "decision": "HOLD",
+      "reason": "EXACT_FILE_ALREADY_DISPLAYED_ANOTHER_ARTWORK_ID",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:74171702",
+      "title": "The Annunciation",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frans_Francken,_II_-_The_Annunciation_-_1971.876_-_Art_Institute_of_Chicago.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_UNCERTAIN_SOURCE_MATCH",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::ngi-L14702",
+      "title": "The Taking of Christ",
+      "source_url": "https://onlinecollection.nationalgallery.ie/objects/2882/the-taking-of-christ",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::vatican-reni-pentecost-1608",
+      "title": "Pentecost (fresco)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Guido_Reni,_Pentecoste,_circa_1609_-FG_02.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_LOW_QUALITY_HOLD",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::lyon-reni-assumption-A123",
+      "title": "The Assumption of the Virgin",
+      "source_url": "https://www.mba-lyon.fr/fr/fiche-oeuvre/lassomption-de-la-vierge",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "CANONICAL::ART-ean-estout-entecost",
+      "title": "Pentecost",
+      "source_url": "https://collections.louvre.fr/ark:/53355/cl010062538",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::sam-2011.12",
+      "title": "The Visitation",
+      "source_url": "https://art.seattleartmuseum.org/objects/39482/the-visitation",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "art.seattleartmuseum.org"
+    },
+    {
+      "artwork_id": "NEW::carmignano-pontormo-visitation",
+      "title": "The Visitation (Carmignano)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pontormo-visitation-after-restorationRGB.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_LOW_QUALITY_HOLD",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::vatican-oddi-raphael",
+      "title": "Coronation of the Virgin (Oddi Altarpiece)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pala_degli_Oddi_(Raphael)_September_2015-1a.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_LOW_QUALITY_HOLD",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::ncma-G.52.11.1",
+      "title": "The Pentecost",
+      "source_url": "https://collection.ncartmuseum.org/objects/551/the-pentecost",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:55389333",
+      "title": "The Annunciation",
+      "source_url": "https://commons.wikimedia.org/?curid=55389333",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_UNCERTAIN_SOURCE_MATCH",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:158771859",
+      "title": "Christ Appears to the Three Marys",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Apparition_de_J%C3%A9sus_aux_trois_Marie_-_Laurent_de_La_Hyre_-_Mus%C3%A9e_du_Louvre_Peintures_INV_5356_%3B_MR_1849.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_LOW_QUALITY_HOLD",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:22002144",
+      "title": "The Resurrection",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ricci%2C_Sebastiano_-_The_Resurrection_-_Google_Art_Project.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "plate-bloch-sermon",
+      "title": "The Sermon on the Mount (1877)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Carl_Bloch_-_The_Sermon_on_the_Mount.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:73497418",
+      "title": "The Immaculate Conception",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Carlo_Maratta_-_Maria_Immaculata%2C_c1685.1688_-_Bildergalerie_Sanssouci%2C_Potsdam.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_UNCERTAIN_SOURCE_MATCH",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:15973724",
+      "title": "Assumption of Mary",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Charles_de_La_Fosse_-_L%27Assomption_vers_1680.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_LOW_QUALITY_HOLD",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:160522197",
+      "title": "Arrest of Christ",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Arrest_of_Christ%29.jpeg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:115220164",
+      "title": "Adoration of the Magi",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Denys_Calvaert_Anbetung_der_K%C3%B6nige.png",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:87865020",
+      "title": "The Virgin in Prayer",
+      "source_url": "https://collection.nationalmuseum.se/en/collection/item/19839/",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_UNCERTAIN_SOURCE_MATCH",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:52809691",
+      "title": "Adoration of the Magi",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-Adoration_of_the_Magi.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "released-photo:souls",
+      "title": "Madonna and Child with Souls in Purgatory",
+      "source_url": "https://emuseum.mfah.org/objects/64360/madonna-and-child-with-souls-in-purgatory",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_NONCOMMERCIAL_TERMS",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:40907107",
+      "title": "Adoration of the Magi",
+      "source_url": "https://www.sothebys.com/en/auctions/ecatalogue/2015/master-paintings-n09363/lot.54.html",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:116926387",
+      "title": "Our Lady of the Immaculate Conception and Saint Michael Fighting the Bad Angel",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Our_Lady_of_the_Immaculate_Conception_and_St._Michael_Fighting_the_Bad_Angel_-_1700.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:34140055",
+      "title": "Adoration of the Magi",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Workshop_of_Peter_Paul_Rubens_-_The_Adoration_of_the_Magi.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::national-gallery-london-NG6597",
+      "title": "The Holy Family with the Infant Saint John the Baptist",
+      "source_url": "https://www.nationalgallery.org.uk/paintings/annibale-carracci-the-holy-family-with-the-infant-saint-john-the-baptist",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "www.nationalgallery.org.uk"
+    },
+    {
+      "artwork_id": "CANONICAL::ART-eter-aul-ubens-doration-of-the-agi",
+      "title": "Adoration of the Magi",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_adoraci%C3%B3n_de_los_Reyes_Magos_(Rubens%2C_Prado).jpg",
+      "decision": "HOLD",
+      "reason": "FORBIDDEN_PRADO_IMAGE",
+      "detail": ""
+    },
+    {
+      "artwork_id": "CANONICAL::met-436199",
+      "title": "Christ Healing the Sick",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436199",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "www.metmuseum.org"
+    },
+    {
+      "artwork_id": "V6::commons:34066810",
+      "title": "Christ Crowned with Thorns",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_van_Oost_I_-_Christ_Crowned_with_Thorns.jpg",
+      "decision": "HOLD",
+      "reason": "COMMONS_INADEQUATE_SOURCE_GEOMETRY",
+      "detail": "900x1139"
+    },
+    {
+      "artwork_id": "CANONICAL::C34:franciscodezurbaransaintlukeasapainterbeforechristonthecross",
+      "title": "Francisco de Zurbarán - Saint Luke as a Painter before Christ on the Cross - WGA26077.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbar%C3%A1n_-_Saint_Luke_as_a_Painter_before_Christ_on_the_Cross_-_WGA26077.jpg",
+      "decision": "HOLD",
+      "reason": "COMMONS_INADEQUATE_SOURCE_GEOMETRY",
+      "detail": "1100x1364"
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:dolci-1640",
+      "title": "The Trinity in Glory",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Carlo_Dolci_-_The_Trinity_in_Glory_-_59.009_-_Rhode_Island_School_of_Design_Museum.jpg",
+      "decision": "HOLD",
+      "reason": "COMMONS_INADEQUATE_SOURCE_GEOMETRY",
+      "detail": "877x1024"
+    },
+    {
+      "artwork_id": "REVIEW::commons:163856843",
+      "title": "Christ Triumphant over Death and Sin",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Christ_triumphing_over_Death_and_Sin_-_Peter_Paul_Rubens.jpg",
+      "decision": "HOLD",
+      "reason": "COMMONS_NO_EXPLICIT_COPYRIGHT_FALSE",
+      "detail": ""
+    },
+    {
+      "artwork_id": "V6::commons:140216741",
+      "title": "Christ Crowned with Thorns",
+      "source_url": "https://www.mskgent.be/en/collection/1929-ba",
+      "decision": "HOLD",
+      "reason": "MSK_OBJECT_IMAGE_SERVICE_NOT_FOUND",
+      "detail": ""
+    },
+    {
+      "artwork_id": "V6::commons:15417742",
+      "title": "The Flagellation of Christ",
+      "source_url": "https://www.mskgent.be/en/collection/1910-z",
+      "decision": "HOLD",
+      "reason": "MSK_OBJECT_IMAGE_SERVICE_NOT_FOUND",
+      "detail": ""
+    },
+    {
+      "artwork_id": "V6::commons:140224816",
+      "title": "Christ Crowned with Thorns",
+      "source_url": "https://www.mskgent.be/en/collection/1929-bb",
+      "decision": "HOLD",
+      "reason": "MSK_OBJECT_IMAGE_SERVICE_NOT_FOUND",
+      "detail": ""
+    },
+    {
+      "artwork_id": "CANONICAL::ART-eter-aul-ubens-courging-at-the-illar-ntwerp-osary-cycle",
+      "title": "Scourging at the Pillar — Antwerp Rosary cycle",
+      "source_url": "https://www.mskgent.be/en/collection/1910-z",
+      "decision": "HOLD",
+      "reason": "MSK_OBJECT_IMAGE_SERVICE_NOT_FOUND",
+      "detail": ""
+    },
+    {
+      "artwork_id": "CANONICAL::cma-97147",
+      "title": "The Crucifixion",
+      "source_url": "https://clevelandart.org/art/1916.786",
+      "decision": "HOLD",
+      "reason": "INSTITUTIONAL_OBJECT_IMAGE_ACCESS_REQUIRES_SEPARATE_EXACT_SOURCE_VERIFICATION",
+      "detail": "clevelandart.org"
+    },
+    {
+      "artwork_id": "REVIEW::kmska:8e7t4v",
+      "title": "The Scourging of Christ",
+      "source_url": "https://iiif.kmska.be/iiif/2/41/manifest.json",
+      "decision": "HOLD",
+      "reason": "KMSKA_MANIFEST_RIGHTS_CONFLICT_WITH_PRIOR_CC0",
+      "detail": "https://rightsstatements.org/page/UND/1.0/"
+    },
+    {
+      "artwork_id": "REVIEW::kmska:skpzca",
+      "title": "Christ Triumphant (Christus Triomfator)",
+      "source_url": "https://iiif.kmska.be/iiif/2/382/manifest.json",
+      "decision": "HOLD",
+      "reason": "KMSKA_MANIFEST_RIGHTS_CONFLICT_WITH_PRIOR_CC0",
+      "detail": "https://rightsstatements.org/page/UND/1.0/"
+    },
+    {
+      "artwork_id": "NEW::princeton-y1994-17",
+      "title": "The Visitation",
+      "source_url": "https://artmuseum.princeton.edu/art/collections/objects/34052",
+      "decision": "HOLD",
+      "reason": "INSTITUTIONAL_OBJECT_IMAGE_ACCESS_REQUIRES_SEPARATE_EXACT_SOURCE_VERIFICATION",
+      "detail": "artmuseum.princeton.edu"
+    }
+  ],
+  "decisions": [
+    {
+      "artwork_id": "NEW::capodimonte-caravaggio-flagellation",
+      "title": "The Flagellation of Christ",
+      "source_url": "https://capodimonte.cultura.gov.it/",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "capodimonte.cultura.gov.it"
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:tiepolo-1735",
+      "title": "A Vision of the Trinity",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Battista_Tiepolo_094.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_NONCOMMERCIAL_TERMS",
+      "detail": ""
+    },
+    {
+      "artwork_id": "HERO::khm:GG-838",
+      "title": "Adoration of the Trinity (Landauer Altarpiece)",
+      "source_url": "https://artsandculture.google.com/asset/adoration-of-the-trinity-landauer-altar-albrecht-d%C3%BCrer/_wGp9zTkz0OVqQ?hl=en",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "artsandculture.google.com"
+    },
+    {
+      "artwork_id": "NEW::luma-1983-06",
+      "title": "Christ among the Doctors",
+      "source_url": "https://www.luc.edu/luma/collections/martindarcysjcollection/christamongthedoctors/",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "CANONICAL::ART-itian-hrist-arrying-the-ross",
+      "title": "Christ Carrying the Cross",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Titian%2C_Christ_Carrying_the_Cross._Oil_on_canvas%2C_67_x_77_cm%2C_c._1565._Madrid%2C_Museo_Nacional_del_Prado.jpg",
+      "decision": "HOLD",
+      "reason": "FORBIDDEN_PRADO_IMAGE",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::hermitage-4612",
+      "title": "Christ in the Garden of Gethsemane",
+      "source_url": "https://resources.metmuseum.org/resources/metpublications/pdf/Dutch_and_Flemish_Paintings_from_the_Hermitage.pdf",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "resources.metmuseum.org"
+    },
+    {
+      "artwork_id": "REVIEW::cma:127664",
+      "title": "Crucifixion",
+      "source_url": "https://clevelandart.org/art/1950.345",
+      "decision": "HOLD",
+      "reason": "LEGACY_REJECTION_MATCH",
+      "detail": ""
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:durer-1511",
+      "title": "The Adoration of the Holy Trinity",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Albrecht_D%C3%BCrer_-_Adoration_of_the_Trinity_(Landauer_Altar)_-_Google_Art_Project.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "HERO::salvation::1",
+      "title": "The Age of Augustus: The Birth of Christ",
+      "source_url": "https://www.museedepicardie.fr/",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "www.museedepicardie.fr"
+    },
+    {
+      "artwork_id": "CANONICAL::2020.263.8",
+      "title": "The Flight into Egypt",
+      "source_url": null,
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "not-recorded"
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:reni-1625",
+      "title": "The Holy Trinity",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Trinit%C3%A0_-_Guido_Reni.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "HERO::mnac:008327-000",
+      "title": "Virgin of the Seven Sorrows (Mare de Déu dels Set Dolors)",
+      "source_url": "https://www.museunacional.cat/es/colleccio/virgen-de-los-siete-dolores/maestro-de-las-medias-figuras/008327-000",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "www.museunacional.cat"
+    },
+    {
+      "artwork_id": "released-photo:regina",
+      "title": "Resurrection of Christ (triptych centre)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Resurrection_of_Christ_triptych_%28central_panel%29.jpg",
+      "decision": "HOLD",
+      "reason": "EXACT_FILE_ALREADY_DISPLAYED_ANOTHER_ARTWORK_ID",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:15216589",
+      "title": "Christ at the Column (Rouen)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Christ_at_the_Column-Caravaggio_%28c._1607%29.jpg",
+      "decision": "HOLD",
+      "reason": "EXACT_FILE_ALREADY_DISPLAYED_ANOTHER_ARTWORK_ID",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:74171702",
+      "title": "The Annunciation",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Frans_Francken,_II_-_The_Annunciation_-_1971.876_-_Art_Institute_of_Chicago.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_UNCERTAIN_SOURCE_MATCH",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::ngi-L14702",
+      "title": "The Taking of Christ",
+      "source_url": "https://onlinecollection.nationalgallery.ie/objects/2882/the-taking-of-christ",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::vatican-reni-pentecost-1608",
+      "title": "Pentecost (fresco)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Guido_Reni,_Pentecoste,_circa_1609_-FG_02.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_LOW_QUALITY_HOLD",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::lyon-reni-assumption-A123",
+      "title": "The Assumption of the Virgin",
+      "source_url": "https://www.mba-lyon.fr/fr/fiche-oeuvre/lassomption-de-la-vierge",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "CANONICAL::ART-ean-estout-entecost",
+      "title": "Pentecost",
+      "source_url": "https://collections.louvre.fr/ark:/53355/cl010062538",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::sam-2011.12",
+      "title": "The Visitation",
+      "source_url": "https://art.seattleartmuseum.org/objects/39482/the-visitation",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "art.seattleartmuseum.org"
+    },
+    {
+      "artwork_id": "NEW::carmignano-pontormo-visitation",
+      "title": "The Visitation (Carmignano)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pontormo-visitation-after-restorationRGB.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_LOW_QUALITY_HOLD",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::vatican-oddi-raphael",
+      "title": "Coronation of the Virgin (Oddi Altarpiece)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Pala_degli_Oddi_(Raphael)_September_2015-1a.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_LOW_QUALITY_HOLD",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::ncma-G.52.11.1",
+      "title": "The Pentecost",
+      "source_url": "https://collection.ncartmuseum.org/objects/551/the-pentecost",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:55389333",
+      "title": "The Annunciation",
+      "source_url": "https://commons.wikimedia.org/?curid=55389333",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_UNCERTAIN_SOURCE_MATCH",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:158771859",
+      "title": "Christ Appears to the Three Marys",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Apparition_de_J%C3%A9sus_aux_trois_Marie_-_Laurent_de_La_Hyre_-_Mus%C3%A9e_du_Louvre_Peintures_INV_5356_%3B_MR_1849.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_LOW_QUALITY_HOLD",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:22002144",
+      "title": "The Resurrection",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Ricci%2C_Sebastiano_-_The_Resurrection_-_Google_Art_Project.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "plate-bloch-sermon",
+      "title": "The Sermon on the Mount (1877)",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Carl_Bloch_-_The_Sermon_on_the_Mount.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:73497418",
+      "title": "The Immaculate Conception",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Carlo_Maratta_-_Maria_Immaculata%2C_c1685.1688_-_Bildergalerie_Sanssouci%2C_Potsdam.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_UNCERTAIN_SOURCE_MATCH",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:15973724",
+      "title": "Assumption of Mary",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Charles_de_La_Fosse_-_L%27Assomption_vers_1680.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_LOW_QUALITY_HOLD",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:160522197",
+      "title": "Arrest of Christ",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Arrest_of_Christ%29.jpeg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:115220164",
+      "title": "Adoration of the Magi",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Denys_Calvaert_Anbetung_der_K%C3%B6nige.png",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:87865020",
+      "title": "The Virgin in Prayer",
+      "source_url": "https://collection.nationalmuseum.se/en/collection/item/19839/",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_UNCERTAIN_SOURCE_MATCH",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:52809691",
+      "title": "Adoration of the Magi",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-Adoration_of_the_Magi.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "released-photo:souls",
+      "title": "Madonna and Child with Souls in Purgatory",
+      "source_url": "https://emuseum.mfah.org/objects/64360/madonna-and-child-with-souls-in-purgatory",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_NONCOMMERCIAL_TERMS",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:40907107",
+      "title": "Adoration of the Magi",
+      "source_url": "https://www.sothebys.com/en/auctions/ecatalogue/2015/master-paintings-n09363/lot.54.html",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:116926387",
+      "title": "Our Lady of the Immaculate Conception and Saint Michael Fighting the Bad Angel",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Our_Lady_of_the_Immaculate_Conception_and_St._Michael_Fighting_the_Bad_Angel_-_1700.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "REVIEW::commons:34140055",
+      "title": "Adoration of the Magi",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Workshop_of_Peter_Paul_Rubens_-_The_Adoration_of_the_Magi.jpg",
+      "decision": "HOLD",
+      "reason": "PREVIOUS_IMAGE_RIGHTS_RESTRICTED",
+      "detail": ""
+    },
+    {
+      "artwork_id": "NEW::national-gallery-london-NG6597",
+      "title": "The Holy Family with the Infant Saint John the Baptist",
+      "source_url": "https://www.nationalgallery.org.uk/paintings/annibale-carracci-the-holy-family-with-the-infant-saint-john-the-baptist",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "www.nationalgallery.org.uk"
+    },
+    {
+      "artwork_id": "CANONICAL::ART-eter-aul-ubens-doration-of-the-agi",
+      "title": "Adoration of the Magi",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_adoraci%C3%B3n_de_los_Reyes_Magos_(Rubens%2C_Prado).jpg",
+      "decision": "HOLD",
+      "reason": "FORBIDDEN_PRADO_IMAGE",
+      "detail": ""
+    },
+    {
+      "artwork_id": "CANONICAL::met-436199",
+      "title": "Christ Healing the Sick",
+      "source_url": "https://www.metmuseum.org/art/collection/search/436199",
+      "decision": "HOLD",
+      "reason": "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT",
+      "detail": "www.metmuseum.org"
+    },
+    {
+      "artwork_id": "V6::commons:34066810",
+      "title": "Christ Crowned with Thorns",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jacob_van_Oost_I_-_Christ_Crowned_with_Thorns.jpg",
+      "decision": "HOLD",
+      "reason": "COMMONS_INADEQUATE_SOURCE_GEOMETRY",
+      "detail": "900x1139"
+    },
+    {
+      "artwork_id": "CANONICAL::C34:franciscodezurbaransaintlukeasapainterbeforechristonthecross",
+      "title": "Francisco de Zurbarán - Saint Luke as a Painter before Christ on the Cross - WGA26077.jpg",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Francisco_de_Zurbar%C3%A1n_-_Saint_Luke_as_a_Painter_before_Christ_on_the_Cross_-_WGA26077.jpg",
+      "decision": "HOLD",
+      "reason": "COMMONS_INADEQUATE_SOURCE_GEOMETRY",
+      "detail": "1100x1364"
+    },
+    {
+      "artwork_id": "owner-selected:holy-trinity:dolci-1640",
+      "title": "The Trinity in Glory",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Carlo_Dolci_-_The_Trinity_in_Glory_-_59.009_-_Rhode_Island_School_of_Design_Museum.jpg",
+      "decision": "HOLD",
+      "reason": "COMMONS_INADEQUATE_SOURCE_GEOMETRY",
+      "detail": "877x1024"
+    },
+    {
+      "artwork_id": "REVIEW::commons:163856843",
+      "title": "Christ Triumphant over Death and Sin",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Christ_triumphing_over_Death_and_Sin_-_Peter_Paul_Rubens.jpg",
+      "decision": "HOLD",
+      "reason": "COMMONS_NO_EXPLICIT_COPYRIGHT_FALSE",
+      "detail": ""
+    },
+    {
+      "artwork_id": "V6::commons:140216741",
+      "title": "Christ Crowned with Thorns",
+      "source_url": "https://www.mskgent.be/en/collection/1929-ba",
+      "decision": "HOLD",
+      "reason": "MSK_OBJECT_IMAGE_SERVICE_NOT_FOUND",
+      "detail": ""
+    },
+    {
+      "artwork_id": "V6::commons:15417742",
+      "title": "The Flagellation of Christ",
+      "source_url": "https://www.mskgent.be/en/collection/1910-z",
+      "decision": "HOLD",
+      "reason": "MSK_OBJECT_IMAGE_SERVICE_NOT_FOUND",
+      "detail": ""
+    },
+    {
+      "artwork_id": "V6::commons:140224816",
+      "title": "Christ Crowned with Thorns",
+      "source_url": "https://www.mskgent.be/en/collection/1929-bb",
+      "decision": "HOLD",
+      "reason": "MSK_OBJECT_IMAGE_SERVICE_NOT_FOUND",
+      "detail": ""
+    },
+    {
+      "artwork_id": "CANONICAL::ART-eter-aul-ubens-courging-at-the-illar-ntwerp-osary-cycle",
+      "title": "Scourging at the Pillar — Antwerp Rosary cycle",
+      "source_url": "https://www.mskgent.be/en/collection/1910-z",
+      "decision": "HOLD",
+      "reason": "MSK_OBJECT_IMAGE_SERVICE_NOT_FOUND",
+      "detail": ""
+    },
+    {
+      "artwork_id": "CANONICAL::cma-97147",
+      "title": "The Crucifixion",
+      "source_url": "https://clevelandart.org/art/1916.786",
+      "decision": "HOLD",
+      "reason": "INSTITUTIONAL_OBJECT_IMAGE_ACCESS_REQUIRES_SEPARATE_EXACT_SOURCE_VERIFICATION",
+      "detail": "clevelandart.org"
+    },
+    {
+      "artwork_id": "REVIEW::kmska:8e7t4v",
+      "title": "The Scourging of Christ",
+      "source_url": "https://iiif.kmska.be/iiif/2/41/manifest.json",
+      "decision": "HOLD",
+      "reason": "KMSKA_MANIFEST_RIGHTS_CONFLICT_WITH_PRIOR_CC0",
+      "detail": "https://rightsstatements.org/page/UND/1.0/"
+    },
+    {
+      "artwork_id": "REVIEW::kmska:skpzca",
+      "title": "Christ Triumphant (Christus Triomfator)",
+      "source_url": "https://iiif.kmska.be/iiif/2/382/manifest.json",
+      "decision": "HOLD",
+      "reason": "KMSKA_MANIFEST_RIGHTS_CONFLICT_WITH_PRIOR_CC0",
+      "detail": "https://rightsstatements.org/page/UND/1.0/"
+    },
+    {
+      "artwork_id": "NEW::princeton-y1994-17",
+      "title": "The Visitation",
+      "source_url": "https://artmuseum.princeton.edu/art/collections/objects/34052",
+      "decision": "HOLD",
+      "reason": "INSTITUTIONAL_OBJECT_IMAGE_ACCESS_REQUIRES_SEPARATE_EXACT_SOURCE_VERIFICATION",
+      "detail": "artmuseum.princeton.edu"
+    },
+    {
+      "artwork_id": "V6::commons:118722",
+      "title": "The Flagellation of Our Lord Jesus Christ",
+      "source_url": "https://commons.wikimedia.org/wiki/File:William-Adolphe_Bouguereau_(1825-1905)_-_The_Flagellation_of_Our_Lord_Jesus_Christ_(1880).jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-0bfbc7789e1c46d55ed8.webp"
+    },
+    {
+      "artwork_id": "CANONICAL::ART-avid-eniers-the-lder-gony-in-the-arden-ntwerp-osary-cycle",
+      "title": "Agony in the Garden — Antwerp Rosary cycle",
+      "source_url": "https://commons.wikimedia.org/wiki/File:David_Teniers_the_Elder_-_The_Agony_in_the_Garden.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-609ee26b7806dffc5ee6.webp"
+    },
+    {
+      "artwork_id": "REVIEW::commons:20637285",
+      "title": "Christ Crowned with Thorns",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Le_Couronnement_d%27%C3%A9pines.JPG",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-3ce4760b0627a0b09908.webp"
+    },
+    {
+      "artwork_id": "REVIEW::commons:44750556",
+      "title": "Christ in the Garden of Gethsemane",
+      "source_url": "https://commons.wikimedia.org/wiki/File:1753_Tiepolo_Christus_in_Gethsemane_anagoria.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-061d20e70102e520c04c.webp"
+    },
+    {
+      "artwork_id": "REVIEW::commons:115166028",
+      "title": "Crucifixion",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Hans_Jordaens_(III)_-_The_Crucifixion.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-b8f347c615eaf01cfa53.webp"
+    },
+    {
+      "artwork_id": "CANONICAL::ART-iandomenico-iepolo-escent-from-the-ross-rado-assion-series",
+      "title": "Descent from the Cross — Prado Passion series",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Domenico_Tiepolo_-_El_Descendimiento.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-38878d1131ad5f014488.webp"
+    },
+    {
+      "artwork_id": "REVIEW::commons:4965555",
+      "title": "French: La crucifixion",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Champaigne_La_Crucifixion.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-a27cae133328073ea6b5.webp"
+    },
+    {
+      "artwork_id": "REVIEW::commons:146550068",
+      "title": "French: La Nativité | Nativity \" \"",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Nativit%C3%A9_-_Mus%C3%A9e_du_Louvre_Peintures_RF_2502.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-f73bb133ad2a98a81df0.webp"
+    },
+    {
+      "artwork_id": "REVIEW::commons:45227477",
+      "title": "French: Le Calvaire | Christ Crucified with the Virgin, Saint John and Mary Magdalene",
+      "source_url": "https://commons.wikimedia.org/wiki/File:CrucifixionVanDyckLouvre.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-b93630ea5d0ea58e1188.webp"
+    },
+    {
+      "artwork_id": "REVIEW::commons:33831598",
+      "title": "German: Christus am Kreuz | Crucifixion of Christ \" \"",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Annibale_Carracci_Crocifissione_Berlino.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-a9200e1cbf00ef72a908.webp"
+    },
+    {
+      "artwork_id": "REVIEW::commons:83091432",
+      "title": "Guercino - Christ is praying in the Garden of Gethsemane before his arrest. In the agony of doubt, NMW A 7",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Guercino_-_Christ_is_praying_in_the_Garden_of_Gethsemane_before_his_arrest._In_the_agony_of_doubt%2C_NMW_A_7.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-bb4bb14b5186c9446e9e.webp"
+    },
+    {
+      "artwork_id": "CANONICAL::ART-hilippe-de-hampaigne-resentation-of-esus-at-the-emple",
+      "title": "Presentation of Jesus at the Temple",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Philippe%20de%20Champaigne-Pr%C3%A9sentation%20au%20temple.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-5f44f987d8184008f238.webp"
+    },
+    {
+      "artwork_id": "REVIEW::commons:41334838",
+      "title": "Presentation of Jesus Christ at the Temple",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nicolas_Labb%C3%A9-Pr%C3%A9sentation_au_temple.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-d5acacdaced62d93b4d0.webp"
+    },
+    {
+      "artwork_id": "REVIEW::commons:23100292",
+      "title": "The Adoration of the Shepherds",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Fabritius_Adoration_of_the_shepherds.JPG",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-e8a795448fae73f9c5b5.webp"
+    },
+    {
+      "artwork_id": "NEW::khm-caravaggio-crowning-thorns",
+      "title": "The Crowning with Thorns",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_Crowning_with_Thorns-Caravaggio_(1602).jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-cdbf8ff3b328d2c0b390.webp"
+    },
+    {
+      "artwork_id": "CANONICAL::W05-027",
+      "title": "The Crucifixion of Saint Peter",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Crucifixion%20of%20Saint%20Peter-Caravaggio%20(c.1600)FXD.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-f80ac578eb030d7a0e03.webp"
+    },
+    {
+      "artwork_id": "CANONICAL::W07-014",
+      "title": "The Incredulity of Saint Thomas",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The%20Incredulity%20of%20Saint%20Thomas.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-82287f1caea5a54d8129.webp"
+    },
+    {
+      "artwork_id": "REVIEW::commons:93153411",
+      "title": "The Nativity or the Adoration of the Angels",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Gerard_Seghers_-_The_Nativity_or_the_Adoration_of_the_Angels.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-56a3b2cbca2c90a99256.webp"
+    },
+    {
+      "artwork_id": "NEW::vandyck-potsdam-pentecost",
+      "title": "Pentecost",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Dyck,_Anthonis_van_-_Pouring_of_the_Holy_Ghost_-_Bildergalerie_Sanssouci.jpeg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-9584a74fe6b6fd9497f8.webp"
+    },
+    {
+      "artwork_id": "CANONICAL::ART-rtus-olffort-scension-ntwerp-osary-cycle",
+      "title": "The Ascension — Antwerp Rosary cycle",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Artus_Wolffort_-_Ascension_of_Jesus_Christ.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-8f7f38f6a517be7abf2b.webp"
+    },
+    {
+      "artwork_id": "NEW::louvre-inv297",
+      "title": "The Visitation",
+      "source_url": "https://commons.wikimedia.org/wiki/File:La_Visitation_avec_Marie-Jacobie_et_Marie-Salomé_-_Domenico_Ghirlandaio_-_Musée_du_Louvre_Peintures_INV_297_;_MR_240.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-46a8fc1de9c3abdc3131.webp"
+    },
+    {
+      "artwork_id": "REVIEW::smk:KMS3141",
+      "title": "Christ in the Realm of the Dead",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Joakim_Skovgaard,_Kristus_i_de_d%C3%B8des_rige,_,_KMS3141,_Statens_Museum_for_Kunst.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-c3a087eda27c6cdb8424.webp"
+    },
+    {
+      "artwork_id": "REVIEW::commons:22145562",
+      "title": "The Annunciation",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Francesco_Solimena,_Mari%C3%A6_Bebudelse,_,_KMS7976,_Statens_Museum_for_Kunst.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-5d7b1e1115835572d755.webp"
+    },
+    {
+      "artwork_id": "REVIEW::commons:65493548",
+      "title": "Coronation of the Virgin",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Peter_Paul_Rubens_-_Coronation_of_the_Virgin.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-922ed05ddaaec061fffd.webp"
+    },
+    {
+      "artwork_id": "CANONICAL::ART-uido-eni-rchangel-ichael-efeating-atan",
+      "title": "Archangel Michael Defeating Satan",
+      "source_url": "https://commons.wikimedia.org/wiki/File:GuidoReni_MichaelDefeatsSatan.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-a7c79c7863f3b3bb671b.webp"
+    },
+    {
+      "artwork_id": "CANONICAL::ART-arlo-rivelli-aint-homas-quinas",
+      "title": "Saint Thomas Aquinas",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Saint_Thomas_Aquinas_(Crivelli%2C_15th-century).jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-bc7f3caede0225ff38b3.webp"
+    },
+    {
+      "artwork_id": "HERO::commons:Our_Holy_Mother_Of_Perpetual_Succour.jpg",
+      "title": "Our Holy Mother of Perpetual Succour — clean full-length devotional reproduction",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Our_Holy_Mother_Of_Perpetual_Succour.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-e35d652bf9805c74c731.webp"
+    },
+    {
+      "artwork_id": "PRAYER::regina--jan-janssens",
+      "title": "The Resurrection",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Jan_Janssens_-_Resurrection.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-882fab1660c4a43ec8c8.webp"
+    },
+    {
+      "artwork_id": "PRAYER::rosary--caravaggio",
+      "title": "Madonna of the Rosary",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Madonna%20of%20the%20Rosary-Caravaggio%20%281607%29.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-45b549ad50c825df78e7.webp"
+    },
+    {
+      "artwork_id": "PRAYER::angel--franceschini",
+      "title": "The Guardian Angel",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Franceschini,_Marcantonio_-_The_Guardian_Angel_-_Google_Art_Project.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-be7443c0d8a4d11c4558.webp"
+    },
+    {
+      "artwork_id": "PRAYER::angel--strozzi",
+      "title": "The Guardian Angel",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Bernardo_Strozzi_-_The_Guardian_Angel_-_76.256_-_Museum_of_Fine_Arts.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-ce0d4fdb85f63d27a8d6.webp"
+    },
+    {
+      "artwork_id": "PRAYER::king--previtali",
+      "title": "Salvator Mundi",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Andrea%20Previtali%20-%20Salvator%20Mundi%20-%20Google%20Art%20Project.jpg",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-dd5e3d57ae5df3a1f4a4.webp"
+    },
+    {
+      "artwork_id": "REVIEW::rijks:20028095",
+      "title": "Christ Crowned with Thorns",
+      "source_url": "https://www.rijksmuseum.nl/en/collection/object/De-doornenkroning-van-Jezus--9c89ad27853218f13af2effaf52cd6ea",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-d08e89eff141e81c816a.webp"
+    },
+    {
+      "artwork_id": "REVIEW::rijks:200546455",
+      "title": "Christ among the Doctors",
+      "source_url": "https://www.rijksmuseum.nl/en/collection/object/Christ-among-the-Doctors--772da83cfe721b5f90d374153664ddfb",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-52e40bbc7227bbd3a57d.webp"
+    },
+    {
+      "artwork_id": "REVIEW::rijks:20026365",
+      "title": "Ecce Homo",
+      "source_url": "https://www.rijksmuseum.nl/en/collection/object/Ecce-Homo--f435a0bd43cfa3a361ebb60220e9b4d3",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-debd63932870991bd0ab.webp"
+    },
+    {
+      "artwork_id": "REVIEW::walters:9018",
+      "title": "Ecce Homo",
+      "source_url": "https://art.thewalters.org/object/37.243/",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-fe92c073c3958f0ac99a.webp"
+    },
+    {
+      "artwork_id": "REVIEW::walters:4625",
+      "title": "The Annunciation",
+      "source_url": "https://art.thewalters.org/object/37.1677/",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-ff6050dc703973fe35de.webp"
+    },
+    {
+      "artwork_id": "REVIEW::rijks:200108871",
+      "title": "Assumption of the Virgin",
+      "source_url": "https://www.rijksmuseum.nl/en/collection/object/Assumption-of-the-Virgin--c9dd4a4bacd2d05276d325e01e6aa17c",
+      "decision": "DISPLAY_IMAGE_ADDED",
+      "path": "site/gallery/images/selected-museum-wave04-fe4e7d0f4fa28ef4fd3d.webp"
+    }
+  ],
+  "summary": {
+    "reviewed_owner_selected_records": 90,
+    "commons_candidates_checked": 36,
+    "museum_candidates_checked": 14,
+    "file_metadata_found": 36,
+    "eligible_for_download": 38,
+    "new_gallery_paintings": 38,
+    "new_derivative_bytes": 12880102,
+    "held_count": 52,
+    "hold_reasons": {
+      "NO_EXACT_SUPPORTED_OPEN_IMAGE_ENDPOINT": 9,
+      "PREVIOUS_NONCOMMERCIAL_TERMS": 2,
+      "PREVIOUS_IMAGE_RIGHTS_RESTRICTED": 15,
+      "FORBIDDEN_PRADO_IMAGE": 2,
+      "LEGACY_REJECTION_MATCH": 1,
+      "EXACT_FILE_ALREADY_DISPLAYED_ANOTHER_ARTWORK_ID": 2,
+      "PREVIOUS_UNCERTAIN_SOURCE_MATCH": 4,
+      "PREVIOUS_LOW_QUALITY_HOLD": 5,
+      "COMMONS_INADEQUATE_SOURCE_GEOMETRY": 3,
+      "COMMONS_NO_EXPLICIT_COPYRIGHT_FALSE": 1,
+      "MSK_OBJECT_IMAGE_SERVICE_NOT_FOUND": 4,
+      "INSTITUTIONAL_OBJECT_IMAGE_ACCESS_REQUIRES_SEPARATE_EXACT_SOURCE_VERIFICATION": 2,
+      "KMSKA_MANIFEST_RIGHTS_CONFLICT_WITH_PRIOR_CC0": 2
+    },
+    "gallery_total_images": 430,
+    "gallery_image_bearing_records": 433,
+    "original_catalogue_records_preserved": 873,
+    "historical_rejected_originals_preserved": 103,
+    "new_prayer_card_assignments": 0,
+    "new_calendar_placements": 0,
+    "original_source_master_jpeg_bank_unchanged": 54,
+    "fingerprint_mismatches": 0
+  }
+}
