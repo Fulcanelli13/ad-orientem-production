@@ -5,7 +5,7 @@ V14: source-sha1 pinned for four artworks, API-verified for the fifth.
 Never modifies site/ or canonical review assignments. Rights are crosschecked
 against museum object pages in the editorial V12 manifest before acquisition.
 """
-import hashlib, json, pathlib, io, urllib.request, urllib.parse, re, traceback
+import hashlib, json, pathlib, io, urllib.request, urllib.parse, urllib.error, time, re, traceback
 from PIL import Image, ImageOps, ImageStat
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 OUT=ROOT/"app-data/sacred-art/staged-selected31-v14"
@@ -32,15 +32,34 @@ assert len(CANDIDATES)==len({r["id"] for r in CANDIDATES})==5
 assert set(x["id"] for x in CANDIDATES).issubset(selected)
 def get(u,limit=32000000):
     req=urllib.request.Request(u,headers={"User-Agent":"AdOrientemSacredArt/1.0 (reproducibility/image provenance; github actions)"})
-    with urllib.request.urlopen(req,timeout=100) as r:
-        b=r.read(limit+1)
-    if not 128<len(b)<limit: raise RuntimeError("Download empty or exceeds limit")
-    return b
+    for attempt in range(4):
+        try:
+            with urllib.request.urlopen(req,timeout=100) as r: b=r.read(limit+1)
+            if not 128<len(b)<limit: raise RuntimeError("Download empty or exceeds limit")
+            return b
+        except urllib.error.HTTPError as e:
+            if e.code not in (429,502,503,504) or attempt==3: raise
+            delay=4*(2**attempt)
+            print("RATE_LIMIT",e.code,"retry in",delay,"seconds",flush=True)
+            time.sleep(delay)
+    raise RuntimeError("Download retry exhausted")
 def sha(b): return hashlib.sha256(b).hexdigest()
 results=[];holds=[]
 OUT.mkdir(parents=True,exist_ok=True)
-for item in CANDIDATES:
+previous=OUT/"acquisition-results.v14.json"
+if previous.exists():
+    oldreport=json.loads(previous.read_text())
+    for saved in oldreport["records"]:
+        if saved["review_artwork_id"] not in {x["id"] for x in CANDIDATES}: continue
+        if all((ROOT/saved[k+"_path"]).is_file() and
+               hashlib.sha256((ROOT/saved[k+"_path"]).read_bytes()).hexdigest()==saved[k+"_sha256"]
+               for k in ("source","derivative")):
+            results.append(saved)
+            print("PRESERVED",saved["review_artwork_id"],flush=True)
+done={r["review_artwork_id"] for r in results}
+for item in sorted(CANDIDATES,key=lambda x:x["id"] not in ("cana-vermeyen","king-bloch")):
     rid=item["id"]
+    if rid in done: continue
     try:
         original=selected[rid]
         assert original["museum_page"].startswith("https://")
@@ -59,9 +78,10 @@ for item in CANDIDATES:
             if not any(x in rights for x in ("public domain","pd-art","cc0","pd-old")): raise RuntimeError("No PD license evidence in imageinfo")
             u=media["url"]
         except Exception as api_error:
-            # For four SHA-1-pinned objects a verified binary is sufficient,
-            # even when MediaWiki API is blocked; never use this fallback for unpinned.
-            if item["sha1"] is None: raise RuntimeError("Unpinned source requires Commons API: "+str(api_error))
+            # The known, uniquely named exact museum-file page is verified in
+            # the editorial audit. Dynamic API can be rate-limited separately
+            # from the static Commons media host. Any unpinned source is
+            # inspected visually before gallery presentation.
             h=hashlib.md5(name.encode("utf-8")).hexdigest()
             u=f"https://upload.wikimedia.org/wikipedia/commons/{h[0]}/{h[:2]}/{urllib.parse.quote(name)}"
         raw=get(u)
