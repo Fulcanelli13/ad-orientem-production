@@ -41,7 +41,7 @@ for r in queue:
             str(entry["openaccess"])!="1" or str(entry["viewtype"]).lower()!="primary"):
             raise ValueError("NGA identity/openaccess mismatch: "+rid)
         if uid not in (entry.get("iiifURL") or "").lower():
-            raise ValueError("NGA published image URL mismatch: "+rid)
+            raise ValueError("NGA published image URL mismatch: "+rid+"; official IIIF base="+str(entry.get("iiifURL")))
         url=f"https://api.nga.gov/iiif/{uid}/full/!3500,3500/0/default.jpg"
         rights="NGA published_images.csv openaccess=1"
         evidence={"objectID":str(spec["object"]),"uuid":uid,"viewtype":"primary"}
