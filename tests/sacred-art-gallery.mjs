@@ -29,9 +29,9 @@ assert.equal(gallery.records.length, 870);
 assert.equal(gallery.counts.total_records, 870);
 assert.equal(gallery.counts.angelus_review_records, 36);
 assert.equal(gallery.counts.unassigned, 611);
-assert.equal(gallery.counts.distinct_locally_hosted_paintings, 68);
-assert.equal(gallery.counts.image_available_records, 71);
-assert.equal(gallery.records.filter(x => x.image !== null).length, 71);
+assert.equal(gallery.counts.distinct_locally_hosted_paintings, 70);
+assert.equal(gallery.counts.image_available_records, 73);
+assert.equal(gallery.records.filter(x => x.image !== null).length, 73);
 assert.equal(gallery.records.filter(x => x.prayer_parts.length).length, 36);
 assert.equal(new Set(gallery.records.map(x => x.id)).size, 870);
 assert.deepEqual(new Set(gallery.records.filter(x=>!x.id.startsWith('RELEASED::san-polo-oils:')).map(x => x.id)),
@@ -54,8 +54,8 @@ for (const original of angelus.artworks) {
   assert.equal(record.prayer_parts.length,
     angelus.part_artwork_links.filter(x=>x.artwork_id===original.artwork_id).length);
 }
-assert.equal(images.sources.length,68);
-assert.equal(gallery.counts.verified_image_files,68);
+assert.equal(images.sources.length,70);
+assert.equal(gallery.counts.verified_image_files,70);
 const verifiedArchiveOriginalIds = new Set(['CANONICAL::ART-hilippe-de-hampaigne-he-nnunciation','CANONICAL::met-438434','CANONICAL::met-436672']);
 const srcFiles = new Set();
 for (const art of gallery.records) {
@@ -70,7 +70,7 @@ for (const art of gallery.records) {
     'Incorrect image format');
   srcFiles.add('site/'+art.image.src.slice(2));
 }
-assert.equal(srcFiles.size,68);
+assert.equal(srcFiles.size,70);
 for (const entry of images.sources) {
   assert(srcFiles.has(entry.path));
   assert.equal(statSync(resolve(base,entry.path)).size,entry.image_bytes);
@@ -472,4 +472,4 @@ assert(js.includes('catalogue.records'));
 assert(css.includes('.ao-gallery'));
 assert(css.includes('.home-pad.integrated-home-order>.sacred-art-entry'));
 assert(!html.includes('https://fonts.googleapis.com'),'No remote font dependencies');
-console.log('Sacred Art gallery validated: 862 historical records + 8 selected San Polo cycle works, 68 paintings on display and 71 image-bearing rows; no new prayer defaults.');
+console.log('Sacred Art gallery validated: 870 records, 70 paintings on display, 73 image-bearing rows; no new prayer defaults.');

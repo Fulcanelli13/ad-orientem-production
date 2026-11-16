@@ -9,7 +9,8 @@
     ],
     "angelus_review": "site/prayers/angelus-part-paintings.v1.json",
     "local_provenance": "app-data/sacred-art/staged-image-provenance.v1.json",
-    "san_polo_released_cycle": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json"
+    "san_polo_released_cycle": "app-data/sacred-art/san-polo-released-cycle-migration.v1.json",
+    "devotional_recovery": "app-data/sacred-art/devotional-asset-recovery-20261116.v1.json"
   },
   "policy": {
     "all_records_included": true,
@@ -25,11 +26,11 @@
   "counts": {
     "total_records": 870,
     "selected_artwork_records": 737,
-    "image_available_records": 71,
-    "distinct_locally_hosted_paintings": 68,
+    "image_available_records": 73,
+    "distinct_locally_hosted_paintings": 70,
     "angelus_review_records": 36,
     "unassigned": 611,
-    "verified_image_files": 68,
+    "verified_image_files": 70,
     "full_resolution_image_count_unknown": true
   },
   "records": [
@@ -17672,7 +17673,15 @@
       "source_url": "https://commons.wikimedia.org/wiki/File:Ghent%20Altarpiece%20-%20Adoration%20of%20the%20Mystic%20Lamb.jpg",
       "record_status": "PLACEMENT_KEEP",
       "owner_selected_artwork": true,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/van-eyck-mystic-lamb-exact-released.webp",
+        "provenance": "Original Ad Orientem previously approved selected WebP; Commons PD-Art / Public Domain Mark, not CC0. The original JPEG is not preserved.",
+        "quality": "EXACT_PREVIOUSLY_APPROVED_WEBP__ORIGINAL_JPEG_NOT_PRESERVED",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+        "license": "Commons PD-Art / Public Domain Mark (not CC0)",
+        "license_url": "https://commons.wikimedia.org/wiki/File:Ghent_Altarpiece_-_Adoration_of_the_Mystic_Lamb.jpg",
+        "scene_use_note": "Heavenly adoration of the Mystic Lamb, not the priest giving liturgical Benediction."
+      },
       "image_url_source_only": null,
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
@@ -17826,7 +17835,15 @@
       "source_url": "https://www.nga.gov/artworks/34956-return-prodigal-son",
       "record_status": "UNREVIEWED; CANDIDATE",
       "owner_selected_artwork": false,
-      "image": null,
+      "image": {
+        "src": "./gallery/images/murillo-return-prodigal-son-nga-34956-original.jpg",
+        "provenance": "Exact already released NGA 34956 Murillo original from old PR #2293; same JPEG bytes as the permanent source-master bank.",
+        "quality": "EXACT_RELEASED_JPEG__NGA_CC0_SOURCE_MASTER",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_DEFAULTS_UNCHANGED",
+        "license": "National Gallery of Art CC0 Open Access",
+        "license_url": "https://www.nga.gov/artworks/34956-return-prodigal-son",
+        "scene_use_note": "Previously selected for Confession. Historical catalogue approval fields are unchanged."
+      },
       "image_url_source_only": null,
       "rights_note": "NOT_CERTIFIED",
       "scene_ids": [],
