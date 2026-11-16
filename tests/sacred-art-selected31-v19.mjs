@@ -23,7 +23,7 @@ assert.equal(gallery.counts.total_records,873);
 assert.equal(gallery.counts.distinct_locally_hosted_paintings,234);
 assert.equal(provenance.local_image_count,234);
 assert.deepEqual(policy.counts,{main_preserved:5,overlay_eligible:7,source_only_holds:19});
-const states=Object.groupBy(policy.records,r=>r.disposition);
+const states=policy.records.reduce((acc,r)=>{(acc[r.disposition]??=[]).push(r);return acc;},{});
 assert.equal(states.CURRENT_MAIN_PRESERVE.length,5);
 assert.equal(states.DRAFT_GALLERY_ELIGIBLE.length,7);
 assert.equal(states.HOLD_SOURCE_ONLY.length,19);
