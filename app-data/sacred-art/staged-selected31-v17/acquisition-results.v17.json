@@ -65,36 +65,6 @@
       "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
     },
     {
-      "review_artwork_id": "euch-bassano",
-      "title": "The Last Supper",
-      "artist": "Jacopo Bassano",
-      "original_selection_source": "https://www.collezionegalleriaborghese.it/en/opere/last-supper",
-      "verified_museum_identity": "Galleria Borghese, inventory 144",
-      "photographer": "Sailko",
-      "license": "CC BY 3.0 (Sailko); separate Italian heritage-reuse warning",
-      "license_url": "https://creativecommons.org/licenses/by/3.0/",
-      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Jacopo_bassano%2C_ultima_cena%2C_1546-48_circa%2C_04.jpg",
-      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Jacopo_bassano%2C_ultima_cena%2C_1546-48_circa%2C_04.jpg",
-      "source_sha1": "98d3b4ef68f804b7b15dcc92b1264501f1de7afa",
-      "source_sha256": "5c763df8b3fae7eed27da78a79057185e4d89119a064ef7d14393677beb29fd7",
-      "source_bytes": 12741996,
-      "source_dimensions": [
-        5472,
-        3504
-      ],
-      "source_path": "app-data/sacred-art/staged-selected31-v17/euch-bassano-source.jpg",
-      "derivative_sha256": "eee3cf907ec99ef6e94e81b5678d25f634cf37d6a1280369961e2c7f7096ae6f",
-      "derivative_bytes": 544180,
-      "derivative_dimensions": [
-        2000,
-        1281
-      ],
-      "derivative_path": "app-data/sacred-art/staged-selected31-v17/euch-bassano-2000.webp",
-      "rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
-      "full_original_composition": true,
-      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
-    },
-    {
       "review_artwork_id": "euch-rubens",
       "title": "The Last Supper",
       "artist": "Peter Paul Rubens",
@@ -120,6 +90,36 @@
         2000
       ],
       "derivative_path": "app-data/sacred-art/staged-selected31-v17/euch-rubens-2000.webp",
+      "rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
+      "full_original_composition": true,
+      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
+    },
+    {
+      "review_artwork_id": "euch-bassano",
+      "title": "The Last Supper",
+      "artist": "Jacopo Bassano",
+      "original_selection_source": "https://www.collezionegalleriaborghese.it/en/opere/last-supper",
+      "verified_museum_identity": "Galleria Borghese, inventory 144",
+      "photographer": "Sailko",
+      "license": "CC BY 3.0 (Sailko); separate Italian heritage-reuse warning",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Jacopo_bassano%2C_ultima_cena%2C_1546-48_circa%2C_01.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/5/54/Jacopo_bassano%2C_ultima_cena%2C_1546-48_circa%2C_01.jpg",
+      "source_sha1": "00926b2a1bab32c49d57f14068535d123ebf7601",
+      "source_sha256": "53b23433d8bb43aac48e0e2038f21b12f780d533c05e693ffa91362c8d3b6acd",
+      "source_bytes": 6329909,
+      "source_dimensions": [
+        4296,
+        2568
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v17/euch-bassano-source.jpg",
+      "derivative_sha256": "71bc0be6e3d58d82dfc283a3881b5bb5a6dfcfb2b6cea51f577e4e94bae3fa04",
+      "derivative_bytes": 343358,
+      "derivative_dimensions": [
+        2000,
+        1196
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v17/euch-bassano-2000.webp",
       "rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
       "full_original_composition": true,
       "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
