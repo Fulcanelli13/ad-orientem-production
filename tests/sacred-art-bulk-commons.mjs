@@ -60,7 +60,7 @@ for(const a of manifest.assets){
  const r=gallery.records.find(x=>x.id===a.artwork_id);
  assert(r && r.owner_selected_artwork===true);
  assert.equal(r.record_status,'APPROVED_BY_USER_2026_11_03');
- assert.equal(r.rights_note,'NOT_INDEPENDENTLY_CLEARED','do not rewrite old historical rights record');
+ assert.equal(r.rights_note,a.previous_photo_rights_note,'original historical rights record must be preserved exactly');
  assert.equal(r.image.src,'./'+a.derivative_path.slice('site/'.length));
  assert.equal(r.image.usage,'GALLERY_ONLY__USER_SELECTED_WORK__NO_NEW_PRAYER_DEFAULT');
  assert(r.image.source_note.includes('not a new museum-level'));
