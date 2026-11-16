@@ -68,7 +68,7 @@ for(const x of after.records){
   }
 }
 assert(js.includes('selected31-reviewed-images.v20.json'));
-assert(js.includes('legacyRecordCount !== 873 || addedRecords !== 7 || addedImages !== 8'));
+assert(js.includes('legacyRecordCount !== 873 || addedRecords !== 8 || addedImages !== 9'));
 assert(!existsSync(file('site/gallery/images/selected31-v14-cana-francken-2000.webp')));
 assert(!existsSync(file('site/gallery/images/selected31-v14-bap-verrocchio-2000.webp')));
 assert(!existsSync(file('site/gallery/images/selected31-v14-cana-vermeyen-2000.webp')));
