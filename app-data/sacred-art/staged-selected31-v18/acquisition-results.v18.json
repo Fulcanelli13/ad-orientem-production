@@ -1,0 +1,206 @@
+{
+  "schema": "ao.sacred-art.selected31-source-acquisition-v18",
+  "purpose": "Source-only research; no gallery, prayer-card or deployment changes",
+  "attempted_selected_sources": 7,
+  "acquired_count": 6,
+  "failed_acquisition_count": 1,
+  "outstanding_poussin_count": 1,
+  "records": [
+    {
+      "review_artwork_id": "cana-tintoretto",
+      "title": "The Wedding at Cana",
+      "artist": "Jacopo Tintoretto",
+      "selection_object_page": "https://basilicasalutevenezia.it/sezione-tintoretto/",
+      "verified_or_proposed_object": "Jacopo Tintoretto, 1561, Santa Maria della Salute, Venice",
+      "photographer": "Gleb Simonov",
+      "photograph_license": "CC0 1.0 (photographer dedication)",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Tintoretto_-_Marriage_at_Cana.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Tintoretto_-_Marriage_at_Cana.jpg",
+      "source_sha1": "ae09c77827f40d20765a8b15a0d31461209f5aa0",
+      "source_sha256": "1fc69ee8d3b31b47e74f6a255debc674bbe55bed8071216ed6bfb20e846a7b60",
+      "source_bytes": 16973460,
+      "source_dimensions": [
+        6119,
+        4441
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v18/cana-tintoretto-source.jpg",
+      "derivative_sha256": "34726583135037ac865b3f36f6569aab59e1ee9d1b99beff62a8358e13de0d5c",
+      "derivative_bytes": 462440,
+      "derivative_dimensions": [
+        2000,
+        1452
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v18/cana-tintoretto-2000.webp",
+      "rights_gate": "SOURCE_ONLY__VENICE_INSTITUTIONAL_REUSE_REVIEW",
+      "object_identity_gate": "MUSEUM_OBJECT_MATCHED",
+      "composition_status": "REQUIRES_VISUAL_FRAME_CROP_AND_QUALITY_REVIEW",
+      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
+    },
+    {
+      "review_artwork_id": "king-bourdon",
+      "title": "Christ Blessing the Children",
+      "artist": "Sébastien Bourdon",
+      "selection_object_page": "https://collections.louvre.fr/en/ark:/53355/cl010059179",
+      "verified_or_proposed_object": "Musée du Louvre INV 2806 / MR 1256",
+      "photographer": "Shonagon (2025)",
+      "photograph_license": "Commons Public Domain Mark / faithful reproduction; French institutional rights to verify",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Le_Christ_et_les_enfants_-_S%C3%A9bastien_Bourdon_-_Mus%C3%A9e_du_Louvre_Peintures_INV_2806_%3B_MR_1256.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Le_Christ_et_les_enfants_-_S%C3%A9bastien_Bourdon_-_Mus%C3%A9e_du_Louvre_Peintures_INV_2806_%3B_MR_1256.jpg",
+      "source_sha1": "ce971f2bb25ae68894826eba5c7a58848afed4f8",
+      "source_sha256": "356484778862a999efea95a3af7410e178303de2de465853483f95f8aa0697f5",
+      "source_bytes": 33996673,
+      "source_dimensions": [
+        10952,
+        8131
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v18/king-bourdon-source.jpg",
+      "derivative_sha256": "5249af757bfb1365fb69d610085723ba92c471f79c373b07f62b2fa1588cf59b",
+      "derivative_bytes": 582598,
+      "derivative_dimensions": [
+        2000,
+        1485
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v18/king-bourdon-2000.webp",
+      "rights_gate": "SOURCE_ONLY__LOUVRE_PHOTOGRAPH_REUSE_REVIEW",
+      "object_identity_gate": "MUSEUM_OBJECT_MATCHED",
+      "composition_status": "REQUIRES_VISUAL_FRAME_CROP_AND_QUALITY_REVIEW",
+      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
+    },
+    {
+      "review_artwork_id": "king-jordaens",
+      "title": "Christ Blessing the Children",
+      "artist": "Jacob Jordaens",
+      "selection_object_page": "https://commons.wikimedia.org/wiki/Paintings_by_Jacob_Jordaens",
+      "verified_or_proposed_object": "Statens Museum for Kunst KMSsp234 (museum attribution: attributed to Jacob Jordaens)",
+      "photographer": "Statens Museum for Kunst",
+      "photograph_license": "CC0 1.0, SMK reproduction",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-_Christ_blessing_little_Children._Suffer_Little_Children_to_Come_unto_me_-_KMSsp234_-_Statens_Museum_for_Kunst.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Jacob_Jordaens_-_Christ_blessing_little_Children._Suffer_Little_Children_to_Come_unto_me_-_KMSsp234_-_Statens_Museum_for_Kunst.jpg",
+      "source_sha1": "b7ca96e7f4bafa7e449f1f482c6930d5f0666dae",
+      "source_sha256": "3c4ae6b35298884b1f7c416efb0f900156bdfc7fc09f2353b19bd68c5a25ef7c",
+      "source_bytes": 33767396,
+      "source_dimensions": [
+        6437,
+        5891
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v18/king-jordaens-source.jpg",
+      "derivative_sha256": "2bad7937952f051a1ce6a9b6e2ca238ba84c25b019a12bb8b566e1369fe9756d",
+      "derivative_bytes": 381910,
+      "derivative_dimensions": [
+        2000,
+        1830
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v18/king-jordaens-2000.webp",
+      "rights_gate": "SOURCE_ONLY__ORIGINAL_OWNER_SELECTED_OBJECT_NOT_VERIFIED",
+      "object_identity_gate": "ORIGINAL_OWNER_IMAGE_UNCONFIRMED",
+      "composition_status": "REQUIRES_VISUAL_FRAME_CROP_AND_QUALITY_REVIEW",
+      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
+    },
+    {
+      "review_artwork_id": "trans-rubens",
+      "title": "The Transfiguration",
+      "artist": "Peter Paul Rubens",
+      "selection_object_page": "https://collections-mba.nancy.fr/fr/notice/71-la-transfiguration-55a3edae-0322-4690-9dc2-556cb6d634c2",
+      "verified_or_proposed_object": "Musée des Beaux-Arts de Nancy inventory 71",
+      "photographer": "Commons faithful reproduction",
+      "photograph_license": "Public Domain Mark / PD-Art",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Transfiguration-Rubens.JPG",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/3/30/Transfiguration-Rubens.JPG",
+      "source_sha1": "b2a3f8b013ed7f24b64a0f7c81413bfe78e44964",
+      "source_sha256": "243f8a4354a5b2af663ac1fdef499ccddeac3a96ef89165246c7fbec49bf04f7",
+      "source_bytes": 930314,
+      "source_dimensions": [
+        3645,
+        2150
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v18/trans-rubens-source.jpg",
+      "derivative_sha256": "23786deb7edebe51aeef278ad92dc329adb23afe47bf108a9a3b3c0ec835530e",
+      "derivative_bytes": 438950,
+      "derivative_dimensions": [
+        2000,
+        1180
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v18/trans-rubens-2000.webp",
+      "rights_gate": "SOURCE_ONLY__NANCY_MUSEUM_REUSE_AND_IMAGE_QUALITY_REVIEW",
+      "object_identity_gate": "MUSEUM_OBJECT_MATCHED",
+      "composition_status": "REQUIRES_VISUAL_FRAME_CROP_AND_QUALITY_REVIEW",
+      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
+    },
+    {
+      "review_artwork_id": "trans-savoldo",
+      "title": "The Transfiguration of Christ",
+      "artist": "Giovanni Gerolamo Savoldo",
+      "selection_object_page": "https://catalogo.fondazionezeri.unibo.it/scheda/opera/45724/Savoldo%20Giovanni%20Gerolamo%2C%20Trasfigurazione",
+      "verified_or_proposed_object": "Gallerie degli Uffizi inventory 00289148 (Transfiguration of Christ)",
+      "photographer": "Francesco Bini / Sailko",
+      "photograph_license": "CC BY-SA 4.0 with Italian heritage disclaimer",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Giovanni_girolamo_savoldo%2C_trasfigurazione%2C_1530-35_ca._01.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Giovanni_girolamo_savoldo%2C_trasfigurazione%2C_1530-35_ca._01.jpg",
+      "source_sha1": "b670b9b1825c514d0698cadf8782ebbbf98ae581",
+      "source_sha256": "79b41e8c8b069cdac1d9a5dde3d74691656c62c9417cac0ab64a6ca888bcac99",
+      "source_bytes": 3081562,
+      "source_dimensions": [
+        2276,
+        2488
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v18/trans-savoldo-source.jpg",
+      "derivative_sha256": "c98ace8edb8a097c11fe42f15b1e0395206d97a53475a7ac1a81230c276cdfdd",
+      "derivative_bytes": 630516,
+      "derivative_dimensions": [
+        1830,
+        2000
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v18/trans-savoldo-2000.webp",
+      "rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
+      "object_identity_gate": "MUSEUM_OBJECT_MATCHED",
+      "composition_status": "REQUIRES_VISUAL_FRAME_CROP_AND_QUALITY_REVIEW",
+      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
+    },
+    {
+      "review_artwork_id": "trans-carracci",
+      "title": "The Transfiguration",
+      "artist": "Ludovico Carracci",
+      "selection_object_page": "https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/0800692440",
+      "verified_or_proposed_object": "Pinacoteca Nazionale di Bologna inventory 475",
+      "photographer": "Mongolo1984",
+      "photograph_license": "CC BY-SA 4.0 with Italian heritage disclaimer",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Lodovico_Carracci%2C_Trasfigurazione_di_Ges%C3%B9_Cristo%2C_1595.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Lodovico_Carracci%2C_Trasfigurazione_di_Ges%C3%B9_Cristo%2C_1595.jpg",
+      "source_sha1": "f698c8fb796281e166ec7918ae14a145a8450eae",
+      "source_sha256": "76e157eada9a7ea0dbac8e7e8fd85aeeaa7dbe04be181ddaa8fa9f78876cc827",
+      "source_bytes": 2566867,
+      "source_dimensions": [
+        3603,
+        5567
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v18/trans-carracci-source.jpg",
+      "derivative_sha256": "3530c89d9ef54a656b9e734a9be490a7b6036bcc6cfeb5542c2665531a2e0935",
+      "derivative_bytes": 436996,
+      "derivative_dimensions": [
+        1294,
+        2000
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v18/trans-carracci-2000.webp",
+      "rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
+      "object_identity_gate": "MUSEUM_OBJECT_MATCHED",
+      "composition_status": "REQUIRES_VISUAL_FRAME_CROP_AND_QUALITY_REVIEW",
+      "status": "SOURCE_ARCHIVE_ONLY__NO_PUBLIC_APP_OR_PRAYER_BINDING"
+    }
+  ],
+  "holds": [
+    {
+      "review_artwork_id": "euch-leonardo",
+      "reason": "HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)"
+    },
+    {
+      "review_artwork_id": "euch-poussin",
+      "reason": "Not acquired: Scottish National Gallery declares the selected Holy Eucharist photograph restricted or unavailable. No alternate image admitted without independent exact-photo rights."
+    }
+  ]
+}
