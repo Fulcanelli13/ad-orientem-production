@@ -8,9 +8,9 @@
     "commit": "9cb022bd58a57214deb6728b4d3879d9551d9560"
   },
   "counts": {
-    "main_preserved": 5,
+    "main_preserved": 6,
     "overlay_eligible": 8,
-    "source_only_holds": 18
+    "source_only_holds": 17
   },
   "rights_evidence": {
     "louvre": "https://www.louvre.fr/en/legal-information-and-terms-of-use",
@@ -365,8 +365,8 @@
       "artist": "Raphael",
       "selected_object_page": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/la-pinacoteca/sala-viii---secolo-xvi/raffaello-sanzio--trasfigurazione.html",
       "acquisition_batch": "V17",
-      "gallery_record_id": null,
-      "gallery_image_file": null,
+      "gallery_record_id": "RELEASED::class-i-2026:vatican-mv-40333",
+      "gallery_image_file": "site/gallery/images/raphael-transfiguration-class-i-original.jpg",
       "source_archive_path": "app-data/sacred-art/staged-selected31-v17/trans-raphael-source.jpg",
       "source_sha256": "afe110a29670786ee0bac9acb885bdc69adf07d1bfd0f1a2a6f93c2dda6bbde6",
       "source_dimensions": [
@@ -376,10 +376,10 @@
       "credited_photographer": "Richard Mortel",
       "photograph_license_or_evidence": "CC BY 2.0 (Flickr licence reviewed on Commons)",
       "photo_license_url": "https://creativecommons.org/licenses/by/2.0/",
-      "rights_gate": "SOURCE_ONLY__VATICAN_PHOTOGRAPH_PUBLISHING_REVIEW",
-      "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
-      "rationale": "Same Raphael work already hosted under Class I on main; avoid duplicates; Vatican rights/frame review",
+      "rights_gate": "MAIN_EXISTING_CALENDAR_RELEASE__COMMONS_PD_ART_JURISDICTIONAL_CAVEAT",
+      "disposition": "CURRENT_MAIN_PRESERVE",
+      "visual_gate": "EXISTING_GALLERY_3737x5691__CALENDAR_IMAGE_REUSED",
+      "rationale": "Already-published canonical Raphael Transfiguration, Vatican museum URL matches owner selection. Reuse existing 3737x5691 local gallery file; no duplicate review record and no new prayer-card assignment.",
       "automatic_prayer_card_assignment": false
     },
     {
@@ -763,6 +763,8 @@
       "tri-dolci"
     ],
     "original_photo_replaced_in_research_archive": false,
-    "no_prayer_assignments": true
+    "no_prayer_assignments": true,
+    "reused_existing_gallery_artwork": "trans-raphael",
+    "reused_gallery_record_id": "RELEASED::class-i-2026:vatican-mv-40333"
   }
 }
