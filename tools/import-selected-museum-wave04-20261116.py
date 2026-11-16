@@ -300,7 +300,7 @@ for i,item in enumerate(ready,1):
   assert not (R/dst).exists(),dst
   (R/dst).write_bytes(webp)
   row["image"]={
-    "src":"./gallery/images/"+R(dst).name,
+    "src":"./gallery/images/"+(R/dst).name,
     "quality":"EXACT_OWNER_SELECTED_SOURCE__FULL_COMPOSITION_1600PX",
     "usage":"GALLERY_ONLY__PREVIOUSLY_SELECTED__NO_NEW_PRAYER_OR_CALENDAR_ASSIGNMENTS",
     "provenance":"Original artwork identity and source link selected in existing gallery. Exact image source checked via "+item["method"]+"; uncropped local WebP derivative. Original full-resolution source bytes not archived.",
