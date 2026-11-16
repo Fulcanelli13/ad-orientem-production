@@ -1,0 +1,50 @@
+{
+  "schema": "ao.sacred-art.selected31-v21-source-acquisition",
+  "intent": "Research bank only, no public site changes",
+  "attempted": 1,
+  "acquired_count": 1,
+  "records": [
+    {
+      "review_artwork_id": "cana-francken",
+      "title": "The Wedding at Cana",
+      "artist": "Frans Francken the Younger",
+      "verified_museum": "Nationalmuseum Stockholm",
+      "accession": "NM 7504",
+      "selected_object_page": "https://collection.nationalmuseum.se/en/collection/item/231135/",
+      "source_file_page": "https://commons.wikimedia.org/wiki/File:The_Wedding_at_Cana_by_Frans_Francken_the_Younger%2C_Nationalmuseum%2C_Stockholm.jpg",
+      "verified_iiif_original": "https://nationalmuseumse.iiifhosting.com/iiif/e8f15809c31cfff45a7abd09bd3cc9a2e2f5d91d247cea31e14b63896a171ec3/info.json",
+      "acquisition_lane": "commons_original",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/The_Wedding_at_Cana_by_Frans_Francken_the_Younger%2C_Nationalmuseum%2C_Stockholm.jpg",
+      "expected_commons_sha1": "e0e1011ae234d7dbfced32f6eacd544392a87541",
+      "source_sha1": "e0e1011ae234d7dbfced32f6eacd544392a87541",
+      "source_sha256": "4b2375fc8ec4408040aea66a17f766971b12ae62e771b5f06f49236e4dc64137",
+      "source_bytes": 253726,
+      "source_dimensions": [
+        1920,
+        919
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v21/cana-francken-source.jpg",
+      "derivative_sha256": "3ba944cef62c517b87cb94e194f0dad3b9112879127a8eed9af2c7efef6c49d6",
+      "derivative_bytes": 282882,
+      "derivative_dimensions": [
+        1920,
+        919
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v21/cana-francken-2000.webp",
+      "photo_reuse_evidence": "Nationalmuseum NM 7504 has individual photographs variously labelled Public Domain or CC BY-SA; Commons selected exact photographic image marked Public Domain",
+      "rights_gate": "GALLERY_PHOTO_SOURCE_SPECIFIC_RIGHTS_REVIEW",
+      "identity_gate": "NATIONALMUSEUM_NM7504_EXACT_OBJECT",
+      "quality_gate": "FULL_FRAME_1920PX_OR_ABOVE__VISUAL_QA_PENDING",
+      "status": "SOURCE_ARCHIVE_ONLY__NO_APP_OR_PRAYER_BINDING"
+    }
+  ],
+  "hold_count": 0,
+  "holds": [],
+  "attempts": [
+    {
+      "lane": "nationalmuseum_iiif_2500",
+      "attempt": 1,
+      "reason": "HTTP Error 501: Not Implemented"
+    }
+  ]
+}
