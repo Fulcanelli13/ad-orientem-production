@@ -42,7 +42,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "DRAFT_GALLERY_ELIGIBLE",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Exact selected object with institutional open-access or documented public-domain image evidence; gallery-only release candidate",
       "automatic_prayer_card_assignment": false
     },
@@ -66,7 +66,7 @@
       "photo_license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
       "rights_gate": "SOURCE_ONLY__LOUVRE_REUSE_AND_ORIGINAL_SELECTION_IDENTITY_REVIEW",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Original selected Commons curid match pending and Louvre rights review",
       "automatic_prayer_card_assignment": false
     },
@@ -90,7 +90,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "DRAFT_GALLERY_ELIGIBLE",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Exact selected object with institutional open-access or documented public-domain image evidence; gallery-only release candidate",
       "automatic_prayer_card_assignment": false
     },
@@ -114,7 +114,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "DRAFT_GALLERY_ELIGIBLE",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Exact selected object with institutional open-access or documented public-domain image evidence; gallery-only release candidate",
       "automatic_prayer_card_assignment": false
     },
@@ -138,7 +138,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "DRAFT_GALLERY_ELIGIBLE",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Exact selected object with institutional open-access or documented public-domain image evidence; gallery-only release candidate",
       "automatic_prayer_card_assignment": false
     },
@@ -162,7 +162,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "DRAFT_GALLERY_ELIGIBLE",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Exact selected object with institutional open-access or documented public-domain image evidence; gallery-only release candidate",
       "automatic_prayer_card_assignment": false
     },
@@ -186,7 +186,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Uffizi Italian heritage-use hold despite Commons PD-Art status",
       "automatic_prayer_card_assignment": false
     },
@@ -210,7 +210,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "DRAFT_GALLERY_ELIGIBLE",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Exact selected object with institutional open-access or documented public-domain image evidence; gallery-only release candidate",
       "automatic_prayer_card_assignment": false
     },
@@ -234,7 +234,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "PREVIEW_ONLY",
+      "visual_gate": "PREVIEW_ONLY__SOURCE_TOO_SMALL",
       "rationale": "1000×558 preview only; Nationalmuseum object presents different photographer licences",
       "automatic_prayer_card_assignment": false
     },
@@ -258,7 +258,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "PREVIEW_ONLY",
+      "visual_gate": "PREVIEW_ONLY__SOURCE_TOO_SMALL",
       "rationale": "1166×925 preview-only reproduction; replace with substantive Rijksmuseum master",
       "automatic_prayer_card_assignment": false
     },
@@ -282,7 +282,7 @@
       "photo_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
       "rights_gate": "SOURCE_ONLY__VENICE_INSTITUTIONAL_REUSE_REVIEW",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Venice site/museum heritage reuse review required despite photographer CC0",
       "automatic_prayer_card_assignment": false
     },
@@ -306,7 +306,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "DRAFT_GALLERY_ELIGIBLE",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Exact selected object with institutional open-access or documented public-domain image evidence; gallery-only release candidate",
       "automatic_prayer_card_assignment": false
     },
@@ -330,7 +330,7 @@
       "photo_license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
       "rights_gate": "SOURCE_ONLY__LOUVRE_PHOTOGRAPH_REUSE_REVIEW",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Louvre INV 2806 exact work; independent photo still needs rights review, not Chicago variant",
       "automatic_prayer_card_assignment": false
     },
@@ -354,7 +354,7 @@
       "photo_license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
       "rights_gate": "SOURCE_ONLY__ORIGINAL_OWNER_SELECTED_OBJECT_NOT_VERIFIED",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "CC0 SMK KMSsp234 image but owner-selected original image identity not yet proven; attribution qualified",
       "automatic_prayer_card_assignment": false
     },
@@ -378,7 +378,7 @@
       "photo_license_url": "https://creativecommons.org/licenses/by/2.0/",
       "rights_gate": "SOURCE_ONLY__VATICAN_PHOTOGRAPH_PUBLISHING_REVIEW",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Same Raphael work already hosted under Class I on main; avoid duplicates; Vatican rights/frame review",
       "automatic_prayer_card_assignment": false
     },
@@ -402,7 +402,7 @@
       "photo_license_url": null,
       "rights_gate": "PHOTOGRAPH_LICENSE_CONFIRMED__HERITAGE_POLICY_REVIEW",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Italian Capodimonte reuse hold separate from photographer CC BY 3.0",
       "automatic_prayer_card_assignment": false
     },
@@ -426,7 +426,7 @@
       "photo_license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
       "rights_gate": "SOURCE_ONLY__NANCY_MUSEUM_REUSE_AND_IMAGE_QUALITY_REVIEW",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Nancy museum reuse and full-composition/framing review",
       "automatic_prayer_card_assignment": false
     },
@@ -450,7 +450,7 @@
       "photo_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Uffizi Italian heritage-use hold",
       "automatic_prayer_card_assignment": false
     },
@@ -474,7 +474,7 @@
       "photo_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Bologna Italian heritage-use hold",
       "automatic_prayer_card_assignment": false
     },
@@ -498,7 +498,7 @@
       "photo_license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
       "rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Italian Brera reproduction terms not cleared",
       "automatic_prayer_card_assignment": false
     },
@@ -522,7 +522,7 @@
       "photo_license_url": null,
       "rights_gate": "PHOTOGRAPHER_PUBLIC_DOMAIN_DECLARATION",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Louvre independent photograph; framed image and contextual rights review",
       "automatic_prayer_card_assignment": false
     },
@@ -546,7 +546,7 @@
       "photo_license_url": "https://creativecommons.org/licenses/by/3.0/",
       "rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Italian Borghese reproduction terms not cleared",
       "automatic_prayer_card_assignment": false
     },
@@ -570,7 +570,7 @@
       "photo_license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
       "rights_gate": "SOURCE_ONLY__NGS_IMAGE_REUSE_HOLD__PREVIEW_RESOLUTION",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "PREVIEW_ONLY",
+      "visual_gate": "PREVIEW_ONLY__SOURCE_TOO_SMALL",
       "rationale": "NGS second-series Poussin Eucharist 1647; online image unavailable/restricted and 1359×900 preview",
       "automatic_prayer_card_assignment": false
     },
@@ -594,7 +594,7 @@
       "photo_license_url": "https://creativecommons.org/licenses/by/2.0/",
       "rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_AND_GALLERY_PHOTO_QUALITY_REVIEW",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Italian mural heritage terms and CC BY 2.0 photographer credit and environment review",
       "automatic_prayer_card_assignment": false
     },
@@ -618,7 +618,7 @@
       "photo_license_url": null,
       "rights_gate": "CC_BY_3_WITH_CREDIT_REQUIRED",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "CANDIDATE_NEEDS_COMPOSITION_CHECK",
+      "visual_gate": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
       "rationale": "Louvre photo with CC BY 3.0 attribution and separate collection rights review",
       "automatic_prayer_card_assignment": false
     },
@@ -639,7 +639,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "CURRENT_MAIN_PRESERVE",
-      "visual_gate": "PREVIEW_ONLY",
+      "visual_gate": "CURRENT_MAIN_IMAGE_PRESERVED",
       "rationale": "Existing approved gallery source; no duplicate",
       "automatic_prayer_card_assignment": false
     },
@@ -663,7 +663,7 @@
       "photo_license_url": null,
       "rights_gate": "CC0_RECORD_CONFIRMED",
       "disposition": "HOLD_SOURCE_ONLY",
-      "visual_gate": "PREVIEW_ONLY",
+      "visual_gate": "PREVIEW_ONLY__SOURCE_TOO_SMALL",
       "rationale": "CC0 RISD image only 877×1024; seek larger full-composition reproduction",
       "automatic_prayer_card_assignment": false
     },
@@ -684,7 +684,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "CURRENT_MAIN_PRESERVE",
-      "visual_gate": "PREVIEW_ONLY",
+      "visual_gate": "CURRENT_MAIN_IMAGE_PRESERVED",
       "rationale": "Existing approved gallery source; no duplicate",
       "automatic_prayer_card_assignment": false
     },
@@ -705,7 +705,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "CURRENT_MAIN_PRESERVE",
-      "visual_gate": "PREVIEW_ONLY",
+      "visual_gate": "CURRENT_MAIN_IMAGE_PRESERVED",
       "rationale": "Existing approved gallery source; no duplicate",
       "automatic_prayer_card_assignment": false
     },
@@ -726,7 +726,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "CURRENT_MAIN_PRESERVE",
-      "visual_gate": "PREVIEW_ONLY",
+      "visual_gate": "CURRENT_MAIN_IMAGE_PRESERVED",
       "rationale": "Existing approved gallery source; no duplicate",
       "automatic_prayer_card_assignment": false
     },
@@ -747,7 +747,7 @@
       "photo_license_url": null,
       "rights_gate": null,
       "disposition": "CURRENT_MAIN_PRESERVE",
-      "visual_gate": "PREVIEW_ONLY",
+      "visual_gate": "CURRENT_MAIN_IMAGE_PRESERVED",
       "rationale": "Existing approved gallery source; no duplicate",
       "automatic_prayer_card_assignment": false
     }
