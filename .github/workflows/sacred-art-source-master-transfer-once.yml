@@ -1,0 +1,109 @@
+name: One-time approved painting original-file bulk transfer
+on:
+  push:
+    branches: [feature/sacred-art-originals-bulk-transfer-20261116]
+    paths: [.github/workflows/sacred-art-source-master-transfer-once.yml]
+permissions:
+  contents: write
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Transfer only previously released full-resolution originals (not new acquisitions)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m pip install --quiet Pillow
+          python3 - <<'PY'
+          import hashlib,io,json,time,urllib.request
+          from pathlib import Path
+          from PIL import Image, ImageOps
+          p=Path('app-data/sacred-art/source-master-migration-20261116.v1.json')
+          m=json.loads(p.read_text())
+          assert m['schema']=='ao.sacred-art.source-master-migration.v1'
+          assert m['summary']['transfer_eligible']==11
+          assert m['summary']['already_preserved']==3
+          assert m['summary']['new_gallery_derivatives']==5
+          assert m['summary']['new_gallery_artwork_records']==6
+          out=Path('app-data/sacred-art/source-masters');out.mkdir(parents=True,exist_ok=True)
+          dest=Path('site/gallery/images');dest.mkdir(parents=True,exist_ok=True)
+          forbidden={x['source_blob_sha'] for x in m['excluded_rejected']}
+          successes=[]
+          for x in m['inventory']:
+            if x['transfer_status']!='TRANSFER_LEGACY_RELEASED_ORIGINAL':continue
+            assert x['source_blob_sha'] not in forbidden
+            assert x['source_release_pr'] and x['source_release_rights']
+            assert x['master_path'].startswith('app-data/sacred-art/source-masters/')
+            assert x['source_path'].startswith(('assets/prayer/released/','assets/home/c3-approved-met/'))
+            assert x['source_ref']==m['research_source_ref']
+            sha=x['source_blob_sha']
+            url='https://raw.githubusercontent.com/'+m['research_source_repo']+'/'+x['source_ref']+'/'+x['source_path']
+            data=None;err=None
+            for i in range(4):
+              try:
+                request=urllib.request.Request(url,headers={'User-Agent':'AO-Sacred-Art-Original-Bulk-Migration/1.0'})
+                with urllib.request.urlopen(request,timeout=120) as resp:
+                  data=resp.read()
+                break
+              except Exception as exc:
+                err=exc
+                if i<3:time.sleep(2**(i+1))
+            if data is None:raise RuntimeError('Could not retrieve pinned existing source '+x['module_ids'][0]+': '+str(err))
+            assert len(data)==x['expected_bytes'],f"Source byte count mismatch: {x['module_ids']}!"
+            actual_git=hashlib.sha1(b'blob '+str(len(data)).encode()+b'\x00'+data).hexdigest()
+            assert actual_git==sha,'Source git blob mismatch; no file is transferred'
+            source_sha=hashlib.sha256(data).hexdigest()
+            if x['expected_sha256']:assert source_sha==x['expected_sha256'],'Original source SHA256 mismatch'
+            with Image.open(io.BytesIO(data)) as im:
+              im.load()
+              im=ImageOps.exif_transpose(im)
+              orig=list(im.size)
+              assert im.format in ('JPEG',None),'Source must be decoded JPEG'
+              assert max(orig)>=1500, 'Archived image below source-original quality gate'
+              x['source_pixel_dimensions']=orig
+              if x['publish_gallery_derivative']:
+                assert x['gallery_artwork_ids']
+                assert len(x['gallery_artwork_ids'])<=2
+                ratio=im.width/im.height
+                if im.mode!='RGB':im=im.convert('RGB')
+                if max(im.size)>2000:im.thumbnail((2000,2000),Image.Resampling.LANCZOS)
+                assert abs(im.width/im.height-ratio)<0.002,'Derivative must remain uncropped'
+                derivative=Path(x['gallery_derivative_path'])
+                assert derivative.parent==dest and derivative.name.startswith('legacy-')
+                im.save(derivative,'WEBP',quality=88,method=6)
+                jpeg=derivative.read_bytes()
+                assert jpeg[:4]==b'RIFF' and jpeg[8:12]==b'WEBP'
+                x['derivative_pixel_dimensions']=list(im.size)
+                x['derivative_bytes']=len(jpeg)
+                x['derivative_sha256']=hashlib.sha256(jpeg).hexdigest()
+                x['derivative_git_blob_sha']=hashlib.sha1(b'blob '+str(len(jpeg)).encode()+b'\x00'+jpeg).hexdigest()
+            target=Path(x['master_path'])
+            assert not target.exists(), 'Never overwrite existing transferred source'
+            target.write_bytes(data)
+            x['transferred_source_sha256']=source_sha
+            x['transferred_source_git_blob_sha']=actual_git
+            x['transferred_bytes']=len(data)
+            x['transfer_status']='PERMANENT_MASTER_TRANSFERRED__PRAYER_PLACEMENT_UNCHANGED'
+            successes.append(x)
+            print('TRANSFERRED',x['module_ids'],len(data),'bytes',x['source_pixel_dimensions'],
+                  'gallery '+str(x.get('gallery_derivative_path')) if x['publish_gallery_derivative'] else 'metadata only',flush=True)
+          assert len(successes)==11,'All approved existing source files must transfer or job fails'
+          assert len([x for x in successes if x['publish_gallery_derivative']])==5
+          assert sum(len(x['gallery_artwork_ids']) for x in successes)==6
+          m['summary']['transfer_eligible']=0
+          m['summary']['transferred']=11
+          m['summary']['transferred_original_bytes']=sum(x['transferred_bytes'] for x in successes)
+          m['summary']['linked_gallery_derivatives_prepared']=5
+          m['summary']['linked_gallery_records_prepared']=6
+          p.write_text(json.dumps(m,indent=2,ensure_ascii=False)+'\n')
+          print('SUCCESS: 11 byte-identical existing originals preserved; five uncropped gallery derivatives; exact selection scope unchanged',flush=True)
+          PY
+          git add app-data/sacred-art/source-masters/ site/gallery/images/legacy-*.webp app-data/sacred-art/source-master-migration-20261116.v1.json
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if ! git diff --cached --quiet; then
+            git commit -m "Preserve eleven byte-identical, previously released sacred art master originals"
+            git push origin "HEAD:$GITHUB_REF_NAME"
+          fi
