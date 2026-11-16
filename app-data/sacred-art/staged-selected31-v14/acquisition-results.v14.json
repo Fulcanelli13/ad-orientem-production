@@ -1,8 +1,8 @@
 {
   "schema": "ao.sacred-art.selected31-v14-acquisition.v1",
   "publication_scope": "SOURCE_STAGE_ONLY__NO_PRAYER_APPROVAL",
-  "acquired_count": 3,
-  "held_count": 2,
+  "acquired_count": 5,
+  "held_count": 0,
   "records": [
     {
       "review_artwork_id": "bap-murillo",
@@ -84,16 +84,61 @@
       "derivative_path": "app-data/sacred-art/staged-selected31-v14/cana-francken-2000.webp",
       "full_composition": true,
       "publication_status": "SOURCE_STAGED_NOT_LIVE_NOT_PRAYER_APPROVED"
-    }
-  ],
-  "holds": [
+    },
     {
       "review_artwork_id": "cana-vermeyen",
-      "hold_reason": "HTTP Error 429: Too many requests (f061ab2)"
+      "title": "The Marriage at Cana",
+      "artist": "Jan Cornelisz Vermeyen",
+      "institution_object_id": "SK-A-4820",
+      "museum_page": "https://www.rijksmuseum.nl/en/collection/object/The-Marriage-at-Cana--a9c70d5ad88d3ab49630a44168906608",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3AJan_Cornelisz._Vermeyen_006.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Jan_Cornelisz._Vermeyen_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_license_evidence": "Rijksmuseum SK-A-4820 public domain painting; exact WGA Commons image marked PD-Art",
+      "original_sha1": "757469034bc7d06d0d7a8d7e022ea02c0f2c244a",
+      "source_sha256": "5980120a5461ed1341fc3544fce85169f7c6289cf937174fd8b521734d6d6bad",
+      "source_bytes": 122335,
+      "source_dimensions": [
+        1166,
+        925
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v14/cana-vermeyen-source.jpg",
+      "derivative_sha256": "9c74b50a81501ea68e633e96b4cec877e4d24c92f645d246c6edc2a902679d36",
+      "derivative_bytes": 152176,
+      "derivative_dimensions": [
+        1166,
+        925
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v14/cana-vermeyen-2000.webp",
+      "full_composition": true,
+      "publication_status": "SOURCE_STAGED_NOT_LIVE_NOT_PRAYER_APPROVED"
     },
     {
       "review_artwork_id": "king-bloch",
-      "hold_reason": "HTTP Error 429: Too many requests (f061ab2)"
+      "title": "The Sermon on the Mount",
+      "artist": "Carl Bloch",
+      "institution_object_id": "Frederiksborg",
+      "museum_page": "https://commons.wikimedia.org/wiki/File:Bloch-SermonOnTheMount.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3ACarl_Bloch_-_The_Sermon_on_the_Mount.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Carl_Bloch_-_The_Sermon_on_the_Mount.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_license_evidence": "Museum of National History at Frederiksborg; Commons new 2026 museum-photo-service source marked Public Domain",
+      "original_sha1": "23d4272cc197200ffd9d1cd196645b52268e25a6",
+      "source_sha256": "fbc8a694df913090e161e2211a638d890059cf722709c111fc34198665da9b66",
+      "source_bytes": 10115057,
+      "source_dimensions": [
+        6599,
+        7200
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v14/king-bloch-source.jpg",
+      "derivative_sha256": "606dfcd8778a903de45a74454ca3b49b3d506c644bebe23bc8ffa8774828f740",
+      "derivative_bytes": 509600,
+      "derivative_dimensions": [
+        1833,
+        2000
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v14/king-bloch-2000.webp",
+      "full_composition": true,
+      "publication_status": "SOURCE_STAGED_NOT_LIVE_NOT_PRAYER_APPROVED"
     }
-  ]
+  ],
+  "holds": []
 }
