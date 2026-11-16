@@ -4,8 +4,8 @@
   "policy": "Do not infer gallery publication rights from mere acquisition, photo licensing or old-master public-domain status. Exact owner identity, museum reuse rules and composition must pass independently. No prayer-card approval.",
   "main_baseline": {
     "records": 873,
-    "distinct_images": 467,
-    "commit": "bcb6b128740b570580cb673c59bf6abc691551e3"
+    "distinct_images": 472,
+    "commit": "df809f2357999dfa1a2e19ede15067472a779a82"
   },
   "counts": {
     "main_preserved": 7,
@@ -798,6 +798,8 @@
       "king-jordaens"
     ],
     "exact_owner_review_source": "AO_Selected_31_Production_Gallery_Reconciliation_V12.json (user-provided original review, original king-jordaens inventory SMK KMSsp234)",
-    "jordaens_attribution": "Attributed to Jacob Jordaens (SMK)"
+    "jordaens_attribution": "Attributed to Jacob Jordaens (SMK)",
+    "latest_wave06_main": "df809f2357999dfa1a2e19ede15067472a779a82",
+    "no_overlap_with_wave06_new_images": true
   }
 }
