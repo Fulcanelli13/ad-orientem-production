@@ -1,3 +1,4 @@
+# Revalidated after latest production bulk gallery batch #28: 873 records / 343 paintings
 name: Sacred Art V19 reconciled source and gallery gate QA (temporary)
 on:
   push:
