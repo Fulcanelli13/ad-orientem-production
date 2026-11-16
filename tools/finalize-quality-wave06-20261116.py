@@ -47,6 +47,35 @@ for filename in ("tests/sacred-art-bulk-commons.mjs","tests/sacred-art-bulk-comm
   pattern=r"("+re.escape(prefix)+r",\s*\d+\+n(?:\+n02)?(?:\+n03)?(?:\+n04)?(?:\+n05)?)(\))"
   src=re.sub(pattern,lambda mt:mt.group(1)+"+n06"+mt.group(2),src)
  p.write_text(src)
+# Every historical hold must stay held unless an independent exact-photo wave06
+# entry supersedes that specific quality hold. This is a source transition, not
+# retroactive rewriting of the original source report.
+old_tests={
+ "tests/sacred-art-bulk-commons-batch02.mjs":(
+  "  }else{\n   assert(r && r.image===null,'Unresolved historical hold remains unpublished');",
+  "  }else if(quality06IDs.has(held.artwork_id)){\n   assert(['BELOW_FULL_COMPOSITION_QUALITY_FLOOR','EXTREME_ASPECT_RATIO_OR_DIMENSIONS','IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED'].includes(held.reason));\n   assert(r && r.image && r.image.src.includes('owner-selected-quality-upgrade-'));\n  }else{\n   assert(r && r.image===null,'Unresolved historical hold remains unpublished');"),
+ "tests/sacred-art-commons-wave03.mjs":(
+  "  assert(rec && rec.image===null);",
+  "  if(quality06IDs.has(h.artwork_id))assert(rec && rec.image && rec.image.src.includes('owner-selected-quality-upgrade-'));\n  else assert(rec && rec.image===null);"),
+ "tests/sacred-art-selected-museum-wave04.mjs":(
+  "  assert(row && row.image===null,'Every rights, photograph and quality hold must remain unpictured');",
+  "  if(quality06IDs.has(h.artwork_id)){\n   assert(['PREVIOUS_LOW_QUALITY_HOLD','COMMONS_INADEQUATE_SOURCE_GEOMETRY'].includes(h.reason));\n   assert(row && row.image && row.image.src.includes('owner-selected-quality-upgrade-'));\n  }else assert(row && row.image===null,'Rights/photo and unresolved quality holds remain unpictured');"),
+ "tests/sacred-art-curated-wave05.mjs":(
+  "  assert(row && row.image===null,'A held source must remain unpublished');",
+  "  if(quality06IDs.has(h.artwork_id)){\n   assert(['BELOW_FULL_COMPOSITION_QUALITY_FLOOR','EXTREME_ASPECT_RATIO_OR_DIMENSIONS','IMAGE_DOWNLOAD_DECODE_OR_QUALITY_FAILED'].includes(h.reason));\n   assert(row && row.image && row.image.src.includes('owner-selected-quality-upgrade-'));\n  }else assert(row && row.image===null,'An unresolved held source must remain unpublished');")
+}
+for filename,(before,after) in old_tests.items():
+ path=P(filename);src=path.read_text()
+ assert before in src,(filename,before)
+ if filename.endswith("sacred-art-selected-museum-wave04.mjs"):
+  hook="const n06=quality06.summary.new_gallery_paintings;"
+ else:
+  hook="const n06=quality06.summary.new_gallery_paintings;"
+ assert hook in src,(filename,"missing wave06 read")
+ src=src.replace(hook,hook+"\nconst quality06IDs=new Set(quality06.artworks.map(a=>a.artwork_id));")
+ src=src.replace(before,after)
+ path.write_text(src)
+
 with P("site/gallery/README.md").open("a",encoding="utf8") as f:
  f.write("\n### Wave06 full resolution-source quality audit and exact image recovery — 16 November 2026\n\n")
  f.write(f"Reconciled **all 182 unique owner-selected but image-quality-held artworks**, including apparently unmanageable giant photo source files that are actually adequately detailed when reduced, and investigated matching MSK Gent institutional object pages by museum inventory and source artist. **{n} exact-source full-composition 1600px WebPs** were newly archived, taking the gallery to **{a} painting images** and **{b} image-bearing records** across 873 unaltered artworks. ")
