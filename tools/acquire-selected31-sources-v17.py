@@ -22,8 +22,8 @@ WORKS=[
   "photographer":"Richard Mortel","license":"CC BY 2.0 (Flickr licence reviewed on Commons)",
   "license_url":"https://creativecommons.org/licenses/by/2.0/",
   "gate":"SOURCE_ONLY__VATICAN_PHOTOGRAPH_PUBLISHING_REVIEW"},
- {"id":"euch-bassano","filename":"Jacopo bassano, ultima cena, 1546-48 circa, 04.jpg",
-  "expected_sha1":"98d3b4ef68f804b7b15dcc92b1264501f1de7afa",
+ {"id":"euch-bassano","filename":"Jacopo bassano, ultima cena, 1546-48 circa, 01.jpg",
+  "expected_sha1":None,
   "institution":"Galleria Borghese, inventory 144",
   "photographer":"Sailko","license":"CC BY 3.0 (Sailko); separate Italian heritage-reuse warning",
   "license_url":"https://creativecommons.org/licenses/by/3.0/",
@@ -53,8 +53,22 @@ def raw_url(name):
 def sha256(x):return hashlib.sha256(x).hexdigest()
 OUT.mkdir(parents=True,exist_ok=True)
 result=[];holds=[]
-for x in WORKS:
+prior=OUT/"acquisition-results.v17.json"
+if prior.exists():
+    prev=json.loads(prior.read_text())
+    for record in prev.get("records",[]):
+        rid=record["review_artwork_id"]
+        if rid=="euch-bassano": continue  # old 04 photograph was a detail
+        if rid not in {x["id"] for x in WORKS}: continue
+        if all((ROOT/record[k+"_path"]).is_file() and
+               hashlib.sha256((ROOT/record[k+"_path"]).read_bytes()).hexdigest()==record[k+"_sha256"]
+               for k in ("source","derivative")):
+            result.append(record)
+            print("PRESERVED",rid,flush=True)
+done={x["review_artwork_id"] for x in result}
+for x in sorted(WORKS,key=lambda q:q["id"]!="euch-bassano"):
     rid=x["id"];source=HOLD[rid]
+    if rid in done: continue
     try:
         u=raw_url(x["filename"]);data=http(u)
         sha1=hashlib.sha1(data).hexdigest()
