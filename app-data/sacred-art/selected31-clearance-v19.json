@@ -4,8 +4,8 @@
   "policy": "Do not infer gallery publication rights from mere acquisition, photo licensing or old-master public-domain status. Exact owner identity, museum reuse rules and composition must pass independently. No prayer-card approval.",
   "main_baseline": {
     "records": 873,
-    "distinct_images": 234,
-    "commit": "87d4f0833388c6c98cfa0de5631c4cc04a676a59"
+    "distinct_images": 343,
+    "commit": "8d2cbab17e663afe722444d80a184a55125ce0b1"
   },
   "counts": {
     "main_preserved": 5,
