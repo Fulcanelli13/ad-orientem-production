@@ -37,6 +37,6 @@ jobs:
             assert(!fs.existsSync(p),p);
           }
           const s=JSON.parse(fs.readFileSync('app-data/sacred-art/selected31-clearance-v20.json'));
-          assert.deepEqual(s.counts,{main_preserved:5,overlay_eligible:8,source_only_holds:18});
+          assert.deepEqual(s.counts,{main_preserved:6,overlay_eligible:8,source_only_holds:17});
           console.log('V20 CI: all holds isolated; production 873/392 intact.');
           NODE
