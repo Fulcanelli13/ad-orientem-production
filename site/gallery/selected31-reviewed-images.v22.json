@@ -1,0 +1,77 @@
+{
+  "schema": "ao.sacred-art.selected31-gallery-overlay.v22",
+  "canonical_master_unchanged": true,
+  "baseline_registry_count": 862,
+  "scope": "One exact owner-selected Luminous V artwork; independently photographed in Louvre under CC BY 3.0, gallery-only",
+  "new_review_records": 1,
+  "records": [
+    {
+      "id": "REVIEW31::euch-tiepolo",
+      "title": "The Last Supper",
+      "artist": "Giovanni Battista Tiepolo",
+      "institution": "Musée du Louvre, Paris · RF 176",
+      "source_url": "https://collections.louvre.fr/en/ark:/53355/cl010065259",
+      "record_status": "OWNER_SELECTED_EDITORIAL_V22__GALLERY_ONLY_NOT_PRAYER_PRIMARY",
+      "owner_selected_artwork": true,
+      "rights_note": "Independent photograph by Sailko, CC BY 3.0; not a Louvre/RMN official photograph. Source licence covers the photo; do not apply Louvre collections site's image-download terms to this separate file. Attribution and final app-use legal review retained.",
+      "review_context": "Luminous V · Institution of the Eucharist",
+      "image": {
+        "src": "./gallery/images/selected31-v22-euch-tiepolo-2000.webp",
+        "provenance": "Own photograph by Sailko, Wikimedia Commons · Louvre inventory RF 176",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__INDEPENDENT_PHOTOGRAPH",
+        "pixel_width": 2000,
+        "pixel_height": 1722,
+        "photographer": "Sailko",
+        "license": "CC BY 3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0/",
+        "source_note": "Independent CC BY 3.0 photographer attribution required; Louvre/RMN official collection image NOT used.",
+        "adaptation": "Scaled to 2,000 px long edge without cropping"
+      },
+      "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/e/e1/Giovan_battista_tiepolo%2C_la_cena%2C_1745-47_ca..JPG",
+      "scene_ids": [
+        "Luminous V · Institution of the Eucharist"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous V · Institution of the Eucharist"
+      ],
+      "attribution_status": "EXACT_MUSEUM_RF176_AND_PHOTOGRAPHER_LICENSE_VERIFIED"
+    }
+  ],
+  "image_patches": [],
+  "provenance": [
+    {
+      "review_artwork_id": "euch-tiepolo",
+      "catalogue_record_id": "REVIEW31::euch-tiepolo",
+      "gallery_file": "site/gallery/images/selected31-v22-euch-tiepolo-2000.webp",
+      "derivative_sha256": "60cc2b9e071c7ddc943983aaa1c9afa000f251a97ba93af6774190ad7769a85e",
+      "derivative_bytes": 758030,
+      "source_archive": "app-data/sacred-art/staged-selected31-v15/euch_tiepolo-source.jpg",
+      "source_sha256": "ff5e54587f764d96f2bc219afc244d1e99a7a3898813c6daeb1432e358b9cbbd",
+      "source_sha1": "c7a4db5c12dd85983c3a00d7ef6fa2c2b0cfb80e",
+      "source_dimensions": [
+        2676,
+        2304
+      ],
+      "gallery_dimensions": [
+        2000,
+        1722
+      ],
+      "photographer": "Sailko",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "photographer_page": "https://commons.wikimedia.org/wiki/File:Giovan_battista_tiepolo%2C_la_cena%2C_1745-47_ca..JPG",
+      "primary_museum_object": "Musée du Louvre RF 176",
+      "museum_page": "https://collections.louvre.fr/en/ark:/53355/cl010065259",
+      "identity_reference": "https://collections.louvre.fr/en/ark:/53355/cl010065259",
+      "rights_review": "Louvre site CGU applies to its downloadable photographs; not reused here. Independent original photographer offers CC BY 3.0. Do not overstate as unconditional clearance for every jurisdiction.",
+      "quality_gate": "UNCROPPED_2000PX__GALLERY_CANDIDATE",
+      "release_scope": "DRAFT_GALLERY_ONLY__NO_PRAYER_ASSIGNMENT",
+      "source_release_status": "OWNER_SELECTED__INDEPENDENT_CC_BY3"
+    }
+  ]
+}
