@@ -43,3 +43,5 @@ jobs:
           git add app-data/sacred-art site/gallery tests
           git -c user.name='Ad Orientem Art Photo Source Research' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Bulk reconcile 182 quality-held artworks and preserve exact high-res source images'
           git push origin HEAD:feature/sacred-art-institutional-resolution-wave06-20261116
+
+# Retest immutable 182-source recovery after correcting historical assertion indentation.
