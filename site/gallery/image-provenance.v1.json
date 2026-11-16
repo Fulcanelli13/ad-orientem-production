@@ -1,9 +1,9 @@
 {
   "schema": "ao.sacred-art.gallery-image-provenance.v1",
   "import_date": "2026-11-15",
-  "source_contract": "68 previous paintings remain intact, plus exact already selected Mystic Lamb and released Murillo Confession photographs. Separately one St Therese historical portrait WebP is archived outside Pages, not counted as a painting. The original source JPEG for the Mystic Lamb and St Therese is NOT preserved, only the exact previously released WebP. Seven Sorrows photograph remains held.",
-  "local_image_count": 70,
-  "catalogue_record_images_count": 73,
+  "source_contract": "Prior 70 photos/870 records unchanged. Three already selected and old-released Class I Calendar photos (Raphael, Tanner, Lanfranco) copied without modifications from preexisting 54-JPEG production source bank, maintaining old photo-rights caveats and date locks. No new prayer defaults.",
+  "local_image_count": 73,
+  "catalogue_record_images_count": 76,
   "duplicate_same_original": [
     {
       "physical_artwork": "Met object 438724",
@@ -24,7 +24,7 @@
       "note": "Two historical catalogue records refer to one physical Girardin painting and share one local image; prayer associations remain unchanged."
     }
   ],
-  "pending": "Other image-pending records, restricted and rejected photographs remain unresolved. MNAC Seven Sorrows is an approved painting but old PR #1866 is a draft-only image release; do not copy or publish its restricted/uncertified source file.",
+  "pending": "Other records and photo-rights holds remain. These three old-released photo sources have Commons PD-Art position but jurisdictional caveats (including PAFA copyright EXIF); not globally certified CC0.",
   "sources": [
     {
       "artwork_id": "PRAYER::saints--saraceni",
@@ -2435,6 +2435,78 @@
       "source_record": "app-data/sacred-art/devotional-asset-recovery-20261116.v1.json",
       "photo_rights": "National Gallery of Art Open Access · public domain (CC0)",
       "release_scope": "GALLERY_IMAGE_ONLY__NO_NEW_PRAYER_DEFAULT"
+    },
+    {
+      "artwork_id": "RELEASED::class-i-2026:ngi-72",
+      "path": "site/gallery/images/lanfranco-ngi72-class-i-original.jpg",
+      "title": "The Miracle of the Loaves and Fishes",
+      "artist": "Giovanni Lanfranco",
+      "image_bytes": 947637,
+      "sha256": "f9a4b9f5f180138b438c61da836ac176a21b9162e736da7372c07e5ea6f74ffa",
+      "git_blob_sha": "26aaf88956e0624881aaa611295c6c9334753b37",
+      "pixel_dimensions": [
+        1285,
+        683
+      ],
+      "source_master_path": "app-data/sacred-art/source-masters/26aaf88956e0624881aaa611295c6c9334753b37.jpg",
+      "source_master_sha256": "f9a4b9f5f180138b438c61da836ac176a21b9162e736da7372c07e5ea6f74ffa",
+      "source_master_git_blob_sha": "26aaf88956e0624881aaa611295c6c9334753b37",
+      "source_record": "app-data/sacred-art/class-i-gallery-link-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Giovanni_Lanfranco_-_Miracle_of_the_Bread_and_Fish_-_WGA12454.jpg",
+      "museum_url": "https://onlinecollection.nationalgallery.ie/objects/10345/the-miracle-of-the-loaves-and-fishes",
+      "source_rights_note": "Commons PD-Art faithful reproduction; jurisdictional photo-rights caveat. Low-resolution historical Web Gallery of Art image, not NGI museum original.",
+      "prior_date": "2026-03-15",
+      "old_release_pr": 2861,
+      "release_scope": "GALLERY_ONLY__EXISTING_CALENDAR_SELECTION__NO_PRAYER_DEFAULT",
+      "source_original_preserved": true
+    },
+    {
+      "artwork_id": "RELEASED::class-i-2026:vatican-mv-40333",
+      "path": "site/gallery/images/raphael-transfiguration-class-i-original.jpg",
+      "title": "The Transfiguration",
+      "artist": "Raphael",
+      "image_bytes": 5205139,
+      "sha256": "1f61791a23d3ba16f25e953f7d17c0a7e1c2fdf967b26f041bee546ebf22601a",
+      "git_blob_sha": "a5b060eda8b9a6eba6c8e2f1a5c92d2bdd341785",
+      "pixel_dimensions": [
+        3737,
+        5691
+      ],
+      "source_master_path": "app-data/sacred-art/source-masters/a5b060eda8b9a6eba6c8e2f1a5c92d2bdd341785.jpg",
+      "source_master_sha256": "1f61791a23d3ba16f25e953f7d17c0a7e1c2fdf967b26f041bee546ebf22601a",
+      "source_master_git_blob_sha": "a5b060eda8b9a6eba6c8e2f1a5c92d2bdd341785",
+      "source_record": "app-data/sacred-art/class-i-gallery-link-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Raffael-verkl%C3%A4rung-christi.jpg",
+      "museum_url": "https://www.museivaticani.va/content/museivaticani/en/collezioni/musei/la-pinacoteca/sala-viii---secolo-xvi/raffaello-sanzio--trasfigurazione.html",
+      "source_rights_note": "Commons PD-Art faithful 2D reproduction of historical art-book scan, not Vatican photographic master. Jurisdictional photo-rights caveat.",
+      "prior_date": "2026-03-01",
+      "old_release_pr": 2857,
+      "release_scope": "GALLERY_ONLY__EXISTING_CALENDAR_SELECTION__NO_PRAYER_DEFAULT",
+      "source_original_preserved": true
+    },
+    {
+      "artwork_id": "RELEASED::class-i-2026:pafa-1900-1",
+      "path": "site/gallery/images/tanner-nicodemus-class-i-original.jpg",
+      "title": "Nicodemus Visiting Jesus",
+      "artist": "Henry Ossawa Tanner",
+      "image_bytes": 5285928,
+      "sha256": "ae83598cb8b73115cd5e42f477c342eb22fc181368f51f78e00de0cfee6c0e72",
+      "git_blob_sha": "0b18c483a56493d0d1218e26abd558ef74575ddf",
+      "pixel_dimensions": [
+        2400,
+        2100
+      ],
+      "source_master_path": "app-data/sacred-art/source-masters/0b18c483a56493d0d1218e26abd558ef74575ddf.jpg",
+      "source_master_sha256": "ae83598cb8b73115cd5e42f477c342eb22fc181368f51f78e00de0cfee6c0e72",
+      "source_master_git_blob_sha": "0b18c483a56493d0d1218e26abd558ef74575ddf",
+      "source_record": "app-data/sacred-art/class-i-gallery-link-20261116.v1.json",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Nicodemus_Visiting_Jesus,_by_Henry_Ossawa_Tanner.jpg",
+      "museum_url": "https://www.pafa.org/museum/collection/item/nicodemus",
+      "source_rights_note": "Commons PD-Art/PDM faithful reproduction; artwork no known copyright restrictions, but PAFA photographer Barbara Katus/EXIF asserts institutional photo copyright. Territorial photographic-rights caveat retained.",
+      "prior_date": "2026-05-25",
+      "old_release_pr": 2852,
+      "release_scope": "GALLERY_ONLY__EXISTING_CALENDAR_SELECTION__NO_PRAYER_DEFAULT",
+      "source_original_preserved": true
     }
   ]
 }
