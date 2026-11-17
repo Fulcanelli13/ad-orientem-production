@@ -1,0 +1,48 @@
+name: Sacred Art V24 all 31 sources final rights/quality regression (temporary)
+on:
+  push:
+    branches: [curation/selected31-gallery-reconciliation-v12]
+    paths:
+      - .github/workflows/sacred-art-v24-final-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/curation/selected31-gallery-reconciliation-v12'
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run all selected-photo V19 through V24 integrity and production regressions
+        run: |
+          node --version
+          node --check site/gallery/gallery.js
+          node tests/sacred-art-selected31-v19.mjs
+          node tests/sacred-art-selected31-v20.mjs
+          node tests/sacred-art-selected31-v21.mjs
+          node tests/sacred-art-selected31-v22.mjs
+          node tests/sacred-art-selected31-v23.mjs
+          node tests/sacred-art-selected31-v24.mjs
+          node tests/sacred-art-quality-wave06.mjs
+          node tests/sacred-art-curated-wave05.mjs
+          node tests/sacred-art-gallery.mjs
+          node tests/prayer-artwork-activation.mjs
+          node tests/production-shell.mjs
+      - name: No V24 source exposed in public gallery; exact 7/11/13 and 8/3 reuse gates
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),assert=require('assert');
+          const s=JSON.parse(fs.readFileSync('app-data/sacred-art/selected31-clearance-v24.json'));
+          const r=JSON.parse(fs.readFileSync('app-data/sacred-art/selected31-release-decision-v24.json'));
+          const p=JSON.parse(fs.readFileSync('site/gallery/image-provenance.v1.json'));
+          const cat=JSON.parse(fs.readFileSync('site/gallery/catalogue.v1.json'));
+          assert.deepEqual(s.counts,{main_preserved:7,overlay_eligible:11,source_only_holds:13});
+          assert.equal(r.counts.strong_photo_reuse_evidence,8);
+          assert.equal(r.counts.public_domain_mark_extra_review,3);
+          assert.equal(p.local_image_count,472);
+          assert.equal(cat.counts.total_records,873);
+          assert.equal(cat.counts.distinct_locally_hosted_paintings,472);
+          assert(!fs.existsSync('site/gallery/images/selected31-v24-bap-haarlem-sailko-2000.webp'));
+          console.log('V24: all 31 originals, 11 pending draft, 13 sources held, no new public image or card assignment');
+          NODE
