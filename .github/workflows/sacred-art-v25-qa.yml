@@ -1,3 +1,4 @@
+# V25 final rerun: stable source assertions and accurate museum label smoke test
 # V25 rerun after correcting release memo heading assertion
 name: Sacred Art V25 institution photo rights release-gate regression (temporary)
 on:
