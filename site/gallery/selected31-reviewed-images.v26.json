@@ -13,8 +13,8 @@
       "source_url": "https://collections.louvre.fr/en/ark:/53355/cl010064767",
       "record_status": "OWNER_SELECTED_ARTWORK_V26__CONDITIONAL_FRENCH_PD_ART_PHOTO__DRAFT_GALLERY_ONLY",
       "owner_selected_artwork": true,
-      "rights_note": "Luminous I · Baptism in the Jordan",
-      "review_context": "Louvre RF 1983-25, own camera photo uploaded by Shonagon to Wikimedia Commons, labelled PD-Art/Public Domain Mark. The user's original Commons curid 75930307 is not independently resolved to this newer 2022 photo; this is a verified alternate photograph of the same original selected artwork, not the same original file. French originality standard applies; no assertion of global permission.",
+      "rights_note": "Louvre RF 1983-25, own camera photo uploaded by Shonagon to Wikimedia Commons, labelled PD-Art/Public Domain Mark. The user's original Commons curid 75930307 is not independently resolved to this newer 2022 photo; this is a verified alternate photograph of the same original selected artwork, not the same original file. French originality standard applies; no assertion of global permission.",
+      "review_context": "Luminous I · Baptism in the Jordan",
       "image": {
         "src": "./gallery/images/selected31-v26-bap-haarlem-2000.webp",
         "provenance": "https://commons.wikimedia.org/wiki/File:Le_Bapt%C3%AAme_du_Christ_-_Cornelis_Cornelisz_van_Haarlem_-_Mus%C3%A9e_du_Louvre_-_Peintures_RF_1983-25.jpg · Shonagon independently taken own photograph, exact Louvre object; Commons Public Domain Mark (PD-Art), NOT an express CC0/CC BY licence.",
@@ -31,14 +31,14 @@
       },
       "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Le_Bapt%C3%AAme_du_Christ_-_Cornelis_Cornelisz_van_Haarlem_-_Mus%C3%A9e_du_Louvre_-_Peintures_RF_1983-25.jpg",
       "scene_ids": [
-        "Louvre RF 1983-25, own camera photo uploaded by Shonagon to Wikimedia Commons, labelled PD-Art/Public Domain Mark. The user's original Commons curid 75930307 is not independently resolved to this newer 2022 photo; this is a verified alternate photograph of the same original selected artwork, not the same original file. French originality standard applies; no assertion of global permission."
+        "Luminous I · Baptism in the Jordan"
       ],
       "prayer_parts": [],
       "exact_prayer_cards": [],
       "parent_prayer_candidates": [],
       "eligible_card_count": 0,
       "historical_destinations": [
-        "Louvre RF 1983-25, own camera photo uploaded by Shonagon to Wikimedia Commons, labelled PD-Art/Public Domain Mark. The user's original Commons curid 75930307 is not independently resolved to this newer 2022 photo; this is a verified alternate photograph of the same original selected artwork, not the same original file. French originality standard applies; no assertion of global permission."
+        "Luminous I · Baptism in the Jordan"
       ],
       "attribution_status": "EXACT_LOUVRE_RF1983_25__ORIGINAL_COMMONS_CURID_PENDING"
     },
@@ -50,8 +50,8 @@
       "source_url": "https://collections.louvre.fr/en/ark:/53355/cl010059179",
       "record_status": "OWNER_SELECTED_ARTWORK_V26__CONDITIONAL_FRENCH_PD_ART_PHOTO__DRAFT_GALLERY_ONLY",
       "owner_selected_artwork": true,
-      "rights_note": "Luminous III · Proclamation of the Kingdom",
-      "review_context": "Exact Louvre INV 2806, not the Chicago/Sotheby's work of the same subject. Shonagon original own photograph (2025), marked faithful PD-Art/Public Domain Mark, 10952×8131 original archived, 2000px derivative. French originality criterion supports faithful reproduction copyright analysis, but PDM is not an express rights grant; legal/jurisdiction and artwork ratio differ 10.4%, final QA required.",
+      "rights_note": "Exact Louvre INV 2806, not the Chicago/Sotheby's work of the same subject. Shonagon original own photograph (2025), marked faithful PD-Art/Public Domain Mark, 10952×8131 original archived, 2000px derivative. French originality criterion supports faithful reproduction copyright analysis, but PDM is not an express rights grant; legal/jurisdiction and artwork ratio differ 10.4%, final QA required.",
+      "review_context": "Luminous III · Proclamation of the Kingdom",
       "image": {
         "src": "./gallery/images/selected31-v26-king-bourdon-2000.webp",
         "provenance": "https://commons.wikimedia.org/wiki/File:Le_Christ_et_les_enfants_-_S%C3%A9bastien_Bourdon_-_Mus%C3%A9e_du_Louvre_Peintures_INV_2806_%3B_MR_1256.jpg · Shonagon independently taken own photograph, exact Louvre object; Commons Public Domain Mark (PD-Art), NOT an express CC0/CC BY licence.",
@@ -68,14 +68,14 @@
       },
       "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/4/40/Le_Christ_et_les_enfants_-_S%C3%A9bastien_Bourdon_-_Mus%C3%A9e_du_Louvre_Peintures_INV_2806_%3B_MR_1256.jpg",
       "scene_ids": [
-        "Exact Louvre INV 2806, not the Chicago/Sotheby's work of the same subject. Shonagon original own photograph (2025), marked faithful PD-Art/Public Domain Mark, 10952×8131 original archived, 2000px derivative. French originality criterion supports faithful reproduction copyright analysis, but PDM is not an express rights grant; legal/jurisdiction and artwork ratio differ 10.4%, final QA required."
+        "Luminous III · Proclamation of the Kingdom"
       ],
       "prayer_parts": [],
       "exact_prayer_cards": [],
       "parent_prayer_candidates": [],
       "eligible_card_count": 0,
       "historical_destinations": [
-        "Exact Louvre INV 2806, not the Chicago/Sotheby's work of the same subject. Shonagon original own photograph (2025), marked faithful PD-Art/Public Domain Mark, 10952×8131 original archived, 2000px derivative. French originality criterion supports faithful reproduction copyright analysis, but PDM is not an express rights grant; legal/jurisdiction and artwork ratio differ 10.4%, final QA required."
+        "Luminous III · Proclamation of the Kingdom"
       ],
       "attribution_status": "EXACT_LOUVRE_INV2806__INDEPENDENT_SHONAGON_PHOTO"
     }
