@@ -239,6 +239,62 @@
           }
           ids.add(art.id);
         }
+        // V26 release-gated: thirteen draft gallery images (twelve new records, one existing-record patch). Louvre PD-Art photos are conditional; no prayer approval.
+        // Other selected photos remain research-only. Historical 873-row source catalogue remains untouched. V13/V14
+        // augment only the gallery, never the prayer-card activation registry.
+        const legacyRecordCount = data.records.length;
+        let addedRecords = 0, addedImages = 0;
+        for (const [filename, schema, requiredRecords, expectedPatches] of [
+          ["selected31-reviewed-images.v13.json", "ao.sacred-art.selected31-gallery-overlay.v13", 5, 0],
+          ["selected31-reviewed-images.v14.json", "ao.sacred-art.selected31-gallery-overlay.v14", 1, 1],
+          ["selected31-reviewed-images.v20.json", "ao.sacred-art.selected31-gallery-overlay.v20", 1, 0],
+          ["selected31-reviewed-images.v21.json", "ao.sacred-art.selected31-gallery-overlay.v21", 1, 0],
+          ["selected31-reviewed-images.v22.json", "ao.sacred-art.selected31-gallery-overlay.v22", 2, 0],
+          ["selected31-reviewed-images.v26.json", "ao.sacred-art.selected31-gallery-overlay.v26", 2, 0]
+        ]) {
+          const response = await fetch("./gallery/" + filename, {cache:"no-cache"});
+          if (!response.ok) throw new Error("Review gallery data unavailable: " + filename);
+          const supplement = await response.json();
+          if (supplement.schema !== schema ||
+              supplement.baseline_registry_count !== 862 ||
+              supplement.canonical_master_unchanged !== true ||
+              supplement.records?.length !== requiredRecords ||
+              (supplement.image_patches || []).length !== expectedPatches) {
+            throw new Error("Invalid supplementary gallery data: " + filename);
+          }
+          for (const art of supplement.records) {
+            if (!art.id?.startsWith("REVIEW31::") || ids.has(art.id) ||
+                !/^\.\/gallery\/images\/selected31-(?:v14-|v20-|v21-|v22-|v26-)?[a-zA-Z0-9_.-]+$/.test(art.image?.src || "") ||
+                art.owner_selected_artwork !== true ||
+                art.exact_prayer_cards?.length || art.prayer_parts?.length ||
+                art.parent_prayer_candidates?.length || art.eligible_card_count) {
+              throw new Error("Supplemental artwork violates editorial boundary");
+            }
+            ids.add(art.id);
+            data.records.push(art);
+            addedRecords++;
+            addedImages++;
+          }
+          for (const patch of supplement.image_patches || []) {
+            const original = data.records.find(art => art.id === patch.id);
+            if (!original || original.image ||
+                original.source_url !== patch.expected_source_url ||
+                !/^\.\/gallery\/images\/selected31-v14-[a-zA-Z0-9_.-]+$/.test(patch.image?.src || "") ||
+                !original.owner_selected_artwork) {
+              throw new Error("Supplemental image patch fails canonical identity check");
+            }
+            original.image = patch.image;
+            addedImages++;
+          }
+        }
+        if (legacyRecordCount !== 873 || addedRecords !== 12 || addedImages !== 13) {
+          throw new Error("Unexpected historical gallery reconciliation counts");
+        }
+        data.counts.total_records += addedRecords;
+        data.counts.selected_artwork_records += addedRecords;
+        data.counts.image_available_records += addedImages;
+        data.counts.distinct_locally_hosted_paintings += addedImages;
+        data.counts.verified_image_files += addedImages;
         catalogue = data;
         byId("gallery-total-count").textContent = data.counts.total_records.toLocaleString();
         byId("gallery-photo-count").textContent = data.counts.distinct_locally_hosted_paintings.toLocaleString();

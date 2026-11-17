@@ -1,0 +1,27 @@
+{
+  "schema": "ao.sacred-art.risd-dolci-exact-photo-probe.v24",
+  "intent": "Investigate exact RISD 59.009 open API, do not publish image automatically",
+  "api_attempts": [
+    {
+      "url": "https://risdmuseum.org/api/v1/collection?search_api_fulltext=59.009&items_per_page=5",
+      "status": "UNAVAILABLE",
+      "reason": "HTTP Error 403: Forbidden"
+    },
+    {
+      "url": "https://risdmuseum.org/api/v1/collection?search_api_fulltext=Trinity%20in%20Glory&items_per_page=5",
+      "status": "UNAVAILABLE",
+      "reason": "HTTP Error 403: Forbidden"
+    }
+  ],
+  "museum_exact_object_count": 0,
+  "museum_object_summary": [],
+  "image_attempts": [],
+  "new_high_res_archive_count": 0,
+  "upgrades": [],
+  "prior_archived_size": [
+    877,
+    1024
+  ],
+  "conclusion": "NO_VERIFIED_HIGHER_RESOLUTION_AVAILABLE_IN_API__HOLD_UNCHANGED",
+  "no_site_or_prayer_change": true
+}

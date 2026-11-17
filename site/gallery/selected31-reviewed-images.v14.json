@@ -1,0 +1,112 @@
+{
+  "schema": "ao.sacred-art.selected31-gallery-overlay.v14",
+  "canonical_master_unchanged": true,
+  "baseline_registry_count": 862,
+  "new_review_records": 1,
+  "existing_record_image_patches": 1,
+  "records": [
+    {
+      "id": "REVIEW31::bap-murillo",
+      "title": "The Baptism of Christ",
+      "artist": "Bartolomé Esteban Murillo",
+      "institution": "Staatliche Museen zu Berlin",
+      "source_url": "https://search.smb.museum/object/obj-868725",
+      "record_status": "OWNER_SELECTED_EDITORIAL_V14__NOT_PRAYER_CARD_PRIMARY",
+      "owner_selected_artwork": true,
+      "rights_note": "Exact Staatliche Museen zu Berlin Gemäldegalerie, Murillo The Baptism of Christ, inventory 68.2, obj:868725. Object image credited SMB / Jörg P. Anders, Public Domain Mark 1.0. Official SMB Open Science policy expressly permits commercial use, copies, alterations and redistribution of public-domain object illustrations; final jurisdiction/visual check separate.",
+      "review_context": "Luminous I · Baptism in the Jordan",
+      "image": {
+        "src": "./gallery/images/selected31-v14-bap-murillo-2000.webp",
+        "provenance": "https://search.smb.museum/object/obj-868725 · Original photo Staatliche Museen zu Berlin, Gemäldegalerie / Jörg P. Anders · Public Domain Mark 1.0",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__SOURCE_VERIFIED",
+        "pixel_width": 1350,
+        "pixel_height": 2000,
+        "source_note": "Museum public-domain use policy: https://www.smb.museum/en/open-science/use/ — public-domain object photos may be reused commercially. Not a separate temporary press photo.",
+        "license": "Public Domain Mark 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "photographer": "Jörg P. Anders / Staatliche Museen zu Berlin, Gemäldegalerie",
+        "adaptation": "Resized to 1350×2000 WebP without cropping"
+      },
+      "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Bartolom%C3%A9_Esteban_Murillo_%281617_-_1682%29_-_The_Baptism_of_Christ_-_68.2_-_Gem%C3%A4ldegalerie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "scene_ids": [
+        "Luminous I · Baptism in the Jordan"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous I · Baptism in the Jordan"
+      ],
+      "attribution_status": "EXACT_OBJECT_AND_IMAGE_ID_VERIFIED"
+    }
+  ],
+  "image_patches": [
+    {
+      "id": "plate-bloch-sermon",
+      "expected_source_url": "https://commons.wikimedia.org/wiki/File:Carl_Bloch_-_The_Sermon_on_the_Mount.jpg",
+      "image": {
+        "src": "./gallery/images/selected31-v14-king-bloch-2000.webp",
+        "provenance": "https://commons.wikimedia.org/wiki/File%3ACarl_Bloch_-_The_Sermon_on_the_Mount.jpg · Museum of National History at Frederiksborg; Commons new 2026 museum-photo-service source marked Public Domain",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__SOURCE_VERIFIED",
+        "pixel_width": 1833,
+        "pixel_height": 2000,
+        "source_note": "Source: 6599×7200 Frederiksborg Museum Photo Service reproduction uploaded to Commons on 10 Nov 2026, marked PDM. Museum offers photos free to businesses through an order workflow, but that alone does not settle terms for the exact Commons file. Separate downloadable press images prohibit storing/cropping and must not be substituted. Final source-use review pending.",
+        "license": "Public Domain Mark 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "adaptation": "Resized from 6599×7200 to 1833×2000 WebP without cropping"
+      },
+      "review_context": "Luminous III · Proclamation of the Kingdom"
+    }
+  ],
+  "provenance": [
+    {
+      "review_artwork_id": "bap-murillo",
+      "catalogue_record_id": "REVIEW31::bap-murillo",
+      "gallery_file": "site/gallery/images/selected31-v14-bap-murillo-2000.webp",
+      "derivative_sha256": "abd3569cb9b0e69e36910f989c91690b010a168f7aa5f3dee297a2791fbab866",
+      "derivative_bytes": 337448,
+      "source_archive": "app-data/sacred-art/staged-selected31-v14/bap-murillo-source.jpg",
+      "original_sha1": "7d5e22bdbec34c7148dba0d7b371d432a09e6727",
+      "source_sha256": "7dfdcfc6066d8f0c729cac1f951abcb7b8f2a72bed438dd6cba20af5c0384853",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3ABartolom%C3%A9_Esteban_Murillo_%281617_-_1682%29_-_The_Baptism_of_Christ_-_68.2_-_Gem%C3%A4ldegalerie.jpg",
+      "museum_page": "https://search.smb.museum/object/obj-868725",
+      "source_dimensions": [
+        1900,
+        2814
+      ],
+      "gallery_dimensions": [
+        1350,
+        2000
+      ],
+      "quality_gate": "GALLERY_READY__PRAYER_QA_PENDING",
+      "publication_scope": "DRAFT_GALLERY_ONLY__NO_PRAYER_ASSIGNMENT"
+    },
+    {
+      "review_artwork_id": "king-bloch",
+      "catalogue_record_id": "plate-bloch-sermon",
+      "gallery_file": "site/gallery/images/selected31-v14-king-bloch-2000.webp",
+      "derivative_sha256": "606dfcd8778a903de45a74454ca3b49b3d506c644bebe23bc8ffa8774828f740",
+      "derivative_bytes": 509600,
+      "source_archive": "app-data/sacred-art/staged-selected31-v14/king-bloch-source.jpg",
+      "original_sha1": "23d4272cc197200ffd9d1cd196645b52268e25a6",
+      "source_sha256": "fbc8a694df913090e161e2211a638d890059cf722709c111fc34198665da9b66",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3ACarl_Bloch_-_The_Sermon_on_the_Mount.jpg",
+      "museum_page": "https://commons.wikimedia.org/wiki/File:Bloch-SermonOnTheMount.jpg",
+      "source_dimensions": [
+        6599,
+        7200
+      ],
+      "gallery_dimensions": [
+        1833,
+        2000
+      ],
+      "quality_gate": "GALLERY_READY__PRAYER_QA_PENDING",
+      "publication_scope": "DRAFT_GALLERY_ONLY__NO_PRAYER_ASSIGNMENT"
+    }
+  ],
+  "release_gate": "V19: held V14 images (Verrocchio, Francken, Vermeyen) remain archived at app-data/sacred-art/staged-selected31-v14, excluded from public gallery",
+  "v25_rights_evidence": "app-data/sacred-art/selected31-release-decision-v25.json"
+}

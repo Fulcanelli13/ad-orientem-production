@@ -1,0 +1,184 @@
+{
+  "schema": "ao.sacred-art.selected31-release-gate.v25",
+  "date": "2026-11-17",
+  "intent": "Release-control decision metadata for 31 owner-selected paintings. Does not deploy, merge, or assign art to prayers.",
+  "baseline": {
+    "main_commit": "df809f2357999dfa1a2e19ede15067472a779a82",
+    "gallery_records": 873,
+    "hosted_paintings": 472
+  },
+  "owner_selected_set": 31,
+  "production_present_count": 7,
+  "strong_source_rights_candidates": 10,
+  "source_only_original_holds": 13,
+  "additional_conditional_candidate": 1,
+  "total_proposed_in_existing_draft": 11,
+  "minimum_safe_source_evidence": "Verified exact original object + file source + museum Open Access, officially permitted public-domain image service or explicit CC photo license; no museum press-image substitution; still subject to visual/jurisdiction/owner review.",
+  "release_alternatives": {
+    "ten_with_strong_source_evidence": {
+      "candidates": [
+        {
+          "id": "bap-bordone",
+          "record_id": "REVIEW31::bap-bordone",
+          "photo_path": "site/gallery/images/selected31-bap-bordone-2000.webp",
+          "photo_sha256": "c71651ff325e4498ce29aac36e24eea2e165a1f0508a52ec25f413ef539a60d7",
+          "source_class": "MUSEUM_OPEN_ACCESS",
+          "final_approval_status": "DRAFT__OWNER_APPROVAL_NOT_RECEIVED",
+          "new_record": true,
+          "legal_worldwide_clearance": false,
+          "prayer_card_default": false
+        },
+        {
+          "id": "bap-murillo",
+          "record_id": "REVIEW31::bap-murillo",
+          "photo_path": "site/gallery/images/selected31-v14-bap-murillo-2000.webp",
+          "photo_sha256": "abd3569cb9b0e69e36910f989c91690b010a168f7aa5f3dee297a2791fbab866",
+          "source_class": "INSTITUTIONAL_PDM_WITH_EXPLICIT_COMMERCIAL_REUSE",
+          "final_approval_status": "DRAFT__OWNER_APPROVAL_NOT_RECEIVED",
+          "new_record": true,
+          "legal_worldwide_clearance": false,
+          "prayer_card_default": false
+        },
+        {
+          "id": "bap-tintoretto",
+          "record_id": "REVIEW31::bap-tintoretto",
+          "photo_path": "site/gallery/images/selected31-bap-tintoretto-2000.webp",
+          "photo_sha256": "136c2663a9f3de91e062c11b156383e2a98d269d49f5cda6344c6fbf7969c4e9",
+          "source_class": "MUSEUM_OPEN_ACCESS",
+          "final_approval_status": "DRAFT__OWNER_APPROVAL_NOT_RECEIVED",
+          "new_record": true,
+          "legal_worldwide_clearance": false,
+          "prayer_card_default": false
+        },
+        {
+          "id": "bap-bassano",
+          "record_id": "REVIEW31::bap-bassano",
+          "photo_path": "site/gallery/images/selected31-bap-bassano-2000.webp",
+          "photo_sha256": "13167014471e1b668853f0886066dd7ee4aa0ca58a5cf46d4027aced55122814",
+          "source_class": "MUSEUM_OPEN_ACCESS",
+          "final_approval_status": "DRAFT__OWNER_APPROVAL_NOT_RECEIVED",
+          "new_record": true,
+          "legal_worldwide_clearance": false,
+          "prayer_card_default": false
+        },
+        {
+          "id": "bap-poussin",
+          "record_id": "REVIEW31::bap-poussin",
+          "photo_path": "site/gallery/images/selected31-bap-poussin-2000.webp",
+          "photo_sha256": "4692b76ac9ef3e41fa7c2a0406e4c0c25ea3c3ddbeeee2cd9655f0f84678030b",
+          "source_class": "MUSEUM_OPEN_ACCESS",
+          "final_approval_status": "DRAFT__OWNER_APPROVAL_NOT_RECEIVED",
+          "new_record": true,
+          "legal_worldwide_clearance": false,
+          "prayer_card_default": false
+        },
+        {
+          "id": "cana-master",
+          "record_id": "REVIEW31::cana-master",
+          "photo_path": "site/gallery/images/selected31-cana-master-2000.webp",
+          "photo_sha256": "819fd6c07422f3546762c9a2fedfadffae1bd769c3708b511cc9477b88cf3ffc",
+          "source_class": "MUSEUM_OPEN_ACCESS",
+          "final_approval_status": "DRAFT__OWNER_APPROVAL_NOT_RECEIVED",
+          "new_record": true,
+          "legal_worldwide_clearance": false,
+          "prayer_card_default": false
+        },
+        {
+          "id": "cana-francken",
+          "record_id": "REVIEW31::cana-francken",
+          "photo_path": "site/gallery/images/selected31-v21-cana-francken-1920.webp",
+          "photo_sha256": "3ba944cef62c517b87cb94e194f0dad3b9112879127a8eed9af2c7efef6c49d6",
+          "source_class": "INSTITUTIONAL_PDM_WITH_EXPLICIT_COMMERCIAL_REUSE",
+          "final_approval_status": "DRAFT__OWNER_APPROVAL_NOT_RECEIVED",
+          "new_record": true,
+          "legal_worldwide_clearance": false,
+          "prayer_card_default": false
+        },
+        {
+          "id": "cana-vermeyen",
+          "record_id": "REVIEW31::cana-vermeyen",
+          "photo_path": "site/gallery/images/selected31-v20-cana-vermeyen-2000.webp",
+          "photo_sha256": "9ddf56c6dbdcd520fc58f8c4a321f2e362420f9b6130a7f2c36477c15825af02",
+          "source_class": "INSTITUTION_PUBLIC_DOMAIN_SERVICE",
+          "final_approval_status": "DRAFT__OWNER_APPROVAL_NOT_RECEIVED",
+          "new_record": true,
+          "legal_worldwide_clearance": false,
+          "prayer_card_default": false
+        },
+        {
+          "id": "king-jordaens",
+          "record_id": "REVIEW31::king-jordaens",
+          "photo_path": "site/gallery/images/selected31-v22-king-jordaens-2000.webp",
+          "photo_sha256": "2bad7937952f051a1ce6a9b6e2ca238ba84c25b019a12bb8b566e1369fe9756d",
+          "source_class": "EXPLICIT_MUSEUM_CC0_1",
+          "final_approval_status": "DRAFT__OWNER_APPROVAL_NOT_RECEIVED",
+          "new_record": true,
+          "legal_worldwide_clearance": false,
+          "prayer_card_default": false
+        },
+        {
+          "id": "euch-tiepolo",
+          "record_id": "REVIEW31::euch-tiepolo",
+          "photo_path": "site/gallery/images/selected31-v22-euch-tiepolo-2000.webp",
+          "photo_sha256": "60cc2b9e071c7ddc943983aaa1c9afa000f251a97ba93af6774190ad7769a85e",
+          "source_class": "EXPLICIT_PHOTOGRAPHER_CC_BY_3",
+          "final_approval_status": "DRAFT__OWNER_APPROVAL_NOT_RECEIVED",
+          "new_record": true,
+          "legal_worldwide_clearance": false,
+          "prayer_card_default": false
+        }
+      ],
+      "proposed_gallery_records": 883,
+      "proposed_hosted_paintings": 482,
+      "image_patch_to_existing_bloch_record": false,
+      "readiness": "SOURCE_LEVEL_RIGHTS_SUPPORTED__VISUAL_AND_RELEASE_APPROVAL_PENDING"
+    },
+    "all_eleven_as_current_draft": {
+      "candidates": [
+        "bap-bordone",
+        "bap-murillo",
+        "bap-tintoretto",
+        "bap-bassano",
+        "bap-poussin",
+        "cana-master",
+        "cana-francken",
+        "cana-vermeyen",
+        "king-bloch",
+        "king-jordaens",
+        "euch-tiepolo"
+      ],
+      "proposed_gallery_records": 883,
+      "proposed_hosted_paintings": 483,
+      "image_patch_to_existing_bloch_record": true,
+      "readiness": "BLOCKED_ON_BLOCH_INDIVIDUAL_PHOTO_REUSE_EVIDENCE__OWNER_RELEASE_APPROVAL_PENDING"
+    }
+  },
+  "conditional_source": {
+    "id": "king-bloch",
+    "painting": "The Sermon on the Mount (1877), Carl Bloch",
+    "museum": "Museum of National History at Frederiksborg, Hillerød, Denmark",
+    "archived_full_source": "app-data/sacred-art/staged-selected31-v14/king-bloch-source.jpg",
+    "source_photo_pixels": [
+      6599,
+      7200
+    ],
+    "source_claim": "Commons file uploaded Nov 10 2026 from Museum Photo Service, PDM",
+    "official_museum_business_service": "https://frederiksborg.dk/en/photo-service",
+    "restricted_press_photo_service": "https://frederiksborg.dk/fotos-til-download/",
+    "blockers": "Museums free ordered photo service for businesses and public Commons PDM mark together are not an express licence for exact independently downloaded image in every relevant country; do not treat press assets as this source either.",
+    "no_fee_or_contact": true,
+    "keep_archived": true,
+    "prayer_use_authorized": false
+  },
+  "gates": {
+    "user_release_authorization": false,
+    "owner_visual_approval_of_all_draft_images": false,
+    "unverified_public_image_permissions_may_not_be_assumed": true,
+    "copyright_licence_and_cultural_heritage_conditions_review_separately": true,
+    "archive_is_not_publication": true,
+    "canonical_mass_registry_unchanged": true,
+    "prayer_default_count_added": 0
+  },
+  "prior_rights_review": "app-data/sacred-art/selected31-release-decision-v25.json",
+  "prior_31_inventory": "app-data/sacred-art/selected31-clearance-v24.json"
+}

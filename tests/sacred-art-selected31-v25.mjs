@@ -1,0 +1,108 @@
+import assert from 'node:assert/strict';
+import {createHash} from 'node:crypto';
+import {readFileSync,existsSync} from 'node:fs';
+import {dirname,resolve} from 'node:path';
+import {fileURLToPath} from 'node:url';
+const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
+const p=name=>resolve(root,name);
+const data=name=>JSON.parse(readFileSync(p(name),'utf8'));
+const hash=name=>createHash('sha256').update(readFileSync(p(name))).digest('hex');
+const v24=data('app-data/sacred-art/selected31-release-decision-v24.json');
+const d=data('app-data/sacred-art/selected31-release-decision-v25.json');
+const gate=data('app-data/sacred-art/selected31-release-gate-v25.json');
+const visual=data('app-data/sacred-art/staged-selected31-v24/selected31-all-visual-source-matrix.v24.json');
+const o14=data('site/gallery/selected31-reviewed-images.v14.json');
+const o21=data('site/gallery/selected31-reviewed-images.v21.json');
+const inventory=data('app-data/sacred-art/selected31-clearance-v24.json');
+const base=data('site/gallery/catalogue.v1.json');
+const prov=data('site/gallery/image-provenance.v1.json');
+assert.equal(d.schema,'ao.sacred-art.selected31-release-decision.v25');
+assert.equal(d.candidates.length,11);
+assert.equal(gate.schema,'ao.sacred-art.selected31-release-gate.v25');
+assert.equal(gate.owner_selected_set,31);
+assert.equal(inventory.records.length,31);
+assert.deepEqual(inventory.counts,{main_preserved:7,overlay_eligible:11,source_only_holds:13});
+assert.equal(base.counts.total_records,873);
+assert.equal(prov.local_image_count,472);
+assert.equal(visual.rows.length,31);
+assert.equal(d.counts.strong_photo_reuse_evidence,10);
+assert.equal(d.counts.public_domain_mark_extra_review,1);
+assert.equal(d.counts.explicit_institutional_public_domain_mark_policy,2);
+assert.deepEqual(d.counts.by_class,{
+ MUSEUM_OPEN_ACCESS:5,INSTITUTIONAL_PDM_WITH_EXPLICIT_COMMERCIAL_REUSE:2,
+ INSTITUTION_PUBLIC_DOMAIN_SERVICE:1,PUBLIC_DOMAIN_MARK:1,
+ EXPLICIT_MUSEUM_CC0_1:1,EXPLICIT_PHOTOGRAPHER_CC_BY_3:1
+});
+assert.equal(gate.strong_source_rights_candidates,10);
+assert.equal(gate.additional_conditional_candidate,1);
+assert.equal(gate.source_only_original_holds,13);
+assert.equal(gate.production_present_count,7);
+assert(gate.gates.user_release_authorization===false);
+assert(gate.gates.owner_visual_approval_of_all_draft_images===false);
+assert(gate.gates.archive_is_not_publication===true);
+assert(gate.gates.prayer_default_count_added===0);
+const strong=gate.release_alternatives.ten_with_strong_source_evidence;
+const all=gate.release_alternatives.all_eleven_as_current_draft;
+assert.equal(strong.candidates.length,10);
+assert.equal(strong.proposed_gallery_records,883);
+assert.equal(strong.proposed_hosted_paintings,482);
+assert.equal(strong.image_patch_to_existing_bloch_record,false);
+assert.equal(all.candidates.length,11);
+assert.equal(all.proposed_gallery_records,883);
+assert.equal(all.proposed_hosted_paintings,483);
+assert.equal(all.image_patch_to_existing_bloch_record,true);
+const allRights=new Set(d.candidates.map(x=>x.review_artwork_id));
+assert.deepEqual(allRights,new Set(v24.candidates.map(x=>x.review_artwork_id)));
+assert.deepEqual(new Set(strong.candidates.map(x=>x.id)),
+ new Set(d.candidates.filter(x=>x.photo_rights_class!=='PUBLIC_DOMAIN_MARK').map(x=>x.review_artwork_id)));
+const oldMap=new Map(v24.candidates.map(x=>[x.review_artwork_id,x]));
+for(const r of d.candidates){
+ const prior=oldMap.get(r.review_artwork_id);
+ assert(prior);
+ assert.equal(r.gallery_sha256,prior.gallery_sha256);
+ assert.equal(r.gallery_image_path,prior.gallery_image_path);
+ assert.equal(r.gallery_record_id,prior.gallery_record_id);
+ assert.equal(r.user_selected_card_or_cinematic_default,false);
+ assert.equal(r.legal_reuse_certified_for_every_country,false);
+ assert.equal(hash(r.gallery_image_path),r.gallery_sha256);
+}
+for(const row of strong.candidates){
+ assert.equal(row.prayer_card_default,false);
+ assert(row.legal_worldwide_clearance===false);
+ assert.equal(hash(row.photo_path),row.photo_sha256);
+ assert(row.final_approval_status.startsWith('DRAFT'));
+}
+const condition=d.candidates.filter(x=>x.photo_rights_class==='PUBLIC_DOMAIN_MARK');
+assert.deepEqual(condition.map(x=>x.review_artwork_id),['king-bloch']);
+assert.equal(gate.conditional_source.id,'king-bloch');
+assert(gate.conditional_source.blockers.includes('Commons'));
+assert(gate.conditional_source.no_fee_or_contact);
+const mur=d.candidates.find(x=>x.review_artwork_id==='bap-murillo');
+assert.equal(mur.photo_rights_class,'INSTITUTIONAL_PDM_WITH_EXPLICIT_COMMERCIAL_REUSE');
+assert(mur.institutional_policy_evidence.some(x=>x.endsWith('/en/open-science/use/')));
+assert(mur.exact_photo_reuse_evidence.includes('Jörg P. Anders'));
+const fran=d.candidates.find(x=>x.review_artwork_id==='cana-francken');
+assert.equal(fran.photo_rights_class,'INSTITUTIONAL_PDM_WITH_EXPLICIT_COMMERCIAL_REUSE');
+assert(fran.institutional_policy_evidence.some(x=>x.includes('rights-and-reproductions')));
+assert(fran.exact_photo_reuse_evidence.includes('CC BY-SA'));
+const m=o14.records.find(x=>x.id==='REVIEW31::bap-murillo');
+const b=o14.image_patches.find(x=>x.id==='plate-bloch-sermon');
+const f=o21.records.find(x=>x.id==='REVIEW31::cana-francken');
+assert(m?.image?.photographer?.includes('Jörg P. Anders'));
+assert(m.image.source_note.includes('smb.museum/en/open-science/use/'));
+assert(f?.image?.source_note?.includes('nationalmuseum.se/en/explore-art-and-design/images/rights-and-reproductions'));
+assert(b?.image?.source_note?.includes('press'));
+assert(b.image.source_note.includes('businesses'));
+assert.equal(m.image.src,'./gallery/images/selected31-v14-bap-murillo-2000.webp');
+assert.equal(f.image.src,'./gallery/images/selected31-v21-cana-francken-1920.webp');
+assert.equal(b.image.src,'./gallery/images/selected31-v14-king-bloch-2000.webp');
+assert(!m.exact_prayer_cards.length && !f.exact_prayer_cards.length);
+assert.equal(o14.image_patches.length,1);
+assert.equal(o21.records.length,1);
+assert(existsSync(p('app-data/sacred-art/selected31-v25-source-rights-release.md')));
+const memo=readFileSync(p('app-data/sacred-art/selected31-v25-source-rights-release.md'),'utf8');
+assert(memo.includes('Ten-image'));
+assert(memo.includes('Nationalmuseum'));
+assert(memo.includes('SMB') && memo.includes('Murillo'));
+assert(memo.includes('No new selected painting, payment'));
+console.log('V25 PASS: 10 museum/licence-backed source candidates (incl Murillo/Francken); one Bloch PDM source hold; 13 archival holds untouched, 31 selection IDs unchanged, 883/482 safe-option vs 883/483 current draft, no prayer defaults');

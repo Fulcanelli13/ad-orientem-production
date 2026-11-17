@@ -1,0 +1,383 @@
+{
+  "schema": "ao.sacred-art.selected31-review-board.v23",
+  "as_of": "2026-11-17",
+  "production_main_sha": "df809f2357999dfa1a2e19ede15067472a779a82",
+  "source_selected31": "app-data/sacred-art/selected31-clearance-v22.json",
+  "owner_review_scope": "No image or prayer decisions changed; this documents exact existing originals, legal/photo-source evidence, and all 13 visual aspect-ratio checks.",
+  "counts": {
+    "selected": 31,
+    "existing": 7,
+    "draft_gallery_candidates": 11,
+    "still_held": 13,
+    "held_with_photo_geometry_review": 13,
+    "composition_outliers_above_8_percent": 3,
+    "independently_licensed_haarlem_alternative_verified_not_acquired": 1
+  },
+  "active_holds": [
+    {
+      "review_artwork_id": "bap-haarlem",
+      "title": "The Baptism of Christ",
+      "artist": "Cornelis van Haarlem",
+      "source_size_px": [
+        2494,
+        2060
+      ],
+      "source_sha256": "5b68c66c317669cd67ec0e6cf6f25b3bbbe108ae4c2277bc9852426923db5a72",
+      "source_file": "app-data/sacred-art/staged-selected31-v17/bap-haarlem-source.jpg",
+      "object_canvas_cm": [
+        206,
+        170
+      ],
+      "photo_aspect_ratio": 1.2107,
+      "canvas_aspect_ratio": 1.2118,
+      "geometric_deviation_percent": 0.1,
+      "measurement_url": "https://collections.louvre.fr/ark:/53355/cl010064767",
+      "measurement_tier": "LOUVRE_OBJECT_PRIMARY",
+      "geometry_priority": "NORMAL_ASPECT__NOT_PHOTO_APPROVAL",
+      "source_rights_lane": "FR_LOUVRE_INDEPENDENT_PHOTOGRAPH",
+      "rights_gate": "HELD__NOT_AUTHORIZED_FOR_PUBLIC_GALLERY",
+      "next_action": "Verify and acquire Sailko's exact Louvre RF1983-25 CC BY 3.0 3312×2736 source when Wikimedia rate limit lifts; retain Shonagon PDM image in archive.",
+      "original_selected_identity_preserved": true,
+      "prayer_cinematic_approval": false
+    },
+    {
+      "review_artwork_id": "bap-verrocchio",
+      "title": "The Baptism of Christ",
+      "artist": "Andrea del Verrocchio and Leonardo da Vinci",
+      "source_size_px": [
+        2528,
+        2970
+      ],
+      "source_sha256": "0c65b6c864b47ba9386583cae4ede447cfdf7f2c785fdef1cb19af37542c1067",
+      "source_file": "app-data/sacred-art/staged-selected31-v14/bap-verrocchio-source.jpg",
+      "object_canvas_cm": [
+        151,
+        177
+      ],
+      "photo_aspect_ratio": 0.851,
+      "canvas_aspect_ratio": 0.8531,
+      "geometric_deviation_percent": 0.2,
+      "measurement_url": "https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ",
+      "measurement_tier": "UFFIZI_OBJECT_PRIMARY",
+      "geometry_priority": "NORMAL_ASPECT__NOT_PHOTO_APPROVAL",
+      "source_rights_lane": "IT_PUBLIC_HERITAGE",
+      "rights_gate": "HELD__NOT_AUTHORIZED_FOR_PUBLIC_GALLERY",
+      "next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "original_selected_identity_preserved": true,
+      "prayer_cinematic_approval": false
+    },
+    {
+      "review_artwork_id": "cana-tintoretto",
+      "title": "The Wedding at Cana",
+      "artist": "Jacopo Tintoretto",
+      "source_size_px": [
+        6119,
+        4441
+      ],
+      "source_sha256": "1fc69ee8d3b31b47e74f6a255debc674bbe55bed8071216ed6bfb20e846a7b60",
+      "source_file": "app-data/sacred-art/staged-selected31-v18/cana-tintoretto-source.jpg",
+      "object_canvas_cm": [
+        535,
+        435
+      ],
+      "photo_aspect_ratio": 1.3774,
+      "canvas_aspect_ratio": 1.2299,
+      "geometric_deviation_percent": 12,
+      "measurement_url": "https://www.wga.hu/html/t/tintoret/3_1560s/2cana.html",
+      "measurement_tier": "WGA_SECONDARY__ARCHED_TOP_RESTORED",
+      "geometry_priority": "VISUAL_CROP_OR_FRAME_CHECK_REQUIRED",
+      "source_rights_lane": "IT_VENICE_CHURCH_HERITAGE",
+      "rights_gate": "HELD__NOT_AUTHORIZED_FOR_PUBLIC_GALLERY",
+      "next_action": "Check original arched/rectangular canvas geometry: 12.0% wider image than WGA physical ratio. Preserve Italian cultural-property rights hold for potential commercial use.",
+      "original_selected_identity_preserved": true,
+      "prayer_cinematic_approval": false
+    },
+    {
+      "review_artwork_id": "king-bourdon",
+      "title": "Christ Blessing the Children",
+      "artist": "Sébastien Bourdon",
+      "source_size_px": [
+        10952,
+        8131
+      ],
+      "source_sha256": "356484778862a999efea95a3af7410e178303de2de465853483f95f8aa0697f5",
+      "source_file": "app-data/sacred-art/staged-selected31-v18/king-bourdon-source.jpg",
+      "object_canvas_cm": [
+        61,
+        50
+      ],
+      "photo_aspect_ratio": 1.3468,
+      "canvas_aspect_ratio": 1.22,
+      "geometric_deviation_percent": 10.4,
+      "measurement_url": "https://collections.louvre.fr/en/ark:/53355/cl010059179",
+      "measurement_tier": "LOUVRE_OBJECT_PRIMARY",
+      "geometry_priority": "VISUAL_CROP_OR_FRAME_CHECK_REQUIRED",
+      "source_rights_lane": "FR_LOUVRE_INDEPENDENT_PHOTOGRAPH",
+      "rights_gate": "HELD__NOT_AUTHORIZED_FOR_PUBLIC_GALLERY",
+      "next_action": "Compare photographed painting bounds against Louvre INV2806; 10.4% wider photographic aspect means frame/perspective/crop needs review. Existing Shonagon PDM is not a fresh CC licence.",
+      "original_selected_identity_preserved": true,
+      "prayer_cinematic_approval": false
+    },
+    {
+      "review_artwork_id": "trans-bellini",
+      "title": "The Transfiguration of Christ",
+      "artist": "Giovanni Bellini",
+      "source_size_px": [
+        3404,
+        2728
+      ],
+      "source_sha256": "116f66a0584d0ad72ad01cd935a24142c4d2aa19ac12b2d5c62fe9386461706e",
+      "source_file": "app-data/sacred-art/staged-selected31-v15/trans_bellini-source.jpg",
+      "object_canvas_cm": [
+        154,
+        115
+      ],
+      "photo_aspect_ratio": 1.2477,
+      "canvas_aspect_ratio": 1.3391,
+      "geometric_deviation_percent": 6.8,
+      "measurement_url": "https://capodimonte.cultura.gov.it/il-restauro-della-trasfigurazione-di-giovanni-bellini-tavole-a-confronto/",
+      "measurement_tier": "CAPODIMONTE_MUSEUM_PRIMARY",
+      "geometry_priority": "NORMAL_ASPECT__NOT_PHOTO_APPROVAL",
+      "source_rights_lane": "IT_PUBLIC_HERITAGE",
+      "rights_gate": "HELD__NOT_AUTHORIZED_FOR_PUBLIC_GALLERY",
+      "next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "original_selected_identity_preserved": true,
+      "prayer_cinematic_approval": false
+    },
+    {
+      "review_artwork_id": "trans-savoldo",
+      "title": "The Transfiguration of Christ",
+      "artist": "Giovanni Gerolamo Savoldo",
+      "source_size_px": [
+        2276,
+        2488
+      ],
+      "source_sha256": "79b41e8c8b069cdac1d9a5dde3d74691656c62c9417cac0ab64a6ca888bcac99",
+      "source_file": "app-data/sacred-art/staged-selected31-v18/trans-savoldo-source.jpg",
+      "object_canvas_cm": [
+        126,
+        139
+      ],
+      "photo_aspect_ratio": 0.915,
+      "canvas_aspect_ratio": 0.9065,
+      "geometric_deviation_percent": 0.9,
+      "measurement_url": "https://catalogo.fondazionezeri.unibo.it/scheda/opera/45724/Savoldo%20Giovanni%20Gerolamo%2C%20Trasfigurazione",
+      "measurement_tier": "FONDAZIONE_ZERI_INSTITUTIONAL_CATALOGUE",
+      "geometry_priority": "NORMAL_ASPECT__NOT_PHOTO_APPROVAL",
+      "source_rights_lane": "IT_PUBLIC_HERITAGE",
+      "rights_gate": "HELD__NOT_AUTHORIZED_FOR_PUBLIC_GALLERY",
+      "next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "original_selected_identity_preserved": true,
+      "prayer_cinematic_approval": false
+    },
+    {
+      "review_artwork_id": "trans-carracci",
+      "title": "The Transfiguration",
+      "artist": "Ludovico Carracci",
+      "source_size_px": [
+        3603,
+        5567
+      ],
+      "source_sha256": "76e157eada9a7ea0dbac8e7e8fd85aeeaa7dbe04be181ddaa8fa9f78876cc827",
+      "source_file": "app-data/sacred-art/staged-selected31-v18/trans-carracci-source.jpg",
+      "object_canvas_cm": [
+        267,
+        437
+      ],
+      "photo_aspect_ratio": 0.647,
+      "canvas_aspect_ratio": 0.611,
+      "geometric_deviation_percent": 5.9,
+      "measurement_url": "https://en.wikipedia.org/wiki/Transfiguration_(Ludovico_Carracci)",
+      "measurement_tier": "SECONDARY_ESTIMATE__VISUAL_QA_ONLY",
+      "geometry_priority": "NORMAL_ASPECT__NOT_PHOTO_APPROVAL",
+      "source_rights_lane": "IT_PUBLIC_HERITAGE",
+      "rights_gate": "HELD__NOT_AUTHORIZED_FOR_PUBLIC_GALLERY",
+      "next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "original_selected_identity_preserved": true,
+      "prayer_cinematic_approval": false
+    },
+    {
+      "review_artwork_id": "euch-rubens",
+      "title": "The Last Supper",
+      "artist": "Peter Paul Rubens",
+      "source_size_px": [
+        2232,
+        2716
+      ],
+      "source_sha256": "1d6ae4ae8102ad5514641f157c2a07673cd820189fa982acae243f07beb9e76e",
+      "source_file": "app-data/sacred-art/staged-selected31-v17/euch-rubens-source.jpg",
+      "object_canvas_cm": [
+        250,
+        304
+      ],
+      "photo_aspect_ratio": 0.822,
+      "canvas_aspect_ratio": 0.8224,
+      "geometric_deviation_percent": 0,
+      "measurement_url": "https://pinacotecabrera.org/en/collezioni/collezione-on-line/last-supper/",
+      "measurement_tier": "BRERA_MUSEUM_PRIMARY",
+      "geometry_priority": "NORMAL_ASPECT__NOT_PHOTO_APPROVAL",
+      "source_rights_lane": "IT_PUBLIC_HERITAGE",
+      "rights_gate": "HELD__NOT_AUTHORIZED_FOR_PUBLIC_GALLERY",
+      "next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "original_selected_identity_preserved": true,
+      "prayer_cinematic_approval": false
+    },
+    {
+      "review_artwork_id": "euch-champaigne",
+      "title": "The Last Supper",
+      "artist": "Philippe de Champaigne",
+      "source_size_px": [
+        2816,
+        2112
+      ],
+      "source_sha256": "3fce64afc767c16b803fd250e685f3a64caedb7e474380d3afeca68d84331942",
+      "source_file": "app-data/sacred-art/staged-selected31-v15/euch_champaigne-source.jpg",
+      "object_canvas_cm": [
+        149,
+        80
+      ],
+      "photo_aspect_ratio": 1.3333,
+      "canvas_aspect_ratio": 1.8625,
+      "geometric_deviation_percent": 28.4,
+      "measurement_url": "https://collections.louvre.fr/ark:/53355/cl010062076",
+      "measurement_tier": "LOUVRE_OBJECT_PRIMARY",
+      "geometry_priority": "VISUAL_CROP_OR_FRAME_CHECK_REQUIRED",
+      "source_rights_lane": "FR_LOUVRE_INDEPENDENT_PHOTOGRAPH__IMAGE_GEOMETRY",
+      "rights_gate": "HELD__NOT_AUTHORIZED_FOR_PUBLIC_GALLERY",
+      "next_action": "Photographer Tangopaso explicitly dedicated photo to public domain, but the left edge of framed canvas is cut by photograph boundary; do not crop or reconstruct missing paint; seek a separate intact photo.",
+      "original_selected_identity_preserved": true,
+      "prayer_cinematic_approval": false
+    },
+    {
+      "review_artwork_id": "euch-bassano",
+      "title": "The Last Supper",
+      "artist": "Jacopo Bassano",
+      "source_size_px": [
+        4296,
+        2568
+      ],
+      "source_sha256": "53b23433d8bb43aac48e0e2038f21b12f780d533c05e693ffa91362c8d3b6acd",
+      "source_file": "app-data/sacred-art/staged-selected31-v17/euch-bassano-source.jpg",
+      "object_canvas_cm": [
+        270,
+        168
+      ],
+      "photo_aspect_ratio": 1.6722,
+      "canvas_aspect_ratio": 1.6071,
+      "geometric_deviation_percent": 4,
+      "measurement_url": "https://www.collezionegalleriaborghese.it/en/opere/last-supper",
+      "measurement_tier": "BORGHESE_MUSEUM_PRIMARY",
+      "geometry_priority": "NORMAL_ASPECT__NOT_PHOTO_APPROVAL",
+      "source_rights_lane": "IT_PUBLIC_HERITAGE",
+      "rights_gate": "HELD__NOT_AUTHORIZED_FOR_PUBLIC_GALLERY",
+      "next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "original_selected_identity_preserved": true,
+      "prayer_cinematic_approval": false
+    },
+    {
+      "review_artwork_id": "euch-poussin",
+      "title": "The Sacrament of the Holy Eucharist",
+      "artist": "Nicolas Poussin",
+      "source_size_px": [
+        1359,
+        900
+      ],
+      "source_sha256": "dbf580773ca77a1e5b13241b6a9b2e24193bc1797fa12e98dcb9a92c3d85f296",
+      "source_file": "app-data/sacred-art/staged-selected31-v18/euch-poussin-source.jpg",
+      "object_canvas_cm": [
+        176.8,
+        117.4
+      ],
+      "photo_aspect_ratio": 1.51,
+      "canvas_aspect_ratio": 1.506,
+      "geometric_deviation_percent": 0.3,
+      "measurement_url": "https://www.nationalgalleries.org/art-and-artists/8668",
+      "measurement_tier": "NGS_MUSEUM_PRIMARY",
+      "geometry_priority": "NORMAL_ASPECT__NOT_PHOTO_APPROVAL",
+      "source_rights_lane": "UK_NGS_UNAVAILABLE_IMAGE",
+      "rights_gate": "HELD__NOT_AUTHORIZED_FOR_PUBLIC_GALLERY",
+      "next_action": "Artangel serves an approx 2000px image of exact 1647 second-series Eucharist, but its public-domain commentary concerns original art; Artangel footer reserves rights and Scottish collection still limits source image. Do not mirror/download until image licence is independently supported.",
+      "original_selected_identity_preserved": true,
+      "prayer_cinematic_approval": false
+    },
+    {
+      "review_artwork_id": "euch-leonardo",
+      "title": "The Last Supper",
+      "artist": "Leonardo da Vinci",
+      "source_size_px": [
+        4032,
+        2272
+      ],
+      "source_sha256": "c8649322158f213e846ee3f6f246c44667ff1252b0e3c729cb6c96bc9ff56b3a",
+      "source_file": "app-data/sacred-art/staged-selected31-v18/euch-leonardo-source.jpg",
+      "object_canvas_cm": [
+        880,
+        460
+      ],
+      "photo_aspect_ratio": 1.7746,
+      "canvas_aspect_ratio": 1.913,
+      "geometric_deviation_percent": 7.2,
+      "measurement_url": "https://cenacolovinciano.org/en/museum/the-works/the-last-supper-leonardo-da-vinci-1452-1519/",
+      "measurement_tier": "CENACOLO_MUSEUM_PRIMARY",
+      "geometry_priority": "NORMAL_ASPECT__NOT_PHOTO_APPROVAL",
+      "source_rights_lane": "IT_PUBLIC_HERITAGE",
+      "rights_gate": "HELD__NOT_AUTHORIZED_FOR_PUBLIC_GALLERY",
+      "next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "original_selected_identity_preserved": true,
+      "prayer_cinematic_approval": false
+    },
+    {
+      "review_artwork_id": "tri-dolci",
+      "title": "The Trinity in Glory",
+      "artist": "Carlo Dolci",
+      "source_size_px": [
+        877,
+        1024
+      ],
+      "source_sha256": "bf2e2ddf7920d04ceb9ea92eeb15bccb39dbe38e2264451bf94ae8a21ce234fc",
+      "source_file": "app-data/sacred-art/staged-selected31-v15/tri_dolci-source.jpg",
+      "object_canvas_cm": [
+        59.7,
+        69.5
+      ],
+      "photo_aspect_ratio": 0.8564,
+      "canvas_aspect_ratio": 0.859,
+      "geometric_deviation_percent": 0.3,
+      "measurement_url": "https://commons.wikimedia.org/wiki/File:Carlo_Dolci_-_The_Trinity_in_Glory_-_59.009_-_Rhode_Island_School_of_Design_Museum.jpg",
+      "measurement_tier": "SMITHSONIAN_OR_RISD_OBJECT_METADATA",
+      "geometry_priority": "NORMAL_ASPECT__NOT_PHOTO_APPROVAL",
+      "source_rights_lane": "US_RISD_PREVIEW_QUALITY",
+      "rights_gate": "HELD__NOT_AUTHORIZED_FOR_PUBLIC_GALLERY",
+      "next_action": "RISD museum official image CC0, existing 877×1024 is true file resolution; no 4K export can be inferred from scanner EXIF. Keep preview archive, no upscale.",
+      "original_selected_identity_preserved": true,
+      "prayer_cinematic_approval": false
+    }
+  ],
+  "newly_discovered_candidate": {
+    "review_artwork_id": "bap-haarlem",
+    "alternate_exact_object": "Louvre RF1983-25 (1588), not RF1983-91 later Baptism painting",
+    "file": "Cornelis van haarlem, battesimo di cristo, 1588, 02.JPG",
+    "file_page": "https://commons.wikimedia.org/wiki/File:Cornelis_van_haarlem,_battesimo_di_cristo,_1588,_02.JPG",
+    "self_photo_credit": "Sailko",
+    "photo_license": "CC BY 3.0",
+    "photo_license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "published_dimensions": [
+      3312,
+      2736
+    ],
+    "published_sha1": "85d22cb79366926281e7bcaa876f4290c46678d2",
+    "acquisition_attempts_status": "GITHUB_RUNNER_HTTP_429__NO_LOCAL_BINARY_ACQUIRED",
+    "metadata_verification_status": "COMMONS_FILE_PAGE_IDENTIFIES_EXACT_LARGE_LOUVRE_OBJECT",
+    "current_action": "RETRY_ONLY_AFTER_RATE_LIMIT_RESETS__DO_NOT_MARK_GALLERY_ELIGIBLE"
+  },
+  "other_unacquired_candidate": {
+    "review_artwork_id": "euch-poussin",
+    "artwork": "Nicolas Poussin second series Eucharist 1647 NGL067.46F, NOT National Gallery London NG6700 1637-40 first series",
+    "artangel_page": "https://www.artangel.org.uk/project/the-seven-sacraments-of-nicolas-poussin/paintings/",
+    "image_url": "https://media.artangel.org.uk/images/1997ssonp_painting6.width-2000.jpg",
+    "licensing_ambiguity": "Artangel labels this section Credit and Creative Commons but only states underlying 2D artwork is public domain; it does not explicitly license independently owned photo. Artangel site footer all rights reserved; Scottish collection page says photo may be restricted. No copy into public repository without clarity.",
+    "confidence": "EXACT_SECOND_SERIES_OBJECT_WITH_SOURCE_IMAGE__PHOTO_REUSE_UNCLEARED",
+    "status": "REFERENCE_ONLY__NOT_DOWNLOADED__NOT_RELEASED"
+  },
+  "composition_warning_policy": "Geometric deviation flags possible frame, camera perspective or crop; 8% is a triage threshold, not legal or artistic permission. No automatic substitution, enlargement or generated painting recovery."
+}

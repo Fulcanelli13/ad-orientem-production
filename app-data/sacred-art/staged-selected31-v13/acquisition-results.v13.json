@@ -1,0 +1,152 @@
+{
+  "schema": "ao.sacred-art.selected31-acquisition-results.v13",
+  "publication_status": "STAGED_ONLY_NOT_LIVE_NOT_PRAYER_APPROVED",
+  "records": [
+    {
+      "review_artwork_id": "bap-bordone",
+      "title": "The Baptism of Christ",
+      "artist": "Paris Bordone",
+      "museum_page": "https://www.nga.gov/artworks/1142-baptism-christ",
+      "rights_evidence": "NGA published_images.csv openaccess=1",
+      "identity_evidence": {
+        "objectID": "1142",
+        "uuid": "438b0fa2-4c5b-4993-ba89-d91a9d37fc39",
+        "viewtype": "primary"
+      },
+      "source_url": "https://api.nga.gov/iiif/438b0fa2-4c5b-4993-ba89-d91a9d37fc39/full/!3500,3500/0/default.jpg",
+      "source_path": "app-data/sacred-art/staged-selected31-v13/bap-bordone-museum-source.jpg",
+      "source_sha256": "638e7a3e44985d7f2462ec9bbf441629af3de86268e31c4ec6db113b65c26643",
+      "source_bytes": 3294543,
+      "source_dimensions": [
+        3500,
+        3453
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v13/bap-bordone-gallery-2000.webp",
+      "derivative_sha256": "c71651ff325e4498ce29aac36e24eea2e165a1f0508a52ec25f413ef539a60d7",
+      "derivative_bytes": 749518,
+      "derivative_dimensions": [
+        2000,
+        1973
+      ],
+      "full_composition": true,
+      "publication_status": "STAGED_ONLY_NOT_LIVE_NOT_PRAYER_APPROVED"
+    },
+    {
+      "review_artwork_id": "bap-tintoretto",
+      "title": "Baptism of Christ",
+      "artist": "Workshop of Jacopo Tintoretto",
+      "museum_page": "https://www.clevelandart.org/art/1950.400",
+      "rights_evidence": "CMA object page 1950.400: open-access, reusable without permission",
+      "identity_evidence": {
+        "accession": "1950.400",
+        "object_page": "https://www.clevelandart.org/art/1950.400",
+        "title": "Baptism of Christ",
+        "artist": "workshop of Jacopo Tintoretto"
+      },
+      "source_url": "https://openaccess-cdn.clevelandart.org/1950.400/1950.400_print.jpg",
+      "source_path": "app-data/sacred-art/staged-selected31-v13/bap-tintoretto-museum-source.jpg",
+      "source_sha256": "3ec7f722c11141337c98a884cd34c87cf09ed4f22e648603136bca0239ba046e",
+      "source_bytes": 6239791,
+      "source_dimensions": [
+        3400,
+        2253
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v13/bap-tintoretto-gallery-2000.webp",
+      "derivative_sha256": "136c2663a9f3de91e062c11b156383e2a98d269d49f5cda6344c6fbf7969c4e9",
+      "derivative_bytes": 600362,
+      "derivative_dimensions": [
+        2000,
+        1325
+      ],
+      "full_composition": true,
+      "publication_status": "STAGED_ONLY_NOT_LIVE_NOT_PRAYER_APPROVED"
+    },
+    {
+      "review_artwork_id": "bap-bassano",
+      "title": "The Baptism of Christ",
+      "artist": "Jacopo Bassano",
+      "museum_page": "https://www.metmuseum.org/art/collection/search/440393",
+      "rights_evidence": "Met isPublicDomain=true",
+      "identity_evidence": {
+        "objectID": 440393,
+        "title": "The Baptism of Christ",
+        "artist": "Jacopo Bassano (Jacopo da Ponte)"
+      },
+      "source_url": "https://images.metmuseum.org/CRDImages/ep/original/DP276931.jpg",
+      "source_path": "app-data/sacred-art/staged-selected31-v13/bap-bassano-museum-source.jpg",
+      "source_sha256": "240532f3efec68b9d606873fde65b0978b1f7333c8b5c5a1f460df3d208a6c64",
+      "source_bytes": 2045217,
+      "source_dimensions": [
+        3143,
+        3857
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v13/bap-bassano-gallery-2000.webp",
+      "derivative_sha256": "13167014471e1b668853f0886066dd7ee4aa0ca58a5cf46d4027aced55122814",
+      "derivative_bytes": 278000,
+      "derivative_dimensions": [
+        1630,
+        2000
+      ],
+      "full_composition": true,
+      "publication_status": "STAGED_ONLY_NOT_LIVE_NOT_PRAYER_APPROVED"
+    },
+    {
+      "review_artwork_id": "bap-poussin",
+      "title": "The Baptism of Christ",
+      "artist": "Nicolas Poussin",
+      "museum_page": "https://www.nga.gov/artworks/32692-baptism-christ",
+      "rights_evidence": "NGA published_images.csv openaccess=1",
+      "identity_evidence": {
+        "objectID": "32692",
+        "uuid": "0ad4855e-760a-476f-bbbb-8164f430b4ec",
+        "viewtype": "primary"
+      },
+      "source_url": "https://api.nga.gov/iiif/0ad4855e-760a-476f-bbbb-8164f430b4ec/full/!3500,3500/0/default.jpg",
+      "source_path": "app-data/sacred-art/staged-selected31-v13/bap-poussin-museum-source.jpg",
+      "source_sha256": "52c81e96e01cf1d606a152527f8096861b0a50b4834ade36f62143812802b2ba",
+      "source_bytes": 2089051,
+      "source_dimensions": [
+        3500,
+        2754
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v13/bap-poussin-gallery-2000.webp",
+      "derivative_sha256": "4692b76ac9ef3e41fa7c2a0406e4c0c25ea3c3ddbeeee2cd9655f0f84678030b",
+      "derivative_bytes": 339350,
+      "derivative_dimensions": [
+        2000,
+        1574
+      ],
+      "full_composition": true,
+      "publication_status": "STAGED_ONLY_NOT_LIVE_NOT_PRAYER_APPROVED"
+    },
+    {
+      "review_artwork_id": "cana-master",
+      "title": "The Marriage at Cana",
+      "artist": "Master of the Catholic Kings",
+      "museum_page": "https://www.nga.gov/artworks/41655-marriage-cana",
+      "rights_evidence": "NGA published_images.csv openaccess=1",
+      "identity_evidence": {
+        "objectID": "41655",
+        "uuid": "25c98bc8-af28-4194-a056-daeae1f0a001",
+        "viewtype": "primary"
+      },
+      "source_url": "https://api.nga.gov/iiif/25c98bc8-af28-4194-a056-daeae1f0a001/full/!3500,3500/0/default.jpg",
+      "source_path": "app-data/sacred-art/staged-selected31-v13/cana-master-museum-source.jpg",
+      "source_sha256": "2fd477c9d6968d782f2f38c58744534dc5b69d15eaace77ba9e245ed2f47becb",
+      "source_bytes": 2226133,
+      "source_dimensions": [
+        2065,
+        3500
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v13/cana-master-gallery-2000.webp",
+      "derivative_sha256": "819fd6c07422f3546762c9a2fedfadffae1bd769c3708b511cc9477b88cf3ffc",
+      "derivative_bytes": 575334,
+      "derivative_dimensions": [
+        1180,
+        2000
+      ],
+      "full_composition": true,
+      "publication_status": "STAGED_ONLY_NOT_LIVE_NOT_PRAYER_APPROVED"
+    }
+  ]
+}

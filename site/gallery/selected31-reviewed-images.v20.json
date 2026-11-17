@@ -1,0 +1,71 @@
+{
+  "schema": "ao.sacred-art.selected31-gallery-overlay.v20",
+  "canonical_master_unchanged": true,
+  "baseline_registry_count": 862,
+  "scope": "One exact owner-selected Luminous II gallery image upgraded from 1166x925 preview to official Rijksmuseum IIIF; no prayer approval",
+  "new_review_records": 1,
+  "records": [
+    {
+      "id": "REVIEW31::cana-vermeyen",
+      "title": "The Marriage at Cana",
+      "artist": "Jan Cornelisz Vermeyen",
+      "institution": "Rijksmuseum, Amsterdam",
+      "source_url": "https://www.rijksmuseum.nl/en/collection/object/The-Marriage-at-Cana--a9c70d5ad88d3ab49630a44168906608",
+      "record_status": "OWNER_SELECTED_EDITORIAL_V20__GALLERY_ONLY_NOT_PRAYER_CARD_PRIMARY",
+      "owner_selected_artwork": true,
+      "rights_note": "Rijksmuseum object SK-A-4820 officially Public Domain; exact 2026 museum IIIF primary image, credit Rijksmuseum Amsterdam",
+      "review_context": "Luminous II · Marriage at Cana",
+      "image": {
+        "src": "./gallery/images/selected31-v20-cana-vermeyen-2000.webp",
+        "provenance": "https://iiif.micr.io/crXuY/full/4000,/0/default.jpg · Public Domain Rijksmuseum image",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__RIJKSMUSEUM_OFFICIAL_IIIF",
+        "pixel_width": 2000,
+        "pixel_height": 1566
+      },
+      "image_url_source_only": "https://iiif.micr.io/crXuY/full/4000,/0/default.jpg",
+      "scene_ids": [
+        "Luminous II · Marriage at Cana"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous II · Marriage at Cana"
+      ],
+      "attribution_status": "EXACT_RIJKSMUSEUM_OBJECT_AND_IIIF_IDENTIFICATION"
+    }
+  ],
+  "image_patches": [],
+  "provenance": [
+    {
+      "review_artwork_id": "cana-vermeyen",
+      "catalogue_record_id": "REVIEW31::cana-vermeyen",
+      "gallery_file": "site/gallery/images/selected31-v20-cana-vermeyen-2000.webp",
+      "derivative_sha256": "9ddf56c6dbdcd520fc58f8c4a321f2e362420f9b6130a7f2c36477c15825af02",
+      "derivative_bytes": 423544,
+      "source_archive": "app-data/sacred-art/staged-selected31-v20/cana-vermeyen-museum-source.jpg",
+      "source_sha1": "b0725f2d405deb08f44e88930017eb8983b31c5a",
+      "source_sha256": "ce73458aee196eb43c9f65987142f2d3dbb366711a0c735bc95e4fb82c3dce62",
+      "source_bytes": 1960077,
+      "source_dimensions": [
+        4000,
+        3132
+      ],
+      "gallery_dimensions": [
+        2000,
+        1566
+      ],
+      "museum_object_id": "SK-A-4820",
+      "museum_object_uri": "https://data.rijksmuseum.nl/200108373",
+      "museum_page": "https://www.rijksmuseum.nl/en/collection/object/The-Marriage-at-Cana--a9c70d5ad88d3ab49630a44168906608",
+      "iiif_id": "crXuY",
+      "source_image_url": "https://iiif.micr.io/crXuY/full/4000,/0/default.jpg",
+      "rights_evidence": "Rijksmuseum SK-A-4820 object Public Domain, image service and free high-resolution download; source credit required",
+      "quality_gate": "GALLERY_READY__FINAL_VISUAL_QA_PENDING",
+      "publication_scope": "DRAFT_GALLERY_ONLY__NO_PRAYER_ASSIGNMENT",
+      "no_cropping": true
+    }
+  ]
+}

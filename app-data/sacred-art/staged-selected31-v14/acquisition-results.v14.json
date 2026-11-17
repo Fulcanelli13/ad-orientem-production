@@ -1,0 +1,144 @@
+{
+  "schema": "ao.sacred-art.selected31-v14-acquisition.v1",
+  "publication_scope": "SOURCE_STAGE_ONLY__NO_PRAYER_APPROVAL",
+  "acquired_count": 5,
+  "held_count": 0,
+  "records": [
+    {
+      "review_artwork_id": "bap-murillo",
+      "title": "The Baptism of Christ",
+      "artist": "Bartolomé Esteban Murillo",
+      "institution_object_id": "68.2",
+      "museum_page": "https://search.smb.museum/object/obj-868725",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3ABartolom%C3%A9_Esteban_Murillo_%281617_-_1682%29_-_The_Baptism_of_Christ_-_68.2_-_Gem%C3%A4ldegalerie.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Bartolom%C3%A9_Esteban_Murillo_%281617_-_1682%29_-_The_Baptism_of_Christ_-_68.2_-_Gem%C3%A4ldegalerie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_license_evidence": "SMB object 868725: Public Domain Mark 1.0; Commons museum file is a faithful reproduction",
+      "original_sha1": "7d5e22bdbec34c7148dba0d7b371d432a09e6727",
+      "source_sha256": "7dfdcfc6066d8f0c729cac1f951abcb7b8f2a72bed438dd6cba20af5c0384853",
+      "source_bytes": 4315074,
+      "source_dimensions": [
+        1900,
+        2814
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v14/bap-murillo-source.jpg",
+      "derivative_sha256": "abd3569cb9b0e69e36910f989c91690b010a168f7aa5f3dee297a2791fbab866",
+      "derivative_bytes": 337448,
+      "derivative_dimensions": [
+        1350,
+        2000
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v14/bap-murillo-2000.webp",
+      "full_composition": true,
+      "publication_status": "SOURCE_STAGED_NOT_LIVE_NOT_PRAYER_APPROVED"
+    },
+    {
+      "review_artwork_id": "bap-verrocchio",
+      "title": "The Baptism of Christ",
+      "artist": "Andrea del Verrocchio and Leonardo da Vinci",
+      "institution_object_id": "1890 n. 8358",
+      "museum_page": "https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3AVerrocchio%2C_Leonardo_da_Vinci_-_Battesimo_di_Cristo.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Verrocchio%2C_Leonardo_da_Vinci_-_Battesimo_di_Cristo.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_license_evidence": "Uffizi object 8358; Commons selected exact derived Google Art Project file marked Public Domain",
+      "original_sha1": "b4fcd110c144c76939f0fdb82c7104f78d2c5ad9",
+      "source_sha256": "0c65b6c864b47ba9386583cae4ede447cfdf7f2c785fdef1cb19af37542c1067",
+      "source_bytes": 1630524,
+      "source_dimensions": [
+        2528,
+        2970
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v14/bap-verrocchio-source.jpg",
+      "derivative_sha256": "29beda69bf66c1a6ba06af62e6f5572070653a97b503755fefab6aca903c768a",
+      "derivative_bytes": 784620,
+      "derivative_dimensions": [
+        1702,
+        2000
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v14/bap-verrocchio-2000.webp",
+      "full_composition": true,
+      "publication_status": "SOURCE_STAGED_NOT_LIVE_NOT_PRAYER_APPROVED"
+    },
+    {
+      "review_artwork_id": "cana-francken",
+      "title": "The Wedding at Cana",
+      "artist": "Frans Francken the Younger",
+      "institution_object_id": "NM 7504",
+      "museum_page": "https://collection.nationalmuseum.se/en/collection/item/231135/",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3AFrans_Francken_d.y._-_The_Wedding_at_Cana_-_NM_7504_-_Nationalmuseum.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Frans_Francken_d.y._-_The_Wedding_at_Cana_-_NM_7504_-_Nationalmuseum.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_license_evidence": "Nationalmuseum NM 7504, publicly released photograph marked Public Domain on Commons",
+      "original_sha1": "336d7b37feec76e171c2b5d0810588db31f68e92",
+      "source_sha256": "1bc8396716326399a48680c910c256bade2f6fa7040fe2da460453f60a5e4a06",
+      "source_bytes": 118698,
+      "source_dimensions": [
+        1000,
+        558
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v14/cana-francken-source.jpg",
+      "derivative_sha256": "f0c9d9e34d8b1d49b8b5d262f7e1c0958a4867d2e0672e8c71fc4012a1c3b2f2",
+      "derivative_bytes": 92612,
+      "derivative_dimensions": [
+        1000,
+        558
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v14/cana-francken-2000.webp",
+      "full_composition": true,
+      "publication_status": "SOURCE_STAGED_NOT_LIVE_NOT_PRAYER_APPROVED"
+    },
+    {
+      "review_artwork_id": "cana-vermeyen",
+      "title": "The Marriage at Cana",
+      "artist": "Jan Cornelisz Vermeyen",
+      "institution_object_id": "SK-A-4820",
+      "museum_page": "https://www.rijksmuseum.nl/en/collection/object/The-Marriage-at-Cana--a9c70d5ad88d3ab49630a44168906608",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3AJan_Cornelisz._Vermeyen_006.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Jan_Cornelisz._Vermeyen_006.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_license_evidence": "Rijksmuseum SK-A-4820 public domain painting; exact WGA Commons image marked PD-Art",
+      "original_sha1": "757469034bc7d06d0d7a8d7e022ea02c0f2c244a",
+      "source_sha256": "5980120a5461ed1341fc3544fce85169f7c6289cf937174fd8b521734d6d6bad",
+      "source_bytes": 122335,
+      "source_dimensions": [
+        1166,
+        925
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v14/cana-vermeyen-source.jpg",
+      "derivative_sha256": "9c74b50a81501ea68e633e96b4cec877e4d24c92f645d246c6edc2a902679d36",
+      "derivative_bytes": 152176,
+      "derivative_dimensions": [
+        1166,
+        925
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v14/cana-vermeyen-2000.webp",
+      "full_composition": true,
+      "publication_status": "SOURCE_STAGED_NOT_LIVE_NOT_PRAYER_APPROVED"
+    },
+    {
+      "review_artwork_id": "king-bloch",
+      "title": "The Sermon on the Mount",
+      "artist": "Carl Bloch",
+      "institution_object_id": "Frederiksborg",
+      "museum_page": "https://commons.wikimedia.org/wiki/File:Bloch-SermonOnTheMount.jpg",
+      "source_page": "https://commons.wikimedia.org/wiki/File%3ACarl_Bloch_-_The_Sermon_on_the_Mount.jpg",
+      "source_image_url": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Carl_Bloch_-_The_Sermon_on_the_Mount.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_license_evidence": "Museum of National History at Frederiksborg; Commons new 2026 museum-photo-service source marked Public Domain",
+      "original_sha1": "23d4272cc197200ffd9d1cd196645b52268e25a6",
+      "source_sha256": "fbc8a694df913090e161e2211a638d890059cf722709c111fc34198665da9b66",
+      "source_bytes": 10115057,
+      "source_dimensions": [
+        6599,
+        7200
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v14/king-bloch-source.jpg",
+      "derivative_sha256": "606dfcd8778a903de45a74454ca3b49b3d506c644bebe23bc8ffa8774828f740",
+      "derivative_bytes": 509600,
+      "derivative_dimensions": [
+        1833,
+        2000
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v14/king-bloch-2000.webp",
+      "full_composition": true,
+      "publication_status": "SOURCE_STAGED_NOT_LIVE_NOT_PRAYER_APPROVED"
+    }
+  ],
+  "holds": []
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "ao.sacred-art.selected31-photo-recovery.v23",
+  "purpose": "Verified exact owner-selected artwork, independent photo CC licence, 13-photo research inspection",
+  "acquired_count": 0,
+  "records": [],
+  "failed_attempts": [
+    {
+      "candidate": "Cornelis van haarlem, battesimo di cristo, 1588, 02.JPG",
+      "error": "HTTP Error 429: Too many requests. Please contact the Wikimedia SRE team at noc@wikimedia.org and refer to this message. (daab851)"
+    },
+    {
+      "candidate": "Cornelis van haarlem, battesimo di cristo, 1588, 01.JPG",
+      "error": "HTTP Error 429: Too many requests. Please contact the Wikimedia SRE team at noc@wikimedia.org and refer to this message. (daab851)"
+    }
+  ]
+}

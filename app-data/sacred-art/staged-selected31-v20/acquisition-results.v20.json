@@ -1,0 +1,56 @@
+{
+  "schema": "ao.sacred-art.selected31-v20-source-upgrade",
+  "purpose": "Upgrade owner-selected source photographs in archive only; do not publish until image rights and quality gates pass",
+  "attempted": 3,
+  "acquired_count": 1,
+  "held_count": 2,
+  "records": [
+    {
+      "review_artwork_id": "cana-vermeyen",
+      "title": "The Marriage at Cana",
+      "artist": "Jan Cornelisz Vermeyen",
+      "exact_object_page": "https://www.rijksmuseum.nl/en/collection/object/The-Marriage-at-Cana--a9c70d5ad88d3ab49630a44168906608",
+      "object_verified": "Rijksmuseum Amsterdam SK-A-4820; current Linked Art -> IIIF original",
+      "source_image_url": "https://iiif.micr.io/crXuY/full/4000,/0/default.jpg",
+      "source_sha1": "b0725f2d405deb08f44e88930017eb8983b31c5a",
+      "source_sha256": "ce73458aee196eb43c9f65987142f2d3dbb366711a0c735bc95e4fb82c3dce62",
+      "source_bytes": 1960077,
+      "source_dimensions": [
+        4000,
+        3132
+      ],
+      "source_path": "app-data/sacred-art/staged-selected31-v20/cana-vermeyen-museum-source.jpg",
+      "derivative_sha256": "9ddf56c6dbdcd520fc58f8c4a321f2e362420f9b6130a7f2c36477c15825af02",
+      "derivative_bytes": 423544,
+      "derivative_dimensions": [
+        2000,
+        1566
+      ],
+      "derivative_path": "app-data/sacred-art/staged-selected31-v20/cana-vermeyen-2000.webp",
+      "old_source_dimensions": [
+        1166,
+        925
+      ],
+      "photograph_rights_statement": "Rijksmuseum object Public Domain (official page); credit Rijksmuseum Amsterdam",
+      "rights_gate": "SOURCE_ONLY__RIJKSMUSEUM_PRIMARY_IMAGE_VISUAL_QA",
+      "quality_gate": "RESOLUTION_UPGRADED__IMAGE_AND_REUSE_REVIEW_PENDING",
+      "status": "SOURCE_ARCHIVE_ONLY__NO_SITE_OR_PRAYER_BINDING",
+      "iiif_id": "crXuY",
+      "iiif_native_dimensions": [
+        6305,
+        4937
+      ],
+      "object_uri": "https://data.rijksmuseum.nl/200108373"
+    }
+  ],
+  "holds": [
+    {
+      "review_artwork_id": "cana-francken",
+      "reason": "HTTP Error 429: Too Many Requests (015d12c)"
+    },
+    {
+      "review_artwork_id": "tri-dolci",
+      "reason": "No resolution upgrade: [877, 1024]"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema": "ao.sacred-art.original-selected-object-evidence.v22",
+  "source_document": "AO_Selected_31_Production_Gallery_Reconciliation_V12.json",
+  "source_document_status": "User-provided historical 31-artwork selected-image review; filed in ChatGPT Library on 2026-11-16",
+  "source_review_identifier": "king-jordaens",
+  "literal_original_v12_fields": {
+    "destination_id": "lum3",
+    "artwork_id": "king-jordaens",
+    "artist": "Jacob Jordaens",
+    "title": "Christ Blessing the Children",
+    "identity_status": "CATALOGUE_ID_IDENTIFIED_MUSEUM_PAGE_PENDING",
+    "verified_source": "https://commons.wikimedia.org/wiki/Paintings_by_Jacob_Jordaens",
+    "inventory": "SMK KMSsp234",
+    "photo_status": "NO_VERIFIED_FILE",
+    "review_photo_url": null,
+    "rights_status": "PHOTOGRAPH_RIGHTS_NOT_CONFIRMED",
+    "editorial_note": "The exact title and SMK inventory appear in the painting catalogue; an authoritative object page and photo remain to be pinned."
+  },
+  "photo_research_v18": {
+    "source_file": "https://commons.wikimedia.org/wiki/File:Jacob_Jordaens_-_Christ_blessing_little_Children._Suffer_Little_Children_to_Come_unto_me_-_KMSsp234_-_Statens_Museum_for_Kunst.jpg",
+    "museum_page": "https://open.smk.dk/artwork/image/KMSsp234",
+    "museum_attribution": "Attributed to Jacob Jordaens",
+    "licensing": "SMK-origin CC0 1.0"
+  },
+  "resolution": "Original selected inventory is exactly KMSsp234, so V18 independently verified photo depicts the very same object; this is not a free-text title replacement. Preserve artist-attribution qualification and original photo pixels.",
+  "not_an_approval_of_prayer_cinematic": true
+}

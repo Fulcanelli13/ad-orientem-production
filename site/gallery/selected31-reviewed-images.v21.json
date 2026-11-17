@@ -1,0 +1,72 @@
+{
+  "schema": "ao.sacred-art.selected31-gallery-overlay.v21",
+  "canonical_master_unchanged": true,
+  "baseline_registry_count": 862,
+  "scope": "One exact owner-selected Nationalmuseum NM 7504 gallery candidate; no prayer placement",
+  "records": [
+    {
+      "id": "REVIEW31::cana-francken",
+      "title": "The Wedding at Cana",
+      "artist": "Frans Francken the Younger",
+      "institution": "Nationalmuseum, Stockholm",
+      "source_url": "https://collection.nationalmuseum.se/en/collection/item/231135/",
+      "record_status": "OWNER_SELECTED_EDITORIAL_V21__GALLERY_ONLY_NOT_PRAYER_PRIMARY",
+      "owner_selected_artwork": true,
+      "rights_note": "Exact Nationalmuseum Stockholm NM 7504, Commons 1920×919 PDM photograph. The museum explicitly states that its public-domain digitizations, and Nationalmuseum images published on Commons, may be reused for any purpose. Other distinct NM7504 photos may be CC BY-SA; preserve exact source file.",
+      "review_context": "Luminous II · Marriage at Cana",
+      "image": {
+        "src": "./gallery/images/selected31-v21-cana-francken-1920.webp",
+        "provenance": "https://commons.wikimedia.org/wiki/File:The_Wedding_at_Cana_by_Frans_Francken_the_Younger,_Nationalmuseum,_Stockholm.jpg · exact NM 7504 Commons PDM source",
+        "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
+        "quality": "UNCROPPED_1920PX_HORIZONTAL__FULL_FRAME",
+        "pixel_width": 1920,
+        "pixel_height": 919,
+        "source_note": "Nationalmuseum official public-domain reuse policy: https://www.nationalmuseum.se/en/explore-art-and-design/images/rights-and-reproductions. Credit artwork and institution; avoid endorsement implication. Source-specific individual photographer remains unverified.",
+        "license": "Public Domain Mark 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "photographer": "Nationalmuseum (individual photographer not independently identified for this exact file)",
+        "adaptation": "Original 1920×919 file converted to WebP without cropping or enlargement"
+      },
+      "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/a/ad/The_Wedding_at_Cana_by_Frans_Francken_the_Younger%2C_Nationalmuseum%2C_Stockholm.jpg",
+      "scene_ids": [
+        "Luminous II · Marriage at Cana"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous II · Marriage at Cana"
+      ],
+      "attribution_status": "EXACT_NM7504_PHOTO_VERIFIED"
+    }
+  ],
+  "image_patches": [],
+  "provenance": [
+    {
+      "review_artwork_id": "cana-francken",
+      "catalogue_record_id": "REVIEW31::cana-francken",
+      "gallery_file": "site/gallery/images/selected31-v21-cana-francken-1920.webp",
+      "derivative_sha256": "3ba944cef62c517b87cb94e194f0dad3b9112879127a8eed9af2c7efef6c49d6",
+      "derivative_bytes": 282882,
+      "source_archive": "app-data/sacred-art/staged-selected31-v21/cana-francken-source.jpg",
+      "source_sha256": "4b2375fc8ec4408040aea66a17f766971b12ae62e771b5f06f49236e4dc64137",
+      "source_sha1": "e0e1011ae234d7dbfced32f6eacd544392a87541",
+      "source_dimensions": [
+        1920,
+        919
+      ],
+      "gallery_dimensions": [
+        1920,
+        919
+      ],
+      "original_photo_page": "https://commons.wikimedia.org/wiki/File:The_Wedding_at_Cana_by_Frans_Francken_the_Younger%2C_Nationalmuseum%2C_Stockholm.jpg",
+      "original_image_url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/The_Wedding_at_Cana_by_Frans_Francken_the_Younger%2C_Nationalmuseum%2C_Stockholm.jpg",
+      "institution_object": "Nationalmuseum NM 7504",
+      "photo_rights_evidence": "Commons Public Domain Mark 1.0 for exact photograph; does not imply all Nationalmuseum photos are unrestricted",
+      "quality_gate": "FULL_COMPOSITION_1920PX_HORIZONTAL__FINAL_VISUAL_REVIEW_PENDING",
+      "release_scope": "DRAFT_GALLERY_ONLY__NO_PRAYER_ASSIGNMENT"
+    }
+  ],
+  "v25_rights_evidence": "app-data/sacred-art/selected31-release-decision-v25.json"
+}

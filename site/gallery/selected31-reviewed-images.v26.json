@@ -1,0 +1,154 @@
+{
+  "schema": "ao.sacred-art.selected31-gallery-overlay.v26",
+  "canonical_master_unchanged": true,
+  "baseline_registry_count": 862,
+  "scope": "Two original owner-selected Louvre paintings, conditionally staged as faithful 2D photo PDM evidence (not express CC licences), with original curid and visual ratio caveats; no prayer-card assignment.",
+  "new_review_records": 2,
+  "records": [
+    {
+      "id": "REVIEW31::bap-haarlem",
+      "title": "The Baptism of Christ",
+      "artist": "Cornelis van Haarlem",
+      "institution": "Musée du Louvre, Paris · RF 1983-25",
+      "source_url": "https://collections.louvre.fr/en/ark:/53355/cl010064767",
+      "record_status": "OWNER_SELECTED_ARTWORK_V26__CONDITIONAL_FRENCH_PD_ART_PHOTO__DRAFT_GALLERY_ONLY",
+      "owner_selected_artwork": true,
+      "rights_note": "Louvre RF 1983-25, own camera photo uploaded by Shonagon to Wikimedia Commons, labelled PD-Art/Public Domain Mark. The user's original Commons curid 75930307 is not independently resolved to this newer 2022 photo; this is a verified alternate photograph of the same original selected artwork, not the same original file. French originality standard applies; no assertion of global permission.",
+      "review_context": "Luminous I · Baptism in the Jordan",
+      "image": {
+        "src": "./gallery/images/selected31-v26-bap-haarlem-2000.webp",
+        "provenance": "https://commons.wikimedia.org/wiki/File:Le_Bapt%C3%AAme_du_Christ_-_Cornelis_Cornelisz_van_Haarlem_-_Mus%C3%A9e_du_Louvre_-_Peintures_RF_1983-25.jpg · Shonagon independently taken own photograph, exact Louvre object; Commons Public Domain Mark (PD-Art), NOT an express CC0/CC BY licence.",
+        "usage": "GALLERY_IMAGE_ONLY__NO_PRAYER_DEFAULT__OWNER_RELEASE_AND_FINAL_JURISDICTION_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__ORIGINAL_OWNER_CURID_UNRESOLVED",
+        "pixel_width": 2000,
+        "pixel_height": 1652,
+        "photographer": "Shonagon",
+        "license": "Public Domain Mark 1.0 (faithful 2D photo status, not an express copyright licence)",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "source_note": "French Ministry copyright guidance requires original creative personal choices in photographs; mechanical faithful reproductions can fall outside French photographic copyright. Wikimedia PDM states US status but jurisdictional and Louvre collection/venue questions remain. No absolute release claim. French Ministry: https://www.culture.gouv.fr/thematiques/photographie/gerer-un-fonds-photographique/evaluation-patrimoniale/connaitre-l-environnement-juridique-d-un-fonds",
+        "adaptation": "Downscaled archived independent camera photograph to WebP; no artwork crop or AI enlargement.",
+        "exact_object_id": "RF 1983-25"
+      },
+      "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Le_Bapt%C3%AAme_du_Christ_-_Cornelis_Cornelisz_van_Haarlem_-_Mus%C3%A9e_du_Louvre_-_Peintures_RF_1983-25.jpg",
+      "scene_ids": [
+        "Luminous I · Baptism in the Jordan"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous I · Baptism in the Jordan"
+      ],
+      "attribution_status": "EXACT_LOUVRE_RF1983_25__ORIGINAL_COMMONS_CURID_PENDING"
+    },
+    {
+      "id": "REVIEW31::king-bourdon",
+      "title": "Christ Blessing the Children",
+      "artist": "Sébastien Bourdon",
+      "institution": "Musée du Louvre, Paris · INV 2806 / MR 1256",
+      "source_url": "https://collections.louvre.fr/en/ark:/53355/cl010059179",
+      "record_status": "OWNER_SELECTED_ARTWORK_V26__CONDITIONAL_FRENCH_PD_ART_PHOTO__DRAFT_GALLERY_ONLY",
+      "owner_selected_artwork": true,
+      "rights_note": "Exact Louvre INV 2806, not the Chicago/Sotheby's work of the same subject. Shonagon original own photograph (2025), marked faithful PD-Art/Public Domain Mark, 10952×8131 original archived, 2000px derivative. French originality criterion supports faithful reproduction copyright analysis, but PDM is not an express rights grant; legal/jurisdiction and artwork ratio differ 10.4%, final QA required.",
+      "review_context": "Luminous III · Proclamation of the Kingdom",
+      "image": {
+        "src": "./gallery/images/selected31-v26-king-bourdon-2000.webp",
+        "provenance": "https://commons.wikimedia.org/wiki/File:Le_Christ_et_les_enfants_-_S%C3%A9bastien_Bourdon_-_Mus%C3%A9e_du_Louvre_Peintures_INV_2806_%3B_MR_1256.jpg · Shonagon independently taken own photograph, exact Louvre object; Commons Public Domain Mark (PD-Art), NOT an express CC0/CC BY licence.",
+        "usage": "GALLERY_IMAGE_ONLY__NO_PRAYER_DEFAULT__OWNER_RELEASE_AND_FINAL_JURISDICTION_QA_PENDING",
+        "quality": "UNCROPPED_2000PX_LOCAL_WEBP__FULL_PAINTING_APPARENT__OBJECT_RATIO_DIFF_10_4_PERCENT",
+        "pixel_width": 2000,
+        "pixel_height": 1485,
+        "photographer": "Shonagon",
+        "license": "Public Domain Mark 1.0 (faithful 2D photo status, not an express copyright licence)",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "source_note": "French Ministry copyright guidance requires original creative personal choices in photographs; mechanical faithful reproductions can fall outside French photographic copyright. Wikimedia PDM states US status but jurisdictional and Louvre collection/venue questions remain. No absolute release claim. French Ministry: https://www.culture.gouv.fr/thematiques/photographie/gerer-un-fonds-photographique/evaluation-patrimoniale/connaitre-l-environnement-juridique-d-un-fonds",
+        "adaptation": "Downscaled archived independent camera photograph to WebP; no artwork crop or AI enlargement.",
+        "exact_object_id": "INV 2806 / MR 1256"
+      },
+      "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/4/40/Le_Christ_et_les_enfants_-_S%C3%A9bastien_Bourdon_-_Mus%C3%A9e_du_Louvre_Peintures_INV_2806_%3B_MR_1256.jpg",
+      "scene_ids": [
+        "Luminous III · Proclamation of the Kingdom"
+      ],
+      "prayer_parts": [],
+      "exact_prayer_cards": [],
+      "parent_prayer_candidates": [],
+      "eligible_card_count": 0,
+      "historical_destinations": [
+        "Luminous III · Proclamation of the Kingdom"
+      ],
+      "attribution_status": "EXACT_LOUVRE_INV2806__INDEPENDENT_SHONAGON_PHOTO"
+    }
+  ],
+  "image_patches": [],
+  "provenance": [
+    {
+      "review_artwork_id": "bap-haarlem",
+      "catalogue_record_id": "REVIEW31::bap-haarlem",
+      "gallery_file": "site/gallery/images/selected31-v26-bap-haarlem-2000.webp",
+      "derivative_sha256": "a7101dbd4ff6899ac48b594485dc2ebf0dbae95c20adf56a029a5e4ae1589d5b",
+      "derivative_bytes": 431048,
+      "source_archive": "app-data/sacred-art/staged-selected31-v17/bap-haarlem-source.jpg",
+      "source_sha256": "5b68c66c317669cd67ec0e6cf6f25b3bbbe108ae4c2277bc9852426923db5a72",
+      "source_sha1": "d855179239ecc39f9e8684213673393aa28c2921",
+      "source_dimensions": [
+        2494,
+        2060
+      ],
+      "gallery_dimensions": [
+        2000,
+        1652
+      ],
+      "photo_page": "https://commons.wikimedia.org/wiki/File:Le_Bapt%C3%AAme_du_Christ_-_Cornelis_Cornelisz_van_Haarlem_-_Mus%C3%A9e_du_Louvre_-_Peintures_RF_1983-25.jpg",
+      "photo_source": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Le_Bapt%C3%AAme_du_Christ_-_Cornelis_Cornelisz_van_Haarlem_-_Mus%C3%A9e_du_Louvre_-_Peintures_RF_1983-25.jpg",
+      "photographer": "Shonagon",
+      "photographer_provenance": "Commons upload own work by Shonagon (2022 Haarlem, 2025 Bourdon); camera source and date archived in Commons.",
+      "photo_rights": "PD-Art/Public Domain Mark; not an express CC0 or CC BY from photographer",
+      "photograph_license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "ministry_french_originality_source": "https://www.culture.gouv.fr/thematiques/photographie/gerer-un-fonds-photographique/evaluation-patrimoniale/connaitre-l-environnement-juridique-d-un-fonds",
+      "museum_object": "https://collections.louvre.fr/en/ark:/53355/cl010064767",
+      "original_selection_curid": "75930307 (not resolved to exact photo file; owner's painting selected, photo alternative)",
+      "rights_review": "CONDITIONAL_FRENCH_FAITHFUL_REPRODUCTION__NOT_CERTIFIED_ALL_JURISDICTIONS",
+      "visual_gate": "FULL_PAINTING_PROPORTIONS_GOOD__ORIGINAL_2018_CURID_UNRESOLVED",
+      "release_scope": "DRAFT_GALLERY_ONLY__NOT_PRAYER_PRIMARY__NOT_MERGED"
+    },
+    {
+      "review_artwork_id": "king-bourdon",
+      "catalogue_record_id": "REVIEW31::king-bourdon",
+      "gallery_file": "site/gallery/images/selected31-v26-king-bourdon-2000.webp",
+      "derivative_sha256": "5249af757bfb1365fb69d610085723ba92c471f79c373b07f62b2fa1588cf59b",
+      "derivative_bytes": 582598,
+      "source_archive": "app-data/sacred-art/staged-selected31-v18/king-bourdon-source.jpg",
+      "source_sha256": "356484778862a999efea95a3af7410e178303de2de465853483f95f8aa0697f5",
+      "source_sha1": "ce971f2bb25ae68894826eba5c7a58848afed4f8",
+      "source_dimensions": [
+        10952,
+        8131
+      ],
+      "gallery_dimensions": [
+        2000,
+        1485
+      ],
+      "photo_page": "https://commons.wikimedia.org/wiki/File:Le_Christ_et_les_enfants_-_S%C3%A9bastien_Bourdon_-_Mus%C3%A9e_du_Louvre_Peintures_INV_2806_%3B_MR_1256.jpg",
+      "photo_source": "https://upload.wikimedia.org/wikipedia/commons/4/40/Le_Christ_et_les_enfants_-_S%C3%A9bastien_Bourdon_-_Mus%C3%A9e_du_Louvre_Peintures_INV_2806_%3B_MR_1256.jpg",
+      "photographer": "Shonagon",
+      "photographer_provenance": "Commons upload own work by Shonagon (2022 Haarlem, 2025 Bourdon); camera source and date archived in Commons.",
+      "photo_rights": "PD-Art/Public Domain Mark; not an express CC0 or CC BY from photographer",
+      "photograph_license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "ministry_french_originality_source": "https://www.culture.gouv.fr/thematiques/photographie/gerer-un-fonds-photographique/evaluation-patrimoniale/connaitre-l-environnement-juridique-d-un-fonds",
+      "museum_object": "https://collections.louvre.fr/en/ark:/53355/cl010059179",
+      "original_selection_curid": null,
+      "rights_review": "CONDITIONAL_FRENCH_FAITHFUL_REPRODUCTION__NOT_CERTIFIED_ALL_JURISDICTIONS",
+      "visual_gate": "CANVAS_RECTANGLE_VISIBLE__10_4_PERCENT_PHOTO_TO_OBJECT_ASPECT_RECHECK",
+      "release_scope": "DRAFT_GALLERY_ONLY__NOT_PRAYER_PRIMARY__NOT_MERGED"
+    }
+  ],
+  "legal_review": {
+    "france": {
+      "source": "https://www.culture.gouv.fr/thematiques/photographie/gerer-un-fonds-photographique/evaluation-patrimoniale/connaitre-l-environnement-juridique-d-un-fonds",
+      "conclusion": "French Ministry copyright guidance requires original creative personal choices in photographs; mechanical faithful reproductions can fall outside French photographic copyright. Wikimedia PDM states US status but jurisdictional and Louvre collection/venue questions remain. No absolute release claim."
+    },
+    "italian_commercial_reuse_still_held": "https://docs.italia.it/italia/icdp/icdp-pnd-circolazione-riuso-docs/it/v1.0-giugno-2022/acquisizione-circolazione-e-riuso-delle-riproduzioni-dei-beni-culturali-in-ambiente-digitale/tipologie-duso-delle-riproduzioni-di-beni-culturali.html",
+    "no_worldwide_public_domain_warranty": true
+  }
+}
