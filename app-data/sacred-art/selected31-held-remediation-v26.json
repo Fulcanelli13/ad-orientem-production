@@ -1,0 +1,340 @@
+{
+  "schema": "ao.sacred-art.selected31-held-remediation.v26",
+  "date": "2026-11-16",
+  "purpose": "V21 evidence-based triage of all remaining 15 owner-selected, fully archived source photos; excludes permissions, fees or contact",
+  "source_of_truth": "app-data/sacred-art/selected31-clearance-v26.json",
+  "policy": "An artwork may be in public domain while the exact photograph, institutional heritage reuse, attribution or user-selected object identity remains uncleared. Prefer independent properly licensed files where allowed; do not treat file acquisition as approval.",
+  "counts": {
+    "held": 11,
+    "by_lane": {
+      "IT_PUBLIC_HERITAGE": 7,
+      "IT_VENICE_CHURCH_HERITAGE": 1,
+      "FR_LOUVRE_INDEPENDENT_PHOTOGRAPH__IMAGE_GEOMETRY": 1,
+      "UK_NGS_UNAVAILABLE_IMAGE": 1,
+      "US_RISD_PREVIEW_QUALITY": 1
+    }
+  },
+  "records": [
+    {
+      "review_artwork_id": "bap-verrocchio",
+      "artist": "Andrea del Verrocchio and Leonardo da Vinci",
+      "title": "The Baptism of Christ",
+      "source_dimensions": [
+        2528,
+        2970
+      ],
+      "source_sha256": "0c65b6c864b47ba9386583cae4ede447cfdf7f2c785fdef1cb19af37542c1067",
+      "source_path": "app-data/sacred-art/staged-selected31-v14/bap-verrocchio-source.jpg",
+      "source_page": "https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ",
+      "rights_or_identity_lane": "IT_PUBLIC_HERITAGE",
+      "exact_photo_license_claim": "Uffizi object 8358; Commons selected exact derived Google Art Project file marked Public Domain",
+      "hold_status": "SOURCE_ONLY__NOT_PUBLICATION_AUTHORIZED",
+      "independent_quality_status": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
+      "reason": "Keep Uffizi asset source-only; Commons public-domain painting status alone does not waive Italian heritage reproduction rules for potentially commercial app use.",
+      "next_action": "Keep Uffizi asset source-only; Commons public-domain painting status alone does not waive Italian heritage reproduction rules for potentially commercial app use.",
+      "evidence_urls": [
+        "https://italica.cultura.gov.it/condizioni-di-utilizzo",
+        "https://aspd.cultura.gov.it/wp-content/uploads/2024/04/DM-21-marzo-2024-rep.-108.pdf"
+      ],
+      "no_owner_permission_or_fee_requested": true,
+      "v23_visual_aspect_deviation_percent": 0.2,
+      "v23_next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "v23_measurement_source": "https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ"
+    },
+    {
+      "review_artwork_id": "cana-tintoretto",
+      "artist": "Jacopo Tintoretto",
+      "title": "The Wedding at Cana",
+      "source_dimensions": [
+        6119,
+        4441
+      ],
+      "source_sha256": "1fc69ee8d3b31b47e74f6a255debc674bbe55bed8071216ed6bfb20e846a7b60",
+      "source_path": "app-data/sacred-art/staged-selected31-v18/cana-tintoretto-source.jpg",
+      "source_page": "https://basilicasalutevenezia.it/sezione-tintoretto/",
+      "rights_or_identity_lane": "IT_VENICE_CHURCH_HERITAGE",
+      "exact_photo_license_claim": "CC0 1.0 (photographer dedication)",
+      "hold_status": "SOURCE_ONLY__NOT_PUBLICATION_AUTHORIZED",
+      "independent_quality_status": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
+      "reason": "Confirm custody of artwork in Salute and applicability of Italian cultural-asset rules; CC0 volunteer photograph is not automatically a commercial venue license.",
+      "next_action": "Confirm custody of artwork in Salute and applicability of Italian cultural-asset rules; CC0 volunteer photograph is not automatically a commercial venue license.",
+      "evidence_urls": [
+        "https://italica.cultura.gov.it/condizioni-di-utilizzo",
+        "https://basilicasalutevenezia.it/sezione-tintoretto/"
+      ],
+      "no_owner_permission_or_fee_requested": true,
+      "v23_visual_aspect_deviation_percent": 12,
+      "v23_next_action": "Check original arched/rectangular canvas geometry: 12.0% wider image than WGA physical ratio. Preserve Italian cultural-property rights hold for potential commercial use.",
+      "v23_measurement_source": "https://www.wga.hu/html/t/tintoret/3_1560s/2cana.html"
+    },
+    {
+      "review_artwork_id": "trans-bellini",
+      "artist": "Giovanni Bellini",
+      "title": "The Transfiguration of Christ",
+      "source_dimensions": [
+        3404,
+        2728
+      ],
+      "source_sha256": "116f66a0584d0ad72ad01cd935a24142c4d2aa19ac12b2d5c62fe9386461706e",
+      "source_path": "app-data/sacred-art/staged-selected31-v15/trans_bellini-source.jpg",
+      "source_page": "https://capodimonte.cultura.gov.it/restaurata-la-trasfigurazione-di-bellini-capolavoro-del-maestro-veneziano/",
+      "rights_or_identity_lane": "IT_PUBLIC_HERITAGE",
+      "exact_photo_license_claim": "CC BY 3.0 photographer Sailko; heritage-institution reuse policy to be reviewed",
+      "hold_status": "SOURCE_ONLY__NOT_PUBLICATION_AUTHORIZED",
+      "independent_quality_status": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
+      "reason": "Capodimonte Q56 photograph CC BY 3.0 by Sailko; do not treat photographer licence as heritage-asset commercial reuse clearance.",
+      "next_action": "Capodimonte Q56 photograph CC BY 3.0 by Sailko; do not treat photographer licence as heritage-asset commercial reuse clearance.",
+      "evidence_urls": [
+        "https://italica.cultura.gov.it/condizioni-di-utilizzo",
+        "https://aspd.cultura.gov.it/wp-content/uploads/2024/04/DM-21-marzo-2024-rep.-108.pdf"
+      ],
+      "no_owner_permission_or_fee_requested": true,
+      "v23_visual_aspect_deviation_percent": 6.8,
+      "v23_next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "v23_measurement_source": "https://capodimonte.cultura.gov.it/il-restauro-della-trasfigurazione-di-giovanni-bellini-tavole-a-confronto/"
+    },
+    {
+      "review_artwork_id": "trans-savoldo",
+      "artist": "Giovanni Gerolamo Savoldo",
+      "title": "The Transfiguration of Christ",
+      "source_dimensions": [
+        2276,
+        2488
+      ],
+      "source_sha256": "79b41e8c8b069cdac1d9a5dde3d74691656c62c9417cac0ab64a6ca888bcac99",
+      "source_path": "app-data/sacred-art/staged-selected31-v18/trans-savoldo-source.jpg",
+      "source_page": "https://catalogo.fondazionezeri.unibo.it/scheda/opera/45724/Savoldo%20Giovanni%20Gerolamo%2C%20Trasfigurazione",
+      "rights_or_identity_lane": "IT_PUBLIC_HERITAGE",
+      "exact_photo_license_claim": "CC BY-SA 4.0 with Italian heritage disclaimer",
+      "hold_status": "SOURCE_ONLY__NOT_PUBLICATION_AUTHORIZED",
+      "independent_quality_status": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
+      "reason": "Savoldo Uffizi source, photograph CC BY-SA 4.0; state gallery reuse restriction separately and check image framing.",
+      "next_action": "Savoldo Uffizi source, photograph CC BY-SA 4.0; state gallery reuse restriction separately and check image framing.",
+      "evidence_urls": [
+        "https://italica.cultura.gov.it/condizioni-di-utilizzo",
+        "https://aspd.cultura.gov.it/wp-content/uploads/2024/04/DM-21-marzo-2024-rep.-108.pdf"
+      ],
+      "no_owner_permission_or_fee_requested": true,
+      "v23_visual_aspect_deviation_percent": 0.9,
+      "v23_next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "v23_measurement_source": "https://catalogo.fondazionezeri.unibo.it/scheda/opera/45724/Savoldo%20Giovanni%20Gerolamo%2C%20Trasfigurazione"
+    },
+    {
+      "review_artwork_id": "trans-carracci",
+      "artist": "Ludovico Carracci",
+      "title": "The Transfiguration",
+      "source_dimensions": [
+        3603,
+        5567
+      ],
+      "source_sha256": "76e157eada9a7ea0dbac8e7e8fd85aeeaa7dbe04be181ddaa8fa9f78876cc827",
+      "source_path": "app-data/sacred-art/staged-selected31-v18/trans-carracci-source.jpg",
+      "source_page": "https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/0800692440",
+      "rights_or_identity_lane": "IT_PUBLIC_HERITAGE",
+      "exact_photo_license_claim": "CC BY-SA 4.0 with Italian heritage disclaimer",
+      "hold_status": "SOURCE_ONLY__NOT_PUBLICATION_AUTHORIZED",
+      "independent_quality_status": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
+      "reason": "Ludovico Carracci Pinacoteca Bologna inventory 475; independently licensed Commons image still has institutional heritage hold.",
+      "next_action": "Ludovico Carracci Pinacoteca Bologna inventory 475; independently licensed Commons image still has institutional heritage hold.",
+      "evidence_urls": [
+        "https://italica.cultura.gov.it/condizioni-di-utilizzo",
+        "https://aspd.cultura.gov.it/wp-content/uploads/2024/04/DM-21-marzo-2024-rep.-108.pdf"
+      ],
+      "no_owner_permission_or_fee_requested": true,
+      "v23_visual_aspect_deviation_percent": 5.9,
+      "v23_next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "v23_measurement_source": "https://en.wikipedia.org/wiki/Transfiguration_(Ludovico_Carracci)"
+    },
+    {
+      "review_artwork_id": "euch-rubens",
+      "artist": "Peter Paul Rubens",
+      "title": "The Last Supper",
+      "source_dimensions": [
+        2232,
+        2716
+      ],
+      "source_sha256": "1d6ae4ae8102ad5514641f157c2a07673cd820189fa982acae243f07beb9e76e",
+      "source_path": "app-data/sacred-art/staged-selected31-v17/euch-rubens-source.jpg",
+      "source_page": "https://pinacotecabrera.org/en/collezioni/collezione-on-line/last-supper/",
+      "rights_or_identity_lane": "IT_PUBLIC_HERITAGE",
+      "exact_photo_license_claim": "CC BY-SA 4.0; separate Italian heritage-reuse warning",
+      "hold_status": "SOURCE_ONLY__NOT_PUBLICATION_AUTHORIZED",
+      "independent_quality_status": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
+      "reason": "Rubens Brera inventory 97 photograph CC BY-SA 4.0; no automatic for-profit use from licence alone.",
+      "next_action": "Rubens Brera inventory 97 photograph CC BY-SA 4.0; no automatic for-profit use from licence alone.",
+      "evidence_urls": [
+        "https://italica.cultura.gov.it/condizioni-di-utilizzo",
+        "https://aspd.cultura.gov.it/wp-content/uploads/2024/04/DM-21-marzo-2024-rep.-108.pdf"
+      ],
+      "no_owner_permission_or_fee_requested": true,
+      "v23_visual_aspect_deviation_percent": 0,
+      "v23_next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "v23_measurement_source": "https://pinacotecabrera.org/en/collezioni/collezione-on-line/last-supper/"
+    },
+    {
+      "review_artwork_id": "euch-champaigne",
+      "artist": "Philippe de Champaigne",
+      "title": "The Last Supper",
+      "source_dimensions": [
+        2816,
+        2112
+      ],
+      "source_sha256": "3fce64afc767c16b803fd250e685f3a64caedb7e474380d3afeca68d84331942",
+      "source_path": "app-data/sacred-art/staged-selected31-v15/euch_champaigne-source.jpg",
+      "source_page": "https://collections.louvre.fr/ark:/53355/cl010062076",
+      "rights_or_identity_lane": "FR_LOUVRE_INDEPENDENT_PHOTOGRAPH__IMAGE_GEOMETRY",
+      "exact_photo_license_claim": "Independent photograph by Tangopaso dedicated to public domain",
+      "hold_status": "SOURCE_ONLY__NOT_PUBLICATION_AUTHORIZED",
+      "independent_quality_status": "FRAMED_AND_WALL_BACKGROUND__POTENTIAL_LEFT_EDGE_CUT__NO_CLEAN_FULL_COMPOSITION",
+      "reason": "Tangopaso independently licensed photo is PD-self but original 2816x2112 file shows blue Louvre wall and gilded frame; left edge appears incomplete. Seek exact canvas fully within frame under reusable independent licence, not a cropped derivative that fabricates missing content.",
+      "next_action": "Louvre INV 1125, Tangopaso independent public-domain photograph; inspect museum frame, exact object and rights for independent reproduction (not Louvre official photo).",
+      "evidence_urls": [
+        "https://collections.louvre.fr/en/page/cgu",
+        "https://commons.wikimedia.org/wiki/File:Philippe_de_Champaigne_-_La_Petite_C%C3%A8ne_(Louvre,_INV_1125).jpg",
+        "https://collections.louvre.fr/en/ark:/53355/cl010062076"
+      ],
+      "no_owner_permission_or_fee_requested": true,
+      "v23_visual_aspect_deviation_percent": 28.4,
+      "v23_next_action": "Photographer Tangopaso explicitly dedicated photo to public domain, but the left edge of framed canvas is cut by photograph boundary; do not crop or reconstruct missing paint; seek a separate intact photo.",
+      "v23_measurement_source": "https://collections.louvre.fr/ark:/53355/cl010062076",
+      "v24_image_review": "Alternate exact INV1125 unframed photo 'Champaigne Petite Cène Louvre.jpg' exists at 1112x591 with faithful full composition but uploader cites generic Google source and only PD-Art PDM. Do not replace independently public-domain Tangopaso photo with weaker provenance image, or invent missing left edge.",
+      "v24_next_action": "Prefer exact full painting with independent photographer license; low-res Google-derived PDM Commons reference is not automatically safer than Tangopaso's PD-self cropped photo."
+    },
+    {
+      "review_artwork_id": "euch-bassano",
+      "artist": "Jacopo Bassano",
+      "title": "The Last Supper",
+      "source_dimensions": [
+        4296,
+        2568
+      ],
+      "source_sha256": "53b23433d8bb43aac48e0e2038f21b12f780d533c05e693ffa91362c8d3b6acd",
+      "source_path": "app-data/sacred-art/staged-selected31-v17/euch-bassano-source.jpg",
+      "source_page": "https://www.collezionegalleriaborghese.it/en/opere/last-supper",
+      "rights_or_identity_lane": "IT_PUBLIC_HERITAGE",
+      "exact_photo_license_claim": "CC BY 3.0 (Sailko); separate Italian heritage-reuse warning",
+      "hold_status": "SOURCE_ONLY__NOT_PUBLICATION_AUTHORIZED",
+      "independent_quality_status": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
+      "reason": "Galleria Borghese inventory 144 full-composition Sailko CC BY 3.0 photograph; Italian cultural heritage rules separate.",
+      "next_action": "Galleria Borghese inventory 144 full-composition Sailko CC BY 3.0 photograph; Italian cultural heritage rules separate.",
+      "evidence_urls": [
+        "https://italica.cultura.gov.it/condizioni-di-utilizzo",
+        "https://aspd.cultura.gov.it/wp-content/uploads/2024/04/DM-21-marzo-2024-rep.-108.pdf"
+      ],
+      "no_owner_permission_or_fee_requested": true,
+      "v23_visual_aspect_deviation_percent": 4,
+      "v23_next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "v23_measurement_source": "https://www.collezionegalleriaborghese.it/en/opere/last-supper"
+    },
+    {
+      "review_artwork_id": "euch-poussin",
+      "artist": "Nicolas Poussin",
+      "title": "The Sacrament of the Holy Eucharist",
+      "source_dimensions": [
+        1359,
+        900
+      ],
+      "source_sha256": "dbf580773ca77a1e5b13241b6a9b2e24193bc1797fa12e98dcb9a92c3d85f296",
+      "source_path": "app-data/sacred-art/staged-selected31-v18/euch-poussin-source.jpg",
+      "source_page": "https://www.nationalgalleries.org/art-and-artists/8668",
+      "rights_or_identity_lane": "UK_NGS_UNAVAILABLE_IMAGE",
+      "exact_photo_license_claim": "Commons Public Domain Mark / PD-Art; museum declares image unavailable or restricted",
+      "hold_status": "SOURCE_ONLY__NOT_PUBLICATION_AUTHORIZED",
+      "independent_quality_status": "PREVIEW_ONLY__SOURCE_TOO_SMALL",
+      "reason": "Second series 1647 NGL 067.46 F exact painting; NGS says photograph may be restricted or unavailable. Independent 1359x900 preview only, do not enlarge artificially.",
+      "next_action": "Second series 1647 NGL 067.46 F exact painting; NGS says photograph may be restricted or unavailable. Independent 1359x900 preview only, do not enlarge artificially.",
+      "evidence_urls": [
+        "https://www.nationalgalleries.org/art-and-artists/8668"
+      ],
+      "no_owner_permission_or_fee_requested": true,
+      "v23_visual_aspect_deviation_percent": 0.3,
+      "v23_next_action": "Artangel serves an approx 2000px image of exact 1647 second-series Eucharist, but its public-domain commentary concerns original art; Artangel footer reserves rights and Scottish collection still limits source image. Do not mirror/download until image licence is independently supported.",
+      "v23_measurement_source": "https://www.nationalgalleries.org/art-and-artists/8668"
+    },
+    {
+      "review_artwork_id": "euch-leonardo",
+      "artist": "Leonardo da Vinci",
+      "title": "The Last Supper",
+      "source_dimensions": [
+        4032,
+        2272
+      ],
+      "source_sha256": "c8649322158f213e846ee3f6f246c44667ff1252b0e3c729cb6c96bc9ff56b3a",
+      "source_path": "app-data/sacred-art/staged-selected31-v18/euch-leonardo-source.jpg",
+      "source_page": "https://cenacolovinciano.org/",
+      "rights_or_identity_lane": "IT_PUBLIC_HERITAGE",
+      "exact_photo_license_claim": "Creative Commons Attribution 2.0 Generic; credit and link required",
+      "hold_status": "SOURCE_ONLY__NOT_PUBLICATION_AUTHORIZED",
+      "independent_quality_status": "SOURCE_SIZE_PASS__COMPOSITION_QA_PENDING",
+      "reason": "Santa Maria delle Grazie mural, Tomasz Przechlewski CC BY 2.0 original photo; check physical mural conditions and photographer attribution, no automatic commercial heritage use.",
+      "next_action": "Santa Maria delle Grazie mural, Tomasz Przechlewski CC BY 2.0 original photo; check physical mural conditions and photographer attribution, no automatic commercial heritage use.",
+      "evidence_urls": [
+        "https://italica.cultura.gov.it/condizioni-di-utilizzo",
+        "https://aspd.cultura.gov.it/wp-content/uploads/2024/04/DM-21-marzo-2024-rep.-108.pdf"
+      ],
+      "no_owner_permission_or_fee_requested": true,
+      "v23_visual_aspect_deviation_percent": 7.2,
+      "v23_next_action": "Keep archived source out of public gallery pending jurisdictional heritage-reuse decision.",
+      "v23_measurement_source": "https://cenacolovinciano.org/en/museum/the-works/the-last-supper-leonardo-da-vinci-1452-1519/"
+    },
+    {
+      "review_artwork_id": "tri-dolci",
+      "artist": "Carlo Dolci",
+      "title": "The Trinity in Glory",
+      "source_dimensions": [
+        877,
+        1024
+      ],
+      "source_sha256": "bf2e2ddf7920d04ceb9ea92eeb15bccb39dbe38e2264451bf94ae8a21ce234fc",
+      "source_path": "app-data/sacred-art/staged-selected31-v15/tri_dolci-source.jpg",
+      "source_page": "https://risdmuseum.org/art-design/collection/trinity-glory-59009",
+      "rights_or_identity_lane": "US_RISD_PREVIEW_QUALITY",
+      "exact_photo_license_claim": "CC0 1.0, source reproductions attributed to RISD Museum / Erik Gould",
+      "hold_status": "SOURCE_ONLY__NOT_PUBLICATION_AUTHORIZED",
+      "independent_quality_status": "PREVIEW_ONLY__SOURCE_TOO_SMALL",
+      "reason": "RISD 59.009 CC0, but available online file only 877x1024; true original may be larger (EXIF says 4080px scanner) but cannot claim pixel fidelity from EXIF; owner excludes permission/fee requests.",
+      "next_action": "RISD 59.009 CC0, but available online file only 877x1024; true original may be larger (EXIF says 4080px scanner) but cannot claim pixel fidelity from EXIF; owner excludes permission/fee requests.",
+      "evidence_urls": [
+        "https://risdmuseum.org/image-request-form",
+        "https://risdmuseum.org/art-design/collection/trinity-glory-59009"
+      ],
+      "no_owner_permission_or_fee_requested": true,
+      "v23_visual_aspect_deviation_percent": 0.3,
+      "v23_next_action": "RISD museum official image CC0, existing 877×1024 is true file resolution; no 4K export can be inferred from scanner EXIF. Keep preview archive, no upscale.",
+      "v23_measurement_source": "https://commons.wikimedia.org/wiki/File:Carlo_Dolci_-_The_Trinity_in_Glory_-_59.009_-_Rhode_Island_School_of_Design_Museum.jpg",
+      "v24_image_review": "RISD official collection API returned HTTP 403 to both exact 59.009 and title queries. This access failure does not establish absence of high-resolution files. Existing 877x1024 CC0 is genuine public image; leave quality hold with no upscaling.",
+      "v24_next_action": "RISD official public API blocked with HTTP 403, so larger source is not disproven; continue source hunt without contacting rights holder or paying. Preserve existing CC0 877px true original."
+    }
+  ],
+  "v22_changes": [
+    "Tiepolo Louvre RF 176 removed from holds: independent Sailko CC BY 3 photo now draft gallery-only",
+    "Champaigne Louvre INV1125 is photograph-licensed, but framed/incomplete composition requires replacement",
+    "Haarlem Louvre RF1983-25 museum identity verified, exact originally-selected Commons page still not independently resolved",
+    "Original owner's V12 selection explicitly specified Jordaens KMSsp234, matching exact CC0 museum image; removed from object-identity hold but still needs visual image QA"
+  ],
+  "visual_audit": "app-data/sacred-art/staged-selected31-v23/held-photo-audit.v23.json",
+  "review_board": "app-data/sacred-art/selected31-review-board-v23.json",
+  "ratio_outliers": [
+    {
+      "id": "cana-tintoretto",
+      "deviation_percent": 12
+    },
+    {
+      "id": "king-bourdon",
+      "deviation_percent": 10.4
+    },
+    {
+      "id": "euch-champaigne",
+      "deviation_percent": 28.4
+    }
+  ],
+  "release_rights_register": "app-data/sacred-art/selected31-release-decision-v24.json",
+  "complete_visual_review": "app-data/sacred-art/staged-selected31-v24/selected31-all-review-matrix.v24.webp",
+  "new_rights_qualification": "Actual 11 draft-photo rights reviewed separately: 8 with strong institutional/explicit CC source evidence and 3 Public Domain Mark instances with jurisdictional caveats. Held photos remain held.",
+  "prior_hold_registry": "app-data/sacred-art/selected31-held-remediation-v24.json",
+  "v26_reclassified_to_draft_gallery_only": [
+    "bap-haarlem",
+    "king-bourdon"
+  ],
+  "v26_policy": "No Italian public heritage photo promoted for proposed commercial app use; Poussin blocked photo rights, Dolci blocked high resolution, Champaigne blocked left-edge image fidelity."
+}
