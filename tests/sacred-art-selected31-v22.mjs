@@ -81,7 +81,7 @@ for(const row of current.records){
  if(row.disposition==='HOLD_SOURCE_ONLY')assert(existsSync(path(row.source_archive_path)),row.review_artwork_id);
 }
 assert(loader.includes('selected31-reviewed-images.v22.json'));
-assert(loader.includes('legacyRecordCount !== 873 || addedRecords !== 10 || addedImages !== 11'));
+assert(loader.includes('legacyRecordCount !== 873 || addedRecords !== 12 || addedImages !== 13'));
 assert.equal(873+10,883);
 assert.equal(472+11,483);
 console.log('V22 PASS: 31 selected, 7 existing, 11 draft candidates, 13 held; 883/478 proposal; CC BY 3.0 Sailko and CC0 SMK source hashes and exact owner Jordaens accession preserved');
