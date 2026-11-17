@@ -52,7 +52,11 @@
         "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
         "quality": "UNCROPPED_2000PX_LOCAL_WEBP__SOURCE_VERIFIED",
         "pixel_width": 1833,
-        "pixel_height": 2000
+        "pixel_height": 2000,
+        "source_note": "Source: 6599×7200 Frederiksborg Museum Photo Service reproduction uploaded to Commons on 10 Nov 2026, marked PDM. Museum offers photos free to businesses through an order workflow, but that alone does not settle terms for the exact Commons file. Separate downloadable press images prohibit storing/cropping and must not be substituted. Final source-use review pending.",
+        "license": "Public Domain Mark 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "adaptation": "Resized from 6599×7200 to 1833×2000 WebP without cropping"
       },
       "review_context": "Luminous III · Proclamation of the Kingdom"
     }
