@@ -95,7 +95,7 @@ for x in HELD:
   label=f"{rid} | {x['artist'][:21]}"
   draw.text((12,264),label,fill=(25,30,42))
   draw.text((12,288),f"Source {x['source_dimensions'][0]}x{x['source_dimensions'][1]} | thumb {pix[0]}x{pix[1]}",fill=(75,82,98))
-  draw.text((12,310),f"Gate: {x['rights_gate'][:48]}",fill=(96,58,34))
+  draw.text((12,310),f"Gate: {str(x.get('rights_gate') or 'NOT_CLEARED')[:48]}",fill=(96,58,34))
   tiles.append(tile)
   expected=sizes.get(rid);diff=round(100*abs(ratio-expected)/expected,1) if expected else None
   details.append({"review_artwork_id":rid,
