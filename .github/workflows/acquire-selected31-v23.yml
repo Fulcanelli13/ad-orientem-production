@@ -1,3 +1,4 @@
+# Retry: archival registry has nullable rights_gate; render safe display values
 name: Sacred Art V23 independent Haarlem photo and thirteen-held visual audit (one-shot draft)
 on:
   push:
