@@ -103,6 +103,6 @@ assert(existsSync(p('app-data/sacred-art/selected31-v25-source-rights-release.md
 const memo=readFileSync(p('app-data/sacred-art/selected31-v25-source-rights-release.md'),'utf8');
 assert(memo.includes('Ten-image'));
 assert(memo.includes('Nationalmuseum'));
-assert(memo.includes('Staatliche Museen zu Berlin'));
+assert(memo.includes('SMB') && memo.includes('Murillo'));
 assert(memo.includes('No new selected painting, payment'));
 console.log('V25 PASS: 10 museum/licence-backed source candidates (incl Murillo/Francken); one Bloch PDM source hold; 13 archival holds untouched, 31 selection IDs unchanged, 883/482 safe-option vs 883/483 current draft, no prayer defaults');
