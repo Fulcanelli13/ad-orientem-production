@@ -13,15 +13,20 @@
       "source_url": "https://search.smb.museum/object/obj-868725",
       "record_status": "OWNER_SELECTED_EDITORIAL_V14__NOT_PRAYER_CARD_PRIMARY",
       "owner_selected_artwork": true,
-      "rights_note": "SMB object 868725: Public Domain Mark 1.0; Commons museum file is a faithful reproduction",
+      "rights_note": "Exact Staatliche Museen zu Berlin Gemäldegalerie, Murillo The Baptism of Christ, inventory 68.2, obj:868725. Object image credited SMB / Jörg P. Anders, Public Domain Mark 1.0. Official SMB Open Science policy expressly permits commercial use, copies, alterations and redistribution of public-domain object illustrations; final jurisdiction/visual check separate.",
       "review_context": "Luminous I · Baptism in the Jordan",
       "image": {
         "src": "./gallery/images/selected31-v14-bap-murillo-2000.webp",
-        "provenance": "https://commons.wikimedia.org/wiki/File%3ABartolom%C3%A9_Esteban_Murillo_%281617_-_1682%29_-_The_Baptism_of_Christ_-_68.2_-_Gem%C3%A4ldegalerie.jpg · SMB object 868725: Public Domain Mark 1.0; Commons museum file is a faithful reproduction",
+        "provenance": "https://search.smb.museum/object/obj-868725 · Original photo Staatliche Museen zu Berlin, Gemäldegalerie / Jörg P. Anders · Public Domain Mark 1.0",
         "usage": "GALLERY_IMAGE_ONLY__PRAYER_QA_PENDING",
         "quality": "UNCROPPED_2000PX_LOCAL_WEBP__SOURCE_VERIFIED",
         "pixel_width": 1350,
-        "pixel_height": 2000
+        "pixel_height": 2000,
+        "source_note": "Museum public-domain use policy: https://www.smb.museum/en/open-science/use/ — public-domain object photos may be reused commercially. Not a separate temporary press photo.",
+        "license": "Public Domain Mark 1.0",
+        "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+        "photographer": "Jörg P. Anders / Staatliche Museen zu Berlin, Gemäldegalerie",
+        "adaptation": "Resized to 1350×2000 WebP without cropping"
       },
       "image_url_source_only": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Bartolom%C3%A9_Esteban_Murillo_%281617_-_1682%29_-_The_Baptism_of_Christ_-_68.2_-_Gem%C3%A4ldegalerie.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
       "scene_ids": [
@@ -98,5 +103,6 @@
       "publication_scope": "DRAFT_GALLERY_ONLY__NO_PRAYER_ASSIGNMENT"
     }
   ],
-  "release_gate": "V19: held V14 images (Verrocchio, Francken, Vermeyen) remain archived at app-data/sacred-art/staged-selected31-v14, excluded from public gallery"
+  "release_gate": "V19: held V14 images (Verrocchio, Francken, Vermeyen) remain archived at app-data/sacred-art/staged-selected31-v14, excluded from public gallery",
+  "v25_rights_evidence": "app-data/sacred-art/selected31-release-decision-v25.json"
 }
