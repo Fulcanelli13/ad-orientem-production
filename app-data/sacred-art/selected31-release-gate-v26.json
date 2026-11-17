@@ -1,0 +1,61 @@
+{
+  "schema": "ao.sacred-art.selected31-release-gate.v26",
+  "date": "2026-11-17",
+  "description": "Exact photo-provenance release variants, not automatic release or legal guarantee",
+  "baseline": {
+    "main_commit": "df809f2357999dfa1a2e19ede15067472a779a82",
+    "catalogue_records": 873,
+    "hosted_paintings": 472
+  },
+  "owner_selected_set": 31,
+  "production_present_count": 7,
+  "source_only_holds": 11,
+  "classed_draft_candidates": 13,
+  "strong_source_photo_evidence_count": 10,
+  "conditional_or_unresolved_count": 3,
+  "source_backed_10_ids": [
+    "bap-bordone",
+    "bap-murillo",
+    "bap-tintoretto",
+    "bap-bassano",
+    "bap-poussin",
+    "cana-master",
+    "cana-francken",
+    "cana-vermeyen",
+    "king-jordaens",
+    "euch-tiepolo"
+  ],
+  "conditional_3_ids": [
+    "king-bloch",
+    "bap-haarlem",
+    "king-bourdon"
+  ],
+  "options": {
+    "ten_strong_source_candidates": {
+      "gallery_records": 883,
+      "images": 482,
+      "includes_existing_bloch_image_patch": false,
+      "requires_owner_visual_approval": true,
+      "status": "NOT_APPROVED_NOT_MERGED"
+    },
+    "all_thirteen_draft_photos": {
+      "gallery_records": 885,
+      "images": 485,
+      "includes_existing_bloch_image_patch": true,
+      "includes_two_conditional_french_pd_art": true,
+      "requires_owner_visual_approval": true,
+      "status": "NOT_APPROVED_NOT_MERGED"
+    }
+  },
+  "conditional_caveats": {
+    "king-bloch": "Frederiksborg museum service order policy is not an unconditional grant for the exact source file; leave PDM conditional.",
+    "bap-haarlem": "Shonagon faithful original photo Commons PDM; earlier selected Commons curid 75930307 unresolved, while painting object Louvre RF 1983-25 matches. Final source-identity and cross-jurisdiction check.",
+    "king-bourdon": "Shonagon own work faithful original Louvre INV 2806 photo PDM; French copyright originality and 10.4% object ratio difference require final review; distinct auction/Chicago works excluded."
+  },
+  "no_italian_commercial_publication_without_separate_rights_exemption": true,
+  "no_authorization_to_merge": true,
+  "no_new_prayer_card_defaults": true,
+  "original_31_registry_unchanged": true,
+  "v25_rights_document": "app-data/sacred-art/selected31-release-decision-v25.json",
+  "v26_rights_document": "app-data/sacred-art/selected31-release-decision-v26.json"
+}
