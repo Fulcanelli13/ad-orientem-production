@@ -1,0 +1,60 @@
+name: Sacred Art V23 independent Haarlem photo and thirteen-held visual audit (one-shot draft)
+on:
+  push:
+    branches: [curation/selected31-gallery-reconciliation-v12]
+    paths:
+      - .github/workflows/acquire-selected31-v23.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: sacred-art-selected31-v23
+  cancel-in-progress: false
+jobs:
+  audit:
+    if: github.ref == 'refs/heads/curation/selected31-gallery-reconciliation-v12'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip install 'Pillow>=10,<13'
+      - name: Verify one exact photo source, audit all thirteen existing archival reproductions
+        run: python tools/acquire-selected31-v23-haarlem-and-visual-audit.py
+      - name: Verify exact photo SHA, existing v22 selected records, no public site changes
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          root=pathlib.Path('.')
+          d=json.loads((root/'app-data/sacred-art/staged-selected31-v23/acquisition-results.v23.json').read_text())
+          a=json.loads((root/'app-data/sacred-art/staged-selected31-v23/held-photo-audit.v23.json').read_text())
+          assert d['acquired_count']==1,d.get('failed_attempts')
+          assert d['records'][0]['photo_license']=='CC BY 3.0'
+          assert d['records'][0]['object_inventory']=='RF 1983-25'
+          assert d['records'][0]['source_sha1']=='85d22cb79366926281e7bcaa876f4290c46678d2'
+          assert d['records'][0]['source_dimensions']==[3312,2736]
+          assert a['held_count']==13
+          assert len(a['records'])==13
+          for x in d['records']:
+            for kind in ('source','derivative'):
+              b=(root/x[kind+'_path']).read_bytes()
+              assert hashlib.sha256(b).hexdigest()==x[kind+'_sha256']
+              assert len(b)==x[kind+'_bytes']
+          for r in a['records']:
+            assert r['gallery_status']=='HELD__NO_PUBLICATION_AUTHORIZED'
+            assert hashlib.sha256((root/r['photo_archive']).read_bytes()).hexdigest()==r['photo_sha256']
+          assert hashlib.sha256((root/a['source_contact_sheet']).read_bytes()).hexdigest()==a['contact_sheet_sha256']
+          print('V23 verified all source/derivative/image-contact-sheet hashes; zero public images added')
+          PY
+          node tests/sacred-art-selected31-v22.mjs
+          node tests/prayer-artwork-activation.mjs
+          node tests/sacred-art-gallery.mjs
+      - name: Commit V23 archive and contact sheet only (never site/)
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add app-data/sacred-art/staged-selected31-v23/
+          git diff --cached --quiet || git commit -m 'Sacred Art V23: verify own-photo Haarlem CC BY original and 13-held source comparison sheet'
+          git push origin HEAD:curation/selected31-gallery-reconciliation-v12
