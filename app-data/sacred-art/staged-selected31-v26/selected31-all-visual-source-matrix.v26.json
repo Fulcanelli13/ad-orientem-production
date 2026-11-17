@@ -1,0 +1,762 @@
+{
+  "schema": "ao.sacred-art.selected31-all-visual-source-matrix.v26",
+  "review_date": "2026-11-17",
+  "source_registry": "app-data/sacred-art/selected31-clearance-v26.json",
+  "policy": "Research-only derivatives of exact owner-selected files. All 31 artworks remain represented; no changes to live catalogue, selection, public site or prayer assignments.",
+  "category_counts": {
+    "CURRENT_MAIN_PRESERVE": 7,
+    "DRAFT_GALLERY_ELIGIBLE": 13,
+    "HOLD_SOURCE_ONLY": 11
+  },
+  "total": 31,
+  "contact_sheets": {
+    "all_31": {
+      "path": "app-data/sacred-art/staged-selected31-v26/selected31-all-review-matrix.v26.webp",
+      "sha256": "f978048ea8ef91519e056a140b579f79a466bfe5ff86a148593ade73412ddb2d",
+      "bytes": 468460,
+      "dimensions": [
+        1520,
+        2544
+      ],
+      "count": 31
+    },
+    "draft_13": {
+      "path": "app-data/sacred-art/staged-selected31-v26/selected31-thirteen-draft-contact-sheet.v26.webp",
+      "sha256": "6099ff2e09b78ba9a62dc6dafde0d094b3d60dcce03e28a2ceba0925fdedd80e",
+      "bytes": 193804,
+      "dimensions": [
+        1520,
+        1272
+      ],
+      "count": 13
+    },
+    "conditional_3": {
+      "path": "app-data/sacred-art/staged-selected31-v26/selected31-three-conditional-contact-sheet.v26.webp",
+      "sha256": "c46b8d3e56da15dfb83636016bd51430f68f1be861960758bd7760ef74ae9860",
+      "bytes": 51236,
+      "dimensions": [
+        1140,
+        318
+      ],
+      "count": 3
+    }
+  },
+  "rows": [
+    {
+      "review_artwork_id": "bap-bordone",
+      "title": "The Baptism of Christ",
+      "artist": "Paris Bordone",
+      "destination": "lum1",
+      "disposition": "DRAFT_GALLERY_ELIGIBLE",
+      "source_lane": "DRAFT_GALLERY",
+      "photograph_path": "site/gallery/images/selected31-bap-bordone-2000.webp",
+      "source_sha256": "c71651ff325e4498ce29aac36e24eea2e165a1f0508a52ec25f413ef539a60d7",
+      "pixel_dimensions": [
+        2000,
+        1973
+      ],
+      "source_rights_gate": null,
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        61.6,
+        50.8,
+        40.2
+      ]
+    },
+    {
+      "review_artwork_id": "bap-haarlem",
+      "title": "The Baptism of Christ",
+      "artist": "Cornelis van Haarlem",
+      "destination": "lum1",
+      "disposition": "DRAFT_GALLERY_ELIGIBLE",
+      "source_lane": "DRAFT_GALLERY",
+      "photograph_path": "site/gallery/images/selected31-v26-bap-haarlem-2000.webp",
+      "source_sha256": "a7101dbd4ff6899ac48b594485dc2ebf0dbae95c20adf56a029a5e4ae1589d5b",
+      "pixel_dimensions": [
+        2000,
+        1652
+      ],
+      "source_rights_gate": "FAITHFUL_2D_REPRO__FRANCE_US_PD_ART__MIXED_JURISDICTION__ORIGINAL_SELECTED_CURID_UNKNOWN",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        60.1,
+        52.1,
+        42.6
+      ]
+    },
+    {
+      "review_artwork_id": "bap-murillo",
+      "title": "The Baptism of Christ",
+      "artist": "Bartolomé Esteban Murillo",
+      "destination": "lum1",
+      "disposition": "DRAFT_GALLERY_ELIGIBLE",
+      "source_lane": "DRAFT_GALLERY",
+      "photograph_path": "site/gallery/images/selected31-v14-bap-murillo-2000.webp",
+      "source_sha256": "abd3569cb9b0e69e36910f989c91690b010a168f7aa5f3dee297a2791fbab866",
+      "pixel_dimensions": [
+        1350,
+        2000
+      ],
+      "source_rights_gate": null,
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        65.9,
+        61.2,
+        45.2
+      ]
+    },
+    {
+      "review_artwork_id": "bap-tintoretto",
+      "title": "Baptism of Christ",
+      "artist": "Workshop of Jacopo Tintoretto",
+      "destination": "lum1",
+      "disposition": "DRAFT_GALLERY_ELIGIBLE",
+      "source_lane": "DRAFT_GALLERY",
+      "photograph_path": "site/gallery/images/selected31-bap-tintoretto-2000.webp",
+      "source_sha256": "136c2663a9f3de91e062c11b156383e2a98d269d49f5cda6344c6fbf7969c4e9",
+      "pixel_dimensions": [
+        2000,
+        1325
+      ],
+      "source_rights_gate": null,
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        34.0,
+        34.1,
+        32.8
+      ]
+    },
+    {
+      "review_artwork_id": "bap-bassano",
+      "title": "The Baptism of Christ",
+      "artist": "Jacopo Bassano",
+      "destination": "lum1",
+      "disposition": "DRAFT_GALLERY_ELIGIBLE",
+      "source_lane": "DRAFT_GALLERY",
+      "photograph_path": "site/gallery/images/selected31-bap-bassano-2000.webp",
+      "source_sha256": "13167014471e1b668853f0886066dd7ee4aa0ca58a5cf46d4027aced55122814",
+      "pixel_dimensions": [
+        1630,
+        2000
+      ],
+      "source_rights_gate": null,
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        26.3,
+        18.8,
+        14.4
+      ]
+    },
+    {
+      "review_artwork_id": "bap-poussin",
+      "title": "The Baptism of Christ",
+      "artist": "Nicolas Poussin",
+      "destination": "lum1",
+      "disposition": "DRAFT_GALLERY_ELIGIBLE",
+      "source_lane": "DRAFT_GALLERY",
+      "photograph_path": "site/gallery/images/selected31-bap-poussin-2000.webp",
+      "source_sha256": "4692b76ac9ef3e41fa7c2a0406e4c0c25ea3c3ddbeeee2cd9655f0f84678030b",
+      "pixel_dimensions": [
+        2000,
+        1574
+      ],
+      "source_rights_gate": null,
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        34.9,
+        44.1,
+        55.3
+      ]
+    },
+    {
+      "review_artwork_id": "bap-verrocchio",
+      "title": "The Baptism of Christ",
+      "artist": "Andrea del Verrocchio and Leonardo da Vinci",
+      "destination": "lum1",
+      "disposition": "HOLD_SOURCE_ONLY",
+      "source_lane": "RESEARCH_ARCHIVE",
+      "photograph_path": "app-data/sacred-art/staged-selected31-v14/bap-verrocchio-2000.webp",
+      "source_sha256": "29beda69bf66c1a6ba06af62e6f5572070653a97b503755fefab6aca903c768a",
+      "pixel_dimensions": [
+        1702,
+        2000
+      ],
+      "source_rights_gate": null,
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        47.3,
+        48.4,
+        54.4
+      ]
+    },
+    {
+      "review_artwork_id": "cana-master",
+      "title": "The Marriage at Cana",
+      "artist": "Master of the Catholic Kings",
+      "destination": "lum2",
+      "disposition": "DRAFT_GALLERY_ELIGIBLE",
+      "source_lane": "DRAFT_GALLERY",
+      "photograph_path": "site/gallery/images/selected31-cana-master-2000.webp",
+      "source_sha256": "819fd6c07422f3546762c9a2fedfadffae1bd769c3708b511cc9477b88cf3ffc",
+      "pixel_dimensions": [
+        1180,
+        2000
+      ],
+      "source_rights_gate": null,
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        47.4,
+        45.0,
+        37.2
+      ]
+    },
+    {
+      "review_artwork_id": "cana-francken",
+      "title": "The Wedding at Cana",
+      "artist": "Frans Francken the Younger",
+      "destination": "lum2",
+      "disposition": "DRAFT_GALLERY_ELIGIBLE",
+      "source_lane": "DRAFT_GALLERY",
+      "photograph_path": "site/gallery/images/selected31-v21-cana-francken-1920.webp",
+      "source_sha256": "3ba944cef62c517b87cb94e194f0dad3b9112879127a8eed9af2c7efef6c49d6",
+      "pixel_dimensions": [
+        1920,
+        919
+      ],
+      "source_rights_gate": "EXACT_NATIONALMUSEUM_PHOTOGRAPH_PDM__GALLERY_ONLY",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        38.5,
+        33.5,
+        26.0
+      ]
+    },
+    {
+      "review_artwork_id": "cana-vermeyen",
+      "title": "The Marriage at Cana",
+      "artist": "Jan Cornelisz Vermeyen",
+      "destination": "lum2",
+      "disposition": "DRAFT_GALLERY_ELIGIBLE",
+      "source_lane": "DRAFT_GALLERY",
+      "photograph_path": "site/gallery/images/selected31-v20-cana-vermeyen-2000.webp",
+      "source_sha256": "9ddf56c6dbdcd520fc58f8c4a321f2e362420f9b6130a7f2c36477c15825af02",
+      "pixel_dimensions": [
+        2000,
+        1566
+      ],
+      "source_rights_gate": "RIJKSMUSEUM_OFFICIAL_IIIF_PUBLIC_DOMAIN__GALLERY_ONLY",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        35.8,
+        22.7,
+        14.4
+      ]
+    },
+    {
+      "review_artwork_id": "cana-tintoretto",
+      "title": "The Wedding at Cana",
+      "artist": "Jacopo Tintoretto",
+      "destination": "lum2",
+      "disposition": "HOLD_SOURCE_ONLY",
+      "source_lane": "RESEARCH_ARCHIVE",
+      "photograph_path": "app-data/sacred-art/staged-selected31-v18/cana-tintoretto-2000.webp",
+      "source_sha256": "34726583135037ac865b3f36f6569aab59e1ee9d1b99beff62a8358e13de0d5c",
+      "pixel_dimensions": [
+        2000,
+        1452
+      ],
+      "source_rights_gate": "SOURCE_ONLY__VENICE_INSTITUTIONAL_REUSE_REVIEW",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        29.9,
+        28.1,
+        25.2
+      ]
+    },
+    {
+      "review_artwork_id": "king-bloch",
+      "title": "The Sermon on the Mount",
+      "artist": "Carl Bloch",
+      "destination": "lum3",
+      "disposition": "DRAFT_GALLERY_ELIGIBLE",
+      "source_lane": "DRAFT_GALLERY",
+      "photograph_path": "site/gallery/images/selected31-v14-king-bloch-2000.webp",
+      "source_sha256": "606dfcd8778a903de45a74454ca3b49b3d506c644bebe23bc8ffa8774828f740",
+      "pixel_dimensions": [
+        1833,
+        2000
+      ],
+      "source_rights_gate": null,
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        68.4,
+        71.0,
+        72.6
+      ]
+    },
+    {
+      "review_artwork_id": "king-bourdon",
+      "title": "Christ Blessing the Children",
+      "artist": "Sébastien Bourdon",
+      "destination": "lum3",
+      "disposition": "DRAFT_GALLERY_ELIGIBLE",
+      "source_lane": "DRAFT_GALLERY",
+      "photograph_path": "site/gallery/images/selected31-v26-king-bourdon-2000.webp",
+      "source_sha256": "5249af757bfb1365fb69d610085723ba92c471f79c373b07f62b2fa1588cf59b",
+      "pixel_dimensions": [
+        2000,
+        1485
+      ],
+      "source_rights_gate": "FAITHFUL_2D_REPRO__FRANCE_US_PD_ART__MIXED_JURISDICTION__AUTHOR_OWN_CAMERA_SOURCE",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        34.6,
+        29.1,
+        24.8
+      ]
+    },
+    {
+      "review_artwork_id": "king-jordaens",
+      "title": "Christ Blessing the Children",
+      "artist": "Jacob Jordaens",
+      "destination": "lum3",
+      "disposition": "DRAFT_GALLERY_ELIGIBLE",
+      "source_lane": "DRAFT_GALLERY",
+      "photograph_path": "site/gallery/images/selected31-v22-king-jordaens-2000.webp",
+      "source_sha256": "2bad7937952f051a1ce6a9b6e2ca238ba84c25b019a12bb8b566e1369fe9756d",
+      "pixel_dimensions": [
+        2000,
+        1830
+      ],
+      "source_rights_gate": "SMK_CC0_1__EXACT_OWNER_SELECTED_ACCESSION_KMSSP234",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        27.0,
+        20.9,
+        15.4
+      ]
+    },
+    {
+      "review_artwork_id": "trans-raphael",
+      "title": "The Transfiguration",
+      "artist": "Raphael",
+      "destination": "lum4",
+      "disposition": "CURRENT_MAIN_PRESERVE",
+      "source_lane": "GALLERY_EXISTING",
+      "photograph_path": "site/gallery/images/raphael-transfiguration-class-i-original.jpg",
+      "source_sha256": "1f61791a23d3ba16f25e953f7d17c0a7e1c2fdf967b26f041bee546ebf22601a",
+      "pixel_dimensions": [
+        3737,
+        5691
+      ],
+      "source_rights_gate": "MAIN_EXISTING_CALENDAR_RELEASE__COMMONS_PD_ART_JURISDICTIONAL_CAVEAT",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": false,
+      "image_contrast_stddev_rgb": [
+        61.3,
+        52.8,
+        24.9
+      ]
+    },
+    {
+      "review_artwork_id": "trans-bellini",
+      "title": "The Transfiguration of Christ",
+      "artist": "Giovanni Bellini",
+      "destination": "lum4",
+      "disposition": "HOLD_SOURCE_ONLY",
+      "source_lane": "RESEARCH_ARCHIVE",
+      "photograph_path": "app-data/sacred-art/staged-selected31-v15/trans_bellini-2000.webp",
+      "source_sha256": "822bdc601ae846b92e40ba95b2ca913f53762bacb07c13355c6da0af2630726b",
+      "pixel_dimensions": [
+        2000,
+        1603
+      ],
+      "source_rights_gate": "PHOTOGRAPH_LICENSE_CONFIRMED__HERITAGE_POLICY_REVIEW",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        32.5,
+        29.4,
+        23.9
+      ]
+    },
+    {
+      "review_artwork_id": "trans-rubens",
+      "title": "The Transfiguration",
+      "artist": "Peter Paul Rubens",
+      "destination": "lum4",
+      "disposition": "CURRENT_MAIN_PRESERVE",
+      "source_lane": "GALLERY_EXISTING",
+      "photograph_path": "site/gallery/images/owner-approved-20261103-379.webp",
+      "source_sha256": "83fc6b2626c584798e48627881af513375ed5f96fff5269a1fbe0bc8f452c706",
+      "pixel_dimensions": [
+        1600,
+        944
+      ],
+      "source_rights_gate": "MAIN_RELEASED__EXACT_COMMONS_SHA1_MATCH__NO_NEW_RIGHTS_ASSERTION",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": false,
+      "image_contrast_stddev_rgb": [
+        47.2,
+        43.1,
+        38.2
+      ]
+    },
+    {
+      "review_artwork_id": "trans-savoldo",
+      "title": "The Transfiguration of Christ",
+      "artist": "Giovanni Gerolamo Savoldo",
+      "destination": "lum4",
+      "disposition": "HOLD_SOURCE_ONLY",
+      "source_lane": "RESEARCH_ARCHIVE",
+      "photograph_path": "app-data/sacred-art/staged-selected31-v18/trans-savoldo-2000.webp",
+      "source_sha256": "c98ace8edb8a097c11fe42f15b1e0395206d97a53475a7ac1a81230c276cdfdd",
+      "pixel_dimensions": [
+        1830,
+        2000
+      ],
+      "source_rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        61.4,
+        55.2,
+        57.4
+      ]
+    },
+    {
+      "review_artwork_id": "trans-carracci",
+      "title": "The Transfiguration",
+      "artist": "Ludovico Carracci",
+      "destination": "lum4",
+      "disposition": "HOLD_SOURCE_ONLY",
+      "source_lane": "RESEARCH_ARCHIVE",
+      "photograph_path": "app-data/sacred-art/staged-selected31-v18/trans-carracci-2000.webp",
+      "source_sha256": "3530c89d9ef54a656b9e734a9be490a7b6036bcc6cfeb5542c2665531a2e0935",
+      "pixel_dimensions": [
+        1294,
+        2000
+      ],
+      "source_rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        54.5,
+        52.7,
+        52.1
+      ]
+    },
+    {
+      "review_artwork_id": "euch-rubens",
+      "title": "The Last Supper",
+      "artist": "Peter Paul Rubens",
+      "destination": "lum5",
+      "disposition": "HOLD_SOURCE_ONLY",
+      "source_lane": "RESEARCH_ARCHIVE",
+      "photograph_path": "app-data/sacred-art/staged-selected31-v17/euch-rubens-2000.webp",
+      "source_sha256": "71d26a8445f3ac312e7ac0690304b301bf7b2ffda4df1a3f251277534b7505a0",
+      "pixel_dimensions": [
+        1644,
+        2000
+      ],
+      "source_rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        73.3,
+        66.2,
+        47.8
+      ]
+    },
+    {
+      "review_artwork_id": "euch-champaigne",
+      "title": "The Last Supper",
+      "artist": "Philippe de Champaigne",
+      "destination": "lum5",
+      "disposition": "HOLD_SOURCE_ONLY",
+      "source_lane": "RESEARCH_ARCHIVE",
+      "photograph_path": "app-data/sacred-art/staged-selected31-v15/euch_champaigne-2000.webp",
+      "source_sha256": "e57c4669f2bfecf7ba68ab2761d94a0923fcccb34606861cb14707e33a15dff6",
+      "pixel_dimensions": [
+        2000,
+        1500
+      ],
+      "source_rights_gate": "INDEPENDENT_TANGOPASO_PD_SELF__COMPOSITION_DEFECT_HOLD",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        49.2,
+        38.9,
+        36.4
+      ]
+    },
+    {
+      "review_artwork_id": "euch-bassano",
+      "title": "The Last Supper",
+      "artist": "Jacopo Bassano",
+      "destination": "lum5",
+      "disposition": "HOLD_SOURCE_ONLY",
+      "source_lane": "RESEARCH_ARCHIVE",
+      "photograph_path": "app-data/sacred-art/staged-selected31-v17/euch-bassano-2000.webp",
+      "source_sha256": "71bc0be6e3d58d82dfc283a3881b5bb5a6dfcfb2b6cea51f577e4e94bae3fa04",
+      "pixel_dimensions": [
+        2000,
+        1196
+      ],
+      "source_rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        59.0,
+        46.7,
+        28.0
+      ]
+    },
+    {
+      "review_artwork_id": "euch-poussin",
+      "title": "The Sacrament of the Holy Eucharist",
+      "artist": "Nicolas Poussin",
+      "destination": "lum5",
+      "disposition": "HOLD_SOURCE_ONLY",
+      "source_lane": "RESEARCH_ARCHIVE",
+      "photograph_path": "app-data/sacred-art/staged-selected31-v18/euch-poussin-2000.webp",
+      "source_sha256": "bd639f6f0e02ede6f935a03aa29d064907a51f1d934f52e21c64a350f75b1c5c",
+      "pixel_dimensions": [
+        1359,
+        900
+      ],
+      "source_rights_gate": "SOURCE_ONLY__NGS_IMAGE_REUSE_HOLD__PREVIEW_RESOLUTION",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        16.2,
+        8.7,
+        6.1
+      ]
+    },
+    {
+      "review_artwork_id": "euch-leonardo",
+      "title": "The Last Supper",
+      "artist": "Leonardo da Vinci",
+      "destination": "lum5",
+      "disposition": "HOLD_SOURCE_ONLY",
+      "source_lane": "RESEARCH_ARCHIVE",
+      "photograph_path": "app-data/sacred-art/staged-selected31-v18/euch-leonardo-2000.webp",
+      "source_sha256": "325645454b852d1fc7254d46a5b85ae245279b51edc40d8fc1692405fa137589",
+      "pixel_dimensions": [
+        2000,
+        1127
+      ],
+      "source_rights_gate": "SOURCE_ONLY__ITALIAN_HERITAGE_AND_GALLERY_PHOTO_QUALITY_REVIEW",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        60.0,
+        53.2,
+        39.2
+      ]
+    },
+    {
+      "review_artwork_id": "euch-tiepolo",
+      "title": "The Last Supper",
+      "artist": "Giovanni Battista Tiepolo",
+      "destination": "lum5",
+      "disposition": "DRAFT_GALLERY_ELIGIBLE",
+      "source_lane": "DRAFT_GALLERY",
+      "photograph_path": "site/gallery/images/selected31-v22-euch-tiepolo-2000.webp",
+      "source_sha256": "60cc2b9e071c7ddc943983aaa1c9afa000f251a97ba93af6774190ad7769a85e",
+      "pixel_dimensions": [
+        2000,
+        1722
+      ],
+      "source_rights_gate": "INDEPENDENT_PHOTO_CC_BY_3_WITH_ATTRIBUTION__GALLERY_ONLY",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        58.6,
+        56.7,
+        52.1
+      ]
+    },
+    {
+      "review_artwork_id": "tri-rubens",
+      "title": "The Holy Trinity",
+      "artist": "Peter Paul Rubens",
+      "destination": "lor-trinity",
+      "disposition": "CURRENT_MAIN_PRESERVE",
+      "source_lane": "GALLERY_EXISTING",
+      "photograph_path": "site/gallery/images/rubens-holy-trinity-2000.webp",
+      "source_sha256": "904372f5f2828f0e182ad2ca086bfbb69219fef9a23b1080e45d7ad237eb131b",
+      "pixel_dimensions": [
+        1945,
+        2000
+      ],
+      "source_rights_gate": null,
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": false,
+      "image_contrast_stddev_rgb": [
+        33.5,
+        32.6,
+        29.5
+      ]
+    },
+    {
+      "review_artwork_id": "tri-dolci",
+      "title": "The Trinity in Glory",
+      "artist": "Carlo Dolci",
+      "destination": "lor-trinity",
+      "disposition": "HOLD_SOURCE_ONLY",
+      "source_lane": "RESEARCH_ARCHIVE",
+      "photograph_path": "app-data/sacred-art/staged-selected31-v15/tri_dolci-2000.webp",
+      "source_sha256": "fa1392f604321bcd922060fd63616c7edbddf0c157f109a544b5aa6c2740ffb4",
+      "pixel_dimensions": [
+        877,
+        1024
+      ],
+      "source_rights_gate": "CC0_RECORD_CONFIRMED",
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": true,
+      "image_contrast_stddev_rgb": [
+        40.7,
+        36.2,
+        30.8
+      ]
+    },
+    {
+      "review_artwork_id": "tri-campeche",
+      "title": "The Trinity",
+      "artist": "José Campeche",
+      "destination": "lor-trinity",
+      "disposition": "CURRENT_MAIN_PRESERVE",
+      "source_lane": "GALLERY_EXISTING",
+      "photograph_path": "site/gallery/images/campeche-trinity-met-917618-2000.webp",
+      "source_sha256": "8da6cd85b56fc950544142010e3d1d8030362663d56dbff445f6cf8c6622a1e0",
+      "pixel_dimensions": [
+        1350,
+        2000
+      ],
+      "source_rights_gate": null,
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": false,
+      "image_contrast_stddev_rgb": [
+        48.0,
+        38.4,
+        30.8
+      ]
+    },
+    {
+      "review_artwork_id": "tri-girardin",
+      "title": "The Trinity",
+      "artist": "Laurent Girardin",
+      "destination": "lor-trinity",
+      "disposition": "CURRENT_MAIN_PRESERVE",
+      "source_lane": "GALLERY_EXISTING",
+      "photograph_path": "site/gallery/images/girardin-trinity-cma-1960-79-2000.webp",
+      "source_sha256": "0e415168be1abfebee71f271ea9c3ea4767fde8a8f47e3022b4f748aa8f7f418",
+      "pixel_dimensions": [
+        1665,
+        2000
+      ],
+      "source_rights_gate": null,
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": false,
+      "image_contrast_stddev_rgb": [
+        34.4,
+        36.8,
+        39.2
+      ]
+    },
+    {
+      "review_artwork_id": "tri-balen",
+      "title": "The Trinity",
+      "artist": "Hendrik van Balen",
+      "destination": "lor-trinity",
+      "disposition": "CURRENT_MAIN_PRESERVE",
+      "source_lane": "GALLERY_EXISTING",
+      "photograph_path": "site/gallery/images/van-balen-trinity-cma-1996-26-2000.webp",
+      "source_sha256": "80db57b0b50fc5e3105aaa50bce6003327d183d3fdabf3bdbec796c8d4fb05d5",
+      "pixel_dimensions": [
+        1600,
+        2000
+      ],
+      "source_rights_gate": null,
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": false,
+      "image_contrast_stddev_rgb": [
+        56.0,
+        50.7,
+        45.2
+      ]
+    },
+    {
+      "review_artwork_id": "lamb-vaneyck",
+      "title": "Adoration of the Mystic Lamb (central panel)",
+      "artist": "Hubert and Jan van Eyck",
+      "destination": "lor-lamb",
+      "disposition": "CURRENT_MAIN_PRESERVE",
+      "source_lane": "GALLERY_EXISTING",
+      "photograph_path": "site/gallery/images/van-eyck-mystic-lamb-exact-released.webp",
+      "source_sha256": "16b5803b9bd1945c065a848a345ef84c6771c88b57e1cb664af267dc2226fe8a",
+      "pixel_dimensions": [
+        2725,
+        1577
+      ],
+      "source_rights_gate": null,
+      "selection_original_unchanged": true,
+      "approved_prayer_card_default": false,
+      "needs_human_aesthetic_review": false,
+      "image_contrast_stddev_rgb": [
+        40.4,
+        41.0,
+        40.3
+      ]
+    }
+  ],
+  "no_gallery_publication": true,
+  "no_new_photo_acquisition": true,
+  "no_cinematic_approval": true
+}
