@@ -71,7 +71,7 @@ for (const p of [...v13.provenance,...v14.provenance]) {
  assert(existsSync(file(p.source_archive)));
  assert.equal(sha(p.source_archive),p.source_sha256);
 }
-assert(js.includes('legacyRecordCount !== 873 || addedRecords !== 10 || addedImages !== 11'));
+assert(js.includes('legacyRecordCount !== 873 || addedRecords !== 12 || addedImages !== 13'));
 assert(js.includes('selected31-reviewed-images.v13.json'));
 assert(js.includes('selected31-reviewed-images.v14.json'));
 assert.equal(873+visible.length,879);
