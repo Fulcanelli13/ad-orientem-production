@@ -1,3 +1,4 @@
+# Rerun: v13/v14 historical image paths resolved from the permanent overlay provenance
 name: Sacred Art V24 all 31 owner-selected image-matrix QA (temporary, research-only)
 on:
   push:
