@@ -22,8 +22,17 @@ def choose(row):
     r=provenance.get(row["review_artwork_id"])
     assert r is not None,row["review_artwork_id"]
     return r["derivative_path"],"RESEARCH_ARCHIVE"
-  assert row["gallery_image_file"],row["review_artwork_id"]
-  return row["gallery_image_file"],"GALLERY_EXISTING" if row["disposition"]=="CURRENT_MAIN_PRESERVE" else "DRAFT_GALLERY"
+  rel=row.get("gallery_image_file") or gallery_paths.get(row["review_artwork_id"])
+  assert rel,row["review_artwork_id"]
+  return rel,"GALLERY_EXISTING" if row["disposition"]=="CURRENT_MAIN_PRESERVE" else "DRAFT_GALLERY"
+# Some V13/V14 selected review rows have no redundant photo path in the clearance file.
+# The definitive additive image/provenance overlay contains those links.
+gallery_paths={}
+for overlay in sorted((ROOT/"site/gallery").glob("selected31-reviewed-images.v*.json")):
+  o=json.loads(overlay.read_text())
+  for rec in o.get("provenance",[]):
+    if rec.get("review_artwork_id") and rec.get("gallery_file"):
+      gallery_paths[rec["review_artwork_id"]]=rec["gallery_file"]
 rows=[];images=[]
 for selected in REG["records"]:
   ident=selected["review_artwork_id"]
