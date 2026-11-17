@@ -1,0 +1,51 @@
+name: Sacred Art V26 31 source and conditional photo matrix (temporary draft research)
+on:
+  push:
+    branches: [curation/selected31-gallery-reconciliation-v12]
+    paths:
+      - .github/workflows/sacred-art-v26-matrix.yml
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  matrix:
+    if: github.ref == 'refs/heads/curation/selected31-gallery-reconciliation-v12'
+    runs-on: ubuntu-latest
+    timeout-minutes: 22
+    steps:
+      - uses: actions/checkout@v4
+        with: {persist-credentials: true}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: python -m pip install 'Pillow>=10,<13'
+      - name: Build three real-image source comparison sheets for 31 original owner selections
+        run: python tools/build-selected31-v26-source-matrix.py
+      - name: Verify image SHA-256s, staging only and exact 7/13/11 selections
+        run: |
+          python - <<'PY'
+          import hashlib,json,pathlib
+          root=pathlib.Path('.')
+          j=json.loads((root/'app-data/sacred-art/staged-selected31-v26/selected31-all-visual-source-matrix.v26.json').read_text())
+          assert j['schema']=='ao.sacred-art.selected31-all-visual-source-matrix.v26'
+          assert j['total']==31
+          assert j['category_counts']=={'CURRENT_MAIN_PRESERVE':7,'DRAFT_GALLERY_ELIGIBLE':13,'HOLD_SOURCE_ONLY':11}
+          assert len(j['rows'])==31
+          assert len({x['review_artwork_id'] for x in j['rows']})==31
+          for row in j['rows']:
+            assert hashlib.sha256((root/row['photograph_path']).read_bytes()).hexdigest()==row['source_sha256']
+            assert row['approved_prayer_card_default'] is False
+          assert set(j['contact_sheets'])=={'all_31','draft_13','conditional_3'}
+          assert [j['contact_sheets'][k]['count'] for k in ('all_31','draft_13','conditional_3')]==[31,13,3]
+          for x in j['contact_sheets'].values():
+            assert hashlib.sha256((root/x['path']).read_bytes()).hexdigest()==x['sha256']
+          assert j['no_gallery_publication'] is True and j['no_cinematic_approval'] is True
+          print('V26 research sheets source hashes verified for 31 / 13 / 3 actual owner-selected images')
+          PY
+          node tests/sacred-art-selected31-v26.mjs
+      - name: Commit only app-data research sheets; never site/prayer registry
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add app-data/sacred-art/staged-selected31-v26/
+          git diff --cached --quiet || git commit -m 'Sacred Art V26: archive all 31 exact image comparisons and three conditional PDM photo sheet'
+          git push origin HEAD:curation/selected31-gallery-reconciliation-v12
