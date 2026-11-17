@@ -101,7 +101,7 @@ assert.equal(o14.image_patches.length,1);
 assert.equal(o21.records.length,1);
 assert(existsSync(p('app-data/sacred-art/selected31-v25-source-rights-release.md')));
 const memo=readFileSync(p('app-data/sacred-art/selected31-v25-source-rights-release.md'),'utf8');
-assert(memo.includes('10-image'));
+assert(memo.includes('Ten-image'));
 assert(memo.includes('Nationalmuseum'));
 assert(memo.includes('Staatliche Museen zu Berlin'));
 assert(memo.includes('No new selected painting, payment'));
