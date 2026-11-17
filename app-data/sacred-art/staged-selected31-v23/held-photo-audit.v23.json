@@ -29,7 +29,11 @@
       "uniformity_corners": 34.8,
       "image_stddev_sample": 55.1,
       "needs_human_composition_review": true,
-      "museum_page": "https://commons.wikimedia.org/?curid=75930307"
+      "museum_page": "https://commons.wikimedia.org/?curid=75930307",
+      "museum_canvas_width_cm": 206,
+      "museum_canvas_height_cm": 170,
+      "measurement_source": "https://collections.louvre.fr/ark:/53355/cl010064767",
+      "measurement_quality": "LOUVRE_OBJECT_PRIMARY"
     },
     {
       "review_artwork_id": "bap-verrocchio",
@@ -45,14 +49,18 @@
         2000
       ],
       "image_aspect_ratio": 0.851,
-      "verified_object_physical_aspect_ratio": null,
-      "photo_to_object_aspect_deviation_percent": null,
+      "verified_object_physical_aspect_ratio": 0.8531,
+      "photo_to_object_aspect_deviation_percent": 0.2,
       "composition_warning": "NO_AUTOMATIC_COMPOSITION_CONCLUSION",
       "rights_lane": null,
       "uniformity_corners": 33.8,
       "image_stddev_sample": 54.1,
       "needs_human_composition_review": true,
-      "museum_page": "https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ"
+      "museum_page": "https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ",
+      "museum_canvas_width_cm": 151,
+      "museum_canvas_height_cm": 177,
+      "measurement_source": "https://www.uffizi.it/en/artworks/verrocchio-leonardo-baptism-of-christ",
+      "measurement_quality": "UFFIZI_OBJECT_PRIMARY"
     },
     {
       "review_artwork_id": "cana-tintoretto",
@@ -68,14 +76,18 @@
         1452
       ],
       "image_aspect_ratio": 1.3774,
-      "verified_object_physical_aspect_ratio": null,
-      "photo_to_object_aspect_deviation_percent": null,
-      "composition_warning": "NO_AUTOMATIC_COMPOSITION_CONCLUSION",
+      "verified_object_physical_aspect_ratio": 1.2299,
+      "photo_to_object_aspect_deviation_percent": 12,
+      "composition_warning": "GEOMETRY_MISMATCH__FRAME_OR_CROP_REVIEW",
       "rights_lane": "SOURCE_ONLY__VENICE_INSTITUTIONAL_REUSE_REVIEW",
       "uniformity_corners": 44.5,
       "image_stddev_sample": 31.7,
       "needs_human_composition_review": true,
-      "museum_page": "https://basilicasalutevenezia.it/sezione-tintoretto/"
+      "museum_page": "https://basilicasalutevenezia.it/sezione-tintoretto/",
+      "museum_canvas_width_cm": 535,
+      "museum_canvas_height_cm": 435,
+      "measurement_source": "https://www.wga.hu/html/t/tintoret/3_1560s/2cana.html",
+      "measurement_quality": "WGA_SECONDARY__ARCHED_TOP_RESTORED"
     },
     {
       "review_artwork_id": "king-bourdon",
@@ -98,7 +110,11 @@
       "uniformity_corners": 8.4,
       "image_stddev_sample": 33.2,
       "needs_human_composition_review": true,
-      "museum_page": "https://collections.louvre.fr/en/ark:/53355/cl010059179"
+      "museum_page": "https://collections.louvre.fr/en/ark:/53355/cl010059179",
+      "museum_canvas_width_cm": 61,
+      "museum_canvas_height_cm": 50,
+      "measurement_source": "https://collections.louvre.fr/en/ark:/53355/cl010059179",
+      "measurement_quality": "LOUVRE_OBJECT_PRIMARY"
     },
     {
       "review_artwork_id": "trans-bellini",
@@ -114,14 +130,18 @@
         1603
       ],
       "image_aspect_ratio": 1.2477,
-      "verified_object_physical_aspect_ratio": null,
-      "photo_to_object_aspect_deviation_percent": null,
+      "verified_object_physical_aspect_ratio": 1.3391,
+      "photo_to_object_aspect_deviation_percent": 6.8,
       "composition_warning": "NO_AUTOMATIC_COMPOSITION_CONCLUSION",
       "rights_lane": "PHOTOGRAPH_LICENSE_CONFIRMED__HERITAGE_POLICY_REVIEW",
       "uniformity_corners": 20.7,
       "image_stddev_sample": 32.7,
       "needs_human_composition_review": true,
-      "museum_page": "https://capodimonte.cultura.gov.it/restaurata-la-trasfigurazione-di-bellini-capolavoro-del-maestro-veneziano/"
+      "museum_page": "https://capodimonte.cultura.gov.it/restaurata-la-trasfigurazione-di-bellini-capolavoro-del-maestro-veneziano/",
+      "museum_canvas_width_cm": 154,
+      "museum_canvas_height_cm": 115,
+      "measurement_source": "https://capodimonte.cultura.gov.it/il-restauro-della-trasfigurazione-di-giovanni-bellini-tavole-a-confronto/",
+      "measurement_quality": "CAPODIMONTE_MUSEUM_PRIMARY"
     },
     {
       "review_artwork_id": "trans-savoldo",
@@ -137,14 +157,18 @@
         2000
       ],
       "image_aspect_ratio": 0.915,
-      "verified_object_physical_aspect_ratio": null,
-      "photo_to_object_aspect_deviation_percent": null,
+      "verified_object_physical_aspect_ratio": 0.9065,
+      "photo_to_object_aspect_deviation_percent": 0.9,
       "composition_warning": "NO_AUTOMATIC_COMPOSITION_CONCLUSION",
       "rights_lane": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
       "uniformity_corners": 26.8,
       "image_stddev_sample": 62.6,
       "needs_human_composition_review": true,
-      "museum_page": "https://catalogo.fondazionezeri.unibo.it/scheda/opera/45724/Savoldo%20Giovanni%20Gerolamo%2C%20Trasfigurazione"
+      "museum_page": "https://catalogo.fondazionezeri.unibo.it/scheda/opera/45724/Savoldo%20Giovanni%20Gerolamo%2C%20Trasfigurazione",
+      "museum_canvas_width_cm": 126,
+      "museum_canvas_height_cm": 139,
+      "measurement_source": "https://catalogo.fondazionezeri.unibo.it/scheda/opera/45724/Savoldo%20Giovanni%20Gerolamo%2C%20Trasfigurazione",
+      "measurement_quality": "FONDAZIONE_ZERI_INSTITUTIONAL_CATALOGUE"
     },
     {
       "review_artwork_id": "trans-carracci",
@@ -160,14 +184,18 @@
         2000
       ],
       "image_aspect_ratio": 0.647,
-      "verified_object_physical_aspect_ratio": null,
-      "photo_to_object_aspect_deviation_percent": null,
+      "verified_object_physical_aspect_ratio": 0.611,
+      "photo_to_object_aspect_deviation_percent": 5.9,
       "composition_warning": "NO_AUTOMATIC_COMPOSITION_CONCLUSION",
       "rights_lane": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
-      "uniformity_corners": 28.0,
+      "uniformity_corners": 28,
       "image_stddev_sample": 57.1,
       "needs_human_composition_review": true,
-      "museum_page": "https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/0800692440"
+      "museum_page": "https://catalogo.beniculturali.it/detail/HistoricOrArtisticProperty/0800692440",
+      "museum_canvas_width_cm": 267,
+      "museum_canvas_height_cm": 437,
+      "measurement_source": "https://en.wikipedia.org/wiki/Transfiguration_(Ludovico_Carracci)",
+      "measurement_quality": "SECONDARY_ESTIMATE__VISUAL_QA_ONLY"
     },
     {
       "review_artwork_id": "euch-rubens",
@@ -183,14 +211,18 @@
         2000
       ],
       "image_aspect_ratio": 0.822,
-      "verified_object_physical_aspect_ratio": null,
-      "photo_to_object_aspect_deviation_percent": null,
+      "verified_object_physical_aspect_ratio": 0.8224,
+      "photo_to_object_aspect_deviation_percent": 0,
       "composition_warning": "NO_AUTOMATIC_COMPOSITION_CONCLUSION",
       "rights_lane": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
       "uniformity_corners": 37.3,
       "image_stddev_sample": 65.6,
       "needs_human_composition_review": true,
-      "museum_page": "https://pinacotecabrera.org/en/collezioni/collezione-on-line/last-supper/"
+      "museum_page": "https://pinacotecabrera.org/en/collezioni/collezione-on-line/last-supper/",
+      "museum_canvas_width_cm": 250,
+      "museum_canvas_height_cm": 304,
+      "measurement_source": "https://pinacotecabrera.org/en/collezioni/collezione-on-line/last-supper/",
+      "measurement_quality": "BRERA_MUSEUM_PRIMARY"
     },
     {
       "review_artwork_id": "euch-champaigne",
@@ -211,9 +243,13 @@
       "composition_warning": "GEOMETRY_MISMATCH__FRAME_OR_CROP_REVIEW",
       "rights_lane": "INDEPENDENT_TANGOPASO_PD_SELF__COMPOSITION_DEFECT_HOLD",
       "uniformity_corners": 11.6,
-      "image_stddev_sample": 46.0,
+      "image_stddev_sample": 46,
       "needs_human_composition_review": true,
-      "museum_page": "https://collections.louvre.fr/ark:/53355/cl010062076"
+      "museum_page": "https://collections.louvre.fr/ark:/53355/cl010062076",
+      "museum_canvas_width_cm": 149,
+      "museum_canvas_height_cm": 80,
+      "measurement_source": "https://collections.louvre.fr/ark:/53355/cl010062076",
+      "measurement_quality": "LOUVRE_OBJECT_PRIMARY"
     },
     {
       "review_artwork_id": "euch-bassano",
@@ -229,14 +265,18 @@
         1196
       ],
       "image_aspect_ratio": 1.6722,
-      "verified_object_physical_aspect_ratio": null,
-      "photo_to_object_aspect_deviation_percent": null,
+      "verified_object_physical_aspect_ratio": 1.6071,
+      "photo_to_object_aspect_deviation_percent": 4,
       "composition_warning": "NO_AUTOMATIC_COMPOSITION_CONCLUSION",
       "rights_lane": "SOURCE_ONLY__ITALIAN_HERITAGE_REUSE_HOLD",
       "uniformity_corners": 51.7,
       "image_stddev_sample": 50.4,
       "needs_human_composition_review": true,
-      "museum_page": "https://www.collezionegalleriaborghese.it/en/opere/last-supper"
+      "museum_page": "https://www.collezionegalleriaborghese.it/en/opere/last-supper",
+      "museum_canvas_width_cm": 270,
+      "museum_canvas_height_cm": 168,
+      "measurement_source": "https://www.collezionegalleriaborghese.it/en/opere/last-supper",
+      "measurement_quality": "BORGHESE_MUSEUM_PRIMARY"
     },
     {
       "review_artwork_id": "euch-poussin",
@@ -252,14 +292,18 @@
         900
       ],
       "image_aspect_ratio": 1.51,
-      "verified_object_physical_aspect_ratio": null,
-      "photo_to_object_aspect_deviation_percent": null,
+      "verified_object_physical_aspect_ratio": 1.506,
+      "photo_to_object_aspect_deviation_percent": 0.3,
       "composition_warning": "NO_AUTOMATIC_COMPOSITION_CONCLUSION",
       "rights_lane": "SOURCE_ONLY__NGS_IMAGE_REUSE_HOLD__PREVIEW_RESOLUTION",
       "uniformity_corners": 18.9,
       "image_stddev_sample": 12.2,
       "needs_human_composition_review": true,
-      "museum_page": "https://www.nationalgalleries.org/art-and-artists/8668"
+      "museum_page": "https://www.nationalgalleries.org/art-and-artists/8668",
+      "museum_canvas_width_cm": 176.8,
+      "museum_canvas_height_cm": 117.4,
+      "measurement_source": "https://www.nationalgalleries.org/art-and-artists/8668",
+      "measurement_quality": "NGS_MUSEUM_PRIMARY"
     },
     {
       "review_artwork_id": "euch-leonardo",
@@ -275,14 +319,18 @@
         1127
       ],
       "image_aspect_ratio": 1.7746,
-      "verified_object_physical_aspect_ratio": null,
-      "photo_to_object_aspect_deviation_percent": null,
+      "verified_object_physical_aspect_ratio": 1.913,
+      "photo_to_object_aspect_deviation_percent": 7.2,
       "composition_warning": "NO_AUTOMATIC_COMPOSITION_CONCLUSION",
       "rights_lane": "SOURCE_ONLY__ITALIAN_HERITAGE_AND_GALLERY_PHOTO_QUALITY_REVIEW",
-      "uniformity_corners": 24.0,
+      "uniformity_corners": 24,
       "image_stddev_sample": 52.1,
       "needs_human_composition_review": true,
-      "museum_page": "https://cenacolovinciano.org/"
+      "museum_page": "https://cenacolovinciano.org/",
+      "museum_canvas_width_cm": 880,
+      "museum_canvas_height_cm": 460,
+      "measurement_source": "https://cenacolovinciano.org/en/museum/the-works/the-last-supper-leonardo-da-vinci-1452-1519/",
+      "measurement_quality": "CENACOLO_MUSEUM_PRIMARY"
     },
     {
       "review_artwork_id": "tri-dolci",
@@ -305,7 +353,28 @@
       "uniformity_corners": 9.8,
       "image_stddev_sample": 37.5,
       "needs_human_composition_review": true,
-      "museum_page": "https://risdmuseum.org/art-design/collection/trinity-glory-59009"
+      "museum_page": "https://risdmuseum.org/art-design/collection/trinity-glory-59009",
+      "museum_canvas_width_cm": 59.7,
+      "museum_canvas_height_cm": 69.5,
+      "measurement_source": "https://commons.wikimedia.org/wiki/File:Carlo_Dolci_-_The_Trinity_in_Glory_-_59.009_-_Rhode_Island_School_of_Design_Museum.jpg",
+      "measurement_quality": "SMITHSONIAN_OR_RISD_OBJECT_METADATA"
     }
-  ]
+  ],
+  "measurements_updated_date": "2026-11-17",
+  "measurement_scope": "13/13 physical aspect ratios from original museums or cited supporting catalogues, with explicit source-quality tiers; perspective distortion or historical frame geometry may cause deviation.",
+  "high_deviation_over_8_percent": [
+    {
+      "id": "cana-tintoretto",
+      "deviation_percent": 12
+    },
+    {
+      "id": "king-bourdon",
+      "deviation_percent": 10.4
+    },
+    {
+      "id": "euch-champaigne",
+      "deviation_percent": 28.4
+    }
+  ],
+  "automated_photo_publication_authorized": false
 }
