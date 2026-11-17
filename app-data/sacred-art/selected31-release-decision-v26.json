@@ -1,0 +1,421 @@
+{
+  "schema": "ao.sacred-art.selected31-release-decision.v26",
+  "as_of": "2026-11-17",
+  "source_clearance": "app-data/sacred-art/selected31-clearance-v26.json",
+  "source_matrix": "app-data/sacred-art/staged-selected31-v24/selected31-all-visual-source-matrix.v24.json",
+  "production_baseline": {
+    "catalogue_records": 873,
+    "local_paintings": 472
+  },
+  "proposed_draft": {
+    "gallery_records": 885,
+    "local_paintings": 485
+  },
+  "counts": {
+    "existing_preserved": 7,
+    "draft_candidates": 13,
+    "held_source_only": 11,
+    "strong_photo_reuse_evidence": 10,
+    "public_domain_mark_extra_review": 3,
+    "by_class": {
+      "MUSEUM_OPEN_ACCESS": 5,
+      "INSTITUTIONAL_PDM_WITH_EXPLICIT_COMMERCIAL_REUSE": 2,
+      "INSTITUTION_PUBLIC_DOMAIN_SERVICE": 1,
+      "EXPLICIT_MUSEUM_CC0_1": 1,
+      "EXPLICIT_PHOTOGRAPHER_CC_BY_3": 1,
+      "PUBLIC_DOMAIN_MARK": 1,
+      "CONDITIONAL_FRENCH_FAITHFUL_2D_PD_ART": 2
+    },
+    "explicit_institutional_public_domain_mark_policy": 2,
+    "candidates_needing_owner_final_visual_review": 13,
+    "candidates_permitted_for_prayer_card_automatic_assignment": 0
+  },
+  "legal_definition": "Strong photo reuse evidence covers museum Open Access, official public-domain service, explicit CC BY or CC0. It does not certify trademark, privacy, moral rights or country-specific heritage-law conditions. PDM is a status tag, not an unconditional photographer licence.",
+  "release_policy": "No merge or public delivery without explicit owner authorization; owner-selected artwork is separate from prayer-card use. Legal/photo/visual/quality gates remain independent.",
+  "candidates": [
+    {
+      "review_artwork_id": "bap-bordone",
+      "title": "The Baptism of Christ",
+      "artist": "Paris Bordone",
+      "destination": "lum1",
+      "gallery_record_id": "REVIEW31::bap-bordone",
+      "gallery_image_path": "site/gallery/images/selected31-bap-bordone-2000.webp",
+      "gallery_sha256": "c71651ff325e4498ce29aac36e24eea2e165a1f0508a52ec25f413ef539a60d7",
+      "pixel_dimensions": [
+        2000,
+        1973
+      ],
+      "exact_photo_reuse_evidence": "NGA published_images.csv openaccess=1",
+      "photo_rights_class": "MUSEUM_OPEN_ACCESS",
+      "remaining_release_gate": "STRONG_PRIMARY_IMAGE_REUSE_EVIDENCE",
+      "eligible_for_technical_draft": true,
+      "legal_reuse_certified_for_every_country": false,
+      "owner_selected_artwork": true,
+      "user_selected_card_or_cinematic_default": false,
+      "requires_owner_final_presentation_check": true,
+      "original_canonical_mass_gallery_untouched": true,
+      "photographer_attribution": null,
+      "licence_url": null
+    },
+    {
+      "review_artwork_id": "bap-murillo",
+      "title": "The Baptism of Christ",
+      "artist": "Bartolomé Esteban Murillo",
+      "destination": "lum1",
+      "gallery_record_id": "REVIEW31::bap-murillo",
+      "gallery_image_path": "site/gallery/images/selected31-v14-bap-murillo-2000.webp",
+      "gallery_sha256": "abd3569cb9b0e69e36910f989c91690b010a168f7aa5f3dee297a2791fbab866",
+      "pixel_dimensions": [
+        1350,
+        2000
+      ],
+      "exact_photo_reuse_evidence": "SMB Murillo Baptism obj:868725 PDM 1.0 credits Jörg P. Anders; official institutional public-domain policy permits reproduction, derivative works, redistribution and commercial use.",
+      "photo_rights_class": "INSTITUTIONAL_PDM_WITH_EXPLICIT_COMMERCIAL_REUSE",
+      "remaining_release_gate": "INSTITUTIONAL_PD_POLICY_CONFIRMED__VISUAL_AND_FINAL_JURISDICTION_QA",
+      "eligible_for_technical_draft": true,
+      "legal_reuse_certified_for_every_country": false,
+      "owner_selected_artwork": true,
+      "user_selected_card_or_cinematic_default": false,
+      "requires_owner_final_presentation_check": true,
+      "original_canonical_mass_gallery_untouched": true,
+      "photographer_attribution": "Staatliche Museen zu Berlin, Gemäldegalerie / Jörg P. Anders",
+      "licence_url": "https://www.smb.museum/en/open-science/use/",
+      "institutional_policy_evidence": [
+        "https://search.smb.museum/object/obj-868725",
+        "https://www.smb.museum/en/open-science/use/"
+      ]
+    },
+    {
+      "review_artwork_id": "bap-tintoretto",
+      "title": "Baptism of Christ",
+      "artist": "Workshop of Jacopo Tintoretto",
+      "destination": "lum1",
+      "gallery_record_id": "REVIEW31::bap-tintoretto",
+      "gallery_image_path": "site/gallery/images/selected31-bap-tintoretto-2000.webp",
+      "gallery_sha256": "136c2663a9f3de91e062c11b156383e2a98d269d49f5cda6344c6fbf7969c4e9",
+      "pixel_dimensions": [
+        2000,
+        1325
+      ],
+      "exact_photo_reuse_evidence": "Cleveland Museum of Art 1950.400 open access",
+      "photo_rights_class": "MUSEUM_OPEN_ACCESS",
+      "remaining_release_gate": "STRONG_PRIMARY_IMAGE_REUSE_EVIDENCE",
+      "eligible_for_technical_draft": true,
+      "legal_reuse_certified_for_every_country": false,
+      "owner_selected_artwork": true,
+      "user_selected_card_or_cinematic_default": false,
+      "requires_owner_final_presentation_check": true,
+      "original_canonical_mass_gallery_untouched": true,
+      "photographer_attribution": null,
+      "licence_url": null
+    },
+    {
+      "review_artwork_id": "bap-bassano",
+      "title": "The Baptism of Christ",
+      "artist": "Jacopo Bassano",
+      "destination": "lum1",
+      "gallery_record_id": "REVIEW31::bap-bassano",
+      "gallery_image_path": "site/gallery/images/selected31-bap-bassano-2000.webp",
+      "gallery_sha256": "13167014471e1b668853f0886066dd7ee4aa0ca58a5cf46d4027aced55122814",
+      "pixel_dimensions": [
+        1630,
+        2000
+      ],
+      "exact_photo_reuse_evidence": "Met Museum isPublicDomain=true",
+      "photo_rights_class": "MUSEUM_OPEN_ACCESS",
+      "remaining_release_gate": "STRONG_PRIMARY_IMAGE_REUSE_EVIDENCE",
+      "eligible_for_technical_draft": true,
+      "legal_reuse_certified_for_every_country": false,
+      "owner_selected_artwork": true,
+      "user_selected_card_or_cinematic_default": false,
+      "requires_owner_final_presentation_check": true,
+      "original_canonical_mass_gallery_untouched": true,
+      "photographer_attribution": null,
+      "licence_url": null
+    },
+    {
+      "review_artwork_id": "bap-poussin",
+      "title": "The Baptism of Christ",
+      "artist": "Nicolas Poussin",
+      "destination": "lum1",
+      "gallery_record_id": "REVIEW31::bap-poussin",
+      "gallery_image_path": "site/gallery/images/selected31-bap-poussin-2000.webp",
+      "gallery_sha256": "4692b76ac9ef3e41fa7c2a0406e4c0c25ea3c3ddbeeee2cd9655f0f84678030b",
+      "pixel_dimensions": [
+        2000,
+        1574
+      ],
+      "exact_photo_reuse_evidence": "NGA published_images.csv openaccess=1",
+      "photo_rights_class": "MUSEUM_OPEN_ACCESS",
+      "remaining_release_gate": "STRONG_PRIMARY_IMAGE_REUSE_EVIDENCE",
+      "eligible_for_technical_draft": true,
+      "legal_reuse_certified_for_every_country": false,
+      "owner_selected_artwork": true,
+      "user_selected_card_or_cinematic_default": false,
+      "requires_owner_final_presentation_check": true,
+      "original_canonical_mass_gallery_untouched": true,
+      "photographer_attribution": null,
+      "licence_url": null
+    },
+    {
+      "review_artwork_id": "cana-master",
+      "title": "The Marriage at Cana",
+      "artist": "Master of the Catholic Kings",
+      "destination": "lum2",
+      "gallery_record_id": "REVIEW31::cana-master",
+      "gallery_image_path": "site/gallery/images/selected31-cana-master-2000.webp",
+      "gallery_sha256": "819fd6c07422f3546762c9a2fedfadffae1bd769c3708b511cc9477b88cf3ffc",
+      "pixel_dimensions": [
+        1180,
+        2000
+      ],
+      "exact_photo_reuse_evidence": "NGA published_images.csv openaccess=1",
+      "photo_rights_class": "MUSEUM_OPEN_ACCESS",
+      "remaining_release_gate": "STRONG_PRIMARY_IMAGE_REUSE_EVIDENCE",
+      "eligible_for_technical_draft": true,
+      "legal_reuse_certified_for_every_country": false,
+      "owner_selected_artwork": true,
+      "user_selected_card_or_cinematic_default": false,
+      "requires_owner_final_presentation_check": true,
+      "original_canonical_mass_gallery_untouched": true,
+      "photographer_attribution": null,
+      "licence_url": null
+    },
+    {
+      "review_artwork_id": "cana-francken",
+      "title": "The Wedding at Cana",
+      "artist": "Frans Francken the Younger",
+      "destination": "lum2",
+      "gallery_record_id": "REVIEW31::cana-francken",
+      "gallery_image_path": "site/gallery/images/selected31-v21-cana-francken-1920.webp",
+      "gallery_sha256": "3ba944cef62c517b87cb94e194f0dad3b9112879127a8eed9af2c7efef6c49d6",
+      "pixel_dimensions": [
+        1920,
+        919
+      ],
+      "exact_photo_reuse_evidence": "Exact Nationalmuseum NM7504 Commons PDM 1920x919 image; museum expressly permits all-purpose use of PD photos and Nationalmuseum photos distributed via Commons. Other photos of the same artwork marked CC BY-SA are not implied to be PD.",
+      "photo_rights_class": "INSTITUTIONAL_PDM_WITH_EXPLICIT_COMMERCIAL_REUSE",
+      "remaining_release_gate": "INSTITUTIONAL_PD_COMMONS_SOURCE_CONFIRMED__SPECIFIC_PHOTO_CREDIT_AND_VISUAL_QA",
+      "eligible_for_technical_draft": true,
+      "legal_reuse_certified_for_every_country": false,
+      "owner_selected_artwork": true,
+      "user_selected_card_or_cinematic_default": false,
+      "requires_owner_final_presentation_check": true,
+      "original_canonical_mass_gallery_untouched": true,
+      "photographer_attribution": "Nationalmuseum; individual photographer unknown for this exact Commons file",
+      "licence_url": null,
+      "institutional_policy_evidence": [
+        "https://collection.nationalmuseum.se/en/collection/item/231135/",
+        "https://www.nationalmuseum.se/en/explore-art-and-design/images/rights-and-reproductions",
+        "https://www.nationalmuseum.se/en/explore-art-and-design/images/order-images-rights"
+      ]
+    },
+    {
+      "review_artwork_id": "cana-vermeyen",
+      "title": "The Marriage at Cana",
+      "artist": "Jan Cornelisz Vermeyen",
+      "destination": "lum2",
+      "gallery_record_id": "REVIEW31::cana-vermeyen",
+      "gallery_image_path": "site/gallery/images/selected31-v20-cana-vermeyen-2000.webp",
+      "gallery_sha256": "9ddf56c6dbdcd520fc58f8c4a321f2e362420f9b6130a7f2c36477c15825af02",
+      "pixel_dimensions": [
+        2000,
+        1566
+      ],
+      "exact_photo_reuse_evidence": "Rijksmuseum SK-A-4820 museum official public-domain IIIF photo",
+      "photo_rights_class": "INSTITUTION_PUBLIC_DOMAIN_SERVICE",
+      "remaining_release_gate": "STRONG_PRIMARY_IMAGE_REUSE_EVIDENCE",
+      "eligible_for_technical_draft": true,
+      "legal_reuse_certified_for_every_country": false,
+      "owner_selected_artwork": true,
+      "user_selected_card_or_cinematic_default": false,
+      "requires_owner_final_presentation_check": true,
+      "original_canonical_mass_gallery_untouched": true,
+      "photographer_attribution": null,
+      "licence_url": null
+    },
+    {
+      "review_artwork_id": "king-bloch",
+      "title": "The Sermon on the Mount",
+      "artist": "Carl Bloch",
+      "destination": "lum3",
+      "gallery_record_id": "plate-bloch-sermon",
+      "gallery_image_path": "site/gallery/images/selected31-v14-king-bloch-2000.webp",
+      "gallery_sha256": "606dfcd8778a903de45a74454ca3b49b3d506c644bebe23bc8ffa8774828f740",
+      "pixel_dimensions": [
+        1833,
+        2000
+      ],
+      "exact_photo_reuse_evidence": "Exact high-resolution museum photo-service sourced Commons PDM image archived, but museum free business photo service is an order/delivery workflow, not an explicit grant for this individually downloaded Commons file. Separate Frederiksborg press-download restrictions cannot be generalized.",
+      "photo_rights_class": "PUBLIC_DOMAIN_MARK",
+      "remaining_release_gate": "PDM_STILL_UNRESOLVED__FREDERIKSBORG_FREE_BUSINESS_PHOTO_SERVICE_IS_ORDER_BASED",
+      "eligible_for_technical_draft": true,
+      "legal_reuse_certified_for_every_country": false,
+      "owner_selected_artwork": true,
+      "user_selected_card_or_cinematic_default": false,
+      "requires_owner_final_presentation_check": true,
+      "original_canonical_mass_gallery_untouched": true,
+      "photographer_attribution": null,
+      "licence_url": null,
+      "institutional_policy_evidence": [
+        "https://frederiksborg.dk/en/photo-service",
+        "https://frederiksborg.dk/fotos-til-download/",
+        "https://commons.wikimedia.org/wiki/File:Carl_Bloch_-_The_Sermon_on_the_Mount.jpg"
+      ],
+      "no_permission_or_fee_requested": true
+    },
+    {
+      "review_artwork_id": "king-jordaens",
+      "title": "Christ Blessing the Children",
+      "artist": "Jacob Jordaens",
+      "destination": "lum3",
+      "gallery_record_id": "REVIEW31::king-jordaens",
+      "gallery_image_path": "site/gallery/images/selected31-v22-king-jordaens-2000.webp",
+      "gallery_sha256": "2bad7937952f051a1ce6a9b6e2ca238ba84c25b019a12bb8b566e1369fe9756d",
+      "pixel_dimensions": [
+        2000,
+        1830
+      ],
+      "exact_photo_reuse_evidence": "SMK KMSsp234 photo CC0; attribution 'Attributed to Jacob Jordaens'",
+      "photo_rights_class": "EXPLICIT_MUSEUM_CC0_1",
+      "remaining_release_gate": "STRONG_PRIMARY_IMAGE_REUSE_EVIDENCE__ATTRIBUTION_QUALIFIED",
+      "eligible_for_technical_draft": true,
+      "legal_reuse_certified_for_every_country": false,
+      "owner_selected_artwork": true,
+      "user_selected_card_or_cinematic_default": false,
+      "requires_owner_final_presentation_check": true,
+      "original_canonical_mass_gallery_untouched": true,
+      "photographer_attribution": "Statens Museum for Kunst",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/"
+    },
+    {
+      "review_artwork_id": "euch-tiepolo",
+      "title": "The Last Supper",
+      "artist": "Giovanni Battista Tiepolo",
+      "destination": "lum5",
+      "gallery_record_id": "REVIEW31::euch-tiepolo",
+      "gallery_image_path": "site/gallery/images/selected31-v22-euch-tiepolo-2000.webp",
+      "gallery_sha256": "60cc2b9e071c7ddc943983aaa1c9afa000f251a97ba93af6774190ad7769a85e",
+      "pixel_dimensions": [
+        2000,
+        1722
+      ],
+      "exact_photo_reuse_evidence": "Sailko photograph CC BY 3.0; credit, link, scaled WebP adaptation notice",
+      "photo_rights_class": "EXPLICIT_PHOTOGRAPHER_CC_BY_3",
+      "remaining_release_gate": "STRONG_PHOTOGRAPHER_LICENSE__CREDIT_REQUIRED",
+      "eligible_for_technical_draft": true,
+      "legal_reuse_certified_for_every_country": false,
+      "owner_selected_artwork": true,
+      "user_selected_card_or_cinematic_default": false,
+      "requires_owner_final_presentation_check": true,
+      "original_canonical_mass_gallery_untouched": true,
+      "photographer_attribution": "Sailko",
+      "licence_url": "https://creativecommons.org/licenses/by/3.0/"
+    },
+    {
+      "review_artwork_id": "bap-haarlem",
+      "title": "The Baptism of Christ",
+      "artist": "Cornelis van Haarlem",
+      "destination": "Luminous I · Baptism in the Jordan",
+      "gallery_record_id": "REVIEW31::bap-haarlem",
+      "gallery_image_path": "site/gallery/images/selected31-v26-bap-haarlem-2000.webp",
+      "gallery_sha256": "a7101dbd4ff6899ac48b594485dc2ebf0dbae95c20adf56a029a5e4ae1589d5b",
+      "pixel_dimensions": [
+        2000,
+        1652
+      ],
+      "exact_photo_reuse_evidence": "Shonagon original camera photograph personally uploaded to Commons as 'own work' and tagged faithful reproduction PD-Art/Public Domain Mark; original Louvre canvas public domain; French Ministry says mechanical reproductions without photographic originality generally have no new photo copyright. This is not CC0/CC BY or a universal guarantee.",
+      "photo_rights_class": "CONDITIONAL_FRENCH_FAITHFUL_2D_PD_ART",
+      "remaining_release_gate": "FULL_PAINTING_PROPORTIONS_GOOD__ORIGINAL_2018_CURID_UNRESOLVED__ORIGINAL_PHOTOGRAPH_PD_ART_JURISDICTION_REVIEW_REQUIRED",
+      "eligible_for_technical_draft": true,
+      "legal_reuse_certified_for_every_country": false,
+      "owner_selected_artwork": true,
+      "user_selected_card_or_cinematic_default": false,
+      "requires_owner_final_presentation_check": true,
+      "original_canonical_mass_gallery_untouched": true,
+      "photographer_attribution": "Shonagon",
+      "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "ministry_photographic_originality_guidance": "https://www.culture.gouv.fr/thematiques/photographie/gerer-un-fonds-photographique/evaluation-patrimoniale/connaitre-l-environnement-juridique-d-un-fonds",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Le_Bapt%C3%AAme_du_Christ_-_Cornelis_Cornelisz_van_Haarlem_-_Mus%C3%A9e_du_Louvre_-_Peintures_RF_1983-25.jpg",
+      "exact_louvre_museum_source": "https://collections.louvre.fr/en/ark:/53355/cl010064767",
+      "selected_original_curid_unresolved": true
+    },
+    {
+      "review_artwork_id": "king-bourdon",
+      "title": "Christ Blessing the Children",
+      "artist": "Sébastien Bourdon",
+      "destination": "Luminous III · Proclamation of the Kingdom",
+      "gallery_record_id": "REVIEW31::king-bourdon",
+      "gallery_image_path": "site/gallery/images/selected31-v26-king-bourdon-2000.webp",
+      "gallery_sha256": "5249af757bfb1365fb69d610085723ba92c471f79c373b07f62b2fa1588cf59b",
+      "pixel_dimensions": [
+        2000,
+        1485
+      ],
+      "exact_photo_reuse_evidence": "Shonagon original camera photograph personally uploaded to Commons as 'own work' and tagged faithful reproduction PD-Art/Public Domain Mark; original Louvre canvas public domain; French Ministry says mechanical reproductions without photographic originality generally have no new photo copyright. This is not CC0/CC BY or a universal guarantee.",
+      "photo_rights_class": "CONDITIONAL_FRENCH_FAITHFUL_2D_PD_ART",
+      "remaining_release_gate": "CANVAS_RECTANGLE_VISIBLE__10_4_PERCENT_PHOTO_TO_OBJECT_ASPECT_RECHECK__ORIGINAL_PHOTOGRAPH_PD_ART_JURISDICTION_REVIEW_REQUIRED",
+      "eligible_for_technical_draft": true,
+      "legal_reuse_certified_for_every_country": false,
+      "owner_selected_artwork": true,
+      "user_selected_card_or_cinematic_default": false,
+      "requires_owner_final_presentation_check": true,
+      "original_canonical_mass_gallery_untouched": true,
+      "photographer_attribution": "Shonagon",
+      "licence_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "ministry_photographic_originality_guidance": "https://www.culture.gouv.fr/thematiques/photographie/gerer-un-fonds-photographique/evaluation-patrimoniale/connaitre-l-environnement-juridique-d-un-fonds",
+      "source_commons_file": "https://commons.wikimedia.org/wiki/File:Le_Christ_et_les_enfants_-_S%C3%A9bastien_Bourdon_-_Mus%C3%A9e_du_Louvre_Peintures_INV_2806_%3B_MR_1256.jpg",
+      "exact_louvre_museum_source": "https://collections.louvre.fr/en/ark:/53355/cl010059179",
+      "selected_original_curid_unresolved": false
+    }
+  ],
+  "no_new_selection": true,
+  "no_gallery_changes": false,
+  "no_prayer_card_assignments": true,
+  "prior_register": "app-data/sacred-art/selected31-release-decision-v25.json",
+  "policy_evidence": {
+    "murillo": {
+      "title": "SMB exact object PDM and explicit permitted commercial reuse",
+      "object": "https://search.smb.museum/object/obj-868725",
+      "policy": "https://www.smb.museum/en/open-science/use/",
+      "credit": "Staatliche Museen zu Berlin, Gemäldegalerie / Jörg P. Anders",
+      "class": "INSTITUTIONAL_PDM_WITH_EXPLICIT_COMMERCIAL_REUSE"
+    },
+    "francken": {
+      "title": "Nationalmuseum exact Commons PDM photo and explicit free reuse for any purpose",
+      "object": "https://collection.nationalmuseum.se/en/collection/item/231135/",
+      "policy": "https://www.nationalmuseum.se/en/explore-art-and-design/images/rights-and-reproductions",
+      "commonsPolicy": "https://www.nationalmuseum.se/en/explore-art-and-design/images/order-images-rights",
+      "class": "INSTITUTIONAL_PDM_WITH_EXPLICIT_COMMERCIAL_REUSE"
+    },
+    "bloch": {
+      "title": "Frederiksborg free photo service for businesses, but no direct express reusable-file grant for exact downloaded Commons source; press material restrictions must not be conflated",
+      "photoService": "https://frederiksborg.dk/en/photo-service",
+      "press": "https://frederiksborg.dk/fotos-til-download/",
+      "original": "https://commons.wikimedia.org/wiki/File:Carl_Bloch_-_The_Sermon_on_the_Mount.jpg",
+      "class": "PUBLIC_DOMAIN_MARK"
+    },
+    "french_shonagon_own_photo": {
+      "ministry": "https://www.culture.gouv.fr/thematiques/photographie/gerer-un-fonds-photographique/evaluation-patrimoniale/connaitre-l-environnement-juridique-d-un-fonds",
+      "haarlem": "https://commons.wikimedia.org/wiki/File:Le_Bapt%C3%AAme_du_Christ_-_Cornelis_Cornelisz_van_Haarlem_-_Mus%C3%A9e_du_Louvre_-_Peintures_RF_1983-25.jpg",
+      "bourdon": "https://commons.wikimedia.org/wiki/File:Le_Christ_et_les_enfants_-_S%C3%A9bastien_Bourdon_-_Mus%C3%A9e_du_Louvre_Peintures_INV_2806_%3B_MR_1256.jpg",
+      "legal_scope": "Potential nonoriginal faithful 2D photograph in France, marked PDM in the United States; worldwide status and exact original photo selection remain individual gates, not a licence grant."
+    }
+  },
+  "jurisdictional_notes": {
+    "mauritius": {
+      "source": "https://lawsofmauritius.govmu.org/portal/viewlegislationdocument/web/?docnumber=QWN0IDEgb2YgMjAxNA%3D%3D&doctitle=&doctype=act",
+      "meaning": "2014 Copyright Act defines original work as individual creation and excludes work essentially copying another; cannot guarantee status of every image in all countries."
+    },
+    "france": {
+      "source": "https://www.inha.fr/app/uploads/2024/11/2021_LIVRET_GUIDE-PRATIQUE_web_15062021.pdf",
+      "meaning": "INHA practical guidance: strictly faithful 2D reproduction without photographer's independent creative personality generally not a new copyright work, subject to actual facts."
+    },
+    "italy": {
+      "source": "https://italica.cultura.gov.it/condizioni-di-utilizzo",
+      "meaning": "Italian public cultural property may impose separate commercial reuse conditions independent of photographer's Creative Commons license."
+    }
+  },
+  "gallery_changes_are_draft_only": true,
+  "italian_heritage_photos_not_promoted": true
+}
