@@ -82,7 +82,7 @@ for(const x of v21.records){
  }
 }
 assert(src.includes('selected31-reviewed-images.v21.json'));
-assert(src.includes('legacyRecordCount !== 873 || addedRecords !== 10 || addedImages !== 11'));
+assert(src.includes('legacyRecordCount !== 873 || addedRecords !== 12 || addedImages !== 13'));
 for(const forbidden of [
 'site/gallery/images/selected31-v14-cana-francken-2000.webp',
 'site/gallery/images/selected31-v14-bap-verrocchio-2000.webp',
