@@ -1,0 +1,47 @@
+name: Sacred Art V25 institution photo rights release-gate regression (temporary)
+on:
+  push:
+    branches: [curation/selected31-gallery-reconciliation-v12]
+    paths:
+      - .github/workflows/sacred-art-v25-qa.yml
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/curation/selected31-gallery-reconciliation-v12'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate exact source photo hashes, institutional reuse licences and 472-photo production baseline
+        run: |
+          node --version
+          node --check site/gallery/gallery.js
+          node tests/sacred-art-selected31-v19.mjs
+          node tests/sacred-art-selected31-v20.mjs
+          node tests/sacred-art-selected31-v21.mjs
+          node tests/sacred-art-selected31-v22.mjs
+          node tests/sacred-art-selected31-v23.mjs
+          node tests/sacred-art-selected31-v24.mjs
+          node tests/sacred-art-selected31-v25.mjs
+          node tests/sacred-art-quality-wave06.mjs
+          node tests/sacred-art-gallery.mjs
+          node tests/prayer-artwork-activation.mjs
+          node tests/production-shell.mjs
+      - name: Validate future subset source decision and no new publications
+        run: |
+          node - <<'NODE'
+          const fs=require('fs'),assert=require('assert');
+          const r=JSON.parse(fs.readFileSync('app-data/sacred-art/selected31-release-decision-v25.json'));
+          const gate=JSON.parse(fs.readFileSync('app-data/sacred-art/selected31-release-gate-v25.json'));
+          const main=JSON.parse(fs.readFileSync('site/gallery/image-provenance.v1.json'));
+          assert.equal(main.local_image_count,472);
+          assert.equal(r.counts.strong_photo_reuse_evidence,10);
+          assert.equal(r.counts.public_domain_mark_extra_review,1);
+          assert.equal(gate.release_alternatives.ten_with_strong_source_evidence.proposed_hosted_paintings,482);
+          assert.equal(gate.release_alternatives.all_eleven_as_current_draft.proposed_hosted_paintings,483);
+          assert(gate.gates.user_release_authorization===false);
+          assert(gate.gates.prayer_default_count_added===0);
+          console.log('V25 release gate is research/draft-only: no live photo or prayer changes.');
+          NODE
